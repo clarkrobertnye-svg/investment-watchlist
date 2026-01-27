@@ -149,7 +149,7 @@
         </div>
         <div class="compare-result" id="compare-result">
             <table>
-                <tr><th>Signal</th><th>Ticker</th><th>Company</th><th>Model</th><th>ROIC</th><th>VCR</th><th>EP Spread</th><th>Trend</th><th>IRR</th><th>Price</th><th>Target</th></tr>
+                <tr><th>Signal</th><th>Ticker</th><th>Company</th><th>Model</th><th>ROIC</th><th>VCR</th><th>EP Spread</th><th>Trend</th><th>GM</th><th>Growth</th><th>IRR</th><th>Price</th><th>Target</th></tr>
                 <tr id="compare-row"></tr>
             </table>
             <div id="fail-reasons" class="fail-reason"></div>
@@ -672,6 +672,8 @@
                     '<td class="' + vcrClass + '">' + data.vcr.toFixed(1) + 'x</td>' +
                     '<td class="' + spreadClass + '">' + (data.ep_spread >= 0 ? '+' : '') + data.ep_spread.toFixed(0) + '%</td>' +
                     '<td class="' + trendClass + '">' + (data.roic_trend >= 0 ? '+' : '') + data.roic_trend.toFixed(0) + '%</td>' +
+                    '<td>' + data.gm.toFixed(0) + '%</td>' +
+                    '<td>' + data.growth_pct.toFixed(0) + '%</td>' +
                     '<td class="' + irrClass + '">' + data.irr.toFixed(1) + '%</td>' +
                     '<td>$' + data.price.toFixed(0) + '</td>' +
                     '<td>$' + data.target.toFixed(0) + '</td>';
@@ -682,7 +684,7 @@
                 document.getElementById('cache-info').innerHTML = '📦 Cached';
                 resultDiv.classList.add('show');
             } else {
-                row.innerHTML = '<td colspan="11" style="color:#ff6b6b;">Ticker not in cache. Try adding to universe.</td>';
+                row.innerHTML = '<td colspan="13" style="color:#ff6b6b;">Ticker not in cache. Try adding to universe.</td>';
                 failDiv.innerHTML = '';
                 resultDiv.classList.add('show');
             }
