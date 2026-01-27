@@ -146,7 +146,6 @@
         <div class="compare-input">
             <input type="text" id="ticker-input" placeholder="Enter ticker (e.g., AAPL, MSFT)" onkeypress="if(event.key==='Enter')analyzeTicker()">
             <button onclick="analyzeTicker()" id="analyze-btn">Analyze</button>
-            <button onclick="fetchLive()" id="fetch-btn" style="background:#ffaa00;">Fetch Live</button>
         </div>
         <div class="compare-result" id="compare-result">
             <table>
@@ -685,9 +684,8 @@
                 document.getElementById('cache-info').innerHTML = '📦 Cached';
                 resultDiv.classList.add('show');
             } else {
-                row.innerHTML = '<td colspan="13" style="color:#ff6b6b;">Ticker not in cache. Try adding to universe.</td>';
-                failDiv.innerHTML = '';
-                resultDiv.classList.add('show');
+                // Not in cache - fetch live
+                fetchLive();
             }
         }
     
