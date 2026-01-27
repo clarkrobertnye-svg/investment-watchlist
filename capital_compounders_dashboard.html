@@ -146,6 +146,7 @@
         <div class="compare-input">
             <input type="text" id="ticker-input" placeholder="Enter ticker (e.g., AAPL, MSFT)" onkeypress="if(event.key==='Enter')analyzeTicker()">
             <button onclick="analyzeTicker()" id="analyze-btn">Analyze</button>
+            <button onclick="fetchLive()" id="fetch-btn" style="background:#ffaa00;">Fetch Live</button>
         </div>
         <div class="compare-result" id="compare-result">
             <table>
@@ -687,6 +688,131 @@
                 row.innerHTML = '<td colspan="13" style="color:#ff6b6b;">Ticker not in cache. Try adding to universe.</td>';
                 failDiv.innerHTML = '';
                 resultDiv.classList.add('show');
+            }
+        }
+    
+        async function fetchLive() {
+            const ticker = document.getElementById('ticker-input').value.toUpperCase().trim();
+            const resultDiv = document.getElementById('compare-result');
+            const row = document.getElementById('compare-row');
+            const failDiv = document.getElementById('fail-reasons');
+            const cacheInfo = document.getElementById('cache-info');
+            const noteDiv = document.getElementById('special-note');
+            
+            if (!ticker) return;
+            
+            // Show loading
+            row.innerHTML = '<td colspan="13" style="color:#ffaa00;">⏳ Fetching live data for ' + ticker + '...</td>';
+            failDiv.innerHTML = '';
+            noteDiv.style.display = 'none';
+            resultDiv.classList.add('show');
+            
+            try {
+                // Fetch profile
+                const profileRes = await fetch(`https://financialmodelingprep.com/stable/profile?symbol=${ticker}&apikey=${API_KEY}`);
+                const profile = await profileRes.json();
+                
+                if (!profile || profile.length === 0) {
+                    row.innerHTML = '<td colspan="13" style="color:#ff6b6b;">❌ Ticker not found: ' + ticker + '</td>';
+                    return;
+                }
+                
+                // Fetch key metrics
+                const metricsRes = await fetch(`https://financialmodelingprep.com/stable/key-metrics?symbol=${ticker}&period=annual&limit=1&apikey=${API_KEY}`);
+                const metrics = await metricsRes.json();
+                
+                // Fetch income statement for ROIC calc
+                const incomeRes = await fetch(`https://financialmodelingprep.com/stable/income-statement?symbol=${ticker}&period=annual&limit=3&apikey=${API_KEY}`);
+                const income = await incomeRes.json();
+                
+                // Fetch balance sheet
+                const bsRes = await fetch(`https://financialmodelingprep.com/stable/balance-sheet-statement?symbol=${ticker}&period=annual&limit=3&apikey=${API_KEY}`);
+                const bs = await bsRes.json();
+                
+                // Calculate metrics
+                const p = profile[0];
+                const price = p.price || 0;
+                const mcap = p.marketCap || 0;
+                const beta = Math.max(0.5, Math.min(p.beta || 1.0, 2.0));
+                const name = (p.companyName || '').substring(0, 16);
+                
+                // ROIC calculation (Analyst Method)
+                let roic = 0;
+                let vcr = 0;
+                let spread = 0;
+                let gm = 0;
+                let growth = 0;
+                
+                if (income.length > 0 && bs.length > 0) {
+                    const opIncome = income[0].operatingIncome || 0;
+                    const equity = bs[0].totalStockholdersEquity || 0;
+                    const debt = bs[0].totalDebt || 0;
+                    const ic = equity + debt;
+                    const grossProfit = income[0].grossProfit || 0;
+                    const revenue = income[0].revenue || 1;
+                    
+                    if (ic > 0) {
+                        roic = (opIncome * 0.75) / ic;
+                    }
+                    
+                    gm = grossProfit / revenue;
+                    
+                    // 3Y revenue growth
+                    if (income.length >= 3) {
+                        const revNow = income[0].revenue || 0;
+                        const revOld = income[2].revenue || 1;
+                        if (revOld > 0) {
+                            growth = Math.pow(revNow / revOld, 1/3) - 1;
+                        }
+                    }
+                }
+                
+                // WACC & VCR
+                const wacc = 0.045 + (beta * 0.05);
+                vcr = roic / wacc;
+                spread = roic - wacc;
+                
+                // Simple IRR estimate
+                const fcfYield = metrics.length > 0 ? (metrics[0].freeCashFlowYield || 0) : 0;
+                const irr = Math.max(fcfYield, 0.02) + Math.min(growth, 0.15);
+                const target = price * (1 + irr);
+                
+                // Determine signal
+                let signal = 'FILTERED';
+                if (vcr >= 1.0 && irr >= 0.20) signal = 'BUY';
+                else if (vcr >= 1.0 && irr >= 0.12) signal = 'HOLD';
+                
+                // Check filters
+                let failures = [];
+                if (roic < 0.20) failures.push('ROIC ' + (roic*100).toFixed(0) + '% < 20%');
+                if (gm < 0.60) failures.push('GM ' + (gm*100).toFixed(0) + '% < 60%');
+                if (growth < 0.09) failures.push('Growth ' + (growth*100).toFixed(1) + '% < 9%');
+                if (vcr < 1.0) failures.push('VCR ' + vcr.toFixed(1) + 'x < 1.0');
+                
+                // Display
+                const vcrClass = vcr >= 2.0 ? 'vcr-gold' : (vcr >= 1.0 ? 'vcr-good' : '');
+                const spreadClass = spread >= 0 ? 'spread-pos' : 'spread-neg';
+                const irrClass = irr >= 0.20 ? 'irr-high' : 'irr-mid';
+                
+                row.innerHTML = '<td><span class="signal-tag signal-' + signal + '">' + signal + '</span></td>' +
+                    '<td class="ticker">' + ticker + '</td>' +
+                    '<td>' + name + '</td>' +
+                    '<td><span class="model-tag">Live</span></td>' +
+                    '<td>' + (roic*100).toFixed(0) + '%</td>' +
+                    '<td class="' + vcrClass + '">' + vcr.toFixed(1) + 'x</td>' +
+                    '<td class="' + spreadClass + '">' + (spread >= 0 ? '+' : '') + (spread*100).toFixed(0) + '%</td>' +
+                    '<td>-</td>' +
+                    '<td>' + (gm*100).toFixed(0) + '%</td>' +
+                    '<td>' + (growth*100).toFixed(0) + '%</td>' +
+                    '<td class="' + irrClass + '">' + (irr*100).toFixed(1) + '%</td>' +
+                    '<td>$' + price.toFixed(0) + '</td>' +
+                    '<td>$' + target.toFixed(0) + '</td>';
+                
+                failDiv.innerHTML = failures.length > 0 ? '❌ ' + failures.join(' | ') : '✅ Passes all filters';
+                cacheInfo.innerHTML = '🔴 Live data (not cached)';
+                
+            } catch (err) {
+                row.innerHTML = '<td colspan="13" style="color:#ff6b6b;">❌ Error fetching data: ' + err.message + '</td>';
             }
         }
     </script>
