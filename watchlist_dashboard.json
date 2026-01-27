@@ -1,0 +1,149 @@
+{
+  "generated_at": "2026-01-26T18:27:01.752662",
+  "summary": {
+    "input_universe": 20,
+    "tier1_passed": 4,
+    "tier2_exceptional": 3,
+    "tier2_elite": 1,
+    "buy_signals": 0,
+    "watch_signals": 1
+  },
+  "companies": [
+    {
+      "ticker": "META",
+      "name": "Meta Platforms Inc",
+      "sector": "Communication Services",
+      "tier_label": "ELITE",
+      "total_score": 75,
+      "metrics": {
+        "incremental_roic": 0.35,
+        "roic_current": 0.28,
+        "revenue_growth_3y": 0.15,
+        "fcf_conversion": 1.05,
+        "gross_margin": 0.81,
+        "gross_margin_trend": "expanding",
+        "net_debt_ebitda": -0.7
+      },
+      "valuation": {
+        "current_price": 590.0,
+        "intrinsic_value": 708.59,
+        "implied_irr": 19.0,
+        "margin_of_safety": 20.1,
+        "buy_15_price": 349.74,
+        "buy_12_price": 677.82,
+        "buy_10_price": 1990.16,
+        "action_signal": "WATCH"
+      },
+      "scores": {
+        "incremental_roic": 20,
+        "reinvestment_runway": 20,
+        "revenue_growth": 10,
+        "fcf_conversion": 15,
+        "gross_margin_trend": 10,
+        "capex_efficiency": 0
+      }
+    },
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA Corporation",
+      "sector": "Technology",
+      "tier_label": "EXCEPTIONAL",
+      "total_score": 100,
+      "metrics": {
+        "incremental_roic": 1.45,
+        "roic_current": 1.13,
+        "revenue_growth_3y": 0.85,
+        "fcf_conversion": 1.05,
+        "gross_margin": 0.75,
+        "gross_margin_trend": "expanding",
+        "net_debt_ebitda": -0.5
+      },
+      "valuation": {
+        "current_price": 130.5,
+        "intrinsic_value": 120.24,
+        "implied_irr": 18.4,
+        "margin_of_safety": 0.0,
+        "buy_15_price": 89.79,
+        "buy_12_price": 133.97,
+        "buy_10_price": 133.97,
+        "action_signal": "HOLD"
+      },
+      "scores": {
+        "incremental_roic": 30,
+        "reinvestment_runway": 20,
+        "revenue_growth": 20,
+        "fcf_conversion": 15,
+        "gross_margin_trend": 10,
+        "capex_efficiency": 5
+      }
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow Inc",
+      "sector": "Technology",
+      "tier_label": "EXCEPTIONAL",
+      "total_score": 100,
+      "metrics": {
+        "incremental_roic": 0.48,
+        "roic_current": 0.35,
+        "revenue_growth_3y": 0.24,
+        "fcf_conversion": 1.4,
+        "gross_margin": 0.79,
+        "gross_margin_trend": "expanding",
+        "net_debt_ebitda": -1.0
+      },
+      "valuation": {
+        "current_price": 1050.0,
+        "intrinsic_value": 936.99,
+        "implied_irr": 17.8,
+        "margin_of_safety": 0.0,
+        "buy_15_price": 574.6,
+        "buy_12_price": 852.38,
+        "buy_10_price": 852.38,
+        "action_signal": "HOLD"
+      },
+      "scores": {
+        "incremental_roic": 30,
+        "reinvestment_runway": 20,
+        "revenue_growth": 20,
+        "fcf_conversion": 15,
+        "gross_margin_trend": 10,
+        "capex_efficiency": 5
+      }
+    },
+    {
+      "ticker": "CDNS",
+      "name": "Cadence Design Systems",
+      "sector": "Technology",
+      "tier_label": "EXCEPTIONAL",
+      "total_score": 85,
+      "metrics": {
+        "incremental_roic": 0.42,
+        "roic_current": 0.32,
+        "revenue_growth_3y": 0.15,
+        "fcf_conversion": 1.15,
+        "gross_margin": 0.89,
+        "gross_margin_trend": "expanding",
+        "net_debt_ebitda": -1.0
+      },
+      "valuation": {
+        "current_price": 310.0,
+        "intrinsic_value": 213.37,
+        "implied_irr": 8.5,
+        "margin_of_safety": 0.0,
+        "buy_15_price": 101.79,
+        "buy_12_price": 190.93,
+        "buy_10_price": 502.17,
+        "action_signal": "TRIM"
+      },
+      "scores": {
+        "incremental_roic": 30,
+        "reinvestment_runway": 15,
+        "revenue_growth": 10,
+        "fcf_conversion": 15,
+        "gross_margin_trend": 10,
+        "capex_efficiency": 5
+      }
+    }
+  ]
+}

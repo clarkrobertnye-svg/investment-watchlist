@@ -1,0 +1,204 @@
+Company,Ticker,Country,Sector,Moat Type
+Abbott Labs,ABT,US,Healthcare,Diagnostics + devices
+Accenture,ACN,Ireland,Services,Asset-light consulting
+ADP (Automatic Data Processing),ADP,US,Business Services,Payroll switching costs
+Adobe,ADBE,US,Software,Subscription lock-in
+Adyen,ADYEY,Netherlands,Payments,High-end payments infra
+AIA Group,AIAGY,Hong Kong,Insurance,High persistency
+Airbnb,ABNB,US,Travel,Asset-light platform
+Alibaba,BABA,China,Tech,E-commerce + cloud
+Alimentation Couche-Tard,ATD.TO,Canada,Retail,Retail roll-up
+Align Technology,ALGN,US,Healthcare,Orthodontics moat
+Alphabet,GOOGL,US,Tech,Network effects + data scale
+Amadeus IT Group,AMADF,Spain,Travel Tech,High switching costs
+Amazon,AMZN,US,Tech,Retail + AWS ecosystem
+American Express,AXP,US,Payments,Brand + closed loop
+American Tower,AMT,US,Real Estate,Tower infrastructure
+AMETEK,AME,US,Industrials,Serial acquirer
+Aon,AON,UK,Insurance,Global broker scale
+Apple,AAPL,US,Tech,Brand + ecosystem flywheel
+Applied Materials,AMAT,US,Semiconductors,Deposition equipment
+Arista Networks,ANET,US,Tech,Networking infrastructure
+Arm Holdings,ARM,UK,Semiconductors,CPU architecture licensing
+ASML,ASML,Netherlands,Semiconductors,EUV monopoly
+AstraZeneca,AZN,UK,Pharma,High ROIC pipeline
+Autodesk,ADSK,US,Software,Industry standard
+AutoZone,AZO,US,Retail,DIFM auto parts
+Axon Enterprise,AXON,US,Tech,Public safety tech
+Berkshire Hathaway,BRK.B,US,Conglomerate,Capital allocation engine
+BlackRock,BLK,US,Asset Management,AUM scale + tech
+Block,SQ,US,Payments,Platform ecosystem
+Booking Holdings,BKNG,US,Travel,Network effects
+Broadcom,AVGO,US,Semiconductors,Diversified chips + software
+Broadridge,BR,US,Business Services,Proxy processing monopoly
+Brookfield Asset Management,BAM,Canada,Asset Management,Capital allocator
+Brown & Brown,BRO,US,Insurance,Insurance broker flywheel
+Brown-Forman,BF.B,US,Consumer,Brand + discipline
+Cadence Design Systems,CDNS,US,Software,EDA duopoly
+Canadian National Railway,CNI,Canada,Transport,Duopoly moat
+Canadian Pacific Kansas City,CP,Canada,Transport,Rail duopoly
+Carlisle Companies,CSL,US,Industrials,High-ROIC building products
+Celsius Holdings,CELH,US,Consumer,Energy drink growth
+Charles Schwab,SCHW,US,Financial,Scale economics
+Check Point Software,CHKP,Israel,Software,Cybersecurity
+Chipotle,CMG,US,Restaurants,Fast casual scale
+Church & Dwight,CHD,US,Consumer,Focused SKU dominance
+Cintas,CTAS,US,Industrials,Uniform rental recurring
+Clorox,CLX,US,Consumer,Stable margins
+CME Group,CME,US,Financial,Exchange monopoly
+Coca-Cola,KO,US,Consumer,Distribution monopoly
+Colgate-Palmolive,CL,US,Consumer,Oral care monopoly
+Constellation Brands,STZ,US,Consumer,Alcohol pricing power
+Constellation Software,CSU.TO,Canada,Software,Best serial acquirer
+Copart,CPRT,US,Industrials,Salvage marketplace monopoly
+CoStar Group,CSGP,US,Business Services,Commercial RE data
+Costco,COST,US,Retail,Scale + trust
+CrowdStrike,CRWD,US,Software,Cybersecurity platform
+Crown Castle,CCI,US,Real Estate,Tower infrastructure
+CSL Limited,CSLLY,Australia,Biotech,High ROIC plasma
+CSW Industrials,CSWI,US,Industrials,Niche industrial
+CSX,CSX,US,Transport,Rail margins
+Daikin,DKILY,Japan,Industrials,Global HVAC leader
+Danaher,DHR,US,Healthcare,DBS flywheel
+Datadog,DDOG,US,Software,Observability platform
+DexCom,DXCM,US,Healthcare,CGM technology
+Diageo,DEO,UK,Consumer,Alcohol pricing power
+Digital Realty,DLR,US,Real Estate,Data center recurring
+Domino's Pizza,DPZ,US,Restaurants,Franchise economics
+Duolingo,DUOL,US,Tech,Language learning platform
+Eaton,ETN,US,Industrials,Electrical secular tailwinds
+Ecolab,ECL,US,Industrials,Cleaning/sanitation moat
+Edwards Lifesciences,EW,US,Healthcare,Structural heart monopoly
+e.l.f. Beauty,ELF,US,Consumer,Value beauty growth
+Elevance Health,ELV,US,Healthcare,Managed care scale
+Equifax,EFX,US,Business Services,Credit bureau oligopoly
+Equinix,EQIX,US,Real Estate,Data center locations
+EssilorLuxottica,ESLOY,France,Healthcare,Vertical integration moat
+Estée Lauder,EL,US,Consumer,Premium beauty
+Etsy,ETSY,US,Tech,Marketplace platform
+Experian,EXPGY,UK,Business Services,Credit bureau monopoly
+FactSet,FDS,US,Financial,Embedded financial workflows
+Fair Isaac (FICO),FICO,US,Business Services,Scoring monopoly
+Fastenal,FAST,US,Industrials,Distribution + scale
+Ferrari,RACE,Italy,Consumer,Ultra-luxury scarcity
+Fidelity National,FIS,US,Payments,Switching costs
+Fiserv,FISV,US,Payments,Switching costs
+Fortinet,FTNT,US,Software,Cybersecurity scale
+Franco-Nevada,FNV,Canada,Mining,Royalty model
+Global Payments,GPN,US,Payments,Scale + switching
+Graco,GGG,US,Industrials,Niche dominance
+Grainger,GWW,US,Industrials,MRO distribution
+Heico,HEI,US,Industrials,PMA aerospace monopoly
+Heineken,HEINY,Netherlands,Consumer,Global scale
+Hermès,HESAY,France,Consumer,Scarcity + margins
+Home Depot,HD,US,Retail,Scale + pro business
+IDEXX Labs,IDXX,US,Healthcare,Vet diagnostics monopoly
+Illinois Tool Works,ITW,US,Industrials,Decentralized ROIC
+Inditex (Zara),IDEXY,Spain,Consumer,Fast-fashion moat
+Intercontinental Exchange,ICE,US,Financial,Clearinghouse moat
+InterDigital,IDCC,US,Tech,Patent licensing
+Intuit,INTU,US,Software,Embedded in SMB workflows
+Intuitive Surgical,ISRG,US,Healthcare,Razor-blade model
+Johnson & Johnson,JNJ,US,Healthcare,Pharma margins + balance sheet
+Keyence,KYCCF,Japan,Industrials,Ultra-high margins
+Kinsale Capital,KNSL,US,Insurance,Specialty underwriting ROIC
+KLA Corp,KLAC,US,Semiconductors,Inspection equipment
+Lam Research,LRCX,US,Semiconductors,Etch equipment oligopoly
+London Stock Exchange,LSEG,UK,Financial,Data + exchange
+L'Oréal,LRLCY,France,Consumer,Global beauty moat
+Lululemon,LULU,Canada,Consumer,Brand + community
+LVMH,LVMUY,France,Consumer,Luxury pricing power
+Manhattan Associates,MANH,US,Software,Supply chain software
+Markel,MKL,US,Insurance,Mini-Berkshire model
+Marsh & McLennan,MMC,US,Insurance,Broker model
+Marvell Technology,MRVL,US,Semiconductors,Custom silicon
+Mastercard,MA,US,Payments,Network effects duopoly
+McDonald's,MCD,US,Restaurants,Franchise royalties
+Medtronic,MDT,US,Healthcare,Installed base annuity
+MercadoLibre,MELI,Argentina,Tech,LatAm ecosystem
+Meta Platforms,META,US,Tech,Social network effects
+Microsoft,MSFT,US,Software,Platform monopoly + recurring cash
+Moncler,MONRF,Italy,Consumer,Luxury outerwear
+Monolithic Power Systems,MPWR,US,Semiconductors,Analog power ICs
+Monster Beverage,MNST,US,Consumer,Extreme margin profile
+Moody's,MCO,US,Financial,Regulatory + IP moat
+Morningstar,MORN,US,Financial,Data + trust
+MSA Safety,MSA,US,Industrials,Safety equipment
+MSCI,MSCI,US,Financial,Index/IP royalty machine
+Nasdaq,NDAQ,US,Financial,Market infrastructure
+Nestlé,NSRGY,Switzerland,Consumer,Brand + distribution
+Netflix,NFLX,US,Tech,Content + scale
+Nike,NKE,US,Consumer,Global brand moat
+Nintendo,NTDOY,Japan,Tech,Gaming IP
+Nordson,NDSN,US,Industrials,Precision niches
+Novo Nordisk,NVO,Denmark,Pharma,GLP-1 monopoly
+Nu Holdings,NU,Brazil,Financial,Digital banking growth
+NVIDIA,NVDA,US,Semiconductors,AI/GPU dominance
+NVR Inc,NVR,US,Homebuilding,Asset-light homebuilder
+Old Dominion Freight Line,ODFL,US,Industrials,Best-in-class LTL
+Old Republic International,ORI,US,Insurance,Insurance discipline
+Oracle,ORCL,US,Software,Installed base annuity
+O'Reilly Automotive,ORLY,US,Retail,DIFM auto parts
+Palantir,PLTR,US,Software,Enterprise data platform
+Palo Alto Networks,PANW,US,Software,Mission-critical security
+Palomar Holdings,PLMR,US,Insurance,Specialty insurance
+Parker-Hannifin,PH,US,Industrials,Motion control moat
+Paychex,PAYX,US,Business Services,Payroll toll booth
+PayPal,PYPL,US,Payments,Platform two-sided
+PepsiCo,PEP,US,Consumer,Distribution + snacks
+Ping An Insurance,PNGAY,China,Insurance,Large profitable
+Pool Corp,POOL,US,Industrials,Distribution moat
+Procter & Gamble,PG,US,Consumer,Brand portfolio ROIC
+Progressive,PGR,US,Insurance,Data-driven underwriting
+Reddit,RDDT,US,Tech,Community platform
+RELX Group,RELX,UK,Business Services,Data/IP royalty
+Republic Services,RSG,US,Industrials,Regulatory moat
+Roche,RHHBY,Switzerland,Pharma,Strong pipeline
+Roku,ROKU,US,Tech,Streaming platform
+Rollins,ROL,US,Business Services,Pest control annuity
+Roper Technologies,ROP,US,Industrials,Serial compounder playbook
+S&P Global,SPGI,US,Financial,Regulatory + IP moat
+Safran,SAFRY,France,Industrials,Aerospace engines
+Salesforce,CRM,US,Software,Sticky enterprise data
+SAP,SAP,Germany,Software,ERP switching costs
+Sea Limited,SE,Singapore,Tech,Platform economics
+ServiceNow,NOW,US,Software,Workflow OS for enterprises
+Sherwin-Williams,SHW,US,Industrials,Paint distribution
+Shift4 Payments,FOUR,US,Payments,Integrated payments
+Shiseido,SSDOY,Japan,Consumer,Beauty brands
+Shopify,SHOP,Canada,Software,Merchant OS
+Snowflake,SNOW,US,Software,Cloud data platform
+Starbucks,SBUX,US,Restaurants,Brand + global unit economics
+Stryker,SYK,US,Healthcare,High switching costs
+Synopsys,SNPS,US,Software,EDA duopoly
+T. Rowe Price,TROW,US,Asset Management,Capital-light asset mgmt
+Taiwan Semiconductor (TSMC),TSM,Taiwan,Semiconductors,Foundry dominance
+Tencent,TCEHY,China,Tech,Platform + optionality
+Texas Instruments,TXN,US,Semiconductors,High ROIC analog
+Texas Roadhouse,TXRH,US,Restaurants,Casual dining growth
+Thermo Fisher,TMO,US,Healthcare,Tools monopoly
+Topicus,TOI.V,Canada,Software,CSU Europe clone
+Trade Desk,TTD,US,Tech,Programmatic advertising
+Trane Technologies,TT,US,Industrials,HVAC efficiency
+TransDigm,TDG,US,Industrials,Aerospace pricing power
+TransUnion,TRU,US,Business Services,Credit bureau oligopoly
+Transurban,TRAUF,Australia,Infrastructure,Toll roads FCF
+Trex,TREX,US,Industrials,Composite decking
+Tyler Technologies,TYL,US,Software,Gov software lock-in
+Uber,UBER,US,Tech,Mobility platform
+Ulta Beauty,ULTA,US,Retail,Beauty retail dominance
+Union Pacific,UNP,US,Transport,Rail ROIC
+UnitedHealth,UNH,US,Healthcare,Scale + Optum integration
+Veeva Systems,VEEV,US,Software,Life sciences vertical
+Veralto,VLTO,US,Industrials,Danaher-style carveout
+Verisk Analytics,VRSK,US,Business Services,Data monopoly niches
+Visa,V,US,Payments,Toll booth economics
+Waste Management,WM,US,Industrials,Regulatory moat
+Waters Corp,WAT,US,Healthcare,Analytical instruments
+Watsco,WSO,US,Industrials,HVAC distribution
+West Pharmaceutical,WST,US,Healthcare,Drug delivery containers
+Williams-Sonoma,WSM,US,Retail,Premium home brands
+Wingstop,WING,US,Restaurants,Franchise growth
+Woolworths Group,WOLWF,Australia,Retail,Stable margins
+Yum! Brands,YUM,US,Restaurants,Franchise model
+Zoetis,ZTS,US,Healthcare,Animal health pricing

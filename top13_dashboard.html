@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Capital Compounders Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-tertiary: #1a1a25;
+            --bg-card: #15151f;
+            --text-primary: #f0f0f5;
+            --text-secondary: #8888a0;
+            --text-muted: #555566;
+            --accent-green: #00d9a0;
+            --accent-blue: #3b82f6;
+            --accent-amber: #f59e0b;
+            --accent-red: #ef4444;
+            --accent-purple: #a855f7;
+            --border-color: #2a2a3a;
+            --shadow: 0 4px 20px rgba(0,0,0,0.4);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.5;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1.5rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+        
+        /* Summary Cards */
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 0.75rem;
+            margin: 1.5rem 0;
+        }
+        
+        @media (max-width: 900px) {
+            .summary-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        @media (max-width: 500px) {
+            .summary-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        .summary-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 0.875rem 0.5rem;
+            text-align: center;
+        }
+        
+        .summary-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: var(--accent-green);
+        }
+        
+        .summary-label {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-top: 0.25rem;
+        }
+        
+        .summary-card.portfolio-irr .summary-value { color: var(--accent-green); }
+        .summary-card.spy-irr .summary-value { color: var(--text-secondary); }
+        .summary-card.portfolio-growth .summary-value { color: var(--accent-green); }
+        .summary-card.spy-growth .summary-value { color: var(--text-secondary); }
+        .summary-card.ust-yield .summary-value { color: var(--text-muted); }
+        .summary-card.fed-funds .summary-value { color: var(--text-muted); }
+        
+        /* Filter label */
+        .filter-label {
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            margin-right: 0.5rem;
+        }
+        
+        /* Filter divider */
+        .filter-divider {
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            padding: 0 0.25rem;
+        }
+        
+        /* Action-colored filter buttons */
+        .action-buy-btn { border-color: var(--accent-green) !important; color: var(--accent-green) !important; }
+        .action-buy-btn.active { background: var(--accent-green) !important; color: white !important; }
+        .action-add-btn { border-color: var(--accent-blue) !important; color: var(--accent-blue) !important; }
+        .action-add-btn.active { background: var(--accent-blue) !important; color: white !important; }
+        .action-hold-btn { border-color: var(--accent-amber) !important; color: var(--accent-amber) !important; }
+        .action-hold-btn.active { background: var(--accent-amber) !important; color: white !important; }
+        .action-sell-btn { border-color: var(--accent-red) !important; color: var(--accent-red) !important; }
+        .action-sell-btn.active { background: var(--accent-red) !important; color: white !important; }
+        
+        /* Ticker Check Section */
+        .ticker-check-section {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .ticker-check-header {
+            margin-bottom: 1rem;
+        }
+        
+        .ticker-check-header h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 0 0 0.25rem 0;
+        }
+        
+        .ticker-check-subtitle {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin: 0;
+        }
+        
+        .ticker-check-input-row {
+            display: flex;
+            gap: 0.75rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .ticker-input {
+            flex: 1;
+            max-width: 200px;
+            padding: 0.625rem 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            background: var(--bg-tertiary);
+            color: var(--text-primary);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+        
+        .ticker-input:focus {
+            outline: none;
+            border-color: var(--accent-blue);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+        }
+        
+        .ticker-input::placeholder {
+            color: var(--text-muted);
+            text-transform: none;
+        }
+        
+        .check-ticker-btn {
+            padding: 0.625rem 1.25rem;
+            background: var(--accent-blue);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .check-ticker-btn:hover {
+            background: #2563eb;
+            transform: translateY(-1px);
+        }
+        
+        .check-ticker-btn:disabled {
+            background: var(--text-muted);
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .ticker-result {
+            margin-top: 1rem;
+            padding: 1rem;
+            background: var(--bg-card);
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+        
+        .ticker-result.hidden {
+            display: none;
+        }
+        
+        .ticker-result-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .ticker-result-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        
+        .ticker-result-action {
+            padding: 0.375rem 0.75rem;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 0.85rem;
+        }
+        
+        .ticker-result-action.buy { background: rgba(0, 217, 160, 0.2); color: var(--accent-green); }
+        .ticker-result-action.add { background: rgba(59, 130, 246, 0.2); color: var(--accent-blue); }
+        .ticker-result-action.hold { background: rgba(245, 158, 11, 0.2); color: var(--accent-amber); }
+        .ticker-result-action.sell { background: rgba(239, 68, 68, 0.2); color: var(--accent-red); }
+        
+        .ticker-result-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 1rem;
+        }
+        
+        .ticker-result-metric {
+            text-align: center;
+        }
+        
+        .ticker-result-metric-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        
+        .ticker-result-metric-label {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-top: 0.25rem;
+        }
+        
+        .ticker-result-note {
+            margin-top: 1rem;
+            padding-top: 0.75rem;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+        
+        .ticker-result-error {
+            color: var(--accent-red);
+            text-align: center;
+            padding: 1rem;
+        }
+        
+        .ticker-result-loading {
+            text-align: center;
+            color: var(--text-muted);
+            padding: 1rem;
+        }
+        
+        /* Definitions Section */
+        .definitions {
+            margin-top: 2rem;
+            padding: 1.25rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+        }
+        
+        .definitions h4 {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1rem;
+        }
+        
+        .definitions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 0.75rem;
+        }
+        
+        .def-item {
+            display: flex;
+            gap: 0.5rem;
+            font-size: 0.8rem;
+            line-height: 1.4;
+        }
+        
+        .def-term {
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 600;
+            color: var(--text-primary);
+            white-space: nowrap;
+        }
+        
+        .def-desc {
+            color: var(--text-muted);
+        }
+        
+        @media (max-width: 600px) {
+            .definitions-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Filters */
+        .filters {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+        
+        .filter-btn {
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--border-color);
+            background: var(--bg-tertiary);
+            color: var(--text-secondary);
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.875rem;
+            transition: all 0.2s;
+        }
+        
+        .filter-btn:hover {
+            border-color: var(--accent-blue);
+            color: var(--text-primary);
+        }
+        
+        .filter-btn.active {
+            background: var(--accent-blue);
+            border-color: var(--accent-blue);
+            color: white;
+        }
+        
+        /* Table */
+        .table-container {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            background: var(--bg-card);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.875rem;
+        }
+        
+        th {
+            background: var(--bg-tertiary);
+            padding: 0.875rem 0.75rem;
+            text-align: left;
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+            position: sticky;
+            top: 0;
+            cursor: pointer;
+            white-space: nowrap;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        th:hover {
+            color: var(--text-primary);
+            background: var(--bg-secondary);
+        }
+        
+        td {
+            padding: 0.75rem;
+            border-bottom: 1px solid var(--border-color);
+            vertical-align: middle;
+        }
+        
+        tr:last-child td {
+            border-bottom: none;
+        }
+        
+        tr:hover {
+            background: var(--bg-tertiary);
+        }
+        
+        /* Cell styles */
+        .ticker-cell {
+            min-width: 120px;
+        }
+        
+        .ticker {
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 600;
+            color: var(--text-primary);
+            display: block;
+        }
+        
+        .company-name {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            display: block;
+            margin-top: 2px;
+        }
+        
+        .score-cell {
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 600;
+        }
+        
+        .metric-cell {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--text-secondary);
+        }
+        
+        .price-cell {
+            font-family: 'JetBrains Mono', monospace;
+        }
+        
+        .irr-cell {
+            font-family: 'JetBrains Mono', monospace;
+        }
+        
+        .irr-value {
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            background: var(--bg-tertiary);
+        }
+        
+        .mos-cell {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--accent-green);
+        }
+        
+        /* Badges */
+        .tier-badge, .action-badge {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+        
+        .tier-exceptional {
+            background: rgba(168, 85, 247, 0.2);
+            color: var(--accent-purple);
+            border: 1px solid rgba(168, 85, 247, 0.3);
+        }
+        
+        .tier-elite {
+            background: rgba(59, 130, 246, 0.2);
+            color: var(--accent-blue);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+        }
+        
+        .tier-quality {
+            background: rgba(136, 136, 160, 0.2);
+            color: var(--text-secondary);
+            border: 1px solid rgba(136, 136, 160, 0.3);
+        }
+        
+        .action-buy {
+            background: rgba(0, 217, 160, 0.2);
+            color: var(--accent-green);
+            border: 1px solid rgba(0, 217, 160, 0.3);
+        }
+        
+        .action-add {
+            background: rgba(59, 130, 246, 0.2);
+            color: var(--accent-blue);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+        }
+        
+        .action-hold {
+            background: rgba(245, 158, 11, 0.15);
+            color: var(--accent-amber);
+            border: 1px solid rgba(245, 158, 11, 0.2);
+        }
+        
+        .action-sell {
+            background: rgba(239, 68, 68, 0.2);
+            color: var(--accent-red);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+        }
+        
+        /* Targets */
+        .targets-cell {
+            white-space: nowrap;
+        }
+        
+        .target {
+            display: inline-block;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            padding: 0.125rem 0.375rem;
+            margin-right: 0.25rem;
+            border-radius: 3px;
+        }
+        
+        .target.buy15 {
+            background: rgba(0, 217, 160, 0.15);
+            color: var(--accent-green);
+        }
+        
+        .target.buy12 {
+            background: rgba(245, 158, 11, 0.15);
+            color: var(--accent-amber);
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-size: 0.75rem;
+        }
+        
+        /* Mobile optimizations */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0.5rem;
+            }
+            
+            h1 {
+                font-size: 1.25rem;
+            }
+            
+            .summary-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.5rem;
+            }
+            
+            .summary-card {
+                padding: 0.75rem;
+            }
+            
+            .summary-value {
+                font-size: 1.5rem;
+            }
+            
+            table {
+                font-size: 0.8rem;
+            }
+            
+            th, td {
+                padding: 0.5rem 0.375rem;
+            }
+            
+            .company-name {
+                display: none;
+            }
+            
+            .filters {
+                padding: 0.75rem;
+            }
+            
+            .filter-btn {
+                padding: 0.375rem 0.75rem;
+                font-size: 0.8rem;
+            }
+        }
+        
+        /* Scroll shadows */
+        .table-container {
+            position: relative;
+        }
+        
+        .table-container::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 30px;
+            background: linear-gradient(to left, var(--bg-card), transparent);
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+        
+        .table-container.scrollable::after {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div>
+                <h1>Capital Compounders</h1>
+                <p class="subtitle">Investment Screening Dashboard • Updated 2026-01-26</p>
+            </div>
+        </div>
+    </header>
+    
+    <main class="container">
+        <div class="summary-grid">
+            <div class="summary-card portfolio-irr">
+                <div class="summary-value">27.5%</div>
+                <div class="summary-label">Portfolio IRR</div>
+            </div>
+            <div class="summary-card spy-irr">
+                <div class="summary-value">9.5%</div>
+                <div class="summary-label">S&P 500 IRR</div>
+            </div>
+            <div class="summary-card portfolio-growth">
+                <div class="summary-value">23%</div>
+                <div class="summary-label">Portfolio Growth</div>
+            </div>
+            <div class="summary-card spy-growth">
+                <div class="summary-value">6%</div>
+                <div class="summary-label">S&P 500 Growth</div>
+            </div>
+            <div class="summary-card ust-yield">
+                <div class="summary-value">4.2%</div>
+                <div class="summary-label">10Y Treasury</div>
+            </div>
+            <div class="summary-card fed-funds">
+                <div class="summary-value">3.6%</div>
+                <div class="summary-label">Fed Funds</div>
+            </div>
+        </div>
+        
+        <div class="filters">
+            <span class="filter-label">Filter:</span>
+            <button class="filter-btn action-buy-btn active" data-filter="action" data-value="BUY">BUY</button>
+            <button class="filter-btn action-hold-btn" data-filter="action" data-value="HOLD">HOLD</button>
+            <button class="filter-btn" data-filter="all">All</button>
+        </div>
+        
+        <!-- Manual Ticker Check -->
+        <div class="ticker-check-section">
+            <div class="ticker-check-header">
+                <h3>📊 Check Any Ticker</h3>
+                <p class="ticker-check-subtitle">Enter a ticker to run through our valuation model</p>
+            </div>
+            <div class="ticker-check-input-row">
+                <input type="text" id="ticker-input" class="ticker-input" placeholder="Enter ticker (e.g., AAPL)" maxlength="5" />
+                <button id="check-ticker-btn" class="check-ticker-btn">Analyze</button>
+            </div>
+            <div id="ticker-result" class="ticker-result hidden">
+                <!-- Results populated by JavaScript -->
+            </div>
+        </div>
+        
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th data-sort="ticker">Ticker</th>
+                        <th data-sort="iroic">Inc ROIC</th>
+                        <th data-sort="growth">Growth</th>
+                        <th data-sort="price">Price</th>
+                        <th data-sort="irr">IRR</th>
+                        <th data-sort="mos">MOS</th>
+                        <th data-sort="action">Action</th>
+                        <th>Buy Below</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+        <tr class="company-row" data-ticker="NVDA" data-tier="EXCEPTIONAL" data-sector="Technology" data-action="BUY" data-irr="46.6" data-mos="115.1">
+            <td class="ticker-cell">
+                <span class="ticker">NVDA</span>
+                <span class="company-name">NVIDIA Corporation</span>
+            </td>
+            <td class="metric-cell">145.0%</td>
+            <td class="metric-cell">43.0%</td>
+            <td class="price-cell">$140.00</td>
+            <td class="irr-cell"><span class="irr-value">46.6%</span></td>
+            <td class="mos-cell">115.1%</td>
+            <td><span class="action-badge action-buy">BUY</span></td>
+            <td class="targets-cell">
+                <span class="target buy15" title="15% IRR Target">$133.97</span>
+            </td>
+        </tr>
+        
+        <tr class="company-row" data-ticker="ASML" data-tier="EXCEPTIONAL" data-sector="Technology" data-action="BUY" data-irr="41.4" data-mos="142.6">
+            <td class="ticker-cell">
+                <span class="ticker">ASML</span>
+                <span class="company-name">ASML Holding NV</span>
+            </td>
+            <td class="metric-cell">55.0%</td>
+            <td class="metric-cell">22.0%</td>
+            <td class="price-cell">$750.00</td>
+            <td class="irr-cell"><span class="irr-value">41.4%</span></td>
+            <td class="mos-cell">142.6%</td>
+            <td><span class="action-badge action-buy">BUY</span></td>
+            <td class="targets-cell">
+                <span class="target buy15" title="15% IRR Target">$1373.79</span>
+            </td>
+        </tr>
+        
+        <tr class="company-row" data-ticker="MELI" data-tier="EXCEPTIONAL" data-sector="Consumer Cyclical" data-action="BUY" data-irr="40.3" data-mos="102.3">
+            <td class="ticker-cell">
+                <span class="ticker">MELI</span>
+                <span class="company-name">MercadoLibre Inc</span>
+            </td>
+            <td class="metric-cell">42.0%</td>
+            <td class="metric-cell">32.0%</td>
+            <td class="price-cell">$2050.00</td>
+            <td class="irr-cell"><span class="irr-value">40.3%</span></td>
+            <td class="mos-cell">102.3%</td>
+            <td><span class="action-badge action-buy">BUY</span></td>
+            <td class="targets-cell">
+                <span class="target buy15" title="15% IRR Target">$2460.00</span>
+            </td>
+        </tr>
+        
+        <tr class="company-row" data-ticker="DDOG" data-tier="EXCEPTIONAL" data-sector="Technology" data-action="BUY" data-irr="35.3" data-mos="55.7">
+            <td class="ticker-cell">
+                <span class="ticker">DDOG</span>
+                <span class="company-name">Datadog Inc</span>
+            </td>
+            <td class="metric-cell">52.0%</td>
+            <td class="metric-cell">35.0%</td>
+            <td class="price-cell">$155.00</td>
+            <td class="irr-cell"><span class="irr-value">35.3%</span></td>
+            <td class="mos-cell">55.7%</td>
+            <td><span class="action-badge action-buy">BUY</span></td>
+            <td class="targets-cell">
+                <span class="target buy15" title="15% IRR Target">$130.81</span>
+            </td>
+        </tr>
+        
+        <tr class="company-row" data-ticker="CRWD" data-tier="EXCEPTIONAL" data-sector="Technology" data-action="BUY" data-irr="33.4" data-mos="33.0">
+            <td class="ticker-cell">
+                <span class="ticker">CRWD</span>
+                <span class="company-name">CrowdStrike Holdings</span>
+            </td>
+            <td class="metric-cell">55.0%</td>
+            <td class="metric-cell">35.0%</td>
+            <td class="price-cell">$395.00</td>
+            <td class="irr-cell"><span class="irr-value">33.4%</span></td>
+            <td class="mos-cell">33.0%</td>
+            <td><span class="action-badge action-buy">BUY</span></td>
+            <td class="targets-cell">
+                <span class="target buy15" title="15% IRR Target">$261.32</span>
+            </td>
+        </tr>
+        
+        <tr class="company-row" data-ticker="FTNT" data-tier="EXCEPTIONAL" data-sector="Technology" data-action="BUY" data-irr="25.7" data-mos="45.1">
+            <td class="ticker-cell">
+                <span class="ticker">FTNT</span>
+                <span class="company-name">Fortinet Inc</span>
+            </td>
+            <td class="metric-cell">40.0%</td>
+            <td class="metric-cell">18.0%</td>
+            <td class="price-cell">$105.00</td>
+            <td class="irr-cell"><span class="irr-value">25.7%</span></td>
+            <td class="mos-cell">45.1%</td>
+            <td><span class="action-badge action-buy">BUY</span></td>
+            <td class="targets-cell">
+                <span class="target buy15" title="15% IRR Target">$64.98</span>
+            </td>
+        </tr>
+        
+        <tr class="company-row" data-ticker="NOW" data-tier="EXCEPTIONAL" data-sector="Technology" data-action="BUY" data-irr="25.0" data-mos="18.3">
+            <td class="ticker-cell">
+                <span class="ticker">NOW</span>
+                <span class="company-name">ServiceNow Inc</span>
+            </td>
+            <td class="metric-cell">48.0%</td>
+            <td class="metric-cell">24.0%</td>
+            <td class="price-cell">$1100.00</td>
+            <td class="irr-cell"><span class="irr-value">25.0%</span></td>
+            <td class="mos-cell">18.3%</td>
+            <td><span class="action-badge action-buy">BUY</span></td>
+            <td class="targets-cell">
+                <span class="target buy15" title="15% IRR Target">$836.04</span>
+            </td>
+        </tr>
+        
+        <tr class="company-row" data-ticker="META" data-tier="ELITE" data-sector="Communication Services" data-action="BUY" data-irr="22.4" data-mos="42.8">
+            <td class="ticker-cell">
+                <span class="ticker">META</span>
+                <span class="company-name">Meta Platforms Inc</span>
+            </td>
+            <td class="metric-cell">35.0%</td>
+            <td class="metric-cell">15.0%</td>
+            <td class="price-cell">$620.00</td>
+            <td class="irr-cell"><span class="irr-value">22.4%</span></td>
+            <td class="mos-cell">42.8%</td>
+            <td><span class="action-badge action-buy">BUY</span></td>
+            <td class="targets-cell">
+                <span class="target buy15" title="15% IRR Target">$349.74</span>
+            </td>
+        </tr>
+        
+        <tr class="company-row" data-ticker="PANW" data-tier="EXCEPTIONAL" data-sector="Technology" data-action="BUY" data-irr="20.5" data-mos="25.9">
+            <td class="ticker-cell">
+                <span class="ticker">PANW</span>
+                <span class="company-name">Palo Alto Networks</span>
+            </td>
+            <td class="metric-cell">45.0%</td>
+            <td class="metric-cell">22.0%</td>
+            <td class="price-cell">$395.00</td>
+            <td class="irr-cell"><span class="irr-value">20.5%</span></td>
+            <td class="mos-cell">25.9%</td>
+            <td><span class="action-badge action-buy">BUY</span></td>
+            <td class="targets-cell">
+                <span class="target buy15" title="15% IRR Target">$195.12</span>
+            </td>
+        </tr>
+        
+        <tr class="company-row" data-ticker="SNPS" data-tier="ELITE" data-sector="Technology" data-action="BUY" data-irr="17.7" data-mos="19.7">
+            <td class="ticker-cell">
+                <span class="ticker">SNPS</span>
+                <span class="company-name">Synopsys Inc</span>
+            </td>
+            <td class="metric-cell">38.0%</td>
+            <td class="metric-cell">14.0%</td>
+            <td class="price-cell">$530.00</td>
+            <td class="irr-cell"><span class="irr-value">17.7%</span></td>
+            <td class="mos-cell">19.7%</td>
+            <td><span class="action-badge action-buy">BUY</span></td>
+            <td class="targets-cell">
+                <span class="target buy15" title="15% IRR Target">$239.18</span>
+            </td>
+        </tr>
+        
+        <tr class="company-row" data-ticker="MSFT" data-tier="ELITE" data-sector="Technology" data-action="BUY" data-irr="17.3" data-mos="17.9">
+            <td class="ticker-cell">
+                <span class="ticker">MSFT</span>
+                <span class="company-name">Microsoft Corporation</span>
+            </td>
+            <td class="metric-cell">38.0%</td>
+            <td class="metric-cell">14.0%</td>
+            <td class="price-cell">$455.00</td>
+            <td class="irr-cell"><span class="irr-value">17.3%</span></td>
+            <td class="mos-cell">17.9%</td>
+            <td><span class="action-badge action-buy">BUY</span></td>
+            <td class="targets-cell">
+                <span class="target buy15" title="15% IRR Target">$178.43</span>
+            </td>
+        </tr>
+        
+        <tr class="company-row" data-ticker="ADBE" data-tier="ELITE" data-sector="Technology" data-action="BUY" data-irr="15.8" data-mos="26.5">
+            <td class="ticker-cell">
+                <span class="ticker">ADBE</span>
+                <span class="company-name">Adobe Inc</span>
+            </td>
+            <td class="metric-cell">32.0%</td>
+            <td class="metric-cell">11.0%</td>
+            <td class="price-cell">$485.00</td>
+            <td class="irr-cell"><span class="irr-value">15.8%</span></td>
+            <td class="mos-cell">26.5%</td>
+            <td><span class="action-badge action-buy">BUY</span></td>
+            <td class="targets-cell">
+                <span class="target buy15" title="15% IRR Target">$228.01</span>
+            </td>
+        </tr>
+        
+        <tr class="company-row" data-ticker="MA" data-tier="EXCEPTIONAL" data-sector="Financial Services" data-action="BUY" data-irr="15.5" data-mos="13.1">
+            <td class="ticker-cell">
+                <span class="ticker">MA</span>
+                <span class="company-name">Mastercard Inc</span>
+            </td>
+            <td class="metric-cell">50.0%</td>
+            <td class="metric-cell">13.0%</td>
+            <td class="price-cell">$540.00</td>
+            <td class="irr-cell"><span class="irr-value">15.5%</span></td>
+            <td class="mos-cell">13.1%</td>
+            <td><span class="action-badge action-buy">BUY</span></td>
+            <td class="targets-cell">
+                <span class="target buy15" title="15% IRR Target">$197.66</span>
+            </td>
+        </tr>
+        
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="definitions">
+            <h4>Definitions</h4>
+            <div class="definitions-grid">
+                <div class="def-item"><span class="def-term">Portfolio IRR</span> <span class="def-desc">Equal-weighted average implied return of our picks at current prices</span></div>
+                <div class="def-item"><span class="def-term">S&P 500 IRR</span> <span class="def-desc">Implied return of S&P 500 (earnings yield + expected growth)</span></div>
+                <div class="def-item"><span class="def-term">Portfolio Growth</span> <span class="def-desc">Equal-weighted average 3-year revenue CAGR of our picks</span></div>
+                <div class="def-item"><span class="def-term">S&P 500 Growth</span> <span class="def-desc">Average revenue growth rate of S&P 500 companies (~6%)</span></div>
+                <div class="def-item"><span class="def-term">10Y Treasury</span> <span class="def-desc">Yield on 10-year U.S. Treasury bonds — long-term risk-free rate</span></div>
+                <div class="def-item"><span class="def-term">Fed Funds</span> <span class="def-desc">Federal Reserve target rate — proxy for cash and money market yields</span></div>
+                <div class="def-item"><span class="def-term">Inc ROIC</span> <span class="def-desc">Incremental Return on Invested Capital — return on each new dollar invested</span></div>
+                <div class="def-item"><span class="def-term">Growth</span> <span class="def-desc">3-Year Revenue CAGR — compound annual growth rate of revenue</span></div>
+                <div class="def-item"><span class="def-term">IRR</span> <span class="def-desc">Implied Internal Rate of Return — expected annual return at current price</span></div>
+                <div class="def-item"><span class="def-term">MOS</span> <span class="def-desc">Margin of Safety — discount to our calculated fair value</span></div>
+                <div class="def-item"><span class="def-term">Buy Below</span> <span class="def-desc">Price target for 15% expected IRR</span></div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>Capital Compounder Investment System v1.0</p>
+        <p>Based on Investment Charter • <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6c0f000d1e071e030e091e180215092c0b010d0500420f0301">[email&#160;protected]</a></p>
+    </footer>
+    
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        // Filter functionality
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                const filter = this.dataset.filter;
+                const value = this.dataset.value;
+                
+                document.querySelectorAll('.company-row').forEach(row => {
+                    if (filter === 'all') {
+                        row.style.display = '';
+                    } else if (filter === 'tier') {
+                        row.style.display = row.dataset.tier === value ? '' : 'none';
+                    } else if (filter === 'action') {
+                        row.style.display = row.dataset.action === value ? '' : 'none';
+                    }
+                });
+            });
+        });
+        
+        // Sort functionality
+        document.querySelectorAll('th[data-sort]').forEach(th => {
+            th.addEventListener('click', function() {
+                const table = this.closest('table');
+                const tbody = table.querySelector('tbody');
+                const rows = Array.from(tbody.querySelectorAll('tr'));
+                const sortKey = this.dataset.sort;
+                const isAsc = this.classList.contains('sort-asc');
+                
+                document.querySelectorAll('th').forEach(h => h.classList.remove('sort-asc', 'sort-desc'));
+                this.classList.add(isAsc ? 'sort-desc' : 'sort-asc');
+                
+                rows.sort((a, b) => {
+                    let aVal, bVal;
+                    
+                    switch(sortKey) {
+                        case 'ticker':
+                            aVal = a.dataset.ticker;
+                            bVal = b.dataset.ticker;
+                            break;
+                        case 'tier':
+                            const tierOrder = {'EXCEPTIONAL': 0, 'ELITE': 1, 'QUALITY': 2, 'REVIEW': 3};
+                            aVal = tierOrder[a.dataset.tier] || 4;
+                            bVal = tierOrder[b.dataset.tier] || 4;
+                            break;
+                        case 'action':
+                            const actionOrder = {'BUY': 0, 'WATCH': 1, 'HOLD': 2, 'TRIM': 3};
+                            aVal = actionOrder[a.dataset.action] || 4;
+                            bVal = actionOrder[b.dataset.action] || 4;
+                            break;
+                        default:
+                            const colIndex = Array.from(th.parentNode.children).indexOf(th);
+                            aVal = parseFloat(a.children[colIndex].textContent.replace(/[$%,]/g, '')) || 0;
+                            bVal = parseFloat(b.children[colIndex].textContent.replace(/[$%,]/g, '')) || 0;
+                    }
+                    
+                    if (isAsc) {
+                        return aVal > bVal ? -1 : aVal < bVal ? 1 : 0;
+                    } else {
+                        return aVal < bVal ? -1 : aVal > bVal ? 1 : 0;
+                    }
+                });
+                
+                rows.forEach(row => tbody.appendChild(row));
+            });
+        });
+        
+        // Check for horizontal scroll
+        const tableContainer = document.querySelector('.table-container');
+        function checkScroll() {
+            if (tableContainer.scrollWidth > tableContainer.clientWidth) {
+                tableContainer.classList.add('scrollable');
+            } else {
+                tableContainer.classList.remove('scrollable');
+            }
+        }
+        checkScroll();
+        window.addEventListener('resize', checkScroll);
+        
+        // Ticker Check Functionality
+        const tickerInput = document.getElementById('ticker-input');
+        const checkBtn = document.getElementById('check-ticker-btn');
+        const resultDiv = document.getElementById('ticker-result');
+        
+        // Sample data for demo (in production, this would call an API)
+        const sampleData = {
+            'AAPL': { name: 'Apple Inc.', price: 245, irr: 9.2, mos: -5, action: 'HOLD', score: 68, incRoic: 28, growth: 8, iv: 232, tier: 'QUALITY' },
+            'GOOGL': { name: 'Alphabet Inc.', price: 195, irr: 14.5, mos: 18, action: 'ADD', score: 72, incRoic: 32, growth: 14, iv: 230, tier: 'ELITE' },
+            'AMZN': { name: 'Amazon.com Inc.', price: 225, irr: 16.2, mos: 22, action: 'BUY', score: 78, incRoic: 35, growth: 18, iv: 275, tier: 'ELITE' },
+            'TSLA': { name: 'Tesla Inc.', price: 410, irr: 6.5, mos: -25, action: 'SELL', score: 55, incRoic: 18, growth: 12, iv: 328, tier: 'REVIEW' },
+            'V': { name: 'Visa Inc.', price: 315, irr: 13.8, mos: 12, action: 'ADD', score: 82, incRoic: 42, growth: 11, iv: 353, tier: 'EXCEPTIONAL' },
+            'JPM': { name: 'JPMorgan Chase', price: 245, irr: 0, mos: 0, action: 'EXCLUDED', score: 0, incRoic: 0, growth: 0, iv: 0, tier: 'EXCLUDED', note: 'Banks excluded from universe per investment charter' },
+            'XOM': { name: 'Exxon Mobil', price: 118, irr: 0, mos: 0, action: 'EXCLUDED', score: 0, incRoic: 0, growth: 0, iv: 0, tier: 'EXCLUDED', note: 'Energy sector excluded from universe per investment charter' },
+        };
+        
+        // Also check if ticker is in our portfolio
+        const portfolioTickers = {};
+        document.querySelectorAll('.company-row').forEach(row => {
+            const ticker = row.querySelector('.ticker')?.textContent;
+            if (ticker) portfolioTickers[ticker] = true;
+        });
+        
+        function checkTicker() {
+            const ticker = tickerInput.value.trim().toUpperCase();
+            if (!ticker) return;
+            
+            resultDiv.classList.remove('hidden');
+            resultDiv.innerHTML = '<div class="ticker-result-loading">⏳ Analyzing ' + ticker + '...</div>';
+            
+            // Simulate API delay
+            setTimeout(() => {
+                // Check if in portfolio first
+                if (portfolioTickers[ticker]) {
+                    const row = document.querySelector(`[data-ticker="${ticker}"]`);
+                    if (row) {
+                        const data = {
+                            name: row.querySelector('.company-name')?.textContent || ticker,
+                            action: row.dataset.action,
+                            irr: parseFloat(row.dataset.irr) || 0,
+                            mos: parseFloat(row.dataset.mos) || 0,
+                            tier: row.dataset.tier,
+                            inPortfolio: true
+                        };
+                        displayResult(ticker, data);
+                        return;
+                    }
+                }
+                
+                // Check sample data
+                if (sampleData[ticker]) {
+                    displayResult(ticker, sampleData[ticker]);
+                } else {
+                    resultDiv.innerHTML = `
+                        <div class="ticker-result-error">
+                            <p>⚠️ <strong>${ticker}</strong> not found in database</p>
+                            <p style="margin-top: 0.5rem; font-size: 0.8rem;">This ticker may not be in our coverage universe, or requires a data refresh.</p>
+                        </div>
+                    `;
+                }
+            }, 800);
+        }
+        
+        function displayResult(ticker, data) {
+            const actionClass = data.action.toLowerCase();
+            const actionEmoji = { 'buy': '🟢', 'add': '🔵', 'hold': '🟡', 'sell': '🔴', 'excluded': '⚫' }[actionClass] || '';
+            
+            let noteHtml = '';
+            if (data.note) {
+                noteHtml = `<div class="ticker-result-note">ℹ️ ${data.note}</div>`;
+            } else if (data.inPortfolio) {
+                noteHtml = `<div class="ticker-result-note">✅ This ticker is in your active portfolio</div>`;
+            } else if (data.action === 'SELL') {
+                noteHtml = `<div class="ticker-result-note">⚠️ This stock is trading above our fair value estimate. Consider reducing position.</div>`;
+            } else if (data.action === 'BUY') {
+                noteHtml = `<div class="ticker-result-note">🎯 This stock meets our criteria for high-conviction purchase.</div>`;
+            }
+            
+            if (data.action === 'EXCLUDED') {
+                resultDiv.innerHTML = `
+                    <div class="ticker-result-header">
+                        <span class="ticker-result-name"><strong>${ticker}</strong> - ${data.name}</span>
+                        <span class="ticker-result-action" style="background: rgba(100,100,100,0.2); color: var(--text-muted);">EXCLUDED</span>
+                    </div>
+                    ${noteHtml}
+                `;
+                return;
+            }
+            
+            resultDiv.innerHTML = `
+                <div class="ticker-result-header">
+                    <span class="ticker-result-name"><strong>${ticker}</strong> - ${data.name}</span>
+                    <span class="ticker-result-action ${actionClass}">${actionEmoji} ${data.action}</span>
+                </div>
+                <div class="ticker-result-grid">
+                    <div class="ticker-result-metric">
+                        <div class="ticker-result-metric-value">$${data.price || data.iv}</div>
+                        <div class="ticker-result-metric-label">Price</div>
+                    </div>
+                    <div class="ticker-result-metric">
+                        <div class="ticker-result-metric-value">${data.irr?.toFixed(1) || '—'}%</div>
+                        <div class="ticker-result-metric-label">Implied IRR</div>
+                    </div>
+                    <div class="ticker-result-metric">
+                        <div class="ticker-result-metric-value">${data.mos?.toFixed(1) || '—'}%</div>
+                        <div class="ticker-result-metric-label">Margin of Safety</div>
+                    </div>
+                    <div class="ticker-result-metric">
+                        <div class="ticker-result-metric-value">${data.tier || '—'}</div>
+                        <div class="ticker-result-metric-label">Quality Tier</div>
+                    </div>
+                    <div class="ticker-result-metric">
+                        <div class="ticker-result-metric-value">${data.score || '—'}</div>
+                        <div class="ticker-result-metric-label">Score</div>
+                    </div>
+                    <div class="ticker-result-metric">
+                        <div class="ticker-result-metric-value">$${data.iv || '—'}</div>
+                        <div class="ticker-result-metric-label">Fair Value</div>
+                    </div>
+                </div>
+                ${noteHtml}
+            `;
+        }
+        
+        checkBtn.addEventListener('click', checkTicker);
+        tickerInput.addEventListener('keypress', (e) => {
+            if (e.key === 'E
