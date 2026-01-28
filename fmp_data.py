@@ -106,6 +106,28 @@ class FMPDataFetcher:
     
     def get_cash_flow_quarterly(self, ticker, limit=4):
         return self._make_request("cash-flow-statement", {"symbol": ticker, "period": "quarter", "limit": limit})
+    
+    def get_insider_ownership(self, ticker):
+        """Get insider ownership percentage - uses v4 endpoint"""
+        url = f"{self.base_url}/v4/institutional-ownership/symbol-ownership?symbol={ticker}&apikey={self.api_key}"
+        try:
+            response = requests.get(url)
+            if response.status_code == 200:
+                return response.json()
+        except:
+            pass
+        return []
+    
+    def get_insider_trading(self, ticker, limit=100):
+        """Get recent insider transactions"""
+        url = f"{self.base_url}/v4/insider-trading?symbol={ticker}&limit={limit}&apikey={self.api_key}"
+        try:
+            response = requests.get(url)
+            if response.status_code == 200:
+                return response.json()
+        except:
+            pass
+        return []
 
 
 class FinancialDataProcessor:
@@ -123,6 +145,9 @@ class FinancialDataProcessor:
             balance_sheets = self.fetcher.get_balance_sheet(ticker, limit=4)
             cash_flows = self.fetcher.get_cash_flow(ticker, limit=4)
             key_metrics = self.fetcher.get_key_metrics(ticker, limit=4)
+            
+            # Insider data for alignment score
+            insider_trading = self.fetcher.get_insider_trading(ticker, limit=100)
             
             if not all([profile, income_stmts, balance_sheets, cash_flows, key_metrics]):
                 print("Missing data")
@@ -168,6 +193,12 @@ class FinancialDataProcessor:
                 metrics["fcf_current"] = fcf * fx_rate
                 metrics["fcf_conversion"] = fcf / ni if ni > 0 else 0  # Ratio, no conversion needed
                 metrics["capex_to_revenue"] = capex / rev if rev > 0 else 0  # Ratio
+                
+                # Stock-Based Compensation (for alignment score)
+                sbc = cash_flows[0].get("stockBasedCompensation", 0) or 0
+                metrics["sbc"] = sbc * fx_rate
+                metrics["sbc_to_fcf"] = sbc / fcf if fcf > 0 else 0  # SBC as % of FCF
+                metrics["sbc_to_revenue"] = sbc / rev if rev > 0 else 0  # SBC as % of revenue
             
             # ROIC - Calculate ourselves using Analyst Method (Equity + Debt, no cash deduction)
             # This matches analyst consensus better than FMP's returnOnInvestedCapital field
@@ -276,6 +307,12 @@ class FinancialDataProcessor:
                         metrics["dividend_yield"] = dividends / mcap
                         metrics["buyback_yield"] = net_buybacks / mcap
                         metrics["debt_paydown_yield"] = net_debt_paydown / ev
+                        
+                        # Net Shareholder Yield (buybacks minus dilution from issuance)
+                        # Positive = returning capital, Negative = diluting shareholders
+                        metrics["net_stock_issuance"] = net_stock  # Raw value (negative = buyback)
+                        net_shareholder_yield = -net_stock / mcap if mcap > 0 else 0  # Flip sign: positive = good
+                        metrics["net_shareholder_yield"] = net_shareholder_yield
                 
                 # Value Creation Ratio = ROIC / WACC (Dynamic calculation)
                 if metrics.get("roic_current"):
@@ -410,6 +447,295 @@ class FinancialDataProcessor:
             # FCF Yield (need both in same currency - market cap is USD, fcf now USD)
             if metrics.get("fcf_current") and metrics.get("market_cap"):
                 metrics["fcf_yield"] = metrics["fcf_current"] / metrics["market_cap"]
+            
+            # ============================================================
+            # MANAGEMENT ALIGNMENT INDICATOR (MAI) - 0-100 Scale
+            # 5 Pillars: Skin in Game (30%) + Capital Allocation (30%) + 
+            #            Compensation (20%) + Retention (10%) + Shareholder Friendly (10%)
+            # ============================================================
+            alignment_flags = []
+            pillar_scores = {}
+            
+            # -----------------------------------------------------------
+            # PILLAR 1: SKIN IN THE GAME (30% weight, 0-100 raw score)
+            # Insider ownership and trading patterns
+            # -----------------------------------------------------------
+            skin_score = 50  # Base score
+            
+            # 1a. Recent Insider Buying/Selling (0-30 points)
+            net_insider_buys = 0
+            insider_buy_value = 0
+            insider_sell_value = 0
+            
+            if insider_trading:
+                for txn in insider_trading:
+                    txn_type = txn.get("transactionType", "")
+                    value = abs(txn.get("securitiesTransacted", 0) * txn.get("price", 0))
+                    if txn_type in ["P-Purchase", "A-Award"]:
+                        insider_buy_value += value
+                    elif txn_type in ["S-Sale", "S-Sale+OE"]:
+                        insider_sell_value += value
+                
+                net_insider_activity = insider_buy_value - insider_sell_value
+                metrics["insider_buy_value_12mo"] = insider_buy_value
+                metrics["insider_sell_value_12mo"] = insider_sell_value
+                metrics["net_insider_value_12mo"] = net_insider_activity
+                
+                # Score based on dollar value of net activity
+                if net_insider_activity > 1_000_000:  # $1M+ net buying
+                    skin_score += 30
+                    alignment_flags.append("Heavy insider buying ($1M+)")
+                elif net_insider_activity > 500_000:
+                    skin_score += 25
+                    alignment_flags.append("Strong insider buying")
+                elif net_insider_activity > 100_000:
+                    skin_score += 15
+                elif net_insider_activity > 0:
+                    skin_score += 10
+                elif net_insider_activity > -500_000:
+                    skin_score += 0  # Modest selling, neutral
+                elif net_insider_activity > -1_000_000:
+                    skin_score -= 10
+                else:  # $1M+ net selling
+                    skin_score -= 20
+                    alignment_flags.append("⚠️ Heavy insider selling")
+            
+            # 1b. Bonus for consistent buybacks (proxy for management confidence)
+            net_sh_yield = metrics.get("net_shareholder_yield", 0) or 0
+            if net_sh_yield >= 0.05:
+                skin_score += 20
+            elif net_sh_yield >= 0.03:
+                skin_score += 15
+            elif net_sh_yield >= 0.01:
+                skin_score += 10
+            elif net_sh_yield < -0.02:  # Heavy dilution
+                skin_score -= 10
+                alignment_flags.append("⚠️ Share dilution")
+            
+            skin_score = max(0, min(100, skin_score))
+            pillar_scores["skin_in_game"] = skin_score
+            metrics["skin_in_game_score"] = skin_score
+            
+            # -----------------------------------------------------------
+            # PILLAR 2: CAPITAL ALLOCATION HISTORY (30% weight, 0-100 raw score)
+            # How management uses cash flow
+            # -----------------------------------------------------------
+            capalloc_score = 50  # Base score
+            
+            # 2a. Buyback Effectiveness (0-30 points)
+            # Are they buying back stock when cheap?
+            buyback_yield = metrics.get("buyback_yield", 0) or 0
+            fcf_yield = metrics.get("fcf_yield", 0) or 0
+            # Use FCF yield as proxy for "cheapness" (higher = cheaper)
+            
+            if buyback_yield > 0.05:  # 5%+ annual buyback
+                if fcf_yield > 0.08:  # Buying when FCF yield is high (cheap)
+                    capalloc_score += 30
+                    alignment_flags.append("Smart buybacks (cheap)")
+                elif fcf_yield > 0.05:
+                    capalloc_score += 20
+                else:  # Buying when expensive
+                    capalloc_score += 10
+            elif buyback_yield > 0.02:
+                capalloc_score += 15
+            elif buyback_yield > 0:
+                capalloc_score += 5
+            
+            # 2b. Dividend Policy (0-20 points)
+            div_yield = metrics.get("dividend_yield", 0) or 0
+            # FCF payout ratio
+            fcf_payout = div_yield / fcf_yield if fcf_yield > 0 else 0
+            
+            if 0 < div_yield < 0.06:  # Reasonable yield
+                if fcf_payout < 0.50:  # Well-covered
+                    capalloc_score += 20
+                elif fcf_payout < 0.70:
+                    capalloc_score += 15
+                elif fcf_payout < 0.90:
+                    capalloc_score += 10
+                else:
+                    capalloc_score += 0  # Stretched
+            elif div_yield >= 0.06:  # High yield, possibly unsustainable
+                if fcf_payout > 1.0:
+                    alignment_flags.append("⚠️ Dividend exceeds FCF")
+                    capalloc_score -= 10
+            elif div_yield == 0:
+                capalloc_score += 10  # Growth company reinvesting, neutral-positive
+            
+            # 2c. M&A Track Record / Incremental ROIC (0-30 points)
+            inc_roic = metrics.get("incremental_roic", 0) or 0
+            goodwill_pct = metrics.get("goodwill_pct", 0) or 0
+            wacc = metrics.get("wacc", 0.10) or 0.10
+            
+            if inc_roic > 0.20:  # Exceptional returns on deployed capital
+                capalloc_score += 30
+                alignment_flags.append("Elite capital deployer")
+            elif inc_roic > 0.15:
+                capalloc_score += 25
+            elif inc_roic > wacc:  # Above cost of capital
+                capalloc_score += 15
+            elif inc_roic > 0:
+                capalloc_score += 5
+            else:  # Negative incremental ROIC
+                capalloc_score -= 10
+            
+            # Penalty for high goodwill (possible overpayment for acquisitions)
+            if goodwill_pct > 0.40:
+                capalloc_score -= 10
+                alignment_flags.append("⚠️ High goodwill (M&A risk)")
+            elif goodwill_pct > 0.30:
+                capalloc_score -= 5
+            
+            capalloc_score = max(0, min(100, capalloc_score))
+            pillar_scores["capital_allocation"] = capalloc_score
+            metrics["capital_allocation_score"] = capalloc_score
+            
+            # -----------------------------------------------------------
+            # PILLAR 3: COMPENSATION ALIGNMENT (20% weight, 0-100 raw score)
+            # Is executive pay tied to performance?
+            # -----------------------------------------------------------
+            comp_score = 50  # Base score
+            
+            # 3a. SBC as % of FCF (0-40 points)
+            # Lower SBC = less dilution = better alignment
+            sbc_to_fcf = metrics.get("sbc_to_fcf", 0) or 0
+            sbc_to_rev = metrics.get("sbc_to_revenue", 0) or 0
+            
+            if sbc_to_fcf <= 0.05:
+                comp_score += 40
+                alignment_flags.append("Minimal SBC dilution")
+            elif sbc_to_fcf <= 0.10:
+                comp_score += 30
+            elif sbc_to_fcf <= 0.15:
+                comp_score += 20
+            elif sbc_to_fcf <= 0.25:
+                comp_score += 10
+            elif sbc_to_fcf <= 0.40:
+                comp_score += 0
+            else:  # >40% of FCF going to SBC
+                comp_score -= 20
+                alignment_flags.append("⚠️ Excessive SBC (>40% FCF)")
+            
+            # 3b. SBC relative to revenue (catches high-margin tech)
+            if sbc_to_rev > 0.15:
+                comp_score -= 15
+            elif sbc_to_rev > 0.10:
+                comp_score -= 10
+            elif sbc_to_rev < 0.03:
+                comp_score += 10
+            
+            comp_score = max(0, min(100, comp_score))
+            pillar_scores["compensation_alignment"] = comp_score
+            metrics["compensation_score"] = comp_score
+            
+            # -----------------------------------------------------------
+            # PILLAR 4: EXECUTIVE RETENTION (10% weight, 0-100 raw score)
+            # Stability and continuity of leadership
+            # Proxied by ROIC trend stability (consistent leadership = consistent results)
+            # -----------------------------------------------------------
+            retention_score = 50  # Base score
+            
+            roic_trend = metrics.get("roic_trend", 0) or 0
+            roic_current = metrics.get("roic_current", 0) or 0
+            roic_3y = metrics.get("roic_3y_avg", 0) or 0
+            
+            # Stable/improving ROIC suggests good leadership retention
+            if roic_trend >= 0.10:  # Improving
+                retention_score += 30
+            elif roic_trend >= 0:  # Stable
+                retention_score += 20
+            elif roic_trend >= -0.10:  # Modest decline
+                retention_score += 10
+            else:  # Significant decline
+                retention_score -= 20
+            
+            # Consistency bonus: if both current and 3Y avg are strong
+            if roic_current > 0.20 and roic_3y > 0.18:
+                retention_score += 20
+                alignment_flags.append("Consistent leadership")
+            elif roic_current > 0.15 and roic_3y > 0.12:
+                retention_score += 10
+            
+            retention_score = max(0, min(100, retention_score))
+            pillar_scores["executive_retention"] = retention_score
+            metrics["retention_score"] = retention_score
+            
+            # -----------------------------------------------------------
+            # PILLAR 5: SHAREHOLDER FRIENDLY (10% weight, 0-100 raw score)
+            # Policies and financial health
+            # -----------------------------------------------------------
+            friendly_score = 50  # Base score
+            
+            # 5a. Conservative leverage
+            net_debt_ebitda = metrics.get("net_debt_ebitda", 0) or 0
+            if net_debt_ebitda < 0:  # Net cash position
+                friendly_score += 25
+                alignment_flags.append("Net cash position")
+            elif net_debt_ebitda <= 1.0:
+                friendly_score += 15
+            elif net_debt_ebitda <= 2.0:
+                friendly_score += 5
+            elif net_debt_ebitda > 3.0:
+                friendly_score -= 20
+                alignment_flags.append("⚠️ High leverage")
+            
+            # 5b. FCF Conversion quality (earnings quality)
+            fcf_conversion = metrics.get("fcf_conversion", 0) or 0
+            if fcf_conversion >= 1.2:
+                friendly_score += 25
+                alignment_flags.append("Excellent FCF conversion")
+            elif fcf_conversion >= 1.0:
+                friendly_score += 15
+            elif fcf_conversion >= 0.8:
+                friendly_score += 10
+            elif fcf_conversion < 0.5:
+                friendly_score -= 10
+            
+            friendly_score = max(0, min(100, friendly_score))
+            pillar_scores["shareholder_friendly"] = friendly_score
+            metrics["shareholder_friendly_score"] = friendly_score
+            
+            # -----------------------------------------------------------
+            # COMPOSITE MAI SCORE (Weighted)
+            # Skin (30%) + CapAlloc (30%) + Comp (20%) + Retention (10%) + Friendly (10%)
+            # -----------------------------------------------------------
+            mai_score = (
+                pillar_scores["skin_in_game"] * 0.30 +
+                pillar_scores["capital_allocation"] * 0.30 +
+                pillar_scores["compensation_alignment"] * 0.20 +
+                pillar_scores["executive_retention"] * 0.10 +
+                pillar_scores["shareholder_friendly"] * 0.10
+            )
+            
+            metrics["alignment_score"] = round(mai_score, 1)
+            metrics["alignment_flags"] = alignment_flags
+            metrics["pillar_scores"] = pillar_scores
+            
+            # Alignment tier with emoji
+            if mai_score >= 80:
+                metrics["alignment_tier"] = "A"
+                metrics["alignment_emoji"] = "🟢"
+                metrics["mgmt_aligned"] = True
+            elif mai_score >= 70:
+                metrics["alignment_tier"] = "B+"
+                metrics["alignment_emoji"] = "🟢"
+                metrics["mgmt_aligned"] = True
+            elif mai_score >= 60:
+                metrics["alignment_tier"] = "B"
+                metrics["alignment_emoji"] = "🟡"
+                metrics["mgmt_aligned"] = True
+            elif mai_score >= 50:
+                metrics["alignment_tier"] = "C"
+                metrics["alignment_emoji"] = "⚪"
+                metrics["mgmt_aligned"] = False
+            elif mai_score >= 40:
+                metrics["alignment_tier"] = "D"
+                metrics["alignment_emoji"] = "🟠"
+                metrics["mgmt_aligned"] = False
+            else:
+                metrics["alignment_tier"] = "F"
+                metrics["alignment_emoji"] = "🔴"
+                metrics["mgmt_aligned"] = False
             
             print("OK")
             

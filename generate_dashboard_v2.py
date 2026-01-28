@@ -267,6 +267,11 @@ for t in tickers_data:
         "price": t.get("price", 0),
         "target": t.get("price", 0) * (1 + irr),
         "failures": failures,
+        "hidden_compounder": t.get("hidden_compounder", False),
+        "hidden_compounder_pct": t.get("roic_improvement_pct", 0) or 0,
+        "alignment_score": t.get("alignment_score", 0) or 0,
+        "alignment_tier": t.get("alignment_tier", "C") or "C",
+        "alignment_emoji": t.get("alignment_emoji", "⚪") or "⚪",
     }
 
 all_ticker_json = json.dumps(all_ticker_data)
@@ -281,8 +286,9 @@ html = '''<!DOCTYPE html>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0a0f; color: #e0e0e0; padding: 20px; }
         .header { text-align: center; margin-bottom: 30px; }
-        .header h1 { font-size: 2.5em; color: #00d4aa; margin-bottom: 10px; }
-        .header .subtitle { color: #888; font-size: 1.1em; }
+        .header h1 { font-size: 2.5em; color: #00d4aa; margin-bottom: 5px; }
+        .header .subtitle { color: #00d4aa; font-size: 1.3em; font-weight: 500; margin-bottom: 8px; }
+        .header .subhead { color: #666; font-size: 0.95em; font-style: italic; }
         
         .market-context { display: grid; grid-template-columns: repeat(6, 1fr); gap: 15px; margin-bottom: 30px; }
         .market-card { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 12px; padding: 20px; text-align: center; border: 1px solid #333; }
@@ -334,6 +340,16 @@ html = '''<!DOCTYPE html>
         .spread-neg { color: #ff6b6b; }
         .trend-up { color: #00ff88; }
         .trend-down { color: #ff6b6b; }
+        .hidden-star { color: #ffd700; font-size: 1.2em; cursor: help; }
+        .hidden-cell { text-align: center; width: 30px; }
+        .align-cell { text-align: center; width: 30px; }
+        .align-badge { font-size: 0.75em; padding: 2px 6px; border-radius: 3px; font-weight: bold; cursor: help; }
+        .align-A { background: #00ff88; color: #0a0a0f; }
+        .align-Bplus { background: #00dd77; color: #0a0a0f; }
+        .align-B { background: #ffdd00; color: #0a0a0f; }
+        .align-C { background: #888; color: #fff; }
+        .align-D { background: #ff9944; color: #0a0a0f; }
+        .align-F { background: #ff4444; color: #fff; }
         
         .glossary { background: #1a1a2e; border-radius: 12px; padding: 20px; margin-top: 30px; border: 1px solid #333; }
         .glossary h3 { color: #00d4aa; margin-bottom: 15px; }
@@ -348,7 +364,8 @@ html = '''<!DOCTYPE html>
 <body>
     <div class="header">
         <h1>💎 Capital Compounders</h1>
-        <p class="subtitle">Value-creating businesses (VCR ≥ 1.0) with IRR ≥ 12%</p>
+        <p class="subtitle">Where Capital Compounds</p>
+        <p class="subhead">Value-creating businesses earning above their cost of capital</p>
     </div>
     
     <div class="market-context">
@@ -392,7 +409,7 @@ html = '''<!DOCTYPE html>
         </div>
         <div class="compare-result" id="compare-result">
             <table>
-                <tr><th>Signal</th><th>Ticker</th><th>Company</th><th>Model</th><th>ROIC</th><th>VCR</th><th>EP Spread</th><th>Trend</th><th>IRR</th><th>Price</th><th>Target</th></tr>
+                <tr><th>Signal</th><th>⭐</th><th>🎯</th><th>Ticker</th><th>Company</th><th>Model</th><th>ROIC</th><th>VCR</th><th>EP Spread</th><th>Trend</th><th>GM</th><th>Growth</th><th>IRR</th><th>Price</th><th>Target</th><th>MCap</th></tr>
                 <tr id="compare-row"></tr>
             </table>
             <div id="fail-reasons" class="fail-reason"></div>
@@ -410,6 +427,8 @@ html = '''<!DOCTYPE html>
         <thead>
             <tr>
                 <th data-sort="signal" title="BUY (IRR ≥ 20%), HOLD (IRR 12-20%)">Signal</th>
+                <th data-sort="hidden" title="⭐ Hidden Compounder: Cash-rich company with masked efficiency (Adj ROIC >20% AND >10% boost)">⭐</th>
+                <th data-sort="align" title="🎯 Management Alignment: A(80+)=Excellent, B(60+)=Good, C(40+)=Neutral, D(<40)=Poor">🎯</th>
                 <th data-sort="ticker" title="Stock symbol">Ticker</th>
                 <th data-sort="name" title="Company name">Company</th>
                 <th data-sort="model" title="Valuation: Compounder, Platform, Mature, Ex-Goodwill, DCF-Fade, Standard">Model</th>
@@ -444,16 +463,27 @@ for t in displayable_sorted:
     price = t.get("price", 0)
     target = t.get("price_target", 0)
     mcap = t.get("market_cap", 0) / 1e9
+    hidden = t.get("hidden_compounder", False)
+    hidden_pct = t.get("roic_improvement_pct", 0) or 0
+    align_score = t.get("alignment_score", 0) or 0
+    align_tier = t.get("alignment_tier", "C") or "C"
+    align_emoji = t.get("alignment_emoji", "⚪") or "⚪"
     
     row_class = "buy-row" if signal == "BUY" else ""
     irr_class = "irr-high" if irr >= 20 else "irr-mid"
     vcr_class = "vcr-gold" if vcr >= 2.0 else ("vcr-good" if vcr >= 1.0 else "")
     spread_class = "spread-pos" if spread >= 0 else "spread-neg"
     trend_class = "trend-up" if trend >= 0 else "trend-down"
+    hidden_display = f'<span class="hidden-star" title="Hidden Compounder: +{hidden_pct:.0f}% ROIC boost from excess cash adjustment">⭐</span>' if hidden else ''
+    # Use emoji with tier in tooltip
+    align_css_class = align_tier.replace("+", "plus")  # B+ -> Bplus for CSS
+    align_display = f'<span class="align-badge align-{align_css_class}" title="Management Alignment: {align_tier} ({align_score:.0f}/100)">{align_emoji}</span>'
     
     html += f'''
-            <tr class="{row_class}" data-ticker="{ticker}" data-name="{name}" data-model="{model}" data-signal="{signal}" data-roic="{roic}" data-vcr="{vcr}" data-spread="{spread_pct}" data-trend="{trend}" data-gm="{gm}" data-growth="{growth}" data-irr="{irr}" data-price="{price}" data-target="{target}" data-mcap="{mcap}">
+            <tr class="{row_class}" data-ticker="{ticker}" data-name="{name}" data-model="{model}" data-signal="{signal}" data-roic="{roic}" data-vcr="{vcr}" data-spread="{spread_pct}" data-trend="{trend}" data-gm="{gm}" data-growth="{growth}" data-irr="{irr}" data-price="{price}" data-target="{target}" data-mcap="{mcap}" data-hidden="{1 if hidden else 0}" data-align="{align_score}">
                 <td><span class="signal-tag signal-{signal}">{signal}</span></td>
+                <td class="hidden-cell">{hidden_display}</td>
+                <td class="align-cell">{align_display}</td>
                 <td class="ticker">{ticker}</td>
                 <td>{name}</td>
                 <td><span class="model-tag">{model}</span></td>
@@ -474,16 +504,25 @@ html += '''
     </table>
     
     <div class="glossary">
-        <h3>📊 Key Metrics</h3>
+        <h3>📊 Key Metrics Guide</h3>
         <div class="glossary-grid">
-            <div class="glossary-item"><div class="term">ROIC</div><div class="definition">Return on Invested Capital - efficiency turning capital into profits</div></div>
-            <div class="glossary-item"><div class="term">VCR</div><div class="definition">Value Creation Ratio (ROIC/WACC) - must be ≥1.0</div></div>
-            <div class="glossary-item"><div class="term">EP Spread</div><div class="definition">Economic Profit Spread (ROIC - WACC)</div></div>
-            <div class="glossary-item"><div class="term">IRR</div><div class="definition">Implied Return Rate (Yield + Growth)</div></div>
+            <div class="glossary-item"><div class="term">ROIC <span style="color:#00d4aa">Efficiency</span></div><div class="definition">NOPAT ÷ (IC − Excess Cash) — How efficiently the business turns capital into profit. ≥20%: Elite</div></div>
+            <div class="glossary-item"><div class="term">VCR <span style="color:#00d4aa">Value</span></div><div class="definition">ROIC ÷ WACC — How strongly the business creates value above cost of capital. ≥2.0x: Elite • &lt;1.0x: Destroying</div></div>
+            <div class="glossary-item"><div class="term">EP Spread <span style="color:#00d4aa">Advantage</span></div><div class="definition">ROIC − WACC — The economic edge over competitors. Wide spread = source of wealth creation</div></div>
+            <div class="glossary-item"><div class="term">Trend <span style="color:#00d4aa">Momentum</span></div><div class="definition">ΔROIC ÷ 3Y Avg — Whether the business is getting better or worse. Rising = strengthening</div></div>
+            <div class="glossary-item"><div class="term">GM <span style="color:#00d4aa">Moat</span></div><div class="definition">Gross Profit ÷ Revenue — Ability to keep more of each dollar. High margins = pricing power</div></div>
+            <div class="glossary-item"><div class="term">Growth <span style="color:#00d4aa">Scale</span></div><div class="definition">3Y Revenue CAGR — How fast the business expands. Scale magnifies high returns</div></div>
+            <div class="glossary-item"><div class="term">IRR <span style="color:#00d4aa">Outcome</span></div><div class="definition">Yield + Growth — The return you should expect. ≥20%: BUY • 12-20%: HOLD</div></div>
+            <div class="glossary-item"><div class="term">Target</div><div class="definition">Price × (1 + MoS) — Intrinsic value estimate based on IRR thesis</div></div>
+            <div class="glossary-item"><div class="term">MCap</div><div class="definition">Price × Shares — Company size in $B</div></div>
+            <div class="glossary-item"><div class="term">⭐ Hidden</div><div class="definition">Adj ROIC &gt;20% AND &gt;10% boost — Cash-rich company with masked efficiency</div></div>
+            <div class="glossary-item"><div class="term">🎯 MAI <span style="color:#00d4aa">Alignment</span></div><div class="definition">5 pillars: Skin (30%) + CapAlloc (30%) + Comp (20%) + Retention (10%) + Friendly (10%). 🟢80+ 🟡60 ⚪50 🟠40 🔴&lt;40</div></div>
         </div>
+        <div style="text-align:center; margin-top:15px; color:#00d4aa; font-style:italic;">Efficiency + Advantage × Scale = Compounding</div>
     </div>
     
     <div class="footer">
+        <p style="color:#00d4aa; font-style:italic; margin-bottom:8px;">Compounding is a process, not a forecast.</p>
         <p>Last updated: ''' + datetime.now().strftime("%B %d, %Y %H:%M") + '''</p>
     </div>
     
@@ -509,7 +548,7 @@ html += '''
             rows.sort((a, b) => {
                 let aVal = a.dataset[column] || '';
                 let bVal = b.dataset[column] || '';
-                if (['roic', 'vcr', 'spread', 'trend', 'gm', 'growth', 'irr', 'price', 'target', 'mcap'].includes(column)) {
+                if (['roic', 'vcr', 'spread', 'trend', 'gm', 'growth', 'irr', 'price', 'target', 'mcap', 'hidden', 'align'].includes(column)) {
                     aVal = parseFloat(aVal) || 0;
                     bVal = parseFloat(bVal) || 0;
                 }
@@ -533,8 +572,16 @@ html += '''
                 const spreadClass = data.ep_spread >= 0 ? 'spread-pos' : 'spread-neg';
                 const trendClass = data.roic_trend >= 0 ? 'trend-up' : 'trend-down';
                 const irrClass = data.irr >= 20 ? 'irr-high' : 'irr-mid';
+                const hiddenStar = data.hidden_compounder ? '<span class="hidden-star" title="Hidden Compounder: +' + (data.hidden_compounder_pct || 0).toFixed(0) + '% ROIC boost">⭐</span>' : '';
+                const alignTier = data.alignment_tier || 'C';
+                const alignScore = data.alignment_score || 0;
+                const alignEmoji = data.alignment_emoji || '⚪';
+                const alignCssClass = alignTier.replace('+', 'plus');
+                const alignBadge = '<span class="align-badge align-' + alignCssClass + '" title="Management Alignment: ' + alignTier + ' (' + alignScore.toFixed(0) + '/100)">' + alignEmoji + '</span>';
                 
                 row.innerHTML = '<td><span class="signal-tag signal-' + data.signal + '">' + data.signal + '</span></td>' +
+                    '<td class="hidden-cell">' + hiddenStar + '</td>' +
+                    '<td class="align-cell">' + alignBadge + '</td>' +
                     '<td class="ticker">' + ticker + '</td>' +
                     '<td>' + (data.name || '').substring(0, 16) + '</td>' +
                     '<td><span class="model-tag">' + data.model + '</span></td>' +
@@ -542,16 +589,19 @@ html += '''
                     '<td class="' + vcrClass + '">' + data.vcr.toFixed(1) + 'x</td>' +
                     '<td class="' + spreadClass + '">' + (data.ep_spread >= 0 ? '+' : '') + data.ep_spread.toFixed(0) + '%</td>' +
                     '<td class="' + trendClass + '">' + (data.roic_trend >= 0 ? '+' : '') + data.roic_trend.toFixed(0) + '%</td>' +
+                    '<td>' + (data.gm || 0).toFixed(0) + '%</td>' +
+                    '<td>' + (data.growth_pct || 0).toFixed(0) + '%</td>' +
                     '<td class="' + irrClass + '">' + data.irr.toFixed(0) + '%</td>' +
                     '<td>$' + data.price.toFixed(0) + '</td>' +
-                    '<td>$' + data.target.toFixed(0) + '</td>';
+                    '<td>$' + data.target.toFixed(0) + '</td>' +
+                    '<td>$' + (data.mcap || 0).toFixed(0) + 'B</td>';
                 
                 failDiv.innerHTML = data.failures && data.failures.length > 0 ? 
                     '❌ ' + data.failures.join(' | ') : '';
                 
                 resultDiv.classList.add('show');
             } else {
-                row.innerHTML = '<td colspan="11" style="color:#ff6b6b;">Ticker not in cache</td>';
+                row.innerHTML = '<td colspan="16" style="color:#ff6b6b;">Ticker not in cache</td>';
                 failDiv.innerHTML = '';
                 resultDiv.classList.add('show');
             }
