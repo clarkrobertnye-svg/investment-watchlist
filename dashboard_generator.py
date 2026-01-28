@@ -234,6 +234,40 @@ def generate_html(data: dict) -> str:
         .summary-card.ust-yield .summary-value {{ color: var(--text-muted); }}
         .summary-card.fed-funds .summary-value {{ color: var(--text-muted); }}
         
+        /* Tooltip styles for column headers */
+        th[title] {{
+            cursor: help;
+            position: relative;
+        }}
+        th[title]:hover::after {{
+            content: attr(title);
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--bg-tertiary);
+            color: var(--text-primary);
+            padding: 0.5rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 400;
+            white-space: nowrap;
+            z-index: 1000;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow);
+        }}
+        
+        /* Hidden compounder badge */
+        .hidden-compounder {{
+            background: linear-gradient(135deg, #f59e0b, #eab308);
+            color: #000;
+            padding: 0.125rem 0.375rem;
+            border-radius: 4px;
+            font-size: 0.65rem;
+            font-weight: 600;
+            margin-left: 0.25rem;
+        }}
+        
         /* Filter label */
         .filter-label {{
             color: var(--text-muted);

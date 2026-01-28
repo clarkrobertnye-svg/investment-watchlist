@@ -11,6 +11,77 @@ for f in cache_dir.glob("*.json"):
         if data.get("data_quality") == "complete":
             tickers_data.append(data)
 
+
+
+def deduplicate_by_company(data_list):
+    """
+    Keep only one listing per company - prefer most robust data.
+    Priority: Primary listing > Data completeness > Market cap
+    """
+    from collections import defaultdict
+    
+    def data_quality_score(t):
+        """Score ticker by data robustness (higher = better)"""
+        score = 0
+        ticker = t.get("ticker", "")
+        
+        # Preferred tickers (higher US liquidity) - add 5000 to always win
+        PREFERRED_TICKERS = {"EVVTY", "ATDRY", "NVO", "RELX"}
+        if ticker in PREFERRED_TICKERS:
+            score += 5000
+        
+        # Prefer primary listings over OTC (F/Y suffix = OTC pink sheets)
+        if not ticker.endswith("F") and not ticker.endswith("Y"):
+            score += 1000  # Strong preference for primary listings
+        
+        # Prefer shorter tickers (usually primary: RELX vs RLXXF)
+        score += (10 - len(ticker)) * 10
+        
+        # Data completeness - count non-null key fields
+        key_fields = ["roic_current", "roic_3y_avg", "gross_margin", "revenue_growth_3y",
+                      "fcf_conversion", "incremental_roic", "value_creation_ratio", 
+                      "market_cap", "price", "enterprise_yield"]
+        for field in key_fields:
+            if t.get(field) is not None and t.get(field) != 0:
+                score += 10
+        
+        # Market cap as tiebreaker
+        mcap = t.get("market_cap", 0) or 0
+        score += mcap / 1e12  # Add fraction based on market cap
+        
+        return score
+    
+    by_company = defaultdict(list)
+    for t in data_list:
+        name = t.get("company_name", "").strip().lower()
+        for suffix in [" inc.", " inc", " ltd.", " ltd", " plc", " corp.", " corp", 
+                       " n.v.", " a/s", " ag", " se", " sa", " limited", " group"]:
+            name = name.replace(suffix, "")
+        name = name.strip()
+        if name:
+            by_company[name].append(t)
+    
+    deduped = []
+    removed_count = 0
+    for name, listings in by_company.items():
+        if len(listings) == 1:
+            deduped.append(listings[0])
+        else:
+            # Sort by data quality score (highest first)
+            listings.sort(key=data_quality_score, reverse=True)
+            deduped.append(listings[0])
+            removed = [l.get("ticker") for l in listings[1:]]
+            removed_count += len(removed)
+            print(f"  Dedup: Kept {listings[0].get('ticker'):8} | Removed: {', '.join(removed)}")
+    
+    print(f"  Total: {len(data_list)} -> {len(deduped)} ({removed_count} duplicates removed)")
+    return deduped
+
+
+# Apply deduplication
+print("Deduplicating by company name...")
+tickers_data = deduplicate_by_company(tickers_data)
+
 def passes_filters(t):
     roic = t.get("roic_3y_avg") or t.get("roic_current") or 0
     roic_ex_gw = t.get("roic_ex_goodwill_3y_avg") or t.get("roic_ex_goodwill") or 0
@@ -27,6 +98,12 @@ def passes_filters(t):
     fcf_pass = (fcf >= 0.80) or (fcf >= 0.60 and inc_roic >= 0.15)
     inc_roic_pass = inc_roic >= -0.05
     vcr_pass = vcr >= 1.0
+    
+    # Growth Override: High-growth disruptors get a pass on low VCR
+    # If company is growing fast with high margins, they're reinvesting, not a trap
+    growth_override = (growth >= 0.15 and gm >= 0.70)
+    if growth_override and not vcr_pass:
+        vcr_pass = True  # Override VCR requirement for high-growth companies
     
     return roic_pass and gm >= 0.60 and fcf_pass and growth >= 0.09 and capex_pass and leverage <= 3.0 and inc_roic_pass and vcr_pass
 
