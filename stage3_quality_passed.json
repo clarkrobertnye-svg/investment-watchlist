@@ -1,0 +1,5202 @@
+[
+  {
+    "symbol": "BICEY",
+    "name": "Soci\u00e9t\u00e9 BIC S.A.",
+    "marketCap": 5419403431,
+    "price": 32.71,
+    "roic": 0.15898385515314115,
+    "grossMargin": 0.5430113350647695,
+    "roe": 0.1182260186240051,
+    "operatingMargin": 0.15560222704272672
+  },
+  {
+    "symbol": "CMBT",
+    "name": "Cmb.Tech N.V.",
+    "marketCap": 2500332495,
+    "price": 12.18,
+    "roic": 0.2848719094890901,
+    "grossMargin": 0.5981594178544763,
+    "roe": 0.7303627202002141,
+    "operatingMargin": 1.0661592817198904
+  },
+  {
+    "symbol": "SONVF",
+    "name": "Sonova Holding AG",
+    "marketCap": 17036129664,
+    "price": 285.79,
+    "roic": 0.15639339074614045,
+    "grossMargin": 0.7203652920784395,
+    "roe": 0.20284470464610072,
+    "operatingMargin": 0.1789982925441093
+  },
+  {
+    "symbol": "PBR-A",
+    "name": "Petr\u00f3leo Brasileiro S.A. - Petrobras",
+    "marketCap": 90285321238,
+    "price": 14.01,
+    "roic": 0.17106235642707326,
+    "grossMargin": 0.5028878970858494,
+    "roe": 0.1273643961695936,
+    "operatingMargin": 0.28103395466876696
+  },
+  {
+    "symbol": "TGOPY",
+    "name": "3i Group plc",
+    "marketCap": 21484057963,
+    "price": 10.9,
+    "roic": 0.19447338968005867,
+    "grossMargin": 0.9850037965072134,
+    "roe": 0.2047052131160863,
+    "operatingMargin": 0.9565299924069856
+  },
+  {
+    "symbol": "DESP",
+    "name": "Despegar.com, Corp.",
+    "marketCap": 1630469100,
+    "price": 19.5,
+    "roic": 0.6025321992709599,
+    "grossMargin": 0.7311038794100206,
+    "roe": -0.2955787645114821,
+    "operatingMargin": 0.16015662848276815
+  },
+  {
+    "symbol": "LKFN",
+    "name": "Lakeland Financial Corporation",
+    "marketCap": 1532234495,
+    "price": 60.02,
+    "roic": 0.1524798325408813,
+    "grossMargin": 0.6098751262728062,
+    "roe": 0.13557265645596883,
+    "operatingMargin": 0.29779751770190604
+  },
+  {
+    "symbol": "ARLUF",
+    "name": "Aristocrat Leisure Limited",
+    "marketCap": 23977941741,
+    "price": 39,
+    "roic": 0.23387791198305755,
+    "grossMargin": 0.5872161346673019,
+    "roe": 0.2182028914780699,
+    "operatingMargin": 0.31918373828807367
+  },
+  {
+    "symbol": "LVZPF",
+    "name": "Livzon Pharmaceutical Group Inc.",
+    "marketCap": 6062978118,
+    "price": 5.22,
+    "roic": 0.16900374993559436,
+    "grossMargin": 0.6545047507997945,
+    "roe": 0.1486831708786472,
+    "operatingMargin": 0.24079907426942834
+  },
+  {
+    "symbol": "PRDSY",
+    "name": "Prada S.p.A.",
+    "marketCap": 13766473120,
+    "price": 10.76,
+    "roic": 0.18634656601966618,
+    "grossMargin": 0.7984252029390467,
+    "roe": 0.19068820159272987,
+    "operatingMargin": 0.23557701778698079
+  },
+  {
+    "symbol": "SFSLF",
+    "name": "SFS Group AG",
+    "marketCap": 4384038890,
+    "price": 112.8,
+    "roic": 0.18058062187387203,
+    "grossMargin": 0.5807350578669552,
+    "roe": 0.1565459971454522,
+    "operatingMargin": 0.11481590767515819
+  },
+  {
+    "symbol": "APE",
+    "name": "AMC Entertainment Holdings, Inc.",
+    "marketCap": 2259035391,
+    "price": 1.42,
+    "roic": 0.2735171544127824,
+    "grossMargin": 0.7457086172690417,
+    "roe": 0.20028401022436806,
+    "operatingMargin": 0.3835504183559044
+  },
+  {
+    "symbol": "MRK",
+    "name": "Merck & Co., Inc.",
+    "marketCap": 269523313137,
+    "price": 107.905,
+    "roic": 0.2280066752362267,
+    "grossMargin": 0.7632308939035033,
+    "roe": 0.3695938505387256,
+    "operatingMargin": 0.3151259194614138
+  },
+  {
+    "symbol": "BLHWF",
+    "name": "BELIMO Holding AG",
+    "marketCap": 13554467760,
+    "price": 1102,
+    "roic": 0.29772782936447273,
+    "grossMargin": 0.6161146780242832,
+    "roe": 0.2527516806259643,
+    "operatingMargin": 0.19189922234229653
+  },
+  {
+    "symbol": "AFGB",
+    "name": "American Financial Group, Inc.",
+    "marketCap": 1843219560,
+    "price": 22.1,
+    "roic": 0.38605755256273616,
+    "grossMargin": 1,
+    "roe": 0.1986117330944917,
+    "operatingMargin": 0.9948813982521848
+  },
+  {
+    "symbol": "KRNNF",
+    "name": "Krones AG",
+    "marketCap": 4238210609,
+    "price": 134.15,
+    "roic": 0.1591480228232724,
+    "grossMargin": 0.513287946082379,
+    "roe": 0.14410060644031916,
+    "operatingMargin": 0.07084820282467913
+  },
+  {
+    "symbol": "BCKIF",
+    "name": "Babcock International Group PLC",
+    "marketCap": 10096133972,
+    "price": 20.26,
+    "roic": 0.19993406955661777,
+    "grossMargin": 1,
+    "roe": 0.40883520847121113,
+    "operatingMargin": 0.07532134208184132
+  },
+  {
+    "symbol": "SHLRF",
+    "name": "Schindler Holding AG",
+    "marketCap": 39321729910,
+    "price": 371.81,
+    "roic": 0.20508666774663858,
+    "grossMargin": 0.6254004983980064,
+    "roe": 0.19176423092450545,
+    "operatingMargin": 0.11267354930580278
+  },
+  {
+    "symbol": "RDY",
+    "name": "Dr. Reddy's Laboratories Limited",
+    "marketCap": 11411930828,
+    "price": 13.71,
+    "roic": 0.19813456812935573,
+    "grossMargin": 0.584969358133534,
+    "roe": 0.16960418491367416,
+    "operatingMargin": 0.2206920914801788
+  },
+  {
+    "symbol": "MYTG",
+    "name": "Mu Yan Technology Group Co., Limited",
+    "marketCap": 1414178074,
+    "price": 4.6,
+    "roic": 0.17163079530131495,
+    "grossMargin": 0.5708832368682942,
+    "roe": 0.045427730115204665,
+    "operatingMargin": 0.09692783912509545
+  },
+  {
+    "symbol": "BF-A",
+    "name": "Brown-Forman Corporation",
+    "marketCap": 12816881460,
+    "price": 27.13,
+    "roic": 0.15800742220953468,
+    "grossMargin": 0.5894339622641509,
+    "roe": 0.21763085399449036,
+    "operatingMargin": 0.27849056603773586
+  },
+  {
+    "symbol": "BCUCF",
+    "name": "Brunello Cucinelli S.p.A.",
+    "marketCap": 6899646225,
+    "price": 101.65,
+    "roic": 0.1687517040915737,
+    "grossMargin": 0.9222683686079435,
+    "roe": 0.24386350926035538,
+    "operatingMargin": 0.16555680698296493
+  },
+  {
+    "symbol": "ANPDY",
+    "name": "ANTA Sports Products Limited",
+    "marketCap": 28119272103,
+    "price": 250.43,
+    "roic": 0.1975077955773488,
+    "grossMargin": 0.6216925987631661,
+    "roe": 0.25265272400330474,
+    "operatingMargin": 0.234306610566741
+  },
+  {
+    "symbol": "DBX",
+    "name": "Dropbox, Inc.",
+    "marketCap": 7457303878,
+    "price": 26.53,
+    "roic": 0.2299470298902762,
+    "grossMargin": 0.8253276822855349,
+    "roe": -0.6011430090377459,
+    "operatingMargin": 0.19080134997252962
+  },
+  {
+    "symbol": "NSKFF",
+    "name": "Kongsberg Gruppen ASA",
+    "marketCap": 29906140852,
+    "price": 34,
+    "roic": 0.25386888560541254,
+    "grossMargin": 0.6380545097397282,
+    "roe": 0.27445521229319486,
+    "operatingMargin": 0.1335938778850876
+  },
+  {
+    "symbol": "BBSEY",
+    "name": "BB Seguridade Participa\u00e7\u00f5es S.A.",
+    "marketCap": 14015570943,
+    "price": 7.22,
+    "roic": 0.7805683632331594,
+    "grossMargin": 1,
+    "roe": 0.897676645501005,
+    "operatingMargin": 1.8794078171244544
+  },
+  {
+    "symbol": "KNYJF",
+    "name": "KONE Oyj",
+    "marketCap": 38655823121,
+    "price": 74.5,
+    "roic": 0.3115956491368127,
+    "grossMargin": 0.5648111439486773,
+    "roe": 0.3318449785467611,
+    "operatingMargin": 0.11253874432350609
+  },
+  {
+    "symbol": "CRUS",
+    "name": "Cirrus Logic, Inc.",
+    "marketCap": 6613538414,
+    "price": 129.6,
+    "roic": 0.19248646151176071,
+    "grossMargin": 0.5253151638883864,
+    "roe": 0.17005164023270164,
+    "operatingMargin": 0.21642528230657299
+  },
+  {
+    "symbol": "CVAC",
+    "name": "CureVac N.V.",
+    "marketCap": 1049305010,
+    "price": 4.66,
+    "roic": 0.24324039431660596,
+    "grossMargin": 0.8022553159684592,
+    "roe": 0.23282247691671643,
+    "operatingMargin": 0.3320041855076797
+  },
+  {
+    "symbol": "ARCVF",
+    "name": "Arcadis N.V.",
+    "marketCap": 4037517141,
+    "price": 45.05,
+    "roic": 0.16659528907922913,
+    "grossMargin": 0.7767767767767768,
+    "roe": 0.19708029197080293,
+    "operatingMargin": 0.07787787787787788
+  },
+  {
+    "symbol": "HLTOF",
+    "name": "Hellenic Telecommunications Organization S.A.",
+    "marketCap": 7559443987,
+    "price": 18.7183,
+    "roic": 0.19965350379353605,
+    "grossMargin": 0.7676005346997884,
+    "roe": 0.2436765229782686,
+    "operatingMargin": 0.18614236381864765
+  },
+  {
+    "symbol": "BOEUF",
+    "name": "Bonesupport Holding AB (publ)",
+    "marketCap": 1432931435,
+    "price": 21.7575,
+    "roic": 0.22589636179964406,
+    "grossMargin": 0.9260331557859061,
+    "roe": 0.1838633939273971,
+    "operatingMargin": 0.18486926508272256
+  },
+  {
+    "symbol": "EXPE",
+    "name": "Expedia Group, Inc.",
+    "marketCap": 31210997465,
+    "price": 266.74,
+    "roic": 0.15027913865785575,
+    "grossMargin": 0.894602293477467,
+    "roe": 0.7925497752087347,
+    "operatingMargin": 0.09634066174859397
+  },
+  {
+    "symbol": "BDGSF",
+    "name": "Bank of Georgia Group PLC",
+    "marketCap": 4533791262,
+    "price": 104.44,
+    "roic": 0.1617127868487569,
+    "grossMargin": 0.673917863215214,
+    "roe": 0.3544357937734343,
+    "operatingMargin": 0.5332956954212824
+  },
+  {
+    "symbol": "BHP",
+    "name": "BHP Group Limited",
+    "marketCap": 178981569745,
+    "price": 70.49,
+    "roic": 0.2089510579596569,
+    "grossMargin": 0.8221294526159728,
+    "roe": 0.18921640616804783,
+    "operatingMargin": 0.3796964613163747
+  },
+  {
+    "symbol": "CIBEY",
+    "name": "Commercial International Bank (Egypt) S.A.E",
+    "marketCap": 8093074500,
+    "price": 2.7,
+    "roic": 0.3651022475686984,
+    "grossMargin": 1,
+    "roe": 0.3616204160954476,
+    "operatingMargin": 0.7872141460446419
+  },
+  {
+    "symbol": "ORINF",
+    "name": "Orion Oyj",
+    "marketCap": 11431979338,
+    "price": 81.3,
+    "roic": 0.30736314003246273,
+    "grossMargin": 0.6135892116182573,
+    "roe": 0.3282587064676617,
+    "operatingMargin": 0.2700985477178423
+  },
+  {
+    "symbol": "NBIX",
+    "name": "Neurocrine Biosciences, Inc.",
+    "marketCap": 13349595370,
+    "price": 133.89,
+    "roic": 0.1776705076300218,
+    "grossMargin": 0.9855644716172037,
+    "roe": 0.13179132718075454,
+    "operatingMargin": 0.24221967477603704
+  },
+  {
+    "symbol": "LOPE",
+    "name": "Grand Canyon Education, Inc.",
+    "marketCap": 4869031987,
+    "price": 174.09,
+    "roic": 0.3034836835603592,
+    "grossMargin": 0.5270396378709818,
+    "roe": 0.288617891364835,
+    "operatingMargin": 0.26660064549729817
+  },
+  {
+    "symbol": "RMD",
+    "name": "ResMed Inc.",
+    "marketCap": 37294388117,
+    "price": 255.5,
+    "roic": 0.2355414630696727,
+    "grossMargin": 0.5936214313626009,
+    "roe": 0.23471114180144,
+    "operatingMargin": 0.3274885175388194
+  },
+  {
+    "symbol": "AKBLF",
+    "name": "ALK-Abell\u00f3 A/S",
+    "marketCap": 7267143604,
+    "price": 36.1,
+    "roic": 0.17325710655867874,
+    "grossMargin": 0.6415026187466137,
+    "roe": 0.15168434766424715,
+    "operatingMargin": 0.19703810727830956
+  },
+  {
+    "symbol": "PRKS",
+    "name": "United Parks & Resorts Inc.",
+    "marketCap": 2041413142,
+    "price": 37.1,
+    "roic": 0.21441609470960935,
+    "grossMargin": 0.9238353191703941,
+    "roe": -0.49290852363825455,
+    "operatingMargin": 0.2685276366268842
+  },
+  {
+    "symbol": "BYD",
+    "name": "Boyd Gaming Corporation",
+    "marketCap": 6424008488,
+    "price": 82.23,
+    "roic": 0.16081748894547357,
+    "grossMargin": 0.5215531345272014,
+    "roe": 0.3654424592146887,
+    "operatingMargin": 0.23606391949099714
+  },
+  {
+    "symbol": "PEXNY",
+    "name": "PTT Exploration and Production Public Company Limited",
+    "marketCap": 14887462500,
+    "price": 7.5,
+    "roic": 0.1528522827758031,
+    "grossMargin": 0.650821376343342,
+    "roe": 0.14717140232210799,
+    "operatingMargin": 0.4208069073252349
+  },
+  {
+    "symbol": "DCYHY",
+    "name": "Discovery Limited",
+    "marketCap": 6087048462,
+    "price": 27.15,
+    "roic": 0.20147808825774927,
+    "grossMargin": 0.9565567568886828,
+    "roe": 0.1455619140387191,
+    "operatingMargin": 0.8050911575915847
+  },
+  {
+    "symbol": "APPF",
+    "name": "AppFolio, Inc.",
+    "marketCap": 7760981718,
+    "price": 216.06,
+    "roic": 0.24076052808139184,
+    "grossMargin": 0.6202326360296248,
+    "roe": 0.3929750235899016,
+    "operatingMargin": 0.17079282096997994
+  },
+  {
+    "symbol": "GDDY",
+    "name": "GoDaddy Inc.",
+    "marketCap": 14377930312,
+    "price": 103.85,
+    "roic": 0.16136897236770814,
+    "grossMargin": 0.6387649785708038,
+    "roe": 1.35370611183355,
+    "operatingMargin": 0.19537741625120267
+  },
+  {
+    "symbol": "CTMX",
+    "name": "CytomX Therapeutics, Inc.",
+    "marketCap": 1004749550,
+    "price": 5.93,
+    "roic": 0.7190529616524266,
+    "grossMargin": 1,
+    "roe": -69.88815789473684,
+    "operatingMargin": 0.18098810308248192
+  },
+  {
+    "symbol": "NTAP",
+    "name": "NetApp, Inc.",
+    "marketCap": 19939880478,
+    "price": 99.89,
+    "roic": 0.2170102256127252,
+    "grossMargin": 0.7019172245891662,
+    "roe": 1.1403846153846153,
+    "operatingMargin": 0.2034388314059647
+  },
+  {
+    "symbol": "RL",
+    "name": "Ralph Lauren Corporation",
+    "marketCap": 21696828902,
+    "price": 357.79,
+    "roic": 0.18969798111364378,
+    "grossMargin": 0.6855346800395536,
+    "roe": 0.287000193162063,
+    "operatingMargin": 0.13167113999152422
+  },
+  {
+    "symbol": "FBP",
+    "name": "First BanCorp.",
+    "marketCap": 3527122687,
+    "price": 21.98,
+    "roic": 0.1615474415299161,
+    "grossMargin": 0.7073672949584073,
+    "roe": 0.17895851754934594,
+    "operatingMargin": 0.32798522416114584
+  },
+  {
+    "symbol": "BRC",
+    "name": "Brady Corporation",
+    "marketCap": 3990207147,
+    "price": 84.58,
+    "roic": 0.1685550682695109,
+    "grossMargin": 0.5026555805510685,
+    "roe": 0.15874371231266948,
+    "operatingMargin": 0.15634065690850651
+  },
+  {
+    "symbol": "WINA",
+    "name": "Winmark Corporation",
+    "marketCap": 1638439615,
+    "price": 459.96,
+    "roic": 2.4328525596830386,
+    "grossMargin": 0.957979606121854,
+    "roe": -0.7827081794691465,
+    "operatingMargin": 0.6511401897671397
+  },
+  {
+    "symbol": "ACAD",
+    "name": "ACADIA Pharmaceuticals Inc.",
+    "marketCap": 4432563605,
+    "price": 26.2,
+    "roic": 0.2910809372343565,
+    "grossMargin": 0.9145528749829035,
+    "roe": 0.3090245130616695,
+    "operatingMargin": 0.24096337741713536
+  },
+  {
+    "symbol": "AARTY",
+    "name": "Airtel Africa Plc",
+    "marketCap": 7387452543,
+    "price": 20.15,
+    "roic": 0.18725099601593626,
+    "grossMargin": 0.6433594534860357,
+    "roe": 0.08849557522123894,
+    "operatingMargin": 0.2927466345187864
+  },
+  {
+    "symbol": "QABSY",
+    "name": "Qantas Airways Limited",
+    "marketCap": 10940430758,
+    "price": 36.15,
+    "roic": 0.1918233082706767,
+    "grossMargin": 0.5451322141056858,
+    "roe": 2.062982005141388,
+    "operatingMargin": 0.08718868811141015
+  },
+  {
+    "symbol": "SGGEF",
+    "name": "The Sage Group plc",
+    "marketCap": 12733223030,
+    "price": 13.45,
+    "roic": 0.23748939779474132,
+    "grossMargin": 0.8913649025069638,
+    "roe": 0.5125,
+    "operatingMargin": 0.22284122562674094
+  },
+  {
+    "symbol": "CRAYF",
+    "name": "Crayon Group Holding ASA",
+    "marketCap": 1238033550,
+    "price": 13.85,
+    "roic": 0.15812683746325074,
+    "grossMargin": 0.8960353679406732,
+    "roe": 0.08713272543059777,
+    "operatingMargin": 0.1073873359954364
+  },
+  {
+    "symbol": "CCOEF",
+    "name": "Capcom Co., Ltd.",
+    "marketCap": 10256375760,
+    "price": 24.52,
+    "roic": 0.27012697943360275,
+    "grossMargin": 0.5822798990589845,
+    "roe": 0.2141067506838177,
+    "operatingMargin": 0.38782693804391405
+  },
+  {
+    "symbol": "FACYF",
+    "name": "Fancl Corporation",
+    "marketCap": 2365138170,
+    "price": 17.45,
+    "roic": 0.15245152136213147,
+    "grossMargin": 0.6690866785111967,
+    "roe": 0.10968174537146264,
+    "operatingMargin": 0.11337379713386424
+  },
+  {
+    "symbol": "AFGE",
+    "name": "American Financial Group, Inc.",
+    "marketCap": 1456226856,
+    "price": 17.46,
+    "roic": 0.38605755256273616,
+    "grossMargin": 1,
+    "roe": 0.1986117330944917,
+    "operatingMargin": 0.9948813982521848
+  },
+  {
+    "symbol": "HES",
+    "name": "Hess Corporation",
+    "marketCap": 46072102062,
+    "price": 148.97,
+    "roic": 0.20130663856691253,
+    "grossMargin": 0.7890043424317618,
+    "roe": 0.24687945791726107,
+    "operatingMargin": 0.37034739454094295
+  },
+  {
+    "symbol": "VEON",
+    "name": "VEON Ltd.",
+    "marketCap": 3733352132,
+    "price": 54.11,
+    "roic": 0.25170068027210885,
+    "grossMargin": 0.8713786213786214,
+    "roe": 0.3776160145586897,
+    "operatingMargin": 0.2772227772227772
+  },
+  {
+    "symbol": "OPT",
+    "name": "Opthea Limited",
+    "marketCap": 4235657179,
+    "price": 3.41,
+    "roic": 0.7747213920349565,
+    "grossMargin": 1,
+    "roe": 0.8116883116883117,
+    "operatingMargin": -6230.935683186902
+  },
+  {
+    "symbol": "RZB",
+    "name": "Reinsurance Group of America, Incorporated",
+    "marketCap": 12646631245,
+    "price": 25.07,
+    "roic": 0.18577627975563513,
+    "grossMargin": 1,
+    "roe": 0.06629068047337278,
+    "operatingMargin": 0.9972859275342651
+  },
+  {
+    "symbol": "GOOG",
+    "name": "Alphabet Inc.",
+    "marketCap": 4042656379640,
+    "price": 335,
+    "roic": 0.3112141199665498,
+    "grossMargin": 0.5820043540617911,
+    "roe": 0.30797578472025694,
+    "operatingMargin": 0.32109777211457696
+  },
+  {
+    "symbol": "MKTX",
+    "name": "MarketAxess Holdings Inc.",
+    "marketCap": 6291311929,
+    "price": 168.38,
+    "roic": 0.2228829163419138,
+    "grossMargin": 0.6894579223764131,
+    "roe": 0.1974428585830945,
+    "operatingMargin": 0.41717201262518405
+  },
+  {
+    "symbol": "WHTPF",
+    "name": "WH Smith PLC",
+    "marketCap": 1117303469,
+    "price": 8.97,
+    "roic": 0.22741086725952517,
+    "grossMargin": 0.5665054803352676,
+    "roe": -0.9127904765526946,
+    "operatingMargin": 0.08626305609284332
+  },
+  {
+    "symbol": "FSUMF",
+    "name": "Fortescue Metals Group Limited",
+    "marketCap": 46149234910,
+    "price": 15.01,
+    "roic": 0.18030014035340267,
+    "grossMargin": 0.5673800259403372,
+    "roe": 0.16878502803086395,
+    "operatingMargin": 0.32490272373540857
+  },
+  {
+    "symbol": "NXPI",
+    "name": "NXP Semiconductors N.V.",
+    "marketCap": 57739157137,
+    "price": 229.42,
+    "roic": 0.1605205054728238,
+    "grossMargin": 0.5643729189789123,
+    "roe": 0.27333115539584013,
+    "operatingMargin": 0.27088948787061995
+  },
+  {
+    "symbol": "ABDBY",
+    "name": "Alm. Brand A/S",
+    "marketCap": 3639449600,
+    "price": 5.12,
+    "roic": 0.32072809369267674,
+    "grossMargin": 1,
+    "roe": 0.057972095799447884,
+    "operatingMargin": 0.8372007366482505
+  },
+  {
+    "symbol": "BF-B",
+    "name": "Brown-Forman Corporation",
+    "marketCap": 12646808577,
+    "price": 26.77,
+    "roic": 0.15800742220953468,
+    "grossMargin": 0.5894339622641509,
+    "roe": 0.21763085399449036,
+    "operatingMargin": 0.27849056603773586
+  },
+  {
+    "symbol": "AMKYF",
+    "name": "ABC-Mart,Inc.",
+    "marketCap": 5164045903,
+    "price": 20.855,
+    "roic": 0.16842042908840255,
+    "grossMargin": 0.5046077130160505,
+    "roe": 0.12348193017082965,
+    "operatingMargin": 0.1680539062122181
+  },
+  {
+    "symbol": "AHICF",
+    "name": "Asahi Intecc Co., Ltd.",
+    "marketCap": 4967701501,
+    "price": 18.55,
+    "roic": 0.181932003072624,
+    "grossMargin": 0.6768173297229744,
+    "roe": 0.08460031217827373,
+    "operatingMargin": 0.25060612372422414
+  },
+  {
+    "symbol": "YETI",
+    "name": "YETI Holdings, Inc.",
+    "marketCap": 3850840460,
+    "price": 47.41,
+    "roic": 0.2706504186998685,
+    "grossMargin": 0.5810698338081386,
+    "roe": 0.23738324323374863,
+    "operatingMargin": 0.13409455191699096
+  },
+  {
+    "symbol": "SEIC",
+    "name": "SEI Investments Company",
+    "marketCap": 10363271662,
+    "price": 84.64,
+    "roic": 0.23946125438513116,
+    "grossMargin": 0.5309434482537947,
+    "roe": 0.2580648742158472,
+    "operatingMargin": 0.25962437492676993
+  },
+  {
+    "symbol": "BVRDF",
+    "name": "Bureau Veritas S.A.",
+    "marketCap": 14246519543,
+    "price": 32.12,
+    "roic": 0.20049403930834497,
+    "grossMargin": 0.7212261052091846,
+    "roe": 0.2887863265202617,
+    "operatingMargin": 0.14956176192536333
+  },
+  {
+    "symbol": "PXED",
+    "name": "Phoenix Education Partners, Inc",
+    "marketCap": 1092459752,
+    "price": 30.55,
+    "roic": 0.6592904737916909,
+    "grossMargin": 0.5671212638702452,
+    "roe": 0.5425125783105189,
+    "operatingMargin": 0.21700529789752102
+  },
+  {
+    "symbol": "BYCRF",
+    "name": "BayCurrent Consulting, Inc.",
+    "marketCap": 6427968984,
+    "price": 42.33,
+    "roic": 0.42400453704256463,
+    "grossMargin": 0.5381453780933343,
+    "roe": 0.32584400588976814,
+    "operatingMargin": 0.36719342386434134
+  },
+  {
+    "symbol": "ABEV",
+    "name": "Ambev S.A.",
+    "marketCap": 44437651793,
+    "price": 2.83,
+    "roic": 0.19273285987276964,
+    "grossMargin": 0.5124227664452834,
+    "roe": 0.1463594144893509,
+    "operatingMargin": 0.24372321908673522
+  },
+  {
+    "symbol": "DECK",
+    "name": "Deckers Outdoor Corporation",
+    "marketCap": 14858071138,
+    "price": 100.16,
+    "roic": 0.4117965080704421,
+    "grossMargin": 0.57879814955516,
+    "roe": 0.3844353371828956,
+    "operatingMargin": 0.23649894937672647
+  },
+  {
+    "symbol": "TDVXF",
+    "name": "Tobii Dynavox AB (publ)",
+    "marketCap": 1125187518,
+    "price": 10.66,
+    "roic": 0.16705658722035385,
+    "grossMargin": 0.6876933218396633,
+    "roe": 0.32158590308370044,
+    "operatingMargin": 0.1158663353785305
+  },
+  {
+    "symbol": "QFIN",
+    "name": "Qfin Holdings, Inc.",
+    "marketCap": 1041480896,
+    "price": 16,
+    "roic": 0.24554695274939092,
+    "grossMargin": 0.6177356111528741,
+    "roe": 0.25896249957058776,
+    "operatingMargin": 0.4385832967874924
+  },
+  {
+    "symbol": "FFIN",
+    "name": "First Financial Bankshares, Inc.",
+    "marketCap": 4559682288,
+    "price": 31.84,
+    "roic": 0.16148033945351759,
+    "grossMargin": 0.7182268324374333,
+    "roe": 0.13226034088259792,
+    "operatingMargin": 0.37492053150948357
+  },
+  {
+    "symbol": "ALORY",
+    "name": "Alior Bank S.A.",
+    "marketCap": 7697463309,
+    "price": 14.74,
+    "roic": 0.2278453803178427,
+    "grossMargin": 1,
+    "roe": 0.21817465040392287,
+    "operatingMargin": 0.5979114887900513
+  },
+  {
+    "symbol": "PTC",
+    "name": "PTC Inc.",
+    "marketCap": 19664766879,
+    "price": 164.63,
+    "roic": 0.18260731689544976,
+    "grossMargin": 0.8375515565345831,
+    "roe": 0.1918330031997562,
+    "operatingMargin": 0.35863597965264643
+  },
+  {
+    "symbol": "RHHBF",
+    "name": "Roche Holding AG",
+    "marketCap": 372278848728,
+    "price": 467.5,
+    "roic": 0.15772079868533478,
+    "grossMargin": 0.7390335764083661,
+    "roe": 0.23663440182185333,
+    "operatingMargin": 0.21503325586986136
+  },
+  {
+    "symbol": "VACNY",
+    "name": "VAT Group AG",
+    "marketCap": 20391085482,
+    "price": 67.99,
+    "roic": 0.23612135760535372,
+    "grossMargin": 0.6730492464444916,
+    "roe": 0.2809463612764416,
+    "operatingMargin": 0.2676767140734451
+  },
+  {
+    "symbol": "PPTDF",
+    "name": "PeptiDream Inc.",
+    "marketCap": 1389050124,
+    "price": 10.75,
+    "roic": 0.28392918456427546,
+    "grossMargin": 0.7392115303875569,
+    "roe": 0.2645227999754344,
+    "operatingMargin": 0.45234391173481364
+  },
+  {
+    "symbol": "ALKS",
+    "name": "Alkermes plc",
+    "marketCap": 5534738902,
+    "price": 33.52,
+    "roic": 0.26448972816354455,
+    "grossMargin": 0.8424974576793491,
+    "roe": 0.2505636607264141,
+    "operatingMargin": 0.27004838113238555
+  },
+  {
+    "symbol": "SPXCF",
+    "name": "Singapore Exchange Limited",
+    "marketCap": 14899085926,
+    "price": 13.94,
+    "roic": 0.253231342143874,
+    "grossMargin": 0.7430573643410853,
+    "roe": 0.29454830423456113,
+    "operatingMargin": 0.5419739170086639
+  },
+  {
+    "symbol": "NVZMF",
+    "name": "Novozymes A/S",
+    "marketCap": 31352848344,
+    "price": 66.41,
+    "roic": 0.2648585484111063,
+    "grossMargin": 0.519994792601941,
+    "roe": 0.2040663027916965,
+    "operatingMargin": 0.13068998653869413
+  },
+  {
+    "symbol": "CASH",
+    "name": "Pathward Financial, Inc.",
+    "marketCap": 1927856132,
+    "price": 86.3,
+    "roic": 0.17475205598258223,
+    "grossMargin": 0.9002203639653839,
+    "roe": 0.21662267130511803,
+    "operatingMargin": 0.3255155203362375
+  },
+  {
+    "symbol": "RYKKF",
+    "name": "Ryohin Keikaku Co., Ltd.",
+    "marketCap": 5308930869,
+    "price": 20.03,
+    "roic": 0.1724991823576134,
+    "grossMargin": 0.5135879504836044,
+    "roe": 0.15310863588594692,
+    "operatingMargin": 0.09410817086801533
+  },
+  {
+    "symbol": "YACAF",
+    "name": "Yancoal Australia Ltd",
+    "marketCap": 5123305016,
+    "price": 3.88,
+    "roic": 0.19142240604207877,
+    "grossMargin": 0.7930830623706769,
+    "roe": 0.13054213633923778,
+    "operatingMargin": 0.3146615430091635
+  },
+  {
+    "symbol": "NVS",
+    "name": "Novartis AG",
+    "marketCap": 292078536354,
+    "price": 152.22,
+    "roic": 0.19773227832612775,
+    "grossMargin": 0.7520010827114187,
+    "roe": 0.2711029378377151,
+    "operatingMargin": 0.2811956227524071
+  },
+  {
+    "symbol": "RCRUY",
+    "name": "Recruit Holdings Co., Ltd.",
+    "marketCap": 78261004349,
+    "price": 11,
+    "roic": 0.24899762292348432,
+    "grossMargin": 0.5862703859307071,
+    "roe": 0.25253990215024646,
+    "operatingMargin": 0.1378903818941396
+  },
+  {
+    "symbol": "GOFPY",
+    "name": "Organization of Football Prognostics S.A.",
+    "marketCap": 7495042664,
+    "price": 10.448,
+    "roic": 0.48092296104652466,
+    "grossMargin": 0.6133126631313318,
+    "roe": 0.8383967912352674,
+    "operatingMargin": 0.43758686006978104
+  },
+  {
+    "symbol": "GAM",
+    "name": "General American Investors Company, Inc.",
+    "marketCap": 1419351847,
+    "price": 60.97,
+    "roic": 0.1569157910267696,
+    "grossMargin": 1,
+    "roe": 0.15876507001334625,
+    "operatingMargin": 0.9752951266278019
+  },
+  {
+    "symbol": "FDVWF",
+    "name": "Friedrich Vorwerk Group SE",
+    "marketCap": 2210000000,
+    "price": 110.5,
+    "roic": 0.19935755494298582,
+    "grossMargin": 0.524945169387964,
+    "roe": 0.17445779136855555,
+    "operatingMargin": 0.10622791475119042
+  },
+  {
+    "symbol": "GBERY",
+    "name": "Geberit AG",
+    "marketCap": 25646708305,
+    "price": 77.8,
+    "roic": 0.2734091806338155,
+    "grossMargin": 0.7285367039377735,
+    "roe": 0.4586021505376344,
+    "operatingMargin": 0.24689677523902123
+  },
+  {
+    "symbol": "FRHC",
+    "name": "Freedom Holding Corp.",
+    "marketCap": 7778931624,
+    "price": 127.19,
+    "roic": 0.23410149416551765,
+    "grossMargin": 0.5261149127962015,
+    "roe": 0.06971433183363104,
+    "operatingMargin": 0.310687475257628
+  },
+  {
+    "symbol": "MGY",
+    "name": "Magnolia Oil & Gas Corporation",
+    "marketCap": 4523867738,
+    "price": 24.7,
+    "roic": 0.20232089636580475,
+    "grossMargin": 0.5172834120888892,
+    "roe": 0.19127875044615353,
+    "operatingMargin": 0.38908233691976357
+  },
+  {
+    "symbol": "WIZEY",
+    "name": "Wise plc",
+    "marketCap": 13380325009,
+    "price": 13.37,
+    "roic": 0.35735865343116097,
+    "grossMargin": 0.7240615657180821,
+    "roe": 0.3006059731640456,
+    "operatingMargin": 0.3208946960469494
+  },
+  {
+    "symbol": "FRCOF",
+    "name": "Fast Retailing Co., Ltd.",
+    "marketCap": 126653185856,
+    "price": 412.78,
+    "roic": 0.19140201257639763,
+    "grossMargin": 0.5378141524034866,
+    "roe": 0.1904914621565561,
+    "operatingMargin": 0.16593398870002668
+  },
+  {
+    "symbol": "MTD",
+    "name": "Mettler-Toledo International Inc.",
+    "marketCap": 29114211245,
+    "price": 1425.18,
+    "roic": 0.5439959146754088,
+    "grossMargin": 0.5817417332733182,
+    "roe": -6.8022696824020805,
+    "operatingMargin": 0.2910508601858143
+  },
+  {
+    "symbol": "IT",
+    "name": "Gartner, Inc.",
+    "marketCap": 17570703280,
+    "price": 232,
+    "roic": 0.25325763773215454,
+    "grossMargin": 0.677215679648263,
+    "roe": 0.9224128861090858,
+    "operatingMargin": 0.18449196965062606
+  },
+  {
+    "symbol": "GGAL",
+    "name": "Grupo Financiero Galicia S.A.",
+    "marketCap": 8956469962,
+    "price": 55.76,
+    "roic": 0.16664125720600015,
+    "grossMargin": 0.6270770920228416,
+    "roe": 0.26795116164731825,
+    "operatingMargin": 0.20808429622250768
+  },
+  {
+    "symbol": "CLPBF",
+    "name": "Coloplast A/S",
+    "marketCap": 17298538122,
+    "price": 83.42,
+    "roic": 0.18105882916088267,
+    "grossMargin": 0.6506595737033176,
+    "roe": 0.2255297992666708,
+    "operatingMargin": 0.27191689730778906
+  },
+  {
+    "symbol": "SHLAF",
+    "name": "Schindler Holding AG",
+    "marketCap": 38243002482,
+    "price": 361.61,
+    "roic": 0.20508666774663858,
+    "grossMargin": 0.6254004983980064,
+    "roe": 0.19176423092450545,
+    "operatingMargin": 0.11267354930580278
+  },
+  {
+    "symbol": "RATIY",
+    "name": "Rational AG",
+    "marketCap": 8625282000,
+    "price": 37.93,
+    "roic": 0.35876278373659265,
+    "grossMargin": 0.5920492924763454,
+    "roe": 0.29236715517060297,
+    "operatingMargin": 0.2711396204030233
+  },
+  {
+    "symbol": "THNOF",
+    "name": "Technology One Limited",
+    "marketCap": 5941739019,
+    "price": 18.15,
+    "roic": 0.22958837806338436,
+    "grossMargin": 0.8630915184911663,
+    "roe": 0.3054033825041676,
+    "operatingMargin": 0.19155930974332583
+  },
+  {
+    "symbol": "QCOM",
+    "name": "QUALCOMM Incorporated",
+    "marketCap": 163905840000,
+    "price": 153.04,
+    "roic": 0.30134881338569236,
+    "grossMargin": 0.5542859723602204,
+    "roe": 0.26129397340375365,
+    "operatingMargin": 0.27899467076144885
+  },
+  {
+    "symbol": "SCHYF",
+    "name": "Sands China Ltd.",
+    "marketCap": 21455549229,
+    "price": 2.651,
+    "roic": 0.1670743639921722,
+    "grossMargin": 0.5902542372881356,
+    "roe": 1.0135790494665373,
+    "operatingMargin": 0.19293785310734463
+  },
+  {
+    "symbol": "PHOJY",
+    "name": "Public Joint-Stock Company PhosAgro",
+    "marketCap": 17521487869,
+    "price": 22.0899,
+    "roic": 0.6960863812897443,
+    "grossMargin": 0.5276466260598708,
+    "roe": 0.9347040422753363,
+    "operatingMargin": 0.40092919211907424
+  },
+  {
+    "symbol": "FBKIF",
+    "name": "First International Bank of Israel Ltd",
+    "marketCap": 5016502000,
+    "price": 50,
+    "roic": 0.17254076801683324,
+    "grossMargin": 0.9699792960662525,
+    "roe": 0.17654504839910648,
+    "operatingMargin": 0.6790890269151139
+  },
+  {
+    "symbol": "BSM",
+    "name": "Black Stone Minerals, L.P.",
+    "marketCap": 3124970577,
+    "price": 14.75,
+    "roic": 0.2297937791285193,
+    "grossMargin": 0.7622414542508573,
+    "roe": 0.24023076943509122,
+    "operatingMargin": 0.6215019946339454
+  },
+  {
+    "symbol": "MCRI",
+    "name": "Monarch Casino & Resort, Inc.",
+    "marketCap": 1635043571,
+    "price": 89.59,
+    "roic": 0.16969291165248018,
+    "grossMargin": 0.5377700666046198,
+    "roe": 0.14054907020403748,
+    "operatingMargin": 0.17714569138199798
+  },
+  {
+    "symbol": "BOMXF",
+    "name": "Bolsa Mexicana de Valores, S.A.B. de C.V.",
+    "marketCap": 1150526480,
+    "price": 2.06,
+    "roic": 0.26405327397695866,
+    "grossMargin": 0.644888642616293,
+    "roe": 0.22136620254201744,
+    "operatingMargin": 0.5510653345826194
+  },
+  {
+    "symbol": "LLY",
+    "name": "Eli Lilly and Company",
+    "marketCap": 931875796733,
+    "price": 1039.51,
+    "roic": 0.34768158638650887,
+    "grossMargin": 0.8131040101947707,
+    "roe": 0.7461897816390809,
+    "operatingMargin": 0.3885579683278311
+  },
+  {
+    "symbol": "FHI",
+    "name": "Federated Hermes, Inc.",
+    "marketCap": 4071513396,
+    "price": 52.51,
+    "roic": 0.20131930485867097,
+    "grossMargin": 0.6688387242638747,
+    "roe": 0.2449895270844024,
+    "operatingMargin": 0.2214745115627602
+  },
+  {
+    "symbol": "BSDGF",
+    "name": "Bosideng International Holdings Limited",
+    "marketCap": 6750212432,
+    "price": 0.58545,
+    "roic": 0.27755912101041275,
+    "grossMargin": 0.5729295201440924,
+    "roe": 0.20769010261823675,
+    "operatingMargin": 0.19175886166293327
+  },
+  {
+    "symbol": "CBOE",
+    "name": "Cboe Global Markets, Inc.",
+    "marketCap": 28048915533,
+    "price": 268.04,
+    "roic": 0.17178873613913262,
+    "grossMargin": 0.5061423861277323,
+    "roe": 0.17873165716422096,
+    "operatingMargin": 0.2682623030895103
+  },
+  {
+    "symbol": "LPPSY",
+    "name": "LPP S.A.",
+    "marketCap": 7575742449,
+    "price": 20.41,
+    "roic": 0.26690981432360744,
+    "grossMargin": 0.5308012280875507,
+    "roe": 0.32968484619739574,
+    "operatingMargin": 0.11958997722095673
+  },
+  {
+    "symbol": "CPAY",
+    "name": "Corpay, Inc.",
+    "marketCap": 22243877476,
+    "price": 317.96,
+    "roic": 0.19322391787353432,
+    "grossMargin": 0.7813396554964551,
+    "roe": 0.32147215135305485,
+    "operatingMargin": 0.4496457369554437
+  },
+  {
+    "symbol": "FNNTF",
+    "name": "flatexDEGIRO AG",
+    "marketCap": 3477459603,
+    "price": 32.5,
+    "roic": 0.200170494831511,
+    "grossMargin": 0.6721745335034272,
+    "roe": 0.14779660028728472,
+    "operatingMargin": 0.37113667322536703
+  },
+  {
+    "symbol": "KARO",
+    "name": "Karooooo Ltd.",
+    "marketCap": 1553932990,
+    "price": 50.3,
+    "roic": 0.3605074507242042,
+    "grossMargin": 0.7012765741301673,
+    "roe": 0.286578892290349,
+    "operatingMargin": 0.287322338306704
+  },
+  {
+    "symbol": "ARCAY",
+    "name": "Arcadis N.V.",
+    "marketCap": 4481151100,
+    "price": 50,
+    "roic": 0.16659528907922913,
+    "grossMargin": 0.7767767767767768,
+    "roe": 0.19708029197080293,
+    "operatingMargin": 0.07787787787787788
+  },
+  {
+    "symbol": "PAYC",
+    "name": "Paycom Software, Inc.",
+    "marketCap": 7999124532,
+    "price": 142.19,
+    "roic": 0.32476575700168964,
+    "grossMargin": 0.8223237043330501,
+    "roe": 0.3185481312266007,
+    "operatingMargin": 0.33682030586236195
+  },
+  {
+    "symbol": "EXEL",
+    "name": "Exelixis, Inc.",
+    "marketCap": 11727225747,
+    "price": 43.74,
+    "roic": 0.23767129561020173,
+    "grossMargin": 0.9648563817695478,
+    "roe": 0.23227265982622783,
+    "operatingMargin": 0.27879223553638793
+  },
+  {
+    "symbol": "UNMA",
+    "name": "Unum Group 6.250% JR NT58",
+    "marketCap": 5342790095,
+    "price": 23.63,
+    "roic": 0.7614176556657454,
+    "grossMargin": 1,
+    "roe": 0.16231035206320535,
+    "operatingMargin": 0.9085456224344898
+  },
+  {
+    "symbol": "IRRHF",
+    "name": "Interroll Holding AG",
+    "marketCap": 2291933644,
+    "price": 2764.34,
+    "roic": 0.15435533365467966,
+    "grossMargin": 0.6172944669468132,
+    "roe": 0.132348736888695,
+    "operatingMargin": 0.14762713311389572
+  },
+  {
+    "symbol": "HLF",
+    "name": "Herbalife Nutrition Ltd.",
+    "marketCap": 1750083597,
+    "price": 16.94,
+    "roic": 0.2576617480136209,
+    "grossMargin": 0.7788347920129779,
+    "roe": -0.31743852203220574,
+    "operatingMargin": 0.07728665558470689
+  },
+  {
+    "symbol": "ALMFF",
+    "name": "Altium Limited",
+    "marketCap": 6332496000,
+    "price": 48,
+    "roic": 0.2645004014451388,
+    "grossMargin": 0.5276686843137778,
+    "roe": 0.21872732706295436,
+    "operatingMargin": 0.32589143560226574
+  },
+  {
+    "symbol": "BCUCY",
+    "name": "Brunello Cucinelli S.p.A.",
+    "marketCap": 1298595068,
+    "price": 9.5555,
+    "roic": 0.1687517040915737,
+    "grossMargin": 0.9222683686079435,
+    "roe": 0.24386350926035538,
+    "operatingMargin": 0.16555680698296493
+  },
+  {
+    "symbol": "MC",
+    "name": "Moelis & Company",
+    "marketCap": 5430591319,
+    "price": 73.39,
+    "roic": 0.24614370824544773,
+    "grossMargin": 1,
+    "roe": 0.3080121194005516,
+    "operatingMargin": 0.14477897442122314
+  },
+  {
+    "symbol": "OBIIF",
+    "name": "OBIC Co.,Ltd.",
+    "marketCap": 14036808895,
+    "price": 32.165,
+    "roic": 0.16691085651007284,
+    "grossMargin": 0.7784971956450016,
+    "roe": 0.14894779301601938,
+    "operatingMargin": 0.646469811943253
+  },
+  {
+    "symbol": "CQP",
+    "name": "Cheniere Energy Partners, L.P.",
+    "marketCap": 27382856883,
+    "price": 56.57,
+    "roic": 0.2083730385617178,
+    "grossMargin": 0.5112591911764706,
+    "roe": 1.3783635365183964,
+    "operatingMargin": 0.37683823529411764
+  },
+  {
+    "symbol": "OMAB",
+    "name": "Grupo Aeroportuario del Centro Norte, S.A.B. de C.V.",
+    "marketCap": 5803161019,
+    "price": 120.22,
+    "roic": 0.3372816885423204,
+    "grossMargin": 0.6529954708286815,
+    "roe": 0.47461832101497825,
+    "operatingMargin": 0.536272513500338
+  },
+  {
+    "symbol": "HLNE",
+    "name": "Hamilton Lane Incorporated",
+    "marketCap": 8273629910,
+    "price": 147.36,
+    "roic": 0.22656250559156024,
+    "grossMargin": 0.7079483788078764,
+    "roe": 0.30311272709021986,
+    "operatingMargin": 0.4439949899223382
+  },
+  {
+    "symbol": "KSPI",
+    "name": "Joint Stock Company Kaspi.kz",
+    "marketCap": 14938428073,
+    "price": 78.3,
+    "roic": 0.7820136732112358,
+    "grossMargin": 0.6233655318063553,
+    "roe": 0.6852903724169931,
+    "operatingMargin": 0.5042034140615734
+  },
+  {
+    "symbol": "NRP",
+    "name": "Natural Resource Partners L.P.",
+    "marketCap": 1497348915,
+    "price": 113.97,
+    "roic": 0.26880797579624366,
+    "grossMargin": 1,
+    "roe": 0.3391012277471975,
+    "operatingMargin": 0.8129634693319512
+  },
+  {
+    "symbol": "IRMD",
+    "name": "IRadimed Corporation",
+    "marketCap": 1270080215,
+    "price": 99.84,
+    "roic": 0.24455939330345638,
+    "grossMargin": 0.7693644071285156,
+    "roe": 0.22154228977895052,
+    "operatingMargin": 0.29989201159261897
+  },
+  {
+    "symbol": "PAC",
+    "name": "Grupo Aeroportuario del Pac\u00edfico, S.A.B. de C.V.",
+    "marketCap": 14326272738,
+    "price": 283.53,
+    "roic": 0.24591356954522497,
+    "grossMargin": 0.7719172630223905,
+    "roe": 0.3854038515248437,
+    "operatingMargin": 0.5619721562011026
+  },
+  {
+    "symbol": "SSMXY",
+    "name": "Sysmex Corporation",
+    "marketCap": 5988760098,
+    "price": 9.61,
+    "roic": 0.1614605801173213,
+    "grossMargin": 0.5347109858977711,
+    "roe": 0.11572181397916236,
+    "operatingMargin": 0.17218953175409865
+  },
+  {
+    "symbol": "RJF",
+    "name": "Raymond James Financial, Inc.",
+    "marketCap": 33376379400,
+    "price": 169.02,
+    "roic": 0.28463554667998003,
+    "grossMargin": 0.8815987933634992,
+    "roe": 0.17075901783571942,
+    "operatingMargin": 0.28663901458019103
+  },
+  {
+    "symbol": "GEDSF",
+    "name": "Gedeon Richter PLC",
+    "marketCap": 4544208815,
+    "price": 24.8501,
+    "roic": 0.1829152042831058,
+    "grossMargin": 0.6888711379577748,
+    "roe": 0.18396846659110377,
+    "operatingMargin": 0.30454028651557646
+  },
+  {
+    "symbol": "NSSC",
+    "name": "Napco Security Technologies, Inc.",
+    "marketCap": 1372363188,
+    "price": 38.48,
+    "roic": 0.2657280393373314,
+    "grossMargin": 0.5562682729420056,
+    "roe": 0.2574404232352348,
+    "operatingMargin": 0.25470072293402196
+  },
+  {
+    "symbol": "AROC",
+    "name": "Archrock, Inc.",
+    "marketCap": 5001542190,
+    "price": 28.52,
+    "roic": 0.15402377763676486,
+    "grossMargin": 0.6039179641168599,
+    "roe": 0.1301299327329696,
+    "operatingMargin": 0.48373648378399625
+  },
+  {
+    "symbol": "IPSOF",
+    "name": "Ipsos S.A.",
+    "marketCap": 1606157935,
+    "price": 37.22,
+    "roic": 0.15426419588858367,
+    "grossMargin": 0.6873524037397881,
+    "roe": 0.1296495389604709,
+    "operatingMargin": 0.12077573562549676
+  },
+  {
+    "symbol": "KKKUF",
+    "name": "Kakaku.com, Inc.",
+    "marketCap": 2853783824,
+    "price": 14.425,
+    "roic": 0.4513411122897409,
+    "grossMargin": 1,
+    "roe": 0.3240847098412904,
+    "operatingMargin": 0.3797284375597629
+  },
+  {
+    "symbol": "IPXHY",
+    "name": "Inpex Corporation",
+    "marketCap": 25404609897,
+    "price": 21.42,
+    "roic": 0.18573855006425985,
+    "grossMargin": 0.5960389030631947,
+    "roe": 0.0886273916095736,
+    "operatingMargin": 0.561288830573426
+  },
+  {
+    "symbol": "SLTQY",
+    "name": "SNGN Romgaz S.A.",
+    "marketCap": 3468797885,
+    "price": 0.9,
+    "roic": 0.19964868874031327,
+    "grossMargin": 0.8935356595825689,
+    "roe": 0.22672837113897795,
+    "operatingMargin": 0.43852389753910076
+  },
+  {
+    "symbol": "AFGD",
+    "name": "American Financial Group, Inc.",
+    "marketCap": 1770658428,
+    "price": 21.23,
+    "roic": 0.38605755256273616,
+    "grossMargin": 1,
+    "roe": 0.1986117330944917,
+    "operatingMargin": 0.9948813982521848
+  },
+  {
+    "symbol": "CDDRF",
+    "name": "Headwater Exploration Inc.",
+    "marketCap": 1979344250,
+    "price": 8.29,
+    "roic": 0.29257929252830445,
+    "grossMargin": 0.5357548515337106,
+    "roe": 0.26881918740054817,
+    "operatingMargin": 0.3888390523455802
+  },
+  {
+    "symbol": "PM",
+    "name": "Philip Morris International Inc.",
+    "marketCap": 278451539421,
+    "price": 178.88,
+    "roic": 0.3447991973037639,
+    "grossMargin": 0.6481070806272771,
+    "roe": -0.5986382978723405,
+    "operatingMargin": 0.3538201594593168
+  },
+  {
+    "symbol": "TKGBY",
+    "name": "Turkiye Garanti Bankasi A.S.",
+    "marketCap": 14784000000,
+    "price": 3.52,
+    "roic": 0.24501786998034478,
+    "grossMargin": 1,
+    "roe": 0.27667171569129156,
+    "operatingMargin": 0.6292876292100859
+  },
+  {
+    "symbol": "CODAF",
+    "name": "Codan Limited",
+    "marketCap": 4062949819,
+    "price": 22.34,
+    "roic": 0.15311585057873936,
+    "grossMargin": 0.5617626730502828,
+    "roe": 0.1975709537690879,
+    "operatingMargin": 0.16141471850685082
+  },
+  {
+    "symbol": "CROX",
+    "name": "Crocs, Inc.",
+    "marketCap": 4596050760,
+    "price": 84.15,
+    "roic": 0.25096385142726635,
+    "grossMargin": 0.5875657101178223,
+    "roe": 0.517543410476039,
+    "operatingMargin": 0.24911850199945978
+  },
+  {
+    "symbol": "PBI",
+    "name": "Pitney Bowes Inc.",
+    "marketCap": 1750490930,
+    "price": 10.17,
+    "roic": 0.1811520133767087,
+    "grossMargin": 0.5241789442208075,
+    "roe": -0.017711645082490107,
+    "operatingMargin": 0.15417413813691713
+  },
+  {
+    "symbol": "TKGZY",
+    "name": "Turkiye Garanti Bankasi A.S.",
+    "marketCap": 2368800000,
+    "price": 0.564,
+    "roic": 0.24501786998034478,
+    "grossMargin": 1,
+    "roe": 0.27667171569129156,
+    "operatingMargin": 0.6292876292100859
+  },
+  {
+    "symbol": "CMPO",
+    "name": "CompoSecure, Inc.",
+    "marketCap": 2530986624,
+    "price": 24.84,
+    "roic": 0.2706817976035976,
+    "grossMargin": 0.521260381719139,
+    "roe": 0.374489354879188,
+    "operatingMargin": 0.25589496184948557
+  },
+  {
+    "symbol": "HKXCY",
+    "name": "Hong Kong Exchanges and Clearing Limited",
+    "marketCap": 70083659951,
+    "price": 55.45,
+    "roic": 0.2605596805827963,
+    "grossMargin": 0.7460509627579845,
+    "roe": 0.24233083265245486,
+    "operatingMargin": 0.8577770091087282
+  },
+  {
+    "symbol": "WES",
+    "name": "Western Midstream Partners, LP",
+    "marketCap": 16715584853,
+    "price": 40.97,
+    "roic": 0.17206988052395636,
+    "grossMargin": 0.7718091224870139,
+    "roe": 0.48632975904042675,
+    "operatingMargin": 0.5466324829282405
+  },
+  {
+    "symbol": "PPWLM",
+    "name": "PacifiCorp",
+    "marketCap": 69002036704,
+    "price": 193.25,
+    "roic": 0.4171626031867921,
+    "grossMargin": 2.924848484848485,
+    "roe": 0.05127473363774734,
+    "operatingMargin": 0.6584848484848485
+  },
+  {
+    "symbol": "TPB",
+    "name": "Turning Point Brands, Inc.",
+    "marketCap": 2324153034,
+    "price": 121.87,
+    "roic": 0.19333694510771782,
+    "grossMargin": 0.5588781678034714,
+    "roe": 0.21177140242896889,
+    "operatingMargin": 0.2404425220429213
+  },
+  {
+    "symbol": "APP",
+    "name": "AppLovin Corporation",
+    "marketCap": 183859133581,
+    "price": 543.56,
+    "roic": 0.38934786597993637,
+    "grossMargin": 0.7522309294392651,
+    "roe": 1.449577819415719,
+    "operatingMargin": 0.3978255126933217
+  },
+  {
+    "symbol": "BAH",
+    "name": "Booz Allen Hamilton Holding Corporation",
+    "marketCap": 11038153035,
+    "price": 89.56,
+    "roic": 0.25064032199048664,
+    "grossMargin": 0.5476627712854758,
+    "roe": 0.9322033898305084,
+    "operatingMargin": 0.11435726210350584
+  },
+  {
+    "symbol": "FCBP",
+    "name": "First Choice Bancorp",
+    "marketCap": 3501079200,
+    "price": 29.1,
+    "roic": 1.3717317799872786,
+    "grossMargin": 1,
+    "roe": 0.10312351954292391,
+    "operatingMargin": 0.44296339538604573
+  },
+  {
+    "symbol": "SMSOF",
+    "name": "Samsonite International S.A.",
+    "marketCap": 2907959655,
+    "price": 2.1,
+    "roic": 0.15229158744281465,
+    "grossMargin": 0.5489606633992551,
+    "roe": 0.2352377156468475,
+    "operatingMargin": 0.17464740262984074
+  },
+  {
+    "symbol": "PLXNF",
+    "name": "Pluxee N.V.",
+    "marketCap": 1951151421,
+    "price": 13.4,
+    "roic": 0.1864218141346689,
+    "grossMargin": 1,
+    "roe": 0.5338753387533876,
+    "operatingMargin": 0.2602952602952603
+  },
+  {
+    "symbol": "CIXX",
+    "name": "CI Financial Corp.",
+    "marketCap": 2254799094,
+    "price": 11.42,
+    "roic": 0.18349009181021944,
+    "grossMargin": 0.6525384251230933,
+    "roe": 0.004882453330634914,
+    "operatingMargin": 0.2875043258402531
+  },
+  {
+    "symbol": "AX",
+    "name": "Axos Financial, Inc.",
+    "marketCap": 5237870865,
+    "price": 92.47,
+    "roic": 0.17024898353534026,
+    "grossMargin": 0.6146923552941591,
+    "roe": 0.16149204100307496,
+    "operatingMargin": 0.3179092038937198
+  },
+  {
+    "symbol": "SGSOY",
+    "name": "SGS S.A.",
+    "marketCap": 23769825471,
+    "price": 12.28,
+    "roic": 0.21401515151515152,
+    "grossMargin": 0.8585516632322637,
+    "roe": 0.7289836888331243,
+    "operatingMargin": 0.13305858110097143
+  },
+  {
+    "symbol": "OAOFY",
+    "name": "PJSC Tatneft",
+    "marketCap": 3582148712,
+    "price": 9.55,
+    "roic": 0.268208762074946,
+    "grossMargin": 0.7694587809460148,
+    "roe": 0.23161384477923147,
+    "operatingMargin": 0.198923273483623
+  },
+  {
+    "symbol": "PAYO",
+    "name": "Payoneer Global Inc.",
+    "marketCap": 2281217946,
+    "price": 6.4,
+    "roic": 0.1864509623372334,
+    "grossMargin": 0.8444272160831979,
+    "roe": 0.16716980090784916,
+    "operatingMargin": 0.15242769884097224
+  },
+  {
+    "symbol": "LZ",
+    "name": "LegalZoom.com, Inc.",
+    "marketCap": 1574159891,
+    "price": 8.88,
+    "roic": 0.32853805597362906,
+    "grossMargin": 0.6478960405114675,
+    "roe": 0.32129491619932016,
+    "operatingMargin": 0.052180659088609305
+  },
+  {
+    "symbol": "TDC",
+    "name": "Teradata Corporation",
+    "marketCap": 2795310148,
+    "price": 29.58,
+    "roic": 0.27002583979328165,
+    "grossMargin": 0.6045714285714285,
+    "roe": 0.8571428571428571,
+    "operatingMargin": 0.11942857142857143
+  },
+  {
+    "symbol": "INPOY",
+    "name": "InPost S.A.",
+    "marketCap": 8061782755,
+    "price": 8.07,
+    "roic": 0.21001650129653043,
+    "grossMargin": 0.9762907745563105,
+    "roe": 0.5078583061889251,
+    "operatingMargin": 0.17949046685836736
+  },
+  {
+    "symbol": "DETRF",
+    "name": "Deterra Royalties Limited",
+    "marketCap": 1740842931,
+    "price": 3.29,
+    "roic": 0.4647549315428276,
+    "grossMargin": 0.9539769125356352,
+    "roe": 1.2489571634846783,
+    "operatingMargin": 0.879958091810821
+  },
+  {
+    "symbol": "BRRDF",
+    "name": "Borregaard ASA",
+    "marketCap": 1912267411,
+    "price": 19.175,
+    "roic": 0.166299416720674,
+    "grossMargin": 0.6262307995273729,
+    "roe": 0.16326125768696687,
+    "operatingMargin": 0.16843901798608377
+  },
+  {
+    "symbol": "FXFLF",
+    "name": "Fairfax Financial Holdings Limited",
+    "marketCap": 16838832112,
+    "price": 16.5908,
+    "roic": 0.37358616713419823,
+    "grossMargin": 0.9846321847886864,
+    "roe": 0.19092394501209123,
+    "operatingMargin": 0.986486231788454
+  },
+  {
+    "symbol": "ADTTF",
+    "name": "Advantest Corporation",
+    "marketCap": 108890570424,
+    "price": 149.7,
+    "roic": 0.4188084862680025,
+    "grossMargin": 0.5708362243765928,
+    "roe": 0.31819267618090613,
+    "operatingMargin": 0.2926240241526625
+  },
+  {
+    "symbol": "MAZE",
+    "name": "Maze Therapeutics, Inc.",
+    "marketCap": 2181735591,
+    "price": 45.34,
+    "roic": 0.26191050125301885,
+    "grossMargin": 1,
+    "roe": 0.2652612440580181,
+    "operatingMargin": 0.3437970149253731
+  },
+  {
+    "symbol": "WLTH",
+    "name": "Wealthfront Corporation",
+    "marketCap": 1344209803,
+    "price": 9.19,
+    "roic": 0.46366748987529727,
+    "grossMargin": 0.8997471338053934,
+    "roe": 0.8017242801068707,
+    "operatingMargin": 0.39329597000573074
+  },
+  {
+    "symbol": "ADMA",
+    "name": "ADMA Biologics, Inc.",
+    "marketCap": 3946002944,
+    "price": 16.58,
+    "roic": 0.32087612204942556,
+    "grossMargin": 0.5148339563000933,
+    "roe": 0.5663690697900968,
+    "operatingMargin": 0.32590384894971086
+  },
+  {
+    "symbol": "DFIN",
+    "name": "Donnelley Financial Solutions, Inc.",
+    "marketCap": 1381521426,
+    "price": 52.06,
+    "roic": 0.21583188497392952,
+    "grossMargin": 0.6190049878501087,
+    "roe": 0.21187800963081863,
+    "operatingMargin": 0.17470264739736538
+  },
+  {
+    "symbol": "VIST",
+    "name": "Vista Energy, S.A.B. de C.V.",
+    "marketCap": 5992403624,
+    "price": 57.47,
+    "roic": 0.1969969300243368,
+    "grossMargin": 0.7620344611620082,
+    "roe": 0.2945455038912222,
+    "operatingMargin": 0.379537653358968
+  },
+  {
+    "symbol": "NTB",
+    "name": "The Bank of N.T. Butterfield & Son Limited",
+    "marketCap": 2138776290,
+    "price": 51.26,
+    "roic": 0.15851535438017123,
+    "grossMargin": 0.710744803716364,
+    "roe": 0.2118901423572607,
+    "operatingMargin": 0.270423528806597
+  },
+  {
+    "symbol": "QLYS",
+    "name": "Qualys, Inc.",
+    "marketCap": 4800752040,
+    "price": 133,
+    "roic": 0.3433862792971437,
+    "grossMargin": 0.8165119796698658,
+    "roe": 0.3640204897760712,
+    "operatingMargin": 0.30810555474175033
+  },
+  {
+    "symbol": "TTAPF",
+    "name": "TTW Public Company Limited",
+    "marketCap": 1156701000,
+    "price": 0.2899,
+    "roic": 0.18091436398467914,
+    "grossMargin": 0.6785414519198376,
+    "roe": 0.17809329675991345,
+    "operatingMargin": 0.6221354274403589
+  },
+  {
+    "symbol": "NINTF",
+    "name": "Ninety One Group",
+    "marketCap": 2919744680,
+    "price": 3.38,
+    "roic": 0.35853008377760853,
+    "grossMargin": 0.5392857142857143,
+    "roe": 0.401981788966256,
+    "operatingMargin": 0.269
+  },
+  {
+    "symbol": "BUHPF",
+    "name": "Bumrungrad Hospital Public Company Limited",
+    "marketCap": 4491461336,
+    "price": 5.65,
+    "roic": 0.3179503085978518,
+    "grossMargin": 0.5138327395351056,
+    "roe": 0.28284401994726827,
+    "operatingMargin": 0.3563841107203154
+  },
+  {
+    "symbol": "JNBYF",
+    "name": "JNBY Design Limited",
+    "marketCap": 1070246807,
+    "price": 2.09,
+    "roic": 0.4323666725776027,
+    "grossMargin": 0.655855893201355,
+    "roe": 0.37807443574725236,
+    "operatingMargin": 0.2157692734011789
+  },
+  {
+    "symbol": "RGEDF",
+    "name": "Gedeon Richter PLC",
+    "marketCap": 5668809110,
+    "price": 31,
+    "roic": 0.17942439462398502,
+    "grossMargin": 0.6888711379577748,
+    "roe": 0.18396846659110377,
+    "operatingMargin": 0.2987283466173787
+  },
+  {
+    "symbol": "RIO",
+    "name": "Rio Tinto Group",
+    "marketCap": 150855565741,
+    "price": 92.91,
+    "roic": 0.17192974748195908,
+    "grossMargin": 0.5643147340564315,
+    "roe": 0.20910111139268,
+    "operatingMargin": 0.2917179171791718
+  },
+  {
+    "symbol": "ASA",
+    "name": "ASA Gold and Precious Metals Limited",
+    "marketCap": 1394854058,
+    "price": 73.91,
+    "roic": 0.25889176747893095,
+    "grossMargin": 1,
+    "roe": 0.25958546543894917,
+    "operatingMargin": 0.9693959329860428
+  },
+  {
+    "symbol": "BSMAF",
+    "name": "Bursa Malaysia Berhad",
+    "marketCap": 1060181849,
+    "price": 1.31,
+    "roic": 0.4548014438035657,
+    "grossMargin": 0.6835097712883689,
+    "roe": 0.35489537498498,
+    "operatingMargin": 0.5422995754138626
+  },
+  {
+    "symbol": "LKNCY",
+    "name": "Luckin Coffee Inc.",
+    "marketCap": 1294154310,
+    "price": 32.35,
+    "roic": 0.21417697540297131,
+    "grossMargin": 0.5560429708925548,
+    "roe": 0.22778943544624408,
+    "operatingMargin": 0.10056498047551422
+  },
+  {
+    "symbol": "ANF",
+    "name": "Abercrombie & Fitch Co.",
+    "marketCap": 4597309222,
+    "price": 97.67,
+    "roic": 0.3369048336748824,
+    "grossMargin": 0.6100276705249398,
+    "roe": 0.423937653298673,
+    "operatingMargin": 0.14793616844565935
+  },
+  {
+    "symbol": "BUGDF",
+    "name": "Bumrungrad Hospital Public Company Limited",
+    "marketCap": 3776080387,
+    "price": 4.75,
+    "roic": 0.3179503085978518,
+    "grossMargin": 0.5138327395351056,
+    "roe": 0.28284401994726827,
+    "operatingMargin": 0.3563841107203154
+  },
+  {
+    "symbol": "PANDY",
+    "name": "Pandora A/S",
+    "marketCap": 1797338144,
+    "price": 21.82,
+    "roic": 0.4459482131871819,
+    "grossMargin": 0.7982638888888889,
+    "roe": 0.9489832970225127,
+    "operatingMargin": 0.25170454545454546
+  },
+  {
+    "symbol": "TY",
+    "name": "Tri-Continental Corporation",
+    "marketCap": 1746747127,
+    "price": 33.38,
+    "roic": 0.16864484164959984,
+    "grossMargin": 1,
+    "roe": 0.16869408136574252,
+    "operatingMargin": 0.9971643813253542
+  },
+  {
+    "symbol": "EVGGF",
+    "name": "Evolution AB (publ)",
+    "marketCap": 13805236334,
+    "price": 68.7359,
+    "roic": 0.3345095911948204,
+    "grossMargin": 1.0238463272235512,
+    "roe": 0.31320913381346405,
+    "operatingMargin": 0.688072958700199
+  },
+  {
+    "symbol": "CKNHF",
+    "name": "Clarkson PLC",
+    "marketCap": 1733282570,
+    "price": 56.195,
+    "roic": 0.1818685376661743,
+    "grossMargin": 0.9490474750529181,
+    "roe": 0.17256097560975608,
+    "operatingMargin": 0.14892651950408226
+  },
+  {
+    "symbol": "TMNSF",
+    "name": "Temenos AG",
+    "marketCap": 6677665526,
+    "price": 96.8,
+    "roic": 0.19215806537134042,
+    "grossMargin": 0.720624841371318,
+    "roe": 0.2772867127613956,
+    "operatingMargin": 0.22144707668290067
+  },
+  {
+    "symbol": "ANPDF",
+    "name": "ANTA Sports Products Limited",
+    "marketCap": 27289420932,
+    "price": 9.85,
+    "roic": 0.1975077955773488,
+    "grossMargin": 0.6216925987631661,
+    "roe": 0.25265272400330474,
+    "operatingMargin": 0.234306610566741
+  },
+  {
+    "symbol": "CMGGF",
+    "name": "Commercial International Bank (Egypt) S.A.E",
+    "marketCap": 4278149052,
+    "price": 1.42727,
+    "roic": 0.3651022475686984,
+    "grossMargin": 1,
+    "roe": 0.3616204160954476,
+    "operatingMargin": 0.7872141460446419
+  },
+  {
+    "symbol": "CMZOF",
+    "name": "Corporaci\u00f3n Moctezuma, S.A.B. de C.V.",
+    "marketCap": 2683906560,
+    "price": 3.0354,
+    "roic": 0.5127712397749765,
+    "grossMargin": 0.6459233141195847,
+    "roe": 0.4240125173355214,
+    "operatingMargin": 0.409074841687864
+  },
+  {
+    "symbol": "SPXCY",
+    "name": "Singapore Exchange Limited",
+    "marketCap": 1977813176,
+    "price": 27.765,
+    "roic": 0.253231342143874,
+    "grossMargin": 0.7430573643410853,
+    "roe": 0.29454830423456113,
+    "operatingMargin": 0.5419739170086639
+  },
+  {
+    "symbol": "RNMBY",
+    "name": "Rheinmetall AG",
+    "marketCap": 100893957605,
+    "price": 443.39,
+    "roic": 0.186061888389315,
+    "grossMargin": 0.5188185827094657,
+    "roe": 0.17703703703703705,
+    "operatingMargin": 0.14429289303661164
+  },
+  {
+    "symbol": "NURPF",
+    "name": "Neuren Pharmaceuticals Limited",
+    "marketCap": 1526708000,
+    "price": 12.2,
+    "roic": 0.4016843204330325,
+    "grossMargin": 0.8479467975206612,
+    "roe": 0.39033096640872317,
+    "operatingMargin": 0.6742132157615112
+  },
+  {
+    "symbol": "YELP",
+    "name": "Yelp Inc.",
+    "marketCap": 1722186488,
+    "price": 27.31,
+    "roic": 0.18229094380473887,
+    "grossMargin": 0.9124090692773132,
+    "roe": 0.17856926834317022,
+    "operatingMargin": 0.10696753121671539
+  },
+  {
+    "symbol": "PDD",
+    "name": "PDD Holdings Inc.",
+    "marketCap": 149599045506,
+    "price": 106.91,
+    "roic": 0.34244768326660363,
+    "grossMargin": 0.6092273532763555,
+    "roe": 0.358856694429436,
+    "operatingMargin": 0.27529945280764856
+  },
+  {
+    "symbol": "RNMBF",
+    "name": "Rheinmetall AG",
+    "marketCap": 100387619248,
+    "price": 2188,
+    "roic": 0.186061888389315,
+    "grossMargin": 0.5188185827094657,
+    "roe": 0.17703703703703705,
+    "operatingMargin": 0.14429289303661164
+  },
+  {
+    "symbol": "UL",
+    "name": "Unilever PLC",
+    "marketCap": 147411313624,
+    "price": 67.56,
+    "roic": 0.17242644361288428,
+    "grossMargin": 1,
+    "roe": 0.28734367183591797,
+    "operatingMargin": 0.1547044979509883
+  },
+  {
+    "symbol": "CPRX",
+    "name": "Catalyst Pharmaceuticals, Inc.",
+    "marketCap": 2958491840,
+    "price": 24.07,
+    "roic": 0.26702502829350805,
+    "grossMargin": 0.8599954446916422,
+    "roe": 0.22523610836246893,
+    "operatingMargin": 0.39680803035787643
+  },
+  {
+    "symbol": "DPMLF",
+    "name": "DPM Metals Inc.",
+    "marketCap": 6808102453,
+    "price": 39.08,
+    "roic": 0.17722107557715783,
+    "grossMargin": 0.5705034003743048,
+    "roe": 0.18330344070847074,
+    "operatingMargin": 0.3905685742151462
+  },
+  {
+    "symbol": "OSCUF",
+    "name": "Japan Exchange Group, Inc.",
+    "marketCap": 12728094560,
+    "price": 12.3825,
+    "roic": 0.23565003660704947,
+    "grossMargin": 0.542644299880613,
+    "roe": 0.17924846621266757,
+    "operatingMargin": 0.5489486635967157
+  },
+  {
+    "symbol": "TMICY",
+    "name": "Trend Micro Incorporated",
+    "marketCap": 5341223491,
+    "price": 40.27,
+    "roic": 0.36157754694006405,
+    "grossMargin": 0.7616619840227701,
+    "roe": 0.28764703419984095,
+    "operatingMargin": 0.17644275559533154
+  },
+  {
+    "symbol": "OEZVF",
+    "name": "Verbund AG",
+    "marketCap": 24985944326,
+    "price": 71.92,
+    "roic": 0.16087499544840003,
+    "grossMargin": 0.5038668363940254,
+    "roe": 0.18794894394253037,
+    "operatingMargin": 0.33063613191430263
+  },
+  {
+    "symbol": "GSL",
+    "name": "Global Ship Lease, Inc.",
+    "marketCap": 1330668254,
+    "price": 37.2,
+    "roic": 0.1797511335815107,
+    "grossMargin": 0.5538326560637479,
+    "roe": 0.24163484185992165,
+    "operatingMargin": 0.53738258810056
+  },
+  {
+    "symbol": "ECO",
+    "name": "Okeanis Eco Tankers Corp.",
+    "marketCap": 1270061269,
+    "price": 39.45,
+    "roic": 0.16142290928573677,
+    "grossMargin": 0.5686223434050709,
+    "roe": 0.2652439831699537,
+    "operatingMargin": 0.41437592002016754
+  },
+  {
+    "symbol": "BVVBY",
+    "name": "Bureau Veritas S.A.",
+    "marketCap": 14661640554,
+    "price": 65.9375,
+    "roic": 0.20049403930834497,
+    "grossMargin": 0.7212261052091846,
+    "roe": 0.2887863265202617,
+    "operatingMargin": 0.14956176192536333
+  },
+  {
+    "symbol": "NVSEF",
+    "name": "Novartis AG",
+    "marketCap": 291656402088,
+    "price": 152,
+    "roic": 0.19773227832612775,
+    "grossMargin": 0.7520010827114187,
+    "roe": 0.2711029378377151,
+    "operatingMargin": 0.2811956227524071
+  },
+  {
+    "symbol": "FRCOY",
+    "name": "Fast Retailing Co., Ltd.",
+    "marketCap": 118282888285,
+    "price": 38.55,
+    "roic": 0.19140201257639763,
+    "grossMargin": 0.5378141524034866,
+    "roe": 0.1904914621565561,
+    "operatingMargin": 0.16593398870002668
+  },
+  {
+    "symbol": "ANNSF",
+    "name": "Aena S.M.E., S.A.",
+    "marketCap": 46071000000,
+    "price": 30.714,
+    "roic": 0.18062036449546534,
+    "grossMargin": 0.8012915135839727,
+    "roe": 0.23370393792652977,
+    "operatingMargin": 0.45961853602336517
+  },
+  {
+    "symbol": "PHI",
+    "name": "PLDT Inc.",
+    "marketCap": 4960645760,
+    "price": 22.96,
+    "roic": 0.24891620075756704,
+    "grossMargin": 0.7298473940774698,
+    "roe": 0.27991058664517976,
+    "operatingMargin": 0.4991491147565177
+  },
+  {
+    "symbol": "ATGE",
+    "name": "Adtalem Global Education Inc.",
+    "marketCap": 4185775070,
+    "price": 115.22,
+    "roic": 0.15217349655256915,
+    "grossMargin": 0.568621420463124,
+    "roe": 0.16536053710000873,
+    "operatingMargin": 0.19098803885275878
+  },
+  {
+    "symbol": "HRGLF",
+    "name": "Hargreaves Lansdown plc",
+    "marketCap": 6161748884,
+    "price": 12.98,
+    "roic": 0.4432491236552641,
+    "grossMargin": 0.7346058308275591,
+    "roe": 0.35971046497362286,
+    "operatingMargin": 0.47940907308144853
+  },
+  {
+    "symbol": "PRDO",
+    "name": "Perdoceo Education Corporation",
+    "marketCap": 2055774445,
+    "price": 31.65,
+    "roic": 0.15771329167541578,
+    "grossMargin": 0.822594211046248,
+    "roe": 0.15381392673125344,
+    "operatingMargin": 0.25577933925664537
+  },
+  {
+    "symbol": "PBCRY",
+    "name": "PT Bank Central Asia Tbk",
+    "marketCap": 56200510020,
+    "price": 11.4,
+    "roic": 0.23076642824002452,
+    "grossMargin": 1,
+    "roe": 0.2087883617972408,
+    "operatingMargin": 0.6354046832545659
+  },
+  {
+    "symbol": "ASMIY",
+    "name": "ASM International N.V.",
+    "marketCap": 42521685000,
+    "price": 870,
+    "roic": 0.20247303674595274,
+    "grossMargin": 0.5051184496052135,
+    "roe": 0.18300123693842396,
+    "operatingMargin": 0.2735119295235419
+  },
+  {
+    "symbol": "SKXJF",
+    "name": "Sankyo Co., Ltd.",
+    "marketCap": 2802235300,
+    "price": 13.8,
+    "roic": 0.2496362544895862,
+    "grossMargin": 0.5855876051110149,
+    "roe": 0.18944295518659388,
+    "operatingMargin": 0.3837171112651899
+  },
+  {
+    "symbol": "EBAY",
+    "name": "eBay Inc.",
+    "marketCap": 43030400000,
+    "price": 95.2,
+    "roic": 0.17471922816009647,
+    "grossMargin": 0.7199260916075075,
+    "roe": 0.38290034897246994,
+    "operatingMargin": 0.22542059710201304
+  },
+  {
+    "symbol": "HOCPY",
+    "name": "HOYA Corporation",
+    "marketCap": 55589459760,
+    "price": 164.4,
+    "roic": 0.4558263886913735,
+    "grossMargin": 0.8650237352043034,
+    "roe": 0.20749202020896837,
+    "operatingMargin": 0.5427679594497723
+  },
+  {
+    "symbol": "SMSEY",
+    "name": "Samsonite International S.A.",
+    "marketCap": 3628232162,
+    "price": 13.08,
+    "roic": 0.15296052631578946,
+    "grossMargin": 0.5489605974474725,
+    "roe": 0.23418236011380572,
+    "operatingMargin": 0.1762247115866912
+  },
+  {
+    "symbol": "PRDSF",
+    "name": "Prada S.p.A.",
+    "marketCap": 14124708480,
+    "price": 5.52,
+    "roic": 0.18634656601966618,
+    "grossMargin": 0.7984252029390467,
+    "roe": 0.19068820159272987,
+    "operatingMargin": 0.23557701778698079
+  },
+  {
+    "symbol": "CEO",
+    "name": "CNOOC Limited",
+    "marketCap": 5974874610,
+    "price": 121.76,
+    "roic": 0.20264858556484597,
+    "grossMargin": 0.5360089986825396,
+    "roe": 0.18451791724411007,
+    "operatingMargin": 0.45175098571720734
+  },
+  {
+    "symbol": "IKTSF",
+    "name": "Intertek Group plc",
+    "marketCap": 9859203840,
+    "price": 64.22,
+    "roic": 0.2101443590145928,
+    "grossMargin": 1,
+    "roe": 0.2463799129752479,
+    "operatingMargin": 0.1578745726747613
+  },
+  {
+    "symbol": "CLPBY",
+    "name": "Coloplast A/S",
+    "marketCap": 19381722983,
+    "price": 8.6,
+    "roic": 0.1701990702109906,
+    "grossMargin": 0.6506437114344481,
+    "roe": 0.2120217902686641,
+    "operatingMargin": 0.2719204692618268
+  },
+  {
+    "symbol": "GRMN",
+    "name": "Garmin Ltd.",
+    "marketCap": 39390168269,
+    "price": 204.8,
+    "roic": 0.19624017672023814,
+    "grossMargin": 0.5870433449586249,
+    "roe": 0.17983746491959252,
+    "operatingMargin": 0.2531393607301875
+  },
+  {
+    "symbol": "SAUHY",
+    "name": "Straumann Holding AG",
+    "marketCap": 19979161182,
+    "price": 12.53,
+    "roic": 0.22460257369456044,
+    "grossMargin": 0.7122413035664363,
+    "roe": 0.1903387576582092,
+    "operatingMargin": 0.24002595950317504
+  },
+  {
+    "symbol": "VDMCY",
+    "name": "Vodacom Group Limited",
+    "marketCap": 18470774358,
+    "price": 9.56,
+    "roic": 0.20571431855802833,
+    "grossMargin": 0.610187417475218,
+    "roe": 0.18037579195600908,
+    "operatingMargin": 0.23511597811163593
+  },
+  {
+    "symbol": "JCDXF",
+    "name": "JCDecaux SE",
+    "marketCap": 4442423577,
+    "price": 20.76,
+    "roic": 0.19447221032256018,
+    "grossMargin": 0.5371359356934428,
+    "roe": 0.11762835074965924,
+    "operatingMargin": 0.33741672631173264
+  },
+  {
+    "symbol": "OEZVY",
+    "name": "Verbund AG",
+    "marketCap": 24927076346,
+    "price": 14.35,
+    "roic": 0.16087499544840003,
+    "grossMargin": 0.5038668363940254,
+    "roe": 0.18794894394253037,
+    "operatingMargin": 0.33063613191430263
+  },
+  {
+    "symbol": "CCOEY",
+    "name": "Capcom Co., Ltd.",
+    "marketCap": 10959103798,
+    "price": 13.1,
+    "roic": 0.27012697943360275,
+    "grossMargin": 0.5822798990589845,
+    "roe": 0.2141067506838177,
+    "operatingMargin": 0.38782693804391405
+  },
+  {
+    "symbol": "WILLF",
+    "name": "Demant A/S",
+    "marketCap": 7781412854,
+    "price": 36.53,
+    "roic": 0.16710301650540693,
+    "grossMargin": 0.7622998349614166,
+    "roe": 0.24958176495190296,
+    "operatingMargin": 0.1964405192024622
+  },
+  {
+    "symbol": "GRKZF",
+    "name": "Organization of Football Prognostics S.A.",
+    "marketCap": 7530673038,
+    "price": 21,
+    "roic": 0.48092296104652466,
+    "grossMargin": 0.6133126631313318,
+    "roe": 0.8383967912352674,
+    "operatingMargin": 0.43758686006978104
+  },
+  {
+    "symbol": "SNA",
+    "name": "Snap-on Incorporated",
+    "marketCap": 19186730753,
+    "price": 367.82,
+    "roic": 0.19403630700906954,
+    "grossMargin": 0.5196930545767755,
+    "roe": 0.19352626017315214,
+    "operatingMargin": 0.2634288622660716
+  },
+  {
+    "symbol": "ATHOF",
+    "name": "Athabasca Oil Corporation",
+    "marketCap": 2854693509,
+    "price": 5.86,
+    "roic": 0.19504366916966934,
+    "grossMargin": 0.5213984415685279,
+    "roe": 0.2677308902249717,
+    "operatingMargin": 0.3016792976310094
+  },
+  {
+    "symbol": "WPLCF",
+    "name": "Wise plc",
+    "marketCap": 13315274813,
+    "price": 13.305,
+    "roic": 0.35735865343116097,
+    "grossMargin": 0.7240615657180821,
+    "roe": 0.3006059731640456,
+    "operatingMargin": 0.3208946960469494
+  },
+  {
+    "symbol": "EVVTY",
+    "name": "Evolution AB (publ)",
+    "marketCap": 13418429663,
+    "price": 66.81,
+    "roic": 0.3345095911948204,
+    "grossMargin": 1.0238463272235512,
+    "roe": 0.31320913381346405,
+    "operatingMargin": 0.688072958700199
+  },
+  {
+    "symbol": "BKZHF",
+    "name": "Santander Bank Polska S.A.",
+    "marketCap": 4647913382,
+    "price": 45.4835,
+    "roic": 0.16071750267148108,
+    "grossMargin": 1,
+    "roe": 0.1602562843273348,
+    "operatingMargin": 0.6631252478187993
+  },
+  {
+    "symbol": "WILYY",
+    "name": "Demant A/S",
+    "marketCap": 7711118493,
+    "price": 18.1,
+    "roic": 0.16710301650540693,
+    "grossMargin": 0.7622998349614166,
+    "roe": 0.24958176495190296,
+    "operatingMargin": 0.1964405192024622
+  },
+  {
+    "symbol": "VAIAF",
+    "name": "Vaisala Oyj",
+    "marketCap": 1903463100,
+    "price": 52.5,
+    "roic": 0.18438612099644128,
+    "grossMargin": 0.5634850363024615,
+    "roe": 0.2064160725858717,
+    "operatingMargin": 0.1468036125376306
+  },
+  {
+    "symbol": "EDNMF",
+    "name": "Edenred S.A.",
+    "marketCap": 4917550752,
+    "price": 20.86,
+    "roic": 0.3054331864904552,
+    "grossMargin": 0.5994397759103641,
+    "roe": -0.5583700440528634,
+    "operatingMargin": 0.3641456582633053
+  },
+  {
+    "symbol": "CFEIY",
+    "name": "China Feihe Limited",
+    "marketCap": 4223119887,
+    "price": 4.663,
+    "roic": 0.1910487351910143,
+    "grossMargin": 0.6634103587961568,
+    "roe": 0.1376662705461643,
+    "operatingMargin": 0.2682666017625328
+  },
+  {
+    "symbol": "GMAB",
+    "name": "Genmab A/S",
+    "marketCap": 21190161608,
+    "price": 34.4,
+    "roic": 0.16549391403105942,
+    "grossMargin": 0.9542413825141689,
+    "roe": 0.213750442815489,
+    "operatingMargin": 0.31139087614977234
+  },
+  {
+    "symbol": "BKRKY",
+    "name": "PT Bank Rakyat Indonesia (Persero) Tbk",
+    "marketCap": 34378129572,
+    "price": 11.41,
+    "roic": 0.1525111252146558,
+    "grossMargin": 1,
+    "roe": 0.18970689364200133,
+    "operatingMargin": 0.5245459690146302
+  },
+  {
+    "symbol": "TLKMF",
+    "name": "Perusahaan Perseroan (Persero) PT Telekomunikasi Indonesia Tbk",
+    "marketCap": 21793299000,
+    "price": 0.22,
+    "roic": 0.19323460961298264,
+    "grossMargin": 0.679382797548794,
+    "roe": 0.16640589760938204,
+    "operatingMargin": 0.28678976041395776
+  },
+  {
+    "symbol": "KRNTY",
+    "name": "Krones AG",
+    "marketCap": 1234038032,
+    "price": 78.124,
+    "roic": 0.1591480228232724,
+    "grossMargin": 0.513287946082379,
+    "roe": 0.14410060644031916,
+    "operatingMargin": 0.07084820282467913
+  },
+  {
+    "symbol": "EOG",
+    "name": "EOG Resources, Inc.",
+    "marketCap": 59289424609,
+    "price": 108.59,
+    "roic": 0.1932013769363167,
+    "grossMargin": 0.7570365300710069,
+    "roe": 0.21815270348540083,
+    "operatingMargin": 0.34570964154333134
+  },
+  {
+    "symbol": "NILSY",
+    "name": "PJSC Mining and Metallurgical Company Norilsk Nickel",
+    "marketCap": 4616462648,
+    "price": 3.02,
+    "roic": 0.20717639557127124,
+    "grossMargin": 0.538093338651775,
+    "roe": 0.19092627599243855,
+    "operatingMargin": 0.28512165935380934
+  },
+  {
+    "symbol": "GPGI",
+    "name": "GPGI, Inc.",
+    "marketCap": 7090677521,
+    "price": 24.5,
+    "roic": 0.26777503533111724,
+    "grossMargin": 0.521260381719139,
+    "roe": 0.374489354879188,
+    "operatingMargin": 0.25589496184948557
+  },
+  {
+    "symbol": "FFIV",
+    "name": "F5, Inc.",
+    "marketCap": 15709174314,
+    "price": 270.43,
+    "roic": 0.16272859206388224,
+    "grossMargin": 0.8174498522055186,
+    "roe": 0.19275617838423675,
+    "operatingMargin": 0.2480346960822157
+  },
+  {
+    "symbol": "TPL",
+    "name": "Texas Pacific Land Corporation",
+    "marketCap": 23797476996,
+    "price": 345.2,
+    "roic": 0.45396507300314914,
+    "grossMargin": 0.8990030078362422,
+    "roe": 0.40086007073066277,
+    "operatingMargin": 0.7638430598039452
+  },
+  {
+    "symbol": "ASRMF",
+    "name": "Grupo Aeroportuario del Sureste, S. A. B. de C. V.",
+    "marketCap": 9439093500,
+    "price": 34.07,
+    "roic": 0.2253358615473805,
+    "grossMargin": 0.5693538847980552,
+    "roe": 0.2499667699151136,
+    "operatingMargin": 0.5591524941589141
+  },
+  {
+    "symbol": "WABC",
+    "name": "Westamerica Bancorporation",
+    "marketCap": 1248896575,
+    "price": 50.09,
+    "roic": 0.15941794532910486,
+    "grossMargin": 0.9516483839877576,
+    "roe": 0.12444764860328074,
+    "operatingMargin": 0.5763862832086285
+  },
+  {
+    "symbol": "RSMDF",
+    "name": "ResMed Inc.",
+    "marketCap": 40870562320,
+    "price": 28,
+    "roic": 0.2355414630696727,
+    "grossMargin": 0.5936214313626009,
+    "roe": 0.23471114180144,
+    "operatingMargin": 0.3274885175388194
+  },
+  {
+    "symbol": "KSHTY",
+    "name": "Kuaishou Technology",
+    "marketCap": 43605241905,
+    "price": 2.04,
+    "roic": 0.19098007370853895,
+    "grossMargin": 0.5460448549228514,
+    "roe": 0.24732275337075027,
+    "operatingMargin": 0.12046683162855207
+  },
+  {
+    "symbol": "BSDGY",
+    "name": "Bosideng International Holdings Limited",
+    "marketCap": 6070431893,
+    "price": 26.4,
+    "roic": 0.27755912101041275,
+    "grossMargin": 0.5729295201440924,
+    "roe": 0.20769010261823675,
+    "operatingMargin": 0.19175886166293327
+  },
+  {
+    "symbol": "DFS",
+    "name": "Discover Financial Services",
+    "marketCap": 50343181050,
+    "price": 200.05,
+    "roic": 0.4350372868007187,
+    "grossMargin": 0.8946053946053946,
+    "roe": 0.2529844917996207,
+    "operatingMargin": 0.8829170829170829
+  },
+  {
+    "symbol": "SQSP",
+    "name": "Squarespace, Inc.",
+    "marketCap": 6470016996,
+    "price": 46.57,
+    "roic": 0.20545941754434183,
+    "grossMargin": 0.7620829447930332,
+    "roe": 0.027197793756145526,
+    "operatingMargin": 0.08270771759573896
+  },
+  {
+    "symbol": "SCHYY",
+    "name": "Sands China Ltd.",
+    "marketCap": 19577886220,
+    "price": 24.19,
+    "roic": 0.1670743639921722,
+    "grossMargin": 0.5902542372881356,
+    "roe": 1.0135790494665373,
+    "operatingMargin": 0.19293785310734463
+  },
+  {
+    "symbol": "GZPZY",
+    "name": "Gaztransport & Technigaz S.A.",
+    "marketCap": 7598090808,
+    "price": 41,
+    "roic": 0.775577981689391,
+    "grossMargin": 0.9145975830504828,
+    "roe": 0.7537191802198564,
+    "operatingMargin": 0.5836554217656422
+  },
+  {
+    "symbol": "PCTY",
+    "name": "Paylocity Holding Corporation",
+    "marketCap": 7840673662,
+    "price": 142.14,
+    "roic": 0.20484611476675663,
+    "grossMargin": 0.6876777575019386,
+    "roe": 0.18409528047484613,
+    "operatingMargin": 0.19058425133570833
+  },
+  {
+    "symbol": "AKRYY",
+    "name": "Aker Solutions ASA Unsponsored ADR",
+    "marketCap": 1445507364,
+    "price": 6,
+    "roic": 0.22570115248817535,
+    "grossMargin": 0.9779049799656554,
+    "roe": 0.23566992014196983,
+    "operatingMargin": 0.06464415187941233
+  },
+  {
+    "symbol": "AB",
+    "name": "AllianceBernstein Holding L.P.",
+    "marketCap": 4512590403,
+    "price": 42.32,
+    "roic": 0.22704302301349827,
+    "grossMargin": 1,
+    "roe": 0.20836749739893753,
+    "operatingMargin": 1
+  },
+  {
+    "symbol": "UPBMF",
+    "name": "United Plantations Berhad",
+    "marketCap": 2181771090,
+    "price": 3.50667,
+    "roic": 0.2962894625608428,
+    "grossMargin": 0.6621031845336949,
+    "roe": 0.2554062298455391,
+    "operatingMargin": 0.4063358525077236
+  },
+  {
+    "symbol": "GB",
+    "name": "Global Blue Group Holding AG",
+    "marketCap": 1493251340,
+    "price": 7.49,
+    "roic": 0.18541236403689934,
+    "grossMargin": 0.7499443765148786,
+    "roe": 0.6516973781845165,
+    "operatingMargin": 0.2651517388984384
+  },
+  {
+    "symbol": "FRVWY",
+    "name": "Friedrich Vorwerk Group SE",
+    "marketCap": 8608000000,
+    "price": 26.9,
+    "roic": 0.19935755494298582,
+    "grossMargin": 0.524945169387964,
+    "roe": 0.17445779136855555,
+    "operatingMargin": 0.10622791475119042
+  },
+  {
+    "symbol": "KNCRF",
+    "name": "Konecranes Plc",
+    "marketCap": 7406534152,
+    "price": 93.5,
+    "roic": 0.18282568282568282,
+    "grossMargin": 0.5556659569434588,
+    "roe": 0.1983097378478764,
+    "operatingMargin": 0.12098414951502247
+  },
+  {
+    "symbol": "IBOC",
+    "name": "International Bancshares Corporation",
+    "marketCap": 4276875426,
+    "price": 68.8,
+    "roic": 0.16454452360297908,
+    "grossMargin": 0.7688521666423755,
+    "roe": 0.14630313436480832,
+    "operatingMargin": 0.4877917814103695
+  },
+  {
+    "symbol": "KIROY",
+    "name": "Kumba Iron Ore Limited",
+    "marketCap": 7542779509,
+    "price": 7.835,
+    "roic": 0.30416772436711054,
+    "grossMargin": 0.8470866348553168,
+    "roe": 0.2783110858657578,
+    "operatingMargin": 0.3846692641071663
+  },
+  {
+    "symbol": "ZZHGF",
+    "name": "ZhongAn Online P & C Insurance Co., Ltd.",
+    "marketCap": 2452219350,
+    "price": 1.5,
+    "roic": 0.7063156565221936,
+    "grossMargin": 1,
+    "roe": 0.028837065676032874,
+    "operatingMargin": 0.8773041651771052
+  },
+  {
+    "symbol": "VRBCF",
+    "name": "Virbac S.A.",
+    "marketCap": 2898727104,
+    "price": 346,
+    "roic": 0.16438095843672007,
+    "grossMargin": 0.6709725851039696,
+    "roe": 0.1392844714447181,
+    "operatingMargin": 0.1628026469554788
+  },
+  {
+    "symbol": "ASCCY",
+    "name": "ASICS Corporation",
+    "marketCap": 18036895733,
+    "price": 25.08,
+    "roic": 0.30874157684538406,
+    "grossMargin": 0.5583839086490422,
+    "roe": 0.2735085967070604,
+    "operatingMargin": 0.14754187754043324
+  },
+  {
+    "symbol": "GBERF",
+    "name": "Geberit AG",
+    "marketCap": 25204989022,
+    "price": 764.66,
+    "roic": 0.2734091806338155,
+    "grossMargin": 0.7285367039377735,
+    "roe": 0.4586021505376344,
+    "operatingMargin": 0.24689677523902123
+  },
+  {
+    "symbol": "WTKWY",
+    "name": "Wolters Kluwer N.V.",
+    "marketCap": 21946541996,
+    "price": 97.16,
+    "roic": 0.252187609380469,
+    "grossMargin": 0.7251521298174443,
+    "roe": 0.6983818770226538,
+    "operatingMargin": 0.24357674104124408
+  },
+  {
+    "symbol": "TMVWF",
+    "name": "TeamViewer AG",
+    "marketCap": 1074433379,
+    "price": 6.845,
+    "roic": 0.39509597290897364,
+    "grossMargin": 0.879607757863162,
+    "roe": 1.2248693834900732,
+    "operatingMargin": 0.30739683835203496
+  },
+  {
+    "symbol": "LSRCY",
+    "name": "Lasertec Corporation",
+    "marketCap": 21712637235,
+    "price": 48.19,
+    "roic": 0.5803185910941885,
+    "grossMargin": 0.5895409918203255,
+    "roe": 0.4033006507922896,
+    "operatingMargin": 0.488486024566859
+  },
+  {
+    "symbol": "TMSNY",
+    "name": "Temenos AG",
+    "marketCap": 6614642202,
+    "price": 94.9318,
+    "roic": 0.19215806537134042,
+    "grossMargin": 0.720624841371318,
+    "roe": 0.2772867127613956,
+    "operatingMargin": 0.22144707668290067
+  },
+  {
+    "symbol": "CORT",
+    "name": "Corcept Therapeutics Incorporated",
+    "marketCap": 4861799390,
+    "price": 46.22,
+    "roic": 0.19570579324930693,
+    "grossMargin": 0.9838794738089595,
+    "roe": 0.2056139813916941,
+    "operatingMargin": 0.20287834794975113
+  },
+  {
+    "symbol": "SBS",
+    "name": "Companhia de Saneamento B\u00e1sico do Estado de S\u00e3o Paulo - SABESP",
+    "marketCap": 18975946743,
+    "price": 27.1,
+    "roic": 0.22481147956859798,
+    "grossMargin": 0.5406597345499135,
+    "roe": 0.2594115303232605,
+    "operatingMargin": 0.4291120573675096
+  },
+  {
+    "symbol": "HKXCF",
+    "name": "Hong Kong Exchanges and Clearing Limited",
+    "marketCap": 71183259305,
+    "price": 56.32,
+    "roic": 0.2605596805827963,
+    "grossMargin": 0.7460509627579845,
+    "roe": 0.24233083265245486,
+    "operatingMargin": 0.8577770091087282
+  },
+  {
+    "symbol": "LRLCF",
+    "name": "L'Or\u00e9al S.A.",
+    "marketCap": 238122367035,
+    "price": 447.24,
+    "roic": 0.20824643913570837,
+    "grossMargin": 0.7418297046460075,
+    "roe": 0.19342172376430963,
+    "operatingMargin": 0.19977326453084615
+  },
+  {
+    "symbol": "HOCPF",
+    "name": "HOYA Corporation",
+    "marketCap": 53685754918,
+    "price": 158.77,
+    "roic": 0.4558263886913735,
+    "grossMargin": 0.8650237352043034,
+    "roe": 0.20749202020896837,
+    "operatingMargin": 0.5427679594497723
+  },
+  {
+    "symbol": "RLXXF",
+    "name": "RELX Plc",
+    "marketCap": 69347908238,
+    "price": 38.2,
+    "roic": 0.30387679235262877,
+    "grossMargin": 0.6502013991944032,
+    "roe": 0.555587474863545,
+    "operatingMargin": 0.30326478694085224
+  },
+  {
+    "symbol": "HWDJF",
+    "name": "Howden Joinery Group Plc",
+    "marketCap": 6233436129,
+    "price": 11.525,
+    "roic": 0.1934858251098055,
+    "grossMargin": 0.616295594504974,
+    "roe": 0.22087357136528749,
+    "operatingMargin": 0.14607467378665862
+  },
+  {
+    "symbol": "IKTSY",
+    "name": "Intertek Group plc",
+    "marketCap": 9561383355,
+    "price": 62.28,
+    "roic": 0.2101443590145928,
+    "grossMargin": 1,
+    "roe": 0.2463799129752479,
+    "operatingMargin": 0.1578745726747613
+  },
+  {
+    "symbol": "CHEOY",
+    "name": "Cochlear Limited",
+    "marketCap": 12763163844,
+    "price": 97.58,
+    "roic": 0.18270571827057183,
+    "grossMargin": 0.7374418505398831,
+    "roe": 0.19940521970978825,
+    "operatingMargin": 0.1733174000256071
+  },
+  {
+    "symbol": "ATVDY",
+    "name": "Atresmedia Corporaci\u00f3n de Medios de Comunicaci\u00f3n, S.A.",
+    "marketCap": 1315043164,
+    "price": 5.84,
+    "roic": 0.16933155204559194,
+    "grossMargin": 0.5071809905610074,
+    "roe": 0.14490148717917828,
+    "operatingMargin": 0.17433952080299994
+  },
+  {
+    "symbol": "HESAF",
+    "name": "Herm\u00e8s International Soci\u00e9t\u00e9 en commandite par actions",
+    "marketCap": 265614974712,
+    "price": 2533.5999,
+    "roic": 0.3161141094834233,
+    "grossMargin": 0.702636783124588,
+    "roe": 0.26565475846944075,
+    "operatingMargin": 0.40540540540540543
+  },
+  {
+    "symbol": "GMWKF",
+    "name": "Games Workshop Group PLC",
+    "marketCap": 8178237788,
+    "price": 247.5,
+    "roic": 0.8180964308077645,
+    "grossMargin": 0.7206477732793523,
+    "roe": 0.6983618233618234,
+    "operatingMargin": 0.4231578947368421
+  },
+  {
+    "symbol": "KNYJY",
+    "name": "KONE Oyj",
+    "marketCap": 76580932873,
+    "price": 36.97,
+    "roic": 0.3115956491368127,
+    "grossMargin": 0.5648111439486773,
+    "roe": 0.3318449785467611,
+    "operatingMargin": 0.11253874432350609
+  },
+  {
+    "symbol": "TCTZF",
+    "name": "Tencent Holdings Limited",
+    "marketCap": 706337083076,
+    "price": 78.1544,
+    "roic": 0.1503512065001741,
+    "grossMargin": 0.5289546343317829,
+    "roe": 0.19934610311972292,
+    "operatingMargin": 0.315178786442249
+  },
+  {
+    "symbol": "CHGCF",
+    "name": "Chugai Pharmaceutical Co., Ltd.",
+    "marketCap": 96339472763,
+    "price": 58.54,
+    "roic": 0.2825847125362875,
+    "grossMargin": 0.7100582516309859,
+    "roe": 0.20369035166466035,
+    "operatingMargin": 0.4630077796979526
+  },
+  {
+    "symbol": "TMICF",
+    "name": "Trend Micro Incorporated",
+    "marketCap": 5647130075,
+    "price": 42.82,
+    "roic": 0.36157754694006405,
+    "grossMargin": 0.7616619840227701,
+    "roe": 0.28764703419984095,
+    "operatingMargin": 0.17644275559533154
+  },
+  {
+    "symbol": "NNFSF",
+    "name": "Nongfu Spring Co., Ltd.",
+    "marketCap": 71974933466,
+    "price": 6.4,
+    "roic": 0.4428547508219526,
+    "grossMargin": 0.580840163342067,
+    "roe": 0.3754837061564156,
+    "operatingMargin": 0.34250195216373597
+  },
+  {
+    "symbol": "SGSOF",
+    "name": "SGS S.A.",
+    "marketCap": 22931720897,
+    "price": 118.47,
+    "roic": 0.21401515151515152,
+    "grossMargin": 0.8585516632322637,
+    "roe": 0.7289836888331243,
+    "operatingMargin": 0.13305858110097143
+  },
+  {
+    "symbol": "MONRY",
+    "name": "Moncler S.p.A.",
+    "marketCap": 16238862357,
+    "price": 59.79,
+    "roic": 0.20426663777627826,
+    "grossMargin": 0.7805134509560221,
+    "roe": 0.1783303314020599,
+    "operatingMargin": 0.2947399164469765
+  },
+  {
+    "symbol": "STNE",
+    "name": "StoneCo Ltd.",
+    "marketCap": 4438230360,
+    "price": 16.59,
+    "roic": 0.27638518490670666,
+    "grossMargin": 0.7339597852384692,
+    "roe": -0.12867052129146914,
+    "operatingMargin": 0.4616774757317068
+  },
+  {
+    "symbol": "ASMLF",
+    "name": "ASML Holding N.V.",
+    "marketCap": 563673292176,
+    "price": 1452.2135,
+    "roic": 0.3161586925594466,
+    "grossMargin": 0.512757006535069,
+    "roe": 0.4097895739521995,
+    "operatingMargin": 0.31923829472559434
+  },
+  {
+    "symbol": "LVMHF",
+    "name": "LVMH Mo\u00ebt Hennessy - Louis Vuitton, Soci\u00e9t\u00e9 Europ\u00e9enne",
+    "marketCap": 341268820750,
+    "price": 687.5,
+    "roic": 0.16370547387743087,
+    "grossMargin": 0.6703234415408051,
+    "roe": 0.18587911192736645,
+    "operatingMargin": 0.22326795224543297
+  },
+  {
+    "symbol": "AIOSF",
+    "name": "Atresmedia Corporaci\u00f3n de Medios de Comunicaci\u00f3n, S.A.",
+    "marketCap": 1294775938,
+    "price": 5.75,
+    "roic": 0.16933155204559194,
+    "grossMargin": 0.5071809905610074,
+    "roe": 0.14490148717917828,
+    "operatingMargin": 0.17433952080299994
+  },
+  {
+    "symbol": "NETTF",
+    "name": "NetEase, Inc.",
+    "marketCap": 87128083906,
+    "price": 27.52,
+    "roic": 0.20218153982548837,
+    "grossMargin": 0.6249768413074263,
+    "roe": 0.21413620242608306,
+    "operatingMargin": 0.2809622839916518
+  },
+  {
+    "symbol": "ADYYF",
+    "name": "Adyen N.V.",
+    "marketCap": 52857387994,
+    "price": 1676.06,
+    "roic": 0.19795683891984311,
+    "grossMargin": 0.8931407741100045,
+    "roe": 0.21863588626698088,
+    "operatingMargin": 0.39203388208398543
+  },
+  {
+    "symbol": "PEGA",
+    "name": "Pegasystems Inc.",
+    "marketCap": 8519817764,
+    "price": 49.8,
+    "roic": 0.1815879158329852,
+    "grossMargin": 0.7390661109552625,
+    "roe": 0.16941483910637425,
+    "operatingMargin": 0.082743557888831
+  },
+  {
+    "symbol": "RCRRF",
+    "name": "Recruit Holdings Co., Ltd.",
+    "marketCap": 77202213577,
+    "price": 54.354,
+    "roic": 0.24899762292348432,
+    "grossMargin": 0.5862703859307071,
+    "roe": 0.25253990215024646,
+    "operatingMargin": 0.1378903818941396
+  },
+  {
+    "symbol": "WDFC",
+    "name": "WD-40 Company",
+    "marketCap": 2967533744,
+    "price": 219.365,
+    "roic": 0.27785422109907054,
+    "grossMargin": 0.5505665459648217,
+    "roe": 0.3393373907336138,
+    "operatingMargin": 0.16741211480922927
+  },
+  {
+    "symbol": "GAERF",
+    "name": "Grupo Aeroportuario del Centro Norte, S.A.B. de C.V.",
+    "marketCap": 5125442583,
+    "price": 15.236,
+    "roic": 0.3372816885423204,
+    "grossMargin": 0.6684725278837144,
+    "roe": 0.47461832101497825,
+    "operatingMargin": 0.536272513500338
+  },
+  {
+    "symbol": "VODAF",
+    "name": "Vodacom Group Limited",
+    "marketCap": 15224854370,
+    "price": 7.88,
+    "roic": 0.20571431855802833,
+    "grossMargin": 0.610187417475218,
+    "roe": 0.18037579195600908,
+    "operatingMargin": 0.23511597811163593
+  },
+  {
+    "symbol": "BOLSY",
+    "name": "B3 S.A. - Brasil, Bolsa, Balc\u00e3o",
+    "marketCap": 16007049377,
+    "price": 9.36,
+    "roic": 0.167587605645986,
+    "grossMargin": 0.7414002379238077,
+    "roe": 0.24912318519298743,
+    "operatingMargin": 0.6410754868799878
+  },
+  {
+    "symbol": "HNNMY",
+    "name": "H & M Hennes & Mauritz AB (publ)",
+    "marketCap": 160517656351,
+    "price": 3.968,
+    "roic": 0.1523898418512909,
+    "grossMargin": 0.5343742270063716,
+    "roe": 0.25185297559706993,
+    "operatingMargin": 0.07380649783775024
+  },
+  {
+    "symbol": "UNIT",
+    "name": "Uniti Group Inc.",
+    "marketCap": 1799660779,
+    "price": 7.31,
+    "roic": 0.16970485746907685,
+    "grossMargin": 1,
+    "roe": -0.038088007003828535,
+    "operatingMargin": 0.5199305526395396
+  },
+  {
+    "symbol": "DMLP",
+    "name": "Dorchester Minerals, L.P.",
+    "marketCap": 1217485004,
+    "price": 25.23,
+    "roic": 0.2549860025098948,
+    "grossMargin": 0.6462237576072758,
+    "roe": 0.25413087400525036,
+    "operatingMargin": 0.5723581161815964
+  },
+  {
+    "symbol": "CMOPF",
+    "name": "Cosmo Pharmaceuticals N.V.",
+    "marketCap": 2414994191,
+    "price": 151.5155,
+    "roic": 0.24875690053867644,
+    "grossMargin": 0.9255401292411952,
+    "roe": 0.2673649990969839,
+    "operatingMargin": 0.5580535856185436
+  },
+  {
+    "symbol": "TBBK",
+    "name": "The Bancorp, Inc.",
+    "marketCap": 3148108479,
+    "price": 68.34,
+    "roic": 0.2976636709027129,
+    "grossMargin": 0.6976155672533396,
+    "roe": 0.2754427481979227,
+    "operatingMargin": 0.41142589979524186
+  },
+  {
+    "symbol": "BESVF",
+    "name": "BE Semiconductor Industries N.V.",
+    "marketCap": 16425650402,
+    "price": 208.06,
+    "roic": 0.1832239341187844,
+    "grossMargin": 0.6517886391658559,
+    "roe": 0.36306616872546205,
+    "operatingMargin": 0.3219748038184413
+  },
+  {
+    "symbol": "MBT",
+    "name": "Mobile TeleSystems Public Joint Stock Company",
+    "marketCap": 9280480550,
+    "price": 5.5,
+    "roic": 0.2602129218933357,
+    "grossMargin": 0.6441844845880549,
+    "roe": -10.70066692820714,
+    "operatingMargin": 0.20271918229808694
+  },
+  {
+    "symbol": "QBEIF",
+    "name": "QBE Insurance Group Limited",
+    "marketCap": 20430449200,
+    "price": 13.57,
+    "roic": 0.5178807644939105,
+    "grossMargin": 1,
+    "roe": 0.16578138104556892,
+    "operatingMargin": 1.211363030141371
+  },
+  {
+    "symbol": "INMD",
+    "name": "InMode Ltd.",
+    "marketCap": 1034998971,
+    "price": 15.25,
+    "roic": 0.15720660057891972,
+    "grossMargin": 0.8030687557304885,
+    "roe": 0.2575613124508925,
+    "operatingMargin": 0.2850199332350602
+  },
+  {
+    "symbol": "MSI",
+    "name": "Motorola Solutions, Inc.",
+    "marketCap": 67634653588,
+    "price": 406.08,
+    "roic": 0.28176100628930817,
+    "grossMargin": 0.509568272164186,
+    "roe": 0.9260129183793306,
+    "operatingMargin": 0.24849773504668576
+  },
+  {
+    "symbol": "NTES",
+    "name": "NetEase, Inc.",
+    "marketCap": 84158425691,
+    "price": 131.86,
+    "roic": 0.20218153982548837,
+    "grossMargin": 0.6249768413074263,
+    "roe": 0.21413620242608306,
+    "operatingMargin": 0.2809622839916518
+  },
+  {
+    "symbol": "BHPLF",
+    "name": "BHP Group Limited",
+    "marketCap": 178245117578,
+    "price": 35.1,
+    "roic": 0.2089510579596569,
+    "grossMargin": 0.7165346650540362,
+    "roe": 0.19509820887773643,
+    "operatingMargin": 0.3796964613163747
+  },
+  {
+    "symbol": "RPGRF",
+    "name": "REA Group Limited",
+    "marketCap": 16427324459,
+    "price": 124.45,
+    "roic": 0.3331938399732173,
+    "grossMargin": 0.9654135338345865,
+    "roe": 0.3545502092050209,
+    "operatingMargin": 0.41285973554576094
+  },
+  {
+    "symbol": "INPOF",
+    "name": "InPost S.A.",
+    "marketCap": 8071772572,
+    "price": 16.16,
+    "roic": 0.21001650129653043,
+    "grossMargin": 0.9762907745563105,
+    "roe": 0.5078583061889251,
+    "operatingMargin": 0.17949046685836736
+  },
+  {
+    "symbol": "ANYYY",
+    "name": "Aena S.M.E., S.A.",
+    "marketCap": 231622290926,
+    "price": 15.445,
+    "roic": 0.1806956902263032,
+    "grossMargin": 0.7166226745375361,
+    "roe": 0.23370393792652977,
+    "operatingMargin": 0.4619600380391812
+  },
+  {
+    "symbol": "HESM",
+    "name": "Hess Midstream LP",
+    "marketCap": 7482472235,
+    "price": 35.62,
+    "roic": 0.23374112979118447,
+    "grossMargin": 0.8638648702996179,
+    "roe": 0.4203881665724515,
+    "operatingMargin": 0.615993029023393
+  },
+  {
+    "symbol": "AAFRF",
+    "name": "Airtel Africa Plc",
+    "marketCap": 18228443150,
+    "price": 5,
+    "roic": 0.18725099601593626,
+    "grossMargin": 0.7027245206861756,
+    "roe": 0.08849557522123894,
+    "operatingMargin": 0.29404641775983853
+  },
+  {
+    "symbol": "PMCUF",
+    "name": "Pro Medicus Limited",
+    "marketCap": 12393271711,
+    "price": 118.63,
+    "roic": 0.5332616065447311,
+    "grossMargin": 0.9985486484582325,
+    "roe": 0.4483797278207368,
+    "operatingMargin": 0.7403020126347432
+  },
+  {
+    "symbol": "GZPZF",
+    "name": "Gaztransport & Technigaz S.A.",
+    "marketCap": 6924022047,
+    "price": 186.81,
+    "roic": 0.775577981689391,
+    "grossMargin": 0.9145975830504828,
+    "roe": 0.7537191802198564,
+    "operatingMargin": 0.5836554217656422
+  },
+  {
+    "symbol": "KNCRY",
+    "name": "Konecranes Plc",
+    "marketCap": 9050229548,
+    "price": 22.85,
+    "roic": 0.18282568282568282,
+    "grossMargin": 0.5556659569434588,
+    "roe": 0.1983097378478764,
+    "operatingMargin": 0.12098414951502247
+  },
+  {
+    "symbol": "VTTGF",
+    "name": "VAT Group AG",
+    "marketCap": 13901364899,
+    "price": 463.75,
+    "roic": 0.23612135760535372,
+    "grossMargin": 0.6730492464444916,
+    "roe": 0.2809463612764416,
+    "operatingMargin": 0.2676767140734451
+  },
+  {
+    "symbol": "MICLF",
+    "name": "Mycronic AB (publ)",
+    "marketCap": 4123711860,
+    "price": 21.118,
+    "roic": 0.27931178021368114,
+    "grossMargin": 0.5269944735723395,
+    "roe": 0.2576546233925291,
+    "operatingMargin": 0.2852486892447216
+  },
+  {
+    "symbol": "BESIY",
+    "name": "BE Semiconductor Industries N.V.",
+    "marketCap": 16657753700,
+    "price": 211,
+    "roic": 0.1832239341187844,
+    "grossMargin": 0.6517886391658559,
+    "roe": 0.36306616872546205,
+    "operatingMargin": 0.3219748038184413
+  },
+  {
+    "symbol": "WFRSF",
+    "name": "West African Resources Limited",
+    "marketCap": 2844398827,
+    "price": 2.49,
+    "roic": 0.1822152682704218,
+    "grossMargin": 0.5823200362246814,
+    "roe": 0.17950831766887146,
+    "operatingMargin": 0.4475901751595874
+  },
+  {
+    "symbol": "DSCSY",
+    "name": "Disco Corporation",
+    "marketCap": 49552740602,
+    "price": 45.7,
+    "roic": 0.33792928832578817,
+    "grossMargin": 0.7057229229646618,
+    "roe": 0.2516309469647732,
+    "operatingMargin": 0.42417616503904015
+  },
+  {
+    "symbol": "DNLMY",
+    "name": "Dunelm Group plc",
+    "marketCap": 2579076461,
+    "price": 12.788,
+    "roic": 0.4878048780487805,
+    "grossMargin": 0.5241671372106155,
+    "roe": 1.3156565656565657,
+    "operatingMargin": 0.12535290796160362
+  },
+  {
+    "symbol": "OCPNF",
+    "name": "Olympus Corporation",
+    "marketCap": 13286198329,
+    "price": 12.06,
+    "roic": 0.1612582074811532,
+    "grossMargin": 0.6855259833235071,
+    "roe": 0.15677773890463767,
+    "operatingMargin": 0.16289660815054566
+  },
+  {
+    "symbol": "IGGRF",
+    "name": "IG Group Holdings plc",
+    "marketCap": 6147890627,
+    "price": 16.58,
+    "roic": 0.1908932408871589,
+    "grossMargin": 0.8162469708144559,
+    "roe": 0.20646982197134173,
+    "operatingMargin": 0.496048888420609
+  },
+  {
+    "symbol": "RBTEF",
+    "name": "Robertet S.A.",
+    "marketCap": 1992981490,
+    "price": 1010,
+    "roic": 0.1547088525043724,
+    "grossMargin": 0.5636229908284826,
+    "roe": 0.16322432743451037,
+    "operatingMargin": 0.155094854069234
+  },
+  {
+    "symbol": "PNDRY",
+    "name": "Pandora A/S",
+    "marketCap": 5870166695,
+    "price": 9.84,
+    "roic": 0.4459482131871819,
+    "grossMargin": 0.7982638888888889,
+    "roe": 0.9489832970225127,
+    "operatingMargin": 0.25170454545454546
+  },
+  {
+    "symbol": "RYKKY",
+    "name": "Ryohin Keikaku Co., Ltd.",
+    "marketCap": 2611721530,
+    "price": 9.89,
+    "roic": 0.1724991823576134,
+    "grossMargin": 0.5135866759959166,
+    "roe": 0.15310863588594692,
+    "operatingMargin": 0.09410817086801533
+  },
+  {
+    "symbol": "FNBKY",
+    "name": "FinecoBank Banca Fineco S.p.A.",
+    "marketCap": 8941561013,
+    "price": 58.49,
+    "roic": 0.22449066192672723,
+    "grossMargin": 1,
+    "roe": 0.2730011819301958,
+    "operatingMargin": 0.6180846636832522
+  },
+  {
+    "symbol": "IDEXF",
+    "name": "Industria de Dise\u00f1o Textil, S.A.",
+    "marketCap": 204122023304,
+    "price": 65.5,
+    "roic": 0.30800165970847304,
+    "grossMargin": 0.5783666208280079,
+    "roe": 0.2981298241073918,
+    "operatingMargin": 0.195548831114203
+  },
+  {
+    "symbol": "LUGDF",
+    "name": "Lundin Gold Inc.",
+    "marketCap": 21728929500,
+    "price": 90,
+    "roic": 0.5842979162569761,
+    "grossMargin": 0.704383722392188,
+    "roe": 0.35028393511792744,
+    "operatingMargin": 0.6425371945853066
+  },
+  {
+    "symbol": "ICTEF",
+    "name": "International Container Terminal Services, Inc.",
+    "marketCap": 21499189740,
+    "price": 10.65,
+    "roic": 0.21717898357537965,
+    "grossMargin": 0.5686982191291976,
+    "roe": 0.644752686291149,
+    "operatingMargin": 0.5022705852638388
+  },
+  {
+    "symbol": "CSPCY",
+    "name": "CSPC Pharmaceutical Group Limited",
+    "marketCap": 14678354738,
+    "price": 5.08,
+    "roic": 0.16429184044040443,
+    "grossMargin": 0.6997322687016271,
+    "roe": 0.14273601532572988,
+    "operatingMargin": 0.18498048246836704
+  },
+  {
+    "symbol": "FNOXF",
+    "name": "Fortnox AB (publ)",
+    "marketCap": 5674082303,
+    "price": 8.45,
+    "roic": 0.34098871156091864,
+    "grossMargin": 0.6288508557457213,
+    "roe": 0.3005927180355631,
+    "operatingMargin": 0.42836185819070904
+  },
+  {
+    "symbol": "KUMBF",
+    "name": "Kumba Iron Ore Limited",
+    "marketCap": 6972704071,
+    "price": 21.74,
+    "roic": 0.30416772436711054,
+    "grossMargin": 0.8470866348553168,
+    "roe": 0.2783110858657578,
+    "operatingMargin": 0.3846692641071663
+  },
+  {
+    "symbol": "FLMNF",
+    "name": "Fielmann AG",
+    "marketCap": 5058096459,
+    "price": 60.22,
+    "roic": 0.22445643997995052,
+    "grossMargin": 0.8001820578097588,
+    "roe": 0.16917223407934995,
+    "operatingMargin": 0.15090878735895158
+  },
+  {
+    "symbol": "FSUGY",
+    "name": "Fortescue Metals Group Limited",
+    "marketCap": 47332942800,
+    "price": 30.79,
+    "roic": 0.18030014035340267,
+    "grossMargin": 0.5673800259403372,
+    "roe": 0.16878502803086395,
+    "operatingMargin": 0.32490272373540857
+  },
+  {
+    "symbol": "SGPYY",
+    "name": "The Sage Group plc",
+    "marketCap": 12992830870,
+    "price": 54.37,
+    "roic": 0.22476675148430875,
+    "grossMargin": 0.9271786709112615,
+    "roe": 0.5125,
+    "operatingMargin": 0.2109033028253084
+  },
+  {
+    "symbol": "CRNLF",
+    "name": "Capricorn Metals Ltd",
+    "marketCap": 4926815086,
+    "price": 10.8,
+    "roic": 0.27359247292373395,
+    "grossMargin": 0.5475490963035076,
+    "roe": 0.19236465529711,
+    "operatingMargin": 0.5040264087601675
+  },
+  {
+    "symbol": "ORINY",
+    "name": "Orion Oyj",
+    "marketCap": 23626090715,
+    "price": 42.005,
+    "roic": 0.3072951242900347,
+    "grossMargin": 0.6135892116182573,
+    "roe": 0.3282587064676617,
+    "operatingMargin": 0.2700985477178423
+  },
+  {
+    "symbol": "WIX",
+    "name": "Wix.com Ltd.",
+    "marketCap": 4898160879,
+    "price": 87.96,
+    "roic": 0.2518446797273848,
+    "grossMargin": 0.6793030982875643,
+    "roe": -1.7556672505267434,
+    "operatingMargin": 0.056877289637349844
+  },
+  {
+    "symbol": "DISPF",
+    "name": "Disco Corporation",
+    "marketCap": 48147501866,
+    "price": 444.04,
+    "roic": 0.33792928832578817,
+    "grossMargin": 0.7057229229646618,
+    "roe": 0.25163043588644735,
+    "operatingMargin": 0.42417616503904015
+  },
+  {
+    "symbol": "SAUHF",
+    "name": "Straumann Holding AG",
+    "marketCap": 20363866297,
+    "price": 127.7125,
+    "roic": 0.22460257369456044,
+    "grossMargin": 0.7122413035664363,
+    "roe": 0.1903387576582092,
+    "operatingMargin": 0.24002595950317504
+  },
+  {
+    "symbol": "KUASF",
+    "name": "Kuaishou Technology",
+    "marketCap": 40073091416,
+    "price": 9.35,
+    "roic": 0.19098007370853895,
+    "grossMargin": 0.5460448549228514,
+    "roe": 0.24732275337075027,
+    "operatingMargin": 0.12046683162855207
+  },
+  {
+    "symbol": "IGGHY",
+    "name": "IG Group Holdings plc",
+    "marketCap": 6893635206,
+    "price": 18.1875,
+    "roic": 0.1908932408871589,
+    "grossMargin": 0.8162469708144559,
+    "roe": 0.20646982197134173,
+    "operatingMargin": 0.496048888420609
+  },
+  {
+    "symbol": "GNMSF",
+    "name": "Genmab A/S",
+    "marketCap": 20943761660,
+    "price": 340,
+    "roic": 0.16549391403105942,
+    "grossMargin": 0.9542413825141689,
+    "roe": 0.213750442815489,
+    "operatingMargin": 0.31139087614977234
+  },
+  {
+    "symbol": "RTMVY",
+    "name": "Rightmove plc",
+    "marketCap": 5377725000,
+    "price": 13.95,
+    "roic": 2.987633600242433,
+    "grossMargin": 1,
+    "roe": 2.383233162672207,
+    "operatingMargin": 0.6574553326391062
+  },
+  {
+    "symbol": "PGPHF",
+    "name": "Partners Group Holding AG",
+    "marketCap": 36054189740,
+    "price": 1390,
+    "roic": 0.3090930562116202,
+    "grossMargin": 0.8083535648813358,
+    "roe": 0.4671306076798807,
+    "operatingMargin": 0.6484169845909924
+  },
+  {
+    "symbol": "SONVY",
+    "name": "Sonova Holding AG",
+    "marketCap": 16578019276,
+    "price": 55.62,
+    "roic": 0.15639339074614045,
+    "grossMargin": 0.7203652920784395,
+    "roe": 0.20284470464610072,
+    "operatingMargin": 0.1789982925441093
+  },
+  {
+    "symbol": "IPXHF",
+    "name": "Inpex Corporation",
+    "marketCap": 24538813201,
+    "price": 20.69,
+    "roic": 0.1698015247108307,
+    "grossMargin": 0.5960389030631947,
+    "roe": 0.0886273916095736,
+    "operatingMargin": 0.5131282612120819
+  },
+  {
+    "symbol": "ABMD",
+    "name": "Abiomed, Inc.",
+    "marketCap": 17180649405,
+    "price": 381.02,
+    "roic": 0.24280621472165614,
+    "grossMargin": 0.8176327086037065,
+    "roe": 0.09080199504299134,
+    "operatingMargin": 0.3612221142075671
+  },
+  {
+    "symbol": "BIOGY",
+    "name": "BioGaia AB (publ)",
+    "marketCap": 1125483568,
+    "price": 11,
+    "roic": 0.23162835382150046,
+    "grossMargin": 0.7244886196702368,
+    "roe": 0.20382938538179,
+    "operatingMargin": 0.2975790001954006
+  },
+  {
+    "symbol": "EA",
+    "name": "Electronic Arts Inc.",
+    "marketCap": 51114163220,
+    "price": 204.37,
+    "roic": 0.17061398585699855,
+    "grossMargin": 0.7932466836392872,
+    "roe": 0.17554024428437207,
+    "operatingMargin": 0.20367144579927643
+  },
+  {
+    "symbol": "KYIV",
+    "name": "Kyivstar Group Ltd. Common Shares",
+    "marketCap": 2906571767,
+    "price": 12.59,
+    "roic": 0.2632375189107413,
+    "grossMargin": 0.6420021762785637,
+    "roe": 0.262037037037037,
+    "operatingMargin": 0.3786724700761698
+  },
+  {
+    "symbol": "TKGBF",
+    "name": "Turkiye Garanti Bankasi A.S.",
+    "marketCap": 9072000000,
+    "price": 2.16,
+    "roic": 0.24501786998034478,
+    "grossMargin": 1,
+    "roe": 0.27667171569129156,
+    "operatingMargin": 0.6292876292100859
+  },
+  {
+    "symbol": "RPGRY",
+    "name": "REA Group Limited",
+    "marketCap": 18570396022,
+    "price": 35.14,
+    "roic": 0.3331938399732173,
+    "grossMargin": 0.9654135338345865,
+    "roe": 0.3545502092050209,
+    "operatingMargin": 0.41285973554576094
+  },
+  {
+    "symbol": "PLSQF",
+    "name": "Plus500 Ltd.",
+    "marketCap": 3538524635,
+    "price": 50.33,
+    "roic": 0.5058699578567128,
+    "grossMargin": 1,
+    "roe": 0.42387086760825704,
+    "operatingMargin": 0.4723159078133783
+  },
+  {
+    "symbol": "HLTOY",
+    "name": "Hellenic Telecommunications Organization S.A.",
+    "marketCap": 15621038952,
+    "price": 9.67,
+    "roic": 0.19965350379353605,
+    "grossMargin": 0.7676005346997884,
+    "roe": 0.2436765229782686,
+    "operatingMargin": 0.18614236381864765
+  },
+  {
+    "symbol": "RKWBF",
+    "name": "Rockwool A/S",
+    "marketCap": 5264317598,
+    "price": 32.5,
+    "roic": 0.20783956244302643,
+    "grossMargin": 0.6674448767833981,
+    "roe": 0.17828200972447325,
+    "operatingMargin": 0.177431906614786
+  },
+  {
+    "symbol": "HALO",
+    "name": "Halozyme Therapeutics, Inc.",
+    "marketCap": 8257661340,
+    "price": 70.22,
+    "roic": 0.2865732650099227,
+    "grossMargin": 0.8429890360121498,
+    "roe": 1.2206304748763814,
+    "operatingMargin": 0.5431517426949427
+  },
+  {
+    "symbol": "RHHVF",
+    "name": "Roche Holding AG",
+    "marketCap": 358336151402,
+    "price": 449.89,
+    "roic": 0.1794244296450828,
+    "grossMargin": 0.7390335764083661,
+    "roe": 0.2605534044763434,
+    "operatingMargin": 0.21503325586986136
+  },
+  {
+    "symbol": "MO",
+    "name": "Altria Group, Inc.",
+    "marketCap": 106797084138,
+    "price": 63.62,
+    "roic": 0.42585997878466436,
+    "grossMargin": 0.7027489728037566,
+    "roe": -5.033065236818588,
+    "operatingMargin": 0.5498434748581491
+  },
+  {
+    "symbol": "ISRMF",
+    "name": "Isramco Negev 2 Limited Partnership",
+    "marketCap": 1717319632,
+    "price": 0.66,
+    "roic": 0.172884998278683,
+    "grossMargin": 0.7088461036260522,
+    "roe": 0.23303113914071738,
+    "operatingMargin": 0.4527024044348103
+  },
+  {
+    "symbol": "CHGCY",
+    "name": "Chugai Pharmaceutical Co., Ltd.",
+    "marketCap": 92554355110,
+    "price": 28.12,
+    "roic": 0.2825847125362875,
+    "grossMargin": 0.7100582516309859,
+    "roe": 0.20369035166466035,
+    "operatingMargin": 0.4630077796979526
+  },
+  {
+    "symbol": "PBCRF",
+    "name": "PT Bank Central Asia Tbk",
+    "marketCap": 57309707363,
+    "price": 0.465,
+    "roic": 0.23076642824002452,
+    "grossMargin": 1,
+    "roe": 0.2087883617972408,
+    "operatingMargin": 0.6354046832545659
+  },
+  {
+    "symbol": "HWDJY",
+    "name": "Howden Joinery Group Plc",
+    "marketCap": 6042777598,
+    "price": 44.5,
+    "roic": 0.1934858251098055,
+    "grossMargin": 0.616295594504974,
+    "roe": 0.22087357136528749,
+    "operatingMargin": 0.14607467378665862
+  },
+  {
+    "symbol": "JUMSY",
+    "name": "Jumbo S.A.",
+    "marketCap": 4012025047,
+    "price": 29.83,
+    "roic": 0.2541684727065944,
+    "grossMargin": 0.5561344600664595,
+    "roe": 0.22731837084843595,
+    "operatingMargin": 0.3335116138912732
+  },
+  {
+    "symbol": "GPAEF",
+    "name": "Grupo Aeroportuario del Pac\u00edfico, S.A.B. de C.V.",
+    "marketCap": 14198335067,
+    "price": 28.1,
+    "roic": 0.24591356124215183,
+    "grossMargin": 0.5827309471834876,
+    "roe": 0.3854038515248437,
+    "operatingMargin": 0.4477442893923891
+  },
+  {
+    "symbol": "EXETF",
+    "name": "Extendicare Inc.",
+    "marketCap": 1605784453,
+    "price": 17,
+    "roic": 0.2605099495203851,
+    "grossMargin": 1,
+    "roe": 0.6048073211528564,
+    "operatingMargin": 0.07585107645467677
+  },
+  {
+    "symbol": "GRND",
+    "name": "Grindr Inc.",
+    "marketCap": 2166931239,
+    "price": 11.73,
+    "roic": 0.22514533858845898,
+    "grossMargin": 0.7458797107673023,
+    "roe": 0.9956753059208027,
+    "operatingMargin": 0.26868348054178903
+  },
+  {
+    "symbol": "SNROF",
+    "name": "Sanrio Company, Ltd.",
+    "marketCap": 7059660928,
+    "price": 29.12,
+    "roic": 0.3383160603151591,
+    "grossMargin": 0.7584262684259924,
+    "roe": 0.38990367096768164,
+    "operatingMargin": 0.3575194611604925
+  },
+  {
+    "symbol": "ASMXF",
+    "name": "ASM International N.V.",
+    "marketCap": 41046622410,
+    "price": 839.82,
+    "roic": 0.20247303674595274,
+    "grossMargin": 0.5051184496052135,
+    "roe": 0.18300123693842396,
+    "operatingMargin": 0.2735119295235419
+  },
+  {
+    "symbol": "TY-P",
+    "name": "Tri-Continental Corporation PFD $2.50",
+    "marketCap": 2483562483,
+    "price": 44.4301,
+    "roic": 0.16864484164959984,
+    "grossMargin": 1,
+    "roe": 0.16869408136574252,
+    "operatingMargin": 0.9971643813253542
+  },
+  {
+    "symbol": "BKRKF",
+    "name": "PT Bank Rakyat Indonesia (Persero) Tbk",
+    "marketCap": 30129824340,
+    "price": 0.2,
+    "roic": 0.1525111252146558,
+    "grossMargin": 1,
+    "roe": 0.18970689364200133,
+    "operatingMargin": 0.5245459690146302
+  },
+  {
+    "symbol": "RCDTF",
+    "name": "Recordati Industria Chimica e Farmaceutica S.p.A.",
+    "marketCap": 13363437745,
+    "price": 65.44,
+    "roic": 0.1519136366706013,
+    "grossMargin": 0.6834216007369449,
+    "roe": 0.22192348821856672,
+    "operatingMargin": 0.27283403920208715
+  },
+  {
+    "symbol": "TGOPF",
+    "name": "3i Group plc",
+    "marketCap": 43476040009,
+    "price": 44.07,
+    "roic": 0.19447338968005867,
+    "grossMargin": 0.9850037965072134,
+    "roe": 0.2047052131160863,
+    "operatingMargin": 0.9565299924069856
+  },
+  {
+    "symbol": "RTBBF",
+    "name": "Rathbones Group Plc",
+    "marketCap": 2677039627,
+    "price": 25.61,
+    "roic": 0.49688796680497926,
+    "grossMargin": 0.9660698387575428,
+    "roe": 0.04818302192143593,
+    "operatingMargin": 0.9476703927193589
+  },
+  {
+    "symbol": "MTCH",
+    "name": "Match Group, Inc.",
+    "marketCap": 7488146395,
+    "price": 31.72,
+    "roic": 0.21022646317579557,
+    "grossMargin": 0.7151001056799602,
+    "roe": -8.659828146844909,
+    "operatingMargin": 0.2366265416211484
+  },
+  {
+    "symbol": "JPXGY",
+    "name": "Japan Exchange Group, Inc.",
+    "marketCap": 11600991335,
+    "price": 11.286,
+    "roic": 0.23565003660704947,
+    "grossMargin": 0.542644299880613,
+    "roe": 0.17924846621266757,
+    "operatingMargin": 0.5489486635967157
+  },
+  {
+    "symbol": "NHMAF",
+    "name": "Nihon M&A Center Holdings Inc.",
+    "marketCap": 1412091520,
+    "price": 4.45,
+    "roic": 0.3221343634339017,
+    "grossMargin": 0.5621675828100586,
+    "roe": 0.23224172380191496,
+    "operatingMargin": 0.3792316374352232
+  },
+  {
+    "symbol": "RTMVF",
+    "name": "Rightmove plc",
+    "marketCap": 5072908606,
+    "price": 6.68,
+    "roic": 2.987633600242433,
+    "grossMargin": 1,
+    "roe": 2.383233162672207,
+    "operatingMargin": 0.6574553326391062
+  },
+  {
+    "symbol": "ALZCF",
+    "name": "AlzChem Group AG",
+    "marketCap": 1848355070,
+    "price": 182.956,
+    "roic": 0.2064493284041572,
+    "grossMargin": 0.6508567727175131,
+    "roe": 0.26309131689184917,
+    "operatingMargin": 0.14096288370733503
+  },
+  {
+    "symbol": "GGGSY",
+    "name": "Greggs plc",
+    "marketCap": 2294015189,
+    "price": 7.51,
+    "roic": 0.2074294205052006,
+    "grossMargin": 0.6173550436854647,
+    "roe": 0.2688869412795793,
+    "operatingMargin": 0.1039515488482923
+  },
+  {
+    "symbol": "HMRZF",
+    "name": "H & M Hennes & Mauritz AB (publ)",
+    "marketCap": 31650265489,
+    "price": 19.8,
+    "roic": 0.1523898418512909,
+    "grossMargin": 0.5343742270063716,
+    "roe": 0.25185297559706993,
+    "operatingMargin": 0.07380649783775024
+  },
+  {
+    "symbol": "LSRCF",
+    "name": "Lasertec Corporation",
+    "marketCap": 22561137721,
+    "price": 250.366,
+    "roic": 0.5803185910941885,
+    "grossMargin": 0.5895449683271233,
+    "roe": 0.4033006507922896,
+    "operatingMargin": 0.488486024566859
+  },
+  {
+    "symbol": "RTPPF",
+    "name": "Rio Tinto Group",
+    "marketCap": 149395957660,
+    "price": 92,
+    "roic": 0.17192974748195908,
+    "grossMargin": 0.5643147340564315,
+    "roe": 0.20910111139268,
+    "operatingMargin": 0.2917179171791718
+  },
+  {
+    "symbol": "USSJF",
+    "name": "USS Co., Ltd.",
+    "marketCap": 3784165878,
+    "price": 8.17,
+    "roic": 0.25072503318732453,
+    "grossMargin": 0.6231530171792234,
+    "roe": 0.18430679275035136,
+    "operatingMargin": 0.5211063150709953
+  },
+  {
+    "symbol": "JUMSF",
+    "name": "Jumbo S.A.",
+    "marketCap": 3695052928,
+    "price": 27.5,
+    "roic": 0.24522402493695933,
+    "grossMargin": 0.5389074191049285,
+    "roe": 0.22731823276268248,
+    "operatingMargin": 0.3217749551919315
+  },
+  {
+    "symbol": "DKDRF",
+    "name": "NewMed Energy - Limited Partnership",
+    "marketCap": 7160269615,
+    "price": 6.1,
+    "roic": 0.20774201162481928,
+    "grossMargin": 0.6319633899498371,
+    "roe": 0.2935153583617747,
+    "operatingMargin": 0.6196426999911995
+  },
+  {
+    "symbol": "VSOGF",
+    "name": "Vista Energy, S.A.B. de C.V.",
+    "marketCap": 5647965904,
+    "price": 54.1738,
+    "roic": 0.1969969300243368,
+    "grossMargin": 0.7620344611620082,
+    "roe": 0.2945455038912222,
+    "operatingMargin": 0.379537653358968
+  },
+  {
+    "symbol": "EURN",
+    "name": "Euronav N.V.",
+    "marketCap": 3251192446,
+    "price": 16.74,
+    "roic": 0.1996109611617706,
+    "grossMargin": 0.5260861571320197,
+    "roe": 0.36427600445227726,
+    "operatingMargin": 0.4835518938538304
+  },
+  {
+    "symbol": "TLK",
+    "name": "Perusahaan Perseroan (Persero) PT Telekomunikasi Indonesia Tbk",
+    "marketCap": 23210277349,
+    "price": 23.43,
+    "roic": 0.19294507150932222,
+    "grossMargin": 0.679382797548794,
+    "roe": 0.16616465156867988,
+    "operatingMargin": 0.28678976041395776
+  },
+  {
+    "symbol": "KNTNF",
+    "name": "K92 Mining Inc.",
+    "marketCap": 5096230620,
+    "price": 20.94,
+    "roic": 0.30455078893899507,
+    "grossMargin": 0.5938286992011362,
+    "roe": 0.23428402915279942,
+    "operatingMargin": 0.46554561452043935
+  },
+  {
+    "symbol": "TPDKY",
+    "name": "Topdanmark A/S",
+    "marketCap": 4957332479,
+    "price": 5.355,
+    "roic": 1.4018392642942823,
+    "grossMargin": 1.0271153846153847,
+    "roe": 0.22262232577843677,
+    "operatingMargin": 1.011346153846154
+  },
+  {
+    "symbol": "EAI",
+    "name": "Entergy Arkansas, Inc. 1M BD 4.875%66",
+    "marketCap": 1002557468,
+    "price": 21.34,
+    "roic": 0.18388031303121297,
+    "grossMargin": 0.6853887062189443,
+    "roe": 0.06998120115821443,
+    "operatingMargin": 0.22316224219680492
+  },
+  {
+    "symbol": "ARBFF",
+    "name": "ARB Corporation Limited",
+    "marketCap": 2079708568,
+    "price": 24.92,
+    "roic": 0.16223329646996923,
+    "grossMargin": 0.5674752619703568,
+    "roe": 0.12889893948845915,
+    "operatingMargin": 0.1782603990141777
+  },
+  {
+    "symbol": "PAX",
+    "name": "Patria Investments Limited",
+    "marketCap": 2543523133,
+    "price": 15.95,
+    "roic": 0.20514098256868596,
+    "grossMargin": 0.8650789408985473,
+    "roe": 0.14940404674501848,
+    "operatingMargin": 0.44334373764043145
+  },
+  {
+    "symbol": "RLGY",
+    "name": "Realogy Holdings Corp.",
+    "marketCap": 1322530480,
+    "price": 12.08,
+    "roic": 0.9371320932422886,
+    "grossMargin": 0.8023541813070977,
+    "roe": -0.0816847479259732,
+    "operatingMargin": 0.6992269852424455
+  },
+  {
+    "symbol": "EOGSF",
+    "name": "Emerald Resources NL",
+    "marketCap": 3352340721,
+    "price": 5.075,
+    "roic": 0.25188739305741686,
+    "grossMargin": 0.5760015155111655,
+    "roe": 0.13366440864152326,
+    "operatingMargin": 0.3955278726240254
+  },
+  {
+    "symbol": "HHRS",
+    "name": "Hammerhead Energy Inc.",
+    "marketCap": 1469756433,
+    "price": 15.32,
+    "roic": 0.22701282464640213,
+    "grossMargin": 0.8559832247046488,
+    "roe": 0.17549905350577097,
+    "operatingMargin": 0.49753018364192525
+  },
+  {
+    "symbol": "GAMCF",
+    "name": "Gamma Communications plc",
+    "marketCap": 1208721913,
+    "price": 13.1358,
+    "roic": 0.20854503464203233,
+    "grossMargin": 0.5182947877114256,
+    "roe": 0.18738255033557047,
+    "operatingMargin": 0.1558508802209182
+  },
+  {
+    "symbol": "ORLA",
+    "name": "Orla Mining Ltd.",
+    "marketCap": 6393443760,
+    "price": 18.81,
+    "roic": 0.29338824837595834,
+    "grossMargin": 0.6328252664879419,
+    "roe": 0.1753510232636049,
+    "operatingMargin": 0.4664483975831448
+  },
+  {
+    "symbol": "SSMXF",
+    "name": "Sysmex Corporation",
+    "marketCap": 6157018706,
+    "price": 9.88,
+    "roic": 0.1614605801173213,
+    "grossMargin": 0.5347109858977711,
+    "roe": 0.11572181397916236,
+    "operatingMargin": 0.17218953175409865
+  },
+  {
+    "symbol": "FLMNY",
+    "name": "Fielmann AG",
+    "marketCap": 3987411773,
+    "price": 9.5,
+    "roic": 0.22445643997995052,
+    "grossMargin": 0.8001820578097588,
+    "roe": 0.16917223407934995,
+    "operatingMargin": 0.15090878735895158
+  },
+  {
+    "symbol": "CMPRF",
+    "name": "Gentera, S.A.B. de C.V.",
+    "marketCap": 3679638231,
+    "price": 2.33,
+    "roic": 0.21643972556068564,
+    "grossMargin": 1,
+    "roe": 0.19309470366916423,
+    "operatingMargin": 0.4817547965021031
+  },
+  {
+    "symbol": "SILV",
+    "name": "SilverCrest Metals Inc.",
+    "marketCap": 1723132858,
+    "price": 11.55,
+    "roic": 0.3293697112029338,
+    "grossMargin": 0.6000367158160067,
+    "roe": 0.2916056564941729,
+    "operatingMargin": 0.5357606187123759
+  },
+  {
+    "symbol": "BCKIY",
+    "name": "Babcock International Group PLC",
+    "marketCap": 10504763283,
+    "price": 21.08,
+    "roic": 0.19993406955661777,
+    "grossMargin": 1,
+    "roe": 0.40883520847121113,
+    "operatingMargin": 0.07532134208184132
+  },
+  {
+    "symbol": "ELMUF",
+    "name": "Elisa Oyj",
+    "marketCap": 6992772109,
+    "price": 43.565,
+    "roic": 0.19878827574914032,
+    "grossMargin": 0.6422997946611909,
+    "roe": 0.27880202255931547,
+    "operatingMargin": 0.2215833903718914
+  },
+  {
+    "symbol": "RMLRF",
+    "name": "Ramelius Resources Limited",
+    "marketCap": 6371543059,
+    "price": 3.31,
+    "roic": 0.3163365813058413,
+    "grossMargin": 0.5775817725070199,
+    "roe": 0.2488518297511891,
+    "operatingMargin": 0.5716733603740831
+  },
+  {
+    "symbol": "AFGC",
+    "name": "American Financial Group, Inc.",
+    "marketCap": 1613859660,
+    "price": 19.35,
+    "roic": 0.38605755256273616,
+    "grossMargin": 1,
+    "roe": 0.1986117330944917,
+    "operatingMargin": 0.9948813982521848
+  },
+  {
+    "symbol": "GGGSF",
+    "name": "Greggs plc",
+    "marketCap": 2265912010,
+    "price": 22.25,
+    "roic": 0.2074294205052006,
+    "grossMargin": 0.6173550436854647,
+    "roe": 0.2688869412795793,
+    "operatingMargin": 0.1039515488482923
+  },
+  {
+    "symbol": "PTXLF",
+    "name": "PTT Exploration and Production Public Company Limited",
+    "marketCap": 13895773854,
+    "price": 3.5,
+    "roic": 0.1528522827758031,
+    "grossMargin": 0.650821376343342,
+    "roe": 0.14717140232210799,
+    "operatingMargin": 0.4208069073252349
+  },
+  {
+    "symbol": "NONOF",
+    "name": "Novo Nordisk A/S",
+    "marketCap": 280927158294,
+    "price": 63.2,
+    "roic": 0.5169394240877765,
+    "grossMargin": 0.8466889116159269,
+    "roe": 0.7038177940705016,
+    "operatingMargin": 0.4419341397988313
+  },
+  {
+    "symbol": "ZZHGY",
+    "name": "ZhongAn Online P & C Insurance Co., Ltd.",
+    "marketCap": 3236923800,
+    "price": 1.98,
+    "roic": 0.7063156565221936,
+    "grossMargin": 1,
+    "roe": 0.028837065676032874,
+    "operatingMargin": 0.8773041651771052
+  },
+  {
+    "symbol": "STNG",
+    "name": "Scorpio Tankers Inc.",
+    "marketCap": 3105767400,
+    "price": 60,
+    "roic": 0.2125988368003083,
+    "grossMargin": 0.5700497849191809,
+    "roe": 0.2333572119707692,
+    "operatingMargin": 0.6146568474160156
+  },
+  {
+    "symbol": "TNLIY",
+    "name": "Trainline Plc",
+    "marketCap": 1294695322,
+    "price": 6.3,
+    "roic": 0.2411286368784974,
+    "grossMargin": 0.7969169522387722,
+    "roe": 0.2063611638673443,
+    "operatingMargin": 0.1935737793913073
+  },
+  {
+    "symbol": "ATDRY",
+    "name": "Auto Trader Group plc",
+    "marketCap": 6674782608,
+    "price": 1.9,
+    "roic": 0.6512270998963015,
+    "grossMargin": 0.7897188487772417,
+    "roe": 0.49631190727081137,
+    "operatingMargin": 0.6268507735817668
+  },
+  {
+    "symbol": "AEL",
+    "name": "American Equity Investment Life Holding Company",
+    "marketCap": 4493442134,
+    "price": 56.47,
+    "roic": 0.5340641644989471,
+    "grossMargin": 1,
+    "roe": 0.06994974874371859,
+    "operatingMargin": 0.9073976638956119
+  },
+  {
+    "symbol": "MNKD",
+    "name": "MannKind Corporation",
+    "marketCap": 1716521300,
+    "price": 5.59,
+    "roic": 0.23264616706088986,
+    "grossMargin": 0.7316955279085406,
+    "roe": -0.35003045066991473,
+    "operatingMargin": 0.2542416218336696
+  },
+  {
+    "symbol": "FLT",
+    "name": "FLEETCOR Technologies, Inc.",
+    "marketCap": 21790322736,
+    "price": 303.26,
+    "roic": 0.19322391787353432,
+    "grossMargin": 1,
+    "roe": 0.32147215135305485,
+    "operatingMargin": 0.4496457369554437
+  },
+  {
+    "symbol": "CHEOF",
+    "name": "Cochlear Limited",
+    "marketCap": 12092829608,
+    "price": 184.91,
+    "roic": 0.18270571827057183,
+    "grossMargin": 0.7374418505398831,
+    "roe": 0.19940521970978825,
+    "operatingMargin": 0.1733174000256071
+  },
+  {
+    "symbol": "FCBBF",
+    "name": "FinecoBank Banca Fineco S.p.A.",
+    "marketCap": 14675847336,
+    "price": 24,
+    "roic": 0.22449066192672723,
+    "grossMargin": 1,
+    "roe": 0.2730011819301958,
+    "operatingMargin": 0.6180846636832522
+  },
+  {
+    "symbol": "SATLF",
+    "name": "ZOZO, Inc.",
+    "marketCap": 7251465279,
+    "price": 8.2,
+    "roic": 0.5996925413494841,
+    "grossMargin": 0.9304699926336385,
+    "roe": 0.4593488522863105,
+    "operatingMargin": 0.3038319155824352
+  },
+  {
+    "symbol": "USSJY",
+    "name": "USS Co., Ltd.",
+    "marketCap": 5172553024,
+    "price": 22.335,
+    "roic": 0.25072503318732453,
+    "grossMargin": 0.6231530171792234,
+    "roe": 0.18430679275035136,
+    "operatingMargin": 0.5211063150709953
+  },
+  {
+    "symbol": "CET",
+    "name": "Central Securities Corp.",
+    "marketCap": 1502064585,
+    "price": 51.95,
+    "roic": 0.18303393476194502,
+    "grossMargin": 1,
+    "roe": 0.1834304610599631,
+    "operatingMargin": 0.9722328745754872
+  },
+  {
+    "symbol": "SICRF",
+    "name": "SimCorp A/S",
+    "marketCap": 4058261800,
+    "price": 103,
+    "roic": 0.2731712399234245,
+    "grossMargin": 0.5925115158083883,
+    "roe": 0.264284782336636,
+    "operatingMargin": 0.2243550434249369
+  },
+  {
+    "symbol": "ELMUY",
+    "name": "Elisa Oyj",
+    "marketCap": 13547336108,
+    "price": 21.1,
+    "roic": 0.19878827574914032,
+    "grossMargin": 0.6422997946611909,
+    "roe": 0.27880202255931547,
+    "operatingMargin": 0.2215833903718914
+  },
+  {
+    "symbol": "NVMI",
+    "name": "Nova Ltd.",
+    "marketCap": 14146301000,
+    "price": 477.07,
+    "roic": 0.18712981145329438,
+    "grossMargin": 0.5756815923949578,
+    "roe": 0.19806314972596317,
+    "operatingMargin": 0.2789130214932867
+  },
+  {
+    "symbol": "KLRGF",
+    "name": "Keller Group plc",
+    "marketCap": 1617662559,
+    "price": 23.45,
+    "roic": 0.19791566148798612,
+    "grossMargin": 0.7205276726822245,
+    "roe": 0.23968334175509518,
+    "operatingMargin": 0.06867110858137744
+  },
+  {
+    "symbol": "NIMC",
+    "name": "NiSource Inc.",
+    "marketCap": 10806668054,
+    "price": 99.69,
+    "roic": 1.0901805108231593,
+    "grossMargin": 0.7222415721068358,
+    "roe": 0.6150113231963765,
+    "operatingMargin": 0.2668145405217136
+  },
+  {
+    "symbol": "ATDRF",
+    "name": "Auto Trader Group plc",
+    "marketCap": 6546664426,
+    "price": 7.7762,
+    "roic": 0.6512270998963015,
+    "grossMargin": 1,
+    "roe": 0.49631190727081137,
+    "operatingMargin": 0.6268507735817668
+  },
+  {
+    "symbol": "ODD",
+    "name": "Oddity Tech Ltd.",
+    "marketCap": 1967192911,
+    "price": 34.72,
+    "roic": 0.36805909322465613,
+    "grossMargin": 0.7237914193867458,
+    "roe": 0.3595096066651553,
+    "operatingMargin": 0.1786597428288823
+  },
+  {
+    "symbol": "TMVWY",
+    "name": "TeamViewer AG",
+    "marketCap": 1032837346,
+    "price": 3.29,
+    "roic": 0.39509597290897364,
+    "grossMargin": 0.879607757863162,
+    "roe": 1.2248693834900732,
+    "operatingMargin": 0.30739683835203496
+  },
+  {
+    "symbol": "SRTTY",
+    "name": "ZOZO, Inc.",
+    "marketCap": 33200992267,
+    "price": 7.47,
+    "roic": 0.5996925413494841,
+    "grossMargin": 0.9304699926336385,
+    "roe": 0.45935350547524745,
+    "operatingMargin": 0.3038319155824352
+  },
+  {
+    "symbol": "BWEFF",
+    "name": "BW Energy Limited",
+    "marketCap": 1238716901,
+    "price": 4.8,
+    "roic": 0.16916488222698073,
+    "grossMargin": 0.5690776884806735,
+    "roe": 0.19254874651810586,
+    "operatingMargin": 0.35272356167878555
+  },
+  {
+    "symbol": "PTGX",
+    "name": "Protagonist Therapeutics, Inc.",
+    "marketCap": 5193801531,
+    "price": 83.08,
+    "roic": 0.36258885716457273,
+    "grossMargin": 1,
+    "roe": 0.4075078299113721,
+    "operatingMargin": 0.5820068917416494
+  },
+  {
+    "symbol": "PNDZF",
+    "name": "Pandora A/S",
+    "marketCap": 5889554949,
+    "price": 78.98,
+    "roic": 0.4459482131871819,
+    "grossMargin": 0.7982638888888889,
+    "roe": 0.9489832970225127,
+    "operatingMargin": 0.25170454545454546
+  },
+  {
+    "symbol": "INVA",
+    "name": "Innoviva, Inc.",
+    "marketCap": 1268692491,
+    "price": 19.72,
+    "roic": 0.1566860129373686,
+    "grossMargin": 0.8979735776154063,
+    "roe": 0.033844600157127376,
+    "operatingMargin": 0.4651850654147768
+  },
+  {
+    "symbol": "DHT",
+    "name": "DHT Holdings, Inc.",
+    "marketCap": 2188479929,
+    "price": 13.61,
+    "roic": 0.15297093481794136,
+    "grossMargin": 0.5483924564468766,
+    "roe": 0.17469626541788907,
+    "operatingMargin": 0.36839270129929186
+  },
+  {
+    "symbol": "ASCCF",
+    "name": "ASICS Corporation",
+    "marketCap": 18275758481,
+    "price": 25.5,
+    "roic": 0.30874157684538406,
+    "grossMargin": 0.5583839086490422,
+    "roe": 0.2735085967070604,
+    "operatingMargin": 0.14754187754043324
+  },
+  {
+    "symbol": "RTLLF",
+    "name": "Rational AG",
+    "marketCap": 8957968200,
+    "price": 787.86,
+    "roic": 0.35876278373659265,
+    "grossMargin": 0.5920492924763454,
+    "roe": 0.29236715517060297,
+    "operatingMargin": 0.2711396204030233
+  },
+  {
+    "symbol": "HRMY",
+    "name": "Harmony Biosciences Holdings, Inc.",
+    "marketCap": 2170230769,
+    "price": 37.68,
+    "roic": 0.23155179234041728,
+    "grossMargin": 0.780596697512641,
+    "roe": 0.22072653624716493,
+    "operatingMargin": 0.26698883780539334
+  },
+  {
+    "symbol": "TGS",
+    "name": "Transportadora de Gas del Sur S.A.",
+    "marketCap": 5043498198,
+    "price": 33.5,
+    "roic": 0.18518362200328098,
+    "grossMargin": 0.5354484903877328,
+    "roe": 0.16573180354506475,
+    "operatingMargin": 0.45934983280940606
+  },
+  {
+    "symbol": "PMNXF",
+    "name": "Perseus Mining Limited",
+    "marketCap": 5918388797,
+    "price": 4.38,
+    "roic": 0.24954282295838753,
+    "grossMargin": 0.5931597443116718,
+    "roe": 0.18545306529838898,
+    "operatingMargin": 0.45308240964936597
+  },
+  {
+    "symbol": "PNT",
+    "name": "POINT Biopharma Global Inc.",
+    "marketCap": 1332112500,
+    "price": 12.5,
+    "roic": 0.25175741796729195,
+    "grossMargin": 1,
+    "roe": 0.2018532649564966,
+    "operatingMargin": 0.5539877177713508
+  },
+  {
+    "symbol": "LIFZF",
+    "name": "Labrador Iron Ore Royalty Corporation",
+    "marketCap": 1422080000,
+    "price": 22.22,
+    "roic": 0.2025771426949564,
+    "grossMargin": 0.8016018736717315,
+    "roe": 0.27225118675069837,
+    "operatingMargin": 0.7567070026553321
+  },
+  {
+    "symbol": "LABFF",
+    "name": "Laboratorios Farmaceuticos Rovi, S.A.",
+    "marketCap": 4634656014,
+    "price": 90.61,
+    "roic": 0.26584647549272916,
+    "grossMargin": 0.6123870538619364,
+    "roe": 0.239290734020013,
+    "operatingMargin": 0.23508377752376763
+  },
+  {
+    "symbol": "COIN",
+    "name": "Coinbase Global, Inc.",
+    "marketCap": 56848626655,
+    "price": 210.83,
+    "roic": 0.1580178281335923,
+    "grossMargin": 0.7474802057517123,
+    "roe": 0.25095900082924305,
+    "operatingMargin": 0.3514853989044532
+  },
+  {
+    "symbol": "XDNCF",
+    "name": "XD Inc.",
+    "marketCap": 1303961393,
+    "price": 2.7,
+    "roic": 0.3216791798840492,
+    "grossMargin": 0.6940254866865372,
+    "roe": 0.32282753849819734,
+    "operatingMargin": 0.18251585610602486
+  },
+  {
+    "symbol": "CHJTF",
+    "name": "CSPC Pharmaceutical Group Limited",
+    "marketCap": 13706942078,
+    "price": 1.2,
+    "roic": 0.16429184044040443,
+    "grossMargin": 0.6997322687016271,
+    "roe": 0.14273601532572988,
+    "operatingMargin": 0.18498048246836704
+  },
+  {
+    "symbol": "DOCS",
+    "name": "Doximity, Inc.",
+    "marketCap": 7315496720,
+    "price": 38.96,
+    "roic": 0.20558601942869106,
+    "grossMargin": 0.9020440077910375,
+    "roe": 0.2061517145826117,
+    "operatingMargin": 0.39936956411213903
+  },
+  {
+    "symbol": "KKRS",
+    "name": "KKR Group Finance Co. IX LLC 4.",
+    "marketCap": 15573773703,
+    "price": 17.55,
+    "roic": 16.21138127769535,
+    "grossMargin": 0.8020464014814775,
+    "roe": 308.26497015394284,
+    "operatingMargin": 0.7420942050573576
+  },
+  {
+    "symbol": "MPZAF",
+    "name": "MIPS AB (publ)",
+    "marketCap": 1181503997,
+    "price": 44.6,
+    "roic": 0.2632375189107413,
+    "grossMargin": 0.7246376811594203,
+    "roe": 0.21962616822429906,
+    "operatingMargin": 0.36024844720496896
+  },
+  {
+    "symbol": "ATEYY",
+    "name": "Advantest Corporation",
+    "marketCap": 118012065101,
+    "price": 162.24,
+    "roic": 0.4188084862680025,
+    "grossMargin": 0.5708362243765928,
+    "roe": 0.31819267618090613,
+    "operatingMargin": 0.2926240241526625
+  },
+  {
+    "symbol": "TRMD",
+    "name": "TORM plc",
+    "marketCap": 2364092054,
+    "price": 23.33,
+    "roic": 0.20689655172413793,
+    "grossMargin": 0.6084530528476142,
+    "roe": 0.29532304725168756,
+    "operatingMargin": 0.42252437147255
+  },
+  {
+    "symbol": "YALA",
+    "name": "Yalla Group Limited",
+    "marketCap": 1135750035,
+    "price": 7.22,
+    "roic": 0.17343907872142086,
+    "grossMargin": 0.6453355550583497,
+    "roe": 0.1926366023139869,
+    "operatingMargin": 0.3574052921018853
+  },
+  {
+    "symbol": "QUBSF",
+    "name": "Qantas Airways Limited",
+    "marketCap": 10002246593,
+    "price": 6.61,
+    "roic": 0.1918233082706767,
+    "grossMargin": 0.5451322141056858,
+    "roe": 2.062982005141388,
+    "operatingMargin": 0.08718868811141015
+  },
+  {
+    "symbol": "STMRF",
+    "name": "Stanmore Resources Limited",
+    "marketCap": 1784755435,
+    "price": 1.98,
+    "roic": 0.2239632735136776,
+    "grossMargin": 0.8344395742016281,
+    "roe": 0.10467340803498223,
+    "operatingMargin": 0.246420371529952
+  },
+  {
+    "symbol": "WOLTF",
+    "name": "Wolters Kluwer N.V.",
+    "marketCap": 22748867953,
+    "price": 100.712,
+    "roic": 0.252187609380469,
+    "grossMargin": 0.7251521298174443,
+    "roe": 0.6983818770226538,
+    "operatingMargin": 0.24357674104124408
+  },
+  {
+    "symbol": "TTAPY",
+    "name": "TTW Public Company Limited",
+    "marketCap": 1224930000,
+    "price": 15.35,
+    "roic": 0.18091436398467914,
+    "grossMargin": 0.6785414519198376,
+    "roe": 0.17809329675991345,
+    "operatingMargin": 0.6221354274403589
+  },
+  {
+    "symbol": "VCKA",
+    "name": "Vickers Vantage Corp. I",
+    "marketCap": 1313666938,
+    "price": 9.01,
+    "roic": 0.5003299696427929,
+    "grossMargin": 0.7050892383813394,
+    "roe": 0.37794135204862933,
+    "operatingMargin": -1.473687930729811
+  },
+  {
+    "symbol": "PPWLO",
+    "name": "PacifiCorp",
+    "marketCap": 54791009222,
+    "price": 153.45,
+    "roic": 0.4171626031867921,
+    "grossMargin": 2.924848484848485,
+    "roe": 0.05127473363774734,
+    "operatingMargin": 0.6584848484848485
+  },
+  {
+    "symbol": "SRAC",
+    "name": "Stable Road Acquisition Corp.",
+    "marketCap": 1031795373,
+    "price": 10.97,
+    "roic": 5.868525108738632,
+    "grossMargin": 0.9687795648060549,
+    "roe": 4.474519846350832,
+    "operatingMargin": -14.041154210028383
+  },
+  {
+    "symbol": "OPYGY",
+    "name": "PJSC Polyus",
+    "marketCap": 28447649790,
+    "price": 21,
+    "roic": 0.46088815469828004,
+    "grossMargin": 0.7571837123791366,
+    "roe": 2.579326923076923,
+    "operatingMargin": 0.6459212855781016
+  },
+  {
+    "symbol": "SMCYY",
+    "name": "SimCorp A/S",
+    "marketCap": 4196164070,
+    "price": 10.65,
+    "roic": 0.2731712399234245,
+    "grossMargin": 0.5925115158083883,
+    "roe": 0.264284782336636,
+    "operatingMargin": 0.2243550434249369
+  },
+  {
+    "symbol": "VDRFF",
+    "name": "Vidrala, S.A.",
+    "marketCap": 3887796503,
+    "price": 110.429,
+    "roic": 0.18144513445526939,
+    "grossMargin": 0.5761866844480532,
+    "roe": 0.22775092950993642,
+    "operatingMargin": 0.20802713965825298
+  },
+  {
+    "symbol": "SBBA",
+    "name": "Scorpio Tankers Inc. 7.00% Seni",
+    "marketCap": 1265122513,
+    "price": 25.29,
+    "roic": 0.1892393944675019,
+    "grossMargin": 0.6038478342884325,
+    "roe": 0.2141585601474876,
+    "operatingMargin": 0.5246253043865967
+  },
+  {
+    "symbol": "DETNF",
+    "name": "Aker BP ASA",
+    "marketCap": 16994515967,
+    "price": 26.92,
+    "roic": 0.3153206240075796,
+    "grossMargin": 0.9330251043903046,
+    "roe": 0.1289832408851784,
+    "operatingMargin": 0.7610523769788373
+  },
+  {
+    "symbol": "ALTB",
+    "name": "Alpine Auto Brokers Inc.",
+    "marketCap": 5393881500,
+    "price": 5.415,
+    "roic": 0.3494847682865026,
+    "grossMargin": 0.9986501491367487,
+    "roe": 0.34786109656457814,
+    "operatingMargin": -0.4504220098263337
+  },
+  {
+    "symbol": "SIX",
+    "name": "Six Flags Entertainment Corporation",
+    "marketCap": 2696649728,
+    "price": 32,
+    "roic": 0.15073196201980368,
+    "grossMargin": 1,
+    "roe": -0.0795270162668897,
+    "operatingMargin": 0.2265359871160209
+  },
+  {
+    "symbol": "POYYF",
+    "name": "Polymetal International plc",
+    "marketCap": 1463504340,
+    "price": 3.09,
+    "roic": 0.24440548835302975,
+    "grossMargin": 0.5014876034669191,
+    "roe": 0.23468556719920192,
+    "operatingMargin": 0.38611570301983117
+  },
+  {
+    "symbol": "SEAS",
+    "name": "SeaWorld Entertainment, Inc.",
+    "marketCap": 3216383200,
+    "price": 50.3,
+    "roic": 0.21441609470960935,
+    "grossMargin": 0.9238353191703941,
+    "roe": -0.49290852363825455,
+    "operatingMargin": 0.2685276366268842
+  },
+  {
+    "symbol": "AMOV",
+    "name": "Am\u00e9rica M\u00f3vil, S.A.B. de C.V.",
+    "marketCap": 65611497344,
+    "price": 20.75,
+    "roic": 0.16136452721473024,
+    "grossMargin": 0.6121676976937388,
+    "roe": 0.20754844097302425,
+    "operatingMargin": 0.2056138162942935
+  },
+  {
+    "symbol": "SEZL",
+    "name": "Sezzle Inc.",
+    "marketCap": 2316946440,
+    "price": 67.84,
+    "roic": 0.42681777165945556,
+    "grossMargin": 0.619628541349988,
+    "roe": 0.8939708258270134,
+    "operatingMargin": 0.30334601873676664
+  },
+  {
+    "symbol": "GSISF",
+    "name": "Genesis Minerals Limited",
+    "marketCap": 6248535216,
+    "price": 5.47,
+    "roic": 0.19822041152983372,
+    "grossMargin": 0.5477877846982148,
+    "roe": 0.17643863154997666,
+    "operatingMargin": 0.3447580316494972
+  },
+  {
+    "symbol": "EXXRF",
+    "name": "Exor N.V.",
+    "marketCap": 16579682802,
+    "price": 82.28,
+    "roic": 0.37070069852319143,
+    "grossMargin": 1,
+    "roe": 0.3839369831466555,
+    "operatingMargin": 0.9962325430334524
+  },
+  {
+    "symbol": "LNTH",
+    "name": "Lantheus Holdings, Inc.",
+    "marketCap": 4615782941,
+    "price": 67.885,
+    "roic": 0.26265968661017786,
+    "grossMargin": 0.6442952976380623,
+    "roe": 0.28716805252888067,
+    "operatingMargin": 0.29791773963270335
+  },
+  {
+    "symbol": "TINV",
+    "name": "Tiga Acquisition Corp.",
+    "marketCap": 2018084120,
+    "price": 11.63,
+    "roic": 0.22514533858845898,
+    "grossMargin": 0.7458797107673023,
+    "roe": 0.9956753059208027,
+    "operatingMargin": 0.26868348054178903
+  },
+  {
+    "symbol": "CHDRF",
+    "name": "Christian Dior SE",
+    "marketCap": 116718428837,
+    "price": 646.96,
+    "roic": 0.16781943938842372,
+    "grossMargin": 0.6703195484282374,
+    "roe": 0.21437391948629292,
+    "operatingMargin": 0.22319973548097588
+  },
+  {
+    "symbol": "VVNT",
+    "name": "Vivint Smart Home, Inc.",
+    "marketCap": 2576328000,
+    "price": 12,
+    "roic": 0.33676085912105275,
+    "grossMargin": 1,
+    "roe": 0.030389862448482796,
+    "operatingMargin": 0.38787095317059833
+  },
+  {
+    "symbol": "ATHN",
+    "name": "Athena Technology Acquisition Corp.",
+    "marketCap": 1835928780,
+    "price": 9.59,
+    "roic": 0.9353138022477585,
+    "grossMargin": 3.845418532552532,
+    "roe": 1.1216141705148528,
+    "operatingMargin": 1.275706166035136
+  },
+  {
+    "symbol": "HRGLY",
+    "name": "Hargreaves Lansdown plc",
+    "marketCap": 5659512309,
+    "price": 23.55,
+    "roic": 0.5336665278356241,
+    "grossMargin": 0.8085974697320093,
+    "roe": 0.4562491193462026,
+    "operatingMargin": 0.5229220514215753
+  },
+  {
+    "symbol": "EDNMY",
+    "name": "Edenred S.A.",
+    "marketCap": 4882742049,
+    "price": 10.23,
+    "roic": 0.3054331864904552,
+    "grossMargin": 0.5994397759103641,
+    "roe": -0.5583700440528634,
+    "operatingMargin": 0.3641456582633053
+  },
+  {
+    "symbol": "HMNTY",
+    "name": "Hemnet Group AB (publ)",
+    "marketCap": 1476342794,
+    "price": 15.78,
+    "roic": 0.3272577064078071,
+    "grossMargin": 1.0076724508819734,
+    "roe": 0.27124209177544645,
+    "operatingMargin": 0.45446723074716766
+  },
+  {
+    "symbol": "CHDRY",
+    "name": "Christian Dior SE",
+    "marketCap": 117115623099,
+    "price": 162.29,
+    "roic": 0.16781943938842372,
+    "grossMargin": 0.6703234415408051,
+    "roe": 0.21437391948629292,
+    "operatingMargin": 0.2231970997720912
+  },
+  {
+    "symbol": "KAKZF",
+    "name": "Joint Stock Company Kaspi.kz",
+    "marketCap": 20678899655,
+    "price": 97.1,
+    "roic": 0.7820136732112358,
+    "grossMargin": 0.6233655318063553,
+    "roe": 0.6852903724169931,
+    "operatingMargin": 0.5042034140615734
+  },
+  {
+    "symbol": "MGLLF",
+    "name": "Magellan Financial Group Limited",
+    "marketCap": 1078676934,
+    "price": 6.42,
+    "roic": 0.2149679891280685,
+    "grossMargin": 0.9991356819819992,
+    "roe": 0.16448676008269092,
+    "operatingMargin": 0.7401018045429321
+  },
+  {
+    "symbol": "LTRCF",
+    "name": "The Lottery Corporation Limited",
+    "marketCap": 7631309931,
+    "price": 3.43,
+    "roic": 0.1947635081977531,
+    "grossMargin": 1,
+    "roe": 1.1357986326911125,
+    "operatingMargin": 0.1660495814552479
+  },
+  {
+    "symbol": "AVID",
+    "name": "Avid Technology, Inc.",
+    "marketCap": 1191107777,
+    "price": 27.045,
+    "roic": 0.5561464744516502,
+    "grossMargin": 0.6574735334069615,
+    "roe": -0.46506204643801247,
+    "operatingMargin": 0.1290208977679181
+  },
+  {
+    "symbol": "ANTM",
+    "name": "Elevance Health Inc.",
+    "marketCap": 114592481640,
+    "price": 482.58,
+    "roic": 1.7984483933532527,
+    "grossMargin": 0.888425013134777,
+    "roe": 0.14452378070918553,
+    "operatingMargin": 0.775296450503076
+  },
+  {
+    "symbol": "EMBCV",
+    "name": "Embecta Corp.",
+    "marketCap": 1908915756,
+    "price": 33.33,
+    "roic": 0.7884615384615384,
+    "grossMargin": 0.6866952789699571,
+    "roe": 0.6986531986531986,
+    "operatingMargin": 0.4223175965665236
+  },
+  {
+    "symbol": "DEN",
+    "name": "Denbury Inc.",
+    "marketCap": 4512971320,
+    "price": 88.66,
+    "roic": 0.28552480843284256,
+    "grossMargin": 0.5735558234981767,
+    "roe": 0.31329418895914635,
+    "operatingMargin": 0.3318113410137032
+  },
+  {
+    "symbol": "ESTE",
+    "name": "Earthstone Energy, Inc.",
+    "marketCap": 2978682616,
+    "price": 21.17,
+    "roic": 0.27129268709789656,
+    "grossMargin": 0.6133790794228725,
+    "roe": 0.3968836964730369,
+    "operatingMargin": 0.5699216708334464
+  }
+]
