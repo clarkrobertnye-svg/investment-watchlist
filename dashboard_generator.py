@@ -60,6 +60,15 @@ def generate_html(data: dict) -> str:
         fcf_conv = metrics.get("fcf_conversion")
         fcf_str = f"{fcf_conv*100:.0f}%" if fcf_conv else "N/A"
         
+        vcr = metrics.get("value_creation_ratio", 0) or 0
+        vcr_str = f"{vcr:.1f}x" if vcr else "N/A"
+        
+        roic = metrics.get("incremental_roic", 0) or 0
+        roic_str = f"{roic*100:.0f}%" if roic else "N/A"
+        
+        spread = metrics.get("economic_profit_spread", 0) or 0
+        spread_str = f"{spread*100:.0f}%" if spread else "N/A"
+        
         price = valuation.get("current_price", 0) or 0
         irr = valuation.get("implied_irr", 0) or 0
         mos = valuation.get("margin_of_safety", 0) or 0
@@ -70,12 +79,7 @@ def generate_html(data: dict) -> str:
         intrinsic = valuation.get("intrinsic_value", 0) or 0
         
         # Determine action class for styling
-        action_class = {
-            "BUY": "action-buy",
-            "ADD": "action-add",
-            "HOLD": "action-hold",
-            "SELL": "action-sell",
-        }.get(action, "action-hold")
+        action_class = "action-buy" if action == "BUY" else "action-hold"
         
         tier_class = {
             "EXCEPTIONAL": "tier-exceptional",
@@ -89,15 +93,12 @@ def generate_html(data: dict) -> str:
                 <span class="ticker">{ticker}</span>
                 <span class="company-name">{name[:25]}{'...' if len(name) > 25 else ''}</span>
             </td>
-            <td class="metric-cell">{inc_roic_str}</td>
-            <td class="metric-cell">{growth_str}</td>
+            <td class="metric-cell">{roic_str}</td>
+            <td class="metric-cell">{vcr_str}</td>
+            <td class="metric-cell">{spread_str}</td>
+            <td class="irr-cell"><span class="irr-value">{irr*100:.0f}%</span></td>
             <td class="price-cell">${price:.2f}</td>
-            <td class="irr-cell"><span class="irr-value">{irr:.1f}%</span></td>
-            <td class="mos-cell">{mos:.1f}%</td>
             <td><span class="action-badge {action_class}">{action}</span></td>
-            <td class="targets-cell">
-                <span class="target buy15" title="15% IRR Target">${buy15:.2f}</span>
-            </td>
         </tr>
         '''
     
@@ -820,13 +821,12 @@ def generate_html(data: dict) -> str:
                 <thead>
                     <tr>
                         <th data-sort="ticker">Ticker</th>
-                        <th data-sort="iroic">Inc ROIC</th>
-                        <th data-sort="growth">Growth</th>
-                        <th data-sort="price">Price</th>
+                        <th data-sort="roic">ROIC</th>
+                        <th data-sort="vcr">VCR</th>
+                        <th data-sort="spread">Spread</th>
                         <th data-sort="irr">IRR</th>
-                        <th data-sort="mos">MOS</th>
+                        <th data-sort="price">Price</th>
                         <th data-sort="action">Action</th>
-                        <th>Buy Below</th>
                     </tr>
                 </thead>
                 <tbody>

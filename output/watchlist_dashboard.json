@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-28T05:30:36.709458",
+  "generated_at": "2026-01-28T05:36:35.843556",
   "summary": {
     "total_screened": 37374,
     "buy_signals": 37,
@@ -8,1651 +8,1951 @@
   "companies": [
     {
       "ticker": "RZB",
-      "name": "RZB",
+      "name": "Reinsurance Group of America, Incorporated",
       "tier_label": "EXCEPTIONAL",
       "total_score": 83,
       "sector": "",
       "metrics": {
         "incremental_roic": 1.0427071509648127,
+        "roic_3y_avg": 0.7110040594325877,
         "gross_margin": 1.0,
         "revenue_growth_3y": 0.09908132882798548,
         "fcf_conversion": 0.85,
-        "value_creation_ratio": 14.382167599514656
+        "value_creation_ratio": 14.382167599514656,
+        "economic_profit_spread": 0.9477071509648127,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.8399900987982132,
         "margin_of_safety": 0,
         "action_signal": "BUY",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 25.07,
+        "intrinsic_value": 0,
+        "val_model": "Platform"
       },
       "scores": {}
     },
     {
       "ticker": "KARO",
-      "name": "KARO",
+      "name": "Karooooo Ltd.",
       "tier_label": "EXCEPTIONAL",
       "total_score": 74,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.24971990420206702,
+        "roic_3y_avg": 0.24288145979458475,
         "gross_margin": 0.7012765741301673,
         "revenue_growth_3y": 0.18481373820778613,
         "fcf_conversion": 1.0085192648238768,
-        "value_creation_ratio": 2.539094094581261
+        "value_creation_ratio": 2.539094094581261,
+        "economic_profit_spread": 0.15471990420206702,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.7477590494426661,
         "margin_of_safety": 0,
         "action_signal": "BUY",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 50.3,
+        "intrinsic_value": 0,
+        "val_model": "Standard"
       },
       "scores": {}
     },
     {
       "ticker": "AEL",
-      "name": "AEL",
+      "name": "American Equity Investment Life Holding Company",
       "tier_label": "EXCEPTIONAL",
       "total_score": 66,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.5010653133958317,
+        "roic_3y_avg": 0.5044553251277718,
         "gross_margin": 1.0,
         "revenue_growth_3y": 0.33723358755721433,
         "fcf_conversion": 0.85,
-        "value_creation_ratio": 5.947362770276934
+        "value_creation_ratio": 5.947362770276934,
+        "economic_profit_spread": 0.40606531339583174,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.6612623740978167,
         "margin_of_safety": 0,
         "action_signal": "BUY",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 56.47,
+        "intrinsic_value": 0,
+        "val_model": "Mature"
       },
       "scores": {}
     },
     {
       "ticker": "PANDY",
-      "name": "PANDY",
+      "name": "Pandora A/S",
       "tier_label": "EXCEPTIONAL",
       "total_score": 65,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.3162779628748215,
+        "roic_3y_avg": 0.3261848970871648,
         "gross_margin": 0.7982638888888889,
         "revenue_growth_3y": 0.1063526041714784,
         "fcf_conversion": 1.3472355079395446,
-        "value_creation_ratio": 2.4134144439131746
+        "value_creation_ratio": 2.4134144439131746,
+        "economic_profit_spread": 0.22127796287482152,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.654874874892285,
         "margin_of_safety": 0,
         "action_signal": "BUY",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 21.82,
+        "intrinsic_value": 0,
+        "val_model": "Ex-Goodwill"
       },
       "scores": {}
     },
     {
       "ticker": "WPLCF",
-      "name": "WPLCF",
+      "name": "Wise plc",
       "tier_label": "EXCEPTIONAL",
       "total_score": 57,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.27656190355007,
+        "roic_3y_avg": 0.24310718214832272,
         "gross_margin": 0.7240615657180821,
         "revenue_growth_3y": 0.4741678047166993,
         "fcf_conversion": 0.85,
-        "value_creation_ratio": 3.6654990530161693
+        "value_creation_ratio": 3.6654990530161693,
+        "economic_profit_spread": 0.18156190355007,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.5719279531858699,
         "margin_of_safety": 0,
         "action_signal": "BUY",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 13.2,
+        "intrinsic_value": 0,
+        "val_model": "Standard"
       },
       "scores": {}
     },
     {
       "ticker": "WIZEY",
-      "name": "WIZEY",
+      "name": "Wise plc",
       "tier_label": "EXCEPTIONAL",
       "total_score": 56,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.27656190355007,
+        "roic_3y_avg": 0.24310718214832272,
         "gross_margin": 0.7240615657180821,
         "revenue_growth_3y": 0.4741678047166993,
         "fcf_conversion": 0.85,
-        "value_creation_ratio": 3.6654990530161693
+        "value_creation_ratio": 3.6654990530161693,
+        "economic_profit_spread": 0.18156190355007,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.5665631250549543,
         "margin_of_safety": 0,
         "action_signal": "BUY",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 13.37,
+        "intrinsic_value": 0,
+        "val_model": "Standard"
       },
       "scores": {}
     },
     {
       "ticker": "DETNF",
-      "name": "DETNF",
+      "name": "Aker BP ASA",
       "tier_label": "EXCEPTIONAL",
       "total_score": 42,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.41507412391745563,
+        "roic_3y_avg": 0.3057107794695361,
         "gross_margin": 0.9330251043903046,
         "revenue_growth_3y": 0.5721689477018792,
         "fcf_conversion": 0.85,
-        "value_creation_ratio": 4.36920130439427
+        "value_creation_ratio": 4.36920130439427,
+        "economic_profit_spread": 0.3200741239174556,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.42758917334850083,
         "margin_of_safety": 0,
         "action_signal": "BUY",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 26.92,
+        "intrinsic_value": 0,
+        "val_model": "Compounder"
       },
       "scores": {}
     },
     {
       "ticker": "PLXNF",
-      "name": "PLXNF",
+      "name": "Pluxee N.V.",
       "tier_label": "EXCEPTIONAL",
       "total_score": 37,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.1536697247706422,
+        "roic_3y_avg": 0.14687840335378446,
         "gross_margin": 1.0,
         "revenue_growth_3y": 0.1519195573172929,
         "fcf_conversion": 0.85,
-        "value_creation_ratio": 1.544496957340994
+        "value_creation_ratio": 1.544496957340994,
+        "economic_profit_spread": 0.058669724770642195,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.37045718356747004,
         "margin_of_safety": 0,
         "action_signal": "BUY",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 13.4,
+        "intrinsic_value": 0,
+        "val_model": "Ex-Goodwill"
       },
       "scores": {}
     },
     {
       "ticker": "RTBBF",
-      "name": "RTBBF",
+      "name": "Rathbones Group Plc",
       "tier_label": "EXCEPTIONAL",
       "total_score": 36,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.4962359278955729,
+        "roic_3y_avg": 0.42947954112744613,
         "gross_margin": 0.9660698387575428,
         "revenue_growth_3y": 0.31976668635484895,
         "fcf_conversion": 0.85,
-        "value_creation_ratio": 6.415461252690018
+        "value_creation_ratio": 6.415461252690018,
+        "economic_profit_spread": 0.40123592789557294,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.36835100997568077,
         "margin_of_safety": 0,
         "action_signal": "BUY",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 25.61,
+        "intrinsic_value": 0,
+        "val_model": "Compounder"
       },
       "scores": {}
     },
     {
       "ticker": "TMVWY",
-      "name": "TMVWY",
+      "name": "TeamViewer AG",
       "tier_label": "EXCEPTIONAL",
       "total_score": 34,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.28396558176394837,
+        "roic_3y_avg": 0.21061634680144437,
         "gross_margin": 0.879607757863162,
         "revenue_growth_3y": 0.10244751167486421,
         "fcf_conversion": 1.9808500093434405,
-        "value_creation_ratio": 2.942648515688584
+        "value_creation_ratio": 2.942648515688584,
+        "economic_profit_spread": 0.18896558176394837,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.3454957704443813,
         "margin_of_safety": 0,
         "action_signal": "BUY",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 3.29,
+        "intrinsic_value": 0,
+        "val_model": "Mature"
       },
       "scores": {}
     },
     {
       "ticker": "TMVWF",
-      "name": "TMVWF",
+      "name": "TeamViewer AG",
       "tier_label": "EXCEPTIONAL",
       "total_score": 33,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.28396558176394837,
+        "roic_3y_avg": 0.21061634680144437,
         "gross_margin": 0.879607757863162,
         "revenue_growth_3y": 0.10244751167486421,
         "fcf_conversion": 1.9808500093434405,
-        "value_creation_ratio": 2.942648515688584
+        "value_creation_ratio": 2.942648515688584,
+        "economic_profit_spread": 0.18896558176394837,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.3359915514128866,
         "margin_of_safety": 0,
         "action_signal": "BUY",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 6.845,
+        "intrinsic_value": 0,
+        "val_model": "Mature"
       },
       "scores": {}
     },
     {
       "ticker": "GZPZY",
-      "name": "GZPZY",
+      "name": "Gaztransport & Technigaz S.A.",
       "tier_label": "EXCEPTIONAL",
       "total_score": 30,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.5899719472987455,
+        "roic_3y_avg": 0.5030078959714475,
         "gross_margin": 0.9145975830504828,
         "revenue_growth_3y": 0.26782091130668984,
         "fcf_conversion": 0.8619737750172533,
-        "value_creation_ratio": 8.428170675696363
+        "value_creation_ratio": 8.428170675696363,
+        "economic_profit_spread": 0.4949719472987455,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.30885100792935183,
         "margin_of_safety": 0,
         "action_signal": "BUY",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 41,
+        "intrinsic_value": 0,
+        "val_model": "Compounder"
       },
       "scores": {}
     },
     {
       "ticker": "NONOF",
-      "name": "NONOF",
+      "name": "Novo Nordisk A/S",
       "tier_label": "EXCEPTIONAL",
       "total_score": 30,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.39084369784751066,
+        "roic_3y_avg": 0.49342733057020327,
         "gross_margin": 0.8466889116159269,
         "revenue_growth_3y": 0.2729152257015772,
         "fcf_conversion": 0.6897750227749831,
-        "value_creation_ratio": 5.58348139782158
+        "value_creation_ratio": 5.58348139782158,
+        "economic_profit_spread": 0.29584369784751063,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.3077621060436245,
         "margin_of_safety": 0,
         "action_signal": "BUY",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 62.96,
+        "intrinsic_value": 0,
+        "val_model": "Compounder"
       },
       "scores": {}
     },
     {
       "ticker": "GZPZF",
-      "name": "GZPZF",
+      "name": "Gaztransport & Technigaz S.A.",
       "tier_label": "EXCEPTIONAL",
       "total_score": 30,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.5899719472987455,
+        "roic_3y_avg": 0.5030078959714475,
         "gross_margin": 0.9145975830504828,
         "revenue_growth_3y": 0.26782091130668984,
         "fcf_conversion": 0.8619737750172533,
-        "value_creation_ratio": 8.428170675696363
+        "value_creation_ratio": 8.428170675696363,
+        "economic_profit_spread": 0.4949719472987455,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.3066260814197573,
         "margin_of_safety": 0,
         "action_signal": "BUY",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 216.75,
+        "intrinsic_value": 0,
+        "val_model": "Compounder"
       },
       "scores": {}
     },
     {
       "ticker": "SGGEF",
-      "name": "SGGEF",
+      "name": "The Sage Group plc",
       "tier_label": "EXCEPTIONAL",
       "total_score": 29,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.22167373952813385,
+        "roic_3y_avg": 0.15176330144160818,
         "gross_margin": 0.8913649025069638,
         "revenue_growth_3y": 0.20160983979926583,
         "fcf_conversion": 1.3495934959349594,
-        "value_creation_ratio": 3.166767707544769
+        "value_creation_ratio": 3.166767707544769,
+        "economic_profit_spread": 0.12667373952813385,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.296019919270083,
         "margin_of_safety": 0,
         "action_signal": "BUY",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 13.45,
+        "intrinsic_value": 0,
+        "val_model": "Platform"
       },
       "scores": {}
     },
     {
       "ticker": "CPRX",
-      "name": "CPRX",
+      "name": "Catalyst Pharmaceuticals, Inc.",
       "tier_label": "EXCEPTIONAL",
       "total_score": 28,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.2002449303522071,
+        "roic_3y_avg": 0.20585426140153051,
         "gross_margin": 0.8599954446916422,
         "revenue_growth_3y": 0.5170804170473866,
         "fcf_conversion": 1.4598417221412052,
-        "value_creation_ratio": 2.4736866010155296
+        "value_creation_ratio": 2.4736866010155296,
+        "economic_profit_spread": 0.10524493035220711,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.2808695825235063,
         "margin_of_safety": 0,
         "action_signal": "BUY",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 24.07,
+        "intrinsic_value": 0,
+        "val_model": "Platform"
       },
       "scores": {}
     },
     {
       "ticker": "PMCUF",
-      "name": "PMCUF",
+      "name": "Pro Medicus Limited",
       "tier_label": "EXCEPTIONAL",
       "total_score": 27,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.4560273592111659,
+        "roic_3y_avg": 0.45652089900646314,
         "gross_margin": 0.9985486484582325,
         "revenue_growth_3y": 0.31578565033145733,
         "fcf_conversion": 0.9022540076551203,
-        "value_creation_ratio": 5.816675500142422
+        "value_creation_ratio": 5.816675500142422,
+        "economic_profit_spread": 0.3610273592111659,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.2791131112547148,
         "margin_of_safety": 0,
         "action_signal": "BUY",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 118.63,
+        "intrinsic_value": 0,
+        "val_model": "Compounder"
       },
       "scores": {}
     },
     {
       "ticker": "PNDRY",
-      "name": "PNDRY",
+      "name": "Pandora A/S",
       "tier_label": "EXCEPTIONAL",
       "total_score": 27,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.3162779628748215,
+        "roic_3y_avg": 0.3261848970871648,
         "gross_margin": 0.7982638888888889,
         "revenue_growth_3y": 0.1063526041714784,
         "fcf_conversion": 1.3472355079395446,
-        "value_creation_ratio": 2.607402826667943
+        "value_creation_ratio": 2.607402826667943,
+        "economic_profit_spread": 0.22127796287482152,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.2743001346631998,
         "margin_of_safety": 0,
         "action_signal": "BUY",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 9.84,
+        "intrinsic_value": 0,
+        "val_model": "Ex-Goodwill"
       },
       "scores": {}
     },
     {
       "ticker": "PNDZF",
-      "name": "PNDZF",
+      "name": "Pandora A/S",
       "tier_label": "EXCEPTIONAL",
       "total_score": 27,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.3162779628748215,
+        "roic_3y_avg": 0.3261848970871648,
         "gross_margin": 0.7982638888888889,
         "revenue_growth_3y": 0.1063526041714784,
         "fcf_conversion": 1.3472355079395446,
-        "value_creation_ratio": 2.607402826667943
+        "value_creation_ratio": 2.607402826667943,
+        "economic_profit_spread": 0.22127796287482152,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.27374725598084726,
         "margin_of_safety": 0,
         "action_signal": "BUY",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 78.98,
+        "intrinsic_value": 0,
+        "val_model": "Ex-Goodwill"
       },
       "scores": {}
     },
     {
       "ticker": "PDD",
-      "name": "PDD",
+      "name": "PDD Holdings Inc.",
       "tier_label": "EXCEPTIONAL",
       "total_score": 26,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.251040628010849,
+        "roic_3y_avg": 0.2144403030886365,
         "gross_margin": 0.6092273532763555,
         "revenue_growth_3y": 0.6124008018599973,
         "fcf_conversion": 1.0758454219110232,
-        "value_creation_ratio": 3.586294685869271
+        "value_creation_ratio": 3.586294685869271,
+        "economic_profit_spread": 0.15604062801084898,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.26320059992843203,
         "margin_of_safety": 0,
         "action_signal": "BUY",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 106.91,
+        "intrinsic_value": 0,
+        "val_model": "Standard"
       },
       "scores": {}
     },
     {
       "ticker": "DFS",
-      "name": "DFS",
+      "name": "Discover Financial Services",
       "tier_label": "EXCEPTIONAL",
       "total_score": 26,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.3878697445800053,
+        "roic_3y_avg": 0.22116605648190868,
         "gross_margin": 0.8946053946053946,
         "revenue_growth_3y": 0.18317372606038806,
         "fcf_conversion": 1.7986769570011025,
-        "value_creation_ratio": 3.7914931043988784
+        "value_creation_ratio": 3.7914931043988784,
+        "economic_profit_spread": 0.29286974458000525,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.26202790189000186,
         "margin_of_safety": 0,
         "action_signal": "BUY",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 200.05,
+        "intrinsic_value": 0,
+        "val_model": "Mature"
       },
       "scores": {}
     },
     {
       "ticker": "HALO",
-      "name": "HALO",
+      "name": "Halozyme Therapeutics, Inc.",
       "tier_label": "EXCEPTIONAL",
       "total_score": 25,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.22122488592595604,
+        "roic_3y_avg": 0.16696072851383748,
         "gross_margin": 0.8429890360121498,
         "revenue_growth_3y": 0.31815265280601457,
         "fcf_conversion": 1.054666723712032,
-        "value_creation_ratio": 2.4020074476216724
+        "value_creation_ratio": 2.4020074476216724,
+        "economic_profit_spread": 0.12622488592595604,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.2567192066513108,
         "margin_of_safety": 0,
         "action_signal": "BUY",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 70.22,
+        "intrinsic_value": 0,
+        "val_model": "Platform"
       },
       "scores": {}
     },
     {
       "ticker": "PPTDF",
-      "name": "PPTDF",
+      "name": "PeptiDream Inc.",
       "tier_label": "EXCEPTIONAL",
       "total_score": 24,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.20727821257306184,
+        "roic_3y_avg": 0.15556432431731232,
         "gross_margin": 0.7392115303875569,
         "revenue_growth_3y": 0.5870329214753922,
         "fcf_conversion": 1.4403484080703184,
-        "value_creation_ratio": 2.9611173224723117
+        "value_creation_ratio": 2.9611173224723117,
+        "economic_profit_spread": 0.11227821257306184,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.24964435351074488,
         "margin_of_safety": 0,
         "action_signal": "BUY",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 10.75,
+        "intrinsic_value": 0,
+        "val_model": "Standard"
       },
       "scores": {}
     },
     {
       "ticker": "CORT",
-      "name": "CORT",
+      "name": "Corcept Therapeutics Incorporated",
       "tier_label": "EXCEPTIONAL",
       "total_score": 24,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.14961326972797787,
+        "roic_3y_avg": 0.15876929640617624,
         "gross_margin": 0.9838794738089595,
         "revenue_growth_3y": 0.22637938861804074,
         "fcf_conversion": 1.4019236687110417,
-        "value_creation_ratio": 2.1373324246853977
+        "value_creation_ratio": 2.1373324246853977,
+        "economic_profit_spread": 0.054613269727977864,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.24029269500566539,
         "margin_of_safety": 0,
         "action_signal": "BUY",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 46.22,
+        "intrinsic_value": 0,
+        "val_model": "Platform"
       },
       "scores": {}
     },
     {
       "ticker": "JNBYF",
-      "name": "JNBYF",
+      "name": "JNBY Design Limited",
       "tier_label": "EXCEPTIONAL",
       "total_score": 23,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.30492253475926023,
+        "roic_3y_avg": 0.3049984046620577,
         "gross_margin": 0.655855893201355,
         "revenue_growth_3y": 0.10737339605361962,
         "fcf_conversion": 1.1009040497395395,
-        "value_creation_ratio": 4.033366861894977
+        "value_creation_ratio": 4.033366861894977,
+        "economic_profit_spread": 0.20992253475926023,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.23523332857173054,
         "margin_of_safety": 0,
         "action_signal": "BUY",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 2.09,
+        "intrinsic_value": 0,
+        "val_model": "Mature"
       },
       "scores": {}
     },
     {
       "ticker": "ANTM",
-      "name": "ANTM",
+      "name": "Elevance Health Inc.",
       "tier_label": "EXCEPTIONAL",
       "total_score": 23,
       "sector": "",
       "metrics": {
         "incremental_roic": 2.3754760091393754,
+        "roic_3y_avg": 0.8617454012132924,
         "gross_margin": 0.888425013134777,
         "revenue_growth_3y": 0.19314379163911166,
         "fcf_conversion": 0.7623513649304974,
-        "value_creation_ratio": 25.356207440949227
+        "value_creation_ratio": 25.356207440949227,
+        "economic_profit_spread": 2.280476009139375,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.2328671655887257,
         "margin_of_safety": 0,
         "action_signal": "BUY",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 482.58,
+        "intrinsic_value": 0,
+        "val_model": "Platform"
       },
       "scores": {}
     },
     {
       "ticker": "QBEIF",
-      "name": "QBEIF",
+      "name": "QBE Insurance Group Limited",
       "tier_label": "EXCEPTIONAL",
       "total_score": 22,
       "sector": "",
       "metrics": {
         "incremental_roic": 1.2498348745046235,
+        "roic_3y_avg": 0.4786636922801823,
         "gross_margin": 1.0,
         "revenue_growth_3y": 0.11479723460387303,
         "fcf_conversion": 1.3159078133783024,
-        "value_creation_ratio": 17.85478392149462
+        "value_creation_ratio": 17.85478392149462,
+        "economic_profit_spread": 1.1548348745046235,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.2293811077768623,
         "margin_of_safety": 0,
         "action_signal": "BUY",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 13.57,
+        "intrinsic_value": 0,
+        "val_model": "Platform"
       },
       "scores": {}
     },
     {
       "ticker": "ODD",
-      "name": "ODD",
+      "name": "Oddity Tech Ltd.",
       "tier_label": "EXCEPTIONAL",
       "total_score": 22,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.2842492475755211,
+        "roic_3y_avg": 0.21795634434248767,
         "gross_margin": 0.7237914193867458,
         "revenue_growth_3y": 0.42724300969605244,
         "fcf_conversion": 1.2785468662245913,
-        "value_creation_ratio": 1.9603396384518694
+        "value_creation_ratio": 1.9603396384518694,
+        "economic_profit_spread": 0.1892492475755211,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.22609240162460498,
         "margin_of_safety": 0,
         "action_signal": "BUY",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 34.72,
+        "intrinsic_value": 0,
+        "val_model": "Standard"
       },
       "scores": {}
     },
     {
       "ticker": "PCTY",
-      "name": "PCTY",
+      "name": "Paylocity Holding Corporation",
       "tier_label": "EXCEPTIONAL",
       "total_score": 21,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.1570761345788212,
+        "roic_3y_avg": 0.1545929332976285,
         "gross_margin": 0.6876777575019386,
         "revenue_growth_3y": 0.23220561689258656,
         "fcf_conversion": 1.5090720169772858,
-        "value_creation_ratio": 2.1443840898132587
+        "value_creation_ratio": 2.1443840898132587,
+        "economic_profit_spread": 0.06207613457882119,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.21876698824975158,
         "margin_of_safety": 0,
         "action_signal": "BUY",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 142.14,
+        "intrinsic_value": 0,
+        "val_model": "Ex-Goodwill"
       },
       "scores": {}
     },
     {
       "ticker": "ARCVF",
-      "name": "ARCVF",
+      "name": "Arcadis N.V.",
       "tier_label": "EXCEPTIONAL",
       "total_score": 21,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.12420178799489144,
+        "roic_3y_avg": 0.09654673252552237,
         "gross_margin": 0.7767767767767768,
         "revenue_growth_3y": 0.13921175163888133,
         "fcf_conversion": 1.2551440329218106,
-        "value_creation_ratio": 1.6256778533362755
+        "value_creation_ratio": 1.6256778533362755,
+        "economic_profit_spread": 0.02920178799489144,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.21777488559536945,
         "margin_of_safety": 0,
         "action_signal": "BUY",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 45.05,
+        "intrinsic_value": 0,
+        "val_model": "Ex-Goodwill"
       },
       "scores": {}
     },
     {
       "ticker": "ARCAY",
-      "name": "ARCAY",
+      "name": "Arcadis N.V.",
       "tier_label": "EXCEPTIONAL",
       "total_score": 20,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.12420178799489144,
+        "roic_3y_avg": 0.09653829495280487,
         "gross_margin": 0.7767767767767768,
         "revenue_growth_3y": 0.13921175163888133,
         "fcf_conversion": 1.2551440329218106,
-        "value_creation_ratio": 1.6256778533362755
+        "value_creation_ratio": 1.6256778533362755,
+        "economic_profit_spread": 0.02920178799489144,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.20999713533192393,
         "margin_of_safety": 0,
         "action_signal": "BUY",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 50,
+        "intrinsic_value": 0,
+        "val_model": "Ex-Goodwill"
       },
       "scores": {}
     },
     {
       "ticker": "OPYGY",
-      "name": "OPYGY",
+      "name": "PJSC Polyus",
       "tier_label": "EXCEPTIONAL",
       "total_score": 20,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.3556183145056483,
+        "roic_3y_avg": 0.26504486957353707,
         "gross_margin": 0.7571837123791366,
         "revenue_growth_3y": 0.13925848284832187,
         "fcf_conversion": 0.6020503261882573,
-        "value_creation_ratio": 5.080261635794975
+        "value_creation_ratio": 5.080261635794975,
+        "economic_profit_spread": 0.2606183145056483,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.2073836184678292,
         "margin_of_safety": 0,
         "action_signal": "BUY",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 21,
+        "intrinsic_value": 0,
+        "val_model": "Compounder"
       },
       "scores": {}
     },
     {
       "ticker": "KKKUF",
-      "name": "KKKUF",
+      "name": "Kakaku.com, Inc.",
       "tier_label": "EXCEPTIONAL",
       "total_score": 20,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.33814202025400764,
+        "roic_3y_avg": 0.33814180521986614,
         "gross_margin": 1.0,
         "revenue_growth_3y": 0.14888192825718627,
         "fcf_conversion": 1.2238917731629393,
-        "value_creation_ratio": 3.7446513870875706
+        "value_creation_ratio": 3.7446513870875706,
+        "economic_profit_spread": 0.24314202025400763,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.20386464933101628,
         "margin_of_safety": 0,
         "action_signal": "BUY",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 14.425,
+        "intrinsic_value": 0,
+        "val_model": "Compounder"
       },
       "scores": {}
     },
     {
       "ticker": "LUGDF",
-      "name": "LUGDF",
+      "name": "Lundin Gold Inc.",
       "tier_label": "EXCEPTIONAL",
       "total_score": 20,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.4726915421290324,
+        "roic_3y_avg": 0.30431554338181266,
         "gross_margin": 0.704383722392188,
         "revenue_growth_3y": 0.17612440478827152,
         "fcf_conversion": 1.3613237882877596,
-        "value_creation_ratio": 4.457251693814544
+        "value_creation_ratio": 4.457251693814544,
+        "economic_profit_spread": 0.37769154212903244,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.20281656189614927,
         "margin_of_safety": 0,
         "action_signal": "BUY",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 90,
+        "intrinsic_value": 0,
+        "val_model": "Compounder"
       },
       "scores": {}
     },
     {
       "ticker": "EVVTY",
-      "name": "EVVTY",
+      "name": "Evolution AB (publ)",
       "tier_label": "EXCEPTIONAL",
       "total_score": 20,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.26187812953742184,
+        "roic_3y_avg": 0.22134740335547742,
         "gross_margin": 1.0238463272235512,
         "revenue_growth_3y": 0.24511655468441895,
         "fcf_conversion": 0.9359139560214306,
-        "value_creation_ratio": 2.696994124999195
+        "value_creation_ratio": 2.696994124999195,
+        "economic_profit_spread": 0.16687812953742184,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.2016004773446982,
         "margin_of_safety": 0,
         "action_signal": "BUY",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 66.69,
+        "intrinsic_value": 0,
+        "val_model": "Mature"
       },
       "scores": {}
     },
     {
       "ticker": "HRMY",
-      "name": "HRMY",
+      "name": "Harmony Biosciences Holdings, Inc.",
       "tier_label": "EXCEPTIONAL",
       "total_score": 20,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.17026664334890626,
+        "roic_3y_avg": 0.1799748047067146,
         "gross_margin": 0.780596697512641,
         "revenue_growth_3y": 0.327617118598057,
         "fcf_conversion": 1.5029451588736227,
-        "value_creation_ratio": 1.9615972736049108
+        "value_creation_ratio": 1.9615972736049108,
+        "economic_profit_spread": 0.07526664334890626,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.20075794847418826,
         "margin_of_safety": 0,
         "action_signal": "BUY",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 37.68,
+        "intrinsic_value": 0,
+        "val_model": "Mature"
       },
       "scores": {}
     },
     {
       "ticker": "FLT",
-      "name": "FLT",
+      "name": "FLEETCOR Technologies, Inc.",
       "tier_label": "EXCEPTIONAL",
       "total_score": 20,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.13683614141381556,
+        "roic_3y_avg": 0.12565051489762671,
         "gross_margin": 1.0,
         "revenue_growth_3y": 0.1193801799788039,
         "fcf_conversion": 1.758800533202623,
-        "value_creation_ratio": 1.2890828206671272
+        "value_creation_ratio": 1.2890828206671272,
+        "economic_profit_spread": 0.04183614141381556,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.20039729117024963,
         "margin_of_safety": 0,
         "action_signal": "BUY",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 303.26,
+        "intrinsic_value": 0,
+        "val_model": "Ex-Goodwill"
       },
       "scores": {}
     },
     {
       "ticker": "PAX",
-      "name": "PAX",
+      "name": "Patria Investments Limited",
       "tier_label": "ELITE",
       "total_score": 19,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.17009974203232595,
+        "roic_3y_avg": 0.18737959107089344,
         "gross_margin": 0.8650789408985473,
         "revenue_growth_3y": 0.16689008842008413,
         "fcf_conversion": 1.915311304347826,
-        "value_creation_ratio": 2.135589981573458
+        "value_creation_ratio": 2.135589981573458,
+        "economic_profit_spread": 0.07509974203232594,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.19914239441593914,
         "margin_of_safety": 0,
         "action_signal": "HOLD",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 15.95,
+        "intrinsic_value": 0,
+        "val_model": "Mature"
       },
       "scores": {}
     },
     {
       "ticker": "EVGGF",
-      "name": "EVGGF",
+      "name": "Evolution AB (publ)",
       "tier_label": "ELITE",
       "total_score": 19,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.26187812953742184,
+        "roic_3y_avg": 0.22134740335547742,
         "gross_margin": 1.0238463272235512,
         "revenue_growth_3y": 0.24511655468441895,
         "fcf_conversion": 0.9359139560214306,
-        "value_creation_ratio": 2.696994124999195
+        "value_creation_ratio": 2.696994124999195,
+        "economic_profit_spread": 0.16687812953742184,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.19840954584011247,
         "margin_of_safety": 0,
         "action_signal": "HOLD",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 68.736,
+        "intrinsic_value": 0,
+        "val_model": "Mature"
       },
       "scores": {}
     },
     {
       "ticker": "ANPDF",
-      "name": "ANPDF",
+      "name": "ANTA Sports Products Limited",
       "tier_label": "ELITE",
       "total_score": 19,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.13852407928858418,
+        "roic_3y_avg": 0.15128124104969728,
         "gross_margin": 0.6216925987631661,
         "revenue_growth_3y": 0.128148843611535,
         "fcf_conversion": 0.8515645037189022,
-        "value_creation_ratio": 1.8568911432786084
+        "value_creation_ratio": 1.8568911432786084,
+        "economic_profit_spread": 0.04352407928858418,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.1962829386747142,
         "margin_of_safety": 0,
         "action_signal": "HOLD",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 9.85,
+        "intrinsic_value": 0,
+        "val_model": "Standard"
       },
       "scores": {}
     },
     {
       "ticker": "PAYC",
-      "name": "PAYC",
+      "name": "Paycom Software, Inc.",
       "tier_label": "ELITE",
       "total_score": 19,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.28670222382932564,
+        "roic_3y_avg": 0.2555298990787567,
         "gross_margin": 0.8223237043330501,
         "revenue_growth_3y": 0.21285656781481066,
         "fcf_conversion": 0.6792828685258964,
-        "value_creation_ratio": 3.3260118773703673
+        "value_creation_ratio": 3.3260118773703673,
+        "economic_profit_spread": 0.19170222382932564,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.1959476045607112,
         "margin_of_safety": 0,
         "action_signal": "HOLD",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 142.19,
+        "intrinsic_value": 0,
+        "val_model": "Compounder"
       },
       "scores": {}
     },
     {
       "ticker": "ANPDY",
-      "name": "ANPDY",
+      "name": "ANTA Sports Products Limited",
       "tier_label": "ELITE",
       "total_score": 19,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.13852407928858418,
+        "roic_3y_avg": 0.15094467094121122,
         "gross_margin": 0.6216925987631661,
         "revenue_growth_3y": 0.128148843611535,
         "fcf_conversion": 0.8515645037189022,
-        "value_creation_ratio": 1.8568911432786084
+        "value_creation_ratio": 1.8568911432786084,
+        "economic_profit_spread": 0.04352407928858418,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.19432767162651227,
         "margin_of_safety": 0,
         "action_signal": "HOLD",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 250.22,
+        "intrinsic_value": 0,
+        "val_model": "Standard"
       },
       "scores": {}
     },
     {
       "ticker": "TBBK",
-      "name": "TBBK",
+      "name": "The Bancorp, Inc.",
       "tier_label": "ELITE",
       "total_score": 19,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.23987086731057858,
+        "roic_3y_avg": 0.2016420212914526,
         "gross_margin": 0.6976155672533396,
         "revenue_growth_3y": 0.2951459059261894,
         "fcf_conversion": 1.0236232417026754,
-        "value_creation_ratio": 2.2067237103089106
+        "value_creation_ratio": 2.2067237103089106,
+        "economic_profit_spread": 0.14487086731057858,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.19342108650230072,
         "margin_of_safety": 0,
         "action_signal": "HOLD",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 68.34,
+        "intrinsic_value": 0,
+        "val_model": "Mature"
       },
       "scores": {}
     },
     {
       "ticker": "GOFPY",
-      "name": "GOFPY",
+      "name": "Organization of Football Prognostics S.A.",
       "tier_label": "ELITE",
       "total_score": 19,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.40868084306503344,
+        "roic_3y_avg": 0.3412103342960635,
         "gross_margin": 0.6133126631313318,
         "revenue_growth_3y": 0.14575350353821914,
         "fcf_conversion": 1.383533218877759,
-        "value_creation_ratio": 5.8382977580719055
+        "value_creation_ratio": 5.8382977580719055,
+        "economic_profit_spread": 0.3136808430650334,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.193062163738916,
         "margin_of_safety": 0,
         "action_signal": "HOLD",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 10.47,
+        "intrinsic_value": 0,
+        "val_model": "Mature"
       },
       "scores": {}
     },
     {
       "ticker": "GRKZF",
-      "name": "GRKZF",
+      "name": "Organization of Football Prognostics S.A.",
       "tier_label": "ELITE",
       "total_score": 19,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.40868084306503344,
+        "roic_3y_avg": 0.3412103342960635,
         "gross_margin": 0.6133126631313318,
         "revenue_growth_3y": 0.14575350353821914,
         "fcf_conversion": 1.383533218877759,
-        "value_creation_ratio": 5.8382977580719055
+        "value_creation_ratio": 5.8382977580719055,
+        "economic_profit_spread": 0.3136808430650334,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.1928168832284921,
         "margin_of_safety": 0,
         "action_signal": "HOLD",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 21,
+        "intrinsic_value": 0,
+        "val_model": "Mature"
       },
       "scores": {}
     },
     {
       "ticker": "PAYO",
-      "name": "PAYO",
+      "name": "Payoneer Global Inc.",
       "tier_label": "ELITE",
       "total_score": 19,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.149795958025651,
+        "roic_3y_avg": 0.07689604990640574,
         "gross_margin": 0.8444272160831979,
         "revenue_growth_3y": 0.2734852100000065,
         "fcf_conversion": 0.9617870141874995,
-        "value_creation_ratio": 1.5767995581647472
+        "value_creation_ratio": 1.5767995581647472,
+        "economic_profit_spread": 0.05479595802565099,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.191378221117705,
         "margin_of_safety": 0,
         "action_signal": "HOLD",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 6.4,
+        "intrinsic_value": 0,
+        "val_model": "DCF-Fade"
       },
       "scores": {}
     },
     {
       "ticker": "FLMNY",
-      "name": "FLMNY",
+      "name": "Fielmann AG",
       "tier_label": "ELITE",
       "total_score": 19,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.14453395774240363,
+        "roic_3y_avg": 0.14486718703796397,
         "gross_margin": 0.8001820578097588,
         "revenue_growth_3y": 0.10498328037289673,
         "fcf_conversion": 0.85,
-        "value_creation_ratio": 1.8980165166435146
+        "value_creation_ratio": 1.8980165166435146,
+        "economic_profit_spread": 0.04953395774240363,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.19037810272499495,
         "margin_of_safety": 0,
         "action_signal": "HOLD",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 9.5,
+        "intrinsic_value": 0,
+        "val_model": "Standard"
       },
       "scores": {}
     },
     {
       "ticker": "HLNE",
-      "name": "HLNE",
+      "name": "Hamilton Lane Incorporated",
       "tier_label": "ELITE",
       "total_score": 18,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.2186936084251949,
+        "roic_3y_avg": 0.23446743689724325,
         "gross_margin": 0.7079483788078764,
         "revenue_growth_3y": 0.24672765182486223,
         "fcf_conversion": 1.4320867273488274,
-        "value_creation_ratio": 1.9755520182944433
+        "value_creation_ratio": 1.9755520182944433,
+        "economic_profit_spread": 0.12369360842519489,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.18763281696026454,
         "margin_of_safety": 0,
         "action_signal": "HOLD",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 147.36,
+        "intrinsic_value": 0,
+        "val_model": "Standard"
       },
       "scores": {}
     },
     {
       "ticker": "QLYS",
-      "name": "QLYS",
+      "name": "Qualys, Inc.",
       "tier_label": "ELITE",
       "total_score": 18,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.2677610010355935,
+        "roic_3y_avg": 0.29047188100235416,
         "gross_margin": 0.8165119796698658,
         "revenue_growth_3y": 0.13900203842502723,
         "fcf_conversion": 1.3344081068631968,
-        "value_creation_ratio": 3.825157157651336
+        "value_creation_ratio": 3.825157157651336,
+        "economic_profit_spread": 0.17276100103559353,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.18727780815213857,
         "margin_of_safety": 0,
         "action_signal": "HOLD",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 133,
+        "intrinsic_value": 0,
+        "val_model": "Platform"
       },
       "scores": {}
     },
     {
       "ticker": "SNROF",
-      "name": "SNROF",
+      "name": "Sanrio Company, Ltd.",
       "tier_label": "ELITE",
       "total_score": 18,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.25503111216131064,
+        "roic_3y_avg": 0.18314906665214906,
         "gross_margin": 0.7584262684259924,
         "revenue_growth_3y": 0.4003941820056556,
         "fcf_conversion": 0.8869185976851741,
-        "value_creation_ratio": 3.643301602304437
+        "value_creation_ratio": 3.643301602304437,
+        "economic_profit_spread": 0.16003111216131063,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.18355356615790144,
         "margin_of_safety": 0,
         "action_signal": "HOLD",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 29.12,
+        "intrinsic_value": 0,
+        "val_model": "Standard"
       },
       "scores": {}
     },
     {
       "ticker": "GB",
-      "name": "GB",
+      "name": "Global Blue Group Holding AG",
       "tier_label": "ELITE",
       "total_score": 18,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.14477554495766337,
+        "roic_3y_avg": 0.08902319852351753,
         "gross_margin": 0.7499443765148786,
         "revenue_growth_3y": 0.5916820799539804,
         "fcf_conversion": 1.304848542353583,
-        "value_creation_ratio": 2.0682220708237624
+        "value_creation_ratio": 2.0682220708237624,
+        "economic_profit_spread": 0.04977554495766337,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.18162318923484105,
         "margin_of_safety": 0,
         "action_signal": "HOLD",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 7.49,
+        "intrinsic_value": 0,
+        "val_model": "DCF-Fade"
       },
       "scores": {}
     },
     {
       "ticker": "TPL",
-      "name": "TPL",
+      "name": "Texas Pacific Land Corporation",
       "tier_label": "ELITE",
       "total_score": 18,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.35691329822635,
+        "roic_3y_avg": 0.41674865393444555,
         "gross_margin": 0.8990030078362422,
         "revenue_growth_3y": 0.16105618637470331,
         "fcf_conversion": 1.0154551061767556,
-        "value_creation_ratio": 3.8900631959275205
+        "value_creation_ratio": 3.8900631959275205,
+        "economic_profit_spread": 0.26191329822635,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.18042697934059138,
         "margin_of_safety": 0,
         "action_signal": "HOLD",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 345.2,
+        "intrinsic_value": 0,
+        "val_model": "Compounder"
       },
       "scores": {}
     },
     {
       "ticker": "CKNHF",
-      "name": "CKNHF",
+      "name": "Clarkson PLC",
       "tier_label": "ELITE",
       "total_score": 17,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.13936049801924166,
+        "roic_3y_avg": 0.15144491774197077,
         "gross_margin": 0.9490474750529181,
         "revenue_growth_3y": 0.14267349320413047,
         "fcf_conversion": 1.265017667844523,
-        "value_creation_ratio": 1.5553627011076079
+        "value_creation_ratio": 1.5553627011076079,
+        "economic_profit_spread": 0.04436049801924166,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.17745419144207975,
         "margin_of_safety": 0,
         "action_signal": "HOLD",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 56.195,
+        "intrinsic_value": 0,
+        "val_model": "Mature"
       },
       "scores": {}
     },
     {
       "ticker": "EXPE",
-      "name": "EXPE",
+      "name": "Expedia Group, Inc.",
       "tier_label": "ELITE",
       "total_score": 17,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.12231083086053413,
+        "roic_3y_avg": 0.10335081173695808,
         "gross_margin": 0.894602293477467,
         "revenue_growth_3y": 0.1677393359133028,
         "fcf_conversion": 1.8873581847649918,
-        "value_creation_ratio": 1.0503291615331398
+        "value_creation_ratio": 1.0503291615331398,
+        "economic_profit_spread": 0.027310830860534124,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.1746211332275343,
         "margin_of_safety": 0,
         "action_signal": "HOLD",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 266.74,
+        "intrinsic_value": 0,
+        "val_model": "Mature"
       },
       "scores": {}
     },
     {
       "ticker": "GMWKF",
-      "name": "GMWKF",
+      "name": "Games Workshop Group PLC",
       "tier_label": "ELITE",
       "total_score": 17,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.6011503067484663,
+        "roic_3y_avg": 0.5186368051084446,
         "gross_margin": 0.7206477732793523,
         "revenue_growth_3y": 0.14182462451565292,
         "fcf_conversion": 1.0530341662417133,
-        "value_creation_ratio": 5.9756491724499625
+        "value_creation_ratio": 5.9756491724499625,
+        "economic_profit_spread": 0.5061503067484663,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.17338704745947453,
         "margin_of_safety": 0,
         "action_signal": "HOLD",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 247.5,
+        "intrinsic_value": 0,
+        "val_model": "Compounder"
       },
       "scores": {}
     },
     {
       "ticker": "APP",
-      "name": "APP",
+      "name": "AppLovin Corporation",
       "tier_label": "ELITE",
       "total_score": 17,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.30241644664924605,
+        "roic_3y_avg": 0.13504988353679223,
         "gross_margin": 0.7522309294392651,
         "revenue_growth_3y": 0.19020421810855725,
         "fcf_conversion": 1.32565313057041,
-        "value_creation_ratio": 2.0856306665465243
+        "value_creation_ratio": 2.0856306665465243,
+        "economic_profit_spread": 0.20741644664924605,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.17327753922416214,
         "margin_of_safety": 0,
         "action_signal": "HOLD",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 543.56,
+        "intrinsic_value": 0,
+        "val_model": "Ex-Goodwill"
       },
       "scores": {}
     },
     {
       "ticker": "PTC",
-      "name": "PTC",
+      "name": "PTC Inc.",
       "tier_label": "ELITE",
       "total_score": 16,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.14179660075564424,
+        "roic_3y_avg": 0.1009426461423234,
         "gross_margin": 0.8375515565345831,
         "revenue_growth_3y": 0.12315411374311114,
         "fcf_conversion": 1.167154634147006,
-        "value_creation_ratio": 1.4816781688155092
+        "value_creation_ratio": 1.4816781688155092,
+        "economic_profit_spread": 0.046796600755644235,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.16671872883727007,
         "margin_of_safety": 0,
         "action_signal": "HOLD",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 164.63,
+        "intrinsic_value": 0,
+        "val_model": "Platform"
       },
       "scores": {}
     },
     {
       "ticker": "HESAF",
-      "name": "HESAF",
+      "name": "Herm\u00e8s International Soci\u00e9t\u00e9 en commandite par actions",
       "tier_label": "ELITE",
       "total_score": 16,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.23652633198297524,
+        "roic_3y_avg": 0.24235146189975573,
         "gross_margin": 0.702636783124588,
         "revenue_growth_3y": 0.1908877922734833,
         "fcf_conversion": 0.8846404518792093,
-        "value_creation_ratio": 2.461252153829087
+        "value_creation_ratio": 2.461252153829087,
+        "economic_profit_spread": 0.14152633198297523,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.16594367876825564,
         "margin_of_safety": 0,
         "action_signal": "HOLD",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 2533.6,
+        "intrinsic_value": 0,
+        "val_model": "Standard"
       },
       "scores": {}
     },
     {
       "ticker": "MRK",
-      "name": "MRK",
+      "name": "Merck & Co., Inc.",
       "tier_label": "ELITE",
       "total_score": 16,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.1793002139909911,
+        "roic_3y_avg": 0.1283810623896697,
         "gross_margin": 0.7632308939035033,
         "revenue_growth_3y": 0.09627108025433695,
         "fcf_conversion": 1.0571946018578022,
-        "value_creation_ratio": 2.56143162844273
+        "value_creation_ratio": 2.56143162844273,
+        "economic_profit_spread": 0.08430021399099111,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.163411839951075,
         "margin_of_safety": 0,
         "action_signal": "HOLD",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 107.905,
+        "intrinsic_value": 0,
+        "val_model": "Ex-Goodwill"
       },
       "scores": {}
     },
     {
       "ticker": "ORINF",
-      "name": "ORINF",
+      "name": "Orion Oyj",
       "tier_label": "ELITE",
       "total_score": 16,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.234519252420626,
+        "roic_3y_avg": 0.23915911889077926,
         "gross_margin": 0.6135892116182573,
         "revenue_growth_3y": 0.14002776618653323,
         "fcf_conversion": 0.625947256744468,
-        "value_creation_ratio": 3.350275034580371
+        "value_creation_ratio": 3.350275034580371,
+        "economic_profit_spread": 0.139519252420626,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.16054245484645174,
         "margin_of_safety": 0,
         "action_signal": "HOLD",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 81.3,
+        "intrinsic_value": 0,
+        "val_model": "Standard"
       },
       "scores": {}
     },
     {
       "ticker": "FNOXF",
-      "name": "FNOXF",
+      "name": "Fortnox AB (publ)",
       "tier_label": "ELITE",
       "total_score": 15,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.25896728419392984,
+        "roic_3y_avg": 0.24465121674819887,
         "gross_margin": 0.6288508557457213,
         "revenue_growth_3y": 0.29945797829346366,
         "fcf_conversion": 0.7633802816901408,
-        "value_creation_ratio": 2.2518894277733033
+        "value_creation_ratio": 2.2518894277733033,
+        "economic_profit_spread": 0.16396728419392984,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.15878802903046293,
         "margin_of_safety": 0,
         "action_signal": "HOLD",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 8.45,
+        "intrinsic_value": 0,
+        "val_model": "Standard"
       },
       "scores": {}
     },
     {
       "ticker": "ATDRF",
-      "name": "ATDRF",
+      "name": "Auto Trader Group plc",
       "tier_label": "ELITE",
       "total_score": 15,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.49327980450340375,
+        "roic_3y_avg": 0.4280619463513944,
         "gross_margin": 1.0,
         "revenue_growth_3y": 0.11580065219511138,
         "fcf_conversion": 1.0636942675159236,
-        "value_creation_ratio": 5.762614538591165
+        "value_creation_ratio": 5.762614538591165,
+        "economic_profit_spread": 0.3982798045034037,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.15829072078538586,
         "margin_of_safety": 0,
         "action_signal": "HOLD",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 7.7762,
+        "intrinsic_value": 0,
+        "val_model": "Mature"
       },
       "scores": {}
     },
     {
       "ticker": "ATDRY",
-      "name": "ATDRY",
+      "name": "Auto Trader Group plc",
       "tier_label": "ELITE",
       "total_score": 15,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.49327980450340375,
+        "roic_3y_avg": 0.4280619463513944,
         "gross_margin": 0.7897188487772417,
         "revenue_growth_3y": 0.11580065219511138,
         "fcf_conversion": 1.0636942675159236,
-        "value_creation_ratio": 5.762614538591165
+        "value_creation_ratio": 5.762614538591165,
+        "economic_profit_spread": 0.3982798045034037,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.15716938976284364,
         "margin_of_safety": 0,
         "action_signal": "HOLD",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 1.9,
+        "intrinsic_value": 0,
+        "val_model": "Mature"
       },
       "scores": {}
     },
     {
       "ticker": "GAERF",
-      "name": "GAERF",
+      "name": "Grupo Aeroportuario del Centro Norte, S.A.B. de C.V.",
       "tier_label": "ELITE",
       "total_score": 15,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.27751111388613675,
+        "roic_3y_avg": 0.271469501380792,
         "gross_margin": 0.6684725278837144,
         "revenue_growth_3y": 0.20012684254574276,
         "fcf_conversion": 1.19203989446527,
-        "value_creation_ratio": 3.6732113022652113
+        "value_creation_ratio": 3.6732113022652113,
+        "economic_profit_spread": 0.18251111388613675,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.15616904576296958,
         "margin_of_safety": 0,
         "action_signal": "HOLD",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 15.236,
+        "intrinsic_value": 0,
+        "val_model": "Mature"
       },
       "scores": {}
     },
     {
       "ticker": "ORINY",
-      "name": "ORINY",
+      "name": "Orion Oyj",
       "tier_label": "ELITE",
       "total_score": 15,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.234519252420626,
+        "roic_3y_avg": 0.23915333603673408,
         "gross_margin": 0.6135892116182573,
         "revenue_growth_3y": 0.14002776618653323,
         "fcf_conversion": 0.625947256744468,
-        "value_creation_ratio": 3.350275034580371
+        "value_creation_ratio": 3.350275034580371,
+        "economic_profit_spread": 0.139519252420626,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.1500106486438245,
         "margin_of_safety": 0,
         "action_signal": "HOLD",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 42.005,
+        "intrinsic_value": 0,
+        "val_model": "Standard"
       },
       "scores": {}
     },
     {
       "ticker": "OMAB",
-      "name": "OMAB",
+      "name": "Grupo Aeroportuario del Centro Norte, S.A.B. de C.V.",
       "tier_label": "ELITE",
       "total_score": 14,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.27751111388613675,
+        "roic_3y_avg": 0.271469501380792,
         "gross_margin": 0.6529954708286815,
         "revenue_growth_3y": 0.20012684254574276,
         "fcf_conversion": 1.19203989446527,
-        "value_creation_ratio": 3.6732113022652113
+        "value_creation_ratio": 3.6732113022652113,
+        "economic_profit_spread": 0.18251111388613675,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.14960937979446406,
         "margin_of_safety": 0,
         "action_signal": "HOLD",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 120.22,
+        "intrinsic_value": 0,
+        "val_model": "Mature"
       },
       "scores": {}
     },
     {
       "ticker": "DETRF",
-      "name": "DETRF",
+      "name": "Deterra Royalties Limited",
       "tier_label": "ELITE",
       "total_score": 14,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.41388631651117336,
+        "roic_3y_avg": 1.2739106927640105,
         "gross_margin": 0.9539769125356352,
         "revenue_growth_3y": 0.21962283676156846,
         "fcf_conversion": 0.8662256334500145,
-        "value_creation_ratio": 5.752415795846746
+        "value_creation_ratio": 5.752415795846746,
+        "economic_profit_spread": 0.3188863165111734,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.14803278831822422,
         "margin_of_safety": 0,
         "action_signal": "HOLD",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 3.29,
+        "intrinsic_value": 0,
+        "val_model": "Mature"
       },
       "scores": {}
     },
     {
       "ticker": "RLXXF",
-      "name": "RLXXF",
+      "name": "RELX Plc",
       "tier_label": "ELITE",
       "total_score": 13,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.21403990024937655,
+        "roic_3y_avg": 0.1939641299422106,
         "gross_margin": 0.6502013991944032,
         "revenue_growth_3y": 0.0920415014742979,
         "fcf_conversion": 1.3381592554291624,
-        "value_creation_ratio": 3.057712860705379
+        "value_creation_ratio": 3.057712860705379,
+        "economic_profit_spread": 0.11903990024937655,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.13869034903430755,
         "margin_of_safety": 0,
         "action_signal": "HOLD",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 38.2,
+        "intrinsic_value": 0,
+        "val_model": "Mature"
       },
       "scores": {}
     },
     {
       "ticker": "OBIIF",
-      "name": "OBIIF",
+      "name": "OBIC Co.,Ltd.",
       "tier_label": "ELITE",
       "total_score": 13,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.1354926818024663,
+        "roic_3y_avg": 0.13727846775204663,
         "gross_margin": 0.7784971956450016,
         "revenue_growth_3y": 0.10657228549403341,
         "fcf_conversion": 0.9394778787081599,
-        "value_creation_ratio": 1.9356097400352326
+        "value_creation_ratio": 1.9356097400352326,
+        "economic_profit_spread": 0.04049268180246629,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.1342526509464976,
         "margin_of_safety": 0,
         "action_signal": "HOLD",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 32.165,
+        "intrinsic_value": 0,
+        "val_model": "Standard"
       },
       "scores": {}
     },
     {
       "ticker": "HMNTY",
-      "name": "HMNTY",
+      "name": "Hemnet Group AB (publ)",
       "tier_label": "ELITE",
       "total_score": 13,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.27127204245848313,
+        "roic_3y_avg": 0.20624926432027083,
         "gross_margin": 1.0076724508819734,
         "revenue_growth_3y": 0.24189880714349177,
         "fcf_conversion": 1.6043696486566283,
-        "value_creation_ratio": 3.0583093851012753
+        "value_creation_ratio": 3.0583093851012753,
+        "economic_profit_spread": 0.17627204245848313,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.13386259664420563,
         "margin_of_safety": 0,
         "action_signal": "HOLD",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 15.78,
+        "intrinsic_value": 0,
+        "val_model": "Mature"
       },
       "scores": {}
     },
     {
       "ticker": "LRLCF",
-      "name": "LRLCF",
+      "name": "L'Or\u00e9al S.A.",
       "tier_label": "ELITE",
       "total_score": 13,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.15651912280828187,
+        "roic_3y_avg": 0.1628640206952307,
         "gross_margin": 0.7418297046460075,
         "revenue_growth_3y": 0.10435125468441253,
         "fcf_conversion": 1.0367625259412985,
-        "value_creation_ratio": 1.7352452639499099
+        "value_creation_ratio": 1.7352452639499099,
+        "economic_profit_spread": 0.06151912280828187,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.1333702506151238,
         "margin_of_safety": 0,
         "action_signal": "HOLD",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 447.24,
+        "intrinsic_value": 0,
+        "val_model": "Ex-Goodwill"
       },
       "scores": {}
     },
     {
       "ticker": "HOCPF",
-      "name": "HOCPF",
+      "name": "HOYA Corporation",
       "tier_label": "ELITE",
       "total_score": 12,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.35656270209016855,
+        "roic_3y_avg": 0.33027723032116185,
         "gross_margin": 0.8650237352043034,
         "revenue_growth_3y": 0.1022459237129354,
         "fcf_conversion": 0.9262204233505853,
-        "value_creation_ratio": 4.924899200140449
+        "value_creation_ratio": 4.924899200140449,
+        "economic_profit_spread": 0.2615627020901685,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.12605709721532193,
         "margin_of_safety": 0,
         "action_signal": "HOLD",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 158.77,
+        "intrinsic_value": 0,
+        "val_model": "Compounder"
       },
       "scores": {}
     },
     {
       "ticker": "RPGRF",
-      "name": "RPGRF",
+      "name": "REA Group Limited",
       "tier_label": "ELITE",
       "total_score": 12,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.3011802088061734,
+        "roic_3y_avg": 0.24259481818443807,
         "gross_margin": 0.9654135338345865,
         "revenue_growth_3y": 0.10549805696209247,
         "fcf_conversion": 0.7927422923735065,
-        "value_creation_ratio": 3.6954626847383247
+        "value_creation_ratio": 3.6954626847383247,
+        "economic_profit_spread": 0.2061802088061734,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.12578060515377057,
         "margin_of_safety": 0,
         "action_signal": "HOLD",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 124.45,
+        "intrinsic_value": 0,
+        "val_model": "Ex-Goodwill"
       },
       "scores": {}
     },
     {
       "ticker": "RPGRY",
-      "name": "RPGRY",
+      "name": "REA Group Limited",
       "tier_label": "ELITE",
       "total_score": 12,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.3011802088061734,
+        "roic_3y_avg": 0.24355738502935786,
         "gross_margin": 0.9654135338345865,
         "revenue_growth_3y": 0.10549805696209247,
         "fcf_conversion": 0.7927422923735065,
-        "value_creation_ratio": 3.6954626847383247
+        "value_creation_ratio": 3.6954626847383247,
+        "economic_profit_spread": 0.2061802088061734,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.1234399468176065,
         "margin_of_safety": 0,
         "action_signal": "HOLD",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 35.14,
+        "intrinsic_value": 0,
+        "val_model": "Ex-Goodwill"
       },
       "scores": {}
     },
     {
       "ticker": "HOCPY",
-      "name": "HOCPY",
+      "name": "HOYA Corporation",
       "tier_label": "ELITE",
       "total_score": 12,
       "sector": "",
       "metrics": {
         "incremental_roic": 0.35656270209016855,
+        "roic_3y_avg": 0.31030450221867006,
         "gross_margin": 0.8650237352043034,
         "revenue_growth_3y": 0.097368621708116,
         "fcf_conversion": 0.9262204233505853,
-        "value_creation_ratio": 4.924899200140449
+        "value_creation_ratio": 4.924899200140449,
+        "economic_profit_spread": 0.2615627020901685,
+        "wacc": 0.095
       },
       "valuation": {
         "implied_irr": 0.12031490575625325,
         "margin_of_safety": 0,
         "action_signal": "HOLD",
-        "current_price": 0,
-        "intrinsic_value": 0
+        "current_price": 164.4,
+        "intrinsic_value": 0,
+        "val_model": "Standard"
       },
       "scores": {}
     }
