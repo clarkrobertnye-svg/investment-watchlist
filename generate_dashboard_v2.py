@@ -409,7 +409,7 @@ html = '''<!DOCTYPE html>
     <table class="main-table" id="main-table">
         <thead>
             <tr>
-                <th data-sort="signal" title="Action: BUY (IRR≥15%), HOLD (10-15%), TRIM (<10%)">Signal</th>
+                <th data-sort="signal" title="BUY (IRR ≥ 20%), HOLD (IRR 12-20%)">Signal</th>
                 <th data-sort="ticker" title="Stock symbol">Ticker</th>
                 <th data-sort="name" title="Company name">Company</th>
                 <th data-sort="model" title="Valuation: Compounder, Platform, Mature, Ex-Goodwill, DCF-Fade, Standard">Model</th>
@@ -421,7 +421,7 @@ html = '''<!DOCTYPE html>
                 <th data-sort="growth" title="Revenue 3Y CAGR = (Rev_now / Rev_3y_ago)^(1/3) - 1">Growth</th>
                 <th data-sort="irr" class="sorted-desc" title="Implied IRR = Base Yield + Sustainable Growth. Your expected annual return">IRR</th>
                 <th data-sort="price" title="Current stock price">Price</th>
-                <th data-sort="target" title="Price target where IRR = 10% (fair value)">Target</th>
+                <th data-sort="target" title="Price target = Current Price × (1 + IRR)">Target</th>
                 <th data-sort="mcap" title="Market capitalization">MCap</th>
             </tr>
         </thead>
