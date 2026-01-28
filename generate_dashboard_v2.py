@@ -100,10 +100,15 @@ def passes_filters(t):
     vcr_pass = vcr >= 1.0
     
     # Growth Override: High-growth disruptors get a pass on low VCR
-    # If company is growing fast with high margins, they're reinvesting, not a trap
     growth_override = (growth >= 0.15 and gm >= 0.70)
     if growth_override and not vcr_pass:
-        vcr_pass = True  # Override VCR requirement for high-growth companies
+        vcr_pass = True
+    
+    # Value Trap Filter: VCR < 1.2 AND declining trend (unless growth override)
+    trend = t.get("roic_trend", 0) or 0
+    is_value_trap = (vcr < 1.2 and trend < -0.10 and not growth_override)
+    if is_value_trap:
+        vcr_pass = False  # Force fail for value traps
     
     return roic_pass and gm >= 0.60 and fcf_pass and growth >= 0.09 and capex_pass and leverage <= 3.0 and inc_roic_pass and vcr_pass
 
