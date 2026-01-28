@@ -30,7 +30,7 @@ class TickerNormalizer:
         'BF': ['A', 'B'],       # Brown-Forman
         'MOG': ['A', 'B'],      # Moog Inc
         'LEN': ['A', 'B'],      # Lennar
-        'GOOG': ['L'],          # Alphabet (GOOGL)
+        # 'GOOG': ['L'],        # REMOVED - GOOGL is the actual ticker, not GOOG class L
         'HEI': ['A'],           # HEICO
         'FOX': ['A'],           # Fox Corp
         'LBRDA': ['K'],         # Liberty Broadband
