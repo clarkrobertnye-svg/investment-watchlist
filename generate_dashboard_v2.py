@@ -198,8 +198,25 @@ for t in tickers_data:
     else:
         t["signal"] = "OFF"
 
-# Filter to displayable (IRR >= 12% and VCR >= 1.0)
-displayable = [t for t in tickers_data if t.get("model_irr", 0) >= 0.12 and t.get("value_creation_ratio", 0) >= 1.0]
+# Filter to displayable (IRR >= 12% and VCR >= 1.0, excluding value traps)
+def is_displayable(t):
+    irr = t.get("model_irr", 0) or 0
+    vcr = t.get("value_creation_ratio", 0) or 0
+    trend = t.get("roic_trend", 0) or 0
+    growth = t.get("revenue_growth_3y", 0) or 0
+    gm = t.get("gross_margin", 0) or 0
+    
+    # Basic requirements
+    if irr < 0.12 or vcr < 1.0:
+        return False
+    
+    # Value Trap Filter: VCR < 1.2 AND declining trend (unless high-growth override)
+    growth_override = (growth >= 0.15 and gm >= 0.70)
+    is_value_trap = (vcr < 1.2 and trend < -0.10 and not growth_override)
+    
+    return not is_value_trap
+
+displayable = [t for t in tickers_data if is_displayable(t)]
 displayable_sorted = sorted(displayable, key=lambda x: x.get("model_irr", 0), reverse=True)
 
 buy_positions = [t for t in displayable if t["signal"] == "BUY"]
