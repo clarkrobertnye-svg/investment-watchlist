@@ -198,8 +198,141 @@ for t in tickers_data:
     else:
         t["signal"] = "OFF"
 
+# =============================================================================
+# FINANCIAL SECTOR FILTER
+# Banks/Insurance use different capital structures - ROIC doesn't apply
+# =============================================================================
+EXCLUDE_INDUSTRIES = [
+    'Banks - Diversified', 'Banks - Regional', 'Banks',
+    'Insurance - Life', 'Insurance - Property & Casualty', 
+    'Insurance - Diversified', 'Insurance - Reinsurance', 'Insurance - Specialty',
+    'Healthcare Plans',  # Managed care (ANTM/Elevance) - acts like insurance
+    'Asset Management',  # RTBBF - balance sheet distorts ROIC
+    # Cyclical commodities - not compounders
+    'Oil & Gas Exploration & Production',
+    'Oil & Gas Integrated', 
+    'Oil & Gas Refining & Marketing',
+    'Gold', 'Silver', 'Copper', 'Steel',
+    'Coal', 'Uranium',
+]
+
+# Keep these even if in commodity-adjacent sectors (equipment/royalty/services)
+COMMODITY_EXCEPTIONS = ['TPL', 'GZPZY', 'GZPZF']  # Royalty/equipment, not extractors
+
+# Platform financials - ROIC is valid (toll-booth/data businesses)
+PLATFORM_FINANCIALS = ['V', 'MA', 'SPGI', 'MSCI', 'MCO', 'CME', 'ICE', 'NDAQ', 'MKTX', 'HLNE', 'PAX', 'AXP']
+
+# Capital allocators - keep but flag differently  
+ALLOCATORS = ['BRK-A', 'BRK-B', 'MKL', 'GOOGL', 'GOOG', 'TYL', 'GE', 'META', 'CSU.TO']
+
+# Explicit exclusions (data quality issues, sanctioned, or structural misfits)
+EXPLICIT_EXCLUDE = [
+    'ANTM', 'ELV',      # Elevance Health - managed care/insurance
+    'OAOFY',            # Tatneft - Russian sanctioned, broken data
+    'JPM', 'BAC', 'WFC', 'C', 'GS', 'MS',  # Major banks - ROIC doesn't apply
+    'AEL',              # American Equity - insurance
+    'QBEIF',            # QBE Insurance
+]
+
+# Data quality filters - exclude obviously broken data
+def has_bad_data(t):
+    """Return True if ticker has obviously broken/impossible data"""
+    roic = (t.get('roic_current') or 0)
+    vcr = t.get('value_creation_ratio', 0) or 0
+    fcf_yield = t.get('fcf_yield', 0) or 0
+    ent_yield = t.get('enterprise_yield', 0) or 0
+    fcf = t.get('free_cash_flow')
+    
+    # ROIC > 300% is almost always a data error
+    if roic > 3.0:
+        return True
+    
+    # VCR > 30x is unrealistic
+    if vcr > 30:
+        return True
+    
+    # Yield > 20% is almost always broken data
+    if fcf_yield > 0.20 or ent_yield > 0.20:
+        return True
+    
+    # Null FCF with high yield (>15%) = suspicious, exclude
+    # (Many good companies have null FCF due to FMP data gaps)
+    if fcf is None and fcf_yield > 0.15:
+        return True
+    
+    return False
+
+def is_excluded_financial(t):
+    """Return True if ticker should be excluded (bank/insurance/commodity with invalid ROIC)"""
+    ticker = t.get('ticker', '')
+    industry = t.get('industry', '')
+    
+    # Explicit exclusions
+    if ticker in EXPLICIT_EXCLUDE:
+        return True
+    
+    # Always keep platform financials, allocators, and commodity exceptions
+    if ticker in PLATFORM_FINANCIALS or ticker in ALLOCATORS or ticker in COMMODITY_EXCEPTIONS:
+        return False
+    
+    # Exclude banks, insurance, and cyclical commodities
+    for excl in EXCLUDE_INDUSTRIES:
+        if excl.lower() in industry.lower():
+            return True
+    
+    return False
+
+def is_serial_acquirer(t):
+    """Identify Berkshire-style serial acquirers"""
+    goodwill = t.get('goodwill', 0) or 0
+    total_assets = t.get('total_assets', 1) or 1
+    growth = t.get('revenue_growth_3y', 0) or 0
+    
+    gw_to_assets = goodwill / total_assets if total_assets > 0 else 0
+    
+    # Serial acquirer: >25% goodwill/assets AND >12% growth
+    return gw_to_assets > 0.25 and growth > 0.12
+
+def is_turnaround(t):
+    """Identify companies that just turned profitable (near-zero denominator issue)"""
+    roic_3y = t.get('roic_3y_avg', 0) or 0
+    roic_curr = t.get('roic_current', 0) or 0
+    trend = t.get('roic_trend', 0) or 0
+    
+    # Turnaround: 3Y avg ROIC < 2% but current ROIC > 10%, OR trend > 500%
+    if roic_3y < 0.02 and roic_curr > 0.10:
+        return True
+    if trend > 5.0:  # 500% trend
+        return True
+    return False
+
+def cap_roic_for_display(roic):
+    """Cap ROIC at 150% for display - no company reinvests infinitely at 400%"""
+    if roic > 1.50:
+        return 1.50
+    return roic
+
+# Tag special cases
+for t in tickers_data:
+    t['is_serial_acquirer'] = is_serial_acquirer(t)
+    t['is_excluded_financial'] = is_excluded_financial(t)
+    t['is_turnaround'] = is_turnaround(t)
+    
+    # Cap extreme ROICs for display
+    roic_curr = t.get('roic_current', 0) or 0
+    t['roic_display'] = cap_roic_for_display(roic_curr)
+    t['roic_capped'] = roic_curr > 1.50
+
 # Filter to displayable (IRR >= 12% and VCR >= 1.0, excluding value traps)
 def is_displayable(t):
+    # Exclude banks/insurance
+    if t.get('is_excluded_financial', False):
+        return False
+    
+    # Exclude broken data
+    if has_bad_data(t):
+        return False
+    
     irr = t.get("model_irr", 0) or 0
     vcr = t.get("value_creation_ratio", 0) or 0
     trend = t.get("roic_trend", 0) or 0
@@ -211,6 +344,10 @@ def is_displayable(t):
         return False
     
     # Value Trap Filter: VCR < 1.2 AND declining trend (unless high-growth override)
+    # Serial acquirers and turnarounds get a pass on the value trap filter
+    if t.get('is_serial_acquirer', False) or t.get('is_turnaround', False):
+        return True
+    
     growth_override = (growth >= 0.15 and gm >= 0.70)
     is_value_trap = (vcr < 1.2 and trend < -0.10 and not growth_override)
     
@@ -320,8 +457,29 @@ html = '''<!DOCTYPE html>
         .summary-card .label { color: #888; margin-top: 5px; }
         
         table.main-table { width: 100%; border-collapse: collapse; background: #1a1a2e; border-radius: 12px; overflow: hidden; }
-        table.main-table th { background: #16213e; color: #00d4aa; padding: 10px 4px; text-align: left; font-weight: 600; font-size: 0.65em; cursor: pointer; white-space: nowrap; }
-        table.main-table th:hover { background: #1a2a3e; }
+        table.main-table th { background: #16213e; color: #00d4aa; padding: 10px 4px; text-align: left; font-weight: 600; font-size: 0.65em; cursor: pointer; white-space: nowrap; position: relative; }
+        table.main-table th:hover { background: #1a2a3e; color: #00ff88; }
+        table.main-table th[title]:hover::after {
+            content: attr(title);
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #0a0a0f;
+            color: #00d4aa;
+            padding: 10px 14px;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: normal;
+            max-width: 300px;
+            white-space: normal;
+            z-index: 1000;
+            border: 1px solid #00d4aa;
+            box-shadow: 0 4px 12px rgba(0,212,170,0.3);
+            text-align: left;
+            line-height: 1.4;
+            margin-top: 5px;
+        }
         table.main-table th.sorted-asc::after { content: " ▲"; }
         table.main-table th.sorted-desc::after { content: " ▼"; }
         table.main-table td { padding: 8px 4px; border-bottom: 1px solid #2a2a3e; font-size: 0.7em; }
@@ -451,8 +609,14 @@ for t in displayable_sorted:
     name = t.get("company_name", "")[:16]
     model = t.get("val_model", "")
     signal = t.get("signal", "")
-    roic = (t.get("roic_current") or t.get("roic_3y_avg") or 0) * 100
-    vcr = t.get("value_creation_ratio", 0)
+    roic_raw = (t.get("roic_current") or t.get("roic_3y_avg") or 0) * 100
+    roic_capped = t.get("roic_capped", False)
+    roic = min(roic_raw, 150)  # Cap at 150% for display
+    roic_display = f"{roic:.0f}%+" if roic_capped else f"{roic:.0f}%"
+    vcr_raw = t.get("value_creation_ratio", 0)
+    vcr = min(vcr_raw, 15.0)  # Cap VCR at 15x for display
+    vcr_capped = vcr_raw > 15.0
+    vcr_display = f"{vcr:.1f}x+" if vcr_capped else f"{vcr:.1f}x"
     wacc = t.get("wacc", 0.10)
     spread = (t.get("roic_current") or 0) - wacc
     spread_pct = spread * 100
@@ -468,6 +632,7 @@ for t in displayable_sorted:
     align_score = t.get("alignment_score", 0) or 0
     align_tier = t.get("alignment_tier", "C") or "C"
     align_emoji = t.get("alignment_emoji", "⚪") or "⚪"
+    is_turnaround = t.get("is_turnaround", False)
     
     row_class = "buy-row" if signal == "BUY" else ""
     irr_class = "irr-high" if irr >= 20 else "irr-mid"
@@ -478,6 +643,8 @@ for t in displayable_sorted:
     # Use emoji with tier in tooltip
     align_css_class = align_tier.replace("+", "plus")  # B+ -> Bplus for CSS
     align_display = f'<span class="align-badge align-{align_css_class}" title="Management Alignment: {align_tier} ({align_score:.0f}/100)">{align_emoji}</span>'
+    # Add turnaround indicator to model
+    model_display = f"{model}*" if is_turnaround else model
     
     html += f'''
             <tr class="{row_class}" data-ticker="{ticker}" data-name="{name}" data-model="{model}" data-signal="{signal}" data-roic="{roic}" data-vcr="{vcr}" data-spread="{spread_pct}" data-trend="{trend}" data-gm="{gm}" data-growth="{growth}" data-irr="{irr}" data-price="{price}" data-target="{target}" data-mcap="{mcap}" data-hidden="{1 if hidden else 0}" data-align="{align_score}">
@@ -486,9 +653,9 @@ for t in displayable_sorted:
                 <td class="align-cell">{align_display}</td>
                 <td class="ticker">{ticker}</td>
                 <td>{name}</td>
-                <td><span class="model-tag">{model}</span></td>
-                <td>{roic:.0f}%</td>
-                <td class="{vcr_class}">{vcr:.1f}x</td>
+                <td><span class="model-tag">{model_display}</span></td>
+                <td>{roic_display}</td>
+                <td class="{vcr_class}">{vcr_display}</td>
                 <td class="{spread_class}">{spread_pct:+.0f}%</td>
                 <td class="{trend_class}">{trend:+.0f}%</td>
                 <td>{gm:.0f}%</td>
