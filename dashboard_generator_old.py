@@ -1,0 +1,1126 @@
+"""
+Capital Compounder Investment System - Interactive Dashboard Generator
+Creates a mobile-friendly HTML dashboard for Mac + iPhone viewing.
+
+Features:
+- Responsive design (works on desktop and mobile)
+- Sort by any column
+- Filter by tier, sector, action signal
+- Expandable company details
+- IRR-based price targets
+- Dark mode support
+"""
+
+import json
+from datetime import datetime
+from pathlib import Path
+
+
+def generate_dashboard(json_file: str, output_file: str = "dashboard.html"):
+    """Generate interactive HTML dashboard from JSON data."""
+    
+    with open(json_file, "r") as f:
+        data = json.load(f)
+    
+    html = generate_html(data)
+    
+    with open(output_file, "w") as f:
+        f.write(html)
+    
+    print(f"✅ Dashboard generated: {output_file}")
+    return output_file
+
+
+def generate_html(data: dict) -> str:
+    """Generate the complete HTML dashboard."""
+    
+    summary = data.get("summary", {})
+    companies = data.get("companies", [])
+    generated_at = data.get("generated_at", datetime.now().isoformat())
+    
+    # Generate company rows
+    company_rows = ""
+    for c in companies:
+        ticker = c.get("ticker", "")
+        name = c.get("name", "")
+        tier = c.get("tier_label", "")
+        score = c.get("total_score", 0)
+        sector = c.get("sector", "")
+        
+        metrics = c.get("metrics", {})
+        valuation = c.get("valuation", {})
+        scores = c.get("scores", {})
+        
+        inc_roic = metrics.get("incremental_roic")
+        inc_roic_str = f"{inc_roic*100:.1f}%" if inc_roic else "N/A"
+        
+        growth = metrics.get("revenue_growth_3y")
+        growth_str = f"{growth*100:.1f}%" if growth else "N/A"
+        
+        fcf_conv = metrics.get("fcf_conversion")
+        fcf_str = f"{fcf_conv*100:.0f}%" if fcf_conv else "N/A"
+        
+        vcr = metrics.get("value_creation_ratio", 0) or 0
+        vcr_str = f"{vcr:.1f}x" if vcr else "N/A"
+        
+        roic = metrics.get("incremental_roic", 0) or 0
+        roic_str = f"{roic*100:.0f}%" if roic else "N/A"
+        
+        spread = metrics.get("economic_profit_spread", 0) or 0
+        spread_str = f"{spread*100:.0f}%" if spread else "N/A"
+        
+        price = valuation.get("current_price", 0) or 0
+        irr = valuation.get("implied_irr", 0) or 0
+        mos = valuation.get("margin_of_safety", 0) or 0
+        action = valuation.get("action_signal", "HOLD")
+        
+        buy15 = valuation.get("buy_15_price", 0) or 0
+        buy12 = valuation.get("buy_12_price", 0) or 0
+        intrinsic = valuation.get("intrinsic_value", 0) or 0
+        
+        # Determine action class for styling
+        action_class = "action-buy" if action == "BUY" else "action-hold"
+        
+        tier_class = {
+            "EXCEPTIONAL": "tier-exceptional",
+            "ELITE": "tier-elite",
+            "QUALITY": "tier-quality",
+        }.get(tier, "tier-review")
+        
+        company_rows += f'''
+        <tr class="company-row" data-ticker="{ticker}" data-tier="{tier}" data-sector="{sector}" data-action="{action}" data-irr="{irr}" data-mos="{mos}">
+            <td class="ticker-cell">
+                <span class="ticker">{ticker}</span>
+                <span class="company-name">{name[:25]}{'...' if len(name) > 25 else ''}</span>
+            </td>
+            <td class="metric-cell">{roic_str}</td>
+            <td class="metric-cell">{vcr_str}</td>
+            <td class="metric-cell">{spread_str}</td>
+            <td class="irr-cell"><span class="irr-value">{irr*100:.0f}%</span></td>
+            <td class="price-cell">${price:.2f}</td>
+            <td><span class="action-badge {action_class}">{action}</span></td>
+        </tr>
+        '''
+    
+    html = f'''<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Capital Compounders Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {{
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-tertiary: #1a1a25;
+            --bg-card: #15151f;
+            --text-primary: #f0f0f5;
+            --text-secondary: #8888a0;
+            --text-muted: #555566;
+            --accent-green: #00d9a0;
+            --accent-blue: #3b82f6;
+            --accent-amber: #f59e0b;
+            --accent-red: #ef4444;
+            --accent-purple: #a855f7;
+            --border-color: #2a2a3a;
+            --shadow: 0 4px 20px rgba(0,0,0,0.4);
+        }}
+        
+        * {{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }}
+        
+        body {{
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.5;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+        }}
+        
+        .container {{
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1rem;
+        }}
+        
+        /* Header */
+        header {{
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1.5rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }}
+        
+        .header-content {{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }}
+        
+        h1 {{
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }}
+        
+        .subtitle {{
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }}
+        
+        /* Summary Cards */
+        .summary-grid {{
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 0.75rem;
+            margin: 1.5rem 0;
+        }}
+        
+        @media (max-width: 900px) {{
+            .summary-grid {{
+                grid-template-columns: repeat(3, 1fr);
+            }}
+        }}
+        
+        @media (max-width: 500px) {{
+            .summary-grid {{
+                grid-template-columns: repeat(2, 1fr);
+            }}
+        }}
+        
+        .summary-card {{
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 0.875rem 0.5rem;
+            text-align: center;
+        }}
+        
+        .summary-value {{
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: var(--accent-green);
+        }}
+        
+        .summary-label {{
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-top: 0.25rem;
+        }}
+        
+        .summary-card.portfolio-irr .summary-value {{ color: var(--accent-green); }}
+        .summary-card.spy-irr .summary-value {{ color: var(--text-secondary); }}
+        .summary-card.portfolio-growth .summary-value {{ color: var(--accent-green); }}
+        .summary-card.spy-growth .summary-value {{ color: var(--text-secondary); }}
+        .summary-card.ust-yield .summary-value {{ color: var(--text-muted); }}
+        .summary-card.fed-funds .summary-value {{ color: var(--text-muted); }}
+        
+        /* Tooltip styles for column headers */
+        th[title] {{
+            cursor: help;
+            position: relative;
+        }}
+        th[title]:hover::after {{
+            content: attr(title);
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--bg-tertiary);
+            color: var(--text-primary);
+            padding: 0.5rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 400;
+            white-space: nowrap;
+            z-index: 1000;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow);
+        }}
+        
+        /* Hidden compounder badge */
+        .hidden-compounder {{
+            background: linear-gradient(135deg, #f59e0b, #eab308);
+            color: #000;
+            padding: 0.125rem 0.375rem;
+            border-radius: 4px;
+            font-size: 0.65rem;
+            font-weight: 600;
+            margin-left: 0.25rem;
+        }}
+        
+        /* Filter label */
+        .filter-label {{
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            margin-right: 0.5rem;
+        }}
+        
+        /* Filter divider */
+        .filter-divider {{
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            padding: 0 0.25rem;
+        }}
+        
+        /* Action-colored filter buttons */
+        .action-buy-btn {{ border-color: var(--accent-green) !important; color: var(--accent-green) !important; }}
+        .action-buy-btn.active {{ background: var(--accent-green) !important; color: white !important; }}
+        .action-add-btn {{ border-color: var(--accent-blue) !important; color: var(--accent-blue) !important; }}
+        .action-add-btn.active {{ background: var(--accent-blue) !important; color: white !important; }}
+        .action-hold-btn {{ border-color: var(--accent-amber) !important; color: var(--accent-amber) !important; }}
+        .action-hold-btn.active {{ background: var(--accent-amber) !important; color: white !important; }}
+        .action-sell-btn {{ border-color: var(--accent-red) !important; color: var(--accent-red) !important; }}
+        .action-sell-btn.active {{ background: var(--accent-red) !important; color: white !important; }}
+        
+        /* Ticker Check Section */
+        .ticker-check-section {{
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.25rem;
+            margin-bottom: 1.5rem;
+        }}
+        
+        .ticker-check-header {{
+            margin-bottom: 1rem;
+        }}
+        
+        .ticker-check-header h3 {{
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 0 0 0.25rem 0;
+        }}
+        
+        .ticker-check-subtitle {{
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin: 0;
+        }}
+        
+        .ticker-check-input-row {{
+            display: flex;
+            gap: 0.75rem;
+            margin-bottom: 0.5rem;
+        }}
+        
+        .ticker-input {{
+            flex: 1;
+            max-width: 200px;
+            padding: 0.625rem 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            background: var(--bg-tertiary);
+            color: var(--text-primary);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }}
+        
+        .ticker-input:focus {{
+            outline: none;
+            border-color: var(--accent-blue);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+        }}
+        
+        .ticker-input::placeholder {{
+            color: var(--text-muted);
+            text-transform: none;
+        }}
+        
+        .check-ticker-btn {{
+            padding: 0.625rem 1.25rem;
+            background: var(--accent-blue);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }}
+        
+        .check-ticker-btn:hover {{
+            background: #2563eb;
+            transform: translateY(-1px);
+        }}
+        
+        .check-ticker-btn:disabled {{
+            background: var(--text-muted);
+            cursor: not-allowed;
+            transform: none;
+        }}
+        
+        .ticker-result {{
+            margin-top: 1rem;
+            padding: 1rem;
+            background: var(--bg-card);
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }}
+        
+        .ticker-result.hidden {{
+            display: none;
+        }}
+        
+        .ticker-result-header {{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid var(--border-color);
+        }}
+        
+        .ticker-result-name {{
+            font-size: 1.1rem;
+            font-weight: 600;
+        }}
+        
+        .ticker-result-action {{
+            padding: 0.375rem 0.75rem;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 0.85rem;
+        }}
+        
+        .ticker-result-action.buy {{ background: rgba(0, 217, 160, 0.2); color: var(--accent-green); }}
+        .ticker-result-action.add {{ background: rgba(59, 130, 246, 0.2); color: var(--accent-blue); }}
+        .ticker-result-action.hold {{ background: rgba(245, 158, 11, 0.2); color: var(--accent-amber); }}
+        .ticker-result-action.sell {{ background: rgba(239, 68, 68, 0.2); color: var(--accent-red); }}
+        
+        .ticker-result-grid {{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 1rem;
+        }}
+        
+        .ticker-result-metric {{
+            text-align: center;
+        }}
+        
+        .ticker-result-metric-value {{
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }}
+        
+        .ticker-result-metric-label {{
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-top: 0.25rem;
+        }}
+        
+        .ticker-result-note {{
+            margin-top: 1rem;
+            padding-top: 0.75rem;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }}
+        
+        .ticker-result-error {{
+            color: var(--accent-red);
+            text-align: center;
+            padding: 1rem;
+        }}
+        
+        .ticker-result-loading {{
+            text-align: center;
+            color: var(--text-muted);
+            padding: 1rem;
+        }}
+        
+        /* Definitions Section */
+        .definitions {{
+            margin-top: 2rem;
+            padding: 1.25rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+        }}
+        
+        .definitions h4 {{
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1rem;
+        }}
+        
+        .definitions-grid {{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 0.75rem;
+        }}
+        
+        .def-item {{
+            display: flex;
+            gap: 0.5rem;
+            font-size: 0.8rem;
+            line-height: 1.4;
+        }}
+        
+        .def-term {{
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 600;
+            color: var(--text-primary);
+            white-space: nowrap;
+        }}
+        
+        .def-desc {{
+            color: var(--text-muted);
+        }}
+        
+        @media (max-width: 600px) {{
+            .definitions-grid {{
+                grid-template-columns: 1fr;
+            }}
+        }}
+        
+        /* Filters */
+        .filters {{
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }}
+        
+        .filter-btn {{
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--border-color);
+            background: var(--bg-tertiary);
+            color: var(--text-secondary);
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.875rem;
+            transition: all 0.2s;
+        }}
+        
+        .filter-btn:hover {{
+            border-color: var(--accent-blue);
+            color: var(--text-primary);
+        }}
+        
+        .filter-btn.active {{
+            background: var(--accent-blue);
+            border-color: var(--accent-blue);
+            color: white;
+        }}
+        
+        /* Table */
+        .table-container {{
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            background: var(--bg-card);
+        }}
+        
+        table {{
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.875rem;
+        }}
+        
+        th {{
+            background: var(--bg-tertiary);
+            padding: 0.875rem 0.75rem;
+            text-align: left;
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+            position: sticky;
+            top: 0;
+            cursor: pointer;
+            white-space: nowrap;
+            border-bottom: 1px solid var(--border-color);
+        }}
+        
+        th:hover {{
+            color: var(--text-primary);
+            background: var(--bg-secondary);
+        }}
+        
+        td {{
+            padding: 0.75rem;
+            border-bottom: 1px solid var(--border-color);
+            vertical-align: middle;
+        }}
+        
+        tr:last-child td {{
+            border-bottom: none;
+        }}
+        
+        tr:hover {{
+            background: var(--bg-tertiary);
+        }}
+        
+        /* Cell styles */
+        .ticker-cell {{
+            min-width: 120px;
+        }}
+        
+        .ticker {{
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 600;
+            color: var(--text-primary);
+            display: block;
+        }}
+        
+        .company-name {{
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            display: block;
+            margin-top: 2px;
+        }}
+        
+        .score-cell {{
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 600;
+        }}
+        
+        .metric-cell {{
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--text-secondary);
+        }}
+        
+        .price-cell {{
+            font-family: 'JetBrains Mono', monospace;
+        }}
+        
+        .irr-cell {{
+            font-family: 'JetBrains Mono', monospace;
+        }}
+        
+        .irr-value {{
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            background: var(--bg-tertiary);
+        }}
+        
+        .mos-cell {{
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--accent-green);
+        }}
+        
+        /* Badges */
+        .tier-badge, .action-badge {{
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }}
+        
+        .tier-exceptional {{
+            background: rgba(168, 85, 247, 0.2);
+            color: var(--accent-purple);
+            border: 1px solid rgba(168, 85, 247, 0.3);
+        }}
+        
+        .tier-elite {{
+            background: rgba(59, 130, 246, 0.2);
+            color: var(--accent-blue);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+        }}
+        
+        .tier-quality {{
+            background: rgba(136, 136, 160, 0.2);
+            color: var(--text-secondary);
+            border: 1px solid rgba(136, 136, 160, 0.3);
+        }}
+        
+        .action-buy {{
+            background: rgba(0, 217, 160, 0.2);
+            color: var(--accent-green);
+            border: 1px solid rgba(0, 217, 160, 0.3);
+        }}
+        
+        .action-add {{
+            background: rgba(59, 130, 246, 0.2);
+            color: var(--accent-blue);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+        }}
+        
+        .action-hold {{
+            background: rgba(245, 158, 11, 0.15);
+            color: var(--accent-amber);
+            border: 1px solid rgba(245, 158, 11, 0.2);
+        }}
+        
+        .action-sell {{
+            background: rgba(239, 68, 68, 0.2);
+            color: var(--accent-red);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+        }}
+        
+        /* Targets */
+        .targets-cell {{
+            white-space: nowrap;
+        }}
+        
+        .target {{
+            display: inline-block;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            padding: 0.125rem 0.375rem;
+            margin-right: 0.25rem;
+            border-radius: 3px;
+        }}
+        
+        .target.buy15 {{
+            background: rgba(0, 217, 160, 0.15);
+            color: var(--accent-green);
+        }}
+        
+        .target.buy12 {{
+            background: rgba(245, 158, 11, 0.15);
+            color: var(--accent-amber);
+        }}
+        
+        /* Footer */
+        footer {{
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-size: 0.75rem;
+        }}
+        
+        /* Mobile optimizations */
+        @media (max-width: 768px) {{
+            .container {{
+                padding: 0.5rem;
+            }}
+            
+            h1 {{
+                font-size: 1.25rem;
+            }}
+            
+            .summary-grid {{
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.5rem;
+            }}
+            
+            .summary-card {{
+                padding: 0.75rem;
+            }}
+            
+            .summary-value {{
+                font-size: 1.5rem;
+            }}
+            
+            table {{
+                font-size: 0.8rem;
+            }}
+            
+            th, td {{
+                padding: 0.5rem 0.375rem;
+            }}
+            
+            .company-name {{
+                display: none;
+            }}
+            
+            .filters {{
+                padding: 0.75rem;
+            }}
+            
+            .filter-btn {{
+                padding: 0.375rem 0.75rem;
+                font-size: 0.8rem;
+            }}
+        }}
+        
+        /* Scroll shadows */
+        .table-container {{
+            position: relative;
+        }}
+        
+        .table-container::after {{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 30px;
+            background: linear-gradient(to left, var(--bg-card), transparent);
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }}
+        
+        .table-container.scrollable::after {{
+            opacity: 1;
+        }}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div>
+                <h1>Capital Compounders</h1>
+                <p class="subtitle">Investment Screening Dashboard • Updated {generated_at[:10]}</p>
+            </div>
+        </div>
+    </header>
+    
+    <main class="container">
+        <div class="summary-grid">
+            <div class="summary-card portfolio-irr">
+                <div class="summary-value">{summary.get('portfolio_avg_irr', 0):.1f}%</div>
+                <div class="summary-label">Portfolio IRR</div>
+            </div>
+            <div class="summary-card spy-irr">
+                <div class="summary-value">{summary.get('spy_irr', 9.5):.1f}%</div>
+                <div class="summary-label">S&P 500 IRR</div>
+            </div>
+            <div class="summary-card portfolio-growth">
+                <div class="summary-value">{summary.get('portfolio_avg_growth', 0):.0f}%</div>
+                <div class="summary-label">Portfolio Growth</div>
+            </div>
+            <div class="summary-card spy-growth">
+                <div class="summary-value">{summary.get('spy_growth', 6):.0f}%</div>
+                <div class="summary-label">S&P 500 Growth</div>
+            </div>
+            <div class="summary-card ust-yield">
+                <div class="summary-value">{summary.get('ust_10y', 4.2):.1f}%</div>
+                <div class="summary-label">10Y Treasury</div>
+            </div>
+            <div class="summary-card fed-funds">
+                <div class="summary-value">{summary.get('fed_funds', 3.6):.1f}%</div>
+                <div class="summary-label">Fed Funds</div>
+            </div>
+        </div>
+        
+        <div class="filters">
+            <span class="filter-label">Filter:</span>
+            <button class="filter-btn action-buy-btn active" data-filter="action" data-value="BUY">BUY</button>
+            <button class="filter-btn action-hold-btn" data-filter="action" data-value="HOLD">HOLD</button>
+            <button class="filter-btn" data-filter="all">All</button>
+        </div>
+        
+        <!-- Manual Ticker Check -->
+        <div class="ticker-check-section">
+            <div class="ticker-check-header">
+                <h3>📊 Check Any Ticker</h3>
+                <p class="ticker-check-subtitle">Enter a ticker to run through our valuation model</p>
+            </div>
+            <div class="ticker-check-input-row">
+                <input type="text" id="ticker-input" class="ticker-input" placeholder="Enter ticker (e.g., AAPL)" maxlength="5" />
+                <button id="check-ticker-btn" class="check-ticker-btn">Analyze</button>
+            </div>
+            <div id="ticker-result" class="ticker-result hidden">
+                <!-- Results populated by JavaScript -->
+            </div>
+        </div>
+        
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th data-sort="ticker">Ticker</th>
+                        <th data-sort="roic">ROIC</th>
+                        <th data-sort="vcr">VCR</th>
+                        <th data-sort="spread">Spread</th>
+                        <th data-sort="irr">IRR</th>
+                        <th data-sort="price">Price</th>
+                        <th data-sort="action">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {company_rows}
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="definitions">
+            <h4>Definitions</h4>
+            <div class="definitions-grid">
+                <div class="def-item"><span class="def-term">Portfolio IRR</span> <span class="def-desc">Equal-weighted average implied return of our picks at current prices</span></div>
+                <div class="def-item"><span class="def-term">S&P 500 IRR</span> <span class="def-desc">Implied return of S&P 500 (earnings yield + expected growth)</span></div>
+                <div class="def-item"><span class="def-term">Portfolio Growth</span> <span class="def-desc">Equal-weighted average 3-year revenue CAGR of our picks</span></div>
+                <div class="def-item"><span class="def-term">S&P 500 Growth</span> <span class="def-desc">Average revenue growth rate of S&P 500 companies (~6%)</span></div>
+                <div class="def-item"><span class="def-term">10Y Treasury</span> <span class="def-desc">Yield on 10-year U.S. Treasury bonds — long-term risk-free rate</span></div>
+                <div class="def-item"><span class="def-term">Fed Funds</span> <span class="def-desc">Federal Reserve target rate — proxy for cash and money market yields</span></div>
+                <div class="def-item"><span class="def-term">Inc ROIC</span> <span class="def-desc">Incremental Return on Invested Capital — return on each new dollar invested</span></div>
+                <div class="def-item"><span class="def-term">Growth</span> <span class="def-desc">3-Year Revenue CAGR — compound annual growth rate of revenue</span></div>
+                <div class="def-item"><span class="def-term">IRR</span> <span class="def-desc">Implied Internal Rate of Return — expected annual return at current price</span></div>
+                <div class="def-item"><span class="def-term">MOS</span> <span class="def-desc">Margin of Safety — discount to our calculated fair value</span></div>
+                <div class="def-item"><span class="def-term">Buy Below</span> <span class="def-desc">Price target for 15% expected IRR</span></div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>Capital Compounder Investment System v1.0</p>
+        <p>Based on Investment Charter • clarkrobertnye@gmail.com</p>
+    </footer>
+    
+    <script>
+        // Filter functionality
+        document.querySelectorAll('.filter-btn').forEach(btn => {{
+            btn.addEventListener('click', function() {{
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                const filter = this.dataset.filter;
+                const value = this.dataset.value;
+                
+                document.querySelectorAll('.company-row').forEach(row => {{
+                    if (filter === 'all') {{
+                        row.style.display = '';
+                    }} else if (filter === 'tier') {{
+                        row.style.display = row.dataset.tier === value ? '' : 'none';
+                    }} else if (filter === 'action') {{
+                        row.style.display = row.dataset.action === value ? '' : 'none';
+                    }}
+                }});
+            }});
+        }});
+        
+        // Sort functionality
+        document.querySelectorAll('th[data-sort]').forEach(th => {{
+            th.addEventListener('click', function() {{
+                const table = this.closest('table');
+                const tbody = table.querySelector('tbody');
+                const rows = Array.from(tbody.querySelectorAll('tr'));
+                const sortKey = this.dataset.sort;
+                const isAsc = this.classList.contains('sort-asc');
+                
+                document.querySelectorAll('th').forEach(h => h.classList.remove('sort-asc', 'sort-desc'));
+                this.classList.add(isAsc ? 'sort-desc' : 'sort-asc');
+                
+                rows.sort((a, b) => {{
+                    let aVal, bVal;
+                    
+                    switch(sortKey) {{
+                        case 'ticker':
+                            aVal = a.dataset.ticker;
+                            bVal = b.dataset.ticker;
+                            break;
+                        case 'tier':
+                            const tierOrder = {{'EXCEPTIONAL': 0, 'ELITE': 1, 'QUALITY': 2, 'REVIEW': 3}};
+                            aVal = tierOrder[a.dataset.tier] || 4;
+                            bVal = tierOrder[b.dataset.tier] || 4;
+                            break;
+                        case 'action':
+                            const actionOrder = {{'BUY': 0, 'WATCH': 1, 'HOLD': 2, 'TRIM': 3}};
+                            aVal = actionOrder[a.dataset.action] || 4;
+                            bVal = actionOrder[b.dataset.action] || 4;
+                            break;
+                        default:
+                            const colIndex = Array.from(th.parentNode.children).indexOf(th);
+                            aVal = parseFloat(a.children[colIndex].textContent.replace(/[$%,]/g, '')) || 0;
+                            bVal = parseFloat(b.children[colIndex].textContent.replace(/[$%,]/g, '')) || 0;
+                    }}
+                    
+                    if (isAsc) {{
+                        return aVal > bVal ? -1 : aVal < bVal ? 1 : 0;
+                    }} else {{
+                        return aVal < bVal ? -1 : aVal > bVal ? 1 : 0;
+                    }}
+                }});
+                
+                rows.forEach(row => tbody.appendChild(row));
+            }});
+        }});
+        
+        // Check for horizontal scroll
+        const tableContainer = document.querySelector('.table-container');
+        function checkScroll() {{
+            if (tableContainer.scrollWidth > tableContainer.clientWidth) {{
+                tableContainer.classList.add('scrollable');
+            }} else {{
+                tableContainer.classList.remove('scrollable');
+            }}
+        }}
+        checkScroll();
+        window.addEventListener('resize', checkScroll);
+        
+        // Ticker Check Functionality
+        const tickerInput = document.getElementById('ticker-input');
+        const checkBtn = document.getElementById('check-ticker-btn');
+        const resultDiv = document.getElementById('ticker-result');
+        
+        // Sample data for demo (in production, this would call an API)
+        const sampleData = {{
+            'AAPL': {{ name: 'Apple Inc.', price: 245, irr: 9.2, mos: -5, action: 'HOLD', score: 68, incRoic: 28, growth: 8, iv: 232, tier: 'QUALITY' }},
+            'GOOGL': {{ name: 'Alphabet Inc.', price: 195, irr: 14.5, mos: 18, action: 'ADD', score: 72, incRoic: 32, growth: 14, iv: 230, tier: 'ELITE' }},
+            'AMZN': {{ name: 'Amazon.com Inc.', price: 225, irr: 16.2, mos: 22, action: 'BUY', score: 78, incRoic: 35, growth: 18, iv: 275, tier: 'ELITE' }},
+            'TSLA': {{ name: 'Tesla Inc.', price: 410, irr: 6.5, mos: -25, action: 'SELL', score: 55, incRoic: 18, growth: 12, iv: 328, tier: 'REVIEW' }},
+            'V': {{ name: 'Visa Inc.', price: 315, irr: 13.8, mos: 12, action: 'ADD', score: 82, incRoic: 42, growth: 11, iv: 353, tier: 'EXCEPTIONAL' }},
+            'JPM': {{ name: 'JPMorgan Chase', price: 245, irr: 0, mos: 0, action: 'EXCLUDED', score: 0, incRoic: 0, growth: 0, iv: 0, tier: 'EXCLUDED', note: 'Banks excluded from universe per investment charter' }},
+            'XOM': {{ name: 'Exxon Mobil', price: 118, irr: 0, mos: 0, action: 'EXCLUDED', score: 0, incRoic: 0, growth: 0, iv: 0, tier: 'EXCLUDED', note: 'Energy sector excluded from universe per investment charter' }},
+        }};
+        
+        // Also check if ticker is in our portfolio
+        const portfolioTickers = {{}};
+        document.querySelectorAll('.company-row').forEach(row => {{
+            const ticker = row.querySelector('.ticker')?.textContent;
+            if (ticker) portfolioTickers[ticker] = true;
+        }});
+        
+        function checkTicker() {{
+            const ticker = tickerInput.value.trim().toUpperCase();
+            if (!ticker) return;
+            
+            resultDiv.classList.remove('hidden');
+            resultDiv.innerHTML = '<div class="ticker-result-loading">⏳ Analyzing ' + ticker + '...</div>';
+            
+            // Simulate API delay
+            setTimeout(() => {{
+                // Check if in portfolio first
+                if (portfolioTickers[ticker]) {{
+                    const row = document.querySelector(`[data-ticker="${{ticker}}"]`);
+                    if (row) {{
+                        const data = {{
+                            name: row.querySelector('.company-name')?.textContent || ticker,
+                            action: row.dataset.action,
+                            irr: parseFloat(row.dataset.irr) || 0,
+                            mos: parseFloat(row.dataset.mos) || 0,
+                            tier: row.dataset.tier,
+                            inPortfolio: true
+                        }};
+                        displayResult(ticker, data);
+                        return;
+                    }}
+                }}
+                
+                // Check sample data
+                if (sampleData[ticker]) {{
+                    displayResult(ticker, sampleData[ticker]);
+                }} else {{
+                    resultDiv.innerHTML = `
+                        <div class="ticker-result-error">
+                            <p>⚠️ <strong>${{ticker}}</strong> not found in database</p>
+                            <p style="margin-top: 0.5rem; font-size: 0.8rem;">This ticker may not be in our coverage universe, or requires a data refresh.</p>
+                        </div>
+                    `;
+                }}
+            }}, 800);
+        }}
+        
+        function displayResult(ticker, data) {{
+            const actionClass = data.action.toLowerCase();
+            const actionEmoji = {{ 'buy': '🟢', 'add': '🔵', 'hold': '🟡', 'sell': '🔴', 'excluded': '⚫' }}[actionClass] || '';
+            
+            let noteHtml = '';
+            if (data.note) {{
+                noteHtml = `<div class="ticker-result-note">ℹ️ ${{data.note}}</div>`;
+            }} else if (data.inPortfolio) {{
+                noteHtml = `<div class="ticker-result-note">✅ This ticker is in your active portfolio</div>`;
+            }} else if (data.action === 'SELL') {{
+                noteHtml = `<div class="ticker-result-note">⚠️ This stock is trading above our fair value estimate. Consider reducing position.</div>`;
+            }} else if (data.action === 'BUY') {{
+                noteHtml = `<div class="ticker-result-note">🎯 This stock meets our criteria for high-conviction purchase.</div>`;
+            }}
+            
+            if (data.action === 'EXCLUDED') {{
+                resultDiv.innerHTML = `
+                    <div class="ticker-result-header">
+                        <span class="ticker-result-name"><strong>${{ticker}}</strong> - ${{data.name}}</span>
+                        <span class="ticker-result-action" style="background: rgba(100,100,100,0.2); color: var(--text-muted);">EXCLUDED</span>
+                    </div>
+                    ${{noteHtml}}
+                `;
+                return;
+            }}
+            
+            resultDiv.innerHTML = `
+                <div class="ticker-result-header">
+                    <span class="ticker-result-name"><strong>${{ticker}}</strong> - ${{data.name}}</span>
+                    <span class="ticker-result-action ${{actionClass}}">${{actionEmoji}} ${{data.action}}</span>
+                </div>
+                <div class="ticker-result-grid">
+                    <div class="ticker-result-metric">
+                        <div class="ticker-result-metric-value">$${{data.price || data.iv}}</div>
+                        <div class="ticker-result-metric-label">Price</div>
+                    </div>
+                    <div class="ticker-result-metric">
+                        <div class="ticker-result-metric-value">${{data.irr?.toFixed(1) || '—'}}%</div>
+                        <div class="ticker-result-metric-label">Implied IRR</div>
+                    </div>
+                    <div class="ticker-result-metric">
+                        <div class="ticker-result-metric-value">${{data.mos?.toFixed(1) || '—'}}%</div>
+                        <div class="ticker-result-metric-label">Margin of Safety</div>
+                    </div>
+                    <div class="ticker-result-metric">
+                        <div class="ticker-result-metric-value">${{data.tier || '—'}}</div>
+                        <div class="ticker-result-metric-label">Quality Tier</div>
+                    </div>
+                    <div class="ticker-result-metric">
+                        <div class="ticker-result-metric-value">${{data.score || '—'}}</div>
+                        <div class="ticker-result-metric-label">Score</div>
+                    </div>
+                    <div class="ticker-result-metric">
+                        <div class="ticker-result-metric-value">$${{data.iv || '—'}}</div>
+                        <div class="ticker-result-metric-label">Fair Value</div>
+                    </div>
+                </div>
+                ${{noteHtml}}
+            `;
+        }}
+        
+        checkBtn.addEventListener('click', checkTicker);
+        tickerInput.addEventListener('keypress', (e) => {{
+            if (e.key === 'Enter') checkTicker();
+        }});
+        
+        // Auto-uppercase input
+        tickerInput.addEventListener('input', () => {{
+            tickerInput.value = tickerInput.value.toUpperCase();
+        }});
+    </script>
+</body>
+</html>'''
+    
+    return html
+
+
+if __name__ == "__main__":
+    import sys
+    
+    if len(sys.argv) > 1:
+        json_file = sys.argv[1]
+    else:
+        json_file = "watchlist_dashboard.json"
+    
+    output = sys.argv[2] if len(sys.argv) > 2 else "capital_compounders_dashboard.html"
+    
+    generate_dashboard(json_file, output)
