@@ -422,8 +422,8 @@
                 const r = ratios[0] || {};
                 const m = metrics[0] || {};
                 
-                const roic = (r.returnOnCapitalEmployedTTM || 0) * 100;
-                const gm = (r.grossProfitMarginTTM || 0) * 100;
+                const roic = (m.returnOnInvestedCapitalTTM || m.returnOnCapitalEmployedTTM || 0) * 100;
+                const gm = (p.grossProfitMargin || 0) * 100;
                 const vcr = roic / 10;
                 const fcfYield = (m.freeCashFlowYieldTTM || 0) * 100;
                 const divYield = (m.dividendYieldTTM || 0) * 100;
