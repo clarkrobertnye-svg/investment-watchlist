@@ -391,77 +391,64 @@
                 return;
             }
             
-            // 3. Not in cache - fetch from FMP
+            // 3. Not in cache - fetch from FMP using /stable/ endpoints
             msg.innerHTML = '⏳ Fetching ' + input + ' from FMP...';
             msg.style.color = '#fbbf24';
             tbody.innerHTML = '';
             resultDiv.classList.add('show');
             
             try {
-                const [metricsRes, ratiosRes, incomeRes, cfRes, bsRes] = await Promise.all([
-                    fetch(`https://financialmodelingprep.com/api/v3/key-metrics/${input}?limit=4&apikey=${FMP_API_KEY}`),
-                    fetch(`https://financialmodelingprep.com/api/v3/ratios/${input}?limit=4&apikey=${FMP_API_KEY}`),
-                    fetch(`https://financialmodelingprep.com/api/v3/income-statement/${input}?limit=4&apikey=${FMP_API_KEY}`),
-                    fetch(`https://financialmodelingprep.com/api/v3/cash-flow-statement/${input}?limit=4&apikey=${FMP_API_KEY}`),
-                    fetch(`https://financialmodelingprep.com/api/v3/balance-sheet-statement/${input}?limit=4&apikey=${FMP_API_KEY}`)
+                const [profileRes, ratiosRes, metricsRes] = await Promise.all([
+                    fetch(`https://financialmodelingprep.com/stable/profile?symbol=${input}&apikey=${FMP_API_KEY}`),
+                    fetch(`https://financialmodelingprep.com/stable/ratios-ttm?symbol=${input}&apikey=${FMP_API_KEY}`),
+                    fetch(`https://financialmodelingprep.com/stable/key-metrics-ttm?symbol=${input}&apikey=${FMP_API_KEY}`)
                 ]);
                 
-                const [metrics, ratios, income, cf, bs] = await Promise.all([
-                    metricsRes.json(), ratiosRes.json(), incomeRes.json(), cfRes.json(), bsRes.json()
-                ]);
+                const profile = await profileRes.json();
+                const ratios = await ratiosRes.json();
+                const metrics = await metricsRes.json();
                 
-                if (!metrics.length || !income.length) {
+                console.log('FMP Profile:', profile);
+                console.log('FMP Ratios:', ratios);
+                console.log('FMP Metrics:', metrics);
+                
+                if (!profile || profile.length === 0 || profile['Error Message']) {
                     msg.innerHTML = '❌ ' + input + ' not found in FMP';
                     msg.style.color = '#f87171';
                     return;
                 }
                 
-                const m = metrics[0] || {};
+                const p = profile[0] || {};
                 const r = ratios[0] || {};
-                const i0 = income[0] || {};
-                const i3 = income[3] || income[income.length-1] || {};
-                const c = cf[0] || {};
-                const b = bs[0] || {};
+                const m = metrics[0] || {};
                 
-                const rev0 = i0.revenue || 0;
-                const rev3 = i3.revenue || 0;
-                const revCagr = rev3 > 0 ? (Math.pow(rev0/rev3, 1/3) - 1) * 100 : 0;
-                const roic = (m.roic || r.returnOnCapitalEmployed || 0) * 100;
-                const gm = (i0.grossProfitRatio || r.grossProfitMargin || 0) * 100;
-                const gm3 = (i3.grossProfitRatio || 0) * 100;
-                const gmDelta = gm - gm3;
-                const ocf = c.operatingCashFlow || 0;
-                const ni = i0.netIncome || 1;
-                const ocfNi = ni !== 0 ? (ocf / ni) * 100 : 0;
-                const fcf = c.freeCashFlow || 0;
-                const debt = b.totalDebt || 1;
-                const fcfDebt = debt !== 0 ? (fcf / debt) * 100 : 0;
-                const fcfNi = ni !== 0 ? (fcf / ni) * 100 : 0;
-                const capex = Math.abs(c.capitalExpenditure || 1);
-                const ocfCapex = capex !== 0 ? ocf / capex : 0;
-                const divYield = (m.dividendYield || 0) * 100;
-                const buybackYield = (m.buybackYield || 0) * 100;
-                const shYield = divYield + buybackYield;
+                const roic = (r.returnOnCapitalEmployedTTM || 0) * 100;
+                const gm = (r.grossProfitMarginTTM || 0) * 100;
                 const vcr = roic / 10;
+                const fcfYield = (m.freeCashFlowYieldTTM || 0) * 100;
+                const divYield = (m.dividendYieldTTM || 0) * 100;
+                const shYield = divYield;
+                const ocfNi = (r.operatingCashFlowPerShareTTM && r.netIncomePerShareTTM) 
+                    ? (r.operatingCashFlowPerShareTTM / r.netIncomePerShareTTM) * 100 : 0;
                 
                 tbody.innerHTML = `<tr>
                     <td class="ticker"><a href="https://finance.yahoo.com/quote/${input}" target="_blank">${input}</a></td>
-                    <td class="metric">${revCagr.toFixed(1)}%</td>
+                    <td class="metric" style="color:#666;">—</td>
                     <td class="metric" style="color:#666;">—</td>
                     <td class="metric" style="color:#666;">—</td>
                     <td class="metric" style="color:#666;">—</td>
                     <td class="metric">${roic.toFixed(0)}%</td>
                     <td class="metric">${vcr.toFixed(1)}x</td>
                     <td class="metric">${gm.toFixed(0)}%</td>
-                    <td class="metric">${(gmDelta > 0 ? '+' : '') + gmDelta.toFixed(1)}%</td>
+                    <td class="metric" style="color:#666;">—</td>
                     <td class="metric">${ocfNi.toFixed(0)}%</td>
-                    <td class="metric">${fcfDebt.toFixed(0)}%</td>
-                    <td class="metric">${fcfNi.toFixed(0)}%</td>
+                    <td class="metric" style="color:#666;">—</td>
+                    <td class="metric" style="color:#666;">—</td>
                     <td class="metric">${shYield.toFixed(1)}%</td>
-                    <td class="metric">${ocfCapex.toFixed(1)}x</td>
+                    <td class="metric" style="color:#666;">—</td>
                     <td class="metric" style="color:#666;">—</td>
                 </tr>`;
-                msg.innerHTML = '🔄 Live from FMP (ROIIC metrics need 5yr calc)';
+                msg.innerHTML = '🔄 Live: ' + (p.companyName || input) + ' · ' + (p.sector || 'N/A');
                 msg.style.color = '#60a5fa';
                 
             } catch (err) {
