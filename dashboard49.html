@@ -89,7 +89,11 @@
         <div class="stat"><div class="stat-value">49</div><div class="stat-label">Total Stocks</div></div>
     </div>
     <div class="controls">
-        <input type="text" class="search-box" id="ticker-input" placeholder="Enter ticker..." oninput="searchAndAnalyze(this.value)">
+        <input type="text" class="search-box" placeholder="Search ticker..." oninput="searchTicker(this.value)">
+        <div class="analyze-box">
+            <input type="text" id="analyze-input" placeholder="Analyze ticker" onkeypress="if(event.key==='Enter')analyzeTicker()">
+            <button onclick="analyzeTicker()">Analyze</button>
+        </div>
     </div>
     <div class="analyze-result" id="analyze-result">
         <table>
@@ -315,21 +319,17 @@
         }
         function searchTicker(query) { searchQuery = query; renderTable(); }
         
-        function searchAndAnalyze(query) {
-            searchQuery = query;
-            renderTable();
-            
-            const input = query.toUpperCase().trim();
+        const FMP_API_KEY = 'TtvF1nFuyMJk23iOeTklWpU0XEYcCvQU';
+        
+        async function analyzeTicker() {
+            const input = document.getElementById('analyze-input').value.toUpperCase().trim();
             const resultDiv = document.getElementById('analyze-result');
             const tbody = document.getElementById('analyze-body');
             const msg = document.getElementById('analyze-msg');
             
-            if (!input || input.length < 2) { 
-                resultDiv.classList.remove('show'); 
-                return; 
-            }
+            if (!input) { resultDiv.classList.remove('show'); return; }
             
-            // Check for exact match
+            // Check cache first
             const found = stocks.find(s => s.ticker === input);
             if (found) {
                 const s = found;
@@ -350,14 +350,106 @@
                     <td class="metric">${s.ocfCapex.toFixed(1)}x</td>
                     <td class="metric">${s.roiic3yr === 999 ? '>500%' : s.roiic3yr + '%'}</td>
                 </tr>`;
-                msg.innerHTML = '✅ In universe - click ticker for Yahoo Finance';
+                msg.innerHTML = '✅ Found in universe (cached)';
                 msg.style.color = '#4ade80';
                 resultDiv.classList.add('show');
-            } else {
-                tbody.innerHTML = '';
-                msg.innerHTML = '📊 ' + input + ' not in 49-stock universe';
-                msg.style.color = '#888';
-                resultDiv.classList.add('show');
+                return;
+            }
+            
+            // Not in cache - fetch from FMP
+            msg.innerHTML = '⏳ Fetching from FMP...';
+            msg.style.color = '#fbbf24';
+            tbody.innerHTML = '';
+            resultDiv.classList.add('show');
+            
+            try {
+                const [metricsRes, ratiosRes, incomeRes, cfRes, bsRes] = await Promise.all([
+                    fetch(`https://financialmodelingprep.com/api/v3/key-metrics/${input}?limit=4&apikey=${FMP_API_KEY}`),
+                    fetch(`https://financialmodelingprep.com/api/v3/ratios/${input}?limit=4&apikey=${FMP_API_KEY}`),
+                    fetch(`https://financialmodelingprep.com/api/v3/income-statement/${input}?limit=4&apikey=${FMP_API_KEY}`),
+                    fetch(`https://financialmodelingprep.com/api/v3/cash-flow-statement/${input}?limit=4&apikey=${FMP_API_KEY}`),
+                    fetch(`https://financialmodelingprep.com/api/v3/balance-sheet-statement/${input}?limit=4&apikey=${FMP_API_KEY}`)
+                ]);
+                
+                const [metrics, ratios, income, cf, bs] = await Promise.all([
+                    metricsRes.json(), ratiosRes.json(), incomeRes.json(), cfRes.json(), bsRes.json()
+                ]);
+                
+                if (!metrics.length || !income.length) {
+                    msg.innerHTML = '❌ ' + input + ' not found in FMP';
+                    msg.style.color = '#f87171';
+                    return;
+                }
+                
+                // Calculate metrics
+                const m = metrics[0] || {};
+                const r = ratios[0] || {};
+                const i0 = income[0] || {};
+                const i3 = income[3] || income[income.length-1] || {};
+                const c = cf[0] || {};
+                const b = bs[0] || {};
+                
+                // 3yr Rev CAGR
+                const rev0 = i0.revenue || 0;
+                const rev3 = i3.revenue || 0;
+                const revCagr = rev3 > 0 ? (Math.pow(rev0/rev3, 1/3) - 1) * 100 : 0;
+                
+                // ROIC
+                const roic = (m.roic || r.returnOnCapitalEmployed || 0) * 100;
+                
+                // Gross Margin
+                const gm = (i0.grossProfitRatio || r.grossProfitMargin || 0) * 100;
+                const gm3 = (i3.grossProfitRatio || 0) * 100;
+                const gmDelta = gm - gm3;
+                
+                // OCF / NI
+                const ocf = c.operatingCashFlow || 0;
+                const ni = i0.netIncome || 1;
+                const ocfNi = ni !== 0 ? (ocf / ni) * 100 : 0;
+                
+                // FCF / Debt
+                const fcf = c.freeCashFlow || 0;
+                const debt = b.totalDebt || 1;
+                const fcfDebt = debt !== 0 ? (fcf / debt) * 100 : 0;
+                
+                // FCF / NI
+                const fcfNi = ni !== 0 ? (fcf / ni) * 100 : 0;
+                
+                // OCF / CapEx
+                const capex = Math.abs(c.capitalExpenditure || 1);
+                const ocfCapex = capex !== 0 ? ocf / capex : 0;
+                
+                // Shareholder Yield
+                const divYield = (m.dividendYield || 0) * 100;
+                const buybackYield = (m.buybackYield || 0) * 100;
+                const shYield = divYield + buybackYield;
+                
+                // VCR (ROIC / 10% WACC)
+                const vcr = roic / 10;
+                
+                tbody.innerHTML = `<tr>
+                    <td class="ticker"><a href="https://finance.yahoo.com/quote/${input}" target="_blank">${input}</a></td>
+                    <td class="metric">${revCagr.toFixed(1)}%</td>
+                    <td class="metric" style="color:#888;">N/A</td>
+                    <td class="metric" style="color:#888;">N/A</td>
+                    <td class="metric" style="color:#888;">N/A</td>
+                    <td class="metric">${roic.toFixed(0)}%</td>
+                    <td class="metric">${vcr.toFixed(1)}x</td>
+                    <td class="metric">${gm.toFixed(0)}%</td>
+                    <td class="metric">${(gmDelta > 0 ? '+' : '') + gmDelta.toFixed(1)}%</td>
+                    <td class="metric">${ocfNi.toFixed(0)}%</td>
+                    <td class="metric">${fcfDebt.toFixed(0)}%</td>
+                    <td class="metric">${fcfNi.toFixed(0)}%</td>
+                    <td class="metric">${shYield.toFixed(1)}%</td>
+                    <td class="metric">${ocfCapex.toFixed(1)}x</td>
+                    <td class="metric" style="color:#888;">N/A</td>
+                </tr>`;
+                msg.innerHTML = '🔄 Live from FMP (ROIIC/Reinv/CompPwr need 5yr data)';
+                msg.style.color = '#60a5fa';
+                
+            } catch (err) {
+                msg.innerHTML = '❌ Error fetching: ' + err.message;
+                msg.style.color = '#f87171';
             }
         }
         renderTable();
