@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capital Compounders - 49 High-Conviction Stocks</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0a0f; color: #e0e0e0; padding: 20px; }
+        .header { text-align: center; margin-bottom: 30px; }
+        .header h1 { font-size: 2.2rem; color: #fff; margin-bottom: 10px; }
+        .header p { color: #888; font-size: 0.95rem; }
+        .stats-bar { display: flex; justify-content: center; gap: 40px; margin: 20px 0; flex-wrap: wrap; }
+        .stat { text-align: center; }
+        .stat-value { font-size: 2rem; font-weight: 700; color: #4ade80; }
+        .stat-value.machines { color: #f59e0b; }
+        .stat-value.cows { color: #3b82f6; }
+        .stat-label { font-size: 0.8rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
+        .controls { display: flex; justify-content: center; gap: 15px; margin: 25px 0; flex-wrap: wrap; align-items: center; }
+        .btn { padding: 10px 20px; border: none; border-radius: 6px; cursor: pointer; font-size: 0.9rem; font-weight: 500; transition: all 0.2s; }
+        .btn-all { background: #374151; color: #fff; }
+        .btn-machines { background: #78350f; color: #fbbf24; }
+        .btn-cows { background: #1e3a5f; color: #60a5fa; }
+        .btn:hover { transform: translateY(-2px); opacity: 0.9; }
+        .btn.active { box-shadow: 0 0 0 2px #fff; }
+        .search-box { padding: 10px 15px; border: 1px solid #333; border-radius: 6px; background: #1a1a2e; color: #fff; font-size: 0.9rem; width: 200px; }
+        .search-box:focus { outline: none; border-color: #4ade80; }
+        .table-container { overflow-x: auto; border-radius: 10px; background: #12121a; border: 1px solid #222; }
+        table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+        th { background: #1a1a2e; color: #888; font-weight: 600; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.5px; padding: 14px 12px; text-align: left; cursor: pointer; white-space: nowrap; position: sticky; top: 0; }
+        th:hover { color: #fff; background: #252538; }
+        th[data-tooltip] { position: relative; }
+        th[data-tooltip]:hover::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #333;
+            color: #4ade80;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            white-space: nowrap;
+            z-index: 100;
+            font-weight: normal;
+            text-transform: none;
+            letter-spacing: normal;
+        }
+        .ticker a { color: #fff; text-decoration: none; }
+        .ticker a:hover { color: #4ade80; text-decoration: underline; }
+        .analyze-box { display: flex; gap: 10px; align-items: center; margin-top: 10px; }
+        .analyze-box input { padding: 10px 15px; border: 1px solid #333; border-radius: 6px; background: #1a1a2e; color: #fff; font-size: 0.9rem; width: 120px; }
+        .analyze-box button { padding: 10px 20px; border: none; border-radius: 6px; background: #4ade80; color: #000; font-weight: 600; cursor: pointer; }
+        .analyze-box button:hover { background: #22c55e; }
+        .analyze-result { margin-top: 15px; padding: 15px; background: #1a1a2e; border-radius: 8px; display: none; }
+        .analyze-result.show { display: block; }
+        .analyze-result table { width: 100%; }
+        .analyze-result th { background: transparent; padding: 8px; }
+        td { padding: 12px; border-bottom: 1px solid #1f1f2e; }
+        tr:hover { background: #1a1a2e; }
+        .ticker { font-weight: 700; color: #fff; font-size: 0.95rem; }
+        .type-machine { color: #fbbf24; }
+        .type-cow { color: #60a5fa; }
+        .metric { font-family: 'SF Mono', Monaco, monospace; }
+        .metric-good { color: #4ade80; }
+        .metric-great { color: #22d3ee; font-weight: 600; }
+        .metric-warn { color: #fbbf24; }
+        .metrics-reference { margin-top: 40px; padding: 25px; background: #12121a; border-radius: 10px; border: 1px solid #222; }
+        .metrics-reference h3 { color: #fff; margin-bottom: 20px; font-size: 1.4rem; }
+        .metrics-grid-detailed { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 20px; }
+        .metric-card-detailed { background: #1a1a2e; padding: 20px; border-radius: 8px; border-left: 3px solid #4ade80; }
+        .metric-card-detailed h4 { color: #fff; font-size: 1rem; margin-bottom: 10px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+        .target-badge { background: #166534; color: #4ade80; padding: 3px 8px; border-radius: 4px; font-size: 0.7rem; font-weight: 500; }
+        .target-badge.display { background: #374151; color: #9ca3af; }
+        .metric-card-detailed .formula { font-family: 'SF Mono', Monaco, monospace; background: #0f0f1a; padding: 8px 12px; border-radius: 4px; color: #22d3ee; font-size: 0.8rem; margin-bottom: 12px; }
+        .metric-card-detailed p { color: #a0a0a0; font-size: 0.85rem; line-height: 1.6; margin-bottom: 10px; }
+        .metric-card-detailed .interpretation { color: #888; font-size: 0.8rem; border-top: 1px solid #333; padding-top: 10px; margin-bottom: 0; }
+        .metric-card-detailed strong { color: #fbbf24; }
+        .updated { text-align: center; color: #555; font-size: 0.75rem; margin-top: 30px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Capital Compounders</h1>
+        <p>49 High-Conviction Stocks | 20%+ Intrinsic Value Growth Potential</p>
+    </div>
+    <div class="stats-bar">
+        <div class="stat"><div class="stat-value">49</div><div class="stat-label">Total Stocks</div></div>
+    </div>
+    <div class="controls">
+        <input type="text" class="search-box" id="ticker-input" placeholder="Enter ticker..." oninput="searchAndAnalyze(this.value)">
+    </div>
+    <div class="analyze-result" id="analyze-result">
+        <table>
+            <thead><tr>
+                <th>Ticker</th><th>3yr Rev</th><th>ROIIC</th><th>Reinv</th><th>Comp Pwr</th><th>ROIC</th><th>VCR</th><th>GM</th><th>GM Δ</th><th>OCF/NI</th><th>FCF/Debt</th><th>FCF/NI</th><th>SH Yld</th><th>OCF/CapEx</th><th>3yr ROIIC</th>
+            </tr></thead>
+            <tbody id="analyze-body"></tbody>
+        </table>
+        <p id="analyze-msg" style="color:#888;margin-top:10px;"></p>
+    </div>
+    <div class="table-container">
+        <table id="stockTable">
+            <thead><tr>
+                <th onclick="sortTable('ticker')">Ticker</th>
+                <th onclick="sortTable('revCagr3yr')" data-tooltip="(Revenue_now ÷ Revenue_3yr_ago)^(1/3) - 1">3yr Rev</th>
+                <th onclick="sortTable('roiic')" data-tooltip="ΔNOPAT ÷ ΔInvested Capital (5-year)">ROIIC</th>
+                <th onclick="sortTable('reinvRate')" data-tooltip="(Net CapEx + ΔWC + Acquisitions) ÷ NOPAT">Reinv Rate</th>
+                <th onclick="sortTable('compPower')" data-tooltip="ROIIC × Reinvestment Rate">Comp Power</th>
+                <th onclick="sortTable('roic')" data-tooltip="NOPAT ÷ Invested Capital (ex-cash)">ROIC</th>
+                <th onclick="sortTable('vcr')" data-tooltip="ROIC ÷ WACC (assumed 10%)">VCR</th>
+                <th onclick="sortTable('gm')" data-tooltip="Gross Profit ÷ Revenue">GM</th>
+                <th onclick="sortTable('gmTrend3yr')" data-tooltip="Gross Margin_now - Gross Margin_3yr_ago">GM Δ3yr</th>
+                <th onclick="sortTable('fcfNi')" data-tooltip="Operating Cash Flow ÷ Net Income">OCF/NI</th>
+                <th onclick="sortTable('fcfDebt')" data-tooltip="Free Cash Flow ÷ Total Debt">FCF/Debt</th>
+                <th onclick="sortTable('trueFcfNi')" data-tooltip="(OCF - CapEx) ÷ Net Income">FCF/NI</th>
+                <th onclick="sortTable('shYld')" data-tooltip="Dividend Yield + Buyback Yield">SH Yield</th>
+                <th onclick="sortTable('ocfCapex')" data-tooltip="Operating Cash Flow ÷ CapEx">OCF/CapEx</th>
+                <th onclick="sortTable('roiic3yr')" data-tooltip="ΔNOPAT ÷ ΔInvested Capital (3-year)">3yr ROIIC</th>
+            </tr></thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>
+    <div class="metrics-reference">
+        <h3>📊 Key Metrics Reference</h3>
+        <div class="metrics-grid-detailed">
+            <div class="metric-card-detailed">
+                <h4>ROIIC <span class="target-badge">Target ≥ 20%</span></h4>
+                <p class="formula">ROIIC = ΔNOPAT ÷ ΔInvested Capital (5-year)</p>
+                <p>Return on Incremental Invested Capital measures the return generated on NEW capital deployed over the past 5 years. This tells you how productively the company is investing its growth capital.</p>
+                <p class="interpretation">ROIIC > ROIC: Moat is widening (new investments earn more than legacy)<br>ROIIC < ROIC: Moat is narrowing (diminishing returns on new capital)</p>
+            </div>
+            <div class="metric-card-detailed">
+                <h4>Reinvestment Rate <span class="target-badge display">Display Only</span></h4>
+                <p class="formula">Reinv Rate = (Net CapEx + ΔWC + Acquisitions) ÷ NOPAT</p>
+                <p>How much profit is being reinvested back into the business for growth. Net CapEx = CapEx minus Depreciation. Includes working capital changes and acquisitions.</p>
+                <p class="interpretation">High Reinv + High ROIIC: 🚀 Compounding Machine<br>Low/Negative Reinv + High ROIIC: 💰 Cash Cow (returning capital)</p>
+            </div>
+            <div class="metric-card-detailed">
+                <h4>Compounding Power <span class="target-badge">Target ≥ 20%</span></h4>
+                <p class="formula">Compounding Power = ROIIC × Reinvestment Rate</p>
+                <p>The rate at which intrinsic value grows organically. <strong>This is THE key metric.</strong> A business with 50% ROIIC reinvesting 40% of profits compounds intrinsic value at 20% annually.</p>
+                <p class="interpretation">≥ 20%: 🚀 Compounding Machine - intrinsic value doubles every ~3.5 years<br>< 20%: 💰 Cash Cow - still great if returning capital via buybacks/dividends</p>
+            </div>
+            <div class="metric-card-detailed">
+                <h4>ROIC <span class="target-badge">Target ≥ 20%</span></h4>
+                <p class="formula">ROIC = NOPAT ÷ Invested Capital (ex-cash)</p>
+                <p>Return on Invested Capital measures how efficiently the business uses ALL its capital (debt + equity minus excess cash) to generate operating profits after tax.</p>
+                <p class="interpretation">> 20%: Excellent capital efficiency, likely has moat<br>15-20%: Good, above cost of capital<br>< 15%: Marginal or no economic moat</p>
+            </div>
+            <div class="metric-card-detailed">
+                <h4>VCR <span class="target-badge">Target ≥ 1.5x</span></h4>
+                <p class="formula">VCR = ROIC ÷ WACC (assumed 10%)</p>
+                <p>Value Creation Ratio shows how much value the business creates per dollar of capital. If ROIC is 30% and WACC is 10%, every $1 invested creates $3 of value (3x VCR).</p>
+                <p class="interpretation">> 2x: Excellent value creator<br>1.5-2x: Good value creator<br>< 1x: Destroying value (ROIC below cost of capital)</p>
+            </div>
+            <div class="metric-card-detailed">
+                <h4>Gross Margin <span class="target-badge">Target ≥ 30%</span></h4>
+                <p class="formula">GM = Gross Profit ÷ Revenue</p>
+                <p>Pricing power indicator. High gross margins suggest the company can charge premium prices, indicating brand strength, differentiation, or switching costs.</p>
+                <p class="interpretation">> 50%: Strong pricing power (software, luxury, pharma)<br>30-50%: Moderate pricing power<br>< 30%: Commodity-like (unless high asset turns)</p>
+            </div>
+            <div class="metric-card-detailed">
+                <h4>OCF/NI <span class="target-badge">Target ≥ 100%</span></h4>
+                <p class="formula">OCF/NI = Operating Cash Flow ÷ Net Income</p>
+                <p>Earnings quality check. Shows how much of reported earnings converts to operating cash. Low conversion may indicate aggressive accounting or high working capital needs.</p>
+                <p class="interpretation">> 100%: Excellent - operating cash exceeds reported earnings<br>70-100%: Good cash conversion<br>< 70%: Investigate - earnings may not be real</p>
+            </div>
+            <div class="metric-card-detailed">
+                <h4>FCF/Debt <span class="target-badge">Target ≥ 25%</span></h4>
+                <p class="formula">FCF/Debt = Free Cash Flow ÷ Total Debt</p>
+                <p>Balance sheet strength. Shows how quickly the company could pay off all debt using free cash flow. Higher = safer balance sheet with more financial flexibility.</p>
+                <p class="interpretation">> 50%: Could pay off debt in ~2 years<br>25-50%: Healthy, debt manageable<br>< 25%: Higher leverage risk</p>
+            </div>
+            <div class="metric-card-detailed">
+                <h4>FCF/NI <span class="target-badge">Target ≥ 70%</span></h4>
+                <p class="formula">FCF/NI = (OCF − CapEx) ÷ Net Income</p>
+                <p>True free cash flow conversion. Unlike OCF/NI, this accounts for capital expenditures required to maintain the business. The real cash available after maintenance capex.</p>
+                <p class="interpretation">> 100%: Exceptional - FCF exceeds earnings<br>70-100%: Good FCF conversion<br>< 50%: Capital-intensive business</p>
+            </div>
+            <div class="metric-card-detailed">
+                <h4>Shareholder Yield</h4>
+                <p class="formula">SH Yield = Dividend Yield + Buyback Yield</p>
+                <p>Total cash returned to shareholders via dividends and share repurchases. For Cash Cows with low reinvestment, this is the primary return driver.</p>
+                <p class="interpretation">> 5%: Excellent capital return<br>3-5%: Good capital return<br>< 1%: Minimal return (should be reinvesting at high ROIIC)</p>
+            </div>
+            <div class="metric-card-detailed">
+                <h4>OCF/CapEx <span class="target-badge">Target ≥ 5x</span></h4>
+                <p class="formula">OCF/CapEx = Operating Cash Flow ÷ Capital Expenditures</p>
+                <p>Capital intensity measure. Higher = more capital-light business with more cash available for dividends, buybacks, or growth investments. Lower = treadmill business that must keep investing to maintain.</p>
+                <p class="interpretation">> 10x: Very capital-light (software, asset-light)<br>5-10x: Moderate capital needs<br>< 2.5x: Capital-intensive (manufacturing, infrastructure)</p>
+            </div>
+            <div class="metric-card-detailed">
+                <h4>3yr ROIIC <span class="target-badge">Target ≥ 20%</span></h4>
+                <p class="formula">3yr ROIIC = ΔNOPAT ÷ ΔInvested Capital (3-year)</p>
+                <p>Recent return on incremental capital. More current than 5yr ROIIC - shows how productively recent investments are performing. Compare to current ROIC to assess moat trajectory.</p>
+                <p class="interpretation">> Current ROIC: Moat widening (new capital earns more)<br>= Current ROIC: Stable moat<br>< 0%: ⚠️ Capital destruction - investigate</p>
+            </div>
+            <div class="metric-card-detailed">
+                <h4>3yr Revenue CAGR</h4>
+                <p class="formula">3yr Rev = (Revenue_now ÷ Revenue_3yr_ago)^(1/3) - 1</p>
+                <p>Compound annual growth rate over 3 years. >20% high growth, 10-20% solid, &lt;10% mature.</p>
+            </div>
+            <div class="metric-card-detailed">
+                <h4>GM Δ3yr</h4>
+                <p class="formula">GM Δ3yr = Gross Margin_now - Gross Margin_3yr_ago</p>
+                <p>Margin expansion = pricing power strengthening. Contraction = competitive pressure or moat erosion.</p>
+            </div>
+        </div>
+    </div>
+    <div class="updated">Last updated: February 3, 2026 | Removed: CALM, BRFS (commodity), GOOG (duplicate), GDDY, FELE, HUBB, VMI, WHD, CRUS (low VCR/no moat), AERO (suspicious buyback data), HDL (China + zero value creation), NVMI (low VCR + zero value creation), KARO (high capex for software), CELH (low FCF conversion), VRT (treadmill), HRMY (negative ROIIC + zero yield), SEAS (no shareholder return), PLAB (75% CapEx treadmill)</div>
+    <script>
+        const stocks = [
+            // MACHINES (40) - removed CALM, GOOG duplicate
+            {type:'machine',ticker:'VITL',roiic:2.69,reinvRate:0.58,compPower:1.56,roic:0.37,vcr:3.7,gm:0.38,fcfNi:1.21,fcfDebt:1.91,shYld:0,ocfCapex:2.2,roiic3yr:153,revCagr3yr:32.5,gmTrend3yr:6.1},
+            {type:'machine',ticker:'ADP',roiic:2.44,reinvRate:0.49,compPower:1.20,roic:0.46,vcr:4.6,gm:0.51,fcfNi:1.21,fcfDebt:0.53,shYld:3.5,ocfCapex:29.3,roiic3yr:25,revCagr3yr:7.6,gmTrend3yr:4.0},
+            {type:'machine',ticker:'BBW',roiic:1.67,reinvRate:0.57,compPower:0.95,roic:0.27,vcr:2.7,gm:0.55,fcfNi:0.91,fcfDebt:0.29,shYld:9.8,ocfCapex:2.4,roiic3yr:28,revCagr3yr:6.5,gmTrend3yr:1.9},
+            {type:'machine',ticker:'CVLT',roiic:0.61,reinvRate:1.30,compPower:0.80,roic:0.21,vcr:2.1,gm:0.82,fcfNi:2.72,fcfDebt:18.59,shYld:4.3,ocfCapex:55.2,roiic3yr:49,revCagr3yr:9.0,gmTrend3yr:-3.2},
+            {type:'machine',ticker:'PTRN',roiic:2.59,reinvRate:0.26,compPower:0.66,roic:0.28,vcr:2.8,gm:0.44,fcfNi:1.04,fcfDebt:1.66,shYld:0.1,ocfCapex:3.4,roiic3yr:257,revCagr3yr:34.7,gmTrend3yr:0.2},
+            {type:'machine',ticker:'LNTH',roiic:2.95,reinvRate:0.19,compPower:0.57,roic:0.41,vcr:4.1,gm:0.64,fcfNi:1.74,fcfDebt:0.80,shYld:2.2,ocfCapex:10.6,roiic3yr:173,revCagr3yr:53.4,gmTrend3yr:20.3},
+            {type:'machine',ticker:'BMI',roiic:0.33,reinvRate:1.20,compPower:0.40,roic:0.23,vcr:2.3,gm:0.42,fcfNi:1.30,fcfDebt:10.00,shYld:4.2,ocfCapex:13.1,roiic3yr:24,revCagr3yr:17.5,gmTrend3yr:2.8},
+            {type:'machine',ticker:'COKE',roiic:1.33,reinvRate:0.30,compPower:0.39,roic:0.24,vcr:2.4,gm:0.40,fcfNi:1.38,fcfDebt:0.26,shYld:7.3,ocfCapex:2.4,roiic3yr:66,revCagr3yr:7.4,gmTrend3yr:4.8},
+            {type:'machine',ticker:'ASR',roiic:2.05,reinvRate:0.19,compPower:0.39,roic:0.23,vcr:2.3,gm:0.64,fcfNi:1.15,fcfDebt:0.83,shYld:4.5,ocfCapex:3.5,roiic3yr:20,revCagr3yr:18.6,gmTrend3yr:-0.9},
+            {type:'machine',ticker:'VMEO',roiic:0.69,reinvRate:0.54,compPower:0.38,roic:0.17,vcr:1.7,gm:0.78,fcfNi:2.11,fcfDebt:4.78,shYld:2.0,ocfCapex:256.1,roiic3yr:999,revCagr3yr:2.1,gmTrend3yr:5.8},
+            {type:'machine',ticker:'MWA',roiic:2.62,reinvRate:0.14,compPower:0.37,roic:0.18,vcr:1.8,gm:0.36,fcfNi:1.14,fcfDebt:0.36,shYld:4.2,ocfCapex:4.6,roiic3yr:999,revCagr3yr:4.7,gmTrend3yr:6.9},
+            {type:'machine',ticker:'ADSK',roiic:0.29,reinvRate:1.19,compPower:0.35,roic:0.25,vcr:2.5,gm:0.91,fcfNi:1.45,fcfDebt:0.59,shYld:1.6,ocfCapex:15.8,roiic3yr:31,revCagr3yr:11.7,gmTrend3yr:1.0},
+            {type:'machine',ticker:'APH',roiic:0.39,reinvRate:0.85,compPower:0.33,roic:0.24,vcr:2.4,gm:0.37,fcfNi:1.26,fcfDebt:0.28,shYld:2.4,ocfCapex:5.4,roiic3yr:37,revCagr3yr:22.3,gmTrend3yr:5.0},
+            {type:'machine',ticker:'PCTY',roiic:0.25,reinvRate:1.33,compPower:0.33,roic:0.21,vcr:2.1,gm:0.69,fcfNi:1.84,fcfDebt:1.57,shYld:2.0,ocfCapex:5.5,roiic3yr:19,revCagr3yr:23.2,gmTrend3yr:2.4},
+            {type:'machine',ticker:'ROST',roiic:1.02,reinvRate:0.32,compPower:0.33,roic:0.35,vcr:3.5,gm:0.28,fcfNi:1.13,fcfDebt:0.29,shYld:5.2,ocfCapex:3.3,roiic3yr:45,revCagr3yr:3.8,gmTrend3yr:0.2},
+            {type:'machine',ticker:'GOOGL',roiic:0.53,reinvRate:0.58,compPower:0.30,roic:0.25,vcr:2.5,gm:0.58,fcfNi:1.25,fcfDebt:2.86,shYld:2.5,ocfCapex:2.4,roiic3yr:37,revCagr3yr:10.8,gmTrend3yr:1.3},
+            {type:'machine',ticker:'GWW',roiic:1.00,reinvRate:0.29,compPower:0.29,roic:0.36,vcr:3.6,gm:0.39,fcfNi:1.06,fcfDebt:0.49,shYld:5.5,ocfCapex:3.9,roiic3yr:52,revCagr3yr:9.7,gmTrend3yr:2.7},
+            {type:'machine',ticker:'TSM',roiic:0.55,reinvRate:0.53,compPower:0.29,roic:0.40,vcr:4.0,gm:0.60,fcfNi:1.37,fcfDebt:1.11,shYld:2.9,ocfCapex:1.9,roiic3yr:130,revCagr3yr:19.3,gmTrend3yr:0.3},
+            {type:'machine',ticker:'VLTO',roiic:0.57,reinvRate:0.50,compPower:0.28,roic:0.22,vcr:2.2,gm:0.60,fcfNi:1.05,fcfDebt:0.30,shYld:1.8,ocfCapex:15.9,roiic3yr:23,revCagr3yr:3.4,gmTrend3yr:2.1},
+            {type:'machine',ticker:'MRK',roiic:0.57,reinvRate:0.44,compPower:0.25,roic:0.20,vcr:2.0,gm:0.76,fcfNi:1.25,fcfDebt:0.47,shYld:3.7,ocfCapex:6.4,roiic3yr:31,revCagr3yr:9.6,gmTrend3yr:4.3},
+            {type:'machine',ticker:'MDXG',roiic:1.17,reinvRate:0.20,compPower:0.24,roic:0.39,vcr:3.9,gm:0.83,fcfNi:1.58,fcfDebt:2.60,shYld:0.3,ocfCapex:39.3,roiic3yr:105,revCagr3yr:13.0,gmTrend3yr:-0.8},
+            {type:'machine',ticker:'FTNT',roiic:0.57,reinvRate:0.41,compPower:0.23,roic:0.48,vcr:4.8,gm:0.81,fcfNi:1.29,fcfDebt:1.89,shYld:0,ocfCapex:6.0,roiic3yr:88,revCagr3yr:21.2,gmTrend3yr:4.0},
+            {type:'machine',ticker:'TJX',roiic:0.73,reinvRate:0.30,compPower:0.22,roic:0.31,vcr:3.1,gm:0.31,fcfNi:1.26,fcfDebt:0.33,shYld:5.9,ocfCapex:3.2,roiic3yr:45,revCagr3yr:5.1,gmTrend3yr:2.1},
+            {type:'machine',ticker:'FLT',roiic:0.44,reinvRate:0.48,compPower:0.21,roic:0.17,vcr:1.7,gm:1.00,fcfNi:1.93,fcfDebt:0.26,shYld:5.9,ocfCapex:11.1,roiic3yr:98,revCagr3yr:11.9,gmTrend3yr:19.8},
+            {type:'machine',ticker:'MNKD',roiic:0.30,reinvRate:0.68,compPower:0.21,roic:0.20,vcr:2.0,gm:0.73,fcfNi:1.54,fcfDebt:0.69,shYld:0,ocfCapex:4.4,roiic3yr:237,revCagr3yr:55.8,gmTrend3yr:24.7},
+            // CASH COWS (52) - removed BRFS, GDDY, FELE, HUBB, VMI, WHD, CRUS
+            {type:'cow',ticker:'MELI',roiic:0.38,reinvRate:-1.49,compPower:0,roic:0.33,vcr:3.3,gm:0.46,fcfNi:4.14,fcfDebt:1.03,shYld:0,ocfCapex:9.2,roiic3yr:42,revCagr3yr:43.2,gmTrend3yr:3.6},
+            {type:'cow',ticker:'NVDA',roiic:0.95,reinvRate:0.19,compPower:0.18,roic:0.72,vcr:7.2,gm:0.75,fcfNi:0.88,fcfDebt:5.93,shYld:0.8,ocfCapex:19.8,roiic3yr:239,revCagr3yr:69.3,gmTrend3yr:10.1},
+            {type:'cow',ticker:'DFS',roiic:0.90,reinvRate:0.05,compPower:0.05,roic:0.41,vcr:4.1,gm:0.89,fcfNi:1.86,fcfDebt:0.50,shYld:5.8,ocfCapex:31.4,roiic3yr:999,revCagr3yr:18.3,gmTrend3yr:-10.5},
+            {type:'cow',ticker:'EXEL',roiic:0.52,reinvRate:0.11,compPower:0.06,roic:0.19,vcr:1.9,gm:0.96,fcfNi:1.34,fcfDebt:3.32,shYld:5.7,ocfCapex:10.6,roiic3yr:999,revCagr3yr:14.8,gmTrend3yr:0.2},
+            {type:'cow',ticker:'IESC',roiic:0.55,reinvRate:0.26,compPower:0.14,roic:0.34,vcr:3.4,gm:0.25,fcfNi:0.92,fcfDebt:1.39,shYld:0.5,ocfCapex:4.3,roiic3yr:76,revCagr3yr:15.9,gmTrend3yr:10.8},
+            {type:'cow',ticker:'ANET',roiic:0.31,reinvRate:-0.46,compPower:0,roic:0.26,vcr:2.6,gm:0.64,fcfNi:1.30,fcfDebt:10.00,shYld:0.2,ocfCapex:115.8,roiic3yr:230,revCagr3yr:33.4,gmTrend3yr:0.3},
+            {type:'cow',ticker:'IPAR',roiic:0.39,reinvRate:0.13,compPower:0.05,roic:0.22,vcr:2.2,gm:0.64,fcfNi:0.92,fcfDebt:0.95,shYld:1.5,ocfCapex:39.6,roiic3yr:36,revCagr3yr:18.2,gmTrend3yr:0.5},
+            {type:'cow',ticker:'LULU',roiic:0.78,reinvRate:0.24,compPower:0.19,roic:0.50,vcr:5.0,gm:0.59,fcfNi:1.25,fcfDebt:1.00,shYld:8.2,ocfCapex:3.3,roiic3yr:111,revCagr3yr:19.2,gmTrend3yr:1.5},
+            {type:'cow',ticker:'USLM',roiic:1.08,reinvRate:0.15,compPower:0.16,roic:0.38,vcr:3.8,gm:0.45,fcfNi:1.16,fcfDebt:19.57,shYld:0.9,ocfCapex:4.6,roiic3yr:190,revCagr3yr:16.4,gmTrend3yr:19.1},
+            {type:'cow',ticker:'LRN',roiic:0.58,reinvRate:0.08,compPower:0.05,roic:0.22,vcr:2.2,gm:0.39,fcfNi:1.50,fcfDebt:0.68,shYld:0.6,ocfCapex:7.2,roiic3yr:195,revCagr3yr:12.6,gmTrend3yr:3.9},
+            {type:'cow',ticker:'BLD',roiic:0.25,reinvRate:0.14,compPower:0.03,roic:0.19,vcr:1.9,gm:0.30,fcfNi:1.25,fcfDebt:0.45,shYld:7.4,ocfCapex:11.2,roiic3yr:999,revCagr3yr:15.2,gmTrend3yr:2.5},
+            {type:'cow',ticker:'TTD',roiic:0.21,reinvRate:0.71,compPower:0.15,roic:0.17,vcr:1.7,gm:0.81,fcfNi:1.88,fcfDebt:2.03,shYld:1.6,ocfCapex:6.9,roiic3yr:69,revCagr3yr:26.9,gmTrend3yr:-0.8},
+            {type:'cow',ticker:'RJF',roiic:0.67,reinvRate:0.03,compPower:0.02,roic:0.31,vcr:3.1,gm:0.88,fcfNi:1.14,fcfDebt:0.49,shYld:8.7,ocfCapex:12.9,roiic3yr:39,revCagr3yr:12.6,gmTrend3yr:-8.2},
+            {type:'cow',ticker:'UTHR',roiic:0.43,reinvRate:0.26,compPower:0.11,roic:0.21,vcr:2.1,gm:0.89,fcfNi:1.11,fcfDebt:3.60,shYld:4.7,ocfCapex:5.4,roiic3yr:40,revCagr3yr:19.5,gmTrend3yr:-3.5},
+            {type:'cow',ticker:'DECK',roiic:1.39,reinvRate:0.06,compPower:0.09,roic:0.91,vcr:9.1,gm:0.58,fcfNi:1.08,fcfDebt:3.46,shYld:3.3,ocfCapex:12.1,roiic3yr:999,revCagr3yr:16.5,gmTrend3yr:6.9},
+            {type:'cow',ticker:'NFLX',roiic:0.97,reinvRate:-1.56,compPower:0,roic:0.28,vcr:2.8,gm:0.48,fcfNi:0.92,fcfDebt:0.65,shYld:2.6,ocfCapex:14.7,roiic3yr:159,revCagr3yr:12.6,gmTrend3yr:9.1},
+            {type:'cow',ticker:'HLNE',roiic:0.41,reinvRate:0.27,compPower:0.11,roic:0.21,vcr:2.1,gm:0.71,fcfNi:1.49,fcfDebt:0.85,shYld:9.2,ocfCapex:26.6,roiic3yr:30,revCagr3yr:24.7,gmTrend3yr:0.3},
+            {type:'cow',ticker:'KLAC',roiic:0.65,reinvRate:0.15,compPower:0.10,roic:0.40,vcr:4.0,gm:0.62,fcfNi:1.00,fcfDebt:0.61,shYld:3.3,ocfCapex:12.0,roiic3yr:252,revCagr3yr:9.7,gmTrend3yr:1.3},
+            {type:'cow',ticker:'FFIV',roiic:0.83,reinvRate:0.17,compPower:0.14,roic:0.17,vcr:1.7,gm:0.82,fcfNi:1.37,fcfDebt:3.46,shYld:3.1,ocfCapex:22.0,roiic3yr:70,revCagr3yr:4.6,gmTrend3yr:1.8},
+            {type:'cow',ticker:'ALSN',roiic:1.35,reinvRate:0.14,compPower:0.19,roic:0.18,vcr:1.8,gm:0.47,fcfNi:1.10,fcfDebt:0.27,shYld:6.7,ocfCapex:5.6,roiic3yr:183,revCagr3yr:10.3,gmTrend3yr:-0.3},
+            {type:'cow',ticker:'MSI',roiic:0.75,reinvRate:0.18,compPower:0.14,roic:0.27,vcr:2.7,gm:0.51,fcfNi:1.51,fcfDebt:0.33,shYld:5.2,ocfCapex:9.3,roiic3yr:79,revCagr3yr:9.8,gmTrend3yr:1.5},
+            {type:'cow',ticker:'RMD',roiic:0.24,reinvRate:-0.02,compPower:0,roic:0.21,vcr:2.1,gm:0.59,fcfNi:1.25,fcfDebt:1.95,shYld:4.4,ocfCapex:19.5,roiic3yr:269,revCagr3yr:12.9,gmTrend3yr:2.8},
+            {type:'cow',ticker:'CTAS',roiic:0.41,reinvRate:0.22,compPower:0.09,roic:0.22,vcr:2.2,gm:0.50,fcfNi:1.20,fcfDebt:0.66,shYld:4.7,ocfCapex:5.3,roiic3yr:103,revCagr3yr:9.6,gmTrend3yr:3.8},
+            {type:'cow',ticker:'ROL',roiic:0.26,reinvRate:0.19,compPower:0.05,roic:0.24,vcr:2.4,gm:0.53,fcfNi:1.30,fcfDebt:0.71,shYld:4.6,ocfCapex:22.0,roiic3yr:23,revCagr3yr:11.8,gmTrend3yr:0.6},
+        ];
+        // Calculate true FCF/NI for each stock
+        stocks.forEach(s => {
+            s.trueFcfNi = s.ocfCapex ? s.fcfNi * (s.ocfCapex - 1) / s.ocfCapex : null;
+        });
+        let currentSort = { column: 'revCagr3yr', direction: 'desc' };
+        let searchQuery = '';
+        function formatPercent(val) { return (val * 100).toFixed(0) + '%'; }
+        function formatMultiple(val) { return val.toFixed(1) + 'x'; }
+        function getMetricClass(value, thresholds) {
+            if (value >= thresholds.great) return 'metric-great';
+            if (value >= thresholds.good) return 'metric-good';
+            if (value >= thresholds.warn) return 'metric-warn';
+            return '';
+        }
+        function renderTable() {
+            let filtered = stocks.filter(s => {
+                if (searchQuery && !s.ticker.toLowerCase().includes(searchQuery.toLowerCase())) return false;
+                return true;
+            });
+            filtered.sort((a, b) => {
+                let aVal = a[currentSort.column], bVal = b[currentSort.column];
+                if (typeof aVal === 'string') return currentSort.direction === 'asc' ? aVal.localeCompare(bVal) : bVal.localeCompare(aVal);
+                return currentSort.direction === 'asc' ? aVal - bVal : bVal - aVal;
+            });
+            document.getElementById('tableBody').innerHTML = filtered.map(s => {
+                return `<tr>
+                    <td class="ticker"><a href="https://finance.yahoo.com/quote/${s.ticker}" target="_blank">${s.ticker}</a></td>
+                    <td class="metric ${s.revCagr3yr >= 20 ? 'metric-great' : s.revCagr3yr >= 10 ? 'metric-good' : s.revCagr3yr < 0 ? 'metric-warn' : ''}">${s.revCagr3yr !== undefined ? s.revCagr3yr.toFixed(1) + '%' : 'N/A'}</td>
+                    <td class="metric ${getMetricClass(s.roiic, {great: 0.5, good: 0.3, warn: 0.2})}">${formatPercent(s.roiic)}</td>
+                    <td class="metric ${s.reinvRate >= 0.2 ? 'metric-good' : s.reinvRate < 0 ? 'metric-warn' : ''}">${formatPercent(s.reinvRate)}</td>
+                    <td class="metric ${getMetricClass(s.compPower, {great: 0.3, good: 0.2, warn: 0.1})}">${formatPercent(s.compPower)}</td>
+                    <td class="metric ${getMetricClass(s.roic, {great: 0.3, good: 0.2, warn: 0.15})}">${formatPercent(s.roic)}</td>
+                    <td class="metric ${getMetricClass(s.vcr, {great: 3, good: 2, warn: 1.5})}">${formatMultiple(s.vcr)}</td>
+                    <td class="metric ${getMetricClass(s.gm, {great: 0.5, good: 0.35, warn: 0.25})}">${formatPercent(s.gm)}</td>
+                    <td class="metric ${s.gmTrend3yr > 5 ? 'metric-great' : s.gmTrend3yr > 2 ? 'metric-good' : s.gmTrend3yr < -2 ? 'metric-warn' : ''}">${s.gmTrend3yr !== undefined ? (s.gmTrend3yr > 0 ? '+' : '') + s.gmTrend3yr.toFixed(1) + '%' : 'N/A'}</td>
+                    <td class="metric ${getMetricClass(s.fcfNi, {great: 1.2, good: 1.0, warn: 0.7})}">${formatPercent(s.fcfNi)}</td>
+                    <td class="metric ${getMetricClass(s.fcfDebt, {great: 1.0, good: 0.5, warn: 0.25})}">${formatPercent(s.fcfDebt)}</td>
+                    <td class="metric ${getMetricClass(s.trueFcfNi || 0, {great: 1.0, good: 0.7, warn: 0.5})}">${s.trueFcfNi !== null ? formatPercent(s.trueFcfNi) : 'N/A'}</td>
+                    <td class="metric ${getMetricClass(s.shYld/100, {great: 0.05, good: 0.03, warn: 0.01})}">${s.shYld.toFixed(1)}%</td>
+                    <td class="metric ${getMetricClass(s.ocfCapex, {great: 10, good: 5, warn: 2.5})}">${s.ocfCapex ? s.ocfCapex.toFixed(1) + 'x' : 'N/A'}</td>
+                    <td class="metric ${s.roiic3yr === 999 ? 'metric-good' : s.roiic3yr >= 50 ? 'metric-great' : s.roiic3yr >= 20 ? 'metric-good' : s.roiic3yr < 0 ? 'metric-warn' : ''}">${s.roiic3yr === 999 ? '>500%' : (s.roiic3yr !== undefined ? s.roiic3yr + '%' : 'N/A')}</td>
+                </tr>`;
+            }).join('');
+        }
+        function sortTable(column) {
+            if (currentSort.column === column) currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
+            else { currentSort.column = column; currentSort.direction = 'desc'; }
+            renderTable();
+        }
+        function searchTicker(query) { searchQuery = query; renderTable(); }
+        
+        function searchAndAnalyze(query) {
+            searchQuery = query;
+            renderTable();
+            
+            const input = query.toUpperCase().trim();
+            const resultDiv = document.getElementById('analyze-result');
+            const tbody = document.getElementById('analyze-body');
+            const msg = document.getElementById('analyze-msg');
+            
+            if (!input || input.length < 2) { 
+                resultDiv.classList.remove('show'); 
+                return; 
+            }
+            
+            // Check for exact match
+            const found = stocks.find(s => s.ticker === input);
+            if (found) {
+                const s = found;
+                tbody.innerHTML = `<tr>
+                    <td class="ticker"><a href="https://finance.yahoo.com/quote/${s.ticker}" target="_blank">${s.ticker}</a></td>
+                    <td class="metric">${s.revCagr3yr.toFixed(1)}%</td>
+                    <td class="metric">${formatPercent(s.roiic)}</td>
+                    <td class="metric">${formatPercent(s.reinvRate)}</td>
+                    <td class="metric">${formatPercent(s.compPower)}</td>
+                    <td class="metric">${formatPercent(s.roic)}</td>
+                    <td class="metric">${formatMultiple(s.vcr)}</td>
+                    <td class="metric">${formatPercent(s.gm)}</td>
+                    <td class="metric">${(s.gmTrend3yr > 0 ? '+' : '') + s.gmTrend3yr.toFixed(1)}%</td>
+                    <td class="metric">${formatPercent(s.fcfNi)}</td>
+                    <td class="metric">${formatPercent(s.fcfDebt)}</td>
+                    <td class="metric">${s.trueFcfNi ? formatPercent(s.trueFcfNi) : 'N/A'}</td>
+                    <td class="metric">${s.shYld.toFixed(1)}%</td>
+                    <td class="metric">${s.ocfCapex.toFixed(1)}x</td>
+                    <td class="metric">${s.roiic3yr === 999 ? '>500%' : s.roiic3yr + '%'}</td>
+                </tr>`;
+                msg.innerHTML = '✅ In universe - click ticker for Yahoo Finance';
+                msg.style.color = '#4ade80';
+                resultDiv.classList.add('show');
+            } else {
+                tbody.innerHTML = '';
+                msg.innerHTML = '📊 ' + input + ' not in 49-stock universe';
+                msg.style.color = '#888';
+                resultDiv.classList.add('show');
+            }
+        }
+        renderTable();
+    </script>
+</body>
+</html>
