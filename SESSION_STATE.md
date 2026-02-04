@@ -20,14 +20,16 @@
 
 ### dashboard49.html HAS:
 - [x] 49 curated stocks (machines + cows)
-- [x] 18 metrics columns including VCR* and Moat
+- [x] 19 metrics columns including Power*, VCR*, and Moat
 - [x] Key Metrics Reference section with formulas
 - [x] Column header tooltips (hover for explanation)
 - [x] Ticker links to Yahoo Finance
 - [x] Working analyze box with 3-tier lookup
 - [x] ROIC* (Hidden Compounder) column
 - [x] VCR* column (ROIC* ÷ WACC)
+- [x] Power* column (ROIIC* × Reinv Rate)
 - [x] Moat Trend column (↑/→/↓)
+- [x] Complete Key Metrics Reference for all 19 columns
 - [x] FMP /stable/ endpoints (NOT /api/v3/)
 
 ### Analyze Box 3-Tier Lookup:
@@ -39,12 +41,13 @@
 
 ## Column Headers (in order)
 ```
-Ticker | 3yr Rev | ROIIC | Rate | Power | ROIC | ROIC* | Moat | VCR | VCR* | GM | GM Δ3yr | OCF/NI | FCF/Debt | FCF/NI | SH Yield | OCF/CapEx | 3yr ROIIC
+Ticker | 3yr Rev | ROIIC | Rate | Power | Power* | ROIC | ROIC* | Moat | VCR | VCR* | GM | GM Δ3yr | OCF/NI | FCF/Debt | FCF/NI | SH Yield | OCF/CapEx | 3yr ROIIC
 ```
 
 ### Shortened Names:
 - "Rate" = Reinvestment Rate
-- "Power" = Compounding Power
+- "Power" = Compounding Power (ROIIC × Reinv Rate)
+- "Power*" = Compounding Power* (ROIIC* × Reinv Rate)
 - "Moat" = Moat Trend (↑ widening / → stable / ↓ narrowing)
 
 ---
@@ -58,7 +61,15 @@ Ticker | 3yr Rev | ROIIC | Rate | Power | ROIC | ROIC* | Moat | VCR | VCR* | GM 
 | VCR | ROIC ÷ WACC (10%) | ≥1.5x |
 | VCR* | ROIC* ÷ WACC (10%) | ≥3x |
 | Compounding Power | ROIIC × Reinv Rate | ≥20% |
+| Compounding Power* | ROIIC* × Reinv Rate | ≥25% |
 | Moat Trend | ROIC* now vs ROIC* 5yr ago | ↑ (>5% improvement) |
+
+### WACC Analysis (Feb 3, 2026)
+Universe WACC range: 6.0% - 14.8%
+- Min: LNTH 6.0% (β=-0.09)
+- Median: 10.0%
+- Max: NVDA 14.8% (β=2.31)
+- **10% assumption validated** - right at median
 
 **Hidden Compounder:** When ROIC* >> ROIC (excess cash depresses standard ROIC)
 - Example: ADP 24% ROIC → 463% ROIC* ($7.8B cash on $8.3B IC)
@@ -121,6 +132,13 @@ git push
 - **Added Moat Trend column** (↑/→/↓) based on ROIC* 5yr trajectory
   - 39 stocks widening, 3 stable, 1 narrowing (FTNT)
   - Proper apples-to-apples comparison (ROIC* now vs ROIC* 5yr ago)
+- Fetched fresh ROIC/ROIC* data from FMP for all 45 stocks
+- WACC analysis: universe range 6-15%, median 10% (validates assumption)
+- Added VCR* and Moat Trend to Key Metrics Reference
+- **Added Power* column** (ROIIC* × Reinv Rate) - true compounding ex-cash
+  - Hidden compounders: ADP 120%→490%, COKE 39%→222%, NVDA 18%→33%
+  - Overstated: VITL 156%→31%, GWW 29%→16%
+- Now 19 columns total, all documented in Key Metrics Reference
 
 ### Previous
 - Built 49-stock dashboard from 451 universe
