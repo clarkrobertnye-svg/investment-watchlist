@@ -1,0 +1,2288 @@
+Capital Compounders v3 — Unified Total Value Creation
+Started: 2026-02-08 21:14:12
+Universe: 1249 tickers ($10B+ / US-listed)
+======================================================================
+
+
+Data pull complete: 994 stocks, 255 errors, 4997 API calls
+  x OAKI: Missing financial statements
+  x VOO: Missing financial statements
+  x BCTK: Missing financial statements
+  x IVV: Missing financial statements
+  x SPY: Missing financial statements
+  x VXUS: Missing financial statements
+  x VTI: Missing financial statements
+  x BMOP: Missing financial statements
+  x BND: Missing financial statements
+  x VUG: Missing financial statements
+  x LACG: Missing financial statements
+  x VEA: Missing financial statements
+  x CDVM: Missing financial statements
+  x FIYY: Missing financial statements
+  x VTV: Missing financial statements
+  x FFEU: Missing financial statements
+  x GRAG: Missing financial statements
+  x VO: Missing financial statements
+  x IEFA: Missing financial statements
+  x GLD: Missing financial statements
+  x VB: Missing financial statements
+  x VWO: Missing financial statements
+  x IEMG: Missing financial statements
+  x AGG: Missing financial statements
+  x VGT: Missing financial statements
+  x IWF: Missing financial statements
+  x VIG: Missing financial statements
+  x JJEB: Missing financial statements
+  x COWB: Missing financial statements
+  x JJTB: Missing financial statements
+  x IJH: Missing financial statements
+  x BALB: Missing financial statements
+  x JJGB: Missing financial statements
+  x JJAB: Missing financial statements
+  x BJJN: Missing financial statements
+  x JJUB: Missing financial statements
+  x JJSB: Missing financial statements
+  x JJPB: Missing financial statements
+  x SGGB: Missing financial statements
+  x JJMB: Missing financial statements
+  x JJCB: Missing financial statements
+  x SPLG: Missing financial statements
+  x BJO: Missing financial statements
+  x PGMB: Missing financial statements
+  x IJR: Missing financial statements
+  x VYM: Missing financial statements
+  x RSP: Missing financial statements
+  x ITOT: Missing financial statements
+  x VEU: Missing financial statements
+  x VXF: Missing financial statements
+  x VT: Missing financial statements
+  x IAU: Missing financial statements
+  x SCHD: Missing financial statements
+  x XLK: Missing financial statements
+  x IWM: Missing financial statements
+  x EFA: Missing financial statements
+  x QQQM: Missing financial statements
+  x SGOV: Missing financial statements
+  x BSV: Missing financial statements
+  x IWD: Missing financial statements
+  x VV: Missing financial statements
+  x VCIT: Missing financial statements
+  x VTIP: Missing financial statements
+  x IBIT: Missing financial statements
+  x VXXB: Missing financial statements
+  x VBR: Missing financial statements
+  x SATA: Insufficient history
+  x SCHF: Missing financial statements
+  x SOMN: Missing financial statements
+  x IXUS: Missing financial statements
+  x XLF: Missing financial statements
+  x SCHG: Missing financial statements
+  x BIV: Missing financial statements
+  x IVE: Missing financial statements
+  x QUAL: Missing financial statements
+  x IWR: Missing financial statements
+  x VCSH: Missing financial statements
+  x VONG: Missing financial statements
+  x IWB: Missing financial statements
+  x VGIT: Missing financial statements
+  x IEF: Missing financial statements
+  x VTEB: Missing financial statements
+  x TLT: Missing financial statements
+  x CRWV: Insufficient history
+  x SPYG: Missing financial statements
+  x CCIV: Insufficient history
+  x SMH: Missing financial statements
+  x JEPI: Missing financial statements
+  x MUB: Missing financial statements
+  x BIL: Missing financial statements
+  x XLV: Missing financial statements
+  x VXZB: Missing financial statements
+  x DFAC: Missing financial statements
+  x DIA: Missing financial statements
+  x VBK: Missing financial statements
+  x VGK: Missing financial statements
+  x MBB: Missing financial statements
+  x SCHB: Missing financial statements
+  x MDLN: Insufficient history
+  x DGRO: Missing financial statements
+  x GBTC: Insufficient history
+  x JPST: Missing financial statements
+  x XLE: Missing financial statements
+  x IUSB: Missing financial statements
+  x VOE: Missing financial statements
+  x SPYV: Missing financial statements
+  x VOT: Missing financial statements
+  x LQD: Missing financial statements
+  x DYNF: Missing financial statements
+  x AMRZ: Insufficient history
+  x MGK: Missing financial statements
+  x VGSH: Missing financial statements
+  x GLDM: Missing financial statements
+  x QMIS: Missing financial statements
+  x XLI: Missing financial statements
+  x EFV: Missing financial statements
+  x OEF: Missing financial statements
+  x GDX: Missing financial statements
+  x CGDV: Missing financial statements
+  x ALAB: Insufficient history
+  x GOVT: Missing financial statements
+  x XLC: Missing financial statements
+  x IDEV: Missing financial statements
+  x BMLP: Missing financial statements
+  x DVY: Missing financial statements
+  x IUSG: Missing financial statements
+  x ACWI: Missing financial statements
+  x JAAA: Missing financial statements
+  x USHY: Missing financial statements
+  x GTOP: Missing financial statements
+  x SOJB: Insufficient history
+  x SOJA: Missing financial statements
+  x GFLU: Missing financial statements
+  x IUSV: Missing financial statements
+  x MDY: Missing financial statements
+  x SHY: Missing financial statements
+  x VG: Insufficient history
+  x FBND: Missing financial statements
+  x XLY: Missing financial statements
+  x USMV: Missing financial statements
+  x VOOG: Missing financial statements
+  x XLU: Missing financial statements
+  x AVUV: Missing financial statements
+  x IGSB: Missing financial statements
+  x FNDF: Missing financial statements
+  x SDY: Missing financial statements
+  x MTUM: Missing financial statements
+  x EEM: Missing financial statements
+  x SCHA: Missing financial statements
+  x RDVY: Missing financial statements
+  x SHV: Missing financial statements
+  x CGGR: Missing financial statements
+  x IWP: Missing financial statements
+  x VHT: Missing financial statements
+  x AVEM: Missing financial statements
+  x XLP: Missing financial statements
+  x IWV: Missing financial statements
+  x DFUS: Missing financial statements
+  x COWZ: Missing financial statements
+  x IWS: Missing financial statements
+  x VYMI: Missing financial statements
+  x IGIB: Missing financial statements
+  x IEI: Missing financial statements
+  x EWJ: Missing financial statements
+  x AVDV: Missing financial statements
+  x DFIV: Missing financial statements
+  x HYG: Missing financial statements
+  x DUKH: Insufficient history
+  x VONV: Missing financial statements
+  x EMB: Missing financial statements
+  x SPEM: Missing financial statements
+  x USIG: Missing financial statements
+  x VMBS: Missing financial statements
+  x BINC: Missing financial statements
+  x SPMD: Missing financial statements
+  x USFR: Missing financial statements
+  x ESGU: Missing financial statements
+  x FTEC: Missing financial statements
+  x IWY: Missing financial statements
+  x EMXC: Missing financial statements
+  x FBTC: Missing financial statements
+  x MPT: Missing financial statements
+  x DRUA: Insufficient history
+  x SCHP: Missing financial statements
+  x SCHV: Missing financial statements
+  x VFH: Missing financial statements
+  x MINT: Missing financial statements
+  x GSLC: Missing financial statements
+  x BBJP: Missing financial statements
+  x XELLL: Missing financial statements
+  x VTWO: Missing financial statements
+  x VGLT: Missing financial statements
+  x SPMO: Missing financial statements
+  x SPSM: Missing financial statements
+  x DFAI: Missing financial statements
+  x PFF: Missing financial statements
+  x SCZ: Missing financial statements
+  x TIP: Missing financial statements
+  x PULS: Missing financial statements
+  x DFUV: Missing financial statements
+  x IWO: Missing financial statements
+  x VSS: Missing financial statements
+  x IQLT: Missing financial statements
+  x AVDE: Missing financial statements
+  x STIP: Missing financial statements
+  x IWN: Missing financial statements
+  x SCHM: Missing financial statements
+  x MOAT: Missing financial statements
+  x DFIC: Missing financial statements
+  x DFAS: Missing financial statements
+  x HDV: Missing financial statements
+  x ITA: Missing financial statements
+  x DFAT: Missing financial statements
+  x KRMN: Insufficient history
+  x SCHR: Missing financial statements
+  x VPL: Missing financial statements
+  x TLH: Missing financial statements
+  x SCHE: Missing financial statements
+  x SCHO: Missing financial statements
+  x SPTM: Missing financial statements
+  x ESGV: Missing financial statements
+  x SOXL: Missing financial statements
+  x MICC: Insufficient history
+  x PAVE: Missing financial statements
+  x RTPY: Insufficient history
+  x IAGG: Missing financial statements
+  x NOBL: Missing financial statements
+  x XLG: Missing financial statements
+  x MGV: Missing financial statements
+  x ESGD: Missing financial statements
+  x BKMS: Missing financial statements
+  x PSKY: Insufficient history
+  x AMLP: Missing financial statements
+  x AVUS: Missing financial statements
+  x CIBR: Missing financial statements
+  x SUB: Missing financial statements
+  x QLD: Missing financial statements
+  x DUHP: Missing financial statements
+  x FIG: Insufficient history
+  x SPIB: Missing financial statements
+  x SPTL: Missing financial statements
+  x DFAU: Missing financial statements
+  x SPHY: Missing financial statements
+  x MGC: Missing financial statements
+  x VONE: Missing financial statements
+  x GDXJ: Missing financial statements
+  x SCHI: Missing financial statements
+  x SOLS: Insufficient history
+  x PBUS: Missing financial statements
+  x PYLD: Missing financial statements
+  x SARO: Insufficient history
+  x SDVY: Missing financial statements
+  x VDE: Missing financial statements
+  x VPU: Missing financial statements
+  x AVLV: Missing financial statements
+
+==================================================================================================================================
+DETAILED VALUE CREATION BREAKDOWN
+==================================================================================================================================
+
+Sym     3yr ROIC    ROIIC   Reinv   Power     BegIC   AvgBB/yr  AvgDiv/yr  CR Yield    TVCR Mech          NOPAT/sh   FCF/sh
+----------------------------------------------------------------------------------------------------------------------------------
+TOST      -89.2%   104.8%     ---    0.0%     $0.0B      $0.0B      $0.0B   1866.7% 1866.7% hybrid             ---      ---
+BAP       126.8%      ---     ---    0.0%     $0.2B      $2.4B      $2.3B   1000.9% 1000.9% hybrid            5.3%    15.9%
+SPGI        8.2%     2.5%  383.3%    5.0%     $0.8B      $7.3B      $1.1B    897.3%  902.2% buyback           6.5%    10.6%
+CDE         0.1%   396.9% 2914.5%  700.0%     $1.3B        ---      $0.0B      0.0%  700.0% reinvestment     -9.0%      ---
+BSBR      109.9%      ---     ---    0.0%     $1.5B      $6.3B      $6.2B    420.5%  420.5% hybrid           -4.2%      ---
+CAH        48.5%    81.1%   90.8%   73.7%     $0.8B      $1.7B      $0.5B    205.6%  279.3% buyback            ---     7.2%
+BKR        12.1%   631.4%   71.2%  249.1%    $18.6B      $1.3B      $0.8B      7.1%  256.2% reinvestment       ---    38.0%
+NCLH        1.0%   112.0%  424.6%  224.0%    $13.1B      $0.0B      $0.0B      0.2%  224.2% reinvestment    -12.2%    13.7%
+CHWY        7.1%    33.6%  355.4%   67.2%     $0.2B      $0.3B      $0.0B    135.8%  203.0% buyback            ---      ---
+NVDA       86.8%   202.2%   29.2%   59.0%    $18.1B     $18.3B      $0.5B    101.0%  160.0% buyback          92.3%    70.0%
+PSLV        5.7%    77.5%  183.7%  142.3%     $3.6B      $0.0B      $0.0B      0.0%  142.3% reinvestment     15.0%      ---
+TPL       113.4%    28.5%   43.1%   12.3%     $0.2B      $0.3B      $0.2B    126.6%  138.9% hybrid            6.1%     8.5%
+CPNG        3.1%    67.3%  532.7%  134.7%     $2.3B      $0.1B      $0.0B      2.6%  137.2% reinvestment       ---      ---
+AGI         6.3%    73.8%  173.4%  128.0%     $2.5B      $0.0B      $0.0B      1.5%  129.5% reinvestment     26.5%      ---
+IHG        86.7%  1464.7%    1.3%    4.5%     $0.8B      $0.9B      $0.2B    125.0%  129.5% buyback          12.9%     9.0%
+NXT        67.3%   117.8%   35.1%   41.3%     $0.5B      $0.4B      $0.0B     87.9%  129.2% buyback           2.2%    -7.7%
+BKNG       99.3%      ---     ---    0.0%     $6.7B      $8.2B      $0.4B    123.6%  123.6% buyback          12.3%    17.5%
+YMM         5.7%    46.3%  367.0%   92.5%     $5.5B      $1.5B      $0.4B     26.5%  119.0% reinvestment       ---      ---
+MA         90.1%   222.0%    5.9%   13.0%    $12.9B     $13.1B      $2.5B    101.1%  114.1% buyback          21.3%    24.2%
+MCK       176.1%      ---  -19.7%    0.0%     $3.4B      $3.6B      $0.3B    105.5%  105.5% buyback          10.8%    13.9%
+ZM         31.0%   -30.8%   62.0%  -19.1%     $0.6B      $0.7B      $0.0B    122.0%  102.9% buyback         110.5%    66.6%
+RNR        40.5%    34.1%  137.8%   47.0%     $0.6B      $0.4B      $0.1B     55.6%  102.6% hybrid           25.9%    15.4%
+FICO       52.3%   180.0%    9.7%   17.5%     $1.0B      $0.9B      $0.0B     85.0%  102.5% buyback          27.4%    22.3%
+QXO      -411.8%      ---     ---    0.0%     $0.0B      $0.0B      $0.0B    100.0%  100.0% hybrid             ---      ---
+MKL        23.6%    26.5%  133.5%   35.4%     $0.7B      $0.4B      $0.0B     61.2%   96.6% hybrid           26.9%    17.2%
+ASML       77.8%   114.4%   12.5%   14.3%     $6.0B      $4.8B      $2.4B     80.8%   95.1% hybrid           22.5%    27.5%
+OTIS       83.8%    12.2%   21.6%    2.7%     $1.6B      $1.5B      $0.6B     92.2%   94.9% buyback           9.1%     4.2%
+IAG         6.0%    44.9%  256.4%   89.8%     $2.3B      $0.0B      $0.0B      0.5%   90.3% reinvestment       ---      ---
+ANET      102.3%   172.3%   17.3%   29.8%     $0.7B      $0.4B      $0.0B     58.8%   88.7% hybrid           26.5%    31.4%
+TEAM     -149.5%      ---     ---    0.0%     $0.5B      $0.4B      $0.0B     88.6%   88.6% hybrid             ---    19.7%
+IIVI        3.5%      --- -343.6%    0.0%     $4.4B      $3.8B      $3.8B     87.9%   87.9% hybrid           23.8%   265.5%
+WYNN        5.1%    84.0%  100.0%   84.1%     $9.4B      $0.3B      $0.1B      3.6%   87.7% reinvestment     14.3%      ---
+MRO         7.3%   248.0%   30.3%   75.0%    $15.5B      $1.9B      $0.2B     12.1%   87.1% reinvestment     14.7%    42.9%
+SWAV       22.4%    48.0%  168.5%   80.9%     $0.0B      $0.0B      $0.0B      5.8%   86.7% reinvestment       ---      ---
+CHKP       56.9%      ---   -4.1%    0.0%     $1.6B      $1.3B      $0.0B     82.9%   82.9% buyback           6.2%     5.0%
+UBER        8.9%    33.2%  231.2%   66.4%    $16.0B      $2.6B      $0.0B     16.2%   82.5% reinvestment       ---      ---
+NVO        50.9%    18.5%   76.2%   14.1%    $90.2B     $59.0B     $41.9B     65.4%   79.5% hybrid           19.7%    14.8%
+PHYS        9.5%    52.4%  150.8%   79.0%     $5.0B      $0.0B      $0.0B      0.1%   79.0% reinvestment     18.4%      ---
+EXEL       16.3%    35.5%   88.3%   31.3%     $0.8B      $0.4B      $0.0B     47.4%   78.7% buyback          10.5%     5.6%
+NTES      130.9%      ---   -9.4%    0.0%    $20.6B     $16.1B      $8.6B     78.3%   78.3% hybrid           17.3%    22.1%
+ULS        21.7%    27.5%   47.1%   13.0%     $1.2B      $0.8B      $0.8B     63.8%   76.7% hybrid           15.3%    -3.1%
+ONON       12.5%    50.3%  150.7%   75.8%     $0.5B        ---      $0.0B      0.0%   75.8% reinvestment       ---      ---
+MSCI       36.7%    64.0%   15.3%    9.8%     $2.8B      $1.8B      $0.5B     64.7%   74.5% buyback          14.2%    17.4%
+DAY         1.1%    57.8%  128.0%   73.9%     $3.1B      $0.0B      $0.0B      0.4%   74.3% reinvestment     -4.0%      ---
+GMAB       64.8%    25.2%   94.5%   23.8%     $3.7B      $1.8B      $0.0B     49.1%   72.8% hybrid           23.1%    43.8%
+TTD        11.6%    45.2%  100.4%   45.3%     $1.1B      $0.3B      $0.0B     25.8%   71.2% reinvestment     24.7%    98.4%
+WDAY        1.7%    29.3%  476.0%   58.5%     $3.2B      $0.4B      $0.0B     12.6%   71.1% reinvestment       ---    24.4%
+ADP        64.1%    57.0%   18.6%   10.6%     $5.6B      $3.4B      $2.2B     60.2%   70.7% hybrid           12.6%    16.0%
+JD         19.8%    70.9%   64.3%   45.6%    $78.1B     $19.4B      $9.4B     24.9%   70.5% reinvestment     32.9%    15.0%
+AAPL       74.7%      ---   -0.7%    0.0%   $147.3B    $103.0B     $15.2B     69.9%   69.9% buyback          18.3%     9.5%
+PSTG       27.4%      ---  -89.4%    0.0%     $0.3B      $0.2B      $0.0B     69.4%   69.4% buyback            ---    33.2%
+VST        17.3%   153.1%   37.9%   58.0%    $18.3B      $1.8B      $0.3B      9.8%   67.8% reinvestment     41.5%    10.6%
+ABC        64.6%     0.7%   52.1%    0.3%     $2.0B      $1.3B      $0.3B     65.2%   65.5% buyback           3.6%    12.9%
+NVR        54.0%   -33.5%   26.7%   -9.0%     $2.1B      $1.5B      $0.0B     74.2%   65.2% buyback          14.7%    15.3%
+BAM        65.1%    -0.3%  111.3%   -0.3%     $2.4B      $1.6B      $1.4B     65.2%   64.9% hybrid           16.2%      ---
+ADBE       47.2%      ---   -5.5%    0.0%    $13.1B      $8.4B      $0.0B     64.1%   64.1% buyback          19.3%    16.1%
+PINS       -4.2%   -11.6%     ---    0.0%     $1.1B      $0.7B      $0.0B     62.5%   62.5% hybrid             ---      ---
+LOGI       56.0%      ---  -22.6%    0.0%     $1.2B      $0.7B      $0.2B     61.3%   61.3% buyback          24.3%    17.7%
+DXCM       20.1%    43.0%   47.6%   20.5%     $1.6B      $0.7B      $0.0B     40.5%   60.9% buyback          25.9%    33.2%
+CELH       14.4%    69.5%   86.4%   60.1%     $0.2B      $0.0B      $0.0B      0.4%   60.4% reinvestment       ---   189.5%
+LLY        44.3%    70.7%   47.7%   33.7%    $22.0B      $5.7B      $4.1B     25.9%   59.6% reinvestment     32.7%   -33.8%
+CRS        11.8%   115.8%   46.9%   54.4%     $2.0B      $0.1B      $0.0B      3.7%   58.1% reinvestment    129.9%    35.1%
+UI         61.9%    74.5%   28.8%   21.5%     $0.4B      $0.1B      $0.1B     36.3%   57.8% hybrid           14.6%     9.6%
+PLTR      122.9%   638.3%   13.2%   46.3%     $0.4B      $0.0B      $0.0B     10.8%   57.1% reinvestment       ---      ---
+COR        57.7%    12.9%   49.1%    6.3%     $2.9B      $1.5B      $0.4B     50.3%   56.6% hybrid           10.7%    12.9%
+HMY        24.3%   244.4%   21.4%   52.3%    $31.7B      $1.2B      $1.2B      3.8%   56.1% reinvestment       ---   169.9%
+GDDY       16.0%    64.2%   32.5%   20.8%     $3.1B      $1.1B      $0.0B     35.2%   56.1% buyback          40.7%    20.1%
+BX         24.5%    75.4%   29.2%   22.0%    $16.8B      $5.6B      $5.1B     33.3%   55.3% hybrid           19.0%     9.9%
+KLAC       61.5%   121.5%    8.0%    9.8%     $5.6B      $2.5B      $0.8B     45.4%   55.2% hybrid           27.2%    22.1%
+EXPD       45.0%      ---  -17.3%    0.0%     $2.7B      $1.5B      $0.2B     54.9%   54.9% buyback          10.7%     3.0%
+V          45.3%   276.3%    2.8%    7.7%    $39.5B     $18.3B      $4.2B     46.2%   54.0% buyback          12.7%    17.6%
+SEIC       26.3%    13.4%   71.6%    9.6%     $1.1B      $0.5B      $0.1B     44.3%   53.9% buyback          10.8%     7.5%
+ADSK       35.2%    51.2%   34.8%   17.8%     $2.6B      $0.9B      $0.0B     35.5%   53.4% buyback          33.8%     2.5%
+FHN        25.2%     1.1%  285.1%    2.3%     $1.1B      $0.5B      $0.3B     50.9%   53.1% hybrid            0.4%     6.5%
+FER        10.6%    51.1%   90.1%   46.0%     $9.5B      $0.6B      $0.1B      6.8%   52.8% reinvestment     52.5%     1.9%
+CDNS       28.3%    13.3%   81.4%   10.9%     $2.2B      $0.9B      $0.0B     42.0%   52.8% buyback          21.9%    11.8%
+AVGO       17.5%     8.8%  182.1%   16.0%    $50.8B     $18.3B      $9.5B     36.1%   52.1% buyback          40.7%    15.0%
+MNST       29.7%     6.9%   31.1%    2.1%     $3.5B      $1.7B      $0.0B     49.7%   51.8% buyback           7.6%    11.8%
+MELI       20.7%    34.9%  132.7%   46.3%     $3.2B      $0.2B      $0.0B      5.2%   51.5% reinvestment       ---    84.8%
+MEDP       56.9%      ---  -35.5%    0.0%     $0.8B      $0.4B      $0.0B     51.4%   51.4% buyback          34.2%    29.6%
+TDG        18.8%    35.2%   54.6%   19.2%    $13.1B      $4.1B      $3.9B     31.2%   50.4% hybrid           15.9%    10.0%
+XP        -14.1%    -3.2%     ---    0.0%     $6.4B      $3.2B      $1.9B     50.3%   50.3% hybrid             ---      ---
+FCNCA      98.3%     3.2%  212.4%    6.3%     $2.5B      $1.1B      $0.1B     43.6%   50.0% hybrid           29.5%    20.9%
+FCNCB      98.3%     3.2%  212.4%    6.3%     $2.5B      $1.1B      $0.1B     43.6%   50.0% hybrid           29.5%    20.9%
+PEG         5.9%    52.7%   87.2%   46.0%    $33.4B      $1.3B      $1.1B      3.9%   49.9% reinvestment      6.5%      ---
+GEN         9.2%     2.6%  271.4%    5.2%     $1.9B      $0.9B      $0.3B     44.2%   49.3% buyback          32.8%      ---
+GOOGL      32.5%    24.2%   67.3%   16.3%   $188.9B     $62.3B      $5.8B     33.0%   49.2% buyback          28.5%    14.0%
+HST         6.9%   174.5%   25.3%   44.1%    $11.7B      $0.6B      $0.5B      5.0%   49.1% reinvestment      2.8%     7.3%
+MPWR       28.3%     9.6%  107.8%   10.3%     $0.9B      $0.4B      $0.1B     38.1%   48.4% hybrid           29.9%      ---
+RCL        13.4%    80.8%   57.3%   46.3%    $25.5B      $0.5B      $0.1B      2.0%   48.3% reinvestment       ---      ---
+LYV        17.3%   213.2%   22.6%   48.1%     $3.7B        ---      $0.0B      0.0%   48.1% reinvestment     22.8%    55.1%
+AZN         9.4%   318.6%   12.6%   40.1%    $64.5B      $4.5B      $4.5B      7.0%   47.0% reinvestment     23.8%    64.1%
+RMBS       22.1%   138.5%   24.2%   33.5%     $0.5B      $0.1B      $0.0B     13.1%   46.6% reinvestment       ---      ---
+MO         51.8%      ---   -3.3%    0.0%    $18.7B      $8.7B      $6.9B     46.4%   46.4% hybrid           11.9%     4.3%
+AXIA        5.9%    22.3%  202.1%   44.6%   $107.5B      $1.9B      $1.2B      1.8%   46.3% reinvestment     10.5%      ---
+ARES        6.8%    83.6%   48.2%   40.3%    $13.1B      $0.8B      $0.8B      5.9%   46.3% reinvestment     30.8%      ---
+LULU       28.1%    35.1%   54.4%   19.1%     $3.2B      $0.9B      $0.0B     27.1%   46.2% buyback          23.9%    34.1%
+DDS        55.1%      ---   -2.0%    0.0%     $1.4B      $0.6B      $0.3B     45.2%   45.2% hybrid           46.8%    29.7%
+NVS        18.3%   281.1%    7.7%   21.6%    $70.4B     $16.3B      $7.6B     23.2%   44.8% buyback          15.6%    13.4%
+META       28.6%    30.3%   73.5%   22.3%   $128.2B     $28.8B      $3.5B     22.5%   44.8% hybrid           18.0%    17.0%
+VRT        13.0%   198.5%   19.8%   39.4%     $4.2B      $0.2B      $0.0B      5.2%   44.5% reinvestment      9.2%      ---
+DECK       60.2%  1210.8%    1.8%    6.3%     $1.1B      $0.4B      $0.0B     38.2%   44.5% buyback          30.4%    33.6%
+XYZ         1.4%     2.2% 2201.6%    4.4%     $1.1B      $0.4B      $0.0B     40.1%   44.4% buyback          27.6%    33.8%
+BAH        16.0%    64.5%   38.5%   24.8%     $3.7B      $0.7B      $0.3B     19.5%   44.4% reinvestment     15.7%    18.8%
+FIX        23.6%   141.3%   27.7%   39.2%     $1.4B      $0.1B      $0.0B      5.1%   44.2% reinvestment     37.7%    47.3%
+INCY       20.5%      ---  -15.7%    0.0%     $1.5B      $0.7B      $0.0B     44.2%   44.2% buyback         -53.4%   -16.5%
+MAR        24.0%   414.2%    3.2%   11.4%    $12.4B      $4.0B      $0.5B     32.0%   43.4% buyback          18.4%    17.9%
+MSFT       35.9%    17.4%   72.0%   12.5%   $134.6B     $41.2B     $21.9B     30.6%   43.1% hybrid           19.8%    10.3%
+PAC        22.5%    18.2%   70.0%   12.7%    $33.9B     $10.3B      $7.3B     30.3%   43.0% hybrid          106.0%    10.4%
+AMD         2.8%    35.6%  112.8%   40.2%    $52.2B      $1.4B      $0.0B      2.8%   42.9% reinvestment     14.8%    44.9%
+JPM       255.1%      ---  -35.8%    0.0%    $70.9B     $30.3B     $13.9B     42.7%   42.7% hybrid           16.7%      ---
+NLOK        7.4%     0.9%  347.2%    1.8%     $1.8B      $0.8B      $0.2B     40.7%   42.5% buyback          32.8%      ---
+MAS        37.5%    17.1%    9.6%    1.6%     $2.3B      $0.9B      $0.3B     40.9%   42.5% buyback          10.6%    12.2%
+DPZ        50.7%   192.5%    2.0%    3.8%     $1.2B      $0.5B      $0.2B     38.7%   42.4% hybrid           10.4%     8.4%
+EBR         5.8%    20.3%  222.2%   40.5%   $107.5B      $2.0B      $1.2B      1.9%   42.4% reinvestment     10.5%      ---
+CB         24.3%    43.0%   84.4%   36.3%    $39.6B      $2.3B      $0.9B      5.9%   42.2% reinvestment     43.6%      ---
+SBS        12.3%    45.9%   90.8%   41.7%    $40.0B        ---      $0.0B      0.0%   41.7% reinvestment     21.5%    12.1%
+ERIE       27.3%    61.7%   37.0%   22.8%     $1.2B      $0.2B      $0.2B     18.3%   41.1% reinvestment     15.8%    15.5%
+MSI        29.2%    39.6%   37.4%   14.8%     $4.7B      $1.2B      $0.6B     26.2%   41.0% hybrid           10.0%     6.9%
+SYF        25.3%    48.9%   45.2%   22.1%    $11.9B      $2.2B      $0.4B     18.7%   40.8% reinvestment     45.7%    12.6%
+RACE       27.3%    39.0%   45.2%   17.6%     $3.5B      $0.8B      $0.3B     23.1%   40.7% hybrid           16.8%     0.5%
+ACGL       20.7%    48.6%   64.8%   31.5%     $9.1B      $0.8B      $0.6B      9.0%   40.6% reinvestment     23.0%    28.8%
+ACN        26.3%     6.7%   46.2%    3.1%    $20.8B      $7.7B      $3.3B     37.2%   40.3% buyback           9.9%     7.9%
+BCE        10.2%   404.3%    9.7%   33.9%    $52.9B      $3.4B      $3.2B      6.3%   40.3% reinvestment       ---    -8.9%
+MTD        44.5%      ---   -3.1%    0.0%     $2.1B      $0.8B      $0.0B     39.6%   39.6% buyback          11.5%     9.5%
+APH        21.0%    37.6%   73.3%   27.6%    $10.7B      $1.3B      $0.6B     12.0%   39.6% reinvestment     27.5%    26.2%
+WDS        11.7%    12.2%  184.3%   22.5%    $18.3B      $3.1B      $3.1B     16.9%   39.4% reinvestment     28.0%   -26.1%
+AXP        28.4%    44.4%   39.5%   17.5%    $30.2B      $6.4B      $1.3B     21.2%   38.7% hybrid           36.9%    39.0%
+YUMC       10.1%    42.6%   53.9%   23.0%     $8.1B      $1.3B      $0.3B     15.7%   38.7% reinvestment     11.1%     6.2%
+BABA       13.3%    46.0%   51.4%   23.7%   $666.0B     $99.7B     $15.8B     15.0%   38.6% reinvestment      8.8%    -9.0%
+NYT        19.5%    43.1%   54.8%   23.6%     $1.0B      $0.1B      $0.1B     14.7%   38.3% reinvestment     17.8%    21.9%
+OWL        10.1%    18.3%  188.1%   34.5%     $3.0B      $0.1B      $0.1B      3.7%   38.2% reinvestment       ---      ---
+SPXC        8.7%    18.5%  216.8%   36.9%     $1.0B      $0.0B      $0.0B      1.2%   38.1% reinvestment     18.9%    11.9%
+EME        29.2%   604.6%    4.9%   17.1%     $2.2B      $0.5B      $0.0B     21.0%   38.0% buyback          29.0%    39.3%
+CSCO       27.2%    -2.1%   85.6%   -1.8%    $31.8B     $12.7B      $6.4B     39.9%   38.0% buyback           1.0%    -0.7%
+DELL       26.9%    48.3%   25.3%   12.2%    $15.8B      $4.1B      $1.1B     25.8%   38.0% buyback          25.7%   -22.0%
+ORLY       31.7%    30.7%   17.3%    5.3%     $7.5B      $2.4B      $0.0B     32.7%   38.0% buyback          12.5%    -3.5%
+CLS        23.7%   499.0%    8.4%   29.5%     $2.3B      $0.2B      $0.0B      8.4%   37.9% reinvestment     64.2%    22.6%
+FFIV       19.9%   153.6%   13.1%   20.2%     $2.6B      $0.5B      $0.0B     17.6%   37.8% reinvestment     17.7%     9.5%
+HZNP       11.8%    18.1%  186.1%   33.7%     $2.5B      $0.1B      $0.0B      3.4%   37.1% reinvestment       ---    23.3%
+PCG         3.5%    18.4%  233.2%   36.8%    $68.1B      $0.0B      $0.0B      0.0%   36.8% reinvestment     -6.0%      ---
+COKE       32.2%   124.2%   16.1%   20.0%     $1.7B      $0.3B      $0.1B     16.8%   36.8% reinvestment     48.5%    34.6%
+EA         15.9%   273.1%    2.8%    7.7%     $6.6B      $1.9B      $0.2B     28.9%   36.6% buyback           0.8%     4.6%
+FSLR       12.5%    34.5%  104.6%   36.1%     $4.7B      $0.0B      $0.0B      0.5%   36.5% reinvestment       ---      ---
+CCJ         2.7%    17.5%  455.1%   35.1%     $4.5B      $0.1B      $0.1B      1.3%   36.3% reinvestment     43.7%    16.6%
+HIG        17.3%    40.6%   52.5%   21.3%    $13.9B      $2.0B      $0.5B     14.5%   35.9% reinvestment     22.7%    16.5%
+TSM        39.1%    60.9%   31.1%   19.0%  $2234.5B    $376.5B    $375.5B     16.8%   35.8% reinvestment     27.1%    29.5%
+AZO        27.0%     8.7%   39.5%    3.4%     $8.7B      $2.8B      $0.0B     32.4%   35.8% buyback          16.3%     2.0%
+CAE         3.1%    17.7%  217.0%   35.5%     $7.1B      $0.0B      $0.0B      0.1%   35.6% reinvestment     11.2%    18.6%
+AMZN       12.1%    22.8%  155.9%   35.6%   $289.1B        ---      $0.0B      0.0%   35.6% reinvestment     24.5%   -22.5%
+WWD        12.1%    68.6%   35.1%   24.1%     $2.6B      $0.3B      $0.1B     11.0%   35.1% reinvestment     12.6%     3.3%
+UTHR       27.6%    96.2%   23.7%   22.8%     $2.8B      $0.3B      $0.0B     12.2%   35.0% reinvestment       ---      ---
+INTU       14.6%   162.8%   12.0%   19.5%    $21.3B      $3.3B      $1.0B     15.4%   34.9% reinvestment     15.3%    20.0%
+ROL        19.9%    19.1%   63.4%   12.1%     $1.7B      $0.4B      $0.3B     22.3%   34.4% hybrid           14.8%    15.8%
+SMCI       24.4%    19.5%  143.0%   27.9%     $1.8B      $0.1B      $0.0B      6.5%   34.4% reinvestment     61.7%      ---
+AOS        31.0%    12.9%   16.5%    2.1%     $1.7B      $0.5B      $0.2B     31.9%   34.0% buyback          13.3%     4.7%
+TT         24.5%    69.6%   20.7%   14.4%     $9.7B      $1.9B      $0.8B     19.6%   34.0% hybrid           24.2%    18.9%
+B          15.3%   526.4%    8.0%   27.9%    $23.7B      $1.4B      $0.8B      6.0%   33.9% reinvestment    144.4%     2.3%
+GFL         1.0%    16.9%  479.1%   33.7%    $15.5B      $0.0B      $0.0B      0.2%   33.9% reinvestment       ---      ---
+CL         40.7%      ---  -27.6%    0.0%     $9.4B      $3.1B      $1.8B     33.5%   33.5% hybrid            2.1%     3.1%
+LII        30.5%    16.9%   75.6%   12.8%     $1.8B      $0.4B      $0.2B     20.5%   33.3% hybrid           18.7%     5.6%
+ZTS        26.0%    23.5%   23.4%    5.5%     $8.0B      $2.2B      $0.7B     27.8%   33.3% buyback          11.2%    12.8%
+MLM        10.7%    46.9%   63.4%   29.7%    $12.2B      $0.4B      $0.2B      3.5%   33.2% reinvestment     24.0%     1.4%
+ISRG       23.1%    25.9%   76.5%   19.8%     $7.9B      $1.0B      $0.0B     12.8%   32.6% reinvestment     22.4%     2.0%
+PPL         4.3%    14.5%  245.0%   29.0%    $21.4B      $0.7B      $0.7B      3.5%   32.5% reinvestment      2.4%      ---
+COST       30.2%    55.7%   16.3%    9.1%    $21.1B      $4.9B      $4.2B     23.3%   32.4% hybrid           13.5%     5.3%
+EVR        21.5%    23.3%   42.0%    9.8%     $1.7B      $0.4B      $0.1B     22.1%   31.9% buyback           9.1%      ---
+CFG          ---      ---     ---    0.0%     $5.0B      $1.6B      $0.8B     31.8%   31.8% hybrid           11.2%     2.9%
+OSK        14.8%    22.6%  101.4%   23.0%     $3.0B      $0.3B      $0.1B      8.6%   31.6% reinvestment    -17.9%   -10.4%
+VNOM       28.9%     7.4%   76.7%    5.7%     $1.6B      $0.4B      $0.3B     25.9%   31.6% hybrid           14.0%      ---
+AEM         7.2%    10.9%  311.5%   21.7%     $7.6B      $0.7B      $0.6B      9.8%   31.5% reinvestment     26.9%      ---
+BSX         8.2%    26.8%  116.7%   31.3%    $24.5B      $0.0B      $0.0B      0.2%   31.5% reinvestment     46.6%    12.8%
+QCOM       27.7%      ---  -11.5%    0.0%    $28.5B      $8.9B      $3.7B     31.4%   31.4% buyback          -0.2%    24.8%
+INFY       31.7%    28.6%    5.6%    1.6%     $8.2B      $2.4B      $2.0B     29.8%   31.4% hybrid            7.6%    14.4%
+DY         11.5%    20.5%  133.9%   27.5%     $1.4B      $0.1B      $0.0B      3.9%   31.4% reinvestment     26.6%      ---
+VRSK       24.9%      --- -110.1%    0.0%     $6.6B      $2.0B      $0.2B     31.1%   31.1% buyback          15.5%     7.7%
+WES        16.0%   126.3%   14.4%   18.2%     $9.7B      $1.3B      $1.1B     12.9%   31.1% reinvestment     11.8%    59.3%
+THC        17.3%    94.3%   29.9%   28.2%    $14.3B      $0.4B      $0.0B      2.6%   30.8% reinvestment     44.7%    15.9%
+CAJ         6.2%    37.3%   66.8%   24.9%  $2793.0B    $161.7B    $111.7B      5.8%   30.7% reinvestment      2.4%   -27.9%
+CTAS       23.9%    61.3%   19.0%   11.7%     $6.4B      $1.2B      $0.5B     19.0%   30.7% hybrid           15.4%    11.6%
+CMG        11.4%     8.7%  178.8%   15.6%     $8.9B      $1.3B      $0.0B     15.0%   30.6% reinvestment     47.9%    39.4%
+LECO       23.7%    13.4%   50.9%    6.8%     $1.5B      $0.4B      $0.1B     23.6%   30.5% hybrid           13.1%     9.6%
+TME        13.4%    32.6%   70.7%   23.1%    $35.5B      $2.6B      $0.5B      7.3%   30.4% reinvestment     13.4%    10.8%
+TXRH       13.2%    25.4%   69.3%   17.6%     $2.1B      $0.3B      $0.1B     12.5%   30.1% reinvestment     20.8%    21.4%
+HDB        11.6%     5.4%  304.2%   10.9%   $581.9B    $111.1B    $110.4B     19.1%   30.0% hybrid           13.7%    39.7%
+PR         12.2%    10.9%  295.8%   21.9%     $3.6B      $0.3B      $0.2B      8.0%   29.9% reinvestment     55.9%      ---
+EIX         4.1%    23.6%  112.9%   26.6%    $47.0B      $1.5B      $1.1B      3.2%   29.8% reinvestment     12.7%      ---
+LMT        27.3%   -30.2%   10.3%   -3.1%    $22.3B      $7.3B      $3.1B     32.9%   29.8% buyback           1.9%     5.5%
+PODD        9.9%    21.3%  139.8%   29.8%     $1.1B        ---      $0.0B      0.0%   29.8% reinvestment     38.8%      ---
+HES        17.8%    32.4%   74.7%   24.2%    $13.4B      $0.7B      $0.5B      5.6%   29.7% reinvestment       ---      ---
+PTC        10.7%    30.1%   89.7%   27.0%     $3.8B      $0.1B      $0.0B      2.7%   29.7% reinvestment     29.8%    32.4%
+ACM        12.6%   241.5%    7.6%   18.4%     $4.7B      $0.5B      $0.1B     11.3%   29.7% reinvestment     25.8%    31.0%
+USFD        6.8%   162.9%   15.6%   25.4%     $9.9B      $0.4B      $0.0B      4.2%   29.7% reinvestment      7.6%     8.4%
+FLS        12.5%    57.6%   39.4%   22.7%     $3.0B      $0.2B      $0.1B      6.6%   29.3% reinvestment     11.2%    11.4%
+LPLA       17.3%    11.0%  167.5%   18.5%     $4.5B      $0.5B      $0.1B     10.8%   29.3% reinvestment     25.9%      ---
+PYPL       24.2%      ---   -0.1%    0.0%    $19.8B      $5.7B      $0.0B     28.9%   28.9% buyback          19.7%     5.0%
+FAST       28.6%    36.5%   12.4%    4.5%     $4.0B      $1.0B      $1.0B     24.4%   28.9% hybrid            7.8%     2.4%
+APG         4.5%    10.8%  363.7%   21.5%     $3.1B      $0.2B      $0.0B      7.3%   28.8% reinvestment       ---    20.2%
+WMS        22.9%    28.5%   44.9%   12.8%     $2.1B      $0.3B      $0.0B     16.0%   28.8% buyback            ---     4.8%
+DT          8.1%    19.9%  120.5%   24.0%     $1.2B      $0.1B      $0.0B      4.6%   28.6% reinvestment       ---      ---
+ATI        15.1%    22.8%   68.1%   15.5%     $2.2B      $0.3B      $0.0B     13.1%   28.6% reinvestment       ---    57.8%
+HWM        14.2%   191.5%   11.6%   22.3%     $7.2B      $0.5B      $0.1B      6.3%   28.6% reinvestment     17.2%      ---
+ASR        25.5%    98.6%   15.5%   15.3%    $42.2B      $5.6B      $5.6B     13.2%   28.5% reinvestment     13.9%    13.7%
+ULTA       24.7%    30.3%   22.0%    6.7%     $4.5B      $1.0B      $0.0B     21.8%   28.4% buyback          15.5%     8.0%
+ORCL       13.7%     7.7%  186.3%   14.3%    $47.7B      $6.7B      $4.3B     14.0%   28.3% reinvestment      8.9%      ---
+AMAT       39.0%   -12.0%   17.9%   -2.2%    $15.8B      $4.8B      $1.2B     30.5%   28.3% buyback          13.5%    14.0%
+JCI         8.7%   102.6%   13.0%   13.3%    $24.2B      $3.6B      $1.0B     14.9%   28.3% buyback          13.1%    -8.9%
+RMD        19.8%    36.2%   48.5%   17.5%     $4.1B      $0.4B      $0.3B     10.5%   28.0% reinvestment     15.2%    18.7%
+ZTO        14.1%    26.9%   70.0%   18.8%    $41.3B      $3.7B      $3.0B      9.1%   27.9% reinvestment     12.7%    36.8%
+EOG        26.8%    38.8%   17.9%    6.9%    $23.9B      $5.0B      $3.5B     20.9%   27.9% hybrid           17.6%    27.6%
+JBL        32.3%      ---  -43.1%    0.0%     $4.9B      $1.4B      $0.0B     27.8%   27.8% buyback          62.0%    43.0%
+BLD        17.7%   136.7%   11.5%   15.7%     $3.4B      $0.4B      $0.0B     12.0%   27.8% reinvestment     27.5%    28.5%
+HLT        21.2%      ---  -18.1%    0.0%     $8.7B      $2.4B      $0.1B     27.6%   27.6% buyback          15.2%    12.5%
+HCA        19.5%    39.2%   22.8%    8.9%    $39.2B      $7.3B      $0.7B     18.7%   27.6% buyback          19.3%    12.5%
+TJX        17.5%    27.3%   33.8%    9.3%    $21.4B      $3.9B      $1.5B     18.2%   27.5% buyback           9.1%     9.7%
+KVUE        8.5%      ---  -44.5%    0.0%    $19.9B      $5.4B      $5.4B     27.3%   27.3% hybrid          -14.1%   222.8%
+CNM        15.7%    14.5%   75.7%   11.0%     $3.1B      $0.5B      $0.0B     16.3%   27.3% buyback          37.2%    31.3%
+CAT        18.8%    27.9%   30.5%    8.5%    $45.7B      $8.6B      $2.7B     18.8%   27.3% buyback          23.9%    23.3%
+TS         19.6%    55.5%   30.6%   17.0%    $11.8B      $1.2B      $0.6B     10.1%   27.1% reinvestment     25.9%    14.0%
+SBAC        8.5%    51.4%   42.0%   21.6%    $11.1B      $0.6B      $0.4B      5.5%   27.1% reinvestment     26.3%     7.2%
+DASH      -11.3%    18.0%     ---    0.0%     $1.7B      $0.5B      $0.0B     26.8%   26.8% hybrid             ---      ---
+EQT         8.3%    11.9%  309.5%   23.9%    $15.5B      $0.5B      $0.3B      2.9%   26.8% reinvestment       ---     1.0%
+BEKE        6.9%     5.1%  325.4%   10.1%    $31.7B      $5.3B      $1.4B     16.7%   26.8% buyback            ---      ---
+JNJ        24.0%    44.2%   12.3%    5.4%    $76.2B     $16.3B     $11.8B     21.4%   26.8% hybrid            5.6%     1.8%
+CSL        18.1%      ---  -64.1%    0.0%     $5.4B      $1.4B      $0.2B     26.7%   26.7% buyback          20.4%    15.4%
+DCI        20.7%    20.4%   32.2%    6.6%     $1.7B      $0.3B      $0.1B     20.1%   26.7% buyback          11.2%     6.5%
+DIS         6.0%    49.0%   49.3%   24.1%   $138.9B      $3.2B      $1.1B      2.3%   26.5% reinvestment     29.5%    22.8%
+ABB        15.7%      ---  -38.9%    0.0%    $19.5B      $5.2B      $1.7B     26.4%   26.4% buyback           2.7%   -27.0%
+RBC         6.5%   337.3%    7.7%   26.0%     $4.1B      $0.0B      $0.0B      0.2%   26.2% reinvestment     14.4%    11.1%
+ALC         3.3%    22.3%  113.9%   25.4%    $22.6B      $0.1B      $0.1B      0.7%   26.1% reinvestment       ---    41.4%
+AMGN       15.6%    20.5%   80.2%   16.4%    $33.3B      $3.2B      $3.1B      9.6%   26.0% reinvestment     11.3%    -2.3%
+HUBB       17.0%    19.7%   79.7%   15.7%     $3.6B      $0.4B      $0.3B     10.2%   25.9% reinvestment     20.4%     9.7%
+HD         27.5%    -3.6%   54.2%   -1.9%    $48.4B     $13.5B      $8.4B     27.8%   25.9% hybrid            8.4%    10.3%
+NVT         7.4%    15.4%  120.2%   18.5%     $3.7B      $0.3B      $0.1B      7.1%   25.6% reinvestment     74.8%    13.5%
+PSA        12.5%    19.7%   38.1%    7.5%    $16.1B      $2.9B      $2.8B     18.1%   25.6% hybrid            8.2%     7.4%
+ANTM      258.9%  1436.1%    3.7%   12.8%    $26.2B      $3.3B      $0.9B     12.8%   25.5% reinvestment    101.7%     5.6%
+WSM        27.3%   -18.5%    7.7%   -1.4%     $3.4B      $0.9B      $0.2B     26.9%   25.5% buyback          29.9%    27.3%
+CRH        11.1%    15.9%   87.0%   13.8%    $24.9B      $2.9B      $1.1B     11.6%   25.5% reinvestment     18.0%     4.2%
+COG        12.2%     4.7%  547.0%    9.4%     $3.3B      $0.5B      $0.2B     16.1%   25.5% hybrid             ---   150.9%
+YUM        43.9%      ---   -7.0%    0.0%     $4.3B      $1.1B      $0.7B     25.4%   25.4% hybrid            9.5%     9.6%
+PG         19.9%    25.7%   14.0%    3.6%    $72.5B     $15.7B      $9.4B     21.6%   25.2% hybrid            6.0%     1.0%
+EBAY       25.3%      ---  -93.8%    0.0%    $12.2B      $3.1B      $0.5B     25.2%   25.2% buyback          17.5%     5.5%
+RDY        21.0%    22.2%   97.0%   21.6%   $183.0B      $6.6B      $6.1B      3.6%   25.1% reinvestment     33.4%   -12.8%
+PM         33.2%    82.4%    9.4%    7.7%    $31.0B      $5.4B      $5.4B     17.4%   25.1% hybrid            6.9%     6.6%
+BIDU        9.7%    11.4%  190.6%   21.8%   $131.3B      $4.3B      $0.0B      3.3%   25.1% reinvestment     29.2%     7.0%
+GIB        15.7%    24.5%   61.1%   15.0%    $11.0B      $1.1B      $0.0B     10.0%   25.0% reinvestment       ---     6.4%
+ODFL       29.5%   -26.5%   38.9%  -10.3%     $3.1B      $1.1B      $0.2B     35.2%   24.9% buyback          11.3%    14.7%
+IBN        17.3%    18.4%  111.9%   20.6%  $1270.0B     $54.3B     $54.3B      4.3%   24.9% reinvestment     35.5%     2.8%
+ALLE       20.3%    11.9%   82.6%    9.9%     $1.8B      $0.3B      $0.2B     15.0%   24.8% hybrid            8.5%     8.2%
+WSO        24.3%    24.5%   24.9%    6.1%     $2.3B      $0.4B      $0.4B     18.5%   24.6% hybrid           13.9%    16.7%
+VIAC       12.2%    13.0%  186.6%   24.3%    $12.6B      $0.0B      $0.0B      0.3%   24.6% reinvestment     15.8%   -21.8%
+LTM        14.7%    32.4%   59.9%   19.4%     $8.9B      $0.5B      $0.3B      5.1%   24.5% reinvestment       ---      ---
+PH         13.1%    13.1%  100.4%   13.2%    $14.0B      $1.6B      $0.8B     11.3%   24.5% reinvestment     17.0%    12.6%
+IR          7.2%    15.8%  136.0%   21.5%    $10.4B      $0.3B      $0.0B      2.8%   24.3% reinvestment     28.3%    16.4%
+HEI        11.6%    13.1%  171.2%   22.5%     $2.8B      $0.1B      $0.0B      1.9%   24.3% reinvestment     19.0%    16.8%
+WAB         7.1%   280.0%    6.6%   18.6%    $13.8B      $0.8B      $0.1B      5.7%   24.3% reinvestment     20.6%    14.7%
+BXP         6.1%    76.1%   28.9%   22.0%    $20.6B      $0.5B      $0.5B      2.2%   24.2% reinvestment     15.9%      ---
+VICI        6.1%     7.5%  357.8%   15.0%    $16.7B      $1.5B      $1.5B      9.1%   24.1% reinvestment     12.0%     7.9%
+GRMN       19.6%    18.9%   39.5%    7.5%     $4.4B      $0.7B      $0.6B     16.6%   24.1% hybrid            7.5%    16.2%
+TRGP       13.7%     7.0%  133.0%    9.4%     $8.5B      $1.2B      $0.5B     14.6%   24.0% hybrid           74.7%      ---
+ITT        18.1%    46.7%   20.3%    9.5%     $2.3B      $0.3B      $0.1B     14.4%   23.9% hybrid           24.9%     9.9%
+LIN        11.5%    36.3%   29.7%   10.8%    $54.3B      $7.0B      $2.6B     12.9%   23.7% buyback          21.9%     7.4%
+KMB        25.8%      ---  -10.9%    0.0%     $8.8B      $2.1B      $1.6B     23.7%   23.7% hybrid           -4.8%    -7.7%
+PXD        14.9%    -8.7%  123.6%  -10.8%    $13.5B      $4.6B      $3.7B     34.1%   23.3% hybrid             ---      ---
+GGG        26.0%     7.1%   28.6%    2.0%     $1.7B      $0.4B      $0.2B     21.3%   23.3% hybrid            7.9%    15.0%
+PNC        12.3%     1.7%  279.7%    3.4%    $26.0B      $5.2B      $2.5B     19.8%   23.2% hybrid           20.4%     3.0%
+SYY        16.0%    12.3%   58.6%    7.2%    $12.6B      $2.0B      $1.0B     15.8%   23.0% hybrid           34.8%    15.8%
+WTS        20.0%    28.1%   54.6%   15.3%     $1.1B      $0.1B      $0.0B      7.6%   22.9% reinvestment     16.4%    15.1%
+CF         39.2%   -21.0%   17.5%   -3.7%     $5.5B      $1.5B      $0.3B     26.6%   22.9% hybrid           17.8%    14.3%
+MOD        14.5%    19.3%  107.5%   20.8%     $0.8B      $0.0B      $0.0B      2.1%   22.8% reinvestment       ---      ---
+D           3.1%    93.1%   19.7%   18.3%    $67.6B      $3.0B      $2.2B      4.5%   22.8% reinvestment     18.0%      ---
+OC         17.9%    10.5%   97.7%   10.3%     $6.6B      $0.8B      $0.2B     12.5%   22.8% hybrid           26.2%    21.5%
+ESLT        7.1%    27.8%   73.5%   20.5%     $4.2B      $0.1B      $0.1B      2.1%   22.6% reinvestment      9.9%      ---
+U         -14.9%   -11.7%     ---    0.0%     $2.6B      $0.6B      $0.0B     22.5%   22.5% hybrid             ---      ---
+TTEK       12.3%    12.8%  108.8%   13.9%     $1.7B      $0.1B      $0.1B      8.5%   22.5% reinvestment     17.3%    12.6%
+ETN        14.0%    36.4%   37.2%   13.6%    $26.1B      $2.3B      $1.4B      8.9%   22.5% reinvestment     19.1%     5.0%
+ROST       18.8%     9.1%   38.3%    3.5%     $7.9B      $1.5B      $0.5B     19.0%   22.4% buyback           5.4%     2.0%
+IT         31.1%      ---  -32.4%    0.0%     $3.6B      $0.8B      $0.0B     22.3%   22.3% buyback          19.2%    32.9%
+TXT         9.7%    31.7%   31.4%   10.0%     $8.6B      $1.1B      $0.0B     12.2%   22.2% buyback            ---    10.5%
+EXPE       19.2%      --- -125.0%    0.0%     $6.9B      $1.5B      $0.0B     22.1%   22.1% buyback          11.3%     9.5%
+MMP        16.0%   -37.5%   17.0%   -6.4%     $4.7B      $1.3B      $0.9B     28.4%   22.0% buyback          -3.8%    13.9%
+FN         27.9%    42.3%   30.9%   13.1%     $0.8B      $0.1B      $0.0B      8.8%   21.8% reinvestment     23.1%    14.9%
+CVE        13.9%   208.1%    6.9%   14.5%    $39.1B      $2.8B      $1.1B      7.2%   21.6% reinvestment     -4.7%     5.8%
+LHX         6.1%    31.2%   49.3%   15.4%    $26.2B      $1.6B      $0.9B      6.2%   21.6% reinvestment      3.2%     4.9%
+BIP         6.2%     8.7%  216.1%   17.4%    $41.3B      $1.7B      $1.6B      4.1%   21.5% reinvestment       ---   -24.6%
+STN         7.9%    23.7%   80.2%   19.0%     $4.5B      $0.1B      $0.1B      2.5%   21.5% reinvestment     18.6%     4.7%
+OKE         9.2%     5.7%  315.8%   11.3%    $19.7B      $2.0B      $1.9B     10.1%   21.4% reinvestment     13.3%      ---
+TER        21.8%    -9.4%   69.2%   -6.5%     $1.8B      $0.5B      $0.1B     27.8%   21.4% buyback          -2.7%    -5.2%
+AON        22.0%     2.7%  133.8%    3.6%    $10.9B      $1.9B      $0.4B     17.6%   21.2% hybrid           10.1%     5.6%
+NVMI       23.6%    20.5%   76.0%   15.6%     $0.3B      $0.0B      $0.0B      5.3%   20.9% reinvestment     34.3%    58.4%
+XPO         7.5%    13.5%  137.2%   18.6%     $4.5B      $0.1B      $0.0B      2.0%   20.6% reinvestment     42.6%   -15.0%
+MRSH       15.5%    15.1%   76.9%   11.6%    $24.6B      $2.2B      $1.5B      8.9%   20.5% reinvestment     17.2%    11.5%
+APP        17.3%      ---   -4.8%    0.0%     $4.1B      $0.8B      $0.0B     20.4%   20.4% buyback          37.6%    45.6%
+PWR         8.5%    21.8%   86.2%   18.8%     $9.1B      $0.1B      $0.0B      1.6%   20.3% reinvestment     19.4%    40.6%
+OMC        23.4%     7.1%   31.6%    2.2%     $6.0B      $1.1B      $0.6B     18.0%   20.3% hybrid            4.2%     0.2%
+FLT        17.0%    33.2%   23.3%    7.7%     $7.3B      $0.9B      $0.0B     12.6%   20.3% buyback          16.9%     2.6%
+HON        16.8%    -2.3%   50.2%   -1.2%    $28.1B      $6.0B      $2.9B     21.2%   20.1% buyback           3.3%     2.4%
+FOXA       13.7%    95.7%    9.1%    8.7%    $14.4B      $1.6B      $0.3B     11.3%   20.0% buyback          12.3%    14.8%
+VTR         2.1%    10.1%  175.7%   17.8%    $22.7B      $0.5B      $0.5B      2.1%   20.0% reinvestment      2.6%     2.5%
+RPM        12.6%    32.1%   42.8%   13.7%     $5.0B      $0.3B      $0.2B      6.2%   20.0% reinvestment     14.0%     6.3%
+TCPA        5.7%    14.3%  117.6%   16.8%    $50.2B      $1.5B      $1.2B      3.0%   19.8% reinvestment      8.2%      ---
+SOJD        5.3%    13.4%  119.4%   16.0%    $81.9B      $3.0B      $3.0B      3.6%   19.6% reinvestment      8.1%      ---
+TPR        12.4%      ---  -45.8%    0.0%     $6.2B      $1.2B      $0.3B     19.6%   19.6% buyback            ---    46.7%
+SOJC        5.3%    14.9%  107.4%   16.0%    $83.5B      $3.0B      $3.0B      3.5%   19.6% reinvestment     -0.4%      ---
+SO          5.3%    15.0%  106.5%   16.0%    $83.6B      $3.0B      $3.0B      3.5%   19.5% reinvestment     -0.4%      ---
+SOJE        5.3%    15.0%  106.5%   16.0%    $83.6B      $3.0B      $3.0B      3.5%   19.5% reinvestment     -0.4%      ---
+RSG         9.8%    18.1%   79.1%   14.3%    $19.1B      $1.0B      $0.6B      5.0%   19.4% reinvestment     12.8%    13.2%
+WTFC       24.5%    14.7%   99.7%   14.7%     $2.9B      $0.1B      $0.1B      4.4%   19.1% reinvestment     19.3%    24.3%
+SN         13.0%    28.9%   52.1%   15.0%     $2.2B      $0.1B      $0.1B      4.0%   19.0% reinvestment     11.6%    19.8%
+GLPI        9.9%    15.6%   65.8%   10.3%     $9.5B      $0.8B      $0.8B      8.6%   18.8% reinvestment      4.6%     1.7%
+SLB        15.5%    14.3%   51.4%    7.3%    $27.0B      $3.1B      $1.5B     11.5%   18.8% hybrid           25.8%    21.0%
+UAL         9.2%    15.1%  118.4%   17.9%    $32.2B      $0.3B      $0.0B      0.8%   18.7% reinvestment       ---      ---
+TM          5.5%     9.6%  158.5%   15.3% $44542.4B   $1527.2B    $913.5B      3.4%   18.7% reinvestment     16.5%      ---
+ING         7.5%     4.7%  290.6%    9.4%    $52.3B      $4.7B      $2.3B      9.0%   18.4% reinvestment     27.5%      ---
+CPAY       13.2%     8.5%   83.6%    7.1%     $8.1B      $0.9B      $0.0B     11.3%   18.4% buyback          16.4%     2.6%
+LSI         3.5%     5.9%  452.5%   11.8%     $4.1B      $0.3B      $0.3B      6.6%   18.4% reinvestment     37.3%    14.2%
+WM         11.4%     9.0%  114.2%   10.2%    $21.5B      $1.7B      $1.2B      8.1%   18.4% reinvestment     14.4%    10.8%
+CIB        14.8%    50.1%   22.0%   11.0% $40981.8B   $3002.5B   $3002.5B      7.3%   18.3% reinvestment    -13.1%      ---
+CACI        8.4%    11.0%  132.8%   14.6%     $5.4B      $0.2B      $0.0B      3.7%   18.3% reinvestment     14.4%     4.2%
+CLX        21.1%      ---  -20.7%    0.0%     $3.9B      $0.7B      $0.6B     18.2%   18.2% hybrid           -1.6%    -9.6%
+MMC        15.5%    15.1%   76.9%   11.6%    $24.6B      $1.6B      $0.9B      6.6%   18.2% reinvestment     17.0%    11.3%
+CLH        10.7%    19.7%   85.0%   16.8%     $3.8B      $0.1B      $0.0B      1.4%   18.1% reinvestment     28.2%    13.1%
+UHID        8.7%    25.3%   35.2%    8.9%    $10.5B      $1.0B      $0.1B      9.2%   18.1% buyback          12.7%    22.7%
+WIT        20.2%    54.0%    3.4%    1.8%   $507.0B     $82.0B     $33.6B     16.2%   18.0% hybrid            8.3%    17.4%
+SCCO       26.2%      ---   -2.9%    0.0%    $13.8B      $2.5B      $2.5B     18.0%   18.0% hybrid           18.2%    21.1%
+NEE         5.8%     6.9%  199.9%   13.8%   $102.6B      $4.2B      $4.2B      4.1%   17.9% reinvestment      4.2%      ---
+MLI        46.4%   173.0%    0.7%    1.2%     $1.2B      $0.2B      $0.1B     16.6%   17.8% hybrid           31.2%    28.3%
+AXON        7.0%     8.9%  843.3%   17.7%     $0.6B      $0.0B      $0.0B      0.0%   17.7% reinvestment       ---    38.5%
+AGNC       26.3%     7.8%  581.3%   15.5%    $48.4B      $1.1B      $1.0B      2.2%   17.7% reinvestment     40.9%   -47.7%
+KO         15.8%    -0.2%    4.5%   -0.0%    $55.8B      $9.8B      $8.0B     17.6%   17.6% hybrid           -0.7%   -10.9%
+GPC        13.1%     5.6%  117.9%    6.5%     $6.8B      $0.7B      $0.5B     10.9%   17.4% hybrid            8.9%     3.1%
+VLO        15.4%      ---   -4.8%    0.0%    $32.5B      $5.7B      $1.5B     17.4%   17.4% buyback            ---      ---
+MCD        15.2%    11.0%   26.2%    2.9%    $53.8B      $7.8B      $4.5B     14.5%   17.4% hybrid            7.7%     4.3%
+SNA        18.8%    15.3%   20.7%    3.2%     $5.1B      $0.7B      $0.4B     14.1%   17.3% hybrid            9.5%     2.0%
+TIMB        8.6%    12.9%   91.0%   11.7%    $37.3B      $2.0B      $2.0B      5.5%   17.2% reinvestment      7.1%    19.4%
+SQM        37.7%   -25.9%   75.5%  -19.6%     $3.4B      $1.3B      $1.3B     36.8%   17.2% hybrid             ---    22.5%
+GIL        18.5%   -26.6%   34.2%   -9.1%     $2.6B      $0.7B      $0.1B     26.3%   17.2% buyback          21.5%    14.8%
+FANG       15.7%     1.5%  259.0%    3.0%    $18.3B      $2.6B      $1.5B     14.1%   17.1% hybrid           35.6%      ---
+AZPN       -0.5%    -3.1%     ---    0.0%     $0.8B      $0.1B      $0.0B     17.0%   17.0% hybrid             ---     9.5%
+MCO        21.5%      ---  -10.5%    0.0%     $9.3B      $1.6B      $0.6B     17.0%   17.0% buyback           7.7%    10.5%
+AIT        19.5%    73.4%   13.4%    9.8%     $1.9B      $0.1B      $0.1B      7.1%   16.9% reinvestment     58.9%    11.1%
+SPLK      -14.0%      ---     ---    0.0%     $2.4B      $0.4B      $0.0B     16.8%   16.8% hybrid             ---    25.7%
+DAL        10.8%    40.2%   39.8%   16.0%    $38.2B      $0.3B      $0.3B      0.8%   16.8% reinvestment       ---      ---
+RBA         9.7%     4.6%  675.6%    9.1%     $2.7B      $0.2B      $0.2B      7.5%   16.7% reinvestment     14.2%     5.9%
+CMI        14.8%    98.7%   10.3%   10.2%    $15.3B      $1.0B      $1.0B      6.4%   16.6% reinvestment     12.7%     3.6%
+GFI        16.1%    14.5%   71.7%   10.4%     $5.5B      $0.3B      $0.3B      6.2%   16.6% reinvestment     30.1%    19.0%
+ELV        17.0%     0.8%  190.0%    1.5%    $27.8B      $4.2B      $1.5B     15.1%   16.6% hybrid            6.8%   -17.7%
+CASY       11.1%     8.0%  173.2%   13.9%     $3.8B      $0.1B      $0.1B      2.7%   16.6% reinvestment     14.8%    54.9%
+XYL         7.9%     4.6%  377.7%    9.1%     $4.4B      $0.3B      $0.3B      7.3%   16.5% reinvestment      5.6%     2.7%
+JKHY       19.8%    49.2%   13.3%    6.5%     $1.9B      $0.2B      $0.2B      9.9%   16.4% hybrid            9.5%    13.2%
+KOF        13.8%    22.4%   39.9%    8.9%   $163.1B     $12.2B     $12.2B      7.5%   16.4% reinvestment      7.1%    -3.2%
+RCI         5.8%     7.2%  218.5%   14.4%    $47.7B      $0.9B      $0.9B      1.9%   16.3% reinvestment       ---     2.4%
+TXN        24.4%   -34.2%   63.2%  -21.6%    $15.0B      $5.7B      $4.8B     37.9%   16.3% hybrid           -0.3%   -13.5%
+PNR        12.6%    65.5%   16.2%   10.6%     $5.1B      $0.3B      $0.2B      5.5%   16.1% reinvestment     14.3%     8.1%
+TRI        12.8%      ---  -39.5%    0.0%    $15.9B      $2.6B      $1.0B     16.0%   16.0% buyback          -0.9%    11.7%
+AS          2.6%    11.5%  139.0%   16.0%     $6.0B        ---      $0.0B      0.0%   16.0% reinvestment     14.8%    -4.0%
+URI        12.5%     8.7%   69.3%    6.0%    $19.9B      $2.0B      $0.4B      9.9%   15.9% buyback          18.3%   -13.0%
+IBM        10.5%     9.7%   71.5%    6.9%    $70.3B      $6.3B      $6.1B      8.9%   15.8% hybrid           15.9%    -6.1%
+O           2.9%     5.2%  486.2%   10.5%    $41.2B      $2.2B      $2.2B      5.3%   15.8% reinvestment      1.3%     4.3%
+NOC         9.9%    12.7%   42.7%    5.4%    $29.9B      $3.1B      $1.2B     10.3%   15.7% buyback           3.4%     6.0%
+UHS         8.4%    25.4%   35.2%    8.9%    $10.9B      $0.7B      $0.1B      6.8%   15.7% reinvestment     12.7%    13.7%
+DB         23.7%     2.0%  889.8%    3.9%     $9.8B      $1.2B      $0.5B     11.8%   15.7% hybrid           65.5%      ---
+DRI        10.0%    11.0%   50.9%    5.6%    $10.6B      $1.1B      $0.6B     10.1%   15.7% hybrid          101.3%    37.6%
+BRO         9.2%     6.5%  276.9%   12.9%     $8.4B      $0.2B      $0.2B      2.7%   15.6% reinvestment     17.7%    13.7%
+WAT        28.2%    -0.4%   83.5%   -0.4%     $1.5B      $0.2B      $0.0B     15.9%   15.5% hybrid            5.3%     8.2%
+ROK        17.4%     3.8%   14.0%    0.5%     $6.8B      $1.0B      $0.6B     15.0%   15.5% hybrid            4.0%     6.8%
+CP          5.8%    13.7%   87.7%   12.0%    $58.6B      $2.1B      $0.7B      3.5%   15.5% reinvestment      4.4%     7.3%
+CME        10.9%   884.3%    1.1%    4.0%    $27.5B      $3.2B      $3.2B     11.6%   15.5% hybrid            9.4%     8.1%
+ATO         5.4%     8.5%  150.6%   12.8%    $18.0B      $0.5B      $0.5B      2.7%   15.5% reinvestment      7.8%      ---
+BLK        12.9%     4.5%   57.7%    2.6%    $39.6B      $5.1B      $3.0B     12.9%   15.5% hybrid            2.2%    10.8%
+TKO         8.5%    -1.2%  308.5%   -2.4%     $3.2B      $0.6B      $0.5B     17.7%   15.3% hybrid           -3.1%    38.8%
+IQV         9.6%    15.7%   54.3%    8.5%    $17.7B      $1.2B      $0.0B      6.7%   15.3% reinvestment     29.6%    11.4%
+MMM        29.4%      --- -155.1%    0.0%    $28.6B      $4.4B      $2.2B     15.3%   15.3% buyback          -7.6%   -25.6%
+GE         21.8%      ---  -66.3%    0.0%    $38.5B      $5.9B      $1.0B     15.3%   15.3% buyback          88.7%   107.5%
+EXR         6.1%     1.8%  524.7%    3.6%     $9.5B      $1.1B      $1.1B     11.6%   15.2% hybrid            5.8%    11.5%
+CMCSA       9.3%    13.9%   51.3%    7.1%   $176.2B     $14.0B      $4.8B      8.0%   15.1% buyback           8.3%    16.3%
+GD         11.9%    23.2%   31.8%    7.4%    $31.1B      $2.4B      $1.5B      7.6%   15.0% hybrid            5.8%     7.6%
+CIEN        6.9%    16.0%   27.2%    4.4%     $2.9B      $0.3B      $0.0B     10.6%   15.0% buyback          -8.3%    11.7%
+EXC         4.9%    27.5%   48.2%   13.3%    $68.3B      $1.2B      $1.2B      1.7%   15.0% reinvestment      2.1%      ---
+ROP         6.0%     8.7%  146.0%   12.8%    $22.0B      $0.5B      $0.3B      2.2%   15.0% reinvestment     11.7%    10.6%
+CQP        24.5%      ---   -4.8%    0.0%    $17.4B      $2.6B      $2.6B     14.9%   14.9% hybrid           10.0%    67.1%
+KIM         3.0%     6.6%  165.2%   11.0%    $16.1B      $0.6B      $0.6B      3.9%   14.9% reinvestment     -0.3%    -6.0%
+GPN         4.2%    48.7%   19.2%    9.3%    $35.7B      $1.9B      $0.3B      5.4%   14.8% reinvestment     10.4%    15.6%
+ON         23.6%    13.7%   50.7%    7.0%     $6.4B      $0.5B      $0.0B      7.8%   14.7% hybrid           24.4%    80.9%
+PEN         1.5%     5.7%  345.4%   11.5%     $1.0B      $0.0B      $0.0B      3.2%   14.7% reinvestment    -33.6%    97.4%
+DOC         2.7%     5.2%  322.0%   10.3%    $13.5B      $0.6B      $0.5B      4.3%   14.6% reinvestment     17.5%     2.4%
+PEP        17.4%    -3.7%   33.0%   -1.2%    $51.8B      $8.2B      $7.2B     15.8%   14.6% hybrid            3.4%     4.1%
+NLY         0.4%     3.5% 2048.4%    6.9%    $19.9B      $1.5B      $1.5B      7.6%   14.5% hybrid             ---      ---
+ABEV       22.7%     6.0%   10.8%    0.6%    $69.9B      $9.6B      $9.4B     13.8%   14.4% hybrid            1.9%    10.0%
+PFGC        5.1%     6.8%  318.0%   13.7%     $9.4B      $0.1B      $0.0B      0.7%   14.4% reinvestment       ---     1.8%
+AWK         5.3%     6.8%  168.9%   11.5%    $18.3B      $0.5B      $0.5B      2.9%   14.4% reinvestment      6.4%      ---
+ABMD       28.7%    15.3%   46.5%    7.1%     $0.4B      $0.0B      $0.0B      7.2%   14.3% hybrid           38.3%    30.3%
+WMB         7.7%    10.4%   73.0%    7.6%    $33.4B      $2.2B      $2.2B      6.7%   14.3% reinvestment     14.6%     9.1%
+WST        23.9%   -26.7%   35.9%   -9.6%     $2.0B      $0.5B      $0.1B     23.9%   14.3% buyback          15.9%     3.3%
+NI          5.4%     6.8%  168.9%   11.6%    $17.1B      $0.4B      $0.4B      2.5%   14.1% reinvestment      8.5%      ---
+WFC        18.0%      ---  -20.1%    0.0%   $133.5B     $18.7B      $4.7B     14.0%   14.0% buyback          69.2%   -10.3%
+BMY        13.9%      ---  -28.2%    0.0%    $65.4B      $9.1B      $4.7B     14.0%   14.0% buyback          24.5%    15.9%
+A          16.4%    -0.5%   33.3%   -0.2%     $7.0B      $1.0B      $0.3B     14.1%   13.9% buyback          15.4%     9.6%
+WMT        12.0%    17.4%   32.2%    5.6%   $145.1B     $12.0B      $6.3B      8.3%   13.9% hybrid            9.0%    -1.5%
+FMX         9.4%    47.7%   16.6%    7.9%   $456.1B     $27.2B     $20.5B      6.0%   13.9% reinvestment      7.3%    -4.1%
+SPG        10.0%    10.0%   73.2%    7.3%    $28.5B      $1.9B      $1.7B      6.6%   13.9% reinvestment     13.9%      ---
+STX        16.0%      ---  -46.8%    0.0%     $5.2B      $0.7B      $0.6B     13.8%   13.8% hybrid           12.1%    -2.4%
+TWLO       -4.9%      ---     ---    0.0%     $7.3B      $1.0B      $0.0B     13.8%   13.8% hybrid             ---      ---
+CNP         5.1%     6.9%  166.6%   11.6%    $23.9B      $0.5B      $0.5B      2.0%   13.6% reinvestment      5.3%      ---
+VIV         6.7%    20.9%   36.9%    7.7%    $91.7B      $5.3B      $4.0B      5.8%   13.5% reinvestment      5.4%     4.1%
+DRS        11.9%     9.6%   65.4%    6.3%     $1.9B      $0.1B      $0.1B      7.1%   13.4% hybrid           -0.1%    -0.2%
+UL         17.6%     2.9%    2.5%    0.1%    $43.9B      $5.8B      $4.3B     13.3%   13.4% hybrid            2.2%     3.7%
+PBR        19.9%   -49.3%   10.2%   -5.0%   $140.1B     $25.8B     $25.4B     18.4%   13.4% hybrid           21.2%    94.4%
+AYI        16.4%     7.1%   82.8%    5.9%     $2.4B      $0.2B      $0.0B      7.5%   13.3% hybrid           16.8%     8.2%
+ARCC        5.3%     5.0%  198.0%    9.9%    $21.7B      $0.7B      $0.7B      3.3%   13.3% reinvestment      4.7%      ---
+AMH         7.0%    11.1%   86.0%    9.5%     $9.9B      $0.4B      $0.3B      3.7%   13.3% reinvestment      4.8%     7.8%
+RL         12.7%      ---  -20.4%    0.0%     $5.1B      $0.7B      $0.2B     13.2%   13.2% buyback          28.5%    20.5%
+RTO         4.9%     2.6%  445.2%    5.3%     $2.8B      $0.2B      $0.2B      7.9%   13.2% hybrid            7.7%     3.0%
+SF         13.4%     0.7%  157.7%    1.1%     $3.3B      $0.4B      $0.2B     12.0%   13.1% hybrid            7.1%    -1.6%
+DEO        13.2%    -2.1%   96.4%   -2.0%    $21.8B      $3.3B      $2.2B     15.1%   13.1% hybrid           16.7%    11.9%
+BLDR       21.8%  -125.4%    8.1%  -10.1%     $8.6B      $2.0B      $0.0B     23.1%   13.0% buyback          31.7%    30.3%
+VMC         7.7%    12.0%   84.7%   10.2%    $11.5B      $0.3B      $0.2B      2.8%   13.0% reinvestment      8.3%     6.1%
+Z          -4.1%      ---     ---    0.0%     $4.3B      $0.6B      $0.0B     13.0%   13.0% hybrid             ---      ---
+ZG         -4.1%      ---     ---    0.0%     $4.3B      $0.6B      $0.0B     13.0%   13.0% hybrid             ---      ---
+BBIO    -3118.8%      ---     ---    0.0%     $0.0B      $0.0B      $0.0B     12.8%   12.8% hybrid             ---      ---
+TLN         4.4%      --- -249.8%    0.0%     $5.2B      $0.7B      $0.0B     12.8%   12.8% buyback            ---      ---
+ELS         6.9%    26.9%   21.4%    5.8%     $4.8B      $0.3B      $0.3B      7.0%   12.8% hybrid            2.9%    13.0%
+INVH        3.9%    31.8%   28.6%    9.1%    $17.2B      $0.6B      $0.6B      3.7%   12.8% reinvestment      8.6%     8.5%
+NKE        24.3% -12501.9%    0.2%  -22.6%    $18.1B      $6.4B      $2.2B     35.3%   12.7% buyback           3.7%    20.1%
+DUK         4.9%    11.3%   88.0%   10.0%   $119.3B      $3.2B      $3.2B      2.7%   12.7% reinvestment      5.9%      ---
+UNP        15.0%     1.0%    5.8%    0.1%    $47.7B      $6.0B      $3.2B     12.6%   12.7% hybrid            7.9%     5.5%
+FE          4.0%     7.1%  137.2%    9.7%    $31.1B      $0.9B      $0.9B      3.0%   12.6% reinvestment     -3.8%      ---
+CNI        12.4%    -3.7%   38.3%   -1.4%    $37.4B      $5.3B      $2.1B     14.0%   12.6% buyback           8.6%     3.2%
+GSK        16.2%     5.6%   38.8%    2.2%    $24.7B      $2.6B      $2.6B     10.4%   12.6% hybrid           -0.2%    -2.6%
+ECL        10.6%   966.8%    1.6%    5.6%    $16.4B      $1.1B      $0.6B      6.9%   12.5% hybrid            6.8%     1.9%
+AVY        14.7%     1.1%   34.3%    0.4%     $5.0B      $0.6B      $0.3B     12.0%   12.4% hybrid            6.1%     7.8%
+TOL        14.7%     8.6%   43.5%    3.7%     $8.3B      $0.7B      $0.1B      8.6%   12.3% hybrid           32.4%     8.5%
+NGG         4.8%     8.3%  118.1%    9.8%    $66.5B      $1.6B      $1.6B      2.4%   12.2% reinvestment     12.8%      ---
+GILD       11.0%      ---  -51.6%    0.0%    $41.2B      $5.0B      $3.8B     12.1%   12.1% hybrid          -19.1%     4.7%
+EC         16.5%     8.0%   45.8%    3.7% $148538.5B  $12246.0B  $12190.2B      8.2%   11.9% hybrid            7.7%     7.9%
+TSCO        9.7%     0.6%  189.9%    1.1%     $9.2B      $1.0B      $0.5B     10.8%   11.9% hybrid           10.5%    -5.8%
+ONB        13.9%     2.5%  599.7%    4.9%     $3.2B      $0.2B      $0.2B      7.0%   11.9% hybrid            5.5%     5.2%
+HLI        16.5%    -7.4%  100.3%   -7.5%     $1.0B      $0.2B      $0.2B     19.2%   11.8% hybrid           15.1%    23.7%
+WCC         9.7%    19.4%   46.8%    9.1%     $9.1B      $0.2B      $0.1B      2.7%   11.8% reinvestment     23.9%    36.8%
+APOS      607.1%      ---  -10.7%    0.0%    $14.7B      $1.7B      $1.0B     11.8%   11.8% hybrid           45.3%   -20.3%
+GMED        6.2%    -0.0%  625.5%   -0.0%     $1.3B      $0.2B      $0.0B     11.7%   11.7% buyback          -5.7%    24.3%
+ENB         3.9%     3.6%  169.6%    6.1%   $136.2B      $7.5B      $7.4B      5.5%   11.6% reinvestment      1.8%     7.4%
+DTE         5.6%     5.8%  151.0%    8.8%    $27.0B      $0.8B      $0.7B      2.8%   11.6% reinvestment      2.1%      ---
+DTY         5.6%     5.8%  151.0%    8.8%    $27.0B      $0.8B      $0.7B      2.8%   11.6% reinvestment      2.1%      ---
+ITUB        6.9%     1.3%  764.5%    2.7%   $315.8B     $28.2B     $26.3B      8.9%   11.6% hybrid           55.1%    15.7%
+EMR         7.6%    -0.9%  227.3%   -1.7%    $19.6B      $2.6B      $1.2B     13.1%   11.4% buyback          -5.1%     2.3%
+FERG       16.4%    -7.0%   46.0%   -3.2%    $10.2B      $1.5B      $0.7B     14.6%   11.4% hybrid           16.7%     7.7%
+QSR         9.1%     7.8%   52.1%    4.1%    $17.4B      $1.3B      $1.0B      7.3%   11.4% hybrid            5.4%    -1.0%
+MCHP       11.6%      ---  -32.8%    0.0%    $13.6B      $1.5B      $0.9B     11.3%   11.3% hybrid             ---   -13.0%
+DUKB        4.8%     9.1%   91.5%    8.3%   $119.3B      $3.5B      $3.2B      3.0%   11.3% reinvestment      5.8%      ---
+MFC         7.6%      ---  -72.5%    0.0%    $46.4B      $5.2B      $3.0B     11.2%   11.2% buyback           3.3%      ---
+ALGN       14.2%    -1.5%   27.6%   -0.4%     $2.7B      $0.3B      $0.0B     11.7%   11.2% buyback           6.4%     5.0%
+RGLD        9.3%    12.6%   56.7%    7.2%     $2.4B      $0.1B      $0.1B      4.0%   11.2% reinvestment     16.3%    18.2%
+NDSN       11.1%     1.1%  122.0%    1.3%     $3.1B      $0.3B      $0.2B      9.9%   11.2% hybrid           15.4%     8.5%
+CTSH       15.2%    -4.6%   45.1%   -2.1%    $12.2B      $1.6B      $0.6B     13.2%   11.2% hybrid           11.1%     0.1%
+WPC         7.8%    12.6%   42.2%    5.3%    $14.5B      $0.8B      $0.8B      5.8%   11.1% hybrid            0.1%    10.2%
+HSBC       25.4%      ---  -43.2%    0.0%   $171.3B     $19.0B     $12.1B     11.1%   11.1% hybrid           25.7%    20.8%
+SYK        13.0%    16.6%   38.2%    6.3%    $28.6B      $1.3B      $1.2B      4.7%   11.0% reinvestment     10.2%     8.8%
+IRM         4.7%     4.0%  147.9%    5.8%    $14.7B      $0.8B      $0.8B      5.1%   10.9% reinvestment      2.9%      ---
+ICE         7.1%     5.1%  146.5%    7.5%    $33.4B      $1.1B      $0.7B      3.4%   10.9% reinvestment      9.7%    11.0%
+KR          7.7%    16.0%   18.3%    2.9%    $35.7B      $2.9B      $0.8B      8.0%   10.9% buyback          14.9%     5.3%
+TMUS        4.8%  1523.1%    1.7%    5.9%   $205.9B     $10.4B      $1.3B      5.1%   10.9% reinvestment     18.8%      ---
+CHD        12.6%      ---  -18.4%    0.0%     $6.2B      $0.7B      $0.3B     10.9%   10.9% buyback           0.6%     4.8%
+VZA         7.7%   120.3%    5.8%    7.0%   $283.9B     $11.0B     $11.0B      3.9%   10.9% reinvestment     23.3%    20.1%
+PCAR       20.5%      ---  -80.3%    0.0%    $18.8B      $2.0B      $2.0B     10.9%   10.9% hybrid             ---    17.3%
+GEV        17.1%      --- -1013.5%    0.0%    $11.0B      $1.2B      $0.1B     10.9%   10.9% buyback            ---      ---
+AME        12.4%    14.5%   58.0%    8.4%     $9.9B      $0.2B      $0.2B      2.4%   10.8% reinvestment     14.0%      ---
+CRM         5.7%      ---  -33.1%    0.0%    $65.0B      $7.0B      $0.5B     10.8%   10.8% buyback         150.6%    24.1%
+DLR         1.4%     4.0%  156.2%    6.3%    $34.3B      $1.5B      $1.5B      4.5%   10.8% reinvestment     -1.0%   174.5%
+SAIA       17.6%     8.6%  121.3%   10.4%     $1.4B      $0.0B      $0.0B      0.3%   10.6% reinvestment     25.1%      ---
+OXY        13.5%     6.3%   53.9%    3.4%    $49.3B      $3.5B      $1.3B      7.2%   10.5% hybrid             ---    29.7%
+TTE        13.7%   -10.7%   10.9%   -1.2%   $142.7B     $16.7B      $8.4B     11.7%   10.5% hybrid           10.1%     7.1%
+GIS        11.9%    -8.5%   30.4%   -2.6%    $22.1B      $2.9B      $1.3B     13.0%   10.4% buyback           3.7%    -4.7%
+ANSS       10.3%    16.2%   46.0%    7.5%     $4.7B      $0.1B      $0.0B      2.9%   10.3% reinvestment      4.8%    10.1%
+MAA         6.0%    21.2%   28.2%    6.0%    $10.5B      $0.5B      $0.4B      4.4%   10.3% reinvestment      7.3%      ---
+BWXT       14.1%    14.8%   31.5%    4.7%     $1.8B      $0.1B      $0.1B      5.6%   10.3% hybrid            4.8%    22.3%
+BP          8.7%      ---  -64.1%    0.0%   $127.6B     $13.1B      $4.7B     10.2%   10.2% buyback         -18.5%     7.1%
+WTRG        4.3%     4.5%  161.6%    7.3%    $11.2B      $0.3B      $0.3B      2.8%   10.2% reinvestment     11.9%      ---
+LYG         6.1%     0.6%  940.4%    1.2%    $43.5B      $3.9B      $2.0B      8.9%   10.1% hybrid           42.4%      ---
+FTS         4.8%     5.3%  160.3%    8.6%    $45.5B      $0.7B      $0.7B      1.6%   10.1% reinvestment     -0.7%      ---
+HOOD      -29.3%   102.3%     ---    0.0%     $2.9B      $0.3B      $0.0B     10.1%   10.1% hybrid             ---      ---
+APO          ---      ---     ---    0.0%    $17.1B      $1.7B      $1.0B     10.0%   10.0% hybrid           18.3%     1.5%
+ABBV       15.5%      ---  -57.1%    0.0%    $83.9B      $8.4B      $7.2B     10.0%   10.0% hybrid            7.2%      ---
+H          10.3%      ---  -31.5%    0.0%     $7.1B      $0.7B      $0.0B      9.9%    9.9% buyback          10.5%    78.1%
+BALL        8.1%      ---  -55.9%    0.0%    $12.8B      $1.3B      $0.2B      9.8%    9.8% buyback           3.6%    24.5%
+ATVI       20.3%    -2.7%   17.3%   -0.5%     $9.9B      $1.0B      $0.3B     10.2%    9.8% hybrid           35.3%     0.1%
+WELL        2.3%     2.9%  499.1%    5.7%    $32.6B      $1.3B      $1.3B      4.0%    9.7% reinvestment     -9.3%    -0.8%
+CMS         4.9%     4.9%  160.2%    7.8%    $21.3B      $0.4B      $0.4B      1.9%    9.7% reinvestment      4.6%      ---
+VLTO       25.4%    59.9%   10.6%    6.3%     $3.4B      $0.1B      $0.1B      3.3%    9.7% reinvestment      6.0%     6.0%
+JBHT       11.9%      ---  -23.5%    0.0%     $5.5B      $0.5B      $0.2B      9.7%    9.7% buyback           5.6%    22.6%
+BR         14.4%      ---  -11.0%    0.0%     $6.0B      $0.6B      $0.4B      9.6%    9.6% hybrid           13.3%    15.9%
+DFS        38.2%      ---  -21.2%    0.0%    $22.9B      $2.2B      $0.7B      9.6%    9.6% hybrid           41.6%    12.0%
+STZ         8.1%      ---  -68.9%    0.0%    $23.0B      $2.2B      $0.7B      9.5%    9.5% buyback           6.4%     2.1%
+AEE         4.9%     3.5%  185.3%    6.5%    $23.3B      $0.7B      $0.7B      2.8%    9.4% reinvestment      4.7%      ---
+DKNG      -58.6%   104.3%     ---    0.0%     $0.9B      $0.1B      $0.0B      9.4%    9.4% hybrid             ---      ---
+CI         10.8%      ---  -50.9%    0.0%    $76.0B      $7.1B      $1.5B      9.4%    9.4% buyback           7.5%     7.3%
+TD          2.9%     2.1%  351.2%    4.2%   $461.8B     $23.3B      $6.9B      5.0%    9.3% buyback          14.6%      ---
+LAMR        8.3%     4.7%   19.9%    0.9%     $6.6B      $0.5B      $0.5B      8.2%    9.2% hybrid            4.7%    68.6%
+SONY       11.3%     7.8%   63.4%    4.9%  $6980.2B    $296.1B    $100.1B      4.2%    9.2% reinvestment     11.8%   183.4%
+SAP        10.8%      ---  -17.5%    0.0%    $45.5B      $4.2B      $2.5B      9.2%    9.2% hybrid            8.0%     4.6%
+OVV        14.7%     2.0%   85.7%    1.7%    $11.6B      $0.9B      $0.3B      7.5%    9.2% hybrid           23.7%    36.2%
+PBA         8.7%     5.1%   59.8%    3.0%    $26.9B      $1.6B      $1.5B      6.1%    9.1% hybrid           -1.9%    17.9%
+BJ          8.5%     8.7%   68.0%    5.9%     $5.8B      $0.2B      $0.0B      3.2%    9.1% reinvestment     17.1%    15.5%
+MRK        23.2%      ---  -34.4%    0.0%    $66.1B      $6.0B      $5.1B      9.0%    9.0% hybrid           40.6%      ---
+MDLZ        8.5%      ---  -20.4%    0.0%    $49.1B      $4.4B      $2.3B      9.0%    9.0% buyback           1.2%     3.0%
+ETR         4.5%     7.4%   89.9%    6.6%    $39.0B      $0.9B      $0.9B      2.3%    9.0% reinvestment     10.1%      ---
+ELC         4.5%     7.4%   89.9%    6.6%    $39.0B      $0.9B      $0.9B      2.3%    9.0% reinvestment     10.1%      ---
+DOV        11.8%     3.1%   34.2%    1.1%     $8.0B      $0.6B      $0.3B      7.9%    9.0% hybrid            8.8%     4.6%
+ONTO       15.1%    18.3%   31.0%    5.7%     $1.0B      $0.0B      $0.0B      3.3%    9.0% reinvestment       ---    62.7%
+ADI         6.5%      ---  -34.8%    0.0%    $41.7B      $3.7B      $1.8B      8.9%    8.9% buyback           6.2%    11.7%
+WMG        13.0%    -1.0%   63.2%   -0.7%     $3.9B      $0.4B      $0.4B      9.5%    8.9% hybrid             ---     9.4%
+TFC         0.9%    -0.8% 1354.3%   -1.6%    $32.4B      $3.4B      $2.7B     10.5%    8.9% hybrid            4.5%    12.0%
+AEP         5.4%     4.7%  123.6%    5.7%    $59.1B      $1.8B      $1.8B      3.0%    8.7% reinvestment     10.3%      ---
+LEN        12.7%      ---  -11.6%    0.0%    $25.8B      $2.2B      $0.5B      8.7%    8.7% buyback           0.1%   -61.7%
+CTRA       15.8%   -46.4%    9.1%   -4.2%    $14.5B      $1.9B      $1.2B     12.9%    8.7% hybrid            1.5%    -2.7%
+FI          7.6%      ---   -2.2%    0.0%    $52.1B      $4.4B      $0.0B      8.5%    8.5% buyback          27.1%    17.0%
+FISV        7.6%      ---   -2.2%    0.0%    $52.1B      $4.4B      $0.0B      8.5%    8.5% buyback          27.1%    17.0%
+SJR         8.9%     0.3%   48.6%    0.1%    $10.2B      $0.9B      $0.6B      8.4%    8.5% hybrid            5.2%      ---
+VEEV       59.0%    61.0%   13.9%    8.5%     $0.6B        ---      $0.0B      0.0%    8.5% reinvestment     13.4%    18.7%
+HAL        15.4%    -4.4%   31.4%   -1.4%    $15.6B      $1.5B      $0.6B      9.8%    8.4% hybrid             ---     8.7%
+AMCR        7.9%    -0.7%  522.2%   -1.3%    $10.8B      $1.0B      $0.8B      9.7%    8.4% hybrid            1.0%    -3.7%
+CEG         9.0%      ---   -7.0%    0.0%    $18.9B      $1.6B      $0.3B      8.3%    8.3% buyback          32.1%      ---
+DVN        24.9%   -19.1%   66.5%  -12.7%    $14.1B      $3.0B      $2.1B     21.0%    8.3% hybrid           30.8%      ---
+JNPR        7.6%   -10.4%   19.9%   -2.1%     $5.1B      $0.5B      $0.3B     10.4%    8.3% buyback          -3.8%    10.8%
+AJG         7.8%     3.0%  398.3%    6.1%    $15.1B      $0.3B      $0.3B      2.2%    8.3% reinvestment      8.4%      ---
+GWRE       -5.0%      ---     ---    0.0%     $1.1B      $0.1B      $0.0B      8.2%    8.2% hybrid             ---    26.6%
+FTV         7.9%      --- -118.2%    0.0%    $12.6B      $1.0B      $0.1B      8.2%    8.2% buyback           6.8%    -4.2%
+DD          4.6%      --- -184.3%    0.0%    $36.1B      $2.9B      $0.6B      8.1%    8.1% buyback          -0.8%      ---
+K          11.7%      ---  -48.4%    0.0%    $11.8B      $0.9B      $0.8B      8.0%    8.0% hybrid            7.5%    13.7%
+SLF        24.7%      ---  -91.6%    0.0%    $25.1B      $2.0B      $1.7B      8.0%    8.0% hybrid            2.8%     0.8%
+PHM        21.1%   -13.8%   30.8%   -4.3%    $10.7B      $1.3B      $0.2B     12.2%    7.9% hybrid           16.8%     6.5%
+SREA        7.3%     4.1%  113.2%    4.7%    $51.7B      $1.7B      $1.5B      3.2%    7.9% reinvestment     13.4%      ---
+EVRG        5.6%     5.4%   93.8%    5.1%    $20.4B      $0.6B      $0.6B      2.8%    7.9% reinvestment      6.9%      ---
+ABT        11.5%    -7.7%   59.0%   -4.5%    $45.8B      $5.7B      $3.6B     12.4%    7.9% hybrid            5.9%     7.6%
+LDOS        9.0%      ---  -17.0%    0.0%     $9.8B      $0.8B      $0.2B      7.8%    7.8% buyback          16.1%     8.8%
+NEM       -13.0%    31.9%     ---    0.0%    $23.9B      $1.9B      $1.4B      7.7%    7.7% hybrid           16.9%     6.3%
+KMI         5.6%    24.0%   13.0%    3.1%    $61.6B      $2.8B      $2.5B      4.6%    7.7% hybrid           34.4%     4.3%
+RTX         5.2%      ---   -6.2%    0.0%   $101.5B      $7.8B      $3.3B      7.7%    7.7% buyback          45.4%    37.0%
+OHI         6.3%      ---  -17.5%    0.0%     $9.1B      $0.7B      $0.7B      7.7%    7.7% hybrid           -3.2%     5.4%
+NXPI       16.7%   -13.9%   47.0%   -6.6%    $15.0B      $2.1B      $1.0B     14.2%    7.7% hybrid           54.9%     6.6%
+ADM         6.2%      ---  -74.2%    0.0%    $34.6B      $2.6B      $1.0B      7.6%    7.6% buyback          -3.3%      ---
+CBOE       17.7%      ---   -9.6%    0.0%     $4.9B      $0.4B      $0.2B      7.6%    7.6% hybrid           18.7%    10.9%
+XEL         4.3%     3.9%  148.9%    5.8%    $41.5B      $0.8B      $0.8B      1.8%    7.6% reinvestment      4.1%      ---
+EPAM       22.8%    -5.7%   90.9%   -5.1%     $1.5B      $0.2B      $0.0B     12.7%    7.6% hybrid            9.8%    22.7%
+CBRE        8.9%    -1.7%   84.0%   -1.5%    $11.6B      $1.0B      $0.0B      9.0%    7.5% buyback           2.1%    11.4%
+DTM         4.8%     3.2%  117.1%    3.7%     $6.9B      $0.3B      $0.3B      3.8%    7.5% hybrid            4.8%    17.8%
+EGP         9.2%     0.1%  152.5%    0.2%     $3.1B      $0.2B      $0.2B      7.3%    7.5% hybrid            0.4%    10.7%
+UDR         3.9%     4.2%   33.8%    1.4%     $9.2B      $0.6B      $0.5B      6.0%    7.4% hybrid            2.4%     3.3%
+BDX         4.9%     6.1%   53.8%    3.3%    $40.3B      $1.6B      $1.1B      4.1%    7.3% hybrid           23.9%    -0.8%
+BDXA        4.9%     6.1%   53.8%    3.3%    $40.3B      $1.6B      $1.1B      4.1%    7.3% hybrid           23.9%    -0.8%
+BDXB        4.9%     6.1%   53.8%    3.3%    $40.3B      $1.6B      $1.1B      4.1%    7.3% hybrid           23.9%    -0.8%
+DE         11.4%    -2.4%   49.2%   -1.2%    $67.3B      $5.7B      $1.6B      8.5%    7.3% hybrid           20.1%    -4.8%
+ELP         6.7%     4.4%  128.8%    5.6%    $30.2B      $0.5B      $0.5B      1.6%    7.3% reinvestment      6.0%   -26.4%
+F           2.9%     2.3%  221.7%    4.5%   $139.8B      $3.8B      $3.4B      2.7%    7.2% reinvestment     56.3%    -7.7%
+KTOS        0.5%     3.4% 1954.6%    6.7%     $1.0B      $0.0B      $0.0B      0.4%    7.2% reinvestment    -13.3%      ---
+TWTR        2.7%    -3.4%  799.5%   -6.8%     $3.3B      $0.5B      $0.1B     13.9%    7.1% buyback            ---      ---
+CNA        10.9%      --- -144.8%    0.0%    $13.5B      $1.0B      $0.9B      7.1%    7.1% hybrid           -0.9%     7.1%
+LVS        17.0%      ---  -29.1%    0.0%    $14.9B      $1.1B      $0.3B      7.0%    7.0% hybrid             ---    -1.9%
+CPRT       29.9%    23.8%   29.5%    7.0%     $3.5B        ---      $0.0B      0.0%    7.0% reinvestment     13.7%    30.8%
+HAS        -3.7%      ---     ---    0.0%     $6.2B      $0.4B      $0.4B      7.0%    7.0% hybrid           -2.6%     6.0%
+SPOT       34.4%      --- -154.8%    0.0%     $1.0B      $0.1B      $0.0B      7.0%    7.0% buyback            ---    35.4%
+ASND     -136.9%      ---     ---    0.0%     $0.5B      $0.0B      $0.0B      6.9%    6.9% hybrid             ---      ---
+ES          4.3%     2.4%  175.5%    4.2%    $34.8B      $0.9B      $0.9B      2.7%    6.9% reinvestment      5.6%      ---
+SSNC       10.9%      --- -204.2%    0.0%    $13.2B      $0.9B      $0.2B      6.9%    6.9% buyback           9.3%    10.2%
+IEX        13.1%      ---  -51.3%    0.0%     $4.3B      $0.3B      $0.2B      6.8%    6.8% hybrid            5.3%     3.9%
+NMR         0.7%     3.1% 1058.7%    6.2% $22953.2B    $124.9B     $76.7B      0.5%    6.7% reinvestment     11.1%      ---
+ERIC       11.8%      ---  -77.9%    0.0%   $134.2B      $9.0B      $9.0B      6.7%    6.7% hybrid            6.1%     5.4%
+SNPS       14.1%    -0.4% 1057.9%   -0.7%     $5.2B      $0.4B      $0.0B      7.4%    6.7% hybrid           11.5%     9.3%
+ALL        21.4%      ---  -28.1%    0.0%    $28.4B      $1.9B      $0.9B      6.7%    6.7% hybrid           17.6%    17.2%
+SNX         9.6%      ---  -31.2%    0.0%    $11.6B      $0.8B      $0.1B      6.7%    6.7% buyback          11.3%   -12.0%
+LNG        23.2%    -6.0%    6.2%   -0.4%    $30.1B      $2.1B      $0.4B      6.9%    6.6% hybrid           24.9%      ---
+LH          5.3%      ---  -52.9%    0.0%    $16.1B      $1.0B      $0.2B      6.5%    6.5% buyback          -0.1%     4.2%
+CCZ        12.3%      --- -191.1%    0.0%   $191.5B     $12.4B      $3.2B      6.5%    6.5% buyback           8.1%    15.8%
+PPG        41.7%      --- -249.0%    0.0%    $13.9B      $0.9B      $0.6B      6.4%    6.4% hybrid            4.7%      ---
+RY          2.3%     1.9%  471.8%    3.8%   $571.7B     $15.1B      $7.0B      2.6%    6.4% reinvestment     12.5%   -17.0%
+BNJ         4.6%     3.4%  166.4%    5.7%   $202.6B      $1.4B      $0.6B      0.7%    6.4% reinvestment      3.6%      ---
+BNH         4.6%     3.4%  166.4%    5.7%   $202.6B      $1.4B      $0.6B      0.7%    6.4% reinvestment      3.6%      ---
+BN          4.6%     3.4%  166.4%    5.7%   $202.6B      $1.4B      $0.6B      0.7%    6.4% reinvestment      3.6%      ---
+C           4.4%    -0.6%  302.9%   -1.3%   $141.6B     $10.8B      $5.1B      7.6%    6.3% hybrid            8.0%      ---
+SHG         6.9%     5.6%   59.0%    3.3% $63319.2B   $1918.5B   $1423.1B      3.0%    6.3% reinvestment       ---      ---
+TLK        17.1%    -8.6%   40.0%   -3.4% $168308.0B  $16380.7B  $16380.7B      9.7%    6.3% hybrid            1.1%    10.0%
+J           8.2%      --- -259.2%    0.0%     $9.8B      $0.6B      $0.1B      6.3%    6.3% buyback           4.2%    -0.5%
+BSAC        7.4%     0.1%  373.0%    0.2%  $4585.9B    $277.6B    $277.6B      6.1%    6.2% hybrid            6.8%      ---
+EFX         7.9%    30.4%    2.5%    0.8%     $9.5B      $0.5B      $0.2B      5.4%    6.2% hybrid            9.1%    16.4%
+CHT         9.8%    -2.5%    9.0%   -0.2%   $380.3B     $24.5B     $24.5B      6.4%    6.2% hybrid            1.7%      ---
+IP          0.4%   -32.5%     ---    0.0%    $13.8B      $0.9B      $0.8B      6.2%    6.2% hybrid             ---      ---
+EPD        12.2%     0.9%   38.3%    0.3%    $52.7B      $3.1B      $2.9B      5.8%    6.2% hybrid           11.7%      ---
+WBS        26.8%      ---     ---    0.0%     $7.0B      $0.4B      $0.3B      6.2%    6.2% hybrid           20.6%    22.5%
+LNT         5.3%     2.1%  137.8%    2.8%    $13.8B      $0.5B      $0.5B      3.3%    6.1% hybrid           -1.2%      ---
+CCI         1.9%      --- -314.2%    0.0%    $41.4B      $2.5B      $2.5B      6.1%    6.1% hybrid            1.7%    14.3%
+ALLY       10.6%    -3.4% 1014.2%   -6.9%     $2.1B      $0.3B      $0.2B     13.0%    6.1% hybrid           -1.2%      ---
+DINO       14.3%   -16.1%   50.1%   -8.1%     $9.5B      $1.3B      $0.3B     14.2%    6.1% buyback         -27.4%   -15.0%
+PKG        13.3%   -16.0%   30.5%   -4.9%     $5.9B      $0.6B      $0.4B     11.0%    6.1% hybrid           10.2%    -7.4%
+MDT         6.3%   -21.1%   11.6%   -2.4%    $66.2B      $5.6B      $3.6B      8.5%    6.1% hybrid            6.6%    -2.0%
+CTVA        7.3%      ---  -21.6%    0.0%    $23.3B      $1.4B      $0.5B      6.0%    6.0% buyback          25.6%    14.6%
+SNN         5.0%     3.8%   28.4%    1.1%     $7.8B      $0.4B      $0.3B      4.9%    5.9% hybrid           -3.8%    -4.5%
+BTI        -1.4%      ---     ---    0.0%   $103.9B      $6.1B      $5.1B      5.8%    5.8% hybrid          -20.1%     3.1%
+PFE         8.5%      ---  -50.0%    0.0%   $107.8B      $6.3B      $6.3B      5.8%    5.8% hybrid            7.0%      ---
+ET          8.8%    -0.8%   58.1%   -0.5%    $82.4B      $5.1B      $4.0B      6.2%    5.7% hybrid           -1.2%    20.9%
+TDY         7.6%     8.1%   42.9%    3.5%    $11.5B      $0.3B      $0.0B      2.2%    5.7% reinvestment     12.9%     9.4%
+HII         7.3%     1.5%   80.3%    1.2%     $6.4B      $0.3B      $0.2B      4.4%    5.6% hybrid           -5.8%     2.1%
+PAAS       -1.8%     0.4%     ---    0.0%     $2.4B      $0.1B      $0.1B      5.5%    5.5% hybrid           -0.2%    24.4%
+JHX        17.6%    -8.7%   43.9%   -3.8%     $2.2B      $0.2B      $0.0B      9.4%    5.5% hybrid            9.0%     8.7%
+SAN         5.0%     0.5% 1118.7%    1.1%   $128.1B      $5.7B      $2.4B      4.4%    5.5% hybrid             ---      ---
+LITE       -7.2%   -25.3%     ---    0.0%     $1.3B      $0.1B      $0.0B      5.5%    5.5% hybrid             ---      ---
+ENSG        4.6%     2.4%  495.2%    4.9%     $3.9B      $0.0B      $0.0B      0.6%    5.5% reinvestment     12.1%     1.7%
+RXN        11.1%      ---  -38.1%    0.0%     $2.2B      $0.1B      $0.0B      5.4%    5.4% hybrid           -9.0%     0.8%
+ARM        13.4%     3.0%  181.0%    5.4%     $2.4B        ---      $0.0B      0.0%    5.4% reinvestment      2.5%   -23.4%
+CHTR        9.1%    11.7%   19.9%    2.3%   $106.7B      $3.2B      $0.0B      3.0%    5.3% hybrid           16.7%     0.3%
+BAC         8.8%      ---     ---    0.0%   $313.5B     $16.6B      $9.1B      5.3%    5.3% hybrid           14.8%      ---
+MTZ         3.3%     3.3%  143.3%    4.7%     $4.7B      $0.0B      $0.0B      0.6%    5.3% reinvestment     -5.6%    17.2%
+FTI         6.4%      --- -101.5%    0.0%     $5.3B      $0.3B      $0.0B      5.3%    5.3% buyback          58.6%    11.9%
+EQR         8.2%      ---   -1.8%    0.0%    $19.8B      $1.0B      $1.0B      5.1%    5.1% hybrid           -3.3%    -0.3%
+CNC        -6.2%      ---     ---    0.0%    $34.3B      $1.7B      $0.0B      5.1%    5.1% hybrid             ---     1.9%
+EMA         4.1%     1.8%  176.7%    3.1%    $26.1B      $0.5B      $0.5B      1.9%    5.0% reinvestment    -10.5%      ---
+UNM         9.8%      ---   -7.2%    0.0%    $15.0B      $0.8B      $0.3B      5.0%    5.0% hybrid            1.9%     0.5%
+MKC         8.6%      ---   -8.5%    0.0%     $9.8B      $0.5B      $0.5B      5.0%    5.0% hybrid            1.5%    -1.9%
+FCX        21.5%      ---  -26.7%    0.0%    $18.7B      $0.9B      $0.9B      4.9%    4.9% hybrid           38.1%     1.4%
+GEGGL     -73.2%      ---     ---    0.0%     $0.1B      $0.0B      $0.0B      4.9%    4.9% hybrid             ---      ---
+FIS         3.7%      --- -1008.4%    0.0%    $66.7B      $3.2B      $1.1B      4.8%    4.8% buyback          -6.4%     0.3%
+BURL        7.2%     0.7%  127.9%    0.9%     $7.0B      $0.3B      $0.0B      3.9%    4.8% hybrid            3.8%      ---
+LYB         5.0%      ---  -57.9%    0.0%    $26.0B      $1.2B      $1.1B      4.8%    4.8% hybrid             ---      ---
+RVTY        3.5%      --- -159.9%    0.0%    $11.7B      $0.6B      $0.0B      4.8%    4.8% buyback         -17.2%    -9.5%
+UNH        15.7%   -17.0%   65.7%  -11.2%   $107.5B     $17.2B      $9.4B     16.0%    4.8% hybrid           -1.5%    10.9%
+HLN         5.8%      ---  -67.2%    0.0%    $27.0B      $1.3B      $1.2B      4.7%    4.7% hybrid           19.8%    30.6%
+HBANL       8.7%    -0.1%  337.8%   -0.2%    $22.0B      $1.1B      $0.9B      4.8%    4.6% hybrid           13.4%    -4.8%
+HBAN        8.7%    -0.1%  337.8%   -0.2%    $22.0B      $1.1B      $0.9B      4.8%    4.6% hybrid           13.4%    -4.8%
+CPT         2.4%      ---  225.9%    0.0%     $6.8B      $0.3B      $0.3B      4.6%    4.6% hybrid             ---      ---
+AMT         5.8%      --- -115.8%    0.0%    $63.9B      $2.9B      $2.9B      4.5%    4.5% hybrid           12.7%     5.0%
+QGEN        6.5%     3.9%   36.5%    1.4%     $4.0B      $0.1B      $0.0B      3.0%    4.5% hybrid            9.3%    21.4%
+TECK        4.4%      ---  -48.8%    0.0%    $31.6B      $1.4B      $0.4B      4.4%    4.4% buyback            ---    59.8%
+WCN         6.2%     0.7%  152.2%    1.0%    $12.2B      $0.4B      $0.3B      3.4%    4.4% hybrid            5.6%     6.5%
+CCEP        9.0%      ---  -10.8%    0.0%    $19.4B      $0.8B      $0.8B      4.3%    4.3% hybrid            5.5%    13.8%
+TMO         9.1%    -2.5%   45.7%   -1.1%    $72.8B      $3.9B      $0.6B      5.4%    4.2% hybrid            2.6%    -0.5%
+SKM         4.9%      ---  -10.5%    0.0% $22095.4B    $934.4B    $834.0B      4.2%    4.2% hybrid             ---      ---
+CCK        12.8%      ---  -12.8%    0.0%     $8.6B      $0.4B      $0.1B      4.2%    4.2% hybrid           13.6%    11.9%
+PAG         7.1%    -0.8%   98.6%   -0.8%    $12.7B      $0.6B      $0.2B      5.0%    4.2% hybrid           20.3%    29.6%
+MGA         7.7%    -1.6%   71.4%   -1.1%    $16.2B      $0.9B      $0.5B      5.3%    4.1% hybrid           -1.0%    -8.6%
+BWA        10.3%      ---  -68.7%    0.0%     $9.8B      $0.4B      $0.1B      4.1%    4.1% hybrid            3.5%     3.5%
+FNV         5.5%      --- -110.7%    0.0%     $5.5B      $0.2B      $0.2B      4.1%    4.1% hybrid            7.7%    19.0%
+COO         4.1%     3.0%  102.1%    3.1%     $9.8B      $0.1B      $0.0B      1.0%    4.0% reinvestment      9.9%    19.5%
+PLD         4.3%     0.0%   81.1%    0.0%    $78.1B      $3.1B      $3.1B      4.0%    4.0% hybrid            6.7%    15.4%
+PUK         5.9%      ---   -9.0%    0.0%    $20.4B      $0.8B      $0.5B      4.0%    4.0% hybrid          -47.4%      ---
+ZBH         5.3%      ---  -42.2%    0.0%    $19.4B      $0.8B      $0.2B      3.9%    3.9% buyback           4.8%    -0.4%
+STE         7.1%      ---  -43.8%    0.0%     $9.7B      $0.4B      $0.2B      3.9%    3.9% hybrid            5.6%    12.3%
+GRAB      -21.0%      ---     ---    0.0%     $2.0B      $0.1B      $0.0B      3.9%    3.9% hybrid             ---      ---
+MGM         1.9%    -0.9%  606.2%   -1.9%    $38.0B      $2.1B      $0.0B      5.6%    3.8% buyback            ---    15.1%
+TEL        12.9%   -21.3%   51.7%  -11.0%    $15.0B      $2.2B      $0.8B     14.8%    3.8% buyback            ---    20.0%
+AU         -6.6%    14.9%     ---    0.0%     $5.2B      $0.2B      $0.2B      3.7%    3.7% hybrid           20.6%    30.6%
+WEC         7.8%      --- -195.1%    0.0%    $29.0B      $1.1B      $1.1B      3.7%    3.7% hybrid            8.2%      ---
+T           7.4%      ---  -10.0%    0.0%   $267.1B      $9.8B      $8.2B      3.7%    3.7% hybrid            0.6%    -6.7%
+TBB         7.4%      ---  -10.0%    0.0%   $267.1B      $9.8B      $8.2B      3.7%    3.7% hybrid            0.6%    -6.7%
+SHLM       -3.9%     2.2%     ---    0.0%     $0.8B      $0.0B      $0.0B      3.6%    3.6% hybrid            3.4%     0.7%
+FUTU       20.4%      --- -114.8%    0.0%    $37.3B      $1.3B      $0.0B      3.6%    3.6% hybrid           92.1%    68.6%
+WAL        27.8%      ---     ---    0.0%     $4.8B      $0.2B      $0.2B      3.6%    3.6% hybrid           12.4%      ---
+ESS         6.0%      ---   -3.5%    0.0%    $12.2B      $0.4B      $0.4B      3.6%    3.6% hybrid           11.6%      ---
+FTAI        8.9%      ---  -10.9%    0.0%     $3.5B      $0.1B      $0.1B      3.5%    3.5% hybrid           37.9%      ---
+TEF         3.0%      ---  -71.5%    0.0%    $67.8B      $2.3B      $1.7B      3.4%    3.4% hybrid          -21.7%    -6.4%
+AMOV       14.9%   -34.1%    6.6%   -2.2%   $994.4B     $55.0B     $29.3B      5.5%    3.3% hybrid           12.8%     0.1%
+TSN         2.2%      ---  -76.9%    0.0%    $27.0B      $0.9B      $0.7B      3.3%    3.3% hybrid          -15.7%   -14.3%
+TAP         4.6%      ---  -64.9%    0.0%    $20.0B      $0.7B      $0.4B      3.3%    3.3% hybrid           28.9%    -0.4%
+KGC         6.6%      ---   -3.1%    0.0%     $7.7B      $0.2B      $0.1B      3.2%    3.2% hybrid            7.5%    53.5%
+CNHI       11.5%      ---   -3.7%    0.0%    $32.3B      $1.0B      $0.5B      3.2%    3.2% hybrid            4.5%      ---
+OXLCL       2.0%    -7.4%  703.1%  -14.9%     $1.1B      $0.2B      $0.2B     18.0%    3.2% hybrid             ---      ---
+ENTG        5.5%     0.3%  396.9%    0.6%     $2.4B      $0.1B      $0.1B      2.5%    3.1% hybrid           18.0%     1.0%
+CNH        11.4%      ---  -11.6%    0.0%    $33.1B      $1.0B      $0.5B      3.1%    3.1% hybrid            4.5%      ---
+PHG        -8.8%      ---     ---    0.0%    $19.4B      $0.6B      $0.1B      3.1%    3.1% hybrid             ---    -3.6%
+STRL       25.6%      ---  -49.9%    0.0%     $0.8B      $0.0B      $0.0B      3.0%    3.0% hybrid           42.3%    69.8%
+NWSAL       4.1%      ---  -98.4%    0.0%    $11.6B      $0.3B      $0.2B      3.0%    3.0% hybrid          -16.4%    17.4%
+SWK         6.3%      ---  -81.7%    0.0%    $17.0B      $0.5B      $0.5B      3.0%    3.0% hybrid           -8.8%   -15.2%
+SWH         6.3%      ---  -81.7%    0.0%    $17.0B      $0.5B      $0.5B      3.0%    3.0% hybrid           -8.8%   -15.2%
+NWSA        4.8%      ---  -78.6%    0.0%    $11.7B      $0.3B      $0.2B      3.0%    3.0% hybrid           18.9%    17.0%
+REGN       16.5%   -22.3%   71.2%  -15.9%    $18.3B      $3.5B      $0.1B     18.9%    3.0% buyback          -0.2%    16.6%
+TRU         3.8%    31.4%    6.3%    2.0%     $8.7B      $0.1B      $0.1B      0.9%    2.9% reinvestment      2.2%    -2.7%
+AQNB        1.7%      ---  -81.4%    0.0%    $12.0B      $0.3B      $0.3B      2.8%    2.8% hybrid             ---      ---
+VZ          7.6%    -5.0%   21.4%   -1.1%   $290.6B     $11.3B     $11.3B      3.9%    2.8% hybrid           -0.5%    -1.7%
+PAA         6.5%      ---  -52.4%    0.0%    $19.6B      $0.5B      $0.5B      2.8%    2.8% hybrid             ---    26.7%
+CSX        12.7%   -54.9%   15.4%   -8.4%    $29.6B      $3.3B      $0.9B     11.2%    2.7% buyback           5.3%    -4.3%
+AQNU        1.7%      ---  -89.2%    0.0%    $12.0B      $0.3B      $0.3B      2.7%    2.7% hybrid             ---      ---
+FWONB      -0.5%      ---     ---    0.0%     $7.9B      $0.2B      $0.0B      2.7%    2.7% hybrid             ---    13.5%
+FWONA      -0.5%      ---     ---    0.0%     $7.9B      $0.2B      $0.0B      2.7%    2.7% hybrid             ---    13.5%
+MRVL       -2.7%      ---     ---    0.0%    $20.0B      $0.5B      $0.2B      2.7%    2.7% hybrid             ---    31.7%
+AVB         4.1%    -3.1%   67.4%   -2.1%    $19.3B      $0.9B      $0.9B      4.8%    2.7% hybrid            4.9%     3.4%
+FWONK      -0.5%      ---     ---    0.0%     $7.9B      $0.2B      $0.0B      2.6%    2.6% hybrid             ---    13.6%
+CR         17.3%      ---  -63.2%    0.0%     $2.0B      $0.1B      $0.1B      2.6%    2.6% hybrid            9.0%     4.5%
+VOD         4.4%      --- -169.6%    0.0%   $132.7B      $3.5B      $2.2B      2.6%    2.6% hybrid             ---    -7.8%
+ORAN        4.8%      ---   -8.1%    0.0%    $72.9B      $1.9B      $1.9B      2.6%    2.6% hybrid           -3.4%    15.2%
+HTHT        3.4%      --- -225.9%    0.0%    $81.9B      $2.1B      $1.3B      2.6%    2.6% hybrid           15.2%    28.9%
+TBC         6.3%      --- -193.6%    0.0%   $369.1B      $9.2B      $8.7B      2.5%    2.5% hybrid          -10.4%    -8.3%
+MTSI        8.5%    -1.1%   84.9%   -0.9%     $0.9B      $0.0B      $0.0B      3.4%    2.5% hybrid           91.5%     2.4%
+BCH         9.4%    -3.8%  231.0%   -7.7%  $8632.5B    $876.4B    $876.4B     10.2%    2.5% hybrid           22.6%      ---
+AER         5.9%      ---   -8.5%    0.0%    $61.3B      $1.5B      $0.1B      2.4%    2.4% hybrid            8.3%      ---
+WF          8.7%      ---  -19.9%    0.0% $49455.9B   $1180.4B    $867.8B      2.4%    2.4% hybrid            7.6%      ---
+EHC        19.4%      ---  -41.3%    0.0%     $4.5B      $0.1B      $0.0B      2.4%    2.4% hybrid             ---      ---
+RZB       166.7%      ---     ---    0.0%    $13.9B      $0.3B      $0.2B      2.4%    2.4% hybrid          -70.9%    32.3%
+BAX        -2.5%      ---     ---    0.0%    $25.1B      $0.6B      $0.6B      2.4%    2.4% hybrid          -61.9%   -16.6%
+WRK         1.2%      --- -141.1%    0.0%    $21.8B      $0.5B      $0.3B      2.3%    2.3% buyback            ---    -5.7%
+GAP         4.2%      --- -213.6%    0.0%    $12.9B      $0.3B      $0.2B      2.2%    2.2% hybrid           16.3%    22.8%
+DLTR        7.1%      --- -205.1%    0.0%    $23.3B      $0.5B      $0.0B      2.2%    2.2% hybrid            5.1%    15.7%
+AR          5.4%      ---  -46.7%    0.0%    $14.7B      $0.3B      $0.0B      2.2%    2.2% hybrid             ---    -4.8%
+AES        -2.6%    -1.1%     ---    0.0%    $20.3B      $0.4B      $0.4B      2.2%    2.2% hybrid            7.2%      ---
+IFF        -2.4%      ---     ---    0.0%    $33.3B      $0.7B      $0.7B      2.2%    2.2% hybrid          -11.3%   -10.2%
+BUD         7.5%      ---  -18.4%    0.0%   $147.4B      $3.1B      $2.7B      2.1%    2.1% hybrid           -3.1%     8.5%
+AFRM       -7.8%    12.8%     ---    0.0%     $4.0B      $0.1B      $0.0B      2.1%    2.1% hybrid             ---      ---
+CM          5.3%      --- -433.6%    0.0%   $185.4B      $3.8B      $3.1B      2.0%    2.0% hybrid           19.6%      ---
+WBA        -7.6%      ---     ---    0.0%    $81.4B      $1.7B      $1.5B      2.0%    2.0% hybrid             ---      ---
+BBDO        2.9%     0.2% 1384.7%    0.3%   $368.4B      $6.4B      $6.1B      1.7%    2.0% hybrid           47.7%    13.5%
+JAZZ        4.3%      --- -238.1%    0.0%     $9.6B      $0.2B      $0.0B      2.0%    2.0% buyback           3.3%    14.6%
+BKI         5.0%     0.3%  252.3%    0.6%     $3.4B      $0.0B      $0.0B      1.4%    2.0% hybrid            2.6%   -13.8%
+BBD         5.1%      --- -126.1%    0.0%   $474.6B      $9.4B      $9.1B      2.0%    2.0% hybrid           62.3%      ---
+NIMC       32.3%      --- -471.6%    0.0%    $15.4B      $0.3B      $0.3B      1.9%    1.9% hybrid           54.3%      ---
+KB          6.4%      --- -136.2%    0.0% $96353.6B   $1822.8B   $1358.9B      1.9%    1.9% hybrid             ---      ---
+MKSI       -2.2%    -5.2%     ---    0.0%     $3.1B      $0.1B      $0.1B      1.8%    1.8% hybrid           13.1%    13.1%
+SCI        11.4%   -30.1%   31.7%   -9.5%     $5.8B      $0.7B      $0.2B     11.4%    1.8% buyback          11.2%    12.6%
+HMC         5.6%      --- -106.4%    0.0% $14632.6B    $267.7B    $267.7B      1.8%    1.8% hybrid           18.0%      ---
+TSEM       22.7%     5.1%   34.7%    1.8%     $1.3B        ---      $0.0B      0.0%    1.8% reinvestment     15.8%   -34.6%
+ED          4.5%    -2.4%   59.6%   -1.4%    $45.2B      $1.4B      $1.1B      3.2%    1.7% hybrid            0.1%      ---
+KKRS    66119.9%      --- -215.4%    0.0%    $46.8B      $0.8B      $0.6B      1.7%    1.7% hybrid           47.2%      ---
+VTRS        1.2%      --- -787.5%    0.0%    $43.2B      $0.7B      $0.6B      1.7%    1.7% hybrid          -46.4%    -9.3%
+KKR         3.5%      ---     ---    0.0%    $47.5B      $0.8B      $0.5B      1.7%    1.7% hybrid          -26.8%      ---
+AA          6.0%      --- -130.3%    0.0%     $5.6B      $0.1B      $0.1B      1.7%    1.7% hybrid             ---    57.8%
+CEA        -5.0%   473.3%     ---    0.0%   $328.9B      $5.3B      $5.3B      1.6%    1.6% hybrid             ---      ---
+SUI         3.2%    -1.4%  172.4%   -2.3%    $12.0B      $0.5B      $0.5B      3.9%    1.6% hybrid          -13.9%     3.5%
+ICLR        6.8%      ---  -15.2%    0.0%    $13.2B      $0.2B      $0.0B      1.5%    1.5% hybrid           11.4%    15.1%
+TTMI      -36.2%   230.5%     ---    0.0%     $2.1B      $0.0B      $0.0B      1.5%    1.5% hybrid           58.6%   -21.2%
+IVZ        -0.4%      ---     ---    0.0%    $22.8B      $0.3B      $0.2B      1.5%    1.5% hybrid             ---     6.9%
+BILI      -50.3%      ---     ---    0.0%    $10.8B      $0.2B      $0.0B      1.4%    1.4% hybrid             ---      ---
+ARMK        6.3%      --- -144.2%    0.0%    $10.9B      $0.2B      $0.1B      1.4%    1.4% hybrid             ---      ---
+TU          4.9%    -1.6%  147.7%   -2.4%    $35.4B      $1.4B      $1.4B      3.8%    1.4% hybrid           -5.9%   104.6%
+REG         6.4%    -3.8%  100.8%   -3.8%    $10.9B      $0.6B      $0.5B      5.2%    1.4% hybrid            0.5%    12.9%
+INTC       -2.4%   -22.2%     ---    0.0%   $115.1B      $1.6B      $1.6B      1.4%    1.4% hybrid             ---      ---
+EQX         1.4%     0.6% 1131.9%    1.3%     $2.6B        ---      $0.0B      0.0%    1.3% reinvestment     -7.0%      ---
+FMS         3.5%      ---  -24.5%    0.0%    $29.1B      $0.4B      $0.4B      1.2%    1.2% hybrid           -3.6%    12.1%
+IBKR      671.2%      ---  -37.4%    0.0%     $8.4B      $0.1B      $0.1B      1.1%    1.1% hybrid           33.2%    19.2%
+TCOM        6.8%      ---  -27.6%    0.0%   $112.8B      $1.3B      $0.0B      1.1%    1.1% hybrid           23.3%    22.2%
+PPC        13.4%      ---   -6.5%    0.0%     $6.1B      $0.1B      $0.0B      1.1%    1.1% hybrid           19.0%    37.9%
+FDX         5.8%   -12.7%   31.1%   -4.0%    $72.6B      $3.6B      $1.3B      5.0%    1.0% buyback          17.5%      ---
+SRE         4.6%    -1.2%  188.2%   -2.3%    $50.1B      $1.7B      $1.5B      3.3%    1.0% hybrid           -0.1%      ---
+CYBR       -9.6%     2.1%     ---    0.0%     $0.3B      $0.0B      $0.0B      0.9%    0.9% hybrid             ---    14.9%
+FLUT        0.5%      --- -1857.2%    0.0%    $17.1B      $0.1B      $0.0B      0.8%    0.8% buyback          11.5%     2.1%
+CX          4.5% 10820.4%    0.1%    0.3%    $20.0B      $0.1B      $0.1B      0.6%    0.8% hybrid             ---      ---
+KDP         5.4%    -7.3%   55.2%   -4.0%    $39.1B      $1.9B      $1.1B      4.8%    0.8% hybrid            2.8%    -4.0%
+GEHC       12.8%      ---  -16.2%    0.0%    $16.8B      $0.1B      $0.1B      0.7%    0.7% hybrid            0.6%     0.8%
+BNT        16.6%      ---     ---    0.0%     $1.7B      $0.0B      $0.0B      0.7%    0.7% hybrid           91.6%    18.8%
+RCB        -2.6%      --- -1265.2%    0.0%     $8.9B      $0.0B      $0.0B      0.5%    0.5% hybrid             ---      ---
+AG         -4.0%      ---     ---    0.0%     $1.4B      $0.0B      $0.0B      0.4%    0.4% hybrid             ---     3.3%
+CDAY        1.4%      --- -989.8%    0.0%     $3.0B      $0.0B      $0.0B      0.4%    0.4% hybrid           -4.0%      ---
+WDC         6.2%      --- -892.7%    0.0%    $17.8B      $0.1B      $0.0B      0.4%    0.4% hybrid           42.0%    43.2%
+PKI         3.8%      --- -151.7%    0.0%    $11.7B      $0.0B      $0.0B      0.3%    0.3% hybrid           -2.6%    11.8%
+RKT         2.6%      --- -447.5%    0.0%    $18.3B      $0.1B      $0.0B      0.3%    0.3% hybrid          -12.6%      ---
+ILMN       -0.8%      ---     ---    0.0%    $12.7B      $0.0B      $0.0B      0.3%    0.3% hybrid            7.9%     0.1%
+TIGO       -0.9%      ---     ---    0.0%    $11.8B      $0.0B      $0.0B      0.3%    0.3% hybrid           20.8%    22.8%
+ERJ         5.4%      --- -113.6%    0.0%     $4.3B      $0.0B      $0.0B      0.1%    0.1% hybrid             ---     4.5%
+EMBJ        5.4%      --- -113.6%    0.0%     $4.3B      $0.0B      $0.0B      0.1%    0.1% hybrid             ---     4.5%
+AGR         3.1%    -1.3%  257.0%   -2.6%    $25.1B      $0.7B      $0.7B      2.7%    0.1% hybrid           -7.7%      ---
+KEP        -4.2%      ---     ---    0.0% $74872.0B     $71.5B     $71.5B      0.1%    0.1% hybrid             ---      ---
+CTLT       -1.6%   -43.2%     ---    0.0%     $6.2B      $0.0B      $0.0B      0.1%    0.1% hybrid             ---      ---
+BE         -1.2%      ---     ---    0.0%     $1.6B      $0.0B      $0.0B      0.0%    0.0% hybrid             ---      ---
+NET       -24.1%    -1.3%     ---    0.0%     $0.4B      $0.0B      $0.0B      0.0%    0.0% hybrid             ---      ---
+YPF        -1.2%    -1.1%     ---    0.0%  $1594.7B      $0.0B      $0.0B      0.0%    0.0% hybrid             ---   -61.4%
+RCIT      -84.0%      ---     ---    0.0%       ---        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+MS         26.8%      ---     ---    0.0%       ---     $12.8B      $5.8B      0.0%    0.0% buyback           9.2%      ---
+GS          6.3%      ---     ---    0.0%       ---     $11.0B      $4.1B      0.0%    0.0% buyback          13.1%      ---
+MUFG         ---      ---     ---    0.0%       ---    $874.0B    $451.1B      0.0%    0.0% unknown          28.7%      ---
+BA        -16.5%   -12.1%     ---    0.0%    $24.7B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+PDD          ---      ---     ---    0.0%       ---        ---      $0.0B      0.0%    0.0% unknown            ---    44.9%
+SHOP       -6.1%    27.8%     ---    0.0%     $4.8B        ---      $0.0B      0.0%    0.0% unknown            ---   178.9%
+COF         3.0%      ---     ---    0.0%       ---      $3.1B      $0.9B      0.0%    0.0% buyback         -10.9%    -1.8%
+UBS        35.4%      ---     ---    0.0%       ---      $5.8B      $1.9B      0.0%    0.0% unknown           6.9%   -39.9%
+BBVA       43.4%      ---     ---    0.0%       ---      $5.2B      $3.0B      0.0%    0.0% unknown          47.8%      ---
+MFG          ---      ---     ---    0.0%       ---    $285.8B    $249.6B      0.0%    0.0% unknown          14.3%      ---
+PGR          ---      ---     ---    0.0%       ---      $0.7B      $0.4B      0.0%    0.0% unknown          12.2%    20.2%
+CRWD         ---      ---     ---    0.0%       ---        ---      $0.0B      0.0%    0.0% unknown            ---   136.9%
+USB         7.9%      ---     ---    0.0%       ---      $2.1B      $2.0B      0.0%    0.0% unknown           8.1%      ---
+BCS          ---      ---     ---    0.0%       ---      $7.0B      $2.2B      0.0%    0.0% buyback          16.8%      ---
+SNDK       -9.0%      ---     ---    0.0%    $13.6B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+SMFG         ---      ---     ---    0.0%       ---    $554.5B    $353.9B      0.0%    0.0% unknown          11.7%    -6.6%
+CVNA       -0.5%      ---     ---    0.0%     $5.7B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+BK           ---      ---     ---    0.0%       ---      $3.4B      $1.3B      0.0%    0.0% unknown          14.3%      ---
+NU           ---      ---     ---    0.0%       ---        ---      $0.0B      0.0%    0.0% unknown            ---    50.5%
+ABNB      341.9%      ---     ---    0.0%       ---      $2.4B      $0.0B      0.0%    0.0% buyback            ---   107.2%
+VRNA     -240.6%      ---     ---    0.0%     $0.0B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+WBD        -6.5%   -21.0%     ---    0.0%    $22.5B        ---      $0.0B      0.0%    0.0% unknown            ---   -16.1%
+TRV        32.5%      ---     ---    0.0%       ---      $2.7B      $0.9B      0.0%    0.0% unknown          21.1%      ---
+SE         -6.0%    58.2%     ---    0.0%     $2.2B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+FTNT         ---      ---     ---    0.0%       ---      $1.3B      $0.0B      0.0%    0.0% buyback          31.5%    21.1%
+AFL        11.8%      ---     ---    0.0%       ---      $3.7B      $1.0B      0.0%    0.0% buyback           8.9%    -7.8%
+AEH         1.3%      ---     ---    0.0%       ---      $1.3B      $0.4B      0.0%    0.0% buyback         -14.0%   -36.7%
+AED         1.3%      ---     ---    0.0%       ---      $1.3B      $0.4B      0.0%    0.0% buyback         -14.0%   -36.7%
+AEB         1.3%      ---     ---    0.0%       ---      $1.3B      $0.4B      0.0%    0.0% buyback         -14.0%   -36.7%
+AMP       174.5%      ---     ---    0.0%       ---      $2.7B      $0.6B      0.0%    0.0% unknown          18.4%    30.7%
+MET          ---      ---     ---    0.0%       ---      $4.8B      $1.6B      0.0%    0.0% buyback          -2.0%     8.3%
+CCL         7.6%      ---   -6.2%    0.0%    $40.3B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+COIN       -7.9%   -15.3%     ---    0.0%     $2.8B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+CUK         7.6%      ---   -6.2%    0.0%    $40.3B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+ALNY      -36.1%      ---     ---    0.0%       ---        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+SGEN      -13.4%      ---     ---    0.0%     $1.1B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+ENBA        7.1%      ---     ---    0.0%       ---      $0.3B      $0.2B      0.0%    0.0% unknown            ---      ---
+AIG        19.2%      ---     ---    0.0%       ---      $6.1B      $1.0B      0.0%    0.0% buyback          -2.4%      ---
+SLV        -0.1%      ---     ---    0.0%     $0.0B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+TEVA        2.6%      --- -270.6%    0.0%    $26.9B        ---      $0.0B      0.0%    0.0% unknown            ---    10.9%
+DDOG       -2.4%    27.9%     ---    0.0%     $0.4B        ---      $0.0B      0.0%    0.0% unknown            ---   233.4%
+MSTR      -18.1%   -14.8%     ---    0.0%     $3.2B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+RKLB      -27.2%   -20.7%     ---    0.0%     $0.2B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+ONC      -125.4%    43.7%     ---    0.0%     $0.3B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+STT         5.1%      ---     ---    0.0%       ---      $3.8B      $1.0B      0.0%    0.0% buyback           8.8%      ---
+SYM          ---      ---     ---    0.0%       ---      $0.0B      $0.0B      0.0%    0.0% unknown            ---      ---
+MTB       603.0%      ---     ---    0.0%       ---      $1.9B      $0.8B      0.0%    0.0% unknown          11.6%     5.1%
+FITB       18.2%      ---     ---    0.0%       ---      $1.4B      $1.1B      0.0%    0.0% unknown          13.7%    11.3%
+NWG        38.7%      ---     ---    0.0%       ---      $4.6B      $2.2B      0.0%    0.0% buyback          12.0%      ---
+TTWO      -35.4%  -112.4%     ---    0.0%     $1.8B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+PRU       142.0%      ---     ---    0.0%       ---      $1.9B      $1.2B      0.0%    0.0% unknown            ---      ---
+VIK        18.1%      ---     ---    0.0%       ---      $0.0B      $0.0B      0.0%    0.0% unknown            ---      ---
+RJF          ---      ---     ---    0.0%       ---      $1.4B      $0.4B      0.0%    0.0% unknown          34.9%   -10.4%
+INSM     -320.3%      ---     ---    0.0%     $0.4B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+ASTS     -182.5%      ---     ---    0.0%       ---        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+NTRS         ---      ---     ---    0.0%       ---      $1.1B      $0.7B      0.0%    0.0% unknown           9.7%      ---
+NTRA      -82.3%    61.1%     ---    0.0%     $0.2B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+MDB      -101.9%    12.9%     ---    0.0%     $0.1B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+NETE      -19.2%      ---     ---    0.0%     $0.0B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+STRC      -18.1%   -14.8%     ---    0.0%     $3.2B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+STRF      -18.1%   -14.8%     ---    0.0%     $3.2B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+RF           ---      ---     ---    0.0%       ---      $1.2B      $0.8B      0.0%    0.0% unknown          16.6%    -9.1%
+CINF         ---      ---     ---    0.0%       ---      $0.7B      $0.5B      0.0%    0.0% unknown           3.7%    18.3%
+WRB          ---      ---     ---    0.0%       ---      $0.7B      $0.4B      0.0%    0.0% unknown          29.5%    28.5%
+ZS        -67.2%      ---     ---    0.0%       ---        ---      $0.0B      0.0%    0.0% unknown            ---    85.8%
+RDDT      -32.9%   192.7%     ---    0.0%     $0.2B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+SOFI        7.0%      --- -165.4%    0.0%     $9.8B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+KEY         3.4%      ---     ---    0.0%       ---      $0.6B      $0.6B      0.0%    0.0% unknown           4.1%      ---
+TPGXL      10.1%      ---     ---    0.0%       ---      $0.7B      $0.5B      0.0%    0.0% buyback         -28.0%      ---
+L           8.0%      ---     ---    0.0%       ---      $0.8B      $0.1B      0.0%    0.0% buyback          18.7%    36.3%
+PFG          ---      ---     ---    0.0%       ---      $1.8B      $0.6B      0.0%    0.0% unknown           6.6%     1.0%
+STRK      -18.1%   -14.8%     ---    0.0%     $3.2B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+TPG        10.1%      ---     ---    0.0%       ---      $0.7B      $0.5B      0.0%    0.0% buyback         -28.0%      ---
+VRSN         ---      ---     ---    0.0%       ---      $1.1B      $0.1B      0.0%    0.0% buyback          13.9%    14.1%
+NBIS      -16.0%      ---     ---    0.0%     $4.6B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+NTAP      104.9%      ---     ---    0.0%       ---      $1.4B      $0.4B      0.0%    0.0% buyback           9.3%     9.8%
+BGNE      -90.9%    47.1%     ---    0.0%     $0.4B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+CRDO       -5.5%    30.4%     ---    0.0%     $0.1B        ---      $0.0B      0.0%    0.0% unknown          60.9%      ---
+ATH         0.0%      ---     ---    0.0%       ---      $0.5B      $0.1B      0.0%    0.0% unknown            ---      ---
+EXAS      -10.6%      ---     ---    0.0%     $4.9B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+LI        -90.2%      ---     ---    0.0%     $3.2B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+RVMD     -199.7%  -446.1%     ---    0.0%     $0.2B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+RIVN      -89.2%   -14.7%     ---    0.0%     $3.4B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+ROIV    -4123.9%      ---     ---    0.0%       ---      $0.4B      $0.0B      0.0%    0.0% unknown            ---      ---
+EWBC       67.9%      ---     ---    0.0%       ---      $0.4B      $0.3B      0.0%    0.0% unknown          19.5%    14.9%
+XPEV      -33.5%    -0.8%     ---    0.0%     $9.0B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+CRBG         ---      ---     ---    0.0%       ---      $1.8B      $1.0B      0.0%    0.0% unknown            ---    25.3%
+FNF          ---      ---     ---    0.0%       ---      $0.7B      $0.5B      0.0%    0.0% unknown           5.7%    45.9%
+RE          0.0%      ---     ---    0.0%       ---      $0.1B      $0.1B      0.0%    0.0% unknown            ---      ---
+TYL         6.1%      ---  -15.7%    0.0%     $3.4B        ---      $0.0B      0.0%    0.0% unknown          10.5%    21.2%
+RGA        65.3%      ---     ---    0.0%       ---      $0.3B      $0.2B      0.0%    0.0% unknown         -69.1%    32.4%
+OKTA       -6.9%      ---     ---    0.0%     $5.6B        ---      $0.0B      0.0%    0.0% unknown            ---    77.6%
+CRCL       22.7%      ---     ---    0.0%       ---      $0.0B      $0.0B      0.0%    0.0% unknown            ---      ---
+IOT       -36.1%    70.0%     ---    0.0%     $0.3B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+BVC          ---      ---     ---    0.0%     $0.0B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+KSPI      200.5%      ---     ---    0.0%       ---    $514.5B    $472.1B      0.0%    0.0% unknown          40.0%    12.0%
+ITCI     -118.2%      ---     ---    0.0%    $18.7B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+IONS     -262.1%      ---     ---    0.0%       ---        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+IREN      -18.1%     0.8%     ---    0.0%     $0.3B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+EG         40.3%      ---     ---    0.0%       ---      $0.7B      $0.3B      0.0%    0.0% unknown          26.6%     0.4%
+SOLV        8.8%      ---  -49.9%    0.0%    $12.0B        ---      $0.0B      0.0%    0.0% unknown         -17.7%   -25.4%
+RGC      -543.7%      ---     ---    0.0%     $0.0B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+BIPI       13.5%      ---     ---    0.0%       ---        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+GH        -71.2%      ---     ---    0.0%     $1.3B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+EQH        51.9%      ---     ---    0.0%       ---      $1.4B      $0.3B      0.0%    0.0% buyback            ---      ---
+AVAV       -3.5%    24.8%     ---    0.0%     $0.8B        ---      $0.0B      0.0%    0.0% unknown          -3.7%      ---
+ROKU      -23.6%      ---     ---    0.0%     $1.6B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+ELAN        2.1%      --- -441.0%    0.0%    $13.2B        ---      $0.0B      0.0%    0.0% unknown         -16.6%    61.5%
+AIZ        22.8%      ---     ---    0.0%       ---      $0.5B      $0.2B      0.0%    0.0% buyback          24.1%     0.2%
+HUBS       -9.1%    18.8%     ---    0.0%     $0.7B        ---      $0.0B      0.0%    0.0% unknown            ---    47.5%
+AEG       114.2%      ---     ---    0.0%       ---      $1.3B      $0.4B      0.0%    0.0% unknown         -14.0%   -36.7%
+NIO       -70.8%   -54.0%     ---    0.0%     $5.5B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+GL           ---      ---     ---    0.0%       ---      $0.6B      $0.1B      0.0%    0.0% unknown          17.2%      ---
+CMA          ---      ---     ---    0.0%       ---      $0.3B      $0.2B      0.0%    0.0% unknown           8.9%      ---
+GME        -8.6%      ---     ---    0.0%     $1.6B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+BMRN        3.8%      ---  155.3%    0.0%     $4.4B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+SMMT     -979.5%      ---     ---    0.0%     $0.0B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+OKLO     -164.5%      ---     ---    0.0%       ---        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+XM        -57.0%      ---     ---    0.0%       ---      $0.0B      $0.0B      0.0%    0.0% unknown            ---      ---
+RNA          ---      ---     ---    0.0%       ---        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+AFG        22.6%      ---     ---    0.0%       ---      $1.0B      $0.9B      0.0%    0.0% unknown          25.2%   -12.6%
+SITM      -38.5%   -33.7%     ---    0.0%     $0.1B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+CFLT     -482.5%      ---     ---    0.0%       ---      $0.0B      $0.0B      0.0%    0.0% unknown            ---      ---
+MDGL         ---      ---     ---    0.0%       ---        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+SSB        27.9%      ---     ---    0.0%       ---      $0.2B      $0.2B      0.0%    0.0% unknown          39.9%     9.5%
+ORI        16.7%      ---     ---    0.0%       ---      $1.0B      $0.4B      0.0%    0.0% buyback          15.1%     9.5%
+RBRK         ---      ---     ---    0.0%       ---      $0.0B      $0.0B      0.0%    0.0% unknown            ---      ---
+UMBF       10.0%      ---     ---    0.0%       ---      $0.1B      $0.1B      0.0%    0.0% unknown           9.8%   -13.8%
+JOBY     -634.3% -1275.1%     ---    0.0%     $0.0B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+BRZL      -22.4%      ---     ---    0.0%     $0.0B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+AAL         6.1%      ---  -68.8%    0.0%    $36.9B        ---      $0.0B      0.0%    0.0% unknown            ---      ---
+MU          2.4%    -0.8%  204.6%   -1.6%    $49.6B      $0.8B      $0.5B      1.5%   -0.0% hybrid           26.4%    82.4%
+HSY        20.5%  -119.6%   13.0%  -15.6%     $8.4B      $1.3B      $0.9B     15.5%   -0.0% hybrid           -6.9%     6.5%
+FMCKK       0.3%    -0.1%  962.1%   -0.2%  $2998.0B        ---      $0.0B      0.0%   -0.2% unknown          10.5%   -11.5%
+RRX         4.4%    -1.0%  225.6%   -1.9%     $8.0B      $0.1B      $0.1B      1.4%   -0.5% hybrid            4.9%     7.1%
+RS         16.9%   -78.5%   17.4%  -13.6%     $7.9B      $1.0B      $0.2B     12.3%   -1.3% buyback           7.2%     2.6%
+WPM         8.1%   -20.5%   27.6%   -5.7%     $6.0B      $0.3B      $0.3B      4.3%   -1.3% hybrid           38.3%    -6.1%
+LSCC       22.9%   -61.3%   30.9%  -19.0%     $0.5B      $0.1B      $0.0B     17.6%   -1.4% buyback         -13.9%     1.9%
+TPX        11.4%    -7.5%  133.8%  -10.0%     $3.6B      $0.3B      $0.1B      8.6%   -1.4% hybrid           21.8%    25.8%
+BG          9.3%    -4.7%  421.2%   -9.4%    $14.6B      $1.2B      $0.4B      7.9%   -1.4% hybrid           -5.8%      ---
+DKS        13.4%   -17.1%   75.4%  -12.9%     $6.5B      $0.7B      $0.3B     11.4%   -1.5% hybrid           34.7%    23.9%
+NSC         9.1%   -21.4%   34.0%   -7.3%    $28.3B      $1.6B      $1.2B      5.7%   -1.6% hybrid            5.8%    18.4%
+TRP         4.5%   -66.0%    8.7%   -5.7%    $86.1B      $3.3B      $3.3B      3.8%   -1.9% hybrid           -2.4%      ---
+HL          0.1%    -1.8% 3712.1%   -3.7%     $2.1B      $0.0B      $0.0B      0.9%   -2.8% hybrid             ---      ---
+UPS        15.7%   -58.9%   33.5%  -19.7%    $39.6B      $6.6B      $5.4B     16.8%   -2.9% hybrid            1.9%    -0.7%
+CG          3.4%    -4.5%  322.2%   -8.9%    $13.3B      $0.8B      $0.5B      6.0%   -3.0% buyback          21.4%      ---
+JLL         6.4%   -10.6%   59.0%   -6.3%     $9.1B      $0.3B      $0.0B      3.3%   -3.0% hybrid            5.2%    15.5%
+HTA         1.4%    -4.0%  289.9%   -8.0%     $5.7B      $0.3B      $0.3B      4.9%   -3.1% hybrid          -37.3%      ---
+FIVE        5.8%    -2.5%  235.8%   -5.0%     $3.4B      $0.1B      $0.0B      1.9%   -3.1% hybrid            7.5%      ---
+COHR        1.5%    -2.4% 1406.2%   -4.9%     $4.4B      $0.1B      $0.0B      1.3%   -3.6% hybrid           -0.9%    -8.0%
+SGI        11.4%    -9.5%  146.3%  -13.8%     $3.4B      $0.3B      $0.1B      9.8%   -4.1% hybrid             ---    45.0%
+TFII       13.2%   -18.6%   73.9%  -13.7%     $4.8B      $0.5B      $0.1B      9.5%   -4.3% buyback          15.5%    23.3%
+BMO         1.9%    -3.5%  676.9%   -6.9%   $263.7B      $5.0B      $3.9B      1.9%   -5.0% hybrid            8.7%   -31.4%
+KEYS       15.0%   -14.2%  118.5%  -16.8%     $4.4B      $0.5B      $0.0B     11.6%   -5.2% buyback           5.7%     9.3%
+GFS         6.4%    -5.2%  117.8%   -6.1%     $7.9B      $0.1B      $0.0B      0.8%   -5.3% hybrid             ---      ---
+KHC         3.8% -1432.3%    0.7%   -9.5%    $67.7B      $2.5B      $2.0B      3.7%   -5.8% hybrid           -9.7%     2.7%
+HPE         5.6%    -4.7%  197.2%   -9.3%    $30.2B      $1.0B      $0.7B      3.2%   -6.2% hybrid            0.7%      ---
+NTR        10.9%   -73.2%   20.0%  -14.7%    $35.2B      $3.0B      $1.0B      8.4%   -6.3% hybrid            8.7%    -1.7%
+AMX         9.5%   -12.7%   92.3%  -11.7%   $994.6B     $51.4B     $30.3B      5.2%   -6.5% hybrid            1.4%    10.4%
+IX          4.3%    -5.1%  195.1%  -10.0%  $4998.4B    $165.8B    $113.9B      3.3%   -6.7% hybrid           -2.5%      ---
+SATS        0.9%    -6.4% 3557.6%  -12.8%     $3.6B      $0.2B      $0.0B      5.9%   -6.8% buyback            ---      ---
+TRMB        5.9%    -9.1%  130.5%  -11.9%     $5.2B      $0.2B      $0.0B      4.5%   -7.4% buyback           3.5%    -0.3%
+GNRC        9.8%  -129.2%   11.0%  -14.2%     $3.8B      $0.3B      $0.0B      6.6%   -7.6% buyback           8.1%    20.5%
+NRG         9.8%   -91.9%   20.0%  -18.3%    $12.0B      $1.3B      $0.4B     10.7%   -7.6% buyback          18.1%    14.0%
+DHI        16.5%   -60.2%   33.5%  -20.1%    $23.0B      $2.8B      $0.4B     12.4%   -7.8% buyback          11.4%    28.2%
+ZBRA        9.4%   -17.8%   86.2%  -15.4%     $4.0B      $0.3B      $0.0B      7.2%   -8.2% buyback           0.6%    10.0%
+AKAM        6.1%   -14.1%  117.9%  -16.6%     $7.2B      $0.6B      $0.0B      8.4%   -8.2% buyback          -0.2%    12.4%
+FNMAK       0.4%    -4.3%  256.1%   -8.6%  $4162.3B        ---      $0.0B      0.0%   -8.6% unknown           3.7%      ---
+FNMAL       0.4%    -4.3%  256.1%   -8.6%  $4162.3B        ---      $0.0B      0.0%   -8.6% unknown           3.7%      ---
+SUZ        12.0%   -13.3%  100.4%  -13.4%    $85.4B      $3.8B      $1.9B      4.4%   -9.0% hybrid           44.8%     9.9%
+TGT        12.2%   -34.9%   63.6%  -22.2%    $26.1B      $3.2B      $2.0B     12.3%   -9.9% hybrid            5.9%     4.1%
+BBY        15.9%   -82.9%   37.6%  -31.1%     $6.7B      $1.4B      $0.8B     21.0%  -10.1% hybrid           -0.4%    -1.1%
+BHP        21.5%   -68.0%   43.9%  -29.8%    $46.4B      $9.1B      $9.1B     19.7%  -10.1% hybrid            5.1%     2.8%
+XOM        10.9%   -27.9%   97.6%  -27.2%   $209.9B     $35.5B     $16.3B     16.9%  -10.3% buyback            ---      ---
+BNS         2.7%    -6.6%  872.4%  -13.2%   $268.1B      $5.6B      $5.3B      2.1%  -11.1% hybrid            2.7%   -38.2%
+BLL         7.1%   -21.1%   74.4%  -15.7%     $9.0B      $0.4B      $0.2B      4.6%  -11.1% hybrid            3.5%     6.0%
+TAK         2.5%    -7.3%  237.8%  -14.7%  $9153.4B    $316.7B    $289.7B      3.5%  -11.2% hybrid           21.1%    13.1%
+BIIB        8.9%   -10.4%  108.4%  -11.3%    $15.5B        ---      $0.0B      0.0%  -11.3% unknown         -12.4%    -9.9%
+CARR        8.2%   -13.9%  233.7%  -27.8%    $14.1B      $2.3B      $0.7B     16.4%  -11.4% buyback          -3.1%     5.0%
+DHR         6.6%  -265.4%    6.6%  -17.4%    $65.5B      $3.8B      $0.8B      5.9%  -11.5% buyback           4.9%    -0.4%
+RIO        20.6%   -82.9%   34.0%  -28.2%    $51.0B      $8.4B      $8.4B     16.5%  -11.7% hybrid            3.2%    -8.6%
+LUV         2.2%   -13.1%  424.2%  -26.3%     $9.4B      $1.4B      $0.4B     14.4%  -11.9% buyback            ---      ---
+MMAC        8.9%    -6.5%  505.8%  -13.1%     $0.3B      $0.0B      $0.0B      0.9%  -12.2% hybrid             ---      ---
+SU         10.5%   -59.5%   37.4%  -22.3%    $56.4B      $5.5B      $2.8B      9.8%  -12.4% hybrid             ---      ---
+CVS         4.8%   -64.9%   25.6%  -16.6%   $158.4B      $6.0B      $3.1B      3.8%  -12.8% hybrid           -5.8%    -8.8%
+STLA       22.1%   -25.0%  112.5%  -28.1%    $40.6B      $6.2B      $4.1B     15.3%  -12.8% hybrid          -15.1%      ---
+SNY         6.5%  -143.1%   12.2%  -17.5%    $85.2B      $3.4B      $3.1B      3.9%  -13.6% hybrid          -15.2%    11.4%
+EXE        14.0%   -15.4%  336.1%  -30.7%     $7.1B      $1.2B      $0.7B     16.5%  -14.2% hybrid             ---      ---
+NOK         6.3%   -40.3%   52.1%  -21.0%    $18.7B      $1.2B      $0.7B      6.5%  -14.5% hybrid             ---     2.3%
+JBS         9.8%   -35.1%   52.1%  -18.3%   $132.9B      $4.9B      $3.7B      3.7%  -14.6% hybrid           12.2%    14.3%
+EXEEL      14.7%   -15.7%  329.4%  -31.3%     $7.1B      $1.2B      $0.7B     16.6%  -14.7% hybrid             ---      ---
+DG          5.6%   -24.0%   84.5%  -20.3%    $30.2B      $1.4B      $0.5B      4.7%  -15.5% hybrid           -2.6%     6.4%
+HUM        10.4%   -77.0%   31.3%  -24.1%    $23.2B      $1.9B      $0.4B      8.2%  -15.8% buyback         -11.9%   -10.1%
+APTV        6.7%  -156.5%   16.7%  -26.1%    $14.7B      $1.5B      $0.0B     10.2%  -15.9% buyback         -18.2%    17.7%
+ASX         7.8%   -32.2%   70.6%  -22.8%   $433.5B     $27.8B     $27.8B      6.4%  -16.3% hybrid            7.7%      ---
+KT          4.5%   -19.4%  107.2%  -20.8% $19209.0B    $736.3B    $616.5B      3.8%  -16.9% hybrid           -6.1%      ---
+HRL         7.2%  -233.2%   10.0%  -23.3%     $9.8B      $0.6B      $0.6B      6.3%  -17.0% hybrid          -10.5%    -6.9%
+DGX         8.8%   -26.8%   95.7%  -25.7%    $10.8B      $0.9B      $0.3B      8.6%  -17.1% buyback           5.4%     5.4%
+UMC        14.2%   -31.1%  120.4%  -37.5%   $195.2B     $39.5B     $39.5B     20.2%  -17.2% hybrid           12.6%     7.0%
+AMKR       12.8%   -44.6%   47.4%  -21.2%     $3.4B      $0.1B      $0.1B      3.0%  -18.1% hybrid           14.4%    29.6%
+E           7.8%   -29.7%   88.3%  -26.2%    $64.0B      $5.2B      $3.1B      8.1%  -18.1% hybrid           70.3%     7.1%
+IMO        16.6%  -230.9%   13.2%  -30.4%    $25.7B      $2.9B      $0.8B     11.5%  -19.0% buyback            ---      ---
+VALE       23.4%  -248.1%   15.9%  -39.5%    $41.4B      $8.4B      $5.3B     20.3%  -19.2% hybrid           30.8%   -16.7%
+JEF        11.3%   -22.9%   96.3%  -22.0%    $14.8B      $0.4B      $0.3B      2.8%  -19.3% hybrid          -14.0%      ---
+COP        11.7%   -40.6%   90.1%  -36.6%    $57.4B      $9.7B      $4.4B     16.9%  -19.7% buyback            ---   180.5%
+COOP        6.4%   -10.9%  249.3%  -21.9%    $10.1B      $0.2B      $0.0B      2.2%  -19.7% hybrid           42.4%      ---
+GM          4.1%   -57.0%   52.1%  -29.7%   $153.1B      $8.7B      $0.6B      5.7%  -24.0% buyback          -5.8%      ---
+BEN         2.5%   -15.2%  396.9%  -30.4%    $16.6B      $0.9B      $0.6B      5.5%  -24.9% hybrid          -13.1%    -2.3%
+AESC        6.3%   -25.1%  107.4%  -27.0%    $21.1B      $0.4B      $0.4B      2.0%  -25.0% hybrid             ---      ---
+TECH        7.3%   -40.8%   86.9%  -35.5%     $1.9B      $0.2B      $0.1B      9.5%  -26.0% buyback         -10.4%    10.5%
+CVX         9.9%  -400.6%   10.8%  -43.3%   $165.3B     $26.2B     $12.0B     15.8%  -27.5% buyback            ---    56.1%
+MPC        14.9% -1211.5%    4.7%  -56.7%    $43.6B     $12.1B      $1.2B     27.8%  -28.9% buyback            ---    23.0%
+CHK        13.1%   -23.5%  229.2%  -46.9%     $7.1B      $1.2B      $0.7B     16.5%  -30.4% hybrid             ---   -80.6%
+PSX         8.6%   -34.4%  133.5%  -45.9%    $31.0B      $4.8B      $1.9B     15.4%  -30.5% buyback            ---      ---
+AEIS        8.6%   -34.1%  101.6%  -34.6%     $0.9B      $0.0B      $0.0B      4.0%  -30.6% hybrid           -8.4%    26.5%
+APD         6.1%   -19.4%  273.2%  -38.8%    $18.9B      $1.5B      $1.5B      8.2%  -30.6% hybrid             ---      ---
+SHEL        6.9%  -143.6%   29.8%  -42.7%   $261.7B     $23.7B      $8.5B      9.0%  -33.7% buyback            ---    10.3%
+STLD       15.7%   -79.9%   67.6%  -54.0%     $8.9B      $1.5B      $0.3B     16.4%  -37.6% buyback          19.6%      ---
+WLK         8.7%  -107.9%   41.0%  -44.3%    $12.1B      $0.3B      $0.2B      2.3%  -42.0% hybrid            2.5%    -9.9%
+CSGP        5.8%   -38.3%  145.5%  -55.7%     $3.1B      $0.0B      $0.0B      0.8%  -54.8% hybrid          -60.6%      ---
+NUE        14.0%  -126.0%   52.3%  -65.9%    $20.5B      $2.0B      $0.5B      9.8%  -56.1% hybrid             ---      ---
+TSLA       10.5%   -64.5%   91.5%  -59.0%    $32.0B        ---      $0.0B      0.0%  -59.0% unknown          14.4%    16.2%
+STM        13.2%  -100.5%   66.8%  -67.1%    $11.3B      $0.6B      $0.2B      5.2%  -61.9% hybrid          -34.0%      ---
+PKX         2.7%   -33.4%  212.8%  -66.9% $57422.9B    $584.0B    $553.2B      1.0%  -65.8% hybrid          -18.9%      ---
+EL          5.9%  -167.4%   44.5%  -74.4%    $11.5B      $0.9B      $0.8B      8.2%  -66.2% hybrid           13.8%   -16.3%
+EQNR       17.2%  -373.3%   24.4%  -91.3%    $50.5B     $11.4B      $5.6B     22.6%  -68.6% buyback            ---    31.6%
+MP          7.1%   -45.4%  461.5%  -90.7%     $0.5B      $0.1B      $0.0B     16.0%  -74.7% buyback            ---      ---
+MT          3.8%   -93.1%   86.8%  -80.8%    $56.6B      $1.3B      $0.4B      2.3%  -78.5% hybrid             ---   -15.7%
+WY          5.3%  -719.2%   11.8%  -85.0%    $14.3B      $0.8B      $0.6B      5.5%  -79.6% hybrid          -15.5%   -35.6%
+ALB         4.1%   -45.1%  481.4%  -90.3%     $7.8B      $0.2B      $0.2B      2.4%  -87.9% hybrid             ---      ---
+X          12.6%  -112.6%   81.9%  -92.2%    $10.7B      $0.3B      $0.0B      3.2%  -89.0% hybrid           -5.5%      ---
+SJM         1.1%  -111.5%  205.5% -223.0%    $12.7B      $0.7B      $0.4B      5.4% -217.5% buyback            ---    -2.4%
+MRNA      -10.2% -12773.9%    6.8% -870.3%     $5.2B      $1.5B      $0.0B     28.5% -841.9% buyback            ---      ---
+
+======================================================================
+APPLYING GATES
+======================================================================
+
+Gate Results:
+  Entered:       994
+  Failed Gate 1: 619 (Quality)
+  Failed Gate 2: 174 (Value Creation < 20%)
+  Failed Gate 3: 76 (Per-Share Proof < 15%)
+  Failed Gate 4: 32 (Financial Health)
+  PASSED ALL:    93
+
+  Gate 1 failures (Quality):
+    AA       — GM 13.6% <= 15%; ROIC fail (3yr 6.0%, curr 16.9%)
+    AAL      — ROIC fail (3yr 6.1%, curr 2.9%)
+    ABC      — GM 3.6% <= 15%
+    ABT      — ROIC fail (3yr 11.5%, curr 11.1%)
+    ACM      — GM 7.5% <= 15%
+    ADI      — ROIC fail (3yr 6.5%, curr 6.5%)
+    ADM      — GM 6.3% <= 15%; ROIC fail (3yr 6.2%, curr 4.0%)
+    AEB      — ROIC fail (3yr 1.3%, N/A)
+    AED      — ROIC fail (3yr 1.3%, N/A)
+    AEE      — ROIC fail (3yr 4.9%, curr 4.6%)
+    AEH      — ROIC fail (3yr 1.3%, N/A)
+    AEIS     — ROIC fail (3yr 8.6%, curr 2.3%)
+    AEM      — ROIC fail (3yr 7.2%, curr 9.9%)
+    AEP      — ROIC fail (3yr 5.4%, curr 5.2%)
+    AER      — ROIC fail (3yr 5.9%, curr 6.1%)
+    AES      — ROIC fail (3yr -2.6%, curr 6.1%)
+    AESC     — ROIC fail (3yr 6.3%, curr 1.1%)
+    AFG      — GM 0.0% <= 15%
+    AFL      — ROIC fail (3yr 11.8%, curr 11.8%)
+    AFRM     — ROIC fail (3yr -7.8%, curr -0.8%)
+    AG       — ROIC fail (3yr -4.0%, curr -0.2%)
+    AGI      — ROIC fail (3yr 6.3%, curr 8.9%)
+    AGR      — ROIC fail (3yr 3.1%, curr 2.3%)
+    AJG      — ROIC fail (3yr 7.8%, curr 5.6%)
+    AKAM     — ROIC fail (3yr 6.1%, curr 5.1%)
+    ALB      — GM 1.6% <= 15%; ROIC fail (3yr 4.1%, curr -11.2%)
+    ALC      — ROIC fail (3yr 3.3%, curr 4.5%)
+    ALLY     — ROIC fail (3yr 10.6%, curr 3.1%)
+    ALNY     — ROIC fail (3yr -36.1%, curr -36.1%)
+    AMCR     — ROIC fail (3yr 7.9%, curr 3.0%)
+    AMD      — ROIC fail (3yr 2.8%, curr 5.1%)
+    AMH      — ROIC fail (3yr 7.0%, curr 7.3%)
+    AMKR     — GM 14.8% <= 15%
+    AMT      — ROIC fail (3yr 5.8%, curr 7.7%)
+    AMX      — ROIC fail (3yr 9.5%, curr 6.2%)
+    ANSS     — ROIC fail (3yr 10.3%, curr 10.6%)
+    APD      — ROIC fail (3yr 6.1%, curr -2.1%)
+    APG      — ROIC fail (3yr 4.5%, curr 6.4%)
+    APO      — ROIC fail (N/A, N/A)
+    APTV     — ROIC fail (3yr 6.7%, curr 1.6%)
+    AQNB     — ROIC fail (3yr 1.7%, curr -0.2%)
+    AQNU     — ROIC fail (3yr 1.7%, curr -0.2%)
+    AR       — GM 7.9% <= 15%; ROIC fail (3yr 5.4%, curr 0.0%)
+    ARCC     — ROIC fail (3yr 5.3%, curr 3.4%)
+    ARES     — ROIC fail (3yr 6.8%, curr 10.2%)
+    ARMK     — GM 5.8% <= 15%; ROIC fail (3yr 6.3%, curr 7.0%)
+    AS       — ROIC fail (3yr 2.6%, curr 3.4%)
+    ASND     — ROIC fail (3yr -136.9%, curr -115.1%)
+    ASTS     — ROIC fail (3yr -182.5%, curr -188.7%)
+    ASX      — ROIC fail (3yr 7.8%, curr 8.1%)
+    ATH      — GM 0.0% <= 15%; ROIC fail (N/A, N/A)
+    ATO      — ROIC fail (3yr 5.4%, curr 5.5%)
+    AU       — ROIC fail (3yr -6.6%, curr 13.0%)
+    AVAV     — ROIC fail (3yr -3.5%, curr 4.2%)
+    AVB      — ROIC fail (3yr 4.1%, curr 3.4%)
+    AWK      — ROIC fail (3yr 5.3%, curr 5.5%)
+    AXIA     — ROIC fail (3yr 5.9%, curr 9.4%)
+    AXON     — ROIC fail (3yr 7.0%, curr 2.1%)
+    AZN      — ROIC fail (3yr 9.4%, curr 12.1%)
+    AZPN     — ROIC fail (3yr -0.5%, curr -0.6%)
+    BA       — GM 4.8% <= 15%; ROIC fail (3yr -16.5%, curr -11.6%)
+    BAC      — ROIC fail (3yr 8.8%, N/A)
+    BALL     — GM 14.9% <= 15%; ROIC fail (3yr 8.1%, curr 9.8%)
+    BAX      — ROIC fail (3yr -2.5%, curr 0.1%)
+    BBD      — ROIC fail (3yr 5.1%, curr 8.9%)
+    BBDO     — GM 0.0% <= 15%; ROIC fail (3yr 2.9%, curr 2.3%)
+    BBIO     — ROIC fail (3yr -3118.8%, N/A)
+    BCH      — ROIC fail (3yr 9.4%, curr 6.5%)
+    BCS      — ROIC fail (N/A, N/A)
+    BDX      — ROIC fail (3yr 4.9%, curr 5.3%)
+    BDXA     — ROIC fail (3yr 4.9%, curr 5.3%)
+    BDXB     — ROIC fail (3yr 4.9%, curr 5.3%)
+    BE       — ROIC fail (3yr -1.2%, curr 3.9%)
+    BEKE     — ROIC fail (3yr 6.9%, curr 3.5%)
+    BEN      — ROIC fail (3yr 2.5%, curr 1.8%)
+    BG       — GM 4.8% <= 15%; ROIC fail (3yr 9.3%, curr 2.8%)
+    BGNE     — ROIC fail (3yr -90.9%, curr -24.3%)
+    BIDU     — ROIC fail (3yr 9.7%, curr 8.0%)
+    BIIB     — ROIC fail (3yr 8.9%, curr 8.0%)
+    BILI     — ROIC fail (3yr -50.3%, curr -36.8%)
+    BIP      — ROIC fail (3yr 6.2%, curr 7.0%)
+    BJ       — ROIC fail (3yr 8.5%, curr 8.3%)
+    BK       — ROIC fail (N/A, N/A)
+    BKI      — ROIC fail (3yr 5.0%, curr 4.6%)
+    BLL      — GM 0.0% <= 15%; ROIC fail (3yr 7.1%, curr 6.9%)
+    BMO      — ROIC fail (3yr 1.9%, curr 2.2%)
+    BMRN     — GM 0.0% <= 15%; ROIC fail (3yr 3.8%, N/A)
+    BN       — ROIC fail (3yr 4.6%, curr 4.5%)
+    BNH      — ROIC fail (3yr 4.6%, curr 4.5%)
+    BNJ      — ROIC fail (3yr 4.6%, curr 4.5%)
+    BNS      — ROIC fail (3yr 2.7%, curr 1.6%)
+    BP       — ROIC fail (3yr 8.7%, curr 2.3%)
+    BRO      — ROIC fail (3yr 9.2%, curr 7.6%)
+    BRZL     — ROIC fail (3yr -22.4%, N/A)
+    BSAC     — ROIC fail (3yr 7.4%, curr 6.6%)
+    BSX      — ROIC fail (3yr 8.2%, curr 10.3%)
+    BTI      — ROIC fail (3yr -1.4%, curr 3.0%)
+    BUD      — ROIC fail (3yr 7.5%, curr 7.7%)
+    BURL     — ROIC fail (3yr 7.2%, curr 8.2%)
+    BVC      — GM 0.0% <= 15%; ROIC fail (N/A, N/A)
+    BWA      — ROIC fail (3yr 10.3%, curr 12.6%)
+    BXP      — ROIC fail (3yr 6.1%, curr 8.9%)
+    C        — ROIC fail (3yr 4.4%, curr 5.7%)
+    CACI     — GM 8.9% <= 15%; ROIC fail (3yr 8.4%, curr 8.4%)
+    CAE      — ROIC fail (3yr 3.1%, curr 6.6%)
+    CAH      — GM 3.7% <= 15%
+    CAJ      — ROIC fail (3yr 6.2%, curr 8.1%)
+    CARR     — ROIC fail (3yr 8.2%, curr 7.0%)
+    CASY     — ROIC fail (3yr 11.1%, curr 9.1%)
+    CBRE     — ROIC fail (3yr 8.9%, curr 8.3%)
+    CCEP     — ROIC fail (3yr 9.0%, curr 8.5%)
+    CCI      — ROIC fail (3yr 1.9%, curr 5.9%)
+    CCJ      — ROIC fail (3yr 2.7%, curr 4.8%)
+    CCL      — ROIC fail (3yr 7.6%, curr 11.2%)
+    CCZ      — GM 0.0% <= 15%
+    CDAY     — ROIC fail (3yr 1.4%, curr 2.5%)
+    CDE      — ROIC fail (3yr 0.1%, curr 4.4%)
+    CEA      — GM 1.1% <= 15%; ROIC fail (3yr -5.0%, curr -2.0%)
+    CFG      — ROIC fail (N/A, N/A)
+    CFLT     — ROIC fail (3yr -482.5%, curr -185.5%)
+    CG       — ROIC fail (3yr 3.4%, curr 5.6%)
+    CHT      — ROIC fail (3yr 9.8%, curr 9.6%)
+    CHTR     — ROIC fail (3yr 9.1%, curr 9.1%)
+    CHWY     — ROIC fail (3yr 7.1%, curr 13.3%)
+    CI       — GM 10.5% <= 15%; ROIC fail (3yr 10.8%, curr 10.4%)
+    CIEN     — ROIC fail (3yr 6.9%, curr 8.0%)
+    CINF     — ROIC fail (N/A, N/A)
+    CLH      — ROIC fail (3yr 10.7%, curr 10.0%)
+    CLS      — GM 11.7% <= 15%
+    CM       — ROIC fail (3yr 5.3%, curr 10.8%)
+    CMA      — ROIC fail (N/A, N/A)
+    CMCSA    — ROIC fail (3yr 9.3%, curr 7.8%)
+    CME      — ROIC fail (3yr 10.9%, curr 11.7%)
+    CMG      — ROIC fail (3yr 11.4%, curr 9.4%)
+    CMS      — ROIC fail (3yr 4.9%, curr 5.1%)
+    CNA      — ROIC fail (3yr 10.9%, curr 10.2%)
+    CNC      — GM 12.2% <= 15%; ROIC fail (3yr -6.2%, curr -35.3%)
+    CNH      — ROIC fail (3yr 11.4%, curr 9.5%)
+    CNHI     — ROIC fail (3yr 11.5%, curr 9.5%)
+    CNP      — ROIC fail (3yr 5.1%, curr 5.4%)
+    COF      — ROIC fail (3yr 3.0%, curr 3.0%)
+    COHR     — ROIC fail (3yr 1.5%, curr 1.5%)
+    COO      — ROIC fail (3yr 4.1%, curr 4.1%)
+    COOP     — ROIC fail (3yr 6.4%, curr 4.5%)
+    COP      — ROIC fail (3yr 11.7%, curr 9.1%)
+    COR      — GM 3.2% <= 15%
+    COST     — GM 12.8% <= 15%
+    CP       — ROIC fail (3yr 5.8%, curr 6.1%)
+    CPNG     — ROIC fail (3yr 3.1%, curr 1.5%)
+    CPT      — GM 0.0% <= 15%; ROIC fail (3yr 2.4%, N/A)
+    CRBG     — ROIC fail (N/A, N/A)
+    CRDO     — ROIC fail (3yr -5.5%, curr 12.5%)
+    CRH      — ROIC fail (3yr 11.1%, curr 10.9%)
+    CRM      — ROIC fail (3yr 5.7%, curr 9.8%)
+    CRS      — ROIC fail (3yr 11.8%, curr 17.8%)
+    CRWD     — ROIC fail (N/A, N/A)
+    CSGP     — ROIC fail (3yr 5.8%, curr 0.1%)
+    CTLT     — ROIC fail (3yr -1.6%, curr -7.2%)
+    CTVA     — ROIC fail (3yr 7.3%, curr 8.4%)
+    CUK      — ROIC fail (3yr 7.6%, curr 11.2%)
+    CVNA     — ROIC fail (3yr -0.5%, curr 14.3%)
+    CVS      — GM 13.8% <= 15%; ROIC fail (3yr 4.8%, curr 3.9%)
+    CVX      — ROIC fail (3yr 9.9%, curr 4.1%)
+    CX       — ROIC fail (3yr 4.5%, curr 4.1%)
+    CYBR     — ROIC fail (3yr -9.6%, curr -4.0%)
+    D        — ROIC fail (3yr 3.1%, curr 4.0%)
+    DAL      — ROIC fail (3yr 10.8%, curr 10.8%)
+    DASH     — ROIC fail (3yr -11.3%, curr -0.8%)
+    DAY      — ROIC fail (3yr 1.1%, curr 1.6%)
+    DD       — ROIC fail (3yr 4.6%, curr 4.2%)
+    DDOG     — ROIC fail (3yr -2.4%, curr 8.2%)
+    DE       — ROIC fail (3yr 11.4%, curr 8.3%)
+    DG       — ROIC fail (3yr 5.6%, curr 3.8%)
+    DGX      — ROIC fail (3yr 8.8%, curr 7.5%)
+    DHR      — ROIC fail (3yr 6.6%, curr 6.6%)
+    DINO     — GM 11.2% <= 15%
+    DIS      — ROIC fail (3yr 6.0%, curr 7.2%)
+    DKNG     — ROIC fail (3yr -58.6%, curr -29.4%)
+    DLR      — ROIC fail (3yr 1.4%, curr 1.7%)
+    DLTR     — ROIC fail (3yr 7.1%, curr 7.4%)
+    DOC      — ROIC fail (3yr 2.7%, curr 2.8%)
+    DOV      — ROIC fail (3yr 11.8%, curr 12.1%)
+    DRI      — ROIC fail (3yr 10.0%, curr 9.8%)
+    DRS      — ROIC fail (3yr 11.9%, curr 9.4%)
+    DT       — ROIC fail (3yr 8.1%, curr 8.5%)
+    DTE      — ROIC fail (3yr 5.6%, curr 4.7%)
+    DTM      — ROIC fail (3yr 4.8%, curr 4.4%)
+    DTY      — ROIC fail (3yr 5.6%, curr 4.7%)
+    DUK      — ROIC fail (3yr 4.9%, curr 5.2%)
+    DUKB     — ROIC fail (3yr 4.8%, curr 5.1%)
+    DY       — ROIC fail (3yr 11.5%, curr 11.2%)
+    E        — GM 11.4% <= 15%; ROIC fail (3yr 7.8%, curr 2.8%)
+    EBR      — ROIC fail (3yr 5.8%, curr 9.1%)
+    ECL      — ROIC fail (3yr 10.6%, curr 13.1%)
+    ED       — ROIC fail (3yr 4.5%, curr 4.7%)
+    EFX      — ROIC fail (3yr 7.9%, curr 8.5%)
+    EG       — GM 0.0% <= 15%
+    EGP      — ROIC fail (3yr 9.2%, curr 7.0%)
+    EIX      — ROIC fail (3yr 4.1%, curr 5.3%)
+    EL       — ROIC fail (3yr 5.9%, curr 6.0%)
+    ELAN     — ROIC fail (3yr 2.1%, curr 1.7%)
+    ELC      — ROIC fail (3yr 4.5%, curr 4.4%)
+    ELP      — ROIC fail (3yr 6.7%, curr 8.2%)
+    ELS      — ROIC fail (3yr 6.9%, curr 8.1%)
+    EMA      — ROIC fail (3yr 4.1%, curr 2.6%)
+    EMBJ     — ROIC fail (3yr 5.4%, curr 11.8%)
+    EMR      — ROIC fail (3yr 7.6%, curr 5.2%)
+    ENB      — ROIC fail (3yr 3.9%, curr 4.5%)
+    ENBA     — ROIC fail (3yr 7.1%, curr 10.5%)
+    ENSG     — GM 13.7% <= 15%; ROIC fail (3yr 4.6%, curr 4.2%)
+    ENTG     — ROIC fail (3yr 5.5%, curr 6.5%)
+    EPD      — GM 13.6% <= 15%
+    EQR      — ROIC fail (3yr 8.2%, curr 5.7%)
+    EQT      — GM 14.7% <= 15%; ROIC fail (3yr 8.3%, curr 2.1%)
+    EQX      — ROIC fail (3yr 1.4%, curr 2.8%)
+    ERJ      — ROIC fail (3yr 5.4%, curr 11.8%)
+    ES       — ROIC fail (3yr 4.3%, curr 4.0%)
+    ESLT     — ROIC fail (3yr 7.1%, curr 9.2%)
+    ESS      — ROIC fail (3yr 6.0%, curr 6.9%)
+    ET       — ROIC fail (3yr 8.8%, curr 8.8%)
+    ETR      — ROIC fail (3yr 4.5%, curr 4.4%)
+    EVRG     — ROIC fail (3yr 5.6%, curr 5.8%)
+    EXAS     — ROIC fail (3yr -10.6%, curr -19.3%)
+    EXC      — ROIC fail (3yr 4.9%, curr 5.4%)
+    EXPD     — GM 12.7% <= 15%
+    EXR      — ROIC fail (3yr 6.1%, curr 4.6%)
+    F        — GM 8.4% <= 15%; ROIC fail (3yr 2.9%, curr 2.5%)
+    FDX      — ROIC fail (3yr 5.8%, curr 6.0%)
+    FE       — ROIC fail (3yr 4.0%, curr 4.8%)
+    FI       — ROIC fail (3yr 7.6%, curr 9.4%)
+    FIS      — ROIC fail (3yr 3.7%, curr 4.4%)
+    FISV     — ROIC fail (3yr 7.6%, curr 9.4%)
+    FIVE     — ROIC fail (3yr 5.8%, curr 4.6%)
+    FLT      — GM 0.0% <= 15%
+    FLUT     — ROIC fail (3yr 0.5%, curr 5.0%)
+    FMCKK    — ROIC fail (3yr 0.3%, curr 0.4%)
+    FMS      — ROIC fail (3yr 3.5%, curr 3.4%)
+    FMX      — ROIC fail (3yr 9.4%, curr 10.3%)
+    FN       — GM 12.1% <= 15%
+    FNF      — ROIC fail (N/A, N/A)
+    FNMAK    — ROIC fail (3yr 0.4%, curr 0.4%)
+    FNMAL    — ROIC fail (3yr 0.4%, curr 0.4%)
+    FNV      — ROIC fail (3yr 5.5%, curr 11.6%)
+    FTAI     — ROIC fail (3yr 8.9%, curr 9.9%)
+    FTNT     — ROIC fail (N/A, N/A)
+    FTS      — ROIC fail (3yr 4.8%, curr 4.8%)
+    FTV      — ROIC fail (3yr 7.9%, curr 8.3%)
+    FWONA    — ROIC fail (3yr -0.5%, curr -6.5%)
+    FWONB    — ROIC fail (3yr -0.5%, curr -6.5%)
+    FWONK    — ROIC fail (3yr -0.5%, curr -6.5%)
+    GAP      — ROIC fail (3yr 4.2%, curr 8.1%)
+    GD       — ROIC fail (3yr 11.9%, curr 12.7%)
+    GEGGL    — GM -0.7% <= 15%; ROIC fail (3yr -73.2%, curr -31.7%)
+    GEN      — ROIC fail (3yr 9.2%, curr 10.4%)
+    GFL      — ROIC fail (3yr 1.0%, curr 2.3%)
+    GFS      — ROIC fail (3yr 6.4%, curr -1.7%)
+    GH       — ROIC fail (3yr -71.2%, curr -67.3%)
+    GILD     — ROIC fail (3yr 11.0%, curr 3.3%)
+    GIS      — ROIC fail (3yr 11.9%, curr 10.8%)
+    GL       — ROIC fail (N/A, N/A)
+    GLPI     — ROIC fail (3yr 9.9%, curr 9.7%)
+    GM       — GM 6.3% <= 15%; ROIC fail (3yr 4.1%, curr 1.6%)
+    GME      — ROIC fail (3yr -8.6%, curr -2.6%)
+    GMED     — ROIC fail (3yr 6.2%, curr 3.6%)
+    GNRC     — ROIC fail (3yr 9.8%, curr 10.7%)
+    GPN      — ROIC fail (3yr 4.2%, curr 5.3%)
+    GRAB     — ROIC fail (3yr -21.0%, curr -10.3%)
+    GS       — ROIC fail (3yr 6.3%, curr 6.3%)
+    GWRE     — ROIC fail (3yr -5.0%, curr 3.1%)
+    H        — ROIC fail (3yr 10.3%, curr 10.9%)
+    HAS      — ROIC fail (3yr -3.7%, curr 14.0%)
+    HBAN     — ROIC fail (3yr 8.7%, curr 5.2%)
+    HBANL    — ROIC fail (3yr 8.7%, curr 5.2%)
+    HDB      — ROIC fail (3yr 11.6%, curr 11.3%)
+    HEI      — ROIC fail (3yr 11.6%, curr 13.5%)
+    HII      — GM 12.7% <= 15%; ROIC fail (3yr 7.3%, curr 6.2%)
+    HL       — ROIC fail (3yr 0.1%, curr 2.2%)
+    HLN      — ROIC fail (3yr 5.8%, curr 7.1%)
+    HMC      — ROIC fail (3yr 5.6%, curr 6.9%)
+    HOOD     — ROIC fail (3yr -29.3%, curr 16.9%)
+    HPE      — ROIC fail (3yr 5.6%, curr 3.1%)
+    HRL      — ROIC fail (3yr 7.2%, curr 5.1%)
+    HST      — ROIC fail (3yr 6.9%, curr 7.0%)
+    HTA      — ROIC fail (3yr 1.4%, curr 0.2%)
+    HTHT     — ROIC fail (3yr 3.4%, curr 5.1%)
+    HUBS     — ROIC fail (3yr -9.1%, curr -1.3%)
+    HUM      — ROIC fail (3yr 10.4%, curr 5.1%)
+    HZNP     — ROIC fail (3yr 11.8%, curr 11.6%)
+    IBM      — ROIC fail (3yr 10.5%, curr 9.3%)
+    ICE      — ROIC fail (3yr 7.1%, curr 7.8%)
+    ICLR     — ROIC fail (3yr 6.8%, curr 7.8%)
+    IFF      — ROIC fail (3yr -2.4%, curr 2.9%)
+    IIVI     — ROIC fail (3yr 3.5%, curr 7.0%)
+    ILMN     — ROIC fail (3yr -0.8%, curr 15.6%)
+    ING      — ROIC fail (3yr 7.5%, curr 5.9%)
+    INSM     — ROIC fail (3yr -320.3%, curr -348.9%)
+    INTC     — ROIC fail (3yr -2.4%, curr -0.0%)
+    INVH     — ROIC fail (3yr 3.9%, curr 4.2%)
+    IONS     — ROIC fail (3yr -262.1%, N/A)
+    IOT      — ROIC fail (3yr -36.1%, curr -28.9%)
+    IP       — ROIC fail (3yr 0.4%, curr -8.9%)
+    IQV      — ROIC fail (3yr 9.6%, curr 9.3%)
+    IR       — ROIC fail (3yr 7.2%, curr 7.2%)
+    IREN     — ROIC fail (3yr -18.1%, curr 0.7%)
+    IRM      — ROIC fail (3yr 4.7%, curr 4.1%)
+    ITCI     — ROIC fail (3yr -118.2%, curr -56.1%)
+    ITUB     — GM 0.0% <= 15%; ROIC fail (3yr 6.9%, curr 3.5%)
+    IVZ      — ROIC fail (3yr -0.4%, curr -2.5%)
+    IX       — ROIC fail (3yr 4.3%, curr 3.7%)
+    J        — ROIC fail (3yr 8.2%, curr 9.3%)
+    JAZZ     — ROIC fail (3yr 4.3%, curr 7.7%)
+    JBHT     — GM 10.5% <= 15%; ROIC fail (3yr 11.9%, curr 13.0%)
+    JBL      — GM 8.9% <= 15%
+    JBS      — ROIC fail (3yr 9.8%, curr 11.0%)
+    JCI      — ROIC fail (3yr 8.7%, curr 9.9%)
+    JD       — GM 9.8% <= 15%
+    JEF      — ROIC fail (3yr 11.3%, curr 2.6%)
+    JLL      — ROIC fail (3yr 6.4%, curr 6.8%)
+    JNPR     — ROIC fail (3yr 7.6%, curr 5.5%)
+    JOBY     — ROIC fail (3yr -634.3%, curr -1124.3%)
+    K        — ROIC fail (3yr 11.7%, curr 15.3%)
+    KB       — GM 0.0% <= 15%; ROIC fail (3yr 6.4%, curr 8.2%)
+    KDP      — ROIC fail (3yr 5.4%, curr 4.6%)
+    KEP      — GM 12.0% <= 15%; ROIC fail (3yr -4.2%, curr 9.2%)
+    KEY      — ROIC fail (3yr 3.4%, curr 9.2%)
+    KGC      — ROIC fail (3yr 6.6%, curr 13.4%)
+    KHC      — ROIC fail (3yr 3.8%, curr 2.0%)
+    KIM      — ROIC fail (3yr 3.0%, curr 3.2%)
+    KKR      — ROIC fail (3yr 3.5%, N/A)
+    KMI      — ROIC fail (3yr 5.6%, curr 6.1%)
+    KR       — ROIC fail (3yr 7.7%, curr 8.3%)
+    KT       — ROIC fail (3yr 4.5%, curr 2.5%)
+    KTOS     — ROIC fail (3yr 0.5%, curr 1.3%)
+    KVUE     — ROIC fail (3yr 8.5%, curr 7.6%)
+    L        — ROIC fail (3yr 8.0%, curr 7.8%)
+    LAMR     — ROIC fail (3yr 8.3%, curr 7.6%)
+    LDOS     — ROIC fail (3yr 9.0%, curr 14.9%)
+    LH       — ROIC fail (3yr 5.3%, curr 5.7%)
+    LHX      — ROIC fail (3yr 6.1%, curr 6.3%)
+    LI       — ROIC fail (3yr -90.2%, N/A)
+    LIN      — ROIC fail (3yr 11.5%, curr 11.6%)
+    LITE     — ROIC fail (3yr -7.2%, curr -4.9%)
+    LMT      — GM 10.2% <= 15%
+    LNT      — ROIC fail (3yr 5.3%, curr 4.0%)
+    LSI      — ROIC fail (3yr 3.5%, curr 4.7%)
+    LUV      — ROIC fail (3yr 2.2%, curr 2.7%)
+    LYB      — GM 9.0% <= 15%; ROIC fail (3yr 5.0%, curr -1.1%)
+    LYG      — ROIC fail (3yr 6.1%, curr 2.6%)
+    MAA      — ROIC fail (3yr 6.0%, curr 5.6%)
+    MCHP     — ROIC fail (3yr 11.6%, curr -0.0%)
+    MCK      — GM 3.5% <= 15%
+    MDB      — ROIC fail (3yr -101.9%, curr -32.9%)
+    MDGL     — ROIC fail (N/A, N/A)
+    MDLZ     — ROIC fail (3yr 8.5%, curr 5.9%)
+    MDT      — ROIC fail (3yr 6.3%, curr 7.3%)
+    MET      — ROIC fail (N/A, N/A)
+    MFC      — GM -187.0% <= 15%; ROIC fail (3yr 7.6%, curr 14.7%)
+    MFG      — ROIC fail (N/A, N/A)
+    MGA      — GM 13.5% <= 15%; ROIC fail (3yr 7.7%, curr 7.8%)
+    MGM      — GM 0.0% <= 15%; ROIC fail (3yr 1.9%, curr 0.3%)
+    MKC      — ROIC fail (3yr 8.6%, curr 9.1%)
+    MKL      — GM 0.0% <= 15%
+    MKSI     — ROIC fail (3yr -2.2%, curr 5.9%)
+    MLM      — ROIC fail (3yr 10.7%, curr 13.9%)
+    MMAC     — ROIC fail (3yr 8.9%, curr -1.4%)
+    MMC      — GM 0.0% <= 15%
+    MP       — GM -32.8% <= 15%; ROIC fail (3yr 7.1%, curr -11.9%)
+    MPC      — GM 7.4% <= 15%
+    MRNA     — ROIC fail (3yr -10.2%, curr -58.0%)
+    MRO      — ROIC fail (3yr 7.3%, curr 11.0%)
+    MRVL     — ROIC fail (3yr -2.7%, curr -3.3%)
+    MSTR     — ROIC fail (3yr -18.1%, curr -16.9%)
+    MT       — GM 9.6% <= 15%; ROIC fail (3yr 3.8%, curr 5.2%)
+    MTSI     — ROIC fail (3yr 8.5%, curr 9.2%)
+    MTZ      — GM 13.2% <= 15%; ROIC fail (3yr 3.3%, curr 6.2%)
+    MU       — ROIC fail (3yr 2.4%, curr 14.6%)
+    MUFG     — ROIC fail (N/A, N/A)
+    NBIS     — ROIC fail (3yr -16.0%, curr -38.8%)
+    NCLH     — ROIC fail (3yr 1.0%, curr 7.3%)
+    NDSN     — ROIC fail (3yr 11.1%, curr 11.3%)
+    NEE      — ROIC fail (3yr 5.8%, curr 4.4%)
+    NEM      — ROIC fail (3yr -13.0%, curr 11.3%)
+    NET      — ROIC fail (3yr -24.1%, curr -14.7%)
+    NETE     — GM 15.0% <= 15%; ROIC fail (3yr -19.2%, N/A)
+    NGG      — ROIC fail (3yr 4.8%, curr 4.8%)
+    NI       — ROIC fail (3yr 5.4%, curr 5.4%)
+    NIO      — GM 9.9% <= 15%; ROIC fail (3yr -70.8%, curr -55.8%)
+    NLOK     — ROIC fail (3yr 7.4%, curr 10.6%)
+    NLY      — ROIC fail (3yr 0.4%, curr 4.3%)
+    NMR      — ROIC fail (3yr 0.7%, curr 1.2%)
+    NOC      — ROIC fail (3yr 9.9%, curr 10.4%)
+    NOK      — ROIC fail (3yr 6.3%, curr 5.4%)
+    NRG      — ROIC fail (3yr 9.8%, curr 14.8%)
+    NSC      — ROIC fail (3yr 9.1%, curr 10.1%)
+    NTR      — ROIC fail (3yr 10.9%, curr 4.8%)
+    NTRA     — ROIC fail (3yr -82.3%, curr -33.7%)
+    NTRS     — ROIC fail (N/A, N/A)
+    NU       — ROIC fail (N/A, N/A)
+    NUE      — GM 11.9% <= 15%
+    NVT      — ROIC fail (3yr 7.4%, curr 9.5%)
+    NWSA     — ROIC fail (3yr 4.8%, curr 6.4%)
+    NWSAL    — ROIC fail (3yr 4.1%, curr 6.7%)
+    O        — ROIC fail (3yr 2.9%, curr 3.3%)
+    OHI      — GM 0.0% <= 15%; ROIC fail (3yr 6.3%, curr 5.6%)
+    OKE      — ROIC fail (3yr 9.2%, curr 7.8%)
+    OKLO     — GM 0.0% <= 15%; ROIC fail (3yr -164.5%, curr -164.5%)
+    OKTA     — ROIC fail (3yr -6.9%, curr -0.9%)
+    ONC      — ROIC fail (3yr -125.4%, curr -24.3%)
+    ORAN     — ROIC fail (3yr 4.8%, curr 4.7%)
+    OWL      — ROIC fail (3yr 10.1%, curr 8.1%)
+    OXLCL    — ROIC fail (3yr 2.0%, curr 2.3%)
+    PAA      — GM 0.0% <= 15%; ROIC fail (3yr 6.5%, curr 6.4%)
+    PAAS     — ROIC fail (3yr -1.8%, curr 2.9%)
+    PAG      — ROIC fail (3yr 7.1%, curr 6.2%)
+    PBA      — ROIC fail (3yr 8.7%, curr 5.7%)
+    PCG      — ROIC fail (3yr 3.5%, curr 4.0%)
+    PDD      — ROIC fail (N/A, N/A)
+    PEG      — ROIC fail (3yr 5.9%, curr 5.8%)
+    PEN      — ROIC fail (3yr 1.5%, curr 0.5%)
+    PFE      — ROIC fail (3yr 8.5%, curr 13.1%)
+    PFG      — ROIC fail (N/A, N/A)
+    PFGC     — GM 11.7% <= 15%; ROIC fail (3yr 5.1%, curr 4.0%)
+    PGR      — ROIC fail (N/A, N/A)
+    PHG      — ROIC fail (3yr -8.8%, curr -19.9%)
+    PINS     — ROIC fail (3yr -4.2%, curr 5.4%)
+    PKI      — ROIC fail (3yr 3.8%, curr 3.3%)
+    PKX      — GM 7.5% <= 15%; ROIC fail (3yr 2.7%, curr 1.2%)
+    PLD      — ROIC fail (3yr 4.3%, curr 3.8%)
+    PODD     — ROIC fail (3yr 9.9%, curr 14.2%)
+    PPC      — GM 12.9% <= 15%
+    PPL      — ROIC fail (3yr 4.3%, curr 4.5%)
+    PSLV     — ROIC fail (3yr 5.7%, curr 15.7%)
+    PSX      — GM 5.0% <= 15%; ROIC fail (3yr 8.6%, curr 6.1%)
+    PTC      — ROIC fail (3yr 10.7%, curr 15.1%)
+    PUK      — ROIC fail (3yr 5.9%, curr 12.1%)
+    PWR      — GM 13.2% <= 15%; ROIC fail (3yr 8.5%, curr 9.0%)
+    QGEN     — ROIC fail (3yr 6.5%, curr 10.4%)
+    QSR      — ROIC fail (3yr 9.1%, curr 9.7%)
+    QXO      — GM 0.0% <= 15%; ROIC fail (3yr -411.8%, N/A)
+    RBA      — ROIC fail (3yr 9.7%, curr 5.0%)
+    RBC      — ROIC fail (3yr 6.5%, curr 7.1%)
+    RBRK     — ROIC fail (N/A, N/A)
+    RCB      — ROIC fail (3yr -2.6%, curr -15.3%)
+    RCI      — ROIC fail (3yr 5.8%, curr 6.3%)
+    RCIT     — GM 0.0% <= 15%; ROIC fail (3yr -84.0%, N/A)
+    RE       — GM 0.0% <= 15%; ROIC fail (N/A, N/A)
+    REG      — ROIC fail (3yr 6.4%, curr 4.3%)
+    RF       — ROIC fail (N/A, N/A)
+    RGA      — GM 0.0% <= 15%
+    RGC      — GM 0.0% <= 15%; ROIC fail (3yr -543.7%, curr -402.8%)
+    RGLD     — ROIC fail (3yr 9.3%, curr 11.5%)
+    RIVN     — GM -24.1% <= 15%; ROIC fail (3yr -89.2%, curr -62.9%)
+    RJF      — ROIC fail (N/A, N/A)
+    RKLB     — ROIC fail (3yr -27.2%, curr -30.1%)
+    RKT      — ROIC fail (3yr 2.6%, curr 4.6%)
+    RNA      — ROIC fail (N/A, N/A)
+    ROIV     — ROIC fail (3yr -4123.9%, N/A)
+    ROKU     — ROIC fail (3yr -23.6%, curr -11.4%)
+    ROP      — ROIC fail (3yr 6.0%, curr 6.1%)
+    RRX      — ROIC fail (3yr 4.4%, curr 4.8%)
+    RSG      — ROIC fail (3yr 9.8%, curr 11.0%)
+    RTO      — GM 13.4% <= 15%; ROIC fail (3yr 4.9%, curr 5.3%)
+    RTX      — ROIC fail (3yr 5.2%, curr 7.2%)
+    RVMD     — GM 0.0% <= 15%; ROIC fail (3yr -199.7%, curr -220.0%)
+    RVTY     — ROIC fail (3yr 3.5%, curr 3.2%)
+    RXN      — ROIC fail (3yr 11.1%, curr 9.7%)
+    RY       — ROIC fail (3yr 2.3%, curr 2.5%)
+    RZB      — GM 0.0% <= 15%
+    SAN      — GM 0.0% <= 15%; ROIC fail (3yr 5.0%, curr 2.3%)
+    SAP      — ROIC fail (3yr 10.8%, curr 16.4%)
+    SATS     — ROIC fail (3yr 0.9%, curr -0.5%)
+    SBAC     — ROIC fail (3yr 8.5%, curr 11.2%)
+    SCI      — ROIC fail (3yr 11.4%, curr 11.1%)
+    SE       — ROIC fail (3yr -6.0%, curr 7.7%)
+    SGEN     — ROIC fail (3yr -13.4%, curr -43.5%)
+    SGI      — ROIC fail (3yr 11.4%, curr 8.7%)
+    SHEL     — ROIC fail (3yr 6.9%, curr 6.8%)
+    SHG      — GM 0.0% <= 15%; ROIC fail (3yr 6.9%, curr 7.3%)
+    SHLM     — ROIC fail (3yr -3.9%, curr 6.4%)
+    SHOP     — ROIC fail (3yr -6.1%, curr 13.1%)
+    SITM     — ROIC fail (3yr -38.5%, curr -18.0%)
+    SJM      — ROIC fail (3yr 1.1%, curr -3.8%)
+    SJR      — ROIC fail (3yr 8.9%, curr 8.4%)
+    SKM      — GM 0.0% <= 15%; ROIC fail (3yr 4.9%, curr 2.6%)
+    SLF      — GM 14.0% <= 15%
+    SLV      — GM 0.0% <= 15%; ROIC fail (3yr -0.1%, N/A)
+    SMCI     — GM 11.1% <= 15%
+    SMFG     — ROIC fail (N/A, N/A)
+    SMMT     — GM 0.0% <= 15%; ROIC fail (3yr -979.5%, N/A)
+    SNDK     — ROIC fail (3yr -9.0%, curr -10.9%)
+    SNN      — ROIC fail (3yr 5.0%, curr 6.7%)
+    SNX      — GM 7.0% <= 15%; ROIC fail (3yr 9.6%, curr 10.5%)
+    SNY      — ROIC fail (3yr 6.5%, curr 6.0%)
+    SO       — ROIC fail (3yr 5.3%, curr 5.8%)
+    SOJC     — ROIC fail (3yr 5.3%, curr 5.8%)
+    SOJD     — ROIC fail (3yr 5.3%, curr 5.7%)
+    SOJE     — ROIC fail (3yr 5.3%, curr 5.8%)
+    SOLV     — ROIC fail (3yr 8.8%, curr 8.0%)
+    SONY     — ROIC fail (3yr 11.3%, curr 12.4%)
+    SPG      — ROIC fail (3yr 10.0%, curr 9.0%)
+    SPGI     — ROIC fail (3yr 8.2%, curr 10.0%)
+    SPLK     — ROIC fail (3yr -14.0%, curr 15.8%)
+    SPXC     — ROIC fail (3yr 8.7%, curr 12.5%)
+    SRE      — ROIC fail (3yr 4.6%, curr 4.1%)
+    SREA     — ROIC fail (3yr 7.3%, curr 7.4%)
+    SSNC     — ROIC fail (3yr 10.9%, curr 17.7%)
+    STE      — ROIC fail (3yr 7.1%, curr 7.6%)
+    STLA     — GM 13.1% <= 15%
+    STLD     — GM 13.0% <= 15%
+    STN      — ROIC fail (3yr 7.9%, curr 8.5%)
+    STRC     — ROIC fail (3yr -18.1%, curr -16.9%)
+    STRF     — ROIC fail (3yr -18.1%, curr -16.9%)
+    STRK     — ROIC fail (3yr -18.1%, curr -16.9%)
+    STT      — ROIC fail (3yr 5.1%, curr 5.1%)
+    STZ      — ROIC fail (3yr 8.1%, curr 14.6%)
+    SU       — ROIC fail (3yr 10.5%, curr 9.3%)
+    SUI      — ROIC fail (3yr 3.2%, curr 2.9%)
+    SUZ      — ROIC fail (3yr 12.0%, curr 9.9%)
+    SWH      — ROIC fail (3yr 6.3%, curr 7.6%)
+    SWK      — ROIC fail (3yr 6.3%, curr 7.6%)
+    SYM      — ROIC fail (N/A, N/A)
+    T        — ROIC fail (3yr 7.4%, curr 8.0%)
+    TAK      — ROIC fail (3yr 2.5%, curr 1.9%)
+    TAP      — ROIC fail (3yr 4.6%, curr 7.4%)
+    TBB      — ROIC fail (3yr 7.4%, curr 8.0%)
+    TBC      — ROIC fail (3yr 6.3%, curr 5.2%)
+    TCOM     — ROIC fail (3yr 6.8%, curr 11.5%)
+    TCPA     — ROIC fail (3yr 5.7%, curr 5.9%)
+    TD       — ROIC fail (3yr 2.9%, curr 3.2%)
+    TDY      — ROIC fail (3yr 7.6%, curr 7.4%)
+    TEAM     — ROIC fail (3yr -149.5%, N/A)
+    TECH     — ROIC fail (3yr 7.3%, curr 3.3%)
+    TECK     — ROIC fail (3yr 4.4%, curr -0.0%)
+    TEF      — ROIC fail (3yr 3.0%, curr 1.4%)
+    TEVA     — ROIC fail (3yr 2.6%, curr 7.7%)
+    TFC      — ROIC fail (3yr 0.9%, curr 5.9%)
+    TFII     — GM 14.9% <= 15%
+    TIGO     — ROIC fail (3yr -0.9%, curr 6.2%)
+    TIMB     — ROIC fail (3yr 8.6%, curr 10.4%)
+    TKO      — ROIC fail (3yr 8.5%, curr 2.2%)
+    TLN      — ROIC fail (3yr 4.4%, curr 5.1%)
+    TM       — ROIC fail (3yr 5.5%, curr 6.0%)
+    TMO      — ROIC fail (3yr 9.1%, curr 9.1%)
+    TMUS     — ROIC fail (3yr 4.8%, curr 6.7%)
+    TOST     — ROIC fail (3yr -89.2%, curr 7.4%)
+    TPX      — ROIC fail (3yr 11.4%, curr 9.5%)
+    TRMB     — ROIC fail (3yr 5.9%, curr 5.2%)
+    TRP      — ROIC fail (3yr 4.5%, curr 5.6%)
+    TRU      — ROIC fail (3yr 3.8%, curr 5.7%)
+    TSCO     — ROIC fail (3yr 9.7%, curr 7.3%)
+    TSLA     — ROIC fail (3yr 10.5%, curr 6.8%)
+    TSN      — GM 6.5% <= 15%; ROIC fail (3yr 2.2%, curr 3.7%)
+    TTMI     — ROIC fail (3yr -36.2%, curr 10.1%)
+    TTWO     — ROIC fail (3yr -35.4%, curr -66.4%)
+    TU       — ROIC fail (3yr 4.9%, curr 4.8%)
+    TWLO     — ROIC fail (3yr -4.9%, curr -0.5%)
+    TWTR     — ROIC fail (3yr 2.7%, curr 2.9%)
+    TXT      — ROIC fail (3yr 9.7%, curr 10.7%)
+    TYL      — ROIC fail (3yr 6.1%, curr 7.7%)
+    U        — ROIC fail (3yr -14.9%, curr -14.5%)
+    UAL      — ROIC fail (3yr 9.2%, curr 8.2%)
+    UBER     — ROIC fail (3yr 8.9%, curr 13.1%)
+    UBS      — GM 0.0% <= 15%
+    UDR      — ROIC fail (3yr 3.9%, curr 2.9%)
+    UHID     — GM 0.0% <= 15%; ROIC fail (3yr 8.7%, curr 11.3%)
+    UHS      — ROIC fail (3yr 8.4%, curr 10.9%)
+    UMBF     — ROIC fail (3yr 10.0%, curr 10.0%)
+    UNM      — GM 0.0% <= 15%; ROIC fail (3yr 9.8%, curr 5.0%)
+    USB      — ROIC fail (3yr 7.9%, curr 7.9%)
+    USFD     — ROIC fail (3yr 6.8%, curr 8.3%)
+    VICI     — ROIC fail (3yr 6.1%, curr 7.9%)
+    VIV      — ROIC fail (3yr 6.7%, curr 7.2%)
+    VLO      — GM 4.4% <= 15%
+    VMC      — ROIC fail (3yr 7.7%, curr 7.7%)
+    VOD      — ROIC fail (3yr 4.4%, curr -0.3%)
+    VRNA     — ROIC fail (3yr -240.6%, N/A)
+    VRSN     — ROIC fail (N/A, N/A)
+    VTR      — GM -5.9% <= 15%; ROIC fail (3yr 2.1%, curr 2.6%)
+    VTRS     — ROIC fail (3yr 1.2%, curr 0.0%)
+    VZ       — ROIC fail (3yr 7.6%, curr 7.5%)
+    VZA      — ROIC fail (3yr 7.7%, curr 9.8%)
+    WAB      — ROIC fail (3yr 7.1%, curr 8.7%)
+    WBA      — ROIC fail (3yr -7.6%, curr -17.0%)
+    WBD      — ROIC fail (3yr -6.5%, curr -11.6%)
+    WCC      — ROIC fail (3yr 9.7%, curr 8.8%)
+    WCN      — ROIC fail (3yr 6.2%, curr 5.2%)
+    WDAY     — ROIC fail (3yr 1.7%, curr 7.3%)
+    WDS      — ROIC fail (3yr 11.7%, curr 11.8%)
+    WEC      — ROIC fail (3yr 7.8%, curr 12.4%)
+    WELL     — ROIC fail (3yr 2.3%, curr 2.5%)
+    WF       — ROIC fail (3yr 8.7%, curr 6.7%)
+    WLK      — ROIC fail (3yr 8.7%, curr 4.4%)
+    WM       — ROIC fail (3yr 11.4%, curr 11.1%)
+    WMB      — ROIC fail (3yr 7.7%, curr 6.6%)
+    WMT      — ROIC fail (3yr 12.0%, curr 13.8%)
+    WPC      — ROIC fail (3yr 7.8%, curr 7.6%)
+    WPM      — ROIC fail (3yr 8.1%, curr 7.9%)
+    WRB      — ROIC fail (N/A, N/A)
+    WRK      — ROIC fail (3yr 1.2%, curr -5.8%)
+    WTRG     — ROIC fail (3yr 4.3%, curr 4.3%)
+    WY       — ROIC fail (3yr 5.3%, curr 4.0%)
+    WYNN     — ROIC fail (3yr 5.1%, curr 10.1%)
+    X        — GM 10.1% <= 15%
+    XEL      — ROIC fail (3yr 4.3%, curr 4.5%)
+    XM       — ROIC fail (3yr -57.0%, curr -56.7%)
+    XOM      — ROIC fail (3yr 10.9%, curr 8.4%)
+    XP       — GM 9.5% <= 15%; ROIC fail (3yr -14.1%, curr -5.9%)
+    XPEV     — GM 14.3% <= 15%; ROIC fail (3yr -33.5%, curr -31.0%)
+    XPO      — GM 12.0% <= 15%; ROIC fail (3yr 7.5%, curr 8.2%)
+    XYL      — ROIC fail (3yr 7.9%, curr 7.0%)
+    XYZ      — ROIC fail (3yr 1.4%, curr 4.2%)
+    YMM      — ROIC fail (3yr 5.7%, curr 13.5%)
+    YPF      — ROIC fail (3yr -1.2%, curr -1.0%)
+    YUMC     — ROIC fail (3yr 10.1%, curr 11.1%)
+    Z        — ROIC fail (3yr -4.1%, curr -4.2%)
+    ZBH      — ROIC fail (3yr 5.3%, curr 6.2%)
+    ZBRA     — ROIC fail (3yr 9.4%, curr 11.8%)
+    ZG       — ROIC fail (3yr -4.1%, curr -4.2%)
+    ZS       — ROIC fail (3yr -67.2%, curr -85.1%)
+
+  Gate 2 failures (Value Creation):
+    A        — TVCR 13.9% < 20% (Power -0.2% + CapReturn 14.1%)
+    ABBV     — TVCR 10.0% < 20% (Power 0.0% + CapReturn 10.0%)
+    ABEV     — TVCR 14.4% < 20% (Power 0.6% + CapReturn 13.8%)
+    ABMD     — TVCR 14.3% < 20% (Power 7.1% + CapReturn 7.2%)
+    ABNB     — TVCR 0.0% < 20% (Power 0.0% + CapReturn 0.0%)
+    AEG      — TVCR 0.0% < 20% (Power 0.0% + CapReturn 0.0%)
+    AGNC     — TVCR 17.7% < 20% (Power 15.5% + CapReturn 2.2%)
+    AIG      — TVCR 0.0% < 20% (Power 0.0% + CapReturn 0.0%)
+    AIT      — TVCR 16.9% < 20% (Power 9.8% + CapReturn 7.1%)
+    AIZ      — TVCR 0.0% < 20% (Power 0.0% + CapReturn 0.0%)
+    ALGN     — TVCR 11.2% < 20% (Power -0.4% + CapReturn 11.7%)
+    ALL      — TVCR 6.7% < 20% (Power 0.0% + CapReturn 6.7%)
+    AME      — TVCR 10.8% < 20% (Power 8.4% + CapReturn 2.4%)
+    AMOV     — TVCR 3.3% < 20% (Power -2.2% + CapReturn 5.5%)
+    AMP      — TVCR 0.0% < 20% (Power 0.0% + CapReturn 0.0%)
+    APOS     — TVCR 11.8% < 20% (Power 0.0% + CapReturn 11.8%)
+    ARM      — TVCR 5.4% < 20% (Power 5.4% + CapReturn 0.0%)
+    ATVI     — TVCR 9.8% < 20% (Power -0.5% + CapReturn 10.2%)
+    AVY      — TVCR 12.4% < 20% (Power 0.4% + CapReturn 12.0%)
+    AYI      — TVCR 13.3% < 20% (Power 5.9% + CapReturn 7.5%)
+    BBVA     — TVCR 0.0% < 20% (Power 0.0% + CapReturn 0.0%)
+    BBY      — TVCR -10.1% < 20% (Power -31.1% + CapReturn 21.0%)
+    BHP      — TVCR -10.1% < 20% (Power -29.8% + CapReturn 19.7%)
+    BIPI     — TVCR 0.0% < 20% (Power 0.0% + CapReturn 0.0%)
+    BLDR     — TVCR 13.0% < 20% (Power -10.1% + CapReturn 23.1%)
+    BLK      — TVCR 15.5% < 20% (Power 2.6% + CapReturn 12.9%)
+    BMY      — TVCR 14.0% < 20% (Power 0.0% + CapReturn 14.0%)
+    BNT      — TVCR 0.7% < 20% (Power 0.0% + CapReturn 0.7%)
+    BR       — TVCR 9.6% < 20% (Power 0.0% + CapReturn 9.6%)
+    BWXT     — TVCR 10.3% < 20% (Power 4.7% + CapReturn 5.6%)
+    CBOE     — TVCR 7.6% < 20% (Power 0.0% + CapReturn 7.6%)
+    CCK      — TVCR 4.2% < 20% (Power 0.0% + CapReturn 4.2%)
+    CEG      — TVCR 8.3% < 20% (Power 0.0% + CapReturn 8.3%)
+    CHD      — TVCR 10.9% < 20% (Power 0.0% + CapReturn 10.9%)
+    CHK      — TVCR -30.4% < 20% (Power -46.9% + CapReturn 16.5%)
+    CIB      — TVCR 18.3% < 20% (Power 11.0% + CapReturn 7.3%)
+    CLX      — TVCR 18.2% < 20% (Power 0.0% + CapReturn 18.2%)
+    CMI      — TVCR 16.6% < 20% (Power 10.2% + CapReturn 6.4%)
+    CNI      — TVCR 12.6% < 20% (Power -1.4% + CapReturn 14.0%)
+    COIN     — TVCR 0.0% < 20% (Power 0.0% + CapReturn 0.0%)
+    CPAY     — TVCR 18.4% < 20% (Power 7.1% + CapReturn 11.3%)
+    CPRT     — TVCR 7.0% < 20% (Power 7.0% + CapReturn 0.0%)
+    CQP      — TVCR 14.9% < 20% (Power 0.0% + CapReturn 14.9%)
+    CR       — TVCR 2.6% < 20% (Power 0.0% + CapReturn 2.6%)
+    CRCL     — TVCR 0.0% < 20% (Power 0.0% + CapReturn 0.0%)
+    CSX      — TVCR 2.7% < 20% (Power -8.4% + CapReturn 11.2%)
+    CTRA     — TVCR 8.7% < 20% (Power -4.2% + CapReturn 12.9%)
+    CTSH     — TVCR 11.2% < 20% (Power -2.1% + CapReturn 13.2%)
+    DB       — TVCR 15.7% < 20% (Power 3.9% + CapReturn 11.8%)
+    DEO      — TVCR 13.1% < 20% (Power -2.0% + CapReturn 15.1%)
+    DFS      — TVCR 9.6% < 20% (Power 0.0% + CapReturn 9.6%)
+    DHI      — TVCR -7.8% < 20% (Power -20.1% + CapReturn 12.4%)
+    DKS      — TVCR -1.5% < 20% (Power -12.9% + CapReturn 11.4%)
+    DVN      — TVCR 8.3% < 20% (Power -12.7% + CapReturn 21.0%)
+    EC       — TVCR 11.9% < 20% (Power 3.7% + CapReturn 8.2%)
+    EHC      — TVCR 2.4% < 20% (Power 0.0% + CapReturn 2.4%)
+    ELV      — TVCR 16.6% < 20% (Power 1.5% + CapReturn 15.1%)
+    EPAM     — TVCR 7.6% < 20% (Power -5.1% + CapReturn 12.7%)
+    EQH      — TVCR 0.0% < 20% (Power 0.0% + CapReturn 0.0%)
+    EQNR     — TVCR -68.6% < 20% (Power -91.3% + CapReturn 22.6%)
+    ERIC     — TVCR 6.7% < 20% (Power 0.0% + CapReturn 6.7%)
+    EWBC     — TVCR 0.0% < 20% (Power 0.0% + CapReturn 0.0%)
+    EXE      — TVCR -14.2% < 20% (Power -30.7% + CapReturn 16.5%)
+    EXEEL    — TVCR -14.7% < 20% (Power -31.3% + CapReturn 16.6%)
+    FANG     — TVCR 17.1% < 20% (Power 3.0% + CapReturn 14.1%)
+    FCX      — TVCR 4.9% < 20% (Power 0.0% + CapReturn 4.9%)
+    FERG     — TVCR 11.4% < 20% (Power -3.2% + CapReturn 14.6%)
+    FITB     — TVCR 0.0% < 20% (Power 0.0% + CapReturn 0.0%)
+    FTI      — TVCR 5.3% < 20% (Power 0.0% + CapReturn 5.3%)
+    FUTU     — TVCR 3.6% < 20% (Power 0.0% + CapReturn 3.6%)
+    GE       — TVCR 15.3% < 20% (Power 0.0% + CapReturn 15.3%)
+    GEHC     — TVCR 0.7% < 20% (Power 0.0% + CapReturn 0.7%)
+    GEV      — TVCR 10.9% < 20% (Power 0.0% + CapReturn 10.9%)
+    GFI      — TVCR 16.6% < 20% (Power 10.4% + CapReturn 6.2%)
+    GIL      — TVCR 17.2% < 20% (Power -9.1% + CapReturn 26.3%)
+    GPC      — TVCR 17.4% < 20% (Power 6.5% + CapReturn 10.9%)
+    GSK      — TVCR 12.6% < 20% (Power 2.2% + CapReturn 10.4%)
+    HAL      — TVCR 8.4% < 20% (Power -1.4% + CapReturn 9.8%)
+    HLI      — TVCR 11.8% < 20% (Power -7.5% + CapReturn 19.2%)
+    HSBC     — TVCR 11.1% < 20% (Power 0.0% + CapReturn 11.1%)
+    HSY      — TVCR -0.0% < 20% (Power -15.6% + CapReturn 15.5%)
+    IBKR     — TVCR 1.1% < 20% (Power 0.0% + CapReturn 1.1%)
+    IEX      — TVCR 6.8% < 20% (Power 0.0% + CapReturn 6.8%)
+    IMO      — TVCR -19.0% < 20% (Power -30.4% + CapReturn 11.5%)
+    JHX      — TVCR 5.5% < 20% (Power -3.8% + CapReturn 9.4%)
+    JKHY     — TVCR 16.4% < 20% (Power 6.5% + CapReturn 9.9%)
+    KEYS     — TVCR -5.2% < 20% (Power -16.8% + CapReturn 11.6%)
+    KKRS     — TVCR 1.7% < 20% (Power 0.0% + CapReturn 1.7%)
+    KO       — TVCR 17.6% < 20% (Power -0.0% + CapReturn 17.6%)
+    KOF      — TVCR 16.4% < 20% (Power 8.9% + CapReturn 7.5%)
+    KSPI     — TVCR 0.0% < 20% (Power 0.0% + CapReturn 0.0%)
+    LEN      — TVCR 8.7% < 20% (Power 0.0% + CapReturn 8.7%)
+    LNG      — TVCR 6.6% < 20% (Power -0.4% + CapReturn 6.9%)
+    LSCC     — TVCR -1.4% < 20% (Power -19.0% + CapReturn 17.6%)
+    LVS      — TVCR 7.0% < 20% (Power 0.0% + CapReturn 7.0%)
+    MCD      — TVCR 17.4% < 20% (Power 2.9% + CapReturn 14.5%)
+    MCO      — TVCR 17.0% < 20% (Power 0.0% + CapReturn 17.0%)
+    MLI      — TVCR 17.8% < 20% (Power 1.2% + CapReturn 16.6%)
+    MMM      — TVCR 15.3% < 20% (Power 0.0% + CapReturn 15.3%)
+    MRK      — TVCR 9.0% < 20% (Power 0.0% + CapReturn 9.0%)
+    MS       — TVCR 0.0% < 20% (Power 0.0% + CapReturn 0.0%)
+    MTB      — TVCR 0.0% < 20% (Power 0.0% + CapReturn 0.0%)
+    NIMC     — TVCR 1.9% < 20% (Power 0.0% + CapReturn 1.9%)
+    NKE      — TVCR 12.7% < 20% (Power -22.6% + CapReturn 35.3%)
+    NTAP     — TVCR 0.0% < 20% (Power 0.0% + CapReturn 0.0%)
+    NWG      — TVCR 0.0% < 20% (Power 0.0% + CapReturn 0.0%)
+    NXPI     — TVCR 7.7% < 20% (Power -6.6% + CapReturn 14.2%)
+    ON       — TVCR 14.7% < 20% (Power 7.0% + CapReturn 7.8%)
+    ONB      — TVCR 11.9% < 20% (Power 4.9% + CapReturn 7.0%)
+    ONTO     — TVCR 9.0% < 20% (Power 5.7% + CapReturn 3.3%)
+    ORI      — TVCR 0.0% < 20% (Power 0.0% + CapReturn 0.0%)
+    OVV      — TVCR 9.2% < 20% (Power 1.7% + CapReturn 7.5%)
+    OXY      — TVCR 10.5% < 20% (Power 3.4% + CapReturn 7.2%)
+    PBR      — TVCR 13.4% < 20% (Power -5.0% + CapReturn 18.4%)
+    PCAR     — TVCR 10.9% < 20% (Power 0.0% + CapReturn 10.9%)
+    PEP      — TVCR 14.6% < 20% (Power -1.2% + CapReturn 15.8%)
+    PHM      — TVCR 7.9% < 20% (Power -4.3% + CapReturn 12.2%)
+    PKG      — TVCR 6.1% < 20% (Power -4.9% + CapReturn 11.0%)
+    PNR      — TVCR 16.1% < 20% (Power 10.6% + CapReturn 5.5%)
+    PPG      — TVCR 6.4% < 20% (Power 0.0% + CapReturn 6.4%)
+    PRU      — TVCR 0.0% < 20% (Power 0.0% + CapReturn 0.0%)
+    RDDT     — TVCR 0.0% < 20% (Power 0.0% + CapReturn 0.0%)
+    REGN     — TVCR 3.0% < 20% (Power -15.9% + CapReturn 18.9%)
+    RIO      — TVCR -11.7% < 20% (Power -28.2% + CapReturn 16.5%)
+    RL       — TVCR 13.2% < 20% (Power 0.0% + CapReturn 13.2%)
+    ROK      — TVCR 15.5% < 20% (Power 0.5% + CapReturn 15.0%)
+    RPM      — TVCR 20.0% < 20% (Power 13.7% + CapReturn 6.2%)
+    RS       — TVCR -1.3% < 20% (Power -13.6% + CapReturn 12.3%)
+    SAIA     — TVCR 10.6% < 20% (Power 10.4% + CapReturn 0.3%)
+    SCCO     — TVCR 18.0% < 20% (Power 0.0% + CapReturn 18.0%)
+    SF       — TVCR 13.1% < 20% (Power 1.1% + CapReturn 12.0%)
+    SLB      — TVCR 18.8% < 20% (Power 7.3% + CapReturn 11.5%)
+    SN       — TVCR 19.0% < 20% (Power 15.0% + CapReturn 4.0%)
+    SNA      — TVCR 17.3% < 20% (Power 3.2% + CapReturn 14.1%)
+    SNPS     — TVCR 6.7% < 20% (Power -0.7% + CapReturn 7.4%)
+    SOFI     — TVCR 0.0% < 20% (Power 0.0% + CapReturn 0.0%)
+    SPOT     — TVCR 7.0% < 20% (Power 0.0% + CapReturn 7.0%)
+    SQM      — TVCR 17.2% < 20% (Power -19.6% + CapReturn 36.8%)
+    SSB      — TVCR 0.0% < 20% (Power 0.0% + CapReturn 0.0%)
+    STM      — TVCR -61.9% < 20% (Power -67.1% + CapReturn 5.2%)
+    STRL     — TVCR 3.0% < 20% (Power 0.0% + CapReturn 3.0%)
+    STX      — TVCR 13.8% < 20% (Power 0.0% + CapReturn 13.8%)
+    SYK      — TVCR 11.0% < 20% (Power 6.3% + CapReturn 4.7%)
+    TEL      — TVCR 3.8% < 20% (Power -11.0% + CapReturn 14.8%)
+    TGT      — TVCR -9.9% < 20% (Power -22.2% + CapReturn 12.3%)
+    TLK      — TVCR 6.3% < 20% (Power -3.4% + CapReturn 9.7%)
+    TOL      — TVCR 12.3% < 20% (Power 3.7% + CapReturn 8.6%)
+    TPG      — TVCR 0.0% < 20% (Power 0.0% + CapReturn 0.0%)
+    TPGXL    — TVCR 0.0% < 20% (Power 0.0% + CapReturn 0.0%)
+    TPR      — TVCR 19.6% < 20% (Power 0.0% + CapReturn 19.6%)
+    TRI      — TVCR 16.0% < 20% (Power 0.0% + CapReturn 16.0%)
+    TRV      — TVCR 0.0% < 20% (Power 0.0% + CapReturn 0.0%)
+    TSEM     — TVCR 1.8% < 20% (Power 1.8% + CapReturn 0.0%)
+    TTE      — TVCR 10.5% < 20% (Power -1.2% + CapReturn 11.7%)
+    TXN      — TVCR 16.3% < 20% (Power -21.6% + CapReturn 37.9%)
+    UL       — TVCR 13.4% < 20% (Power 0.1% + CapReturn 13.3%)
+    UMC      — TVCR -17.2% < 20% (Power -37.5% + CapReturn 20.2%)
+    UNH      — TVCR 4.8% < 20% (Power -11.2% + CapReturn 16.0%)
+    UNP      — TVCR 12.7% < 20% (Power 0.1% + CapReturn 12.6%)
+    UPS      — TVCR -2.9% < 20% (Power -19.7% + CapReturn 16.8%)
+    URI      — TVCR 15.9% < 20% (Power 6.0% + CapReturn 9.9%)
+    VALE     — TVCR -19.2% < 20% (Power -39.5% + CapReturn 20.3%)
+    VEEV     — TVCR 8.5% < 20% (Power 8.5% + CapReturn 0.0%)
+    VIK      — TVCR 0.0% < 20% (Power 0.0% + CapReturn 0.0%)
+    VLTO     — TVCR 9.7% < 20% (Power 6.3% + CapReturn 3.3%)
+    WAL      — TVCR 3.6% < 20% (Power 0.0% + CapReturn 3.6%)
+    WAT      — TVCR 15.5% < 20% (Power -0.4% + CapReturn 15.9%)
+    WBS      — TVCR 6.2% < 20% (Power 0.0% + CapReturn 6.2%)
+    WDC      — TVCR 0.4% < 20% (Power 0.0% + CapReturn 0.4%)
+    WFC      — TVCR 14.0% < 20% (Power 0.0% + CapReturn 14.0%)
+    WIT      — TVCR 18.0% < 20% (Power 1.8% + CapReturn 16.2%)
+    WMG      — TVCR 8.9% < 20% (Power -0.7% + CapReturn 9.5%)
+    WST      — TVCR 14.3% < 20% (Power -9.6% + CapReturn 23.9%)
+    WTFC     — TVCR 19.1% < 20% (Power 14.7% + CapReturn 4.4%)
+
+  Gate 3 failures (Per-Share Proof):
+    ABB      — Per-share CAGR 2.7% < 15% (NOPAT/sh 2.7%, FCF/sh -27.0%)
+    ACN      — Per-share CAGR 9.9% < 15% (NOPAT/sh 9.9%, FCF/sh 7.9%)
+    ALLE     — Per-share CAGR 8.5% < 15% (NOPAT/sh 8.5%, FCF/sh 8.2%)
+    AMAT     — Per-share CAGR 14.0% < 15% (NOPAT/sh 13.5%, FCF/sh 14.0%)
+    AMGN     — Per-share CAGR 11.3% < 15% (NOPAT/sh 11.3%, FCF/sh -2.3%)
+    AON      — Per-share CAGR 10.1% < 15% (NOPAT/sh 10.1%, FCF/sh 5.6%)
+    AOS      — Per-share CAGR 13.3% < 15% (NOPAT/sh 13.3%, FCF/sh 4.7%)
+    ASR      — Per-share CAGR 13.9% < 15% (NOPAT/sh 13.9%, FCF/sh 13.7%)
+    BABA     — Per-share CAGR 8.8% < 15% (NOPAT/sh 8.8%, FCF/sh -9.0%)
+    BCE      — Per-share CAGR -8.9% < 15% (NOPAT/sh N/A, FCF/sh -8.9%)
+    BSBR     — Per-share CAGR -4.2% < 15% (NOPAT/sh -4.2%, FCF/sh N/A)
+    CHKP     — Per-share CAGR 6.2% < 15% (NOPAT/sh 6.2%, FCF/sh 5.0%)
+    CL       — Per-share CAGR 3.1% < 15% (NOPAT/sh 2.1%, FCF/sh 3.1%)
+    CSCO     — Per-share CAGR 1.0% < 15% (NOPAT/sh 1.0%, FCF/sh -0.7%)
+    CVE      — Per-share CAGR 5.8% < 15% (NOPAT/sh -4.7%, FCF/sh 5.8%)
+    DCI      — Per-share CAGR 11.2% < 15% (NOPAT/sh 11.2%, FCF/sh 6.5%)
+    DPZ      — Per-share CAGR 10.4% < 15% (NOPAT/sh 10.4%, FCF/sh 8.4%)
+    EA       — Per-share CAGR 4.6% < 15% (NOPAT/sh 0.8%, FCF/sh 4.6%)
+    EVR      — Per-share CAGR 9.1% < 15% (NOPAT/sh 9.1%, FCF/sh N/A)
+    EXEL     — Per-share CAGR 10.5% < 15% (NOPAT/sh 10.5%, FCF/sh 5.6%)
+    EXPE     — Per-share CAGR 11.3% < 15% (NOPAT/sh 11.3%, FCF/sh 9.5%)
+    FAST     — Per-share CAGR 7.8% < 15% (NOPAT/sh 7.8%, FCF/sh 2.4%)
+    FHN      — Per-share CAGR 6.5% < 15% (NOPAT/sh 0.4%, FCF/sh 6.5%)
+    FLS      — Per-share CAGR 11.4% < 15% (NOPAT/sh 11.2%, FCF/sh 11.4%)
+    FOXA     — Per-share CAGR 14.8% < 15% (NOPAT/sh 12.3%, FCF/sh 14.8%)
+    FSLR     — Per-share CAGR N/A < 15% (NOPAT/sh N/A, FCF/sh N/A)
+    GGG      — Per-share CAGR 15.0% < 15% (NOPAT/sh 7.9%, FCF/sh 15.0%)
+    GIB      — Per-share CAGR 6.4% < 15% (NOPAT/sh N/A, FCF/sh 6.4%)
+    HD       — Per-share CAGR 10.3% < 15% (NOPAT/sh 8.4%, FCF/sh 10.3%)
+    HES      — Per-share CAGR N/A < 15% (NOPAT/sh N/A, FCF/sh N/A)
+    HON      — Per-share CAGR 3.3% < 15% (NOPAT/sh 3.3%, FCF/sh 2.4%)
+    IAG      — Per-share CAGR N/A < 15% (NOPAT/sh N/A, FCF/sh N/A)
+    IHG      — Per-share CAGR 12.9% < 15% (NOPAT/sh 12.9%, FCF/sh 9.0%)
+    INCY     — Per-share CAGR -16.5% < 15% (NOPAT/sh -53.4%, FCF/sh -16.5%)
+    INFY     — Per-share CAGR 14.4% < 15% (NOPAT/sh 7.6%, FCF/sh 14.4%)
+    JNJ      — Per-share CAGR 5.6% < 15% (NOPAT/sh 5.6%, FCF/sh 1.8%)
+    KMB      — Per-share CAGR -4.8% < 15% (NOPAT/sh -4.8%, FCF/sh -7.7%)
+    LECO     — Per-share CAGR 13.1% < 15% (NOPAT/sh 13.1%, FCF/sh 9.6%)
+    LTM      — Per-share CAGR N/A < 15% (NOPAT/sh N/A, FCF/sh N/A)
+    MAS      — Per-share CAGR 12.2% < 15% (NOPAT/sh 10.6%, FCF/sh 12.2%)
+    MMP      — Per-share CAGR 13.9% < 15% (NOPAT/sh -3.8%, FCF/sh 13.9%)
+    MNST     — Per-share CAGR 11.8% < 15% (NOPAT/sh 7.6%, FCF/sh 11.8%)
+    MO       — Per-share CAGR 11.9% < 15% (NOPAT/sh 11.9%, FCF/sh 4.3%)
+    MOD      — Per-share CAGR N/A < 15% (NOPAT/sh N/A, FCF/sh N/A)
+    MSI      — Per-share CAGR 10.0% < 15% (NOPAT/sh 10.0%, FCF/sh 6.9%)
+    MTD      — Per-share CAGR 11.5% < 15% (NOPAT/sh 11.5%, FCF/sh 9.5%)
+    NXT      — Per-share CAGR 2.2% < 15% (NOPAT/sh 2.2%, FCF/sh -7.7%)
+    ODFL     — Per-share CAGR 14.7% < 15% (NOPAT/sh 11.3%, FCF/sh 14.7%)
+    OMC      — Per-share CAGR 4.2% < 15% (NOPAT/sh 4.2%, FCF/sh 0.2%)
+    ONON     — Per-share CAGR N/A < 15% (NOPAT/sh N/A, FCF/sh N/A)
+    ORCL     — Per-share CAGR 8.9% < 15% (NOPAT/sh 8.9%, FCF/sh N/A)
+    ORLY     — Per-share CAGR 12.5% < 15% (NOPAT/sh 12.5%, FCF/sh -3.5%)
+    OSK      — Per-share CAGR -10.4% < 15% (NOPAT/sh -17.9%, FCF/sh -10.4%)
+    OTIS     — Per-share CAGR 9.1% < 15% (NOPAT/sh 9.1%, FCF/sh 4.2%)
+    PG       — Per-share CAGR 6.0% < 15% (NOPAT/sh 6.0%, FCF/sh 1.0%)
+    PLTR     — Per-share CAGR N/A < 15% (NOPAT/sh N/A, FCF/sh N/A)
+    PM       — Per-share CAGR 6.9% < 15% (NOPAT/sh 6.9%, FCF/sh 6.6%)
+    PSA      — Per-share CAGR 8.2% < 15% (NOPAT/sh 8.2%, FCF/sh 7.4%)
+    PXD      — Per-share CAGR N/A < 15% (NOPAT/sh N/A, FCF/sh N/A)
+    RCL      — Per-share CAGR N/A < 15% (NOPAT/sh N/A, FCF/sh N/A)
+    RMBS     — Per-share CAGR N/A < 15% (NOPAT/sh N/A, FCF/sh N/A)
+    ROST     — Per-share CAGR 5.4% < 15% (NOPAT/sh 5.4%, FCF/sh 2.0%)
+    SEIC     — Per-share CAGR 10.8% < 15% (NOPAT/sh 10.8%, FCF/sh 7.5%)
+    SWAV     — Per-share CAGR N/A < 15% (NOPAT/sh N/A, FCF/sh N/A)
+    TER      — Per-share CAGR -2.7% < 15% (NOPAT/sh -2.7%, FCF/sh -5.2%)
+    TJX      — Per-share CAGR 9.7% < 15% (NOPAT/sh 9.1%, FCF/sh 9.7%)
+    TME      — Per-share CAGR 13.4% < 15% (NOPAT/sh 13.4%, FCF/sh 10.8%)
+    TPL      — Per-share CAGR 8.5% < 15% (NOPAT/sh 6.1%, FCF/sh 8.5%)
+    UI       — Per-share CAGR 14.6% < 15% (NOPAT/sh 14.6%, FCF/sh 9.6%)
+    UTHR     — Per-share CAGR N/A < 15% (NOPAT/sh N/A, FCF/sh N/A)
+    VNOM     — Per-share CAGR 14.0% < 15% (NOPAT/sh 14.0%, FCF/sh N/A)
+    VRT      — Per-share CAGR 9.2% < 15% (NOPAT/sh 9.2%, FCF/sh N/A)
+    WMS      — Per-share CAGR 4.8% < 15% (NOPAT/sh N/A, FCF/sh 4.8%)
+    WWD      — Per-share CAGR 12.6% < 15% (NOPAT/sh 12.6%, FCF/sh 3.3%)
+    YUM      — Per-share CAGR 9.6% < 15% (NOPAT/sh 9.5%, FCF/sh 9.6%)
+    ZTS      — Per-share CAGR 12.8% < 15% (NOPAT/sh 11.2%, FCF/sh 12.8%)
+
+  Gate 4 failures (Financial Health):
+    AMZN     — FCF/NI 57.1% < 70%
+    ATI      — FCF/NI 64.1% < 70%
+    AZO      — ND/EBITDA 2.8x > 2.5x (escape)
+    B        — FCF/NI 62.1% < 70%
+    BAM      — FCF/NI 24.1% < 70%
+    CNM      — ND/EBITDA 2.7x > 2.5x (escape)
+    FCNCA    — FCF/NI 42.2% < 70%; ND/EBITDA 4.5x > 2.5x
+    FCNCB    — FCF/NI 42.2% < 70%; ND/EBITDA 4.5x > 2.5x
+    FICO     — ND/EBITDA 3.1x > 2.5x
+    GDDY     — ND/EBITDA 2.6x > 2.5x (escape)
+    HCA      — ND/EBITDA 3.2x > 2.5x
+    HLT      — ND/EBITDA 4.3x > 2.5x
+    HMY      — FCF/NI 69.1% < 70%
+    ISRG     — FCF/NI 43.7% < 70%
+    LLY      — FCF/NI 44.9% < 70%
+    LPLA     — FCF/NI 10.3% < 70%; ND/EBITDA 2.8x > 2.5x (escape)
+    MAR      — ND/EBITDA 3.4x > 2.5x
+    MRSH     — ND/EBITDA 2.6x > 2.5x (escape)
+    MSCI     — ND/EBITDA 3.1x > 2.5x
+    NVO      — FCF/NI 69.3% < 70%
+    OC       — ND/EBITDA 3.0x > 2.5x
+    PAC      — FCF/NI 61.5% < 70%
+    PHYS     — FCF/NI unavailable
+    RACE     — FCF/NI 64.5% < 70%
+    RDY      — FCF/NI 47.5% < 70%
+    SYY      — ND/EBITDA 3.2x > 2.5x
+    TDG      — ND/EBITDA 6.0x > 2.5x
+    TRGP     — ND/EBITDA 3.4x > 2.5x
+    TSM      — FCF/NI 57.3% < 70%
+    VIAC     — FCF/NI 40.3% < 70%
+    WES      — ND/EBITDA 2.7x > 2.5x (escape)
+    ZTO      — FCF/NI 66.3% < 70%
+
+============================================================================================================================================
+FINAL RANKED RESULTS: 93 Capital Compounders
+============================================================================================================================================
+
+#   Sym    Name                     MktCap Mech             TVCR   Power   CRYld    ROIC  NOPAT/sh   FCF/sh  FCF/NI  ND/EB  Score
+--------------------------------------------------------------------------------------------------------------------------------------------
+1   NVDA   NVIDIA Corporation        $4.5T buyback        160.0%   59.0%  101.0%   86.8%     92.3%    70.0%     87%  -0.4x 0.96
+2   ZM     Zoom Communications,       $28B buyback        102.9%  -19.1%  122.0%   31.0%    110.5%    66.6%    514%  -8.3x 0.90
+3   GMAB   Genmab A/S                 $19B hybrid          72.8%   23.8%   49.1%   64.8%     23.1%    43.8%    108%  -2.1x 0.88
+4   ANET   Arista Networks, Inc.     $173B hybrid          88.7%   29.8%   58.8%  102.3%     26.5%    31.4%     86%  -2.8x 0.86
+5   ASML   ASML Holding N.V.         $548B hybrid          95.1%   14.3%   80.8%   77.8%     22.5%    27.5%     94%  -0.9x 0.83
+6   DDS    Dillard's, Inc.            $10B hybrid          45.2%    0.0%   45.2%   55.1%     46.8%    29.7%     99%  -0.5x 0.80
+7   MA     Mastercard Incorporat     $490B buyback        114.1%   13.0%  101.1%   90.1%     21.3%    24.2%    110%   0.4x 0.80
+8   NTES   NetEase, Inc.              $78B hybrid          78.3%    0.0%   78.3%  130.9%     17.3%    22.1%    118%  -3.9x 0.80
+9   MEDP   Medpace Holdings, Inc      $15B buyback         51.4%    0.0%   51.4%   56.9%     34.2%    29.6%    142%  -1.1x 0.78
+10  RNR    RenaissanceRe Holding      $14B hybrid         102.6%   47.0%   55.6%   40.5%     25.9%    15.4%    109%   0.2x 0.78
+11  PSTG   Pure Storage, Inc.         $23B buyback         69.4%    0.0%   69.4%   27.4%       ---    33.2%    705%  -4.4x 0.76
+12  ADSK   Autodesk, Inc.             $51B buyback         53.4%   17.8%   35.5%   35.2%     33.8%     2.5%    174%   0.4x 0.76
+13  KLAC   KLA Corporation           $190B hybrid          55.2%    9.8%   45.4%   61.5%     27.2%    22.1%    100%   0.3x 0.75
+14  DECK   Deckers Outdoor Corpo      $17B buyback         44.5%    6.3%   38.2%   60.2%     30.4%    33.6%    104%  -1.2x 0.75
+15  LOGI   Logitech Internationa      $13B buyback         61.3%    0.0%   61.3%   56.0%     24.3%    17.7%    141%  -1.9x 0.75
+16  ANTM   Elevance Health Inc.      $115B reinvestment    25.5%   12.8%   12.8%  258.9%    101.7%     5.6%     84%  -0.6x 0.75
+17  BKNG   Booking Holdings Inc.     $144B buyback        123.6%    0.0%  123.6%   99.3%     12.3%    17.5%    167%   0.1x 0.73
+18  BAP    Credicorp Ltd.             $28B hybrid        1000.9%    0.0% 1000.9%  126.8%      5.3%    15.9%    152%  -5.2x 0.72
+19  CELH   Celsius Holdings, Inc      $13B reinvestment    60.4%   60.1%    0.4%   14.4%       ---   189.5%    110%  -5.3x 0.72
+20  GOOGL  Alphabet Inc.             $3.9T buyback         49.2%   16.3%   33.0%   32.5%     28.5%    14.0%     74%  -0.3x 0.72
+21  LULU   Lululemon Athletica I      $19B buyback         46.2%   19.1%   27.1%   28.1%     23.9%    34.1%     77%  -0.1x 0.72
+22  MELI   MercadoLibre, Inc.        $100B reinvestment    51.5%   46.3%    5.2%   20.7%       ---    84.8%    451%   1.0x 0.71
+23  COKE   Coca-Cola Consolidate      $14B reinvestment    36.8%   20.0%   16.8%   32.2%     48.5%    34.6%     87%   0.4x 0.71
+24  MPWR   Monolithic Power Syst      $59B hybrid          48.4%   10.3%   38.1%   28.3%     29.9%      ---     86%  -1.6x 0.70
+25  TTD    The Trade Desk, Inc.       $13B reinvestment    71.2%   45.3%   25.8%   11.6%     24.7%    98.4%    440%  -3.1x 0.70
+26  AAPL   Apple Inc.                $4.1T buyback         69.9%    0.0%   69.9%   74.7%     18.3%     9.5%    102%   0.4x 0.70
+27  FIX    Comfort Systems USA,       $43B reinvestment    44.2%   39.2%    5.1%   23.6%     37.7%    47.3%    138%  -0.3x 0.70
+28  SYF    Synchrony Financial        $27B reinvestment    40.8%   22.1%   18.7%   25.3%     45.7%    12.6%    274%   0.0x 0.69
+29  ADBE   Adobe Inc.                $112B buyback         64.1%    0.0%   64.1%   47.2%     19.3%    16.1%    136%   0.0x 0.69
+30  EME    EMCOR Group, Inc.          $34B buyback         38.0%   17.1%   21.0%   29.2%     29.0%    39.3%    124%  -0.7x 0.69
+31  DXCM   DexCom, Inc.               $27B buyback         60.9%   20.5%   40.5%   20.1%     25.9%    33.2%     98%   0.0x 0.69
+32  CB     Chubb Limited             $130B reinvestment    42.2%   36.3%    5.9%   24.3%     43.6%      ---    157%  -0.2x 0.68
+33  AXP    American Express Comp     $247B hybrid          38.7%   17.5%   21.2%   28.4%     36.9%    39.0%    165%   0.6x 0.67
+34  BKR    Baker Hughes Company       $58B reinvestment   256.2%  249.1%    7.1%   12.1%       ---    38.0%    102%   0.6x 0.66
+35  ADP    Automatic Data Proces      $94B hybrid          70.7%   10.6%   60.2%   64.1%     12.6%    16.0%    106%   0.2x 0.65
+36  CDNS   Cadence Design System      $77B buyback         52.8%   10.9%   42.0%   28.3%     21.9%    11.8%    119%  -0.1x 0.65
+37  LYV    Live Nation Entertain      $33B reinvestment    48.1%   48.1%    0.0%   17.3%     22.8%    55.1%    277%   1.3x 0.63
+38  V      Visa Inc.                 $639B buyback         54.0%    7.7%   46.2%   45.3%     12.7%    17.6%    105%   0.1x 0.63
+39  VST    Vistra Corp.               $51B reinvestment    67.8%   58.0%    9.8%   17.3%     41.5%    10.6%    173%   2.2x 0.62
+40  AVGO   Broadcom Inc.             $1.6T buyback         52.1%   16.0%   36.1%   17.5%     40.7%    15.0%    190%   1.4x 0.61
+41  MSFT   Microsoft Corporation     $3.0T hybrid          43.1%   12.5%   30.6%   35.9%     19.8%    10.3%     79%  -0.2x 0.61
+42  JPM    JPMorgan Chase & Co.      $878B hybrid          42.7%    0.0%   42.7%  255.1%     16.7%      ---    119%  -4.8x 0.61
+43  NVR    NVR, Inc.                  $23B buyback         65.2%   -9.0%   74.2%   54.0%     14.7%    15.3%    101%  -0.4x 0.60
+44  FER    Ferrovial SE               $51B reinvestment    52.8%   46.0%    6.8%   10.6%     52.5%     1.9%    257%   1.5x 0.59
+45  ACGL   Arch Capital Group Lt      $38B reinvestment    40.6%   31.5%    9.0%   20.7%     23.0%    28.8%    179%  -1.4x 0.58
+46  META   Meta Platforms, Inc.      $1.7T hybrid          44.8%   22.3%   22.5%   28.6%     18.0%    17.0%     92%   0.0x 0.57
+47  APH    Amphenol Corporation      $167B reinvestment    39.6%   27.6%   12.0%   21.0%     27.5%    26.2%    101%   0.6x 0.56
+48  QCOM   QUALCOMM Incorporated     $147B buyback         31.4%    0.0%   31.4%   27.7%     -0.2%    24.8%    159%   0.3x 0.56
+49  BX     Blackstone Inc.           $156B hybrid          55.3%   22.0%   33.3%   24.5%     19.0%     9.9%    230%   1.6x 0.55
+50  EOG    EOG Resources, Inc.        $62B hybrid          27.9%    6.9%   20.9%   26.8%     17.6%    27.6%     79%  -0.2x 0.54
+51  NVMI   Nova Ltd.                  $14B reinvestment    20.9%   15.6%    5.3%   23.6%     34.3%    58.4%     89%  -1.7x 0.54
+52  WSM    Williams-Sonoma, Inc.      $26B buyback         25.5%   -1.4%   26.9%   27.3%     29.9%    27.3%    107%   0.1x 0.54
+53  DELL   Dell Technologies Inc      $81B buyback         38.0%   12.2%   25.8%   26.9%     25.7%   -22.0%     79%   2.2x 0.52
+54  TT     Trane Technologies pl     $101B hybrid          34.0%   14.4%   19.6%   24.5%     24.2%    18.9%    103%   0.7x 0.52
+55  IT     Gartner, Inc.              $12B buyback         22.3%    0.0%   22.3%   31.1%     19.2%    32.9%    129%   0.8x 0.52
+56  THC    Tenet Healthcare Corp      $18B reinvestment    30.8%   28.2%    2.6%   17.3%     44.7%    15.9%    126%   1.6x 0.51
+57  ULS    UL Solutions Inc.          $14B hybrid          76.7%   13.0%   63.8%   21.7%     15.3%    -3.1%     85%   1.0x 0.50
+58  PR     Permian Resources Cor      $13B reinvestment    29.9%   21.9%    8.0%   12.2%     55.9%      ---     77%   1.1x 0.50
+59  NYT    The New York Times Co      $11B reinvestment    38.3%   23.6%   14.7%   19.5%     17.8%    21.9%     92%  -1.0x 0.49
+60  COG    Cabot Oil & Gas Corpo      $17B hybrid          25.5%    9.4%   16.1%   12.2%       ---   150.9%    149%   0.5x 0.49
+61  ERIE   Erie Indemnity Compan      $13B reinvestment    41.1%   22.8%   18.3%   27.3%     15.8%    15.5%     82%  -0.4x 0.48
+62  IBN    ICICI Bank Limited        $111B reinvestment    24.9%   20.6%    4.3%   17.3%     35.5%     2.8%    220%  -0.2x 0.47
+63  TS     Tenaris S.A.               $25B reinvestment    27.1%   17.0%   10.1%   19.6%     25.9%    14.0%     78%  -0.8x 0.46
+64  LII    Lennox International       $19B hybrid          33.3%   12.8%   20.5%   30.5%     18.7%     5.6%     87%   1.8x 0.46
+65  HIG    The Hartford Financia      $40B reinvestment    35.9%   21.3%   14.5%   17.3%     22.7%    16.5%    144%  -0.0x 0.46
+66  PYPL   PayPal Holdings, Inc.      $38B buyback         28.9%    0.0%   28.9%   24.2%     19.7%     5.0%    123%  -0.1x 0.46
+67  BLD    TopBuild Corp.             $15B reinvestment    27.8%   15.7%   12.0%   17.7%     27.5%    28.5%    106%   1.1x 0.44
+68  FFIV   F5, Inc.                   $16B reinvestment    37.8%   20.2%   17.6%   19.9%     17.7%     9.5%    139%  -1.2x 0.44
+69  SBS    Companhia de Saneamen      $19B reinvestment    41.7%   41.7%    0.0%   12.3%     21.5%    12.1%    112%   1.1x 0.42
+70  CF     CF Industries Holding      $15B hybrid          22.9%   -3.7%   26.6%   39.2%     17.8%    14.3%    131%   0.6x 0.42
+71  APP    AppLovin Corporation      $138B buyback         20.4%    0.0%   20.4%   17.3%     37.6%    45.6%    214%   1.2x 0.41
+72  ITT    ITT Inc.                   $18B hybrid          23.9%    9.5%   14.4%   18.1%     24.9%     9.9%    101%  -1.8x 0.40
+73  INTU   Intuit Inc.               $124B reinvestment    34.9%   19.5%   15.4%   14.6%     15.3%    20.0%    171%   0.4x 0.40
+74  RMD    ResMed Inc.                $40B reinvestment    28.0%   17.5%   10.5%   19.8%     15.2%    18.7%    102%  -0.2x 0.40
+75  NVS    Novartis AG               $302B buyback         44.8%   21.6%   23.2%   18.3%     15.6%    13.4%    107%   1.1x 0.39
+76  BAH    Booz Allen Hamilton H      $11B reinvestment    44.4%   24.8%   19.5%   16.0%     15.7%    18.8%    108%   2.1x 0.39
+77  EBAY   eBay Inc.                  $39B buyback         25.2%    0.0%   25.2%   25.3%     17.5%     5.5%     85%   0.6x 0.38
+78  CAT    Caterpillar Inc.          $340B buyback         27.3%    8.5%   18.8%   18.8%     23.9%    23.3%     97%   2.2x 0.36
+79  CSL    Carlisle Companies In      $17B buyback         26.7%    0.0%   26.7%   18.1%     20.4%    15.4%    114%   1.0x 0.36
+80  TXRH   Texas Roadhouse, Inc.      $13B reinvestment    30.1%   17.6%   12.5%   13.2%     20.8%    21.4%     87%   0.9x 0.36
+81  ULTA   Ulta Beauty, Inc.          $31B buyback         28.4%    6.7%   21.8%   24.7%     15.5%     8.0%     85%   0.7x 0.36
+82  ROL    Rollins, Inc.              $31B hybrid          34.4%   12.1%   22.3%   19.9%     14.8%    15.8%    119%   0.9x 0.36
+83  WSO    Watsco, Inc.               $17B hybrid          24.6%    6.1%   18.5%   24.3%     13.9%    16.7%    109%  -0.4x 0.35
+84  VRSK   Verisk Analytics, Inc      $25B buyback         31.1%    0.0%   31.1%   24.9%     15.5%     7.7%    104%   1.8x 0.35
+85  CTAS   Cintas Corporation         $79B hybrid          30.7%   11.7%   19.0%   23.9%     15.4%    11.6%     99%   0.8x 0.35
+86  HUBB   Hubbell Incorporated       $27B reinvestment    25.9%   15.7%   10.2%   17.0%     20.4%     9.7%     99%   1.4x 0.32
+87  WTS    Watts Water Technolog      $11B reinvestment    22.9%   15.3%    7.6%   20.0%     16.4%    15.1%     99%  -0.4x 0.31
+88  GRMN   Garmin Ltd.                $39B hybrid          24.1%    7.5%   16.6%   19.6%      7.5%    16.2%     78%  -1.3x 0.30
+89  HWM    Howmet Aerospace Inc.      $90B reinvestment    28.6%   22.3%    6.3%   14.2%     17.2%      ---     96%   1.6x 0.27
+90  PNC    The PNC Financial Ser      $95B hybrid          23.2%    3.4%   19.8%   12.3%     20.4%     3.0%    149%   2.0x 0.24
+91  ETN    Eaton Corporation plc     $145B reinvestment    22.5%   13.6%    8.9%   14.0%     19.1%     5.0%     74%   1.8x 0.23
+92  PH     Parker-Hannifin Corpo     $123B reinvestment    24.5%   13.2%   11.3%   13.1%     17.0%    12.6%    108%   1.7x 0.21
+93  TTEK   Tetra Tech, Inc.           $11B reinvestment    22.5%   13.9%    8.5%   12.3%     17.3%    12.6%    135%   1.8x 0.18
+
+Results: /Users/clarknye/Documents/capital_compounders/compounders_v3_results.csv
+
+Completed: 2026-02-09 00:35:40

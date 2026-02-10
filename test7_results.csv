@@ -1,0 +1,4 @@
+Rank,Symbol,CompanyName,Sector,Industry,MktCap,GrossMargin%,3yr_Avg_ROIC%,Current_ROIC%,3yr_Cum_ROIIC%,3yr_Avg_ROIIC_Annual%,3yr_Cum_ReinvRate%,3yr_Cum_Power%,5yr_FCF_Share_CAGR%,3yr_Avg_FCF_NI%,NetDebt_EBITDA,Composite_Score,Path
+1,NVDA,NVIDIA Corporation,Technology,Semiconductors,0,74.99,53.38,87.21,136.46,140.96,43.26,59.03,69.99,87.16,0.02,0.9167,compounder
+2,MA,Mastercard Incorporated,Financial Services,Financial - Credit Services,0,83.43,87.66,100.14,228.59,115.6,5.7,13.04,24.16,109.82,0.39,0.5667,buyback-compounder
+3,GOOGL,Alphabet Inc.,Technology,Internet Content & Information,0,59.67,25.86,23.54,23.13,35.29,70.32,16.27,13.95,74.09,0.23,0.5167,compounder

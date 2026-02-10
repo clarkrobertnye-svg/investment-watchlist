@@ -1,0 +1,46 @@
+Capital Compounders v2 Screen
+Started: 2026-02-08 11:01:20
+TEST RUN: 7 tickers
+======================================================================
+
+
+Data pull complete: 7 stocks loaded, 0 errors, 28 API calls
+
+Raw data saved to /Users/clarknye/Documents/capital_compounders/test7_data.json
+
+======================================================================
+APPLYING GATES
+======================================================================
+
+Gate Results:
+  Entered:         7
+  Failed Gate 1:   1 (Quality)
+  Failed Gate 2:   2 (Compounding Engine)
+  Failed Gate 3:   1 (Proof)
+  Failed Gate 4:   0 (Financial Health)
+  PASSED ALL:      3
+
+  Gate 1 failures (Quality):
+    CLS      — GM 11.7% ≤ 15%
+
+  Gate 2 failures (Compounding Engine):
+    ADP      — Power 10.6% < 12%
+    AZO      — ROIIC 9.5% < 15%; Power 3.4% < 12%
+
+  Gate 3 failures (Proof):
+    MOD      — FCF/share CAGR unavailable
+
+======================================================================
+FINAL RANKED RESULTS: 3 Capital Compounders
+======================================================================
+
+#   Symbol  Name                     MktCap  3yr ROIC  3yr ROIIC   Reinv%   Power   FCF/sh  FCF/NI  ND/EB  Score Path
+----------------------------------------------------------------------------------------------------------------------------------
+1   NVDA    NVIDIA Corporation          $0M     53.4%     136.5%    43.3%   59.0%    70.0%     87%   0.0×   0.92 compounder
+2   MA      Mastercard Incorpor         $0M     87.7%     228.6%     5.7%   13.0%    24.2%    110%   0.4×   0.57 buyback-compounder
+3   GOOGL   Alphabet Inc.               $0M     25.9%      23.1%    70.3%   16.3%    14.0%     74%   0.2×   0.52 compounder
+
+Results saved to /Users/clarknye/Documents/capital_compounders/test7_results.csv
+
+Log saved to /Users/clarknye/Documents/capital_compounders/test7_log.txt
+Completed: 2026-02-08 11:01:39

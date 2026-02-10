@@ -1,0 +1,1 @@
+pbpaste > ~/Documents/capital_compounders/screen_full.py

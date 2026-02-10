@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "name": "Capital Compounders - Final Universe",
+    "version": "2.0",
+    "total_stocks": 92,
+    "machines": 40,
+    "cash_cows": 52,
+    "last_updated": "2026-02-02",
+    "removed_stocks": {
+      "CALM": "Cyclical commodity (eggs), earnings driven by bird flu supply shock, no pricing power",
+      "BRFS": "Commodity exposure (poultry/pork), EM governance concerns, dilutive equity raises",
+      "GOOG": "Duplicate of GOOGL",
+      "GDDY": "VCR 1.5x, commoditizing domain/hosting market, no moat",
+      "FELE": "VCR 1.6x, industrial commodity pumps, no pricing power",
+      "HUBB": "VCR 1.6x, mature electrical products, limited growth",
+      "VMI": "VCR 1.7x, infrastructure commodity, no moat",
+      "WHD": "VCR 1.8x, oil & gas services = commodity exposure",
+      "CRUS": "VCR 1.9x, 80% Apple revenue concentration, semi cyclical"
+    }
+  },
+  "machines": [
+    "VITL", "ITT", "ADP", "YELP", "BBW", "CVLT", "PTRN", "PAYO", "FTOCU", "CPNG",
+    "MLI", "LNTH", "SEAS", "ULTA", "PLAB", "SHOO", "BMI", "COKE", "ASR", "VMEO",
+    "MWA", "ADSK", "APH", "PCTY", "ROST", "GOOGL", "GWW", "TSM", "VLTO", "IBEX",
+    "MRK", "MDXG", "FTNT", "TJX", "TGLS", "CEO", "WSM", "FLT", "MNKD", "AIT"
+  ],
+  "cash_cows": [
+    "MELI", "CELH", "NVDA", "DFS", "HRMY", "WIRE", "HDL", "CMG", "EXEL", "AERO",
+    "ODC", "OMAB", "IESC", "IBKR", "ANET", "VRT", "IPAR", "LULU", "USLM", "PAYC",
+    "NVMI", "LRN", "BLD", "TTD", "RJF", "NSSC", "UTHR", "RACE", "EXLS", "DECK",
+    "MNESP", "LECO", "ABMD", "NFLX", "MSA", "MORN", "HLNE", "KLAC", "WTS", "FFIV",
+    "KLCIX", "TT", "ALSN", "KARO", "MSI", "WSO", "RMD", "ODFL", "IDT", "G", "CTAS", "ROL"
+  ]
+}

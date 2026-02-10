@@ -1,0 +1,61 @@
+Capital Compounders v3 — Unified Total Value Creation
+Started: 2026-02-08 12:08:47
+TEST RUN: 9 tickers
+======================================================================
+
+
+Data pull complete: 9 stocks, 0 errors, 36 API calls
+
+==================================================================================================================================
+DETAILED VALUE CREATION BREAKDOWN
+==================================================================================================================================
+
+Sym     3yr ROIC    ROIIC   Reinv   Power     BegIC   AvgBB/yr  AvgDiv/yr  CR Yield    TVCR Mech          NOPAT/sh   FCF/sh
+----------------------------------------------------------------------------------------------------------------------------------
+NVDA       86.8%   202.2%   29.2%   59.0%    $18.1B     $17.8B      $0.0B     98.0%  157.0% buyback          92.3%    70.0%
+MA         90.1%   222.0%    5.9%   13.0%    $12.9B     $10.6B      $0.0B     82.1%   95.1% buyback          21.3%    24.2%
+AAPL       74.7%      ---   -0.7%    0.0%   $147.3B     $87.7B      $0.0B     59.6%   59.6% buyback          18.3%     9.5%
+GOOGL      32.5%    24.2%   67.3%   16.3%   $188.9B     $56.5B      $0.0B     29.9%   46.2% buyback          28.5%    14.0%
+V          45.3%   276.3%    2.8%    7.7%    $39.5B     $14.1B      $0.0B     35.6%   43.3% buyback          12.7%    17.6%
+CLS        23.7%   499.0%    8.4%   29.5%     $2.3B      $0.2B      $0.0B      8.4%   37.9% reinvestment     64.2%    22.6%
+AZO        27.0%     8.7%   39.5%    3.4%     $8.7B      $2.8B      $0.0B     32.4%   35.8% buyback          16.3%     2.0%
+ADP        64.1%    57.0%   18.6%   10.6%     $5.6B      $1.2B      $0.0B     21.6%   32.2% hybrid           12.6%    16.0%
+MOD        14.5%    19.3%  107.5%   20.8%     $0.8B      $0.0B      $0.0B      2.1%   22.8% reinvestment       ---      ---
+
+======================================================================
+APPLYING GATES
+======================================================================
+
+Gate Results:
+  Entered:       9
+  Failed Gate 1: 1 (Quality)
+  Failed Gate 2: 0 (Value Creation < 20%)
+  Failed Gate 3: 1 (Per-Share Proof < 15%)
+  Failed Gate 4: 1 (Financial Health)
+  PASSED ALL:    6
+
+  Gate 1 failures (Quality):
+    CLS      — GM 11.7% <= 15%
+
+  Gate 3 failures (Per-Share Proof):
+    MOD      — Per-share CAGR N/A < 15% (NOPAT/sh N/A, FCF/sh N/A)
+
+  Gate 4 failures (Financial Health):
+    AZO      — ND/EBITDA 2.8x > 2.5x (escape)
+
+============================================================================================================================================
+FINAL RANKED RESULTS: 6 Capital Compounders
+============================================================================================================================================
+
+#   Sym    Name                     MktCap Mech             TVCR   Power   CRYld    ROIC  NOPAT/sh   FCF/sh  FCF/NI  ND/EB  Score
+--------------------------------------------------------------------------------------------------------------------------------------------
+1   NVDA   NVIDIA Corporation          $0M buyback        157.0%   59.0%   98.0%   86.8%     92.3%    70.0%     87%  -0.4x 0.96
+2   MA     Mastercard Incorporat       $0M buyback         95.1%   13.0%   82.1%   90.1%     21.3%    24.2%    110%   0.4x 0.84
+3   AAPL   Apple Inc.                  $0M buyback         59.6%    0.0%   59.6%   74.7%     18.3%     9.5%    102%   0.4x 0.65
+4   GOOGL  Alphabet Inc.               $0M buyback         46.2%   16.3%   29.9%   32.5%     28.5%    14.0%     74%  -0.3x 0.59
+5   V      Visa Inc.                   $0M buyback         43.3%    7.7%   35.6%   45.3%     12.7%    17.6%    105%   0.1x 0.43
+6   ADP    Automatic Data Proces       $0M hybrid          32.2%   10.6%   21.6%   64.1%     12.6%    16.0%    106%   0.2x 0.37
+
+Results: /Users/clarknye/Documents/capital_compounders/test9_results.csv
+
+Completed: 2026-02-08 12:09:18

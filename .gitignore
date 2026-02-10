@@ -1,3 +1,16 @@
+# secrets
+private/.env
+
+# raw pulls (optional to keep local only)
+data/raw/
+data/snapshots/
+
+# python
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
 config.py
 cache/
 __pycache__/

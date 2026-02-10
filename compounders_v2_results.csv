@@ -1,0 +1,21 @@
+Rank,Symbol,CompanyName,Sector,Industry,MktCap,GrossMargin%,3yr_Avg_ROIC%,Current_ROIC%,3yr_Cum_ROIIC%,3yr_Avg_ROIIC_Annual%,3yr_Cum_ReinvRate%,3yr_Cum_Power%,5yr_FCF_Share_CAGR%,3yr_Avg_FCF_NI%,NetDebt_EBITDA,Composite_Score,Path
+1,ABNB,"Airbnb, Inc.",Consumer Cyclical,Travel Services,0,83.08,138.03,52.82,62.25,159.68,54.94,34.2,107.25,143.85,-1.75,0.8087,compounder
+2,NVDA,NVIDIA Corporation,Technology,Semiconductors,0,74.99,53.38,87.21,136.46,140.96,43.26,59.03,69.99,87.16,0.02,0.7685,compounder
+3,CELH,"Celsius Holdings, Inc.",Consumer Defensive,Beverages - Non-Alcoholic,0,50.18,15.0,32.68,78.17,-102.79,76.84,60.06,189.46,109.84,-5.34,0.7442,compounder
+4,SPOT,Spotify Technology S.A.,Communication Services,Internet Content & Information,0,30.14,-7.45,42.2,73.87,-13.09,555.51,410.35,35.45,200.7,-1.86,0.695,compounder
+5,PDD,PDD Holdings Inc.,Consumer Cyclical,Specialty Retail,0,60.92,32.16,34.52,46.75,68.16,110.39,51.6,44.93,94.59,-0.43,0.6702,compounder
+6,DECK,Deckers Outdoor Corporation,Consumer Cyclical,Apparel - Footwear & Accessories,0,57.88,77.79,101.71,,368.85,-0.77,,33.6,103.92,-1.23,0.6625,capital-light
+7,MEDP,"Medpace Holdings, Inc.",Healthcare,Medical - Diagnostics & Research,0,31.12,76.9,124.23,,,-35.01,,29.57,141.64,-1.09,0.605,capital-light
+8,IBKR,"Interactive Brokers Group, Inc.",Financial Services,Investment - Banking & Investment Services,0,89.78,671.23,1917.56,,65.74,-37.43,,19.24,708.93,-0.54,0.5975,capital-light
+9,MLI,"Mueller Industries, Inc.",Industrials,Manufacturing - Metal Fabrication,0,27.38,45.54,57.76,,4.1,-9.9,,28.25,95.3,-1.22,0.565,capital-light
+10,ANET,"Arista Networks, Inc.",Technology,Computer Hardware,0,64.13,34.36,35.56,45.49,50.14,65.57,29.83,31.42,85.94,-0.92,0.5479,compounder
+11,MELI,"MercadoLibre, Inc.",Consumer Cyclical,Specialty Retail,0,46.09,20.15,24.13,33.87,62.83,136.58,46.26,84.84,451.37,1.31,0.5019,compounder
+12,NFLX,"Netflix, Inc.",Communication Services,Entertainment,0,48.49,27.29,35.9,,67.86,-1.94,,38.84,97.89,0.18,0.495,capital-light
+13,LULU,Lululemon Athletica Inc.,Consumer Cyclical,Apparel - Retail,0,59.22,39.23,45.08,50.83,77.8,37.57,19.1,34.07,77.23,-0.14,0.4731,compounder
+14,ADBE,Adobe Inc.,Technology,Software - Infrastructure,0,88.61,45.97,55.35,,582.04,-9.02,,16.09,135.6,0.12,0.47,capital-light
+15,IT,"Gartner, Inc.",Technology,Information Technology Services,0,67.66,37.19,33.21,,,-19.46,,32.91,128.74,0.79,0.465,capital-light
+16,COKE,"Coca-Cola Consolidated, Inc.",Consumer Defensive,Beverages - Non-Alcoholic,0,39.9,33.18,31.08,51.99,51.78,38.44,19.98,34.6,87.19,0.73,0.4313,compounder
+17,APH,Amphenol Corporation,Technology,"Hardware, Equipment & Parts",0,36.88,21.01,25.81,35.28,25.98,78.1,27.56,26.23,101.0,0.63,0.3371,compounder
+18,RMD,ResMed Inc.,Healthcare,Medical - Instruments & Supplies,0,59.36,20.43,25.08,37.09,375.34,47.3,17.54,18.73,102.32,-0.19,0.2573,compounder
+19,GOOGL,Alphabet Inc.,Technology,Internet Content & Information,0,59.67,25.86,23.54,23.13,35.29,70.32,16.27,13.95,74.09,0.23,0.2065,compounder
+20,ASR,"Grupo Aeroportuario del Sureste, S. A. B. de C. V.",Industrials,"Airlines, Airports & Air Services",0,64.35,25.51,25.4,98.57,157.73,15.52,15.3,13.67,102.58,-0.28,0.1983,compounder

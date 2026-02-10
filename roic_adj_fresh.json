@@ -1,0 +1,227 @@
+[
+  {
+    "ticker": "VITL",
+    "roic": 0.1488,
+    "roicAdj": 0.2555
+  },
+  {
+    "ticker": "ADP",
+    "roic": 0.2401,
+    "roicAdj": 2.4007
+  },
+  {
+    "ticker": "BBW",
+    "roic": 0.2105,
+    "roicAdj": 0.2338
+  },
+  {
+    "ticker": "CVLT",
+    "roic": 0.0599,
+    "roicAdj": 0.0813
+  },
+  {
+    "ticker": "PTRN",
+    "roic": -0.0507,
+    "roicAdj": -0.0507
+  },
+  {
+    "ticker": "LNTH",
+    "roic": 0.1244,
+    "roicAdj": 0.2598
+  },
+  {
+    "ticker": "BMI",
+    "roic": 0.1673,
+    "roicAdj": 0.2307
+  },
+  {
+    "ticker": "COKE",
+    "roic": 0.1462,
+    "roicAdj": 0.2402
+  },
+  {
+    "ticker": "ASR",
+    "roic": 3.2322,
+    "roicAdj": 32.3225
+  },
+  {
+    "ticker": "VMEO",
+    "roic": 0.0126,
+    "roicAdj": 0.0829
+  },
+  {
+    "ticker": "MWA",
+    "roic": 0.1268,
+    "roicAdj": 0.1587
+  },
+  {
+    "ticker": "ADSK",
+    "roic": 0.171,
+    "roicAdj": 0.3091
+  },
+  {
+    "ticker": "APH",
+    "roic": 0.1512,
+    "roicAdj": 0.2486
+  },
+  {
+    "ticker": "PCTY",
+    "roic": 0.1742,
+    "roicAdj": 0.1742
+  },
+  {
+    "ticker": "ROST",
+    "roic": 0.1704,
+    "roicAdj": 0.3086
+  },
+  {
+    "ticker": "GOOGL",
+    "roic": 0.2322,
+    "roicAdj": 0.3165
+  },
+  {
+    "ticker": "GWW",
+    "roic": 0.271,
+    "roicAdj": 0.3112
+  },
+  {
+    "ticker": "TSM",
+    "roic": 0.246,
+    "roicAdj": 0.4914
+  },
+  {
+    "ticker": "VLTO",
+    "roic": 0.164,
+    "roicAdj": 0.2099
+  },
+  {
+    "ticker": "MRK",
+    "roic": 0.191,
+    "roicAdj": 0.2274
+  },
+  {
+    "ticker": "MDXG",
+    "roic": 0.1503,
+    "roicAdj": 0.262
+  },
+  {
+    "ticker": "FTNT",
+    "roic": 0.3325,
+    "roicAdj": 3.3251
+  },
+  {
+    "ticker": "TJX",
+    "roic": 0.2129,
+    "roicAdj": 0.2824
+  },
+  {
+    "ticker": "FLT",
+    "roic": 0.116,
+    "roicAdj": 0.1359
+  },
+  {
+    "ticker": "MNKD",
+    "roic": 0.1593,
+    "roicAdj": 0.3573
+  },
+  {
+    "ticker": "MELI",
+    "roic": 0.1604,
+    "roicAdj": 0.2716
+  },
+  {
+    "ticker": "NVDA",
+    "roic": 0.6887,
+    "roicAdj": 1.1146
+  },
+  {
+    "ticker": "DFS",
+    "roic": 0.1058,
+    "roicAdj": 0.1058
+  },
+  {
+    "ticker": "EXEL",
+    "roic": 0.2536,
+    "roicAdj": 1.014
+  },
+  {
+    "ticker": "IESC",
+    "roic": 0.3478,
+    "roicAdj": 0.4392
+  },
+  {
+    "ticker": "ANET",
+    "roic": 0.2271,
+    "roicAdj": 0.8155
+  },
+  {
+    "ticker": "IPAR",
+    "roic": 0.1588,
+    "roicAdj": 0.1936
+  },
+  {
+    "ticker": "LULU",
+    "roic": 0.267,
+    "roicAdj": 0.3943
+  },
+  {
+    "ticker": "USLM",
+    "roic": 0.1963,
+    "roicAdj": 0.3481
+  },
+  {
+    "ticker": "UTHR",
+    "roic": 0.1675,
+    "roicAdj": 0.56
+  },
+  {
+    "ticker": "DECK",
+    "roic": 0.327,
+    "roicAdj": 0.9551
+  },
+  {
+    "ticker": "NFLX",
+    "roic": 0.2522,
+    "roicAdj": 0.3291
+  },
+  {
+    "ticker": "HLNE",
+    "roic": 0.896,
+    "roicAdj": 8.9605
+  },
+  {
+    "ticker": "KLAC",
+    "roic": 0.3695,
+    "roicAdj": 0.6224
+  },
+  {
+    "ticker": "FFIV",
+    "roic": 0.1399,
+    "roicAdj": 0.2141
+  },
+  {
+    "ticker": "ALSN",
+    "roic": 0.1497,
+    "roicAdj": 0.1763
+  },
+  {
+    "ticker": "MSI",
+    "roic": 0.1575,
+    "roicAdj": 0.19
+  },
+  {
+    "ticker": "RMD",
+    "roic": 0.1976,
+    "roicAdj": 0.2384
+  },
+  {
+    "ticker": "CTAS",
+    "roic": 0.2279,
+    "roicAdj": 0.2331
+  },
+  {
+    "ticker": "ROL",
+    "roic": 0.2024,
+    "roicAdj": 0.2074
+  }
+]

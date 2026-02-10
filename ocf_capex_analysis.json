@@ -1,0 +1,1572 @@
+[
+  {
+    "ticker": "APP",
+    "type": "Cow",
+    "ocf": 2099011000,
+    "capex": 4776000,
+    "ocf_capex": 439.4914154103853,
+    "ocf_capex_5yr_avg": 328.42244486249615,
+    "compPower": 0.0,
+    "roiic": 0.5127480952431412
+  },
+  {
+    "ticker": "VMEO",
+    "type": "Machine",
+    "ocf": 56861000,
+    "capex": 222000,
+    "ocf_capex": 256.1306306306306,
+    "ocf_capex_5yr_avg": 122.40864417940809,
+    "compPower": 0.37564657358005826,
+    "roiic": 0.694217202041429
+  },
+  {
+    "ticker": "HRMY",
+    "type": "Cow",
+    "ocf": 219821000,
+    "capex": 1153000,
+    "ocf_capex": 190.65134431916738,
+    "ocf_capex_5yr_avg": 412.5941178874491,
+    "compPower": 0.05168861316527177,
+    "roiic": 0.4243961030294942
+  },
+  {
+    "ticker": "FUTU",
+    "type": "Cow",
+    "ocf": 30996323000,
+    "capex": 167521000,
+    "ocf_capex": 185.0294769014034,
+    "ocf_capex_5yr_avg": 137.08371749478073,
+    "compPower": 0.0,
+    "roiic": 0.42881377433291384
+  },
+  {
+    "ticker": "IBKR",
+    "type": "Cow",
+    "ocf": 8724000000,
+    "capex": 49000000,
+    "ocf_capex": 178.0408163265306,
+    "ocf_capex_5yr_avg": 113.24283703046436,
+    "compPower": 0.0,
+    "roiic": 0.23968052021487135
+  },
+  {
+    "ticker": "SPOT",
+    "type": "Cow",
+    "ocf": 2301000000,
+    "capex": 17000000,
+    "ocf_capex": 135.35294117647058,
+    "ocf_capex_5yr_avg": 51.61876923076924,
+    "compPower": 0.0,
+    "roiic": 2.478141462059819
+  },
+  {
+    "ticker": "PDD",
+    "type": "Cow",
+    "ocf": 121929292000,
+    "capex": 967137000,
+    "ocf_capex": 126.07240959657216,
+    "ocf_capex_5yr_avg": 192.439379285289,
+    "compPower": 0.0,
+    "roiic": 0.4284000217670781
+  },
+  {
+    "ticker": "ANET",
+    "type": "Cow",
+    "ocf": 3708235000,
+    "capex": 32032000,
+    "ocf_capex": 115.76657717282717,
+    "ocf_capex_5yr_avg": 49.87036934333504,
+    "compPower": 0.0,
+    "roiic": 0.3076999973500905
+  },
+  {
+    "ticker": "ABNB",
+    "type": "Cow",
+    "ocf": 4518000000,
+    "capex": 0,
+    "ocf_capex": 99,
+    "ocf_capex_5yr_avg": 60.1745899226673,
+    "compPower": 0.0011845153407885152,
+    "roiic": 1.1340253743874047
+  },
+  {
+    "ticker": "QFIN",
+    "type": "Cow",
+    "ocf": 9343311000,
+    "capex": 153150000,
+    "ocf_capex": 61.00758080313418,
+    "ocf_capex_5yr_avg": 188.45510872238052,
+    "compPower": 0.12001168785531884,
+    "roiic": 0.41230927007611623
+  },
+  {
+    "ticker": "CVLT",
+    "type": "Machine",
+    "ocf": 207382000,
+    "capex": 3756000,
+    "ocf_capex": 55.21352502662407,
+    "ocf_capex_5yr_avg": 43.61926054527205,
+    "compPower": 0.8001525089695566,
+    "roiic": 0.6135608313662665
+  },
+  {
+    "ticker": "GDDY",
+    "type": "Cow",
+    "ocf": 1287700000,
+    "capex": 26600000,
+    "ocf_capex": 48.409774436090224,
+    "ocf_capex_5yr_avg": 18.180538887159596,
+    "compPower": 0.0,
+    "roiic": 0.4257423481041572
+  },
+  {
+    "ticker": "IPAR",
+    "type": "Cow",
+    "ocf": 187642000,
+    "capex": 4740000,
+    "ocf_capex": 39.58691983122363,
+    "ocf_capex_5yr_avg": 9.71496842897683,
+    "compPower": 0.04991923046097899,
+    "roiic": 0.39454684922213484
+  },
+  {
+    "ticker": "KLCIX",
+    "type": "Cow",
+    "ocf": 311831000,
+    "capex": 7915000,
+    "ocf_capex": 39.397473152242576,
+    "ocf_capex_5yr_avg": 31.30898617316773,
+    "compPower": 0.023808787786770112,
+    "roiic": 0.8741673906747756
+  },
+  {
+    "ticker": "MDXG",
+    "type": "Machine",
+    "ocf": 66198000,
+    "capex": 1683000,
+    "ocf_capex": 39.333333333333336,
+    "ocf_capex_5yr_avg": 6.643278228438293,
+    "compPower": 0.2368306976140239,
+    "roiic": 1.1698119558387936
+  },
+  {
+    "ticker": "DFS",
+    "type": "Cow",
+    "ocf": 8425000000,
+    "capex": 268000000,
+    "ocf_capex": 31.436567164179106,
+    "ocf_capex_5yr_avg": 28.943353464466167,
+    "compPower": 0.048860275884824556,
+    "roiic": 0.8959068843777581
+  },
+  {
+    "ticker": "ATAT",
+    "type": "Cow",
+    "ocf": 1725948000,
+    "capex": 56238000,
+    "ocf_capex": 30.69006721433906,
+    "ocf_capex_5yr_avg": 18.591874881073966,
+    "compPower": 0.0,
+    "roiic": 0.9304793065183558
+  },
+  {
+    "ticker": "ADP",
+    "type": "Machine",
+    "ocf": 4939700000,
+    "capex": 168700000,
+    "ocf_capex": 29.2809721398933,
+    "ocf_capex_5yr_avg": 11.147365250326565,
+    "compPower": 1.1999221013835442,
+    "roiic": 2.443382238176994
+  },
+  {
+    "ticker": "HLNE",
+    "type": "Cow",
+    "ocf": 323516000,
+    "capex": 12156000,
+    "ocf_capex": 26.613688713392563,
+    "ocf_capex_5yr_avg": 22.94515442686679,
+    "compPower": 0.10947947806474698,
+    "roiic": 0.4078321848563333
+  },
+  {
+    "ticker": "WSO",
+    "type": "Cow",
+    "ocf": 773102000,
+    "capex": 30090000,
+    "ocf_capex": 25.692987703556,
+    "ocf_capex_5yr_avg": 20.76320637817842,
+    "compPower": 0.0,
+    "roiic": 0.24386464931008348
+  },
+  {
+    "ticker": "NSSC",
+    "type": "Cow",
+    "ocf": 53527000,
+    "capex": 2116000,
+    "ocf_capex": 25.296313799621927,
+    "ocf_capex_5yr_avg": 18.10926944835041,
+    "compPower": 0.0,
+    "roiic": 1.974225352112676
+  },
+  {
+    "ticker": "YOU",
+    "type": "Cow",
+    "ocf": 295677000,
+    "capex": 12009000,
+    "ocf_capex": 24.62128403697227,
+    "ocf_capex_5yr_avg": 8.036790126868235,
+    "compPower": 0.0,
+    "roiic": 0.20695158509498143
+  },
+  {
+    "ticker": "ROL",
+    "type": "Cow",
+    "ocf": 607653000,
+    "capex": 27572000,
+    "ocf_capex": 22.038771217176848,
+    "ocf_capex_5yr_avg": 17.41243034873188,
+    "compPower": 0.048463271278128835,
+    "roiic": 0.25999302088432547
+  },
+  {
+    "ticker": "FFIV",
+    "type": "Cow",
+    "ocf": 949666000,
+    "capex": 43260000,
+    "ocf_capex": 21.952519648636155,
+    "ocf_capex_5yr_avg": 18.856323535454955,
+    "compPower": 0.13710387178334862,
+    "roiic": 0.8256122322131522
+  },
+  {
+    "ticker": "EXPO",
+    "type": "Cow",
+    "ocf": 144537000,
+    "capex": 6939000,
+    "ocf_capex": 20.829658452226546,
+    "ocf_capex_5yr_avg": 15.074112501152417,
+    "compPower": 0.0,
+    "roiic": 0.35715597292901735
+  },
+  {
+    "ticker": "HAFN",
+    "type": "Cow",
+    "ocf": 1030364000,
+    "capex": 49623000,
+    "ocf_capex": 20.763839348689118,
+    "ocf_capex_5yr_avg": 8.075459088835993,
+    "compPower": 0.0,
+    "roiic": 0.8109340020110565
+  },
+  {
+    "ticker": "NVDA",
+    "type": "Cow",
+    "ocf": 64089000000,
+    "capex": 3236000000,
+    "ocf_capex": 19.805006180469714,
+    "ocf_capex_5yr_avg": 12.730536767141508,
+    "compPower": 0.18225263030471264,
+    "roiic": 0.9465879631148886
+  },
+  {
+    "ticker": "RMD",
+    "type": "Cow",
+    "ocf": 1751588000,
+    "capex": 89865000,
+    "ocf_capex": 19.491325877705446,
+    "ocf_capex_5yr_avg": 9.084376325326796,
+    "compPower": 0.0,
+    "roiic": 0.24178417067396918
+  },
+  {
+    "ticker": "OMAB",
+    "type": "Cow",
+    "ocf": 6196669000,
+    "capex": 321338000,
+    "ocf_capex": 19.283959569051902,
+    "ocf_capex_5yr_avg": 7.978718459951845,
+    "compPower": 0.025385814154988362,
+    "roiic": 0.42218872183824196
+  },
+  {
+    "ticker": "AIT",
+    "type": "Machine",
+    "ocf": 492385000,
+    "capex": 27187000,
+    "ocf_capex": 18.111045720381064,
+    "ocf_capex_5yr_avg": 14.327199346104603,
+    "compPower": 0.2032063767869365,
+    "roiic": 0.32582521264011716
+  },
+  {
+    "ticker": "NTES",
+    "type": "Cow",
+    "ocf": 39676813000,
+    "capex": 2206388000,
+    "ocf_capex": 17.982699779005326,
+    "ocf_capex_5yr_avg": 10.461278877088317,
+    "compPower": 0.0,
+    "roiic": 1.2640925364336315
+  },
+  {
+    "ticker": "CBOE",
+    "type": "Cow",
+    "ocf": 1024599999,
+    "capex": 60900000,
+    "ocf_capex": 16.8243021182266,
+    "ocf_capex_5yr_avg": 18.28998800896391,
+    "compPower": 0.0,
+    "roiic": 0.634257464133385
+  },
+  {
+    "ticker": "INFY",
+    "type": "Cow",
+    "ocf": 4351000000,
+    "capex": 263000000,
+    "ocf_capex": 16.543726235741445,
+    "ocf_capex_5yr_avg": 12.057589615121513,
+    "compPower": 0.01889895591612521,
+    "roiic": 0.4092428166731156
+  },
+  {
+    "ticker": "VLTO",
+    "type": "Machine",
+    "ocf": 875000000,
+    "capex": 55000000,
+    "ocf_capex": 15.909090909090908,
+    "ocf_capex_5yr_avg": 20.74576153693801,
+    "compPower": 0.28449631974519823,
+    "roiic": 0.5652492668621701
+  },
+  {
+    "ticker": "ADSK",
+    "type": "Machine",
+    "ocf": 1607000000,
+    "capex": 102000000,
+    "ocf_capex": 15.754901960784315,
+    "ocf_capex_5yr_avg": 28.22899833655821,
+    "compPower": 0.34755004065044914,
+    "roiic": 0.2928938309382001
+  },
+  {
+    "ticker": "CRUS",
+    "type": "Cow",
+    "ocf": 444366000,
+    "capex": 28753000,
+    "ocf_capex": 15.454596042152124,
+    "ocf_capex_5yr_avg": 11.835524317934864,
+    "compPower": 0.0011828608422914206,
+    "roiic": 0.31115230280888784
+  },
+  {
+    "ticker": "NFLX",
+    "type": "Cow",
+    "ocf": 10149273000,
+    "capex": 688220000,
+    "ocf_capex": 14.747134637179972,
+    "ocf_capex_5yr_avg": 11.616637906996814,
+    "compPower": 0.0,
+    "roiic": 0.9700029322753205
+  },
+  {
+    "ticker": "SNA",
+    "type": "Cow",
+    "ocf": 1217500000,
+    "capex": 83500000,
+    "ocf_capex": 14.580838323353293,
+    "ocf_capex_5yr_avg": 12.782637484275428,
+    "compPower": 0.01519326585582316,
+    "roiic": 0.31551817688551276
+  },
+  {
+    "ticker": "PNT",
+    "type": "Cow",
+    "ocf": 183518622,
+    "capex": 12766522,
+    "ocf_capex": 14.374989680039716,
+    "ocf_capex_5yr_avg": 2.816463157314342,
+    "compPower": 0.0,
+    "roiic": 0.44384673304662303
+  },
+  {
+    "ticker": "NVMI",
+    "type": "Cow",
+    "ocf": 235266000,
+    "capex": 17215000,
+    "ocf_capex": 13.666337496369446,
+    "ocf_capex_5yr_avg": 12.655319858058903,
+    "compPower": 0.0,
+    "roiic": 0.20540504083093813
+  },
+  {
+    "ticker": "ESQ",
+    "type": "Cow",
+    "ocf": 42212000,
+    "capex": 3149000,
+    "ocf_capex": 13.404890441409972,
+    "ocf_capex_5yr_avg": 14.819449707828715,
+    "compPower": 0.12693431808960004,
+    "roiic": 0.5449268006407918
+  },
+  {
+    "ticker": "BMI",
+    "type": "Machine",
+    "ocf": 183698000,
+    "capex": 14026000,
+    "ocf_capex": 13.096962783402253,
+    "ocf_capex_5yr_avg": 12.26686718330865,
+    "compPower": 0.39887394316637814,
+    "roiic": 0.33364988718785454
+  },
+  {
+    "ticker": "BAP",
+    "type": "Cow",
+    "ocf": 14522093000,
+    "capex": 1111434000,
+    "ocf_capex": 13.066086695206373,
+    "ocf_capex_5yr_avg": 8.312392453397209,
+    "compPower": 0.0,
+    "roiic": 1.1350215335075076
+  },
+  {
+    "ticker": "RJF",
+    "type": "Cow",
+    "ocf": 2434000000,
+    "capex": 188000000,
+    "ocf_capex": 12.946808510638299,
+    "ocf_capex_5yr_avg": 18.752479603959788,
+    "compPower": 0.019440555553528062,
+    "roiic": 0.6650128040973111
+  },
+  {
+    "ticker": "DECK",
+    "type": "Cow",
+    "ocf": 1044523000,
+    "capex": 86171000,
+    "ocf_capex": 12.12151419851226,
+    "ocf_capex_5yr_avg": 10.439951279003846,
+    "compPower": 0.08649090422987474,
+    "roiic": 1.3900903263723348
+  },
+  {
+    "ticker": "JKHY",
+    "type": "Cow",
+    "ocf": 641504000,
+    "capex": 53358000,
+    "ocf_capex": 12.022639529217736,
+    "ocf_capex_5yr_avg": 9.746398153875143,
+    "compPower": 0.0,
+    "roiic": 0.23467749951222744
+  },
+  {
+    "ticker": "KLAC",
+    "type": "Cow",
+    "ocf": 4081903000,
+    "capex": 340209000,
+    "ocf_capex": 11.998221681378212,
+    "ocf_capex_5yr_avg": 10.976387660020066,
+    "compPower": 0.0981314012668475,
+    "roiic": 0.651250924308882
+  },
+  {
+    "ticker": "CELH",
+    "type": "Cow",
+    "ocf": 262898000,
+    "capex": 23390000,
+    "ocf_capex": 11.239760581445061,
+    "ocf_capex_5yr_avg": 1.5367082732630075,
+    "compPower": 0.06092433854808578,
+    "roiic": 0.24664537417893334
+  },
+  {
+    "ticker": "BLD",
+    "type": "Cow",
+    "ocf": 776026000,
+    "capex": 69349000,
+    "ocf_capex": 11.19015414786082,
+    "ocf_capex_5yr_avg": 9.39029030351723,
+    "compPower": 0.034432904039124614,
+    "roiic": 0.25233736741883334
+  },
+  {
+    "ticker": "FLT",
+    "type": "Machine",
+    "ocf": 1940565000,
+    "capex": 175176000,
+    "ocf_capex": 11.077801753664886,
+    "ocf_capex_5yr_avg": 11.846394036144886,
+    "compPower": 0.20978166194143366,
+    "roiic": 0.4352621533465324
+  },
+  {
+    "ticker": "CART",
+    "type": "Cow",
+    "ocf": 687000000,
+    "capex": 64000000,
+    "ocf_capex": 10.734375,
+    "ocf_capex_5yr_avg": 1.915955919080919,
+    "compPower": 0.17606278046348284,
+    "roiic": 0.2989399293286219
+  },
+  {
+    "ticker": "EXEL",
+    "type": "Cow",
+    "ocf": 699971000,
+    "capex": 66185000,
+    "ocf_capex": 10.575976429704616,
+    "ocf_capex_5yr_avg": 5.673554415897158,
+    "compPower": 0.05831161770626808,
+    "roiic": 0.5201563198983578
+  },
+  {
+    "ticker": "LNTH",
+    "type": "Machine",
+    "ocf": 544750000,
+    "capex": 51625000,
+    "ocf_capex": 10.552058111380145,
+    "ocf_capex_5yr_avg": 7.644611518928786,
+    "compPower": 0.5666827590188983,
+    "roiic": 2.948827742017989
+  },
+  {
+    "ticker": "WTS",
+    "type": "Cow",
+    "ocf": 361100000,
+    "capex": 35300000,
+    "ocf_capex": 10.229461756373938,
+    "ocf_capex_5yr_avg": 8.132183668578502,
+    "compPower": 0.0852060151438517,
+    "roiic": 0.4069872958257713
+  },
+  {
+    "ticker": "FOX",
+    "type": "Cow",
+    "ocf": 3324000000,
+    "capex": 331000000,
+    "ocf_capex": 10.042296072507552,
+    "ocf_capex_5yr_avg": 6.401386673799226,
+    "compPower": 0.0,
+    "roiic": 0.38283828382838286
+  },
+  {
+    "ticker": "FOXA",
+    "type": "Cow",
+    "ocf": 3324000000,
+    "capex": 331000000,
+    "ocf_capex": 10.042296072507552,
+    "ocf_capex_5yr_avg": 6.401386673799226,
+    "compPower": 0.0,
+    "roiic": 0.38283828382838286
+  },
+  {
+    "ticker": "TDGMW",
+    "type": "Cow",
+    "ocf": 273849000,
+    "capex": 27580000,
+    "ocf_capex": 9.929260333575055,
+    "ocf_capex_5yr_avg": 3.4229969949698558,
+    "compPower": 0.0858576982461665,
+    "roiic": 0.5600513150220846
+  },
+  {
+    "ticker": "TDW",
+    "type": "Cow",
+    "ocf": 273849000,
+    "capex": 27580000,
+    "ocf_capex": 9.929260333575055,
+    "ocf_capex_5yr_avg": 3.5211619514618553,
+    "compPower": 0.05263885547534362,
+    "roiic": 0.7467649927644571
+  },
+  {
+    "ticker": "IDXX",
+    "type": "Cow",
+    "ocf": 1181805000,
+    "capex": 124676000,
+    "ocf_capex": 9.479009592864704,
+    "ocf_capex_5yr_avg": 6.665329860309025,
+    "compPower": 0.13370423579500856,
+    "roiic": 0.53391142603493
+  },
+  {
+    "ticker": "DDL",
+    "type": "Cow",
+    "ocf": 929027000,
+    "capex": 98176000,
+    "ocf_capex": 9.462872799869622,
+    "ocf_capex_5yr_avg": -2.665793111393623,
+    "compPower": 0.0,
+    "roiic": 1.1767164953654985
+  },
+  {
+    "ticker": "EA",
+    "type": "Cow",
+    "ocf": 2079000000,
+    "capex": 221000000,
+    "ocf_capex": 9.407239819004525,
+    "ocf_capex_5yr_avg": 10.845233275359977,
+    "compPower": 0.0,
+    "roiic": 0.2080163838502048
+  },
+  {
+    "ticker": "MTD",
+    "type": "Cow",
+    "ocf": 968346000,
+    "capex": 103898000,
+    "ocf_capex": 9.320160157077133,
+    "ocf_capex_5yr_avg": 8.371871104600118,
+    "compPower": 0.0,
+    "roiic": 1.9419234427367975
+  },
+  {
+    "ticker": "MSI",
+    "type": "Cow",
+    "ocf": 2391000000,
+    "capex": 257000000,
+    "ocf_capex": 9.303501945525293,
+    "ocf_capex_5yr_avg": 7.899299516863962,
+    "compPower": 0.13653273809523808,
+    "roiic": 0.75
+  },
+  {
+    "ticker": "MELI",
+    "type": "Cow",
+    "ocf": 7918000000,
+    "capex": 860000000,
+    "ocf_capex": 9.206976744186047,
+    "ocf_capex_5yr_avg": 6.4270042773055085,
+    "compPower": 0.0,
+    "roiic": 0.38124941357960757
+  },
+  {
+    "ticker": "AOS",
+    "type": "Cow",
+    "ocf": 616800000,
+    "capex": 70800000,
+    "ocf_capex": 8.711864406779661,
+    "ocf_capex_5yr_avg": 7.487173844681287,
+    "compPower": 0.034826220291336564,
+    "roiic": 0.45930232558139533
+  },
+  {
+    "ticker": "TT",
+    "type": "Cow",
+    "ocf": 3194500000,
+    "capex": 383000000,
+    "ocf_capex": 8.340731070496084,
+    "ocf_capex_5yr_avg": 7.410403232162038,
+    "compPower": 0.062329931574503186,
+    "roiic": 0.6560517435320585
+  },
+  {
+    "ticker": "LRCX",
+    "type": "Cow",
+    "ocf": 6173264000,
+    "capex": 759186000,
+    "ocf_capex": 8.131424973590134,
+    "ocf_capex_5yr_avg": 9.228075610739733,
+    "compPower": 0.0,
+    "roiic": 2.417810016494227
+  },
+  {
+    "ticker": "WHD",
+    "type": "Cow",
+    "ocf": 316113000,
+    "capex": 39176000,
+    "ocf_capex": 8.069047375944455,
+    "ocf_capex_5yr_avg": 6.080325575830787,
+    "compPower": 0.016312526785816916,
+    "roiic": 0.222649231181073
+  },
+  {
+    "ticker": "MLI",
+    "type": "Machine",
+    "ocf": 645908000,
+    "capex": 80203000,
+    "ocf_capex": 8.053414460805705,
+    "ocf_capex_5yr_avg": 11.023265127404404,
+    "compPower": 0.6100613926600995,
+    "roiic": 0.5006276722997047
+  },
+  {
+    "ticker": "ABMD",
+    "type": "Cow",
+    "ocf": 285390000,
+    "capex": 35763000,
+    "ocf_capex": 7.980035231943629,
+    "ocf_capex_5yr_avg": 5.891572463255413,
+    "compPower": 0.09389886863571796,
+    "roiic": 0.21746872477804682
+  },
+  {
+    "ticker": "ONON",
+    "type": "Cow",
+    "ocf": 510600000,
+    "capex": 65000000,
+    "ocf_capex": 7.855384615384615,
+    "ocf_capex_5yr_avg": 1.9428691971577046,
+    "compPower": 0.0,
+    "roiic": 0.2924871597241643
+  },
+  {
+    "ticker": "YELP",
+    "type": "Machine",
+    "ocf": 285815000,
+    "capex": 37347000,
+    "ocf_capex": 7.652957399523388,
+    "ocf_capex_5yr_avg": 7.445611110672781,
+    "compPower": 1.016053934348582,
+    "roiic": 0.7293085961910811
+  },
+  {
+    "ticker": "SHOO",
+    "type": "Machine",
+    "ocf": 198096000,
+    "capex": 25911000,
+    "ocf_capex": 7.645247192312145,
+    "ocf_capex_5yr_avg": 12.97706261603673,
+    "compPower": 0.40932241902858135,
+    "roiic": 1.248227318433942
+  },
+  {
+    "ticker": "CALM",
+    "type": "Machine",
+    "ocf": 1228784000,
+    "capex": 161255000,
+    "ocf_capex": 7.620129608384236,
+    "ocf_capex_5yr_avg": 3.8051649442881947,
+    "compPower": 0.2398234799043281,
+    "roiic": 0.9775004774489797
+  },
+  {
+    "ticker": "GRMN",
+    "type": "Cow",
+    "ocf": 1432471000,
+    "capex": 193571000,
+    "ocf_capex": 7.400235572477282,
+    "ocf_capex_5yr_avg": 5.396978051077092,
+    "compPower": 0.05386409829874248,
+    "roiic": 0.2476712876884307
+  },
+  {
+    "ticker": "ALLE",
+    "type": "Cow",
+    "ocf": 675000000,
+    "capex": 92100000,
+    "ocf_capex": 7.328990228013029,
+    "ocf_capex_5yr_avg": 8.562715069377758,
+    "compPower": 0.05324383853277641,
+    "roiic": 0.23196129878648739
+  },
+  {
+    "ticker": "G",
+    "type": "Cow",
+    "ocf": 615424000,
+    "capex": 85235000,
+    "ocf_capex": 7.220320290960286,
+    "ocf_capex_5yr_avg": 8.83477576583699,
+    "compPower": 0.09960394357228927,
+    "roiic": 0.5133664820355002
+  },
+  {
+    "ticker": "LRN",
+    "type": "Cow",
+    "ocf": 432816000,
+    "capex": 60010000,
+    "ocf_capex": 7.21239793367772,
+    "ocf_capex_5yr_avg": 4.083575686190214,
+    "compPower": 0.04757324419405695,
+    "roiic": 0.5785621581533327
+  },
+  {
+    "ticker": "VMI",
+    "type": "Cow",
+    "ocf": 572678000,
+    "capex": 79451000,
+    "ocf_capex": 7.207939484713849,
+    "ocf_capex_5yr_avg": 3.4903007994576773,
+    "compPower": 0.0,
+    "roiic": 0.47734320386694173
+  },
+  {
+    "ticker": "VRT",
+    "type": "Cow",
+    "ocf": 1319300000,
+    "capex": 184100000,
+    "ocf_capex": 7.166214014122759,
+    "ocf_capex_5yr_avg": 3.7873370545935936,
+    "compPower": 0.0,
+    "roiic": 0.38816606247206636
+  },
+  {
+    "ticker": "TTD",
+    "type": "Cow",
+    "ocf": 739456000,
+    "capex": 107062000,
+    "ocf_capex": 6.906801666324186,
+    "ocf_capex_5yr_avg": 7.02418832637768,
+    "compPower": 0.14754923014674334,
+    "roiic": 0.2065567045027613
+  },
+  {
+    "ticker": "MRK",
+    "type": "Machine",
+    "ocf": 21468000000,
+    "capex": 3372000000,
+    "ocf_capex": 6.366548042704626,
+    "ocf_capex_5yr_avg": 3.8891861449850054,
+    "compPower": 0.2502529778747831,
+    "roiic": 0.5721806270472625
+  },
+  {
+    "ticker": "FELE",
+    "type": "Cow",
+    "ocf": 261353000,
+    "capex": 41682000,
+    "ocf_capex": 6.270164579434768,
+    "ocf_capex_5yr_avg": 5.979502017157438,
+    "compPower": 0.0,
+    "roiic": 0.37129960660414923
+  },
+  {
+    "ticker": "WSM",
+    "type": "Machine",
+    "ocf": 1360222000,
+    "capex": 221567000,
+    "ocf_capex": 6.139100136753217,
+    "ocf_capex_5yr_avg": 6.320383557638451,
+    "compPower": 0.21571855000746967,
+    "roiic": 0.6913354886446913
+  },
+  {
+    "ticker": "IDT",
+    "type": "Cow",
+    "ocf": 127061000,
+    "capex": 20770000,
+    "ocf_capex": 6.117525276841598,
+    "ocf_capex_5yr_avg": 3.606650082371755,
+    "compPower": 0.03658288501443968,
+    "roiic": 0.8037776352151599
+  },
+  {
+    "ticker": "FTNT",
+    "type": "Machine",
+    "ocf": 2258100000,
+    "capex": 378900000,
+    "ocf_capex": 5.959619952494061,
+    "ocf_capex_5yr_avg": 7.05458928567044,
+    "compPower": 0.23269178179551164,
+    "roiic": 0.5699515926612084
+  },
+  {
+    "ticker": "ORLA",
+    "type": "Cow",
+    "ocf": 174619000,
+    "capex": 29428000,
+    "ocf_capex": 5.9337705586516245,
+    "ocf_capex_5yr_avg": 2.7060474011657143,
+    "compPower": 0.0,
+    "roiic": 0.6118896870008736
+  },
+  {
+    "ticker": "EXLS",
+    "type": "Cow",
+    "ocf": 268525000,
+    "capex": 46262000,
+    "ocf_capex": 5.804439929099477,
+    "ocf_capex_5yr_avg": 4.653401364987674,
+    "compPower": 0.09212088280603203,
+    "roiic": 0.31875534378709525
+  },
+  {
+    "ticker": "BKE",
+    "type": "Cow",
+    "ocf": 242014000,
+    "capex": 42275000,
+    "ocf_capex": 5.724754583086931,
+    "ocf_capex_5yr_avg": 13.312631309659508,
+    "compPower": 0.028340855425127237,
+    "roiic": 0.49268670619637067
+  },
+  {
+    "ticker": "ALSN",
+    "type": "Cow",
+    "ocf": 801000000,
+    "capex": 143000000,
+    "ocf_capex": 5.601398601398602,
+    "ocf_capex_5yr_avg": 4.862872527212439,
+    "compPower": 0.19010910815939283,
+    "roiic": 1.3470588235294119
+  },
+  {
+    "ticker": "PCTY",
+    "type": "Machine",
+    "ocf": 418226000,
+    "capex": 75475000,
+    "ocf_capex": 5.541252070221928,
+    "ocf_capex_5yr_avg": 7.465848485076052,
+    "compPower": 0.33023149435429167,
+    "roiic": 0.2491347132906418
+  },
+  {
+    "ticker": "ABEV",
+    "type": "Cow",
+    "ocf": 26099035000,
+    "capex": 4749101000,
+    "ocf_capex": 5.495573793861196,
+    "ocf_capex_5yr_avg": 3.9544203931295114,
+    "compPower": 0.0,
+    "roiic": 0.4418720853269816
+  },
+  {
+    "ticker": "HUBB",
+    "type": "Cow",
+    "ocf": 991200000,
+    "capex": 180400000,
+    "ocf_capex": 5.494456762749445,
+    "ocf_capex_5yr_avg": 5.735933966323184,
+    "compPower": 0.0,
+    "roiic": 0.3739665970772443
+  },
+  {
+    "ticker": "MNESP",
+    "type": "Cow",
+    "ocf": 296428000,
+    "capex": 54223000,
+    "ocf_capex": 5.466831418401785,
+    "ocf_capex_5yr_avg": 3.8998128087684636,
+    "compPower": 0.09018879707326219,
+    "roiic": 0.534161643377617
+  },
+  {
+    "ticker": "MSA",
+    "type": "Cow",
+    "ocf": 296428000,
+    "capex": 54223000,
+    "ocf_capex": 5.466831418401785,
+    "ocf_capex_5yr_avg": 3.8998128087684636,
+    "compPower": 0.09018879707326219,
+    "roiic": 0.534161643377617
+  },
+  {
+    "ticker": "ITRN",
+    "type": "Cow",
+    "ocf": 74267000,
+    "capex": 13632000,
+    "ocf_capex": 5.447990023474178,
+    "ocf_capex_5yr_avg": 4.3593494942589075,
+    "compPower": 0.0,
+    "roiic": 0.6351023746239448
+  },
+  {
+    "ticker": "APH",
+    "type": "Machine",
+    "ocf": 5374700000,
+    "capex": 996600000,
+    "ocf_capex": 5.393036323499899,
+    "ocf_capex_5yr_avg": 5.269079269574456,
+    "compPower": 0.3323885310084965,
+    "roiic": 0.39169865048904295
+  },
+  {
+    "ticker": "UTHR",
+    "type": "Cow",
+    "ocf": 1327100000,
+    "capex": 246500000,
+    "ocf_capex": 5.383772819472616,
+    "ocf_capex_5yr_avg": 6.621185550377516,
+    "compPower": 0.10946614673857988,
+    "roiic": 0.4270916624264011
+  },
+  {
+    "ticker": "DCI",
+    "type": "Cow",
+    "ocf": 418800000,
+    "capex": 78900000,
+    "ocf_capex": 5.307984790874524,
+    "ocf_capex_5yr_avg": 5.107253070681295,
+    "compPower": 0.05419405185704961,
+    "roiic": 0.2762905290102389
+  },
+  {
+    "ticker": "CTAS",
+    "type": "Cow",
+    "ocf": 2165905000,
+    "capex": 408884000,
+    "ocf_capex": 5.297113606793125,
+    "ocf_capex_5yr_avg": 6.215069081818925,
+    "compPower": 0.09031137371665594,
+    "roiic": 0.4084238066417495
+  },
+  {
+    "ticker": "FAST",
+    "type": "Cow",
+    "ocf": 1295900000,
+    "capex": 245300000,
+    "ocf_capex": 5.282918874847126,
+    "ocf_capex_5yr_avg": 5.817206616848557,
+    "compPower": 0.0,
+    "roiic": 0.483490219149875
+  },
+  {
+    "ticker": "LECO",
+    "type": "Cow",
+    "ocf": 598977000,
+    "capex": 116603000,
+    "ocf_capex": 5.136891846693481,
+    "ocf_capex_5yr_avg": 5.916043945127686,
+    "compPower": 0.17528733511145517,
+    "roiic": 0.35141428671533004
+  },
+  {
+    "ticker": "BRFS",
+    "type": "Cow",
+    "ocf": 10776742000,
+    "capex": 2263990000,
+    "ocf_capex": 4.76006607803038,
+    "ocf_capex_5yr_avg": 2.9343383265529694,
+    "compPower": 0.0,
+    "roiic": 0.7023102399248536
+  },
+  {
+    "ticker": "HIMS",
+    "type": "Cow",
+    "ocf": 251084000,
+    "capex": 52750000,
+    "ocf_capex": 4.759886255924171,
+    "ocf_capex_5yr_avg": -0.7171421824378916,
+    "compPower": 0.0,
+    "roiic": 0.3049949066572365
+  },
+  {
+    "ticker": "PG",
+    "type": "Cow",
+    "ocf": 17817000000,
+    "capex": 3773000000,
+    "ocf_capex": 4.722236946726743,
+    "ocf_capex_5yr_avg": 5.617821319220896,
+    "compPower": 0.11022377033288094,
+    "roiic": 0.49564343163538876
+  },
+  {
+    "ticker": "MWA",
+    "type": "Machine",
+    "ocf": 219300000,
+    "capex": 47300000,
+    "ocf_capex": 4.636363636363637,
+    "ocf_capex_5yr_avg": 3.0839162305142076,
+    "compPower": 0.3726464048984312,
+    "roiic": 2.619918699186992
+  },
+  {
+    "ticker": "USLM",
+    "type": "Cow",
+    "ocf": 126020000,
+    "capex": 27414000,
+    "ocf_capex": 4.5969212810972495,
+    "ocf_capex_5yr_avg": 2.994270657000869,
+    "compPower": 0.16321215675112175,
+    "roiic": 1.0767296291624622
+  },
+  {
+    "ticker": "ITT",
+    "type": "Machine",
+    "ocf": 562600000,
+    "capex": 123900000,
+    "ocf_capex": 4.540758676351897,
+    "ocf_capex_5yr_avg": 3.7968870345523884,
+    "compPower": 1.2872398203384605,
+    "roiic": 0.8613311190597854
+  },
+  {
+    "ticker": "ZTS",
+    "type": "Cow",
+    "ocf": 2953000000,
+    "capex": 655000000,
+    "ocf_capex": 4.508396946564885,
+    "ocf_capex_5yr_avg": 4.063649237297902,
+    "compPower": 0.120150162719389,
+    "roiic": 0.8397308075772681
+  },
+  {
+    "ticker": "MNKD",
+    "type": "Machine",
+    "ocf": 42511000,
+    "capex": 9693000,
+    "ocf_capex": 4.385742288249252,
+    "ocf_capex_5yr_avg": -3.3411715857815416,
+    "compPower": 0.20698485763753105,
+    "roiic": 0.3035070809923128
+  },
+  {
+    "ticker": "SCCO",
+    "type": "Cow",
+    "ocf": 4421800000,
+    "capex": 1027300000,
+    "ocf_capex": 4.304292806385671,
+    "ocf_capex_5yr_avg": 4.062436496642129,
+    "compPower": 0.0,
+    "roiic": 0.37239541911881663
+  },
+  {
+    "ticker": "IESC",
+    "type": "Cow",
+    "ocf": 286096000,
+    "capex": 67253000,
+    "ocf_capex": 4.254025842713336,
+    "ocf_capex_5yr_avg": 4.766773716276922,
+    "compPower": 0.14339072175190037,
+    "roiic": 0.5542906398442248
+  },
+  {
+    "ticker": "HSY",
+    "type": "Cow",
+    "ocf": 2531596000,
+    "capex": 605942000,
+    "ocf_capex": 4.177951025015595,
+    "ocf_capex_5yr_avg": 3.9441725349329753,
+    "compPower": 0.09923399815330172,
+    "roiic": 0.381943769182203
+  },
+  {
+    "ticker": "MORN",
+    "type": "Cow",
+    "ocf": 591600000,
+    "capex": 142700000,
+    "ocf_capex": 4.145760336370007,
+    "ocf_capex_5yr_avg": 3.7063690970773004,
+    "compPower": 0.0,
+    "roiic": 0.4681639268349155
+  },
+  {
+    "ticker": "GWW",
+    "type": "Machine",
+    "ocf": 2111000000,
+    "capex": 541000000,
+    "ocf_capex": 3.9020332717190387,
+    "ocf_capex_5yr_avg": 4.609625376734806,
+    "compPower": 0.2919393760092929,
+    "roiic": 0.9954881050041017
+  },
+  {
+    "ticker": "IBP",
+    "type": "Cow",
+    "ocf": 340000000,
+    "capex": 88600000,
+    "ocf_capex": 3.8374717832957113,
+    "ocf_capex_5yr_avg": 4.913797760801359,
+    "compPower": 0.10051666864709324,
+    "roiic": 0.253166982599955
+  },
+  {
+    "ticker": "ULTA",
+    "type": "Machine",
+    "ocf": 1338605000,
+    "capex": 374458000,
+    "ocf_capex": 3.574780082145394,
+    "ocf_capex_5yr_avg": 4.640407909477797,
+    "compPower": 0.5466618348631038,
+    "roiic": 1.1586255158406906
+  },
+  {
+    "ticker": "CMG",
+    "type": "Cow",
+    "ocf": 2105076000,
+    "capex": 593603000,
+    "ocf_capex": 3.546269139475373,
+    "ocf_capex_5yr_avg": 2.8327849298671195,
+    "compPower": 0.04744120915864796,
+    "roiic": 0.44603753567106585
+  },
+  {
+    "ticker": "ASR",
+    "type": "Machine",
+    "ocf": 15565761000,
+    "capex": 4394462000,
+    "ocf_capex": 3.5421312096907425,
+    "ocf_capex_5yr_avg": 4.374280849630744,
+    "compPower": 0.3896245313017226,
+    "roiic": 2.048542003488921
+  },
+  {
+    "ticker": "HDL",
+    "type": "Cow",
+    "ocf": 119696000,
+    "capex": 34742000,
+    "ocf_capex": 3.4452823671636637,
+    "ocf_capex_5yr_avg": 1.569464894178797,
+    "compPower": 0.0,
+    "roiic": 0.6366327842152255
+  },
+  {
+    "ticker": "PTRN",
+    "type": "Machine",
+    "ocf": 70347000,
+    "capex": 20450000,
+    "ocf_capex": 3.4399511002444987,
+    "ocf_capex_5yr_avg": 2.3930178768894,
+    "compPower": 0.6621566050332349,
+    "roiic": 2.588860491210572
+  },
+  {
+    "ticker": "LULU",
+    "type": "Cow",
+    "ocf": 2272713000,
+    "capex": 689232000,
+    "ocf_capex": 3.29745716971934,
+    "ocf_capex_5yr_avg": 3.0717823333776137,
+    "compPower": 0.18546220403267444,
+    "roiic": 0.7766793155941187
+  },
+  {
+    "ticker": "ROST",
+    "type": "Machine",
+    "ocf": 2356988000,
+    "capex": 720104000,
+    "ocf_capex": 3.273121660204637,
+    "ocf_capex_5yr_avg": 3.561805800305187,
+    "compPower": 0.32800530774825515,
+    "roiic": 1.0225902814405567
+  },
+  {
+    "ticker": "IRMD",
+    "type": "Cow",
+    "ocf": 25624463,
+    "capex": 8005033,
+    "ocf_capex": 3.201044018182061,
+    "ocf_capex_5yr_avg": 6.910544314323547,
+    "compPower": 0.16544166221397155,
+    "roiic": 0.7926260845248538
+  },
+  {
+    "ticker": "TJX",
+    "type": "Machine",
+    "ocf": 6116000000,
+    "capex": 1918000000,
+    "ocf_capex": 3.1887382690302397,
+    "ocf_capex_5yr_avg": 4.093421612492479,
+    "compPower": 0.2225143005052002,
+    "roiic": 0.7313726295812439
+  },
+  {
+    "ticker": "SILV",
+    "type": "Cow",
+    "ocf": 161163319,
+    "capex": 52196995,
+    "ocf_capex": 3.087597648102156,
+    "ocf_capex_5yr_avg": -6.018265298487719,
+    "compPower": 0.12017718625057937,
+    "roiic": 0.4298285882338913
+  },
+  {
+    "ticker": "ORLY",
+    "type": "Cow",
+    "ocf": 3049576000,
+    "capex": 1023387000,
+    "ocf_capex": 2.9798854196897167,
+    "ocf_capex_5yr_avg": 4.983724312693728,
+    "compPower": 0.15364713266271784,
+    "roiic": 1.016821473783378
+  },
+  {
+    "ticker": "SN",
+    "type": "Cow",
+    "ocf": 446620000,
+    "capex": 151181000,
+    "ocf_capex": 2.9542072085777975,
+    "ocf_capex_5yr_avg": 3.1744458558514346,
+    "compPower": 0.15683541239551088,
+    "roiic": 0.36871498007113324
+  },
+  {
+    "ticker": "PAYO",
+    "type": "Machine",
+    "ocf": 176925000,
+    "capex": 60392000,
+    "ocf_capex": 2.92960988210359,
+    "ocf_capex_5yr_avg": 2.1630071797490897,
+    "compPower": 0.6579357646620109,
+    "roiic": 0.7085219495294298
+  },
+  {
+    "ticker": "FTOCU",
+    "type": "Machine",
+    "ocf": 176925000,
+    "capex": 60392000,
+    "ocf_capex": 2.92960988210359,
+    "ocf_capex_5yr_avg": 2.1630071797490897,
+    "compPower": 0.6579357646620109,
+    "roiic": 0.7085219495294298
+  },
+  {
+    "ticker": "AERO",
+    "type": "Cow",
+    "ocf": 1367513000,
+    "capex": 493801000,
+    "ocf_capex": 2.769360531874176,
+    "ocf_capex_5yr_avg": 1.0505741114805647,
+    "compPower": 0.0,
+    "roiic": 0.38864896092518225
+  },
+  {
+    "ticker": "PAYC",
+    "type": "Cow",
+    "ocf": 533900000,
+    "capex": 192900000,
+    "ocf_capex": 2.7677553136340074,
+    "ocf_capex_5yr_avg": 2.569229015378723,
+    "compPower": 0.12689824831790317,
+    "roiic": 0.41348403548653756
+  },
+  {
+    "ticker": "WIRE",
+    "type": "Cow",
+    "ocf": 455206000,
+    "capex": 164563000,
+    "ocf_capex": 2.766150349714091,
+    "ocf_capex_5yr_avg": 2.7275274641357012,
+    "compPower": 0.14686988354507954,
+    "roiic": 0.44485644076950853
+  },
+  {
+    "ticker": "WMS",
+    "type": "Cow",
+    "ocf": 581491000,
+    "capex": 212944000,
+    "ocf_capex": 2.7307226313021262,
+    "ocf_capex_5yr_avg": 3.692572424055933,
+    "compPower": 0.1790542503109096,
+    "roiic": 0.25286636454144634
+  },
+  {
+    "ticker": "CNQ",
+    "type": "Machine",
+    "ocf": 13386000000,
+    "capex": 5291000000,
+    "ocf_capex": 2.52995652995653,
+    "ocf_capex_5yr_avg": 2.7821492140049204,
+    "compPower": 0.40148334131113966,
+    "roiic": 0.6103278343191034
+  },
+  {
+    "ticker": "IBEX",
+    "type": "Machine",
+    "ocf": 45668000,
+    "capex": 18375000,
+    "ocf_capex": 2.485333333333333,
+    "ocf_capex_5yr_avg": 2.212760990652836,
+    "compPower": 0.2591006720160771,
+    "roiic": 0.3300071434949549
+  },
+  {
+    "ticker": "ODC",
+    "type": "Cow",
+    "ocf": 80183000,
+    "capex": 32562000,
+    "ocf_capex": 2.4624715926540137,
+    "ocf_capex_5yr_avg": 1.5088324554219867,
+    "compPower": 0.08285498804760516,
+    "roiic": 0.38305552213388616
+  },
+  {
+    "ticker": "BBW",
+    "type": "Machine",
+    "ocf": 47087000,
+    "capex": 19317000,
+    "ocf_capex": 2.4375938292695554,
+    "ocf_capex_5yr_avg": 3.105313887375751,
+    "compPower": 0.9472142373132592,
+    "roiic": 1.6673519736842106
+  },
+  {
+    "ticker": "CBT",
+    "type": "Cow",
+    "ocf": 665000000,
+    "capex": 274000000,
+    "ocf_capex": 2.427007299270073,
+    "ocf_capex_5yr_avg": 1.9057567102555268,
+    "compPower": 0.03135204884330322,
+    "roiic": 0.20566502463054187
+  },
+  {
+    "ticker": "GOOGL",
+    "type": "Machine",
+    "ocf": 125299000000,
+    "capex": 52535000000,
+    "ocf_capex": 2.385057580660512,
+    "ocf_capex_5yr_avg": 3.0176706769713326,
+    "compPower": 0.30339223997223963,
+    "roiic": 0.5266302256514489
+  },
+  {
+    "ticker": "GOOG",
+    "type": "Machine",
+    "ocf": 125299000000,
+    "capex": 52535000000,
+    "ocf_capex": 2.385057580660512,
+    "ocf_capex_5yr_avg": 3.0176706769713326,
+    "compPower": 0.30339223997223963,
+    "roiic": 0.5266302256514489
+  },
+  {
+    "ticker": "COKE",
+    "type": "Machine",
+    "ocf": 876357000,
+    "capex": 371015000,
+    "ocf_capex": 2.3620527471935095,
+    "ocf_capex_5yr_avg": 2.543287000505946,
+    "compPower": 0.39455779351078263,
+    "roiic": 1.3250773543220908
+  },
+  {
+    "ticker": "VITL",
+    "type": "Machine",
+    "ocf": 64410000,
+    "capex": 28646000,
+    "ocf_capex": 2.2484814633805765,
+    "ocf_capex_5yr_avg": 1.6175318485883028,
+    "compPower": 1.5590467100420076,
+    "roiic": 2.6944561108777823
+  },
+  {
+    "ticker": "ODFL",
+    "type": "Cow",
+    "ocf": 1659283000,
+    "capex": 771318000,
+    "ocf_capex": 2.151230750481643,
+    "ocf_capex_5yr_avg": 2.5510397682314703,
+    "compPower": 0.11333171716789919,
+    "roiic": 0.3830848044638992
+  },
+  {
+    "ticker": "CPNG",
+    "type": "Machine",
+    "ocf": 1886000000,
+    "capex": 879000000,
+    "ocf_capex": 2.1456200227531284,
+    "ocf_capex_5yr_avg": 1.160712859597944,
+    "compPower": 0.6278440374958123,
+    "roiic": 0.4286116915681224
+  },
+  {
+    "ticker": "TGLS",
+    "type": "Machine",
+    "ocf": 170532000,
+    "capex": 79563000,
+    "ocf_capex": 2.143358093586215,
+    "ocf_capex_5yr_avg": 2.41771881988167,
+    "compPower": 0.2217576988485903,
+    "roiic": 0.4886670275336091
+  },
+  {
+    "ticker": "RACE",
+    "type": "Cow",
+    "ocf": 1926656000,
+    "capex": 989151000,
+    "ocf_capex": 1.9477875470984714,
+    "ocf_capex_5yr_avg": 1.717979242095192,
+    "compPower": 0.17985967852580778,
+    "roiic": 0.36096630156488074
+  },
+  {
+    "ticker": "ZTO",
+    "type": "Machine",
+    "ocf": 11429436000,
+    "capex": 5902129000,
+    "ocf_capex": 1.9364937635216037,
+    "ocf_capex_5yr_avg": 1.3600023517525748,
+    "compPower": 0.22703092332106958,
+    "roiic": 0.3521278121367777
+  },
+  {
+    "ticker": "SEAS",
+    "type": "Machine",
+    "ocf": 480139000,
+    "capex": 248430000,
+    "ocf_capex": 1.9326933140119953,
+    "ocf_capex_5yr_avg": 1.839995250056642,
+    "compPower": 0.5635378503986673,
+    "roiic": 2.3038816675309057
+  },
+  {
+    "ticker": "HMY",
+    "type": "Machine",
+    "ocf": 22647000000,
+    "capex": 11855000000,
+    "ocf_capex": 1.910333192745677,
+    "ocf_capex_5yr_avg": 1.5950655141940977,
+    "compPower": 0.5251917032878737,
+    "roiic": 0.9402551158388173
+  },
+  {
+    "ticker": "EOG",
+    "type": "Machine",
+    "ocf": 12143000000,
+    "capex": 6372000000,
+    "ocf_capex": 1.9056811048336473,
+    "ocf_capex_5yr_avg": 1.9372997111325554,
+    "compPower": 0.3195963422439215,
+    "roiic": 1.1302410901467506
+  },
+  {
+    "ticker": "KARO",
+    "type": "Cow",
+    "ocf": 1971398598,
+    "capex": 1042521091,
+    "ocf_capex": 1.8909915732342724,
+    "ocf_capex_5yr_avg": 1.7144550172250548,
+    "compPower": 0.019929271673653104,
+    "roiic": 0.39827410181034956
+  },
+  {
+    "ticker": "MGY",
+    "type": "Machine",
+    "ocf": 920850000,
+    "capex": 489114000,
+    "ocf_capex": 1.8826899250481484,
+    "ocf_capex_5yr_avg": 2.2830332567660525,
+    "compPower": 0.30576613233384353,
+    "roiic": 1.6056704856338622
+  },
+  {
+    "ticker": "IDR",
+    "type": "Cow",
+    "ocf": 10838806,
+    "capex": 5790154,
+    "ocf_capex": 1.8719374303343228,
+    "ocf_capex_5yr_avg": 0.25040070680147597,
+    "compPower": 0.14008599808397748,
+    "roiic": 0.23777166172035424
+  },
+  {
+    "ticker": "TSM",
+    "type": "Machine",
+    "ocf": 2383175564000,
+    "capex": 1285591558000,
+    "ocf_capex": 1.8537579444808396,
+    "ocf_capex_5yr_avg": 1.5702661749823068,
+    "compPower": 0.2882202383109549,
+    "roiic": 0.5456399004710702
+  },
+  {
+    "ticker": "CEO",
+    "type": "Machine",
+    "ocf": 220891000000,
+    "capex": 123359000000,
+    "ocf_capex": 1.7906354623497271,
+    "ocf_capex_5yr_avg": 1.7219477512214219,
+    "compPower": 0.2200101837805891,
+    "roiic": 0.7291518973172643
+  },
+  {
+    "ticker": "PLAB",
+    "type": "Machine",
+    "ocf": 247798000,
+    "capex": 188137000,
+    "ocf_capex": 1.3171146558093305,
+    "ocf_capex_5yr_avg": 1.888943375848055,
+    "compPower": 0.48147123418149357,
+    "roiic": 0.5221389833624414
+  }
+]

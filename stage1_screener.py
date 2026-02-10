@@ -42,7 +42,7 @@ class Stage1Screener:
         if not self.api_key:
             raise ValueError("FMP API key required. Set in config.py or pass to constructor.")
         
-        self.base_url = "https://financialmodelingprep.com/api/v3"
+        self.base_url = "https://financialmodelingprep.com/stable"
         self.stable_url = "https://financialmodelingprep.com/stable"
         self.request_delay = 0.2  # 300 calls/min = 5/sec, use 0.2s to be safe
         

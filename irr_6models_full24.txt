@@ -1,0 +1,602 @@
+
+====================================================================================================
+  AXP  |  $359.68  |  ROIC 32.0%  |  GM 62.9%  |  P/E 23.2x  |  FCF Yld 7.4%  |  VCR 3.2x  |  ND/EB 0.6x
+  Power 0.0%  |  CR Yld 11.1%  |  TVCR 11.1%  |  ROIIC 0.0%  |  Reinv -47.3%
+====================================================================================================
+
+  Growth Input           CAGR   Capped?
+  --------------------------------------
+  SBC-adj FCF/sh        39.9%   >>> YES
+  FCF/sh                39.0%   >>> YES
+  NOPAT/sh              37.0%   >>> YES
+  Rev/sh                19.4%          
+  EPS                   31.8%   >>> YES
+
+  Model                     No Growth  SBC-adj FCF/sh          FCF/sh        NOPAT/sh          Rev/sh             EPS
+  -------------------------------------------------------------------------------------------
+  1. Gemini Quick                6.9%               —               —               —               —               —
+  6. Perplexity Quick           11.5%               —               —               —               —               —
+  2. Claude EPS Power               —           30.0%           30.0%           30.0%           19.4%           30.0%
+  3. Copilot Scalable               —           34.5%           34.5%           34.5%           23.6%           34.5%
+  4. Grok Full DCF                  —           47.8%           47.8%           47.8%           35.8%           47.8%
+  5. DeepSeek Weighted              —           30.8%           30.8%           30.8%           23.6%           30.8%
+
+  CONSENSUS (6 models):  Median 30.8%  |  4/6 agree ≥15%  |  Range 6.9% – 47.8%
+  Verdict: ✅ HIGH CONVICTION
+
+====================================================================================================
+  LULU  |  $174.18  |  ROIC 45.1%  |  GM 59.2%  |  P/E 11.9x  |  FCF Yld 8.1%  |  VCR 4.5x  |  ND/EB -0.1x
+  Power 19.7%  |  CR Yld 44.0%  |  TVCR 63.7%  |  ROIIC 48.6%  |  Reinv 40.6%
+====================================================================================================
+
+  Growth Input           CAGR   Capped?
+  --------------------------------------
+  SBC-adj FCF/sh        35.8%   >>> YES
+  FCF/sh                34.0%   >>> YES
+  NOPAT/sh              23.8%          
+  Rev/sh                22.9%          
+  EPS                   24.3%          
+
+  Model                     No Growth  SBC-adj FCF/sh          FCF/sh        NOPAT/sh          Rev/sh             EPS
+  -------------------------------------------------------------------------------------------
+  1. Gemini Quick               21.9%               —               —               —               —               —
+  6. Perplexity Quick           17.1%               —               —               —               —               —
+  2. Claude EPS Power               —           30.0%           30.0%           23.8%           22.9%           24.3%
+  3. Copilot Scalable               —           43.5%           43.5%           36.6%           35.6%           37.1%
+  4. Grok Full DCF                  —           46.8%           46.8%           39.8%           38.7%           40.3%
+  5. DeepSeek Weighted              —           31.3%           31.3%           27.1%           26.5%           27.4%
+
+  CONSENSUS (6 models):  Median 31.3%  |  6/6 agree ≥15%  |  Range 17.1% – 46.8%
+  Verdict: ✅ HIGH CONVICTION
+
+====================================================================================================
+  DDS  |  $645.40  |  ROIC 36.8%  |  GM 40.5%  |  P/E 17.5x  |  FCF Yld 6.0%  |  VCR 3.7x  |  ND/EB -0.2x
+  Power 0.0%  |  CR Yld 29.0%  |  TVCR 29.0%  |  ROIIC 0.0%  |  Reinv -10.7%
+====================================================================================================
+
+  Growth Input           CAGR   Capped?
+  --------------------------------------
+  SBC-adj FCF/sh        29.7%          
+  FCF/sh                29.7%          
+  NOPAT/sh              46.8%   >>> YES
+  Rev/sh                10.3%          
+  EPS                   53.1%   >>> YES
+
+  Model                     No Growth  SBC-adj FCF/sh          FCF/sh        NOPAT/sh          Rev/sh             EPS
+  -------------------------------------------------------------------------------------------
+  1. Gemini Quick                4.0%               —               —               —               —               —
+  6. Perplexity Quick           13.5%               —               —               —               —               —
+  2. Claude EPS Power               —           29.7%           29.7%           30.0%           10.3%           30.0%
+  3. Copilot Scalable               —           36.7%           36.7%           37.0%           16.3%           37.0%
+  4. Grok Full DCF                  —           41.0%           41.0%           41.4%           20.0%           41.4%
+  5. DeepSeek Weighted              —           26.9%           26.9%           27.1%           14.3%           27.1%
+
+  CONSENSUS (6 models):  Median 29.7%  |  4/6 agree ≥15%  |  Range 4.0% – 41.0%
+  Verdict: ✅ HIGH CONVICTION
+
+====================================================================================================
+  DECK  |  $115.61  |  ROIC 101.7%  |  GM 57.9%  |  P/E 18.2x  |  FCF Yld 5.7%  |  VCR 10.2x  |  ND/EB -1.2x
+  Power 13.4%  |  CR Yld 45.4%  |  TVCR 58.8%  |  ROIIC 561.4%  |  Reinv 3.8%
+====================================================================================================
+
+  Growth Input           CAGR   Capped?
+  --------------------------------------
+  SBC-adj FCF/sh        33.9%   >>> YES
+  FCF/sh                33.4%   >>> YES
+  NOPAT/sh              30.2%   >>> YES
+  Rev/sh                21.2%          
+  EPS                   31.4%   >>> YES
+
+  Model                     No Growth  SBC-adj FCF/sh          FCF/sh        NOPAT/sh          Rev/sh             EPS
+  -------------------------------------------------------------------------------------------
+  1. Gemini Quick              -11.9%               —               —               —               —               —
+  6. Perplexity Quick           15.7%               —               —               —               —               —
+  2. Claude EPS Power               —           30.0%           30.0%           30.0%           21.2%           30.0%
+  3. Copilot Scalable               —           31.1%           31.1%           31.1%           22.3%           31.1%
+  4. Grok Full DCF                  —           37.9%           37.9%           37.9%           28.6%           37.9%
+  5. DeepSeek Weighted              —           24.8%           24.8%           24.8%           19.3%           24.8%
+
+  CONSENSUS (6 models):  Median 30.0%  |  5/6 agree ≥15%  |  Range -11.9% – 37.9%
+  Verdict: ✅ HIGH CONVICTION
+
+====================================================================================================
+  PYPL  |  $41.16  |  ROIC 24.6%  |  GM 47.0%  |  P/E 7.5x  |  FCF Yld 14.4%  |  VCR 2.5x  |  ND/EB 0.3x
+  Power 0.0%  |  CR Yld 20.5%  |  TVCR 20.5%  |  ROIIC 0.0%  |  Reinv -9.6%
+====================================================================================================
+
+  Growth Input           CAGR   Capped?
+  --------------------------------------
+  SBC-adj FCF/sh         7.0%          
+  FCF/sh                 4.9%          
+  NOPAT/sh              19.6%          
+  Rev/sh                13.7%          
+  EPS                    8.8%          
+
+  Model                     No Growth  SBC-adj FCF/sh          FCF/sh        NOPAT/sh          Rev/sh             EPS
+  -------------------------------------------------------------------------------------------
+  1. Gemini Quick               14.4%               —               —               —               —               —
+  6. Perplexity Quick           19.3%               —               —               —               —               —
+  2. Claude EPS Power               —            7.0%            4.9%           19.6%           13.7%            8.8%
+  3. Copilot Scalable               —           31.6%           29.0%           47.1%           39.8%           33.8%
+  4. Grok Full DCF                  —           35.8%           33.2%           51.9%           44.3%           38.1%
+  5. DeepSeek Weighted              —           27.0%           25.5%           36.6%           32.1%           28.4%
+
+  CONSENSUS (6 models):  Median 27.0%  |  4/6 agree ≥15%  |  Range 7.0% – 35.8%
+  Verdict: ✅ HIGH CONVICTION
+
+====================================================================================================
+  BAH  |  $90.08  |  ROIC 24.2%  |  GM 54.8%  |  P/E 12.3x  |  FCF Yld 8.2%  |  VCR 2.4x  |  ND/EB 2.1x
+  Power 14.9%  |  CR Yld 25.4%  |  TVCR 40.2%  |  ROIIC 28.7%  |  Reinv 51.7%
+====================================================================================================
+
+  Growth Input           CAGR   Capped?
+  --------------------------------------
+  SBC-adj FCF/sh        18.7%          
+  FCF/sh                18.7%          
+  NOPAT/sh              15.6%          
+  Rev/sh                12.0%          
+  EPS                   16.3%          
+
+  Model                     No Growth  SBC-adj FCF/sh          FCF/sh        NOPAT/sh          Rev/sh             EPS
+  -------------------------------------------------------------------------------------------
+  1. Gemini Quick               20.7%               —               —               —               —               —
+  6. Perplexity Quick           13.7%               —               —               —               —               —
+  2. Claude EPS Power               —           18.7%           18.7%           15.6%           12.0%           16.3%
+  3. Copilot Scalable               —           35.6%           35.6%           32.0%           27.9%           32.8%
+  4. Grok Full DCF                  —           34.7%           34.8%           31.3%           27.1%           32.0%
+  5. DeepSeek Weighted              —           24.3%           24.3%           22.2%           19.7%           22.6%
+
+  CONSENSUS (6 models):  Median 24.3%  |  5/6 agree ≥15%  |  Range 13.7% – 35.6%
+  Verdict: ✅ HIGH CONVICTION
+
+====================================================================================================
+  BLD  |  $520.80  |  ROIC 19.4%  |  GM 30.5%  |  P/E 25.5x  |  FCF Yld 4.8%  |  VCR 1.9x  |  ND/EB 1.1x
+  Power 17.3%  |  CR Yld 14.5%  |  TVCR 31.8%  |  ROIIC 27.5%  |  Reinv 63.0%
+====================================================================================================
+
+  Growth Input           CAGR   Capped?
+  --------------------------------------
+  SBC-adj FCF/sh        29.2%          
+  FCF/sh                28.2%          
+  NOPAT/sh              27.3%          
+  Rev/sh                17.6%          
+  EPS                   29.3%          
+
+  Model                     No Growth  SBC-adj FCF/sh          FCF/sh        NOPAT/sh          Rev/sh             EPS
+  -------------------------------------------------------------------------------------------
+  1. Gemini Quick               17.0%               —               —               —               —               —
+  6. Perplexity Quick            9.4%               —               —               —               —               —
+  2. Claude EPS Power               —           28.7%           27.7%           26.7%           17.1%           28.8%
+  3. Copilot Scalable               —           26.9%           26.0%           25.0%           15.6%           27.0%
+  4. Grok Full DCF                  —           31.5%           30.5%           29.6%           19.7%           31.6%
+  5. DeepSeek Weighted              —           20.6%           20.0%           19.4%           13.5%           20.6%
+
+  CONSENSUS (6 models):  Median 26.9%  |  5/6 agree ≥15%  |  Range 9.4% – 31.5%
+  Verdict: ✅ HIGH CONVICTION
+
+====================================================================================================
+  ADBE  |  $268.71  |  ROIC 55.4%  |  GM 88.6%  |  P/E 16.1x  |  FCF Yld 8.8%  |  VCR 5.5x  |  ND/EB 0.1x
+  Power 0.0%  |  CR Yld 52.9%  |  TVCR 52.9%  |  ROIIC 0.0%  |  Reinv -2.4%
+====================================================================================================
+
+  Growth Input           CAGR   Capped?
+  --------------------------------------
+  SBC-adj FCF/sh        15.2%          
+  FCF/sh                15.9%          
+  NOPAT/sh              13.6%          
+  Rev/sh                15.8%          
+  EPS                    8.9%          
+
+  Model                     No Growth  SBC-adj FCF/sh          FCF/sh        NOPAT/sh          Rev/sh             EPS
+  -------------------------------------------------------------------------------------------
+  1. Gemini Quick                1.2%               —               —               —               —               —
+  6. Perplexity Quick           20.9%               —               —               —               —               —
+  2. Claude EPS Power               —           15.2%           15.9%           13.6%           15.8%            8.9%
+  3. Copilot Scalable               —           22.4%           23.2%           20.7%           23.1%           15.7%
+  4. Grok Full DCF                  —           30.0%           30.8%           28.2%           30.7%           22.9%
+  5. DeepSeek Weighted              —           20.5%           21.0%           19.4%           20.9%           16.2%
+
+  CONSENSUS (6 models):  Median 20.9%  |  5/6 agree ≥15%  |  Range 1.2% – 30.0%
+  Verdict: ✅ HIGH CONVICTION
+
+====================================================================================================
+  CSL  |  $401.56  |  ROIC 21.1%  |  GM 35.7%  |  P/E 23.2x  |  FCF Yld 5.7%  |  VCR 2.1x  |  ND/EB 1.0x
+  Power 0.0%  |  CR Yld 26.7%  |  TVCR 26.7%  |  ROIIC 0.0%  |  Reinv -6.4%
+====================================================================================================
+
+  Growth Input           CAGR   Capped?
+  --------------------------------------
+  SBC-adj FCF/sh        16.9%          
+  FCF/sh                15.4%          
+  NOPAT/sh              20.5%          
+  Rev/sh                10.0%          
+  EPS                   24.1%          
+
+  Model                     No Growth  SBC-adj FCF/sh          FCF/sh        NOPAT/sh          Rev/sh             EPS
+  -------------------------------------------------------------------------------------------
+  1. Gemini Quick                5.7%               —               —               —               —               —
+  6. Perplexity Quick           10.3%               —               —               —               —               —
+  2. Claude EPS Power               —           16.9%           15.4%           20.5%           10.0%           24.1%
+  3. Copilot Scalable               —           10.6%            9.1%           14.0%            4.1%           17.4%
+  4. Grok Full DCF                  —           26.4%           24.8%           30.3%           19.0%           34.3%
+  5. DeepSeek Weighted              —           17.7%           16.7%           20.0%           13.2%           22.4%
+
+  CONSENSUS (6 models):  Median 16.9%  |  3/6 agree ≥15%  |  Range 5.7% – 26.4%
+  Verdict: ⚠️ MIXED
+
+====================================================================================================
+  CROX  |  $84.09  |  ROIC 30.4%  |  GM 58.8%  |  P/E 5.3x  |  FCF Yld 20.1%  |  VCR 3.0x  |  ND/EB 1.4x
+  Power 25.5%  |  CR Yld 94.2%  |  TVCR 119.7%  |  ROIIC 30.4%  |  Reinv 83.9%
+====================================================================================================
+
+  Growth Input           CAGR   Capped?
+  --------------------------------------
+  SBC-adj FCF/sh        93.4%   >>> YES
+  FCF/sh                82.9%   >>> YES
+  NOPAT/sh              56.6%   >>> YES
+  Rev/sh                31.6%   >>> YES
+  EPS                   56.6%   >>> YES
+
+  Model                     No Growth  SBC-adj FCF/sh          FCF/sh        NOPAT/sh          Rev/sh             EPS
+  -------------------------------------------------------------------------------------------
+  1. Gemini Quick               45.5%               —               —               —               —               —
+  6. Perplexity Quick           28.7%               —               —               —               —               —
+  2. Claude EPS Power               —           30.0%           30.0%           30.0%           30.0%           30.0%
+  3. Copilot Scalable               —           72.3%           72.3%           72.3%           72.3%           72.3%
+  4. Grok Full DCF                  —           83.1%           83.1%           83.1%           83.1%           83.1%
+  5. DeepSeek Weighted              —           58.1%           58.1%           58.1%           58.1%           58.1%
+
+  CONSENSUS (6 models):  Median 58.1%  |  6/6 agree ≥15%  |  Range 28.7% – 83.1%
+  Verdict: ✅ HIGH CONVICTION
+
+====================================================================================================
+  LRN  |  $87.51  |  ROIC 21.8%  |  GM 39.2%  |  P/E 13.1x  |  FCF Yld 9.7%  |  VCR 2.2x  |  ND/EB -0.5x
+  Power 31.8%  |  CR Yld 2.6%  |  TVCR 34.4%  |  ROIIC 45.2%  |  Reinv 70.3%
+====================================================================================================
+
+  Growth Input           CAGR   Capped?
+  --------------------------------------
+  SBC-adj FCF/sh        92.0%   >>> YES
+  FCF/sh                57.4%   >>> YES
+  NOPAT/sh              59.7%   >>> YES
+  Rev/sh                16.2%          
+  EPS                   60.9%   >>> YES
+
+  Model                     No Growth  SBC-adj FCF/sh          FCF/sh        NOPAT/sh          Rev/sh             EPS
+  -------------------------------------------------------------------------------------------
+  1. Gemini Quick               25.1%               —               —               —               —               —
+  6. Perplexity Quick           12.9%               —               —               —               —               —
+  2. Claude EPS Power               —           30.0%           30.0%           30.0%           16.2%           30.0%
+  3. Copilot Scalable               —           45.2%           45.2%           45.2%           29.8%           45.2%
+  4. Grok Full DCF                  —           55.4%           55.4%           55.4%           38.9%           55.4%
+  5. DeepSeek Weighted              —           36.1%           36.1%           36.1%           26.3%           36.1%
+
+  CONSENSUS (6 models):  Median 36.1%  |  5/6 agree ≥15%  |  Range 12.9% – 55.4%
+  Verdict: ✅ HIGH CONVICTION
+
+====================================================================================================
+  PRI  |  $268.58  |  ROIC 20.4%  |  GM 42.3%  |  P/E 19.5x  |  FCF Yld 9.7%  |  VCR 2.0x  |  ND/EB 1.3x
+  Power 13.0%  |  CR Yld 12.2%  |  TVCR 25.2%  |  ROIIC 68.3%  |  Reinv 19.0%
+====================================================================================================
+
+  Growth Input           CAGR   Capped?
+  --------------------------------------
+  SBC-adj FCF/sh        17.7%          
+  FCF/sh                17.5%          
+  NOPAT/sh              19.4%          
+  Rev/sh                13.2%          
+  EPS                    9.7%          
+
+  Model                     No Growth  SBC-adj FCF/sh          FCF/sh        NOPAT/sh          Rev/sh             EPS
+  -------------------------------------------------------------------------------------------
+  1. Gemini Quick               13.6%               —               —               —               —               —
+  6. Perplexity Quick           14.2%               —               —               —               —               —
+  2. Claude EPS Power               —           17.7%           17.5%           19.4%           13.2%            9.7%
+  3. Copilot Scalable               —           28.8%           28.6%           30.7%           23.9%           20.0%
+  4. Grok Full DCF                  —           40.3%           40.0%           42.4%           35.0%           30.7%
+  5. DeepSeek Weighted              —           27.3%           27.2%           28.6%           24.1%           21.6%
+
+  CONSENSUS (6 models):  Median 27.3%  |  4/6 agree ≥15%  |  Range 13.6% – 40.3%
+  Verdict: ✅ HIGH CONVICTION
+
+====================================================================================================
+  ALRM  |  $47.22  |  ROIC 16.7%  |  GM 65.3%  |  P/E 18.9x  |  FCF Yld 8.3%  |  VCR 1.7x  |  ND/EB -0.8x
+  Power 15.3%  |  CR Yld 10.8%  |  TVCR 26.2%  |  ROIIC 22.0%  |  Reinv 69.6%
+====================================================================================================
+
+  Growth Input           CAGR   Capped?
+  --------------------------------------
+  SBC-adj FCF/sh        40.3%   >>> YES
+  FCF/sh                47.1%   >>> YES
+  NOPAT/sh              14.9%          
+  Rev/sh                12.8%          
+  EPS                   17.7%          
+
+  Model                     No Growth  SBC-adj FCF/sh          FCF/sh        NOPAT/sh          Rev/sh             EPS
+  -------------------------------------------------------------------------------------------
+  1. Gemini Quick               19.9%               —               —               —               —               —
+  6. Perplexity Quick            8.7%               —               —               —               —               —
+  2. Claude EPS Power               —           30.0%           30.0%           14.9%           12.8%           17.7%
+  3. Copilot Scalable               —           32.0%           32.0%           16.7%           14.6%           19.6%
+  4. Grok Full DCF                  —           45.2%           45.2%           28.4%           26.0%           31.5%
+  5. DeepSeek Weighted              —           28.7%           28.7%           18.6%           17.2%           20.5%
+
+  CONSENSUS (6 models):  Median 30.0%  |  5/6 agree ≥15%  |  Range 8.7% – 45.2%
+  Verdict: ✅ HIGH CONVICTION
+
+====================================================================================================
+  CBT  |  $74.59  |  ROIC 16.3%  |  GM 25.3%  |  P/E 12.1x  |  FCF Yld 10.0%  |  VCR 1.6x  |  ND/EB 1.2x
+  Power 19.5%  |  CR Yld 10.7%  |  TVCR 30.2%  |  ROIIC 51.3%  |  Reinv 37.9%
+====================================================================================================
+
+  Growth Input           CAGR   Capped?
+  --------------------------------------
+  SBC-adj FCF/sh        18.1%          
+  FCF/sh                18.4%          
+  NOPAT/sh              91.7%   >>> YES
+  Rev/sh                 8.4%          
+  EPS                    N/A
+
+  Model                     No Growth  SBC-adj FCF/sh          FCF/sh        NOPAT/sh          Rev/sh             EPS
+  -------------------------------------------------------------------------------------------
+  1. Gemini Quick               16.2%               —               —               —               —               —
+  6. Perplexity Quick           13.7%               —               —               —               —               —
+  2. Claude EPS Power               —           18.1%           18.4%           30.0%            8.4%             N/A
+  3. Copilot Scalable               —           36.2%           36.5%           49.9%           25.0%             N/A
+  4. Grok Full DCF                  —           42.1%           42.4%           56.4%           30.4%             N/A
+  5. DeepSeek Weighted              —           29.3%           29.5%           37.9%           22.3%             N/A
+
+  CONSENSUS (6 models):  Median 29.3%  |  5/6 agree ≥15%  |  Range 13.7% – 42.1%
+  Verdict: ✅ HIGH CONVICTION
+
+====================================================================================================
+  PRDO  |  $31.32  |  ROIC 13.0%  |  GM 82.3%  |  P/E 13.9x  |  FCF Yld 7.7%  |  VCR 1.3x  |  ND/EB 0.1x
+  Power 11.0%  |  CR Yld 6.4%  |  TVCR 17.3%  |  ROIIC 10.6%  |  Reinv 103.0%
+====================================================================================================
+
+  Growth Input           CAGR   Capped?
+  --------------------------------------
+  SBC-adj FCF/sh        21.7%          
+  FCF/sh                19.8%          
+  NOPAT/sh              15.7%          
+  Rev/sh                 3.0%          
+  EPS                   17.6%          
+
+  Model                     No Growth  SBC-adj FCF/sh          FCF/sh        NOPAT/sh          Rev/sh             EPS
+  -------------------------------------------------------------------------------------------
+  1. Gemini Quick               23.1%               —               —               —               —               —
+  6. Perplexity Quick           10.3%               —               —               —               —               —
+  2. Claude EPS Power               —           21.7%           19.8%           15.7%            3.0%           17.6%
+  3. Copilot Scalable               —           29.1%           27.0%           22.7%            9.2%           24.7%
+  4. Grok Full DCF                  —           38.3%           36.2%           31.6%           17.1%           33.7%
+  5. DeepSeek Weighted              —           25.5%           24.2%           21.4%           12.7%           22.7%
+
+  CONSENSUS (6 models):  Median 25.5%  |  5/6 agree ≥15%  |  Range 10.3% – 38.3%
+  Verdict: ✅ HIGH CONVICTION
+
+====================================================================================================
+  PAYC  |  $129.42  |  ROIC 39.0%  |  GM 82.2%  |  P/E 14.5x  |  FCF Yld 4.7%  |  VCR 3.9x  |  ND/EB -0.4x
+  Power 21.7%  |  CR Yld 36.2%  |  TVCR 58.0%  |  ROIIC 37.3%  |  Reinv 58.3%
+====================================================================================================
+
+  Growth Input           CAGR   Capped?
+  --------------------------------------
+  SBC-adj FCF/sh        34.7%   >>> YES
+  FCF/sh                21.6%          
+  NOPAT/sh              22.7%          
+  Rev/sh                21.2%          
+  EPS                   23.3%          
+
+  Model                     No Growth  SBC-adj FCF/sh          FCF/sh        NOPAT/sh          Rev/sh             EPS
+  -------------------------------------------------------------------------------------------
+  1. Gemini Quick               24.7%               —               —               —               —               —
+  6. Perplexity Quick           13.5%               —               —               —               —               —
+  2. Claude EPS Power               —           30.0%           21.6%           22.7%           21.2%           23.3%
+  3. Copilot Scalable               —           38.0%           29.1%           30.3%           28.7%           30.9%
+  4. Grok Full DCF                  —           36.5%           27.7%           28.9%           27.3%           29.5%
+  5. DeepSeek Weighted              —           24.6%           19.3%           20.0%           19.1%           20.4%
+
+  CONSENSUS (6 models):  Median 30.0%  |  5/6 agree ≥15%  |  Range 13.5% – 38.0%
+  Verdict: ✅ HIGH CONVICTION
+
+====================================================================================================
+  ETSY  |  $55.10  |  ROIC 34.3%  |  GM 72.4%  |  P/E 20.9x  |  FCF Yld 13.6%  |  VCR 3.4x  |  ND/EB 3.0x
+  Power 2.8%  |  CR Yld 56.7%  |  TVCR 59.5%  |  ROIIC 2623.7%  |  Reinv 0.8%
+====================================================================================================
+
+  Growth Input           CAGR   Capped?
+  --------------------------------------
+  SBC-adj FCF/sh        26.3%          
+  FCF/sh                32.0%   >>> YES
+  NOPAT/sh              26.9%          
+  Rev/sh                29.0%          
+  EPS                   26.9%          
+
+  Model                     No Growth  SBC-adj FCF/sh          FCF/sh        NOPAT/sh          Rev/sh             EPS
+  -------------------------------------------------------------------------------------------
+  1. Gemini Quick               12.6%               —               —               —               —               —
+  6. Perplexity Quick           18.1%               —               —               —               —               —
+  2. Claude EPS Power               —           26.3%           30.0%           26.9%           29.0%           26.9%
+  3. Copilot Scalable               —           30.7%           34.4%           31.2%           33.4%           31.2%
+  4. Grok Full DCF                  —           43.8%           48.0%           44.5%           46.9%           44.5%
+  5. DeepSeek Weighted              —           26.2%           28.6%           26.5%           28.0%           26.5%
+
+  CONSENSUS (6 models):  Median 26.3%  |  5/6 agree ≥15%  |  Range 12.6% – 43.8%
+  Verdict: ✅ HIGH CONVICTION
+
+====================================================================================================
+  IPAR  |  $100.05  |  ROIC 25.7%  |  GM 63.9%  |  P/E 19.5x  |  FCF Yld 5.7%  |  VCR 2.6x  |  ND/EB 0.2x
+  Power 18.7%  |  CR Yld 19.4%  |  TVCR 38.2%  |  ROIIC 27.4%  |  Reinv 68.3%
+====================================================================================================
+
+  Growth Input           CAGR   Capped?
+  --------------------------------------
+  SBC-adj FCF/sh        23.5%          
+  FCF/sh                22.6%          
+  NOPAT/sh              22.0%          
+  Rev/sh                14.8%          
+  EPS                   21.8%          
+
+  Model                     No Growth  SBC-adj FCF/sh          FCF/sh        NOPAT/sh          Rev/sh             EPS
+  -------------------------------------------------------------------------------------------
+  1. Gemini Quick               23.2%               —               —               —               —               —
+  6. Perplexity Quick           12.0%               —               —               —               —               —
+  2. Claude EPS Power               —           23.5%           22.6%           22.0%           14.8%           21.8%
+  3. Copilot Scalable               —           33.0%           31.9%           31.3%           23.7%           31.1%
+  4. Grok Full DCF                  —           33.2%           32.1%           31.5%           23.8%           31.3%
+  5. DeepSeek Weighted              —           22.5%           21.9%           21.5%           16.9%           21.4%
+
+  CONSENSUS (6 models):  Median 23.5%  |  5/6 agree ≥15%  |  Range 12.0% – 33.2%
+  Verdict: ✅ HIGH CONVICTION
+
+====================================================================================================
+  POOL  |  $262.57  |  ROIC 19.2%  |  GM 29.7%  |  P/E 23.0x  |  FCF Yld 6.1%  |  VCR 1.9x  |  ND/EB 1.8x
+  Power 6.7%  |  CR Yld 37.5%  |  TVCR 44.2%  |  ROIIC 13.7%  |  Reinv 48.9%
+====================================================================================================
+
+  Growth Input           CAGR   Capped?
+  --------------------------------------
+  SBC-adj FCF/sh        20.1%          
+  FCF/sh                18.8%          
+  NOPAT/sh              12.0%          
+  Rev/sh                11.7%          
+  EPS                   11.7%          
+
+  Model                     No Growth  SBC-adj FCF/sh          FCF/sh        NOPAT/sh          Rev/sh             EPS
+  -------------------------------------------------------------------------------------------
+  1. Gemini Quick               15.5%               —               —               —               —               —
+  6. Perplexity Quick           11.1%               —               —               —               —               —
+  2. Claude EPS Power               —           20.1%           18.8%           12.0%           11.7%           11.7%
+  3. Copilot Scalable               —           18.8%           17.5%           10.8%           10.5%           10.5%
+  4. Grok Full DCF                  —           31.3%           29.9%           22.5%           22.2%           22.2%
+  5. DeepSeek Weighted              —           20.7%           19.9%           15.4%           15.2%           15.2%
+
+  CONSENSUS (6 models):  Median 20.1%  |  5/6 agree ≥15%  |  Range 11.1% – 31.3%
+  Verdict: ✅ HIGH CONVICTION
+
+====================================================================================================
+  HALO  |  $80.48  |  ROIC 25.1%  |  GM 84.3%  |  P/E 23.0x  |  FCF Yld 4.9%  |  VCR 2.5x  |  ND/EB 2.1x
+  Power 36.5%  |  CR Yld 72.3%  |  TVCR 108.8%  |  ROIIC 35.7%  |  Reinv 102.2%
+====================================================================================================
+
+  Growth Input           CAGR   Capped?
+  --------------------------------------
+  SBC-adj FCF/sh         N/A
+  FCF/sh                 N/A
+  NOPAT/sh               N/A
+  Rev/sh                42.6%   >>> YES
+  EPS                    N/A
+
+  Model                     No Growth  SBC-adj FCF/sh          FCF/sh        NOPAT/sh          Rev/sh             EPS
+  -------------------------------------------------------------------------------------------
+  1. Gemini Quick               30.6%               —               —               —               —               —
+  6. Perplexity Quick           11.7%               —               —               —               —               —
+  2. Claude EPS Power               —             N/A             N/A             N/A           30.0%             N/A
+  3. Copilot Scalable               —             N/A             N/A             N/A           30.4%             N/A
+  4. Grok Full DCF                  —             N/A             N/A             N/A           31.1%             N/A
+  5. DeepSeek Weighted              —             N/A             N/A             N/A           20.2%             N/A
+
+  CONSENSUS (2 models):  Median 30.6%  |  1/2 agree ≥15%  |  Range 11.7% – 30.6%
+  Verdict: ❌ WEAK
+
+====================================================================================================
+  IDCC  |  $376.60  |  ROIC 46.0%  |  GM 80.3%  |  P/E 23.9x  |  FCF Yld 5.5%  |  VCR 4.6x  |  ND/EB -0.4x
+  Power 30.3%  |  CR Yld 24.3%  |  TVCR 54.6%  |  ROIIC 194.4%  |  Reinv 15.6%
+====================================================================================================
+
+  Growth Input           CAGR   Capped?
+  --------------------------------------
+  SBC-adj FCF/sh        39.3%   >>> YES
+  FCF/sh                39.1%   >>> YES
+  NOPAT/sh              53.9%   >>> YES
+  Rev/sh                22.6%          
+  EPS                   61.0%   >>> YES
+
+  Model                     No Growth  SBC-adj FCF/sh          FCF/sh        NOPAT/sh          Rev/sh             EPS
+  -------------------------------------------------------------------------------------------
+  1. Gemini Quick                7.8%               —               —               —               —               —
+  6. Perplexity Quick           12.6%               —               —               —               —               —
+  2. Claude EPS Power               —           30.0%           30.0%           30.0%           22.6%           30.0%
+  3. Copilot Scalable               —           28.6%           28.6%           28.6%           21.3%           28.6%
+  4. Grok Full DCF                  —           36.5%           36.5%           36.5%           28.7%           36.5%
+  5. DeepSeek Weighted              —           23.5%           23.5%           23.5%           18.9%           23.5%
+
+  CONSENSUS (6 models):  Median 28.6%  |  4/6 agree ≥15%  |  Range 7.8% – 36.5%
+  Verdict: ✅ HIGH CONVICTION
+
+====================================================================================================
+  ASO  |  $58.37  |  ROIC 12.0%  |  GM 33.9%  |  P/E 10.0x  |  FCF Yld 8.4%  |  VCR 1.2x  |  ND/EB 2.2x
+  Power 9.0%  |  CR Yld 14.3%  |  TVCR 23.4%  |  ROIIC 24.9%  |  Reinv 36.4%
+====================================================================================================
+
+  Growth Input           CAGR   Capped?
+  --------------------------------------
+  SBC-adj FCF/sh        14.7%          
+  FCF/sh                15.7%          
+  NOPAT/sh              24.8%          
+  Rev/sh                 9.3%          
+  EPS                   34.6%   >>> YES
+
+  Model                     No Growth  SBC-adj FCF/sh          FCF/sh        NOPAT/sh          Rev/sh             EPS
+  -------------------------------------------------------------------------------------------
+  1. Gemini Quick               14.8%               —               —               —               —               —
+  6. Perplexity Quick           10.8%               —               —               —               —               —
+  2. Claude EPS Power               —           14.7%           15.7%           24.8%            9.3%           30.0%
+  3. Copilot Scalable               —           31.9%           33.1%           43.5%           25.7%           49.5%
+  4. Grok Full DCF                  —           30.8%           32.0%           42.3%           24.6%           48.3%
+  5. DeepSeek Weighted              —           22.2%           22.9%           29.1%           18.5%           32.7%
+
+  CONSENSUS (6 models):  Median 22.2%  |  3/6 agree ≥15%  |  Range 10.8% – 31.9%
+  Verdict: ⚠️ MIXED
+
+====================================================================================================
+  NEU  |  $713.84  |  ROIC 19.1%  |  GM 31.8%  |  P/E 14.8x  |  FCF Yld 6.9%  |  VCR 1.9x  |  ND/EB 1.3x
+  Power 13.1%  |  CR Yld 16.1%  |  TVCR 29.3%  |  ROIIC 17.6%  |  Reinv 74.6%
+====================================================================================================
+
+  Growth Input           CAGR   Capped?
+  --------------------------------------
+  SBC-adj FCF/sh        14.2%          
+  FCF/sh                14.2%          
+  NOPAT/sh              16.1%          
+  Rev/sh                 8.2%          
+  EPS                   16.3%          
+
+  Model                     No Growth  SBC-adj FCF/sh          FCF/sh        NOPAT/sh          Rev/sh             EPS
+  -------------------------------------------------------------------------------------------
+  1. Gemini Quick               21.2%               —               —               —               —               —
+  6. Perplexity Quick           11.9%               —               —               —               —               —
+  2. Claude EPS Power               —           14.2%           14.2%           16.1%            8.2%           16.3%
+  3. Copilot Scalable               —           24.6%           24.6%           26.6%           18.1%           26.8%
+  4. Grok Full DCF                  —           28.3%           28.3%           30.4%           21.6%           30.6%
+  5. DeepSeek Weighted              —           19.7%           19.7%           21.0%           15.7%           21.1%
+
+  CONSENSUS (6 models):  Median 21.2%  |  4/6 agree ≥15%  |  Range 11.9% – 28.3%
+  Verdict: ✅ HIGH CONVICTION
+
+====================================================================================================
+  MORN  |  $163.70  |  ROIC 18.7%  |  GM 60.6%  |  P/E 18.9x  |  FCF Yld 6.5%  |  VCR 1.9x  |  ND/EB 0.5x
+  Power 22.6%  |  CR Yld 8.1%  |  TVCR 30.7%  |  ROIIC 39.9%  |  Reinv 56.6%
+====================================================================================================
+
+  Growth Input           CAGR   Capped?
+  --------------------------------------
+  SBC-adj FCF/sh        13.4%          
+  FCF/sh                12.0%          
+  NOPAT/sh              21.0%          
+  Rev/sh                14.0%          
+  EPS                   19.4%          
+
+  Model                     No Growth  SBC-adj FCF/sh          FCF/sh        NOPAT/sh          Rev/sh             EPS
+  -------------------------------------------------------------------------------------------
+  1. Gemini Quick               17.1%               —               —               —               —               —
+  6. Perplexity Quick           10.3%               —               —               —               —               —
+  2. Claude EPS Power               —           13.4%           12.0%           21.0%           14.0%           19.4%
+  3. Copilot Scalable               —           17.9%           16.4%           25.8%           18.6%           24.2%
+  4. Grok Full DCF                  —           22.2%           20.7%           30.4%           22.9%           28.7%
+  5. DeepSeek Weighted              —           15.5%           14.6%           20.4%           15.9%           19.4%
+
+  CONSENSUS (6 models):  Median 17.1%  |  4/6 agree ≥15%  |  Range 10.3% – 22.2%
+  Verdict: ✅ HIGH CONVICTION
+
+====================================================================================================

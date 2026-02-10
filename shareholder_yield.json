@@ -1,0 +1,167 @@
+[
+  {
+    "ticker": "BRFS",
+    "price": 3.38,
+    "mkt_cap": 5413590162,
+    "dividends": 0,
+    "net_buybacks": 1288242000,
+    "total_returned": 1288242000,
+    "div_yield": 0.0,
+    "buyback_yield": 0.2379644489977555,
+    "shareholder_yield": 0.2379644489977555
+  },
+  {
+    "ticker": "NTES",
+    "price": 128.9301,
+    "mkt_cap": 82288444108,
+    "dividends": 0,
+    "net_buybacks": 8830115000,
+    "total_returned": 8830115000,
+    "div_yield": 0.0,
+    "buyback_yield": 0.10730686545015797,
+    "shareholder_yield": 0.10730686545015797
+  },
+  {
+    "ticker": "MTD",
+    "price": 1367.475,
+    "mkt_cap": 27935387826,
+    "dividends": 0,
+    "net_buybacks": 849997000,
+    "total_returned": 849997000,
+    "div_yield": 0.0,
+    "buyback_yield": 0.03042724895370493,
+    "shareholder_yield": 0.03042724895370493
+  },
+  {
+    "ticker": "NSSC",
+    "price": 40,
+    "mkt_cap": 1426572960,
+    "dividends": 0,
+    "net_buybacks": 36794000,
+    "total_returned": 36794000,
+    "div_yield": 0.0,
+    "buyback_yield": 0.02579188098448186,
+    "shareholder_yield": 0.02579188098448186
+  },
+  {
+    "ticker": "NFLX",
+    "price": 83.775,
+    "mkt_cap": 354981762809,
+    "dividends": 0,
+    "net_buybacks": 9127167000,
+    "total_returned": 9127167000,
+    "div_yield": 0.0,
+    "buyback_yield": 0.025711650445859456,
+    "shareholder_yield": 0.025711650445859456
+  },
+  {
+    "ticker": "HAFN",
+    "price": 6.045,
+    "mkt_cap": 3030581506,
+    "dividends": 0,
+    "net_buybacks": 49161000,
+    "total_returned": 49161000,
+    "div_yield": 0.0,
+    "buyback_yield": 0.016221639280339487,
+    "shareholder_yield": 0.016221639280339487
+  },
+  {
+    "ticker": "LRCX",
+    "price": 242.6254,
+    "mkt_cap": 302983563383,
+    "dividends": 0,
+    "net_buybacks": 3422321000,
+    "total_returned": 3422321000,
+    "div_yield": 0.0,
+    "buyback_yield": 0.011295401512173323,
+    "shareholder_yield": 0.011295401512173323
+  },
+  {
+    "ticker": "CBOE",
+    "price": 263.61,
+    "mkt_cap": 27585340336,
+    "dividends": 0,
+    "net_buybacks": 225700000,
+    "total_returned": 225700000,
+    "div_yield": 0.0,
+    "buyback_yield": 0.008181882015987029,
+    "shareholder_yield": 0.008181882015987029
+  },
+  {
+    "ticker": "VMI",
+    "price": 449.1145,
+    "mkt_cap": 8847393520,
+    "dividends": 0,
+    "net_buybacks": 70069000,
+    "total_returned": 70069000,
+    "div_yield": 0.0,
+    "buyback_yield": 0.007919733630204798,
+    "shareholder_yield": 0.007919733630204798
+  },
+  {
+    "ticker": "BAP",
+    "price": 361.91,
+    "mkt_cap": 28723463785,
+    "dividends": 0,
+    "net_buybacks": 110894000,
+    "total_returned": 110894000,
+    "div_yield": 0.0,
+    "buyback_yield": 0.0038607460726206425,
+    "shareholder_yield": 0.0038607460726206425
+  },
+  {
+    "ticker": "MORN",
+    "price": 200.05,
+    "mkt_cap": 8437656087,
+    "dividends": 0,
+    "net_buybacks": 11600000,
+    "total_returned": 11600000,
+    "div_yield": 0.0,
+    "buyback_yield": 0.0013747893823110736,
+    "shareholder_yield": 0.0013747893823110736
+  },
+  {
+    "ticker": "ATAT",
+    "price": 36.235,
+    "mkt_cap": 5027453918,
+    "dividends": 0,
+    "net_buybacks": 0,
+    "total_returned": 0,
+    "div_yield": 0.0,
+    "buyback_yield": 0.0,
+    "shareholder_yield": 0.0
+  },
+  {
+    "ticker": "HDL",
+    "price": 16,
+    "mkt_cap": 941385600,
+    "dividends": 0,
+    "net_buybacks": 0,
+    "total_returned": 0,
+    "div_yield": 0.0,
+    "buyback_yield": 0.0,
+    "shareholder_yield": 0.0
+  },
+  {
+    "ticker": "ITRN",
+    "price": 44.99,
+    "mkt_cap": 895012164,
+    "dividends": 0,
+    "net_buybacks": 0,
+    "total_returned": 0,
+    "div_yield": 0.0,
+    "buyback_yield": 0.0,
+    "shareholder_yield": 0.0
+  },
+  {
+    "ticker": "FAST",
+    "price": 43.835,
+    "mkt_cap": 50325099329,
+    "dividends": 0,
+    "net_buybacks": 0,
+    "total_returned": 0,
+    "div_yield": 0.0,
+    "buyback_yield": 0.0,
+    "shareholder_yield": 0.0
+  }
+]

@@ -1,0 +1,150 @@
+Capital Compounders v2 Screen
+Started: 2026-02-08 10:36:11
+Universe: 109 tickers ($10B+ / US-listed)
+======================================================================
+
+
+Data pull complete: 109 stocks loaded, 0 errors, 436 API calls
+
+Raw data saved to /Users/clarknye/Documents/capital_compounders/compounders_v2_all_data.json
+
+======================================================================
+APPLYING GATES
+======================================================================
+
+Gate Results:
+  Entered:         109
+  Failed Gate 1:   5 (Quality)
+  Failed Gate 2:   71 (Compounding Engine)
+  Failed Gate 3:   8 (Proof)
+  Failed Gate 4:   5 (Financial Health)
+  PASSED ALL:      20
+
+  Gate 1 failures (Quality):
+    CPNG     — ROIC fail (3yr ROIC 6.4%, curr 3.1%)
+    FLT      — GM 0.0% ≤ 15%
+    FTNT     — ROIC fail (no ROIC, no curr)
+    SAP      — ROIC fail (3yr ROIC 10.5%, curr 15.8%)
+    TTD      — ROIC fail (3yr ROIC 10.0%, curr 17.5%)
+
+  Gate 2 failures (Compounding Engine):
+    AAPL     — Capital-light but FCF/sh CAGR 9.5% < 15%
+    ABEV     — Reinv 8.8% < 12%; ROIIC 7.4% < 15%; Power 0.6% < 15%
+    ABMD     — ROIIC 8.3% < 15%; Power 7.1% < 15%
+    ADP      — Power 10.6% < 15%
+    ALLE     — ROIIC 13.3% < 15%; Power 9.9% < 15%
+    ANTM     — Capital-light but FCF/sh CAGR 5.6% < 15%
+    AOS      — Reinv 11.3% < 12%; Power 2.1% < 15%
+    APP      — Capital-light but 3yr ROIC 17.5% < 20%
+    ASML     — Power 14.3% < 15%
+    BAM      — ROIIC -0.3% < 15%; Power -0.3% < 15%
+    BAP      — Capital-light but 3yr ROIC 16.9% < 20%
+    BIPI     — Reinv rate unavailable
+    BLD      — Reinv 10.9% < 12%
+    CBOE     — Capital-light but 3yr ROIC 18.0% < 20%; Capital-light but FCF/sh CAGR 10.9% < 15%
+    CL       — Capital-light but FCF/sh CAGR 3.1% < 15%
+    CMG      — ROIIC 9.9% < 15%
+    CR       — Capital-light but 3yr ROIC 17.7% < 20%; Capital-light but FCF/sh CAGR 4.5% < 15%
+    CSL      — Capital-light but 3yr ROIC 18.3% < 20%
+    CTAS     — Power 11.7% < 15%
+    DCI      — Power 6.6% < 15%
+    DFS      — Reinv 3.6% < 12%; Power 12.5% < 15%
+    EA       — Capital-light but 3yr ROIC 15.6% < 20%; Capital-light but FCF/sh CAGR 4.6% < 15%
+    EOG      — Power 6.9% < 15%
+    EQNR     — Capital-light but 3yr ROIC 12.5% < 20%
+    EXPE     — Capital-light but 3yr ROIC 19.8% < 20%; Capital-light but FCF/sh CAGR 9.5% < 15%
+    FAST     — Reinv 10.5% < 12%; Power 4.5% < 15%
+    FFIV     — Reinv 8.5% < 12%
+    FICO     — Reinv 11.9% < 12%
+    FOXA     — Reinv 3.5% < 12%; Power 8.7% < 15%
+    FUTU     — Capital-light but 3yr ROIC 18.7% < 20%
+    GRMN     — Power 7.5% < 15%
+    GWW      — Power 5.6% < 15%
+    HSY      — ROIIC -78.3% < 15%; Power -15.6% < 15%
+    IDXX     — Reinv 10.7% < 12%; Power 13.2% < 15%
+    INFY     — Reinv 11.3% < 12%; ROIIC 14.1% < 15%; Power 1.6% < 15%
+    ITT      — Power 9.5% < 15%
+    ITW      — Reinv 10.4% < 12%; Power 2.7% < 15%
+    JKHY     — Power 6.5% < 15%
+    JNJ      — Capital-light but FCF/sh CAGR 1.8% < 15%
+    KLAC     — Power 9.8% < 15%
+    LECO     — ROIIC 13.7% < 15%; Power 6.8% < 15%
+    LRCX     — Reinv 3.4% < 12%; Power 3.9% < 15%
+    MO       — Capital-light but FCF/sh CAGR 4.3% < 15%
+    MRK      — Capital-light but FCF/sh CAGR N/A < 15%
+    MSI      — Power 14.8% < 15%
+    MTD      — Reinv 0.1% < 12%; Power 0.3% < 15%
+    NTES     — Capital-light but 3yr ROIC 19.6% < 20%
+    NVMI     — ROIIC 14.5% < 15%
+    NVS      — Capital-light but 3yr ROIC 18.6% < 20%; Capital-light but FCF/sh CAGR 13.4% < 15%
+    ODFL     — ROIIC -35.8% < 15%; Power -10.3% < 15%
+    ORLY     — Power 5.3% < 15%
+    PG       — Power 3.6% < 15%
+    RELX     — Reinv 10.2% < 12%; Power 10.5% < 15%
+    RJF      — Capital-light but FCF/sh CAGR -10.4% < 15%
+    RL       — Capital-light but 3yr ROIC 18.0% < 20%
+    ROL      — Power 12.1% < 15%
+    ROST     — ROIIC 10.7% < 15%; Power 3.5% < 15%
+    SCCO     — Reinv 8.9% < 12%
+    SNA      — Power 3.2% < 15%
+    TJX      — Power 9.3% < 15%
+    TT       — Power 14.4% < 15%
+    ULS      — Power 13.0% < 15%
+    ULTA     — Power 6.7% < 15%
+    V        — Reinv 1.0% < 12%; Power 3.6% < 15%
+    VLTO     — Power 6.3% < 15%
+    VRSK     — Capital-light but FCF/sh CAGR 7.7% < 15%
+    WDC      — Capital-light but 3yr ROIC 6.0% < 20%
+    WMS      — Power 12.8% < 15%
+    WSM      — Reinv 5.7% < 12%; ROIIC -25.0% < 15%; Power -1.4% < 15%
+    WSO      — Power 6.1% < 15%
+    ZTS      — Power 5.5% < 15%
+
+  Gate 3 failures (Proof):
+    ADSK     — FCF/sh CAGR 2.5% < 12%
+    CNQ      — FCF/sh CAGR 11.5% < 12%
+    EXEL     — FCF/sh CAGR 5.6% < 12%
+    HUBB     — FCF/sh CAGR 9.7% < 12%
+    ONON     — FCF/share CAGR unavailable
+    RACE     — FCF/sh CAGR 0.5% < 12%
+    UTHR     — FCF/share CAGR unavailable
+    VRT      — FCF/share CAGR unavailable
+
+  Gate 4 failures (Financial Health):
+    GDDY     — NetDebt/EBITDA 2.6× > 2.5× (check FCF/Debt for escape)
+    HMY      — FCF/NI 69.1% < 70%
+    SN       — FCF/NI 68.0% < 70%
+    TSM      — FCF/NI 57.3% < 70%
+    ZTO      — FCF/NI 66.3% < 70%
+
+======================================================================
+FINAL RANKED RESULTS: 20 Capital Compounders
+======================================================================
+
+#   Symbol  Name                     MktCap  3yr ROIC  3yr ROIIC   Reinv%   Power   FCF/sh  FCF/NI  ND/EB  Score Path
+----------------------------------------------------------------------------------------------------------------------------------
+1   ABNB    Airbnb, Inc.                $0M    138.0%      62.2%    54.9%   34.2%   107.2%    144%  -1.7×   0.81 compounder
+2   NVDA    NVIDIA Corporation          $0M     53.4%     136.5%    43.3%   59.0%    70.0%     87%   0.0×   0.77 compounder
+3   CELH    Celsius Holdings, I         $0M     15.0%      78.2%    76.8%   60.1%   189.5%    110%  -5.3×   0.74 compounder
+4   SPOT    Spotify Technology          $0M     -7.5%      73.9%   555.5%  410.3%    35.4%    201%  -1.9×   0.69 compounder
+5   PDD     PDD Holdings Inc.           $0M     32.2%      46.7%   110.4%   51.6%    44.9%     95%  -0.4×   0.67 compounder
+6   DECK    Deckers Outdoor Cor         $0M     77.8%          —    -0.8%       —    33.6%    104%  -1.2×   0.66 capital-light
+7   MEDP    Medpace Holdings, I         $0M     76.9%          —   -35.0%       —    29.6%    142%  -1.1×   0.60 capital-light
+8   IBKR    Interactive Brokers         $0M    671.2%          —   -37.4%       —    19.2%    709%  -0.5×   0.60 capital-light
+9   MLI     Mueller Industries,         $0M     45.5%          —    -9.9%       —    28.3%     95%  -1.2×   0.56 capital-light
+10  ANET    Arista Networks, In         $0M     34.4%      45.5%    65.6%   29.8%    31.4%     86%  -0.9×   0.55 compounder
+11  MELI    MercadoLibre, Inc.          $0M     20.2%      33.9%   136.6%   46.3%    84.8%    451%   1.3×   0.50 compounder
+12  NFLX    Netflix, Inc.               $0M     27.3%          —    -1.9%       —    38.8%     98%   0.2×   0.50 capital-light
+13  LULU    Lululemon Athletica         $0M     39.2%      50.8%    37.6%   19.1%    34.1%     77%  -0.1×   0.47 compounder
+14  ADBE    Adobe Inc.                  $0M     46.0%          —    -9.0%       —    16.1%    136%   0.1×   0.47 capital-light
+15  IT      Gartner, Inc.               $0M     37.2%          —   -19.5%       —    32.9%    129%   0.8×   0.46 capital-light
+16  COKE    Coca-Cola Consolida         $0M     33.2%      52.0%    38.4%   20.0%    34.6%     87%   0.7×   0.43 compounder
+17  APH     Amphenol Corporatio         $0M     21.0%      35.3%    78.1%   27.6%    26.2%    101%   0.6×   0.34 compounder
+18  RMD     ResMed Inc.                 $0M     20.4%      37.1%    47.3%   17.5%    18.7%    102%  -0.2×   0.26 compounder
+19  GOOGL   Alphabet Inc.               $0M     25.9%      23.1%    70.3%   16.3%    14.0%     74%   0.2×   0.21 compounder
+20  ASR     Grupo Aeroportuario         $0M     25.5%      98.6%    15.5%   15.3%    13.7%    103%  -0.3×   0.20 compounder
+
+Results saved to /Users/clarknye/Documents/capital_compounders/compounders_v2_results.csv
+
+Log saved to /Users/clarknye/Documents/capital_compounders/compounders_v2_log.txt
+Completed: 2026-02-08 10:41:08
