@@ -180,9 +180,9 @@ def extract_metrics(d):
     m['roic_capped'] = min(m['roic'], 0.50)
     
     # Metrics data
-    m['pe'] = safe_get(met, 0, 'peRatio', 20)
-    m['pfcf'] = safe_get(met, 0, 'priceToFreeCashFlowsRatio', 20)
-    m['ev_ebitda'] = safe_get(met, 0, 'enterpriseValueOverEBITDA', 15)
+    m['pe'] = None
+    m['pfcf'] = None
+    m['ev_ebitda'] = None
     m['div_yield'] = safe_get(met, 0, 'dividendYield', 0)
     
     # Market cap from profile
@@ -383,6 +383,18 @@ def run_all():
             errors.append(ticker)
             continue
         
+        # Compute P/E and P/FCF from live price + fundamentals
+        m['pe'] = price / m['eps'] if m['eps'] and m['eps'] > 0 else None
+        m['pfcf'] = price / m['fcf_per_share'] if m['fcf_per_share'] and m['fcf_per_share'] > 0 else None
+        ev = price * m['shares'] + m['net_debt']
+        m['ev_ebitda'] = ev / m['ebitda'] if m['ebitda'] and m['ebitda'] > 0 else None
+
+        # Compute P/E and P/FCF from live price
+        m["pe"] = price / m["eps"] if m["eps"] > 0 else None
+        m["pfcf"] = price / m["fcf_per_share"] if m["fcf_per_share"] > 0 else None
+        ev = price * m["shares"] + m["net_debt"]
+        m["ev_ebitda"] = ev / m["ebitda"] if m["ebitda"] > 0 else None
+        
         # Run all 6 models
         irrs = {}
         irrs['M1_Gemini'] = model_1_gemini_quick(m, price)
@@ -417,8 +429,8 @@ def run_all():
         r = {
             'ticker': ticker,
             'price': price,
-            'pe': m['pe'],
-            'pfcf': m['pfcf'],
+            'pe': m['pe'] if m['pe'] else 0,
+            'pfcf': m['pfcf'] if m['pfcf'] else 0,
             'fcf_yield': (m['fcf_per_share'] / price * 100) if price > 0 and m['fcf_per_share'] > 0 else 0,
             'roic': m['roic'] * 100,
             'growth': m['growth'] * 100,
