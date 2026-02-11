@@ -105,6 +105,7 @@ tr { transition:background 0.1s; }
 tr:hover { background:rgba(56,189,248,0.04); }
 
 .ticker-cell { font-weight:700; color:#f8fafc; font-size:12px; }
+.ticker-cell a:hover { text-decoration:underline !important; color:var(--accent) !important; }
 .tier-badge { display:inline-block; padding:2px 7px; border-radius:4px; font-size:10px; font-weight:600; font-family:'DM Sans',sans-serif; }
 .tier-1 { background:rgba(34,197,94,0.15); color:var(--tier1); }
 .tier-2 { background:rgba(245,158,11,0.15); color:var(--tier2); }
@@ -178,8 +179,6 @@ th:first-child .tip::before, th:nth-child(2) .tip::before, th:nth-child(3) .tip:
 <div class="controls">
   <input type="text" class="search-box" id="search" placeholder="Search any ticker...">
   <button class="filter-btn active" data-filter="all">All</button>
-  <button class="filter-btn" data-filter="tier1">Tier 1 — Machines</button>
-  <button class="filter-btn" data-filter="tier2">Tier 2 — Cash Cows</button>
   <div class="stats">Showing <span id="count">0</span> of <span id="total">0</span></div>
 </div>
 
@@ -193,7 +192,6 @@ th:first-child .tip::before, th:nth-child(2) .tip::before, th:nth-child(3) .tip:
 <thead>
 <tr>
   <th data-key="t">Ticker</th>
-  <th data-key="tier">Tier</th>
   <th data-key="sec">Sector</th>
   <th data-key="mcap">Mkt Cap</th>
   <th data-key="roic">ROIC Avg
@@ -247,7 +245,6 @@ th:first-child .tip::before, th:nth-child(2) .tip::before, th:nth-child(3) .tip:
   <th data-key="roe5">ROE 5yr
     <div class="tip"><div class="tt">Return on Equity — 5yr Average</div><span class="tf">Avg(Net Income ÷ Equity) over 5 years</span><div class="tn">Smooths cyclical peaks/troughs.<br>More reliable for comparing across cycles.<br>⚠️ Excludes years with negative equity.</div><div class="tg">High ≥ 20% · Low < 10%</div></div>
   </th>
-  <th data-key="flags">Flags</th>
 </tr>
 </thead>
 <tbody id="tbody"></tbody>
@@ -265,8 +262,6 @@ th:first-child .tip::before, th:nth-child(2) .tip::before, th:nth-child(3) .tip:
   <div class="glossary-item"><div class="term">FCF/NI — Cash Conversion</div><div class="def">Free Cash Flow / Net Income. ≥70% required (Gate 4). Ensures earnings convert to real cash.</div></div>
   <div class="glossary-item"><div class="term">ND/EBITDA — Leverage</div><div class="def">Net Debt / EBITDA. ≤2.5× required (Gate 4). Negative = net cash.</div></div>
   <div class="glossary-item"><div class="term">SBC/FCF — Stock Comp Haircut</div><div class="def">SBC as % of FCF. ≤35% required (Gate 4). Higher = more FCF is phantom.</div></div>
-  <div class="glossary-item"><div class="term">Tier 1 — Machines</div><div class="def">All gates passed, clean profile. 20%+ compounders with proven engines and healthy financials.</div></div>
-  <div class="glossary-item"><div class="term">Tier 2 — Cash Cows</div><div class="def">All gates passed but with flags. High quality with structural considerations.</div></div>
 </div>
 
 <script>
@@ -2688,15 +2683,8 @@ function pctClass(v, hi, lo) {
 }
 
 function renderRow(d) {
-  const tierBadge = d.tier === 1
-    ? '<span class="tier-badge tier-1">T1</span>'
-    : d.tier === 2 ? '<span class="tier-badge tier-2">T2</span>'
-    : '<span class="tier-badge" style="background:rgba(239,68,68,0.15);color:var(--red)">T' + d.tier + '</span>';
-  const flagCls = d.flags === 0 ? 'flags-0' : d.flags <= 1 ? 'flags-1' : d.flags <= 2 ? 'flags-2' : 'flags-3';
-
   return `<tr>
-    <td class="ticker-cell">${d.t}</td>
-    <td>${tierBadge}</td>
+    <td class="ticker-cell"><a href="https://finance.yahoo.com/quote/${d.t}" target="_blank" style="color:#f8fafc;text-decoration:none;font-weight:700;">${d.t}</a></td>
     <td class="sector-cell">${d.sec}</td>
     <td>${fmt(d.mcap,'mcap')}</td>
     <td class="${pctClass(d.roic,25,12)}">${fmt(d.roic,'pct')}</td>
@@ -2716,7 +2704,6 @@ function renderRow(d) {
     <td>${fmt(d.opm,'pct')}</td>
     <td class="${d.neq ? '' : d.roe !== null && d.roe >= 20 ? 'val-high' : d.roe !== null && d.roe >= 10 ? 'val-mid' : d.roe !== null && d.roe < 0 ? 'val-neg' : 'val-low'}">${d.neq ? '<span style="color:#f59e0b;font-size:9px" title="Negative equity — ROE distorted">NEQ</span>' : fmt(d.roe,'pct')}</td>
     <td class="${d.neq ? '' : d.roe5 !== null && d.roe5 >= 20 ? 'val-high' : d.roe5 !== null && d.roe5 >= 10 ? 'val-mid' : d.roe5 !== null && d.roe5 < 0 ? 'val-neg' : 'val-low'}">${d.neq ? '<span style="color:#f59e0b;font-size:9px" title="Negative equity — ROE distorted">NEQ</span>' : fmt(d.roe5,'pct')}</td>
-        <td class="${flagCls}" title="${d.flag_det}">${d.flags}F</td>
   </tr>`;
 }
 
@@ -2724,8 +2711,6 @@ function render() {
   const panel = document.getElementById('lookup-panel');
 
   let rows = UNIVERSE.filter(d => {
-    if (filterMode === 'tier1' && d.tier !== 1) return false;
-    if (filterMode === 'tier2' && d.tier !== 2) return false;
     return true;
   });
 
