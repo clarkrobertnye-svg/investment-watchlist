@@ -463,7 +463,7 @@ def run_all():
         # Use growth-adjusted trailing PE as proxy for forward PE
         trailing_pe = price / m['eps'] if m.get('eps') and m['eps'] > 0 else 30
         eps_g = m['eps_cagr'] if m['eps_cagr'] > 0 else m['growth']
-        forward_pe = trailing_pe / (1 + min(eps_g, 0.25)) if eps_g > 0 else trailing_pe  # cap at 25%
+        forward_pe = trailing_pe / (1 + eps_g) if eps_g > 0 else trailing_pe
         m['_current_pe'] = forward_pe
         m['_forward_pe'] = forward_pe
         m['_trailing_pe'] = trailing_pe
