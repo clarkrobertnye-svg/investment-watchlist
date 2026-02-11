@@ -279,8 +279,8 @@ def model_2_claude_eps_power(m, price):
     g = min(m['eps_cagr'], 0.12) if m['eps_cagr'] > 0 else min(m['growth'], 0.08)
     future_eps = m['eps'] * (1 + g) ** 5
     
-    # Exit PE: quality-adjusted, never above current (no expansion)
-    current_pe = price / m['eps'] if m['eps'] > 0 else 20
+    # Exit PE: quality-adjusted, never above forward PE (no expansion)
+    current_pe = m.get('_forward_pe', price / m['eps'] if m['eps'] > 0 else 20)
     exit_pe, _ = compute_exit_pe(m)
     exit_pe = min(exit_pe, current_pe)
     
@@ -460,7 +460,13 @@ def run_all():
             m['ev_ebitda'] = ev / m['ebitda'] if m['ebitda'] > 0 else None
         
         # Set current PE for quality-adjusted exit multiple
-        m['_current_pe'] = price / m['eps'] if m.get('eps') and m['eps'] > 0 else 30
+        # Use growth-adjusted trailing PE as proxy for forward PE
+        trailing_pe = price / m['eps'] if m.get('eps') and m['eps'] > 0 else 30
+        eps_g = m['eps_cagr'] if m['eps_cagr'] > 0 else m['growth']
+        forward_pe = trailing_pe / (1 + min(eps_g, 0.25)) if eps_g > 0 else trailing_pe  # cap at 25%
+        m['_current_pe'] = forward_pe
+        m['_forward_pe'] = forward_pe
+        m['_trailing_pe'] = trailing_pe
         exit_pe, q_score = compute_exit_pe(m)
         
         # Run all 6 models
@@ -498,6 +504,7 @@ def run_all():
             'ticker': ticker,
             'price': price,
             'pe': m['pe'] if m['pe'] is not None else 0,
+            'fwd_pe': forward_pe,
             'pfcf': m['pfcf'] if m['pfcf'] is not None else 0,
             'fcf_yield': (m['fcf_per_share'] / price * 100) if price > 0 and m['fcf_per_share'] > 0 else 0,
             'roic': m['roic'] * 100,
@@ -519,7 +526,7 @@ def run_all():
         }
         results.append(r)
         
-        print(f"${price:>8.2f}  Exit:{exit_pe:.0f}x  Mean: {mean_irr*100:5.1f}%  Median: {median_irr*100:5.1f}%  {verdict}")
+        print(f"${price:>8.2f}  FwdPE:{forward_pe:.1f}x  Exit:{exit_pe:.0f}x  Mean: {mean_irr*100:5.1f}%  Median: {median_irr*100:5.1f}%  {verdict}")
         time.sleep(0.3)  # API rate limit
     
     # ─── Summary Output ──────────────────────────────────────────
@@ -528,8 +535,8 @@ def run_all():
     print("  RESULTS SORTED BY MEDIAN IRR")
     print("=" * 100)
     print()
-    print(f"  {'Sym':6s} {'Price':>8s} {'P/E':>6s} {'Exit':>5s} {'P/FCF':>6s} {'Yld%':>5s} {'ROIC%':>6s}  {'M1':>6s} {'M2':>6s} {'M3':>6s} {'M4':>6s} {'M5':>6s} {'M6':>6s}  {'Mean':>6s} {'Med':>6s}  Verdict")
-    print("  " + "-" * 108)
+    print(f"  {'Sym':6s} {'Price':>8s} {'P/E':>6s} {'FwdPE':>6s} {'Exit':>5s} {'P/FCF':>6s} {'Yld%':>5s} {'ROIC%':>6s}  {'M1':>6s} {'M2':>6s} {'M3':>6s} {'M4':>6s} {'M5':>6s} {'M6':>6s}  {'Mean':>6s} {'Med':>6s}  Verdict")
+    print("  " + "-" * 114)
     
     results.sort(key=lambda x: x['median_irr'], reverse=True)
     
@@ -538,7 +545,7 @@ def run_all():
         def f(v): return f"{v*100:5.1f}%" if v is not None else "  N/A"
         pe_str = f"{r['pe']:>6.1f}" if r['pe'] > 0 else "   N/A"
         pfcf_str = f"{r['pfcf']:>6.1f}" if r['pfcf'] > 0 else "   N/A"
-        print(f"  {r['ticker']:6s} ${r['price']:>7.2f} {pe_str} {r['exit_pe']:>4.0f}x {pfcf_str} {r['fcf_yield']:>4.1f}% {r['roic']:>5.1f}%"
+        print(f"  {r['ticker']:6s} ${r['price']:>7.2f} {pe_str} {r['fwd_pe']:>5.1f}x {r['exit_pe']:>4.0f}x {pfcf_str} {r['fcf_yield']:>4.1f}% {r['roic']:>5.1f}%"
               f"  {f(r['M1'])} {f(r['M2'])} {f(r['M3'])} {f(r['M4'])} {f(r['M5'])} {f(r['M6'])}"
               f"  {r['mean_irr']:>5.1f}% {r['median_irr']:>5.1f}%  {r['verdict']}")
         if "BUY" in r['verdict']: buys += 1
