@@ -179,11 +179,15 @@ def extract_metrics(d):
     # Cap extreme ROIC for model stability
     m['roic_capped'] = min(m['roic'], 0.50)
     
-    # Metrics data
-    m['pe'] = None
-    m['pfcf'] = None
-    m['ev_ebitda'] = None
+    # Metrics data — try multiple field names, then compute from fundamentals
+    m['pe'] = safe_get(met, 0, 'peRatio') or safe_get(met, 0, 'priceEarningsRatio') or safe_get(met, 0, 'peRatioTTM')
+    m['pfcf'] = safe_get(met, 0, 'priceToFreeCashFlowsRatio') or safe_get(met, 0, 'pfcfRatio') or safe_get(met, 0, 'priceToFreeCashFlowRatio')
+    m['ev_ebitda'] = safe_get(met, 0, 'enterpriseValueOverEBITDA') or safe_get(met, 0, 'evToEbitda') or safe_get(met, 0, 'enterpriseValueMultiple')
     m['div_yield'] = safe_get(met, 0, 'dividendYield', 0)
+    
+    # Flag these to be recomputed from live price later
+    m['pe_needs_calc'] = m['pe'] is None
+    m['pfcf_needs_calc'] = m['pfcf'] is None
     
     # Market cap from profile
     if isinstance(prof, list) and len(prof) > 0:
@@ -194,6 +198,57 @@ def extract_metrics(d):
         m['mcap'] = 0
     
     return m
+
+
+# ─── Quality-Adjusted Exit Multiple ──────────────────────────────
+
+def compute_exit_pe(m):
+    """Compute quality-adjusted exit P/E from fundamentals.
+    Quality score (0-100) maps to exit PE (15-35x).
+    Higher ROIC, growth, margins, FCF quality = higher justified multiple."""
+    score = 0
+    
+    # 1. ROIC (0-25 pts)
+    roic = m.get('roic', 0)
+    if roic >= 0.50: score += 25
+    elif roic >= 0.30: score += 20
+    elif roic >= 0.20: score += 15
+    elif roic >= 0.15: score += 10
+    else: score += 5
+    
+    # 2. Growth (0-25 pts)
+    g = m.get('growth', 0)
+    if g >= 0.20: score += 25
+    elif g >= 0.15: score += 20
+    elif g >= 0.10: score += 15
+    elif g >= 0.05: score += 10
+    else: score += 5
+    
+    # 3. Gross Margin / Pricing Power (0-25 pts)
+    gm = m.get('gross_margin', 0)
+    if gm >= 0.70: score += 25
+    elif gm >= 0.50: score += 20
+    elif gm >= 0.35: score += 15
+    elif gm >= 0.20: score += 10
+    else: score += 5
+    
+    # 4. FCF Quality (0-25 pts)
+    fcf_ni = m.get('fcf', 0) / m.get('net_income', 1) if m.get('net_income', 0) > 0 else 0.5
+    if fcf_ni >= 1.0 and m.get('reinvest_rate', 1) < 0.3: score += 25
+    elif fcf_ni >= 0.8: score += 20
+    elif fcf_ni >= 0.6: score += 15
+    elif fcf_ni >= 0.4: score += 10
+    else: score += 5
+    
+    # Map score (20-100) to exit PE (15x-35x)
+    exit_pe = 15 + (score - 20) * (20 / 80)
+    exit_pe = max(15, min(exit_pe, 35))
+    
+    # Never assume expansion: cap at current PE
+    current_pe = m.get('_current_pe', 50)
+    exit_pe = min(exit_pe, current_pe)
+    
+    return exit_pe, score
 
 
 # ─── 6 IRR Models ────────────────────────────────────────────────
@@ -207,9 +262,10 @@ def model_1_gemini_quick(m, price):
     rr = m['reinvest_rate']
     growth_component = roic * rr
     
-    # Multiple reversion: assume current P/FCF reverts toward 20x over 5yr
+    # Quality-adjusted multiple reversion
     current_pfcf = price / m['fcf_per_share'] if m['fcf_per_share'] > 0 else 25
-    target_pfcf = min(current_pfcf, 22)  # conservative: no expansion
+    exit_pe, _ = compute_exit_pe(m)
+    target_pfcf = min(current_pfcf, exit_pe * 1.1)  # P/FCF slightly above P/E
     multiple_drag = ((target_pfcf / current_pfcf) ** (1/5) - 1) if current_pfcf > 0 else 0
     
     irr = fcf_yield + growth_component + multiple_drag
@@ -223,9 +279,10 @@ def model_2_claude_eps_power(m, price):
     g = min(m['eps_cagr'], 0.12) if m['eps_cagr'] > 0 else min(m['growth'], 0.08)
     future_eps = m['eps'] * (1 + g) ** 5
     
-    # Exit PE: lower of current or 18x (margin of safety)
+    # Exit PE: quality-adjusted, never above current (no expansion)
     current_pe = price / m['eps'] if m['eps'] > 0 else 20
-    exit_pe = min(current_pe, 18)
+    exit_pe, _ = compute_exit_pe(m)
+    exit_pe = min(exit_pe, current_pe)
     
     future_price = future_eps * exit_pe
     if future_price <= 0:
@@ -248,8 +305,9 @@ def model_3_copilot_scalable(m, price):
     
     future_oe = m['oe_per_share'] * (1 + g) ** 5
     
-    # Terminal multiple: 15x owner earnings (conservative)
-    terminal_value = future_oe * 15
+    # Terminal multiple: quality-adjusted
+    exit_pe, _ = compute_exit_pe(m)
+    terminal_value = future_oe * exit_pe
     
     # Add cumulative dividends (simplified as lump sum)
     cum_divs = sum(m['oe_per_share'] * (1+g)**i * m['div_yield'] * (price / m['oe_per_share']) for i in range(5)) if m['oe_per_share'] > 0 else 0
@@ -274,8 +332,9 @@ def model_4_grok_dcf(m, price):
     for yr in range(1, 6):
         cfs.append(m['fcf_per_share'] * (1 + g) ** yr)
     
-    # Terminal value at year 5 (exit at 15x FCF or Gordon growth)
-    tv = cfs[-1] * (1 + terminal_growth) / max(0.10 - terminal_growth, 0.04)
+    # Terminal value at year 5: quality-adjusted exit multiple on FCF
+    exit_pe, _ = compute_exit_pe(m)
+    tv = cfs[-1] * exit_pe * 1.1  # P/FCF slightly above P/E
     
     # Solve for IRR using Newton's method
     def npv(r):
@@ -355,6 +414,14 @@ def run_all():
     results = []
     errors = []
     
+    # Diagnostic: show available metrics fields from first ticker
+    test_d = load_ticker(TICKERS[0])
+    if test_d and test_d['metrics']:
+        met_sample = test_d['metrics'][0] if isinstance(test_d['metrics'], list) else test_d['metrics']
+        pe_fields = [k for k in met_sample.keys() if 'pe' in k.lower() or 'earning' in k.lower() or 'price' in k.lower()]
+        print(f"  [DEBUG] Metrics fields with PE/Price: {pe_fields}")
+        print()
+    
     for i, ticker in enumerate(sorted(TICKERS), 1):
         print(f"  [{i:2d}/{len(TICKERS)}] {ticker:6s} ... ", end="", flush=True)
         
@@ -383,17 +450,18 @@ def run_all():
             errors.append(ticker)
             continue
         
-        # Compute P/E and P/FCF from live price + fundamentals
-        m['pe'] = price / m['eps'] if m['eps'] and m['eps'] > 0 else None
-        m['pfcf'] = price / m['fcf_per_share'] if m['fcf_per_share'] and m['fcf_per_share'] > 0 else None
-        ev = price * m['shares'] + m['net_debt']
-        m['ev_ebitda'] = ev / m['ebitda'] if m['ebitda'] and m['ebitda'] > 0 else None
-
-        # Compute P/E and P/FCF from live price
-        m["pe"] = price / m["eps"] if m["eps"] > 0 else None
-        m["pfcf"] = price / m["fcf_per_share"] if m["fcf_per_share"] > 0 else None
-        ev = price * m["shares"] + m["net_debt"]
-        m["ev_ebitda"] = ev / m["ebitda"] if m["ebitda"] > 0 else None
+        # Compute P/E and P/FCF from live price if metrics didn't have them
+        if m.get('pe_needs_calc') or m['pe'] is None or m['pe'] == 0:
+            m['pe'] = price / m['eps'] if m['eps'] > 0 else None
+        if m.get('pfcf_needs_calc') or m['pfcf'] is None or m['pfcf'] == 0:
+            m['pfcf'] = price / m['fcf_per_share'] if m['fcf_per_share'] > 0 else None
+        if m['ev_ebitda'] is None or m['ev_ebitda'] == 0:
+            ev = (m['mcap'] + m['net_debt']) if m['mcap'] > 0 else (price * m['shares'] + m['net_debt'])
+            m['ev_ebitda'] = ev / m['ebitda'] if m['ebitda'] > 0 else None
+        
+        # Set current PE for quality-adjusted exit multiple
+        m['_current_pe'] = price / m['eps'] if m.get('eps') and m['eps'] > 0 else 30
+        exit_pe, q_score = compute_exit_pe(m)
         
         # Run all 6 models
         irrs = {}
@@ -429,11 +497,13 @@ def run_all():
         r = {
             'ticker': ticker,
             'price': price,
-            'pe': m['pe'] if m['pe'] else 0,
-            'pfcf': m['pfcf'] if m['pfcf'] else 0,
+            'pe': m['pe'] if m['pe'] is not None else 0,
+            'pfcf': m['pfcf'] if m['pfcf'] is not None else 0,
             'fcf_yield': (m['fcf_per_share'] / price * 100) if price > 0 and m['fcf_per_share'] > 0 else 0,
             'roic': m['roic'] * 100,
             'growth': m['growth'] * 100,
+            'exit_pe': exit_pe,
+            'q_score': q_score,
             'M1': irrs['M1_Gemini'],
             'M2': irrs['M2_Claude'],
             'M3': irrs['M3_Copilot'],
@@ -449,7 +519,7 @@ def run_all():
         }
         results.append(r)
         
-        print(f"${price:>8.2f}  Mean: {mean_irr*100:5.1f}%  Median: {median_irr*100:5.1f}%  {verdict}")
+        print(f"${price:>8.2f}  Exit:{exit_pe:.0f}x  Mean: {mean_irr*100:5.1f}%  Median: {median_irr*100:5.1f}%  {verdict}")
         time.sleep(0.3)  # API rate limit
     
     # ─── Summary Output ──────────────────────────────────────────
@@ -458,15 +528,17 @@ def run_all():
     print("  RESULTS SORTED BY MEDIAN IRR")
     print("=" * 100)
     print()
-    print(f"  {'Sym':6s} {'Price':>8s} {'P/E':>6s} {'P/FCF':>6s} {'ROIC%':>6s}  {'M1':>6s} {'M2':>6s} {'M3':>6s} {'M4':>6s} {'M5':>6s} {'M6':>6s}  {'Mean':>6s} {'Med':>6s}  Verdict")
-    print("  " + "-" * 96)
+    print(f"  {'Sym':6s} {'Price':>8s} {'P/E':>6s} {'Exit':>5s} {'P/FCF':>6s} {'Yld%':>5s} {'ROIC%':>6s}  {'M1':>6s} {'M2':>6s} {'M3':>6s} {'M4':>6s} {'M5':>6s} {'M6':>6s}  {'Mean':>6s} {'Med':>6s}  Verdict")
+    print("  " + "-" * 108)
     
     results.sort(key=lambda x: x['median_irr'], reverse=True)
     
     buys = watches = holds = expensive = 0
     for r in results:
         def f(v): return f"{v*100:5.1f}%" if v is not None else "  N/A"
-        print(f"  {r['ticker']:6s} ${r['price']:>7.2f} {r['pe']:>6.1f} {r['pfcf']:>6.1f} {r['roic']:>5.1f}%"
+        pe_str = f"{r['pe']:>6.1f}" if r['pe'] > 0 else "   N/A"
+        pfcf_str = f"{r['pfcf']:>6.1f}" if r['pfcf'] > 0 else "   N/A"
+        print(f"  {r['ticker']:6s} ${r['price']:>7.2f} {pe_str} {r['exit_pe']:>4.0f}x {pfcf_str} {r['fcf_yield']:>4.1f}% {r['roic']:>5.1f}%"
               f"  {f(r['M1'])} {f(r['M2'])} {f(r['M3'])} {f(r['M4'])} {f(r['M5'])} {f(r['M6'])}"
               f"  {r['mean_irr']:>5.1f}% {r['median_irr']:>5.1f}%  {r['verdict']}")
         if "BUY" in r['verdict']: buys += 1
