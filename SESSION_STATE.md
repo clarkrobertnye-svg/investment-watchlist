@@ -1,126 +1,200 @@
 # SESSION STATE — Capital Compounders Dashboard
-## Last Updated: 2026-02-11
+## Last Updated: 2026-02-11 (Session 3)
 
 ---
 
 ## CURRENT STATUS
 
-### Universe: 72 Buffett Compounders (filtered from 126 via Gate 5 Buffett Filter)
+### Universe: 29 Buffett Core Compounders (IPAR removed — fashion/taste risk)
 ### Dashboard: Live at GitHub Pages
 - **Repo:** https://github.com/clarkrobertnye-svg/investment-watchlist
 - **Live URL:** https://clarkrobertnye-svg.github.io/investment-watchlist/capital_compounders_dashboard.html
-- **Dashboard subtitle:** "Buffett-Filtered Universe — Gate 5 Ready"
 
-### Gate 5: Valuation (multi-model IRR) — In progress
-- NVDA 6-model framework completed (8.0% mean IRR, HOLD verdict)
-- Remaining 71 Buffett Compounders pending IRR valuation
+### Gate 5: 7-Model IRR Comparison — Operational
+- Single consensus formula replaces old 6-model ensemble
+- All 7 models agree on same 5-component identity
+- Smart asset-light growth fallback solves V/MA/NVDA understatement
+- Script: gate5_irr_7models.py
 
-### Pipeline: 126 universe → Buffett Filter (72 survive) → IRR on 72 only
-- 54 non-Buffett names removed from dashboard display
-- 68 Tier 1, 4 Tier 2 (AXP, GMAB, QCOM, SYF)
+### Pipeline History: 126 → 63 (Buffett Filter) → 36 (7-model consensus) → 30 (final cuts) → 29 (IPAR removed)
 
 ---
 
-## SESSION WORK COMPLETED (2026-02-11)
+## 29 BUFFETT CORE COMPOUNDERS (alphabetical)
+AAPL, ADBE, ADP, ANET, APH, ASML, AXP, BAH, BKNG, BMI, BRC, COKE, CTAS, HUBB, IESC, IT, KLAC, MA, MSFT, NEU, NSSC, NVDA, NVR, QCOM, RMD, ROL, TT, V, VRSK
 
-### 1. ROE Column Integration — DONE (126/126)
-- Added two sortable columns: ROE (Current) and ROE (5yr Avg)
-- Color thresholds: green ≥20%, white ≥10%, red <10%, dark red negative
-- NEQ badge (amber "NEQ") for negative-equity companies with tooltip
-- Data source: FMP stable API (https://financialmodelingprep.com/stable)
-- **fetch_roe_data.py (v2):** Initial fetch, 114 tickers → cache/exports/roe_data.json
-- **fetch_roe_supplemental.py:** 101 missing universe tickers fetched and merged
-- Final: 215 total tickers in roe_data.json (114 original + 101 supplemental)
-- NEQ companies in universe (7): HGTY, BKNG, EAT, LYV, BLBD, LII, APP
-- API key used: TtvF1nFuyMJk23iOeTklWpU0XEYcCvQU (ROTATE THIS)
+### Gate 5 IRR Results — M7 Consensus (sorted by IRR)
+| Ticker | Price | M7 IRR | Verdict | Tier |
+|--------|-------|--------|---------|------|
+| BKNG | $4312 | 46.6% | BUY | Elite |
+| NEU | $698 | 39.6% | BUY | Solid |
+| BAH | $80 | 36.1% | BUY | High |
+| ADBE | $257 | 32.9% | BUY | Elite |
+| NVDA | $190 | 30.7% | BUY | Elite |
+| COKE | $159 | 30.4% | BUY | Solid |
+| BMI | $157 | 30.1% | BUY | High |
+| ANET | $141 | 29.9% | BUY | Elite |
+| IESC | $514 | 26.0% | BUY | Solid |
+| RMD | $260 | 24.5% | BUY | High |
+| ADP | $218 | 21.4% | BUY | Elite |
+| IT | $162 | 21.3% | BUY | High |
+| AXP | $354 | 18.8% | BUY | High |
+| VRSK | $174 | 16.9% | BUY | Elite |
+| NSSC | $43 | 16.4% | BUY | Elite |
+| NVR | $8108 | 16.2% | BUY | Solid |
+| MA | $537 | 16.0% | BUY | Elite |
+| V | $329 | 15.0% | BUY | Elite |
+| MSFT | $404 | 13.0% | WATCH | Elite |
+| KLAC | $1480 | 12.1% | WATCH | Elite |
+| BRC | $95 | 10.6% | HOLD | Solid |
+| ROL | $66 | 9.9% | HOLD | High |
+| HUBB | $516 | 9.1% | HOLD | Solid |
+| APH | $144 | 9.1% | HOLD | Solid |
+| TT | $473 | 8.0% | HOLD | Solid |
+| ASML | $1436 | 7.1% | EXPENSIVE | Elite |
+| QCOM | $141 | 4.7% | EXPENSIVE | High |
+| CTAS | $200 | 1.6% | EXPENSIVE | High |
+| AAPL | $276 | 1.1% | EXPENSIVE | High |
 
-### 2. Buffett Compounder Analysis — DONE
-- 7-model consensus PDF analyzed (uploaded as __Xbuffet.pdf)
-- Cross-referenced all model opinions to find tickers mentioned 4+ times as "non-Buffett"
-- **10 Consensus Non-Buffett Tickers (4+ model mentions):**
-  - DAVE (6/7), HGTY (5/7), HRMY (5/7), EAT (5/7)
-  - YETI (4/7), LQDT (4/7), BLBD (4/7), APP (4/7), BKNG (4/7), LYV (4/7)
+**Distribution: 18 BUY, 2 WATCH, 5 HOLD, 4 EXPENSIVE**
 
-### 3. Gate 5 Buffett Filter — DESIGNED AND TESTED
-Rather than brute-force removing consensus names, built a reproducible rules-based filter using existing dashboard data.
+---
 
-#### Gate 5 Sub-Gates:
-| Sub-Gate | Rule | Failure Rate |
-|----------|------|-------------|
-| **5a: ROIC/ROE History** | ROIC avg ≥ 15% AND ROE 5yr ≥ 15% (NEQ: ROIC avg ≥ 20%) | 28% (35/126) |
-| **5b: FCF Quality** | FCF/NI ≥ 70% | 1% (1/126) |
-| **5c: Leverage** | ND/EBITDA ≤ 2.5x | 0% (0/126) |
-| **5d: SBC/Dilution** | SBC/FCF ≤ 25% AND Share CAGR ≤ 2% | 20% (25/126) |
-| **5e: Flag Health** | Flags ≤ 3 | 14% (18/126) |
+## SESSION 3 WORK COMPLETED (2026-02-11)
 
-#### Results:
-- **72 Buffett Compounders** (57%) — passed all 5 sub-gates
-  - 68 Tier 1, 4 Tier 2 (AXP, GMAB, QCOM, SYF)
-- **54 Failed** (43%)
-- Caught 9/10 consensus non-Buffett names
-- BKNG passed via NEQ escape valve (ROIC avg 46.3% ≥ 20% threshold) — correct behavior
+### 1. IRR Formula Audit — Complete
+- Audited original gate5_irr_30.py, identified 9 issues ranked by severity
+- Critical bugs: no SBC adjustment, M5 not independent, M6 structurally bullish
+- Moderate: asset-light reinvestment = 0, arbitrary exit PEs, wrong median calc
 
-#### 72 Buffett Compounders (alphabetical):
-AAPL, ADBE, ADP, AMG, ANET, APH, ASML, ASO, AX, AXP, BAH, BKNG, BLD, BMI, BRC, CAT, COCO, COKE, CROX, CRUS, CSL, CTAS, CVCO, DDS, DECK, EME, ERIE, FIX, GMAB, HALO, HUBB, IBP, IDCC, IDT, IESC, IPAR, IT, ITT, KLAC, LII, LOGI, LULU, MA, MATX, MEDP, MSFT, NEU, NSSC, NTES, NVDA, NVMI, NVR, NVS, POOL, POWL, PRDO, PRI, QCOM, RLI, RMD, ROL, SKY, SYF, TT, UFPI, ULTA, V, VRSK, WSM, WSO, WTS, XPEL
+### 2. 6-AI Consensus Research — Complete
+- Queried Claude, ChatGPT, Gemini, Grok, DeepSeek, Copilot for IRR formulas
+- All 6 converged on identical 5-component identity
+- Key disagreements: exit PE tiers (25-45x elite), asset-light handling, ROIC caps
+- Created IRR_Formula_Comparison.pdf (2-page summary)
 
-#### 54 Failed Buffett Filter:
-**3 sub-gate failures:** CCB, CELH, FBK, PIPR, PLMR
-**2 sub-gate failures:** APP, ATEN, CARG, CPRX, DAVE, EAT, EBAY, ESQ, EXLS, GOOGL, HGTY, HLNE, IRMD, LMB, NMIH
-**1 sub-gate failure:** ACGL, ALRM, AMPH, ASIC, AVGO, BLBD, BX, CASH, CDNS, CSW, FELE, FFIV, FSS, GOLF, HIG, HRMY, HWKN, KAI, KFY, KNSL, LQDT, LRN, LYV, MANH, MNR, MORN, MSA, MWA, NYT, OFG, OZK, PH, TXRH, YETI
+### 3. 7-Model IRR Script Built — gate5_irr_7models.py
+**7 Models:**
+| Model | Name | Unique Feature |
+|-------|------|---------------|
+| M1 | Claude | Conservative anchor, exit PE capped at current, 20% compression for expensive High-PE |
+| M2 | ChatGPT | Clean algebra, zero growth if reinvest≤0, tiered PE midpoints |
+| M3 | Gemini | ln-based multiple drift, same tiers as ChatGPT |
+| M4 | Grok | PEG-based drift, eps_cagr/ROIC reinvestment proxy, capped at 40% |
+| M5 | DeepSeek | 3-criteria tiers (ROIC+GM+OM), PE floor logic |
+| M6 | Copilot | Strictest tiers (ROIC≥40% for 25x), institutional framework |
+| M7 | Consensus | Best-of-all hybrid (see below) |
 
-### 4. PDF Export — DONE
-- Tabloid landscape (11×17) dark-theme PDF with all 126 stocks, 23 columns
-- File: capital_compounders_dashboard.pdf
+### 4. Consensus Formula (M7) — Final Design
 
-### 5. Dashboard Filtered to 72 Buffett Compounders — DONE
-- Removed 54 non-Buffett tickers from dashboard HTML
-- Updated subtitle: "Buffett-Filtered Universe — Gate 5 Ready"
-- Updated stock count references: 126 → 72
-- Dashboard pushed to GitHub Pages via git
-- **54 Removed:** ACGL, ALRM, AMPH, APP, ASIC, ATEN, AVGO, BLBD, BX, CARG, CASH, CCB, CDNS, CELH, CPRX, CSW, DAVE, EAT, EBAY, ESQ, EXLS, FBK, FELE, FFIV, FSS, GOLF, GOOGL, HGTY, HIG, HLNE, HRMY, HWKN, IRMD, KAI, KFY, KNSL, LMB, LQDT, LRN, LYV, MANH, MNR, MORN, MSA, MWA, NMIH, NYT, OFG, OZK, PH, PIPR, PLMR, TXRH, YETI
+```
+IRR = SBC-Adjusted FCF Yield
+    + Growth Engine
+    + Buyback Yield
+    + Dividend Yield
+    + Multiple Change
+```
+
+**Component Details:**
+- **FCF Yield:** (FCF_ps × (1 - SBC%)) / Price
+- **Growth Engine (3-tier hierarchy):**
+  1. If accounting RR > 0 AND produces growth ≥ 50% of EPS CAGR → use ROIC_cap × RR
+  2. If EPS CAGR available → use min(EPS_CAGR, 35%) directly (no ROIC cap penalty)
+  3. Fallback → min(hist_growth, 15%)
+- **Buyback Yield:** (Shares_5yr_ago / Shares_now)^(1/5) - 1
+- **Dividend Yield:** Annual dividend / (Price × Shares)
+- **Multiple Change:** (Exit_PE / Current_PE)^(1/5) - 1
+
+**Exit PE Tiers (3-criteria):**
+| Tier | Criteria | Exit P/E |
+|------|----------|----------|
+| Elite | ROIC ≥30%, GM ≥50%, OM ≥25% | 28x |
+| High | ROIC ≥20%, GM ≥40% | 23x |
+| Solid | ROIC ≥15% | 18x |
+
+**High-PE Protection:**
+- Elite stocks trading >2x tier PE: exit = max(28, current × 0.75)
+- High stocks trading >2x tier PE: exit = max(23, current × 0.80)
+- Cheap stocks (PE < tier): exit = tier PE (model expansion)
+
+### 5. Iterative Bug Fixes Applied
+1. Gross margin / op margin computed from dollars (not missing ratio fields)
+2. Growth cap set at 35% (was uncapped, then 25%)
+3. Grok M4 capped at 40% to prevent median pollution
+4. EPS fallback uses eps_cagr directly (ROIC cap only on accounting path)
+5. Decomposition table mirrors M7 logic exactly
+6. High-PE Elite/High stocks get partial compression, not collapse
+
+### 6. IPAR Removed — Fashion/taste risk
+Same category as LULU, ULTA, DECK removed in Round 2.
 
 ---
 
 ## NOTABLE DESIGN DECISIONS
 
-1. **Gate 5 Buffett Filter is an OVERLAY, not a removal.** Failed tickers stay in the 126 universe — they just don't get the "Buffett Compounder" badge. This preserves the pipeline.
+1. **ROIC cap (50%) only applies to accounting reinvestment path.** When using EPS CAGR fallback, proven growth is used directly (capped at 35%). This prevents double-penalizing ultra-high-ROIC asset-light businesses (MA, V, NVDA).
 
-2. **NEQ escape valve:** Negative equity companies can still pass if ROIC avg ≥ 20%. This correctly saves BKNG (46.3% ROIC) and LII (30.2% ROIC) while catching EAT (9.6%) and BLBD (38.8% but fails 5d on dilution).
+2. **Smart asset-light trigger:** If accounting_growth < 50% of EPS CAGR, the business grows via expensed R&D/SG&A. Fallback to proven EPS growth.
 
-3. **5b (FCF quality) and 5c (leverage) are near-zero filters** because Gates 1-4 already cleaned these. The Buffett filter's real teeth are 5a (ROIC/ROE consistency) and 5d (SBC/dilution).
+3. **High-PE protection prevents "false EXPENSIVE."** NVDA at 64x forced to 28x = -15% annual drag. With 75% compression floor: exit = 48x, drag = -5.6%. Still conservative but not fictional.
 
-4. **GOOGL fails on 5b (FCF/NI 65.8%) and 5d (SBC).** This is arguably correct — Buffett himself said he "missed" Google but the SBC culture is genuinely anti-Buffett.
+4. **Grok M4 capped at 40%** — uncapped it produces 78% IRR for NVDA. PEG-based drift + no ROIC cap = garbage for extreme-ROIC names.
+
+5. **Gate 5 is still an overlay.** All 126 Quality Universe stocks preserved. Failed tickers not deleted.
+
+---
+
+## STOCKS UNDER REVIEW
+
+- **COKE** (Coca-Cola Consolidated): 30% growth likely non-recurring. 40% GM, 13% OM. Bottler, not Coca-Cola.
+- **IESC** (IES Holdings): Electrical contractor, 25% GM, 11% OM. Cyclical infrastructure.
+- **NEU** (NewMarket): Petroleum additives. 32% GM, 21% OM. Niche moat but commodity-adjacent.
+- **BKNG**: 100% gross margin is FMP data error (real ~80-85%). Doesn't affect tier but is dirty data.
 
 ---
 
 ## PENDING / NEXT STEPS
 
-- [x] **DECIDED:** Buffett filter stays behind the scenes — no dashboard badge column
-- [x] **DECIDED:** Non-Buffett names removed from dashboard display entirely
-- [x] **DONE:** Dashboard filtered from 126 → 72 Buffett Compounders
-- [ ] **Gate 5 pipeline: 72 Buffett Compounders → multi-model IRR valuations**
-- [ ] Gate 5 IRR valuations for 71 remaining Buffett Compounders (NVDA already done)
+- [ ] Decide on COKE, IESC, NEU — keep or cut?
+- [ ] Haircut EPS CAGR fallback to 80% of historical? (reduces BUY inflation)
+- [ ] Add analyst consensus EPS Next 5Y as cross-check growth input
+- [ ] Integrate IRR results into dashboard (new columns: M7 IRR, Verdict, Tier)
 - [ ] Monthly refresh cycle implementation
-- [ ] Rotate FMP API key (TtvF1nFuyMJk23iOeTklWpU0XEYcCvQU exposed in session)
+- [ ] Rotate FMP API key (exposed in scripts)
 - [ ] Cancel PayPal - Adobe software keeps billing
-- [ ] Known issue: large-cap data gap blocking exclusion reasons for ~900 tickers
+- [ ] Fix BKNG 100% gross margin data
 
 ---
 
-## KEY FILES (User's Mac)
-- `cache/exports/roe_data.json` — 215 tickers ROE data
-- `capital_compounders_dashboard.html` — main dashboard (needs push to repo)
-- `fetch_roe_data.py` (v2) — primary ROE fetch script
-- `fetch_roe_supplemental.py` — supplemental ROE fetch for 101 missing tickers
+## KEY FILES
 
-## KEY FILES (This Session Outputs)
-- `/mnt/user-data/outputs/capital_compounders_dashboard.html` — dashboard with ROE columns
-- `/mnt/user-data/outputs/capital_compounders_dashboard.pdf` — tabloid PDF export
-- `/mnt/user-data/outputs/fetch_roe_supplemental.py` — supplemental fetch script
-- `/mnt/user-data/outputs/SESSION_STATE.md` — this file
+### On Mac (~/Documents/capital_compounders/)
+- `capital_compounders_dashboard.html` — main dashboard
+- `gate5_irr_7models.py` — 7-model IRR script (current)
+- `gate5_irr_30.py` — old 6-model script (deprecated)
+- `cache/raw/` — FMP financial data per ticker
+- `cache/exports/gate5_irr_7models.csv` — IRR results
+- `IRR_Formula_Comparison.pdf` — 2-page model comparison
+- `SESSION_STATE.md` — this file
+
+### On GitHub (clarkrobertnye-svg/investment-watchlist)
+- `capital_compounders_dashboard.html` — deployed dashboard
+- `SESSION_STATE.md` — project state doc
+
+### IRR Models Reference
+| Model | Name | Formula Type |
+|-------|------|-------------|
+| M1 | Claude | Conservative, exit PE capped, 30% EPS cap |
+| M2 | ChatGPT | Clean algebra, zero growth if RR≤0 |
+| M3 | Gemini | ln-based drift, institutional tiers |
+| M4 | Grok | PEG-based drift, capped at 40% |
+| M5 | DeepSeek | 3-criteria tiers, PE floor |
+| M6 | Copilot | Strictest tiers, institutional framework |
+| M7 | Consensus | Hybrid: smart growth hierarchy + 3-criteria tiers + high-PE protection |
 
 ## DASHBOARD KNOWN FEATURES
-- 3yr ROIIC displays ">500%" in green for infinity values (when invested capital shrinks while NOPAT grows)
-- Table min-width 1600px (increased from 1400px for ROE columns)
+- 3yr ROIIC displays ">500%" in green for infinity values
 - All columns sortable with click headers
 - Dark theme with color-coded metrics
+- Tickers link to Yahoo Finance
+- No tier/flags columns (removed Session 2)
